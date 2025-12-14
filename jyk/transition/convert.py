@@ -11,7 +11,7 @@ import fitz  # PyMuPDF
 # 配置项
 UPLOAD_DIR = "uploads"
 OUTPUT_DIR = "files/outputs"
-LIBREOFFICE_PATH = "/home/jyk/code/YiBao/jyk/transition/LibreOffice_Dir/AppRun"
+LIBREOFFICE_PATH = r"D:\libreoffice\program\soffice.exe" # windows用法
 
 class FileConverter:
     def __init__(self, output_base_dir=OUTPUT_DIR):
@@ -84,7 +84,7 @@ class FileConverter:
     
     def _handle_office(self, file_path, output_folder):
         # 先转pdf再转图片
-        # 使用LibreOffice命令行转pdf
+        # 使用LibreOffice命令行转pdf （不太行）
         cmd = [
             LIBREOFFICE_PATH, '--headless', '--convert-to', 'pdf',
             '--outdir', str(output_folder), str(file_path)
@@ -101,5 +101,5 @@ class FileConverter:
 
 if __name__ == "__main__":
     fc = FileConverter()
-    result = fc.process_file("/home/jyk/code/YiBao/jyk/transition/files/excel/W6787UA0161.xls")
+    result = fc.process_file("D:\\code\\YiBao\\jyk\\transition\\files\\excel\\W6787UA0161.xls")
     print(result)
