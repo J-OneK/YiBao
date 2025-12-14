@@ -99,7 +99,29 @@ class FileConverter:
         else:
             raise Exception("Failed to convert Office document to PDF")
 
+    def _handle_archive(self, file_path, output_folder):
+        temp_extract_dir = output_folder / "temp_extract"
+        Path(temp_extract_dir).mkdir(parents=True, exist_ok=True)
+
+        suffix = file_path.suffix.lower()
+        if suffix == ".zip":
+            with zipfile.ZipFile(file_path, 'r') as zip_ref:
+                zip_ref.extractall(temp_extract_dir)
+        elif suffix == ".rar":
+            with rarfile.RarFile(file_path, 'r') as rar_ref:
+                rar_ref.extractall(temp_extract_dir)
+        
+        results = []
+        for root, dirs, files in os.walk(temp_extract_dir):
+            for file in files:
+                full_path = Path(root) / file
+                # 递归调用process_file
+                if full_path.suffix.lower() not in ['.zip', '.rar']:
+                    res = self.process_file(full_path)
+                    results.append(res)
+        return {"status": "success", "type": "archive", "details": results} 
+
 if __name__ == "__main__":
     fc = FileConverter()
-    result = fc.process_file("D:\\code\\YiBao\\jyk\\transition\\files\\excel\\W6787UA0161.xls")
+    result = fc.process_file("/home/jyk/code/YiBao/jyk/transition/files/archive/ONEYNB4BEJB47500B.zip")
     print(result)
