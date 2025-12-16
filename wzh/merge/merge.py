@@ -90,9 +90,6 @@ if __name__ == "__main__":
     invoice_path = os.path.join(BASE_DIR, "invoice.json")
     packinglist_path = os.path.join(BASE_DIR, "packing_list.json")
 
-    print("trying:", invoice_path)
-    print("exists:", os.path.exists(invoice_path))
-
     with open(invoice_path, "r", encoding="utf-8") as f:
         invoice = json.load(f)
 
@@ -101,5 +98,5 @@ if __name__ == "__main__":
 
     merged = merge_predec([invoice, packing])
 
-    with open("./wzh/merged.json", "w", encoding="utf-8") as f:
+    with open("./result/merged.json", "w", encoding="utf-8") as f:
         json.dump(merged, f, ensure_ascii=False, indent=2)
