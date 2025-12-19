@@ -59,16 +59,3 @@ class FinalResult:
     pre_dec_head: List[AggregatedField] = field(default_factory=list)
     pre_dec_list: List[List[AggregatedField]] = field(default_factory=list)
 
-
-aggregated_data:
-{
-    "preDecHead": List[AggregatedField],
-    "preDecList": List[List[AggregatedField]]
-}
-
-AggregatedField:
-{
-    "keyDesc": str,
-    "key": str,
-    "sourceList": List[SourceItem]
-}

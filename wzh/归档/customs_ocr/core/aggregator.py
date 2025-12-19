@@ -144,16 +144,16 @@ async def check_consistency_and_unify_async(aggregated_data: Dict) -> Dict:
     
     # 处理表头
     for field in aggregated_data['preDecHead']:
-        fields_to_process.append(field['sourceList'])
+        fields_to_process.append((field['keyDesc'],field['sourceList']))
     
     # 处理表体
     for product_fields in aggregated_data['preDecList']:
         for field in product_fields:
-            fields_to_process.append(field['sourceList'])
+            fields_to_process.append((field['keyDesc'],field['sourceList']))
     
     # 异步处理所有字段
-    for source_list in fields_to_process:
-        task = unify_source_list_async(source_list)
+    for keyDesc, source_list in fields_to_process:
+        task = unify_source_list_async(keyDesc,source_list)
         tasks.append(task)
     
     # 等待所有任务完成
@@ -164,7 +164,7 @@ async def check_consistency_and_unify_async(aggregated_data: Dict) -> Dict:
 
 
 
-async def unify_source_list_async(source_list: List[Dict]):
+async def unify_source_list_async(keyDesc,source_list: List[Dict]):
     """
     异步统一sourceList中的value
     如果所有value都一样，不做处理
@@ -187,10 +187,10 @@ async def unify_source_list_async(source_list: List[Dict]):
     logger.info(f"发现不一致的值: {unique_values}，调用大模型判断...")
     
     should_unify, unified_value = await call_llm_to_judge_consistency_async(unique_values) #unifyed_value不在此处获得，而是按照优先级获得
-    get_unified_value
+    unified_value,from_type = set_priority_value(keyDesc,source_list)
 
     if should_unify:
-        logger.info(f"大模型判断这些值是同一含义，统一为: {unified_value}")
+        logger.info(f"大模型判断\'{keyDesc}\'里的值是同一含义，统一为最高优先级: {unified_value},来自att_type:{from_type}")
         for item in source_list:
             item['value'] = unified_value
     else:
@@ -352,20 +352,144 @@ def get_unified_value(source_list: List[Dict]) -> str:
     return source_list[0]['value']
 
 
-def get_priority_value(source_list: List[Dict]) -> str:
-    """
-    从sourceList中获取优先级最高的值
-    
-    Args:
-        source_list: 来源列表
-        
-    Returns:
-        优先级最高的值
-    """
+def set_priority_value(keyDesc,source_list: List[Dict]) -> str:
     if not source_list:
         return ""
     
-    # 按照att_type_code优先级排序，数值越小优先级越高
-    sorted_sources = sorted(source_list, key=lambda x: x.get('att_type_code', float('inf')))
+    existing_atttype_codes = [item['att_type_code'] for item in source_list if item.get('att_type_code') is not None]
     
-    return sorted_sources[0]['value']
+    match keyDesc:
+        case '主运单号':
+            priority_queue = [19]
+        case '境内收发货人名称':
+            priority_queue = [4, 1, 2, 3, 14]
+        case '境内收发货人海关代码':
+            priority_queue = [4, 1, 2, 3]
+        case '境内收发货人社会信用代码':
+            priority_queue = [4, 1, 2, 3]
+        case '出境关别':
+            priority_queue = [4]
+        case '境外收发货人':
+            priority_queue = [4, 1, 2, 3]
+        case '运输方式':
+            priority_queue = [4, 14]
+        case '提运单号':
+            priority_queue = [15, 4]
+        case '生产销售单位海关代码':
+            priority_queue = [4, 1, 2, 3]
+        case '生产销售单位名称':
+            priority_queue = [4, 1, 2, 3]
+        case '生产销售单位社会信用代码':
+            priority_queue = [4, 1, 2, 3]
+        case '监管方式':
+            priority_queue = [4, 2, 14]
+        case '征免性质':
+            priority_queue = [4]
+        case '许可证号':
+            priority_queue = [4]
+        case '备案号':
+            priority_queue = [4, 1, 2, 3]
+        case '合同协议号':
+            priority_queue = [4, 1, 2, 14]
+        case '贸易国':
+            priority_queue = [4, 1, 2, 3]
+        case '运抵国':
+            priority_queue = [4, 1, 2, 3, 14, 15]
+        case '指运港':
+            priority_queue = [4, 1, 2, 3, 15]
+        case '离境口岸':
+            priority_queue = [4]
+        case '包装种类':
+            priority_queue = [4, 3]
+        case '件数':
+            priority_queue = [4, 3, 15]
+        case '毛重':
+            priority_queue = [4, 3, 15]
+        case '净重':
+            priority_queue = [4, 3]
+        case '成交方式':
+            priority_queue = [4, 1, 2]
+        case '运费币制':
+            priority_queue = [4, 1, 2]
+        case '运费标记':
+            priority_queue = [4, 1, 2]
+        case '运费率':
+            priority_queue = [4, 1, 2]
+        case '保费币制':
+            priority_queue = [4, 1, 2]
+        case '保费标记':
+            priority_queue = [4, 1, 2]
+        case '保费率':
+            priority_queue = [4, 1, 2]
+        case '杂费币制':
+            priority_queue = [4, 2, 1]
+        case '杂费标记':
+            priority_queue = [4, 2, 1]
+        case '杂费率':
+            priority_queue = [4, 2, 1]
+        case '标记唛码及备注':
+            priority_queue = [4]
+        case '存放地点':
+            priority_queue = [4]
+        case '随附单证及编号':
+            priority_queue = [14, 4]
+        case '页码页数':
+            priority_queue = [4]
+        case '总价总和':
+            priority_queue = [2, 1]
+        case '商品编号':
+            priority_queue = [4, 5, 1, 2, 3, 14]
+        case '商品名称':
+            priority_queue = [4, 5, 1, 2, 3, 14]
+        case '规格型号':
+            priority_queue = [4, 5, 1, 2, 3]
+        case '成交数量':
+            priority_queue = [4, 2, 3, 1]
+        case '成交单位':
+            priority_queue = [4, 2, 3, 1, 14]
+        case '单价':
+            priority_queue = [4, 2, 1]
+        case '总价':
+            priority_queue = [4, 2, 1]
+        case '币制':
+            priority_queue = [4, 1, 2, 14]
+        case '原产国':
+            priority_queue = [4]
+        case '最终目的国':
+            priority_queue = [15, 4, 1, 2, 3, 14]
+        case '境内货源地':
+            priority_queue = [4, 5, 2, 3]
+        case '征免':
+            priority_queue = [4]
+        case '法定第一数量':
+            priority_queue = [4, 2, 3, 1]
+        case '法定第二数量':
+            priority_queue = [4, 2, 3, 1]
+        case '件数单项':
+            priority_queue = [3, 2, 1]
+        case '净重单项':
+            priority_queue = [3, 4, 2, 1]
+        case '毛重单项':
+            priority_queue = [3, 4, 2, 1]
+        case '柜号':
+            priority_queue = [4, 3, 2, 1, 5]
+        case '单证编号':
+            priority_queue = [14]
+        case '合同商品总价':
+            priority_queue = [1]
+        case '发票商品总价':
+            priority_queue = [2]
+        case '装箱单商品净重':
+            priority_queue = [3]
+        case _:
+            priority_queue = []
+
+    for att_type_code in priority_queue:
+        if att_type_code in existing_atttype_codes:
+            # 找到对应的 item
+            for idx, item in enumerate(source_list):
+                if item.get("att_type_code") == att_type_code:
+                    # 移动到第一位
+                    source_list.insert(0, source_list.pop(idx))
+                    return source_list[0].get("value", ""),att_type_code
+    return source_list[0].get("value", ""),0

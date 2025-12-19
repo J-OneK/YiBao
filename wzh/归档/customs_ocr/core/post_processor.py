@@ -70,7 +70,7 @@ def process_field(field: Dict, image_map: Dict[str, ImageInfo]) -> Dict:
     for source in source_list:
         image_id = source['imageId']
         pixel = source['pixel']
-        
+        att_type_code = source['att_type_code']
         # 获取图片信息
         image_info = image_map.get(image_id)
         if not image_info or not image_info.width or not image_info.height:
@@ -81,7 +81,8 @@ def process_field(field: Dict, image_map: Dict[str, ImageInfo]) -> Dict:
                 'starty': int(pixel[1]),
                 'endx': int(pixel[2]),
                 'endy': int(pixel[3]),
-                'imageId': image_id
+                'imageId': image_id,
+                'attTypeCode': att_type_code
             })
         else:
             # 转换归一化坐标到实际坐标
@@ -91,7 +92,8 @@ def process_field(field: Dict, image_map: Dict[str, ImageInfo]) -> Dict:
                 'starty': normalize_to_real(pixel[1], image_info.height),
                 'endx': normalize_to_real(pixel[2], image_info.width),
                 'endy': normalize_to_real(pixel[3], image_info.height),
-                'imageId': image_id
+                'imageId': image_id,
+                'attTypeCode': att_type_code
             })
     
     return {
