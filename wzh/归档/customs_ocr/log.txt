@@ -1,0 +1,307 @@
+INFO:__main__:============================================================
+INFO:__main__:报关文档识别系统启动（异步并发模式）
+INFO:__main__:============================================================
+INFO:__main__:步骤 1/5: 加载输入数据...
+INFO:__main__:成功加载 6 张图片信息
+INFO:__main__:步骤 2/5: 并发调用视觉大模型识别图片...
+INFO:core.ocr_service:正在识别图片 1，第 1 次尝试
+INFO:core.ocr_service:正在识别图片 2，第 1 次尝试
+INFO:core.ocr_service:正在识别图片 3，第 1 次尝试
+INFO:core.ocr_service:正在识别图片 4，第 1 次尝试
+INFO:core.ocr_service:正在识别图片 5，第 1 次尝试
+INFO:core.ocr_service:正在识别图片 6，第 1 次尝试
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.ocr_service:图片 2 识别成功
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.ocr_service:图片 1 识别成功
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.ocr_service:图片 6 识别成功
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+WARNING:core.ocr_service:字段 币制(key=tradeCurr) 不应从文件类型 1 的表头中识别，已跳过
+INFO:core.ocr_service:图片 3 识别成功
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.ocr_service:图片 5 识别成功
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+WARNING:core.ocr_service:字段 运输方式(key=cusTrafMode) 不应从文件类型 2 的表头中识别，已跳过
+INFO:core.ocr_service:图片 4 识别成功
+INFO:__main__:成功识别 6/6 张图片
+INFO:__main__:步骤 3/5: 聚合多图片识别结果...
+INFO:__main__:聚合完成
+INFO:__main__:步骤 4/5: 并发检查字段一致性...
+INFO:core.aggregator:发现不一致的值: {'ZHENGZHOU LEDREM NETWORK TECHNOLOGY CO.,LTD.', '郑州领未网络科技有限公司', 'ZIEL INTERNATIONAL CO., LIMITED'}，调用大模型判断...
+INFO:core.aggregator:发现不一致的值: {'LOS ANGELES,USA', '美国'}，调用大模型判断...
+INFO:core.aggregator:发现不一致的值: {'ZHENGZHOU LEDREM NETWORK TECHNOLOGY CO.,LTD.', 'TEL:+86 371 68860521 FAX:+86 371 68860521', 'ZIEL INTERNATIONAL CO., LIMITED'}，调用大模型判断...
+INFO:core.aggregator:发现不一致的值: {'CHINA', '中国', 'NINGBO,CHINA'}，调用大模型判断...
+INFO:core.aggregator:发现不一致的值: {'US250660 WH-1', 'US2506660WH-1', 'US250660WH-1'}，调用大模型判断...
+INFO:core.aggregator:发现不一致的值: {'NINGBO,CHINA', '洛杉矶,美国', 'BY SEA'}，调用大模型判断...
+INFO:core.aggregator:发现不一致的值: {'No. 198-19 SONGSHAN SOUTH ROAD, DONGFANG BUILDING 7F, SUITE 701, ERQI DISTRICT, ZHENGZHOU HENAN 450000 CN', '9403609990'}，调用大模型判断...
+INFO:core.aggregator:发现不一致的值: {'OTTOMAN TABLE', 'OTTOMAN TABLE 软包桌', '软包桌'}，调用大模型判断...
+INFO:core.aggregator:发现不一致的值: {'9403609990', '9403609990(P/Q)'}，调用大模型判断...
+INFO:core.aggregator:发现不一致的值: {'人民币', 'CNY'}，调用大模型判断...
+INFO:core.aggregator:发现不一致的值: {'104.9', '104.90'}，调用大模型判断...
+INFO:core.aggregator:所有值都是数值且数值相同 ['104.9', '104.90']，统一为第一个值
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: 104.9
+INFO:core.aggregator:发现不一致的值: {'JEWELRY STAND', 'JEWELRY STAND 首饰展架'}，调用大模型判断...
+INFO:core.aggregator:发现不一致的值: {'280', '20'}，调用大模型判断...
+INFO:core.aggregator:所有值都是数值但数值不同 ['280', '20']（转换后：[280.0, 20.0]），判断为不一致
+WARNING:core.aggregator:大模型判断这些值含义不同，保持原样: {'280', '20'}
+INFO:core.aggregator:发现不一致的值: {'MAKEUP SHELF', 'MAKEUP SHELF 化妆品收纳架'}，调用大模型判断...
+INFO:core.aggregator:发现不一致的值: {'1', '6'}，调用大模型判断...
+INFO:core.aggregator:所有值都是数值但数值不同 ['1', '6']（转换后：[1.0, 6.0]），判断为不一致
+WARNING:core.aggregator:大模型判断这些值含义不同，保持原样: {'1', '6'}
+INFO:core.aggregator:发现不一致的值: {'MAKEUP SHELF', 'MAKEUP SHELF 化妆品收纳架'}，调用大模型判断...
+INFO:core.aggregator:发现不一致的值: {'11', '66'}，调用大模型判断...
+INFO:core.aggregator:所有值都是数值但数值不同 ['11', '66']（转换后：[11.0, 66.0]），判断为不一致
+WARNING:core.aggregator:大模型判断这些值含义不同，保持原样: {'11', '66'}
+INFO:core.aggregator:发现不一致的值: {'DRYING RACK 晾衣架', 'DRYING RACK', 'DRYING RACK 琴衣架'}，调用大模型判断...
+INFO:core.aggregator:发现不一致的值: {'DRYING RACK 晾衣架', 'DRYING RACK', 'DRYING RACK 琴衣架'}，调用大模型判断...
+INFO:core.aggregator:发现不一致的值: {'36', '6'}，调用大模型判断...
+INFO:core.aggregator:所有值都是数值但数值不同 ['36', '6']（转换后：[36.0, 6.0]），判断为不一致
+WARNING:core.aggregator:大模型判断这些值含义不同，保持原样: {'36', '6'}
+INFO:core.aggregator:发现不一致的值: {'SHOE SHELF 鞋架', 'SHOE SHELF'}，调用大模型判断...
+INFO:core.aggregator:发现不一致的值: {'132', '102'}，调用大模型判断...
+INFO:core.aggregator:所有值都是数值但数值不同 ['132', '102']（转换后：[132.0, 102.0]），判断为不一致
+WARNING:core.aggregator:大模型判断这些值含义不同，保持原样: {'132', '102'}
+INFO:core.aggregator:发现不一致的值: {'SHOE SHELF 鞋架', 'SHOE SHELF'}，调用大模型判断...
+INFO:core.aggregator:发现不一致的值: {'26', '130'}，调用大模型判断...
+INFO:core.aggregator:所有值都是数值但数值不同 ['26', '130']（转换后：[26.0, 130.0]），判断为不一致
+WARNING:core.aggregator:大模型判断这些值含义不同，保持原样: {'26', '130'}
+INFO:core.aggregator:发现不一致的值: {'SHOE STORAGE BOXES', 'SHOE STORAGE BOXES 收纳鞋盒 (套组)', 'SHOE STORAGE BOXES 收纳鞋盒（套组）'}，调用大模型判断...
+INFO:core.aggregator:发现不一致的值: {'SHOE STORAGE BOX', 'SHOE STORAGE BOX 收纳鞋盒'}，调用大模型判断...
+INFO:core.aggregator:发现不一致的值: {'37', '222'}，调用大模型判断...
+INFO:core.aggregator:所有值都是数值但数值不同 ['37', '222']（转换后：[37.0, 222.0]），判断为不一致
+WARNING:core.aggregator:大模型判断这些值含义不同，保持原样: {'37', '222'}
+INFO:core.aggregator:发现不一致的值: {'SHOE STORAGE BOX', 'SHOE STORAGE BOX 收纳鞋盒'}，调用大模型判断...
+INFO:core.aggregator:发现不一致的值: {'132', '21'}，调用大模型判断...
+INFO:core.aggregator:所有值都是数值但数值不同 ['132', '21']（转换后：[132.0, 21.0]），判断为不一致
+WARNING:core.aggregator:大模型判断这些值含义不同，保持原样: {'132', '21'}
+INFO:core.aggregator:发现不一致的值: {'SHOE STORAGE BOXES', 'SHOE STORAGE BOXES 收纳鞋盒 (套组)', 'SHOE STORAGE BOXES 收纳鞋盒（套组）'}，调用大模型判断...
+INFO:core.aggregator:发现不一致的值: {'28', '7'}，调用大模型判断...
+INFO:core.aggregator:所有值都是数值但数值不同 ['28', '7']（转换后：[28.0, 7.0]），判断为不一致
+WARNING:core.aggregator:大模型判断这些值含义不同，保持原样: {'28', '7'}
+INFO:core.aggregator:发现不一致的值: {'HANGING CLOSET ORGANIZER 收纳挂袋', 'HANGING CLOSET ORGANIZER'}，调用大模型判断...
+INFO:core.aggregator:发现不一致的值: {'31', '310'}，调用大模型判断...
+INFO:core.aggregator:所有值都是数值但数值不同 ['31', '310']（转换后：[31.0, 310.0]），判断为不一致
+WARNING:core.aggregator:大模型判断这些值含义不同，保持原样: {'31', '310'}
+INFO:core.aggregator:发现不一致的值: {'HANGING CLOSET ORGANIZERS', 'HANGING CLOSET ORGANIZERS 收纳挂袋（套组）', 'HANGING CLOSET ORGANIZERS 收纳挂袋 (套组)'}，调用大模型判断...
+INFO:core.aggregator:发现不一致的值: {'58.10', '58.1'}，调用大模型判断...
+INFO:core.aggregator:所有值都是数值且数值相同 ['58.10', '58.1']，统一为第一个值
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: 58.10
+INFO:core.aggregator:发现不一致的值: {'10', '50'}，调用大模型判断...
+INFO:core.aggregator:所有值都是数值但数值不同 ['10', '50']（转换后：[10.0, 50.0]），判断为不一致
+WARNING:core.aggregator:大模型判断这些值含义不同，保持原样: {'10', '50'}
+INFO:core.aggregator:发现不一致的值: {'METAL OPEN WARDROBE 衣柜', 'METAL OPEN WARDROBE'}，调用大模型判断...
+INFO:core.aggregator:发现不一致的值: {'METAL OPEN WARDROBE 无纺布衣柜', 'METAL OPEN WARDROBE'}，调用大模型判断...
+INFO:core.aggregator:发现不一致的值: {'STACKABLE FABRIC BINS', 'STACKABLE FABRIC BINS 坦克收纳盒（套组）', 'STACKABLE FABRIC BINS 坦克收纳盒 (套组)'}，调用大模型判断...
+INFO:core.aggregator:发现不一致的值: {'10', '50'}，调用大模型判断...
+INFO:core.aggregator:所有值都是数值但数值不同 ['10', '50']（转换后：[10.0, 50.0]），判断为不一致
+WARNING:core.aggregator:大模型判断这些值含义不同，保持原样: {'10', '50'}
+INFO:core.aggregator:发现不一致的值: {'LAUNDRY HAMPER', 'LAUNDRY HAMPER 洗衣篮'}，调用大模型判断...
+INFO:core.aggregator:发现不一致的值: {'15968.90', '15968.9'}，调用大模型判断...
+INFO:core.aggregator:所有值都是数值且数值相同 ['15968.90', '15968.9']，统一为第一个值
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: 15968.90
+INFO:core.aggregator:发现不一致的值: {'315', '63'}，调用大模型判断...
+INFO:core.aggregator:所有值都是数值但数值不同 ['315', '63']（转换后：[315.0, 63.0]），判断为不一致
+WARNING:core.aggregator:大模型判断这些值含义不同，保持原样: {'315', '63'}
+INFO:core.aggregator:发现不一致的值: {'LAUNDRY CART 洗衣车', 'LAUNDRY CART'}，调用大模型判断...
+INFO:core.aggregator:发现不一致的值: {'28', '84'}，调用大模型判断...
+INFO:core.aggregator:所有值都是数值但数值不同 ['28', '84']（转换后：[28.0, 84.0]），判断为不一致
+WARNING:core.aggregator:大模型判断这些值含义不同，保持原样: {'28', '84'}
+INFO:core.aggregator:发现不一致的值: {'LAUNDRY CART 洗衣车', 'LAUNDRY CART'}，调用大模型判断...
+INFO:core.aggregator:发现不一致的值: {'51', '17'}，调用大模型判断...
+INFO:core.aggregator:所有值都是数值但数值不同 ['51', '17']（转换后：[51.0, 17.0]），判断为不一致
+WARNING:core.aggregator:大模型判断这些值含义不同，保持原样: {'51', '17'}
+INFO:core.aggregator:发现不一致的值: {'FABRIC BINS WITHOUT LIDS', 'FABRIC BINS WITHOUT LIDS 开口收纳盒（套组）', 'FABRIC BINS WITHOUT LIDS 开口收纳盒 (套组)'}，调用大模型判断...
+INFO:core.aggregator:发现不一致的值: {'59.7', '59.70'}，调用大模型判断...
+INFO:core.aggregator:所有值都是数值且数值相同 ['59.7', '59.70']，统一为第一个值
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: 59.7
+INFO:core.aggregator:发现不一致的值: {'32', '96'}，调用大模型判断...
+INFO:core.aggregator:所有值都是数值但数值不同 ['32', '96']（转换后：[32.0, 96.0]），判断为不一致
+WARNING:core.aggregator:大模型判断这些值含义不同，保持原样: {'32', '96'}
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=False, unified_value=, reason=虽然三个值都包含'DRYING RACK'，但后缀部分存在差异：'晾衣架'和'琴衣架'属于不同用途的物品，语义上不相同。因此，这些值表示不同的含义，不应统一
+。
+WARNING:core.aggregator:大模型判断这些值含义不同，保持原样: {'DRYING RACK 晾衣架', 'DRYING RACK', 'DRYING RACK 琴衣架'}
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=SHOE STORAGE BOX 收纳鞋盒, reason=两个值在语义上完全相同，均表示鞋类收纳盒。第二个值在第一个值的基础上增加了中文解释'收纳鞋盒'，使表述更完整、更规范，
+因此选择其作为统一值。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: SHOE STORAGE BOX 收纳鞋盒
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=False, unified_value=, reason=值列表中的'LOS ANGELES,USA'表示美国洛杉矶市，是一个具体的城市和国家组合；而'美国'仅表示国家名称。两者在语义上不相同，前者是具体地点，后者是
+国家概念，因此不能视为同一含义。
+WARNING:core.aggregator:大模型判断这些值含义不同，保持原样: {'LOS ANGELES,USA', '美国'}
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=False, unified_value=, reason=三个值分别表示不同的地理实体和运输方式：'NINGBO,CHINA'指中国宁波，'洛杉矶,美国'指美国洛杉矶，'BY SEA'表示海运方式。三者在语义上无关联，不表 
+示同一含义。
+WARNING:core.aggregator:大模型判断这些值含义不同，保持原样: {'NINGBO,CHINA', '洛杉矶,美国', 'BY SEA'}
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=JEWELRY STAND 首饰展架, reason=两个值在语义上相同，'JEWELRY STAND'是英文名称，'首饰展架'是其中文解释，后者为更完整、规范的表述，包含中英文双语信息，因
+此选择其作为统一值。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: JEWELRY STAND 首饰展架
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=MAKEUP SHELF 化妆品收纳架, reason=两个值在语义上相同，'MAKEUP SHELF'是英文名称，'MAKEUP SHELF 化妆品收纳架'是中英文结合的完整表述，后者包含了中文解释 
+，更完整规范，因此选择后者作为统一值。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: MAKEUP SHELF 化妆品收纳架
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=人民币, reason=人民币是中文全称，CNY是其国际标准货币代码，两者在语义上表示同一含义。根据惯例，应选择最完整、最规范的表述，因此统一为‘人民币’。        
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: 人民币
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=HANGING CLOSET ORGANIZER 收纳挂袋, reason=两个值在语义上相同，均指代同一产品。第一个值包含了英文名称和中文解释，信息更完整；第二个值仅为英文名称，缺少
+中文说明。根据规则，应选择最完整、最规范的表述作为统一值。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: HANGING CLOSET ORGANIZER 收纳挂袋
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=LAUNDRY CART 洗衣车, reason=两个值在语义上相同，'LAUNDRY CART 洗衣车'是完整表述，包含英文名称和中文解释，而'LAUNDRY CART'是其缩写形式。根据规则，应选 
+择最完整、最规范的表述作为统一值。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: LAUNDRY CART 洗衣车
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=SHOE SHELF 鞋架, reason=SHOE SHELF 鞋架 是 SHOE SHELF 的完整表述，包含中文解释，语义完全相同。前者是后者加上中文说明的完整形式，因此应统一为更完整的表
+述。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: SHOE SHELF 鞋架
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=NINGBO,CHINA, reason=所有值均表示中国，其中'CHINA'为英文国家名，'中国'为中文国家名，'NINGBO,CHINA'为宁波（中国）的完整表述。三者在语义上一致，且'NINGBO,CHINA'包含具体城市和国家信息，是最完整、最规范的表述形式。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: NINGBO,CHINA
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=METAL OPEN WARDROBE 衣柜, reason=两个值在语义上相同，'METAL OPEN WARDROBE 衣柜'是更完整、更规范的表述，包含了中文名称'衣柜'，而'METAL OPEN WARDROBE'是
+其英文缩写形式，两者表示同一物品。因此应统一为更完整的表述。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: METAL OPEN WARDROBE 衣柜
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=SHOE SHELF 鞋架, reason=两个值在语义上相同，'SHOE SHELF 鞋架'是完整表述，包含英文名称和中文解释，而'SHOE SHELF'是其缩写形式。根据判断规则，应选择最完 
+整、最规范的表述作为统一值。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: SHOE SHELF 鞋架
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=METAL OPEN WARDROBE 无纺布衣柜, reason=第二个值'METAL OPEN WARDROBE'是第一个值的简化版本，缺少中文描述部分。两者在语义上完全一致，均指代同一产品。选择
+包含完整信息（包括中文说明）的表述作为统一值更为规范和完整。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: METAL OPEN WARDROBE 无纺布衣柜
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=False, unified_value=, reason=三个值分别表示不同的实体或信息：第一个是公司全称（郑州雷德网络技术有限公司），第二个是联系方式（电话和传真），第三个是另一家公司的名称（ZIEL INTERNATIONAL CO., LIMITED）。它们在语义上不相同，且无明显关联或等价关系，无法统一为同一含义。
+WARNING:core.aggregator:大模型判断这些值含义不同，保持原样: {'ZHENGZHOU LEDREM NETWORK TECHNOLOGY CO.,LTD.', 'TEL:+86 371 68860521 FAX:+86 371 68860521', 'ZIEL INTERNATIONAL CO., LIMITED'}
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=MAKEUP SHELF 化妆品收纳架, reason=两个值在语义上相同，'MAKEUP SHELF'是英文名称，'MAKEUP SHELF 化妆品收纳架'是中英文结合的完整表述，后者更完整且规范，
+因此选择后者作为统一值。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: MAKEUP SHELF 化妆品收纳架
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=LAUNDRY HAMPER 洗衣篮, reason=两个值在语义上完全相同，'LAUNDRY HAMPER' 是英文名称，'LAUNDRY HAMPER 洗衣篮' 是英文与中文的组合表述，后者更完整、更规范 
+，因此选择其作为统一值。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: LAUNDRY HAMPER 洗衣篮
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=False, unified_value=, reason=三个值中，'DRYING RACK 晾衣架'和'DRYING RACK'语义上相近，均指晾衣架，但'DRYING RACK 琴衣架'中的'琴衣架'暗示了特定用途（如用于钢琴或乐器的衣
+架），与前两者不完全一致。因此，三者在语义上存在差异，不能视为同一含义。
+WARNING:core.aggregator:大模型判断这些值含义不同，保持原样: {'DRYING RACK 晾衣架', 'DRYING RACK', 'DRYING RACK 琴衣架'}
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=False, unified_value=, reason=第一个值是详细的地址信息，包含街道、建筑、楼层、区域、城市、省份、邮编和国家代码；第二个值是9403609990，可能为公司注册号、税号或类似编号。两
+者在语义上完全不同，一个为地理地址，另一个为数字编码，无法表示同一含义。
+WARNING:core.aggregator:大模型判断这些值含义不同，保持原样: {'No. 198-19 SONGSHAN SOUTH ROAD, DONGFANG BUILDING 7F, SUITE 701, ERQI DISTRICT, ZHENGZHOU HENAN 450000 CN', '9403609990'}
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=HANGING CLOSET ORGANIZERS 收纳挂袋（套组）, reason=三个值均表示同一产品，核心含义为‘悬挂式衣柜收纳组织器’。后两个值在前者基础上增加了中文说明‘收纳挂袋
+（套组）’，其中括号使用中文全角括号（）更符合中文规范，且整体表述更完整、更规范。因此选择该值作为统一值。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: HANGING CLOSET ORGANIZERS 收纳挂袋（套组）
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=9403609990(P/Q), reason=两个值在语义上相同，'9403609990' 是主号码，'(P/Q)' 是附加说明信息，通常用于标识类型或状态。后者是前者的完整形式，包含额外的上 
+下文信息，因此应以更完整的表述作为统一值。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: 9403609990(P/Q)
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=LAUNDRY CART 洗衣车, reason=两个值在语义上相同，'LAUNDRY CART 洗衣车'是完整表述，包含了英文名称和中文解释，而'LAUNDRY CART'是其英文缩写形式。根据规则
+，应选择最完整、最规范的表述作为统一值。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: LAUNDRY CART 洗衣车
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=SHOE STORAGE BOXES 收纳鞋盒（套组）, reason=三个值均表示同一产品，核心含义为'鞋类收纳盒套装'。第一个值为纯英文名称，第二个和第三个值在英文基础上添加了
+中文说明，其中第三个值使用全角括号（）符合中文标点规范，且与第二个值相比更符合中文书写习惯。因此选择最完整、最规范的表述作为统一值。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: SHOE STORAGE BOXES 收纳鞋盒（套组）
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=SHOE STORAGE BOX 收纳鞋盒, reason=两个值在语义上相同，'SHOE STORAGE BOX'是英文名称，'SHOE STORAGE BOX 收纳鞋盒'是英文名称加上中文解释，后者更完整、更
+规范，因此选择后者作为统一值。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: SHOE STORAGE BOX 收纳鞋盒
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=FABRIC BINS WITHOUT LIDS 开口收纳盒（套组）, reason=三个值均表示同一产品，核心信息一致：'FABRIC BINS WITHOUT LIDS'为英文名称，后两个值在基础上添加了中
+文描述'开口收纳盒（套组）'，其中括号使用全角（）与半角()的区别不影响语义。最完整、最规范的表述是包含全角括号的版本，因此选择该值作为统一值。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: FABRIC BINS WITHOUT LIDS 开口收纳盒（套组）
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=False, unified_value=, reason=三个值分别代表不同的公司实体：'ZHENGZHOU LEDREM NETWORK TECHNOLOGY CO.,LTD.'和'郑州领未网络科技有限公司'是同一公司（中文与英文名称对应），但
+'ZIEL INTERNATIONAL CO., LIMITED'是另一家完全不同的公司，其名称与前两者在语义上无关联，且无共同的商业主体或关联关系。因此，这些值不表示同一含义。
+WARNING:core.aggregator:大模型判断这些值含义不同，保持原样: {'ZHENGZHOU LEDREM NETWORK TECHNOLOGY CO.,LTD.', '郑州领未网络科技有限公司', 'ZIEL INTERNATIONAL CO., LIMITED'}
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=SHOE STORAGE BOXES 收纳鞋盒（套组）, reason=三个值均表示同一产品，语义上完全相同。'SHOE STORAGE BOXES'是英文名称，'收纳鞋盒'是中文解释，'（套组）'和'
+（套组）'为括号格式差异，其中全角括号'（）'更符合中文规范。因此选择包含完整中英文信息且使用全角括号的表述作为统一值。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: SHOE STORAGE BOXES 收纳鞋盒（套组）
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=US250660 WH-1, reason=三个值均表示同一产品编号，仅在空格和数字格式上存在差异。'US250660 WH-1'包含合理的空格分隔，符合常见命名规范；'US2506660WH-1'中缺
+少空格且多出一个'6'，为输入错误；'US250660WH-1'缺少空格，但其余部分与标准格式一致。综合判断，'US250660 WH-1'为最完整、最规范的表述，其余为格式变体或错误，语义上相同。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: US250660 WH-1
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=OTTOMAN TABLE 软包桌, reason=三个值均指向同一物品，'OTTOMAN TABLE'为英文名称，'软包桌'为中文描述，'OTTOMAN TABLE 软包桌'是中英文结合的完整表述。其中'OTTOMAN TABLE 软包桌'最完整、最规范，包含了产品类型（ottoman table）和特征（软包），因此选择其作为统一值。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: OTTOMAN TABLE 软包桌
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=US250660 WH-1, reason=三个值均表示同一产品编号，仅在空格和数字格式上存在差异。'US250660 WH-1'包含合理的空格分隔，符合常见命名规范；'US2506660WH-1'中缺
+少空格且多出一个'6'，为输入错误；'US250660WH-1'缺少空格，但其余部分与标准格式一致。综合判断，'US250660 WH-1'为最完整、最规范的表述，其余为格式变体或错误，语义上相同。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: US250660 WH-1
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=OTTOMAN TABLE 软包桌, reason=三个值均指向同一物品，'OTTOMAN TABLE'为英文名称，'软包桌'为中文描述，'OTTOMAN TABLE 软包桌'是中英文结合的完整表述。其中'OTTOMAN TABLE 软包桌'最完整、最规范，包含了产品类型（ottoman table）和特征（软包），因此选择其作为统一值。
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=US250660 WH-1, reason=三个值均表示同一产品编号，仅在空格和数字格式上存在差异。'US250660 WH-1'包含合理的空格分隔，符合常见命名规范；'US2506660WH-1'中缺
+少空格且多出一个'6'，为输入错误；'US250660WH-1'缺少空格，但其余部分与标准格式一致。综合判断，'US250660 WH-1'为最完整、最规范的表述，其余为格式变体或错误，语义上相同。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: US250660 WH-1
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=OTTOMAN TABLE 软包桌, reason=三个值均指向同一物品，'OTTOMAN TABLE'为英文名称，'软包桌'为中文描述，'OTTOMAN TABLE 软包桌'是中英文结合的完整表述。其中'OINFO:core.aggregator:判断结果: should_unify=True, unified_value=US250660 WH-1, reason=三个值均表示同一产品编号，仅在空格和数字格式上存在差异。'US250660 WH-1'包含合理的空格分隔，符合常见命名规范；'US2506660WH-1'中缺
+少空格且多出一个'6'，为输入错误；'US250660WH-1'缺少空格，但其余部分与标准格式一致。综合判断，'US250660 WH-1'为最完整、最规范的表述，其余为格式变体或错误，语义上相同。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: US250660 WH-1
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=US250660 WH-1, reason=三个值均表示同一产品编号，仅在空格和数字格式上存在差异。'US250660 WH-1'包含合理的空格分隔，符合常见命名规范；'US2506660WH-1'中缺
+少空格且多出一个'6'，为输入错误；'US250660WH-1'缺少空格，但其余部分与标准格式一致。综合判断，'US250660 WH-1'为最完整、最规范的表述，其余为格式变体或错误，语义上相同。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: US250660 WH-1
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=US250660 WH-1, reason=三个值均表示同一产品编号，仅在空格和数字格式上存在差异。'US250660 WH-1'包含合理的空格分隔，符合常见命名规范；'US2506660WH-1'中缺
+少空格且多出一个'6'，为输入错误；'US250660WH-1'缺少空格，但其余部分与标准格式一致。综合判断，'US250660 WH-1'为最完整、最规范的表述，其余为格式变体或错误，语义上相同。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: US250660 WH-1
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=OTTOMAN TABLE 软包桌, reason=三个值均指向同一物品，'OTTOMAN TABLE'为英文名称，'软包桌'为中文描述，'OTTOMAN TABLE 软包桌'是中英文结合的完整表述。其中'OINFO:core.aggregator:判断结果: should_unify=True, unified_value=US250660 WH-1, reason=三个值均表示同一产品编号，仅在空格和数字格式上存在差异。'US250660 WH-1'包含合理的空格分隔，符合常见命名规范；'US2506660WH-1'中缺
+少空格且多出一个'6'，为输入错误；'US250660WH-1'缺少空格，但其余部分与标准格式一致。综合判断，'US250660 WH-1'为最完整、最规范的表述，其余为格式变体或错误，语义上相同。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: US250660 WH-1
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=US250660 WH-1, reason=三个值均表示同一产品编号，仅在空格和数字格式上存在差异。'US250660 WH-1'包含合理的空格分隔，符合常见命名规范；'US2506660WH-1'中缺
+少空格且多出一个'6'，为输入错误；'US250660WH-1'缺少空格，但其余部分与标准格式一致。综合判断，'US250660 WH-1'为最完整、最规范的表述，其余为格式变体或错误，语义上相同。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: US250660 WH-1
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=US250660 WH-1, reason=三个值均表示同一产品编号，仅在空格和数字格式上存在差异。'US250660 WH-1'包含合理的空格分隔，符合常见命名规范；'US2506660WH-1'中缺
+少空格且多出一个'6'，为输入错误；'US250660WH-1'缺少空格，但其余部分与标准格式一致。综合判断，'US250660 WH-1'为最完整、最规范的表述，其余为格式变体或错误，语义上相同。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: US250660 WH-1
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=US250660 WH-1, reason=三个值均表示同一产品编号，仅在空格和数字格式上存在差异。'US250660 WH-1'包含合理的空格分隔，符合常见命名规范；'US2506660WH-1'中缺
+少空格且多出一个'6'，为输入错误；'US250660WH-1'缺少空格，但其余部分与标准格式一致。综合判断，'US250660 WH-1'为最完整、最规范的表述，其余为格式变体或错误，语义上相同。
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=US250660 WH-1, reason=三个值均表示同一产品编号，仅在空格和数字格式上存在差异。'US250660 WH-1'包含合理的空格分隔，符合常见命名规范；'US2506660WH-1'中缺
+少空格且多出一个'6'，为输入错误；'US250660WH-1'缺少空格，但其余部分与标准格式一致。综合判断，'US250660 WH-1'为最完整、最规范的表述，其余为格式变体或错误，语义上相同。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: US250660 WH-1
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=US250660 WH-1, reason=三个值均表示同一产品编号，仅在空格和数字格式上存在差异。'US250660 WH-1'包含合理的空格分隔，符合常见命名规范；'US2506660WH-1'中缺
+少空格且多出一个'6'，为输入错误；'US250660WH-1'缺少空格，但其余部分与标准格式一致。综合判断，'US250660 WH-1'为最完整、最规范的表述，其余为格式变体或错误，语义上相同。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: US250660 WH-1
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=US250660 WH-1, reason=三个值均表示同一产品编号，仅在空格和数字格式上存在差异。'US250660 WH-1'包含合理的空格分隔，符合常见命名规范；'US2506660WH-1'中缺
+少空格且多出一个'6'，为输入错误；'US250660WH-1'缺少空格，但其余部分与标准格式一致。综合判断，'US250660 WH-1'为最完整、最规范的表述，其余为格式变体或错误，语义上相同。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: US250660 WH-1
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=US250660 WH-1, reason=三个值均表示同一产品编号，仅在空格和数字格式上存在差异。'US250660 WH-1'包含合理的空格分隔，符合常见命名规范；'US2506660WH-1'中缺
+少空格且多出一个'6'，为输入错误；'US250660WH-1'缺少空格，但其余部分与标准格式一致。综合判断，'US250660 WH-1'为最完整、最规范的表述，其余为格式变体或错误，语义上相同。
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=US250660 WH-1, reason=三个值均表示同一产品编号，仅在空格和数字格式上存在差异。'US250660 WH-1'包含合理的空格分隔，符合常见命名规范；'US2506660WH-1'中缺
+少空格且多出一个'6'，为输入错误；'US250660WH-1'缺少空格，但其余部分与标准格式一致。综合判断，'US250660 WH-1'为最完整、最规范的表述，其余为格式变体或错误，语义上相同。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: US250660 WH-1
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=US250660 WH-1, reason=三个值均表示同一产品编号，仅在空格和数字格式上存在差异。'US250660 WH-1'包含合理的空格分隔，符合常见命名规范；'US2506660WH-1'中缺
+少空格且多出一个'6'，为输入错误；'US250660WH-1'缺少空格，但其余部分与标准格式一致。综合判断，'US250660 WH-1'为最完整、最规范的表述，其余为格式变体或错误，语义上相同。
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=US250660 WH-1, reason=三个值均表示同一产品编号，仅在空格和数字格式上存在差异。'US250660 WH-1'包含合理的空格分隔，符合常见命名规范；'US2506660WH-1'中缺
+少空格且多出一个'6'，为输入错误；'US250660WH-1'缺少空格，但其余部分与标准格式一致。综合判断，'US250660 WH-1'为最完整、最规范的表述，其余为格式变体或错误，语义上相同。
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=US250660 WH-1, reason=三个值均表示同一产品编号，仅在空格和数字格式上存在差异。'US250660 WH-1'包含合理的空格分隔，符合常见命名规范；'US2506660WH-1'中缺
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=US250660 WH-1, reason=三个值均表示同一产品编号，仅在空格和数字格式上存在差异。'US250660 WH-1'包含合理的空格分隔，符合常见命名规范；'US2506660WH-1'中缺
+少空格且多出一个'6'，为输入错误；'US250660WH-1'缺少空格，但其余部分与标准格式一致。综合判断，'US250660 WH-1'为最完整、最规范的表述，其余为格式变体或错误，语义上相同。
+少空格且多出一个'6'，为输入错误；'US250660WH-1'缺少空格，但其余部分与标准格式一致。综合判断，'US250660 WH-1'为最完整、最规范的表述，其余为格式变体或错误，语义上相同。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: US250660 WH-1
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: US250660 WH-1
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=OTTOMAN TABLE 软包桌, reason=三个值均指向同一物品，'OTTOMAN TABLE'为英文名称，'软包桌'为中文描述，'OTTOMAN TABLE 软包桌'是中英文结合的完整表述。其中'OTTOMAN TABLE 软包桌'最完整、最规范，包含了产品类型（ottoman table）和特征（软包），因此选择其作为统一值。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: OTTOMAN TABLE 软包桌
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:core.aggregator:判断结果: should_unify=True, unified_value=STACKABLE FABRIC BINS 坦克收纳盒（套组）, reason=三个值在语义上均表示同一产品，'STACKABLE FABRIC BINS'为英文名称，后两个值在基础上增加了中文说明'坦克 
+收纳盒（套组）'，其中括号格式差异（全角与半角）不影响语义。第三个值使用了半角括号，而第二个使用了全角括号，但均为常见中文标点形式，不影响理解。因此三者语义相同，选择最完整且规范的表述作为统一值。
+INFO:core.aggregator:大模型判断这些值是同一含义，统一为: STACKABLE FABRIC BINS 坦克收纳盒（套组）
+INFO:__main__:一致性检查完成
+INFO:__main__:步骤 5/5: 后处理（生成parsedValue、坐标转换）...
+INFO:__main__:后处理完成
+INFO:__main__:保存结果到 ./output_result.json...
+INFO:__main__:结果保存成功
+INFO:__main__:============================================================
+INFO:__main__:报关文档识别系统完成
+INFO:__main__:============================================================
+INFO:__main__:识别结果统计：
+INFO:__main__:  表头字段数: 25
+INFO:__main__:  商品数量: 21
