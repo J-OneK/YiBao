@@ -17,7 +17,7 @@ logging.basicConfig(level=getattr(logging, settings.LOG_LEVEL))
 logger = logging.getLogger(__name__)
 
 
-async def recognize_images_batch(image_infos: List[ImageInfo], prompts: List[str]) -> List[Optional[ExtractionResult]]:
+async def recognize_images_batch(image_infos: List[ImageInfo], prompts: List[str], is_mainfactor: bool) -> List[Optional[ExtractionResult]]:
     """
     批量异步识别多张图片
     
@@ -30,11 +30,15 @@ async def recognize_images_batch(image_infos: List[ImageInfo], prompts: List[str
     """
     tasks = []
     for image_info, prompt in zip(image_infos, prompts):
-        task = recognize_image_async(image_info, prompt)
+        task = recognize_image_async(image_info, prompt, is_mainfactor)
         tasks.append(task)
     
     results = await asyncio.gather(*tasks, return_exceptions=True)
     
+    # 处理主申报要素识别结果
+    if is_mainfactor:
+        return [result for result in results if result is not None]
+
     # 处理异常结果
     processed_results = []
     for i, result in enumerate(results):
@@ -47,7 +51,7 @@ async def recognize_images_batch(image_infos: List[ImageInfo], prompts: List[str
     return processed_results
 
 
-async def recognize_image_async(image_info: ImageInfo, prompt: str) -> Optional[ExtractionResult]:
+async def recognize_image_async(image_info: ImageInfo, prompt: str, is_mainfactor: bool) -> Optional[ExtractionResult]:
     """
     异步识别单张图片
     
@@ -91,10 +95,13 @@ async def recognize_image_async(image_info: ImageInfo, prompt: str) -> Optional[
             # 获取返回的文本
             response_text = completion.choices[0].message.content
             logger.debug(f"模型返回: {response_text[:200]}...")
-            
+            print(f"[DEBUG]模型输出结果: {response_text}")
             # 解析JSON
-            parsed_data = json_utils.parse_and_validate(response_text)
-            
+            if is_mainfactor:
+                parsed_data = json_utils.parse_mainfactor_json(response_text)
+            else:
+                parsed_data = json_utils.parse_and_validate(response_text)
+
             if parsed_data is None:
                 logger.warning(f"JSON解析失败，第 {attempt + 1} 次尝试")
                 if attempt < settings.MAX_RETRIES - 1:
@@ -103,6 +110,10 @@ async def recognize_image_async(image_info: ImageInfo, prompt: str) -> Optional[
                     logger.error(f"图片 {image_info.image_id} 识别失败，已达最大重试次数")
                     return None
             
+            if is_mainfactor:
+                # 如果是申报要素识别，直接返回结果
+                return parsed_data
+
             # 转换为ExtractionResult对象，同时进行字段映射和过滤
             result = convert_to_extraction_result(
                 parsed_data,

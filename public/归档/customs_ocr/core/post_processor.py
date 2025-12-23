@@ -8,6 +8,7 @@
 import logging
 from typing import Dict, List
 from .models import ImageInfo
+from .mainfactor_utils import normalize_values
 
 logger = logging.getLogger(__name__)
 
@@ -116,3 +117,41 @@ def normalize_to_real(normalized_coord: float, actual_size: int) -> int:
         实际坐标
     """
     return int(normalized_coord * actual_size / 999)
+
+def process_mainfactors(results: List[Dict]) -> List[Dict]:
+    """
+    处理申报要素识别结果，提取有效的mainfactor数据
+    去除掉无效内容后选取内容最丰富（即最长）的结果
+    Args:
+        results: 识别结果列表
+        
+    Returns:
+        有效的mainfactor数据列表
+    """
+    best_results = {}
+
+    # 预定义无效集合
+    ignore_set = {'null', '0', ''}
+
+    for entry in results:
+        for model in entry.get('gmodel', []):
+            code = model.get('codeTs')
+            # 归一化商品编码
+            code = normalize_values([code])[0]
+            mf = model.get('mainfactors')
+            if not code or not mf:
+                continue
+
+            current_score = 0
+            for part in mf.split('|'):
+                p = part.strip()
+                if p and p not in ignore_set:
+                    current_score += len(p)
+            clean_item = {
+                'codeTs': code, 
+                'mainfactors': mf
+            }
+            if code not in best_results or current_score > best_results[code][0]:
+                best_results[code] = (current_score, clean_item)
+    
+    return [item[1] for item in best_results.values()]

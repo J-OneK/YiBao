@@ -9,11 +9,12 @@ import asyncio
 from pathlib import Path
 
 from core.data_loader import load_input_data
-from core.prompt_manager import generate_prompt
+from core.prompt_manager import generate_prompt, generate_mainfactor_prompt
 from core.ocr_service import recognize_images_batch
 from core.aggregator import aggregate_results, check_consistency_and_unify_async
-from core.post_processor import process_final_output
+from core.post_processor import process_final_output, process_mainfactors
 from config import settings
+from core.mainfactor_utils import get_codets_values, normalize_values, get_mainfactor
 
 # 配置日志
 logging.basicConfig(
@@ -44,7 +45,7 @@ async def main_async(input_json_path: str, output_json_path: str):
         # 2. 并发识别所有图片
         logger.info("步骤 2/5: 并发调用视觉大模型识别图片...")
         prompts = [generate_prompt(img.att_type_code) for img in image_infos]
-        results = await recognize_images_batch(image_infos, prompts)
+        results = await recognize_images_batch(image_infos, prompts, is_mainfactor=False)
         
         # 过滤掉识别失败的结果
         valid_results = [r for r in results if r is not None]
@@ -91,22 +92,81 @@ async def main_async(input_json_path: str, output_json_path: str):
         logger.error(f"程序执行出错: {str(e)}", exc_info=True)
         sys.exit(1)
 
+async def main_factor_async(input_json_path: str, output_json_path: str, OCR_json_path: str):
+    """
+    异步申报要素主函数
+    
+    Args:
+        input_json_path: 输入JSON文件路径
+        output_json_path: 输出JSON文件路径
+    """
+    try:
+        logger.info("=" * 60)
+        logger.info("报关文档申报要素识别启动（异步并发模式）")
+        logger.info("=" * 60)
+        
+        # 前置：提取申报要素字段
+        hsCodes = normalize_values(get_codets_values(input_json_path))
+        if not hsCodes:
+            logger.error("未能从输入文件中提取到任何商品编号，程序终止")
+            return
+        mainfactors = []
+        logger.info(f"提取到 {len(hsCodes)} 个商品编号，分别是：{hsCodes}")
+        for hs in hsCodes:
+            mainfactor = get_mainfactor(hs)
+            mainfactors.append(mainfactor)
+        mainfactors = [mainfactor for mainfactor in mainfactors if mainfactor]
+        logger.info(f"成功提取 {len(mainfactors)} 个申报要素，分别是：{mainfactors}")
 
-def main(input_json_path: str, output_json_path: str):
+        # 1. 加载输入数据
+        logger.info("步骤 1/5: 加载输入数据...")
+        image_infos = load_input_data(OCR_json_path)
+        logger.info(f"成功加载 {len(image_infos)} 张图片信息")
+        
+        # 2. 并发识别所有图片
+        logger.info("步骤 2/5: 并发调用视觉大模型识别图片...")
+        prompts = [generate_mainfactor_prompt(hsCodes, mainfactors) for i in range(len(image_infos))]
+        results = await recognize_images_batch(image_infos, prompts, is_mainfactor=True)
+
+        # 3. 过滤掉识别失败的结果
+        valid_results = [r for r in results if r is not None]
+        print(f"未处理结果：{valid_results}")
+
+        # 4. 处理申报要素识别结果
+        valid_results = process_mainfactors(valid_results)
+        
+        logger.info(f"成功识别 {len(valid_results)}/{len(image_infos)} 张图片")
+
+        print(f"识别结果：{valid_results}")
+
+        # 5. 保存结果
+        logger.info(f"保存结果到 {output_json_path}...")
+        with open(output_json_path, 'w', encoding='utf-8') as f:
+            json.dump(valid_results, f, ensure_ascii=False, indent=2)
+        logger.info("结果保存成功")
+        
+    except Exception as e:
+        logger.error(f"程序执行出错: {str(e)}", exc_info=True)
+        sys.exit(1)
+
+
+def main(input_json_path: str, output_json_path: str, OCR_json_path: str):
     """
     主函数（同步包装器）
     
     Args:
         input_json_path: 输入JSON文件路径
         output_json_path: 输出JSON文件路径
+        OCR_json_path: OCR JSON文件路径
     """
-    asyncio.run(main_async(input_json_path, output_json_path))
-
+    # asyncio.run(main_async(OCR_json_path, input_json_path))
+    asyncio.run(main_factor_async(input_json_path, output_json_path, OCR_json_path))
 
 if __name__ == "__main__":
     # 默认路径
-    input_path = "../OCR识别报文.json"
-    output_path = "./output_result.json"
+    input_path = "public/归档/customs_ocr/output.json"
+    output_path = "./output_mainfactor.json"
+    OCR_json_path = "YiBao/jyk/test_qwen_api/OCR识别报文.json"
     
     # 如果提供了命令行参数，使用命令行参数
     if len(sys.argv) > 1:
@@ -115,9 +175,9 @@ if __name__ == "__main__":
         output_path = sys.argv[2]
     
     # 检查输入文件是否存在
-    if not Path(input_path).exists():
-        logger.error(f"输入文件不存在: {input_path}")
-        logger.info("用法: python main.py [输入JSON路径] [输出JSON路径]")
+    if not Path(OCR_json_path).exists():
+        logger.error(f"输入文件不存在: {OCR_json_path}")
+        logger.info("用法: python main.py [输入JSON路径] [输出JSON路径] [OCR JSON路径]")
         sys.exit(1)
     
-    main(input_path, output_path)
+    main(input_path, output_path, OCR_json_path)
