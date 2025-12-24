@@ -158,3 +158,4 @@ def generate_mainfactor_prompt(hsCodes: list, mainfactors: list) -> str:
 请开始识别！
 """
     return prompt
+    # return system_prompt + f"\n 申报要素定义：{mainfactor}请严格按上述定义的顺序提取值。如果是品牌类型或享惠情况，请转为代码数字。若在图片中未识别到相关内容，则不输出任何内容。"

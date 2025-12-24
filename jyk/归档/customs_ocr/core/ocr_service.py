@@ -34,7 +34,7 @@ async def recognize_images_batch(image_infos: List[ImageInfo], prompts: List[str
         tasks.append(task)
     
     results = await asyncio.gather(*tasks, return_exceptions=True)
-    
+
     # 处理主申报要素识别结果
     if is_mainfactor:
         return [result for result in results if result is not None]
@@ -89,13 +89,18 @@ async def recognize_image_async(image_info: ImageInfo, prompt: str, is_mainfacto
                             }
                         ]
                     }
-                ]
+                ],
+                extra_body={
+                    'enable_thinking': False,
+                    "thinking_budget": 81920
+                },
+
             )
             
             # 获取返回的文本
             response_text = completion.choices[0].message.content
             logger.debug(f"模型返回: {response_text[:200]}...")
-            print(f"[DEBUG]模型输出结果: {response_text}")
+            # logger.info(response_text)
             # 解析JSON
             if is_mainfactor:
                 parsed_data = json_utils.parse_mainfactor_json(response_text)
@@ -167,8 +172,7 @@ def convert_to_extraction_result(data: dict, image_id: str, att_type_code: int) 
             key_desc=key_desc,
             value=str(item['value']),
             pixel=item['pixel'],
-            image_id=image_id,
-            att_type_code=att_type_code
+            image_id=image_id
         )
         pre_dec_head.append(field)
     
@@ -195,8 +199,7 @@ def convert_to_extraction_result(data: dict, image_id: str, att_type_code: int) 
                 key_desc=key_desc,
                 value=str(item['value']),
                 pixel=item['pixel'],
-                image_id=image_id,
-                att_type_code=att_type_code
+                image_id=image_id
             )
             product.append(field)
         

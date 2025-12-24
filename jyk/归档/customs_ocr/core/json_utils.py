@@ -6,6 +6,25 @@ import json
 import re
 from typing import Dict, Optional
 
+def parse_mainfactor_json(json_str: str) -> Optional[Dict]:
+    """
+    解析申报要素的JSON字段
+    """
+    # 尝试去除markdown标记
+    cleaned = remove_markdown_markers(json_str)
+    # print(f"[DEBUG]模型输出部分: {cleaned}")
+    extracted = extract_json(json_str)
+    
+    if extracted:
+        try:
+            data = json.loads(extracted)
+            return data
+        except json.JSONDecodeError:
+            pass
+    
+    return None
+
+
 
 def parse_and_validate(json_str: str) -> Optional[Dict]:
     """
@@ -158,21 +177,3 @@ def validate_field_item(item: Dict) -> bool:
             return False
     
     return True
-
-def parse_mainfactor_json(json_str: str) -> Optional[Dict]:
-    """
-    解析申报要素的JSON字段
-    """
-    # 尝试去除markdown标记
-    cleaned = remove_markdown_markers(json_str)
-    # print(f"[DEBUG]模型输出部分: {cleaned}")
-    extracted = extract_json(json_str)
-    
-    if extracted:
-        try:
-            data = json.loads(extracted)
-            return data
-        except json.JSONDecodeError:
-            pass
-    
-    return None
