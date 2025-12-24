@@ -57,21 +57,15 @@ emb_query = encode(query)
 
 # ===== 4. 相似度计算 =====
 
-# 4.1 方式一：余弦相似度（最推荐）
+# 余弦相似度
 cos_water = F.cosine_similarity(emb_query, emb_water)
 cos_air = F.cosine_similarity(emb_query, emb_air)
 cos_land = F.cosine_similarity(emb_query, emb_land)
 
-# 4.2 方式二：归一化后矩阵乘（等价于 cosine）
+# 矩阵乘
 dot_water = emb_query @ emb_water.T
 dot_air = emb_query @ emb_air.T
 dot_land = emb_query @ emb_land.T
-
-# 4.3 方式三：未归一化点积（一般不推荐，仅作对比）
-emb_query_raw = encode(query, normalize=False)
-emb_air_raw = encode(air, normalize=False)
-
-raw_dot = emb_query_raw @ emb_air_raw.T
 
 
 print("=== Cosine similarity ===")
@@ -83,6 +77,3 @@ print("\n=== Normalized dot product ===")
 print("water:", dot_water.item())
 print("air:", dot_air.item())
 print("land:", dot_land.item())
-
-print("\n=== Raw dot product (not recommended) ===")
-print("query · air:", raw_dot.item())
