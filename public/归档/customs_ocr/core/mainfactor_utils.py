@@ -6,31 +6,30 @@ import hashlib
 
 
 # ------------------------------------------从第一轮结果得到所有商品编号------------------------------------------
-def get_codets_values(json_file):
+def get_codets_values(data_dict):
     """
-    从output.json中提取所有codeTs字段的parsedValue值列表
+    从第一轮识别结果dict中提取所有codeTs字段的parsedValue值列表
     """
     values = []
     try:
-        with open(json_file, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-        
-        # 遍历 preDecList 中的每一行商品
-        # preDecList 是一个二维列表: [ [商品1字段...], [商品2字段...] ]
-        for row in data.get("preDecList", []):
-            for field in row:
-                # 找到 key 为 codeTs 的字段
-                if field.get("key") == "codeTs":
-                    # 提取 parsedValue
-                    val = field.get("parsedValue")
-                    if val:
-                        values.append(val)
-                    break # 找到当前行的 codeTs 后跳出内层循环，进入下一行
-                    
+        # 1. 检查 preDecList 是否存在
+        if 'preDecList' not in data_dict:
+            return None
+    
+        # 2. 遍历外层列表（代表每一行商品）
+        for row in data_dict['preDecList']:
+            # 3. 遍历内层列表（代表行内的具体字段）
+            for item in row:
+                # 4. 找到 key 为 'codeTs' 的字典
+                if item.get('key') == 'codeTs':
+                    # 5. 获取 sourceList 中的值
+                    source_list = item.get('sourceList', [])
+                    if source_list:
+                        # 返回第一个元素的 value 值
+                        values.append(source_list[0].get('value'))
+        return values               
     except Exception as e:
-        print(f"读取出错: {e}")
-        
-    return values
+        print(f"读取出错: {e}") 
 
 def normalize_values(values):
     """
