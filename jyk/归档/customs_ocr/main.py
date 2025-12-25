@@ -23,6 +23,8 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+total_steps = 6
+
 
 async def main_async(input_json_path: str, output_json_path: str):
     """
@@ -38,12 +40,12 @@ async def main_async(input_json_path: str, output_json_path: str):
         logger.info("=" * 60)
         
         # 1. 加载输入数据
-        logger.info("步骤 1/5: 加载输入数据...")
+        logger.info(f"步骤 1/{total_steps}: 加载输入数据...")
         image_infos = load_input_data(input_json_path)
         logger.info(f"成功加载 {len(image_infos)} 张图片信息")
         
         # 2. 并发识别所有图片
-        logger.info("步骤 2/5: 并发调用视觉大模型识别图片...")
+        logger.info(f"步骤 2/{total_steps}: 并发调用视觉大模型识别图片...")
         prompts = [generate_prompt(img.att_type_code) for img in image_infos]
         results = await recognize_images_batch(image_infos, prompts, is_mainfactor=False)
 
@@ -55,19 +57,48 @@ async def main_async(input_json_path: str, output_json_path: str):
             return
         
         logger.info(f"成功识别 {len(valid_results)}/{len(image_infos)} 张图片")
+
+        # print(f"未处理结果：{valid_results}")
         
         # 3. 聚合多图片识别结果
-        logger.info("步骤 3/5: 聚合多图片识别结果...")
+        logger.info(f"步骤 3/{total_steps}: 聚合多图片识别结果...")
         aggregated_data = aggregate_results(valid_results)
         logger.info("聚合完成")
         
-        # 4. 异步检查一致性并统一
-        logger.info("步骤 4/5: 并发检查字段一致性...")
+        # print(f"聚合结果：{aggregated_data}")
+
+        # 4. 根据聚合结果提取商品编号识别申报要素
+        logger.info(f"步骤 4/{total_steps}: 并发调用视觉大模型识别图片...")
+        hsCodes = normalize_values(get_codets_values(aggregated_data))
+        if not hsCodes:
+            logger.error("未能从输入文件中提取到任何商品编号，程序终止")
+            return
+        mainfactors = []
+        logger.info(f"提取到 {len(hsCodes)} 个商品编号，分别是：{hsCodes}")
+        for hs in hsCodes:
+            mainfactor = get_mainfactor(hs)
+            mainfactors.append(mainfactor)
+        mainfactors = [mainfactor for mainfactor in mainfactors if mainfactor]
+        logger.info(f"成功提取 {len(mainfactors)} 个申报要素，分别是：{mainfactors}")
+
+        prompts = [generate_mainfactor_prompt(hsCodes, mainfactors) for i in range(len(image_infos))]
+        results = await recognize_images_batch(image_infos, prompts, is_mainfactor=True)
+
+        # 过滤掉识别失败的结果
+        valid_results = [r for r in results if r is not None]
+        print(f"未处理结果：{valid_results}")
+        # 处理申报要素识别结果
+        valid_results = process_mainfactors(valid_results)
+
+        print(f"申报要素识别结果：{valid_results}")
+
+        # 5. 异步检查一致性并统一
+        logger.info(f"步骤 5/{total_steps}: 并发检查字段一致性...")
         aggregated_data = await check_consistency_and_unify_async(aggregated_data)
         logger.info("一致性检查完成")
-        
-        # 5. 后处理：生成parsedValue、坐标转换
-        logger.info("步骤 5/5: 后处理（生成parsedValue、坐标转换）...")
+
+        # 6. 后处理：生成parsedValue、坐标转换
+        logger.info(f"步骤 6/{total_steps}: 后处理（生成parsedValue、坐标转换）...")
         final_output = process_final_output(aggregated_data, image_infos)
         logger.info("后处理完成")
         
@@ -149,7 +180,7 @@ async def main_factor_async(input_json_path: str, output_json_path: str, OCR_jso
         logger.error(f"程序执行出错: {str(e)}", exc_info=True)
         sys.exit(1)
 
-def main(input_json_path: str, output_json_path: str, OCR_json_path: str):
+def main(input_json_path: str, output_json_path: str):
     """
     主函数（同步包装器）
     
@@ -158,15 +189,14 @@ def main(input_json_path: str, output_json_path: str, OCR_json_path: str):
         output_json_path: 输出JSON文件路径
         OCR_json_path: OCR JSON文件路径
     """
-    # asyncio.run(main_async(OCR_json_path, input_json_path))
-    asyncio.run(main_factor_async(input_json_path, output_json_path, OCR_json_path))
+    asyncio.run(main_async(input_json_path, output_json_path))
+    # asyncio.run(main_factor_async(input_json_path, output_json_path, OCR_json_path))
 
 
 if __name__ == "__main__":
     # 默认路径
-    input_path = "/Users/1k/code/python/归档/customs_ocr/output_multi.json"
-    output_path = "/Users/1k/code/python/归档/customs_ocr/output_mainfactor_multi.json"
-    OCR_json_path = "/Users/1k/code/python/test.json"
+    input_path = "/Users/1k/code/YiBao/jyk/归档/customs_ocr/OCR识别报文.json"
+    output_path = "jyk/归档/customs_ocr/output_result.json"
 
     # 如果提供了命令行参数，使用命令行参数
     if len(sys.argv) > 1:
@@ -180,4 +210,4 @@ if __name__ == "__main__":
         logger.info("用法: python main.py [输入JSON路径] [输出JSON路径]")
         sys.exit(1)
 
-    main(input_path, output_path, OCR_json_path)
+    main(input_path, output_path)

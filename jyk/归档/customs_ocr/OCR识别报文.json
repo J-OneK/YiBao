@@ -1,0 +1,2396 @@
+{
+    "head": {
+        "signInfo": "",
+        "receiptType": 0,
+        "bizCode": "DUB00113",
+        "appId": "ALIYUN01",
+        "bizId": "E67b6b9d13380c240ff088e24",
+        "resultCode": "0",
+        "msgId": "23577097",
+        "resultMessage": "识别成功",
+        "version": "1.0",
+        "timestampStr": "2025-02-20 13:13:35",
+        "receiveId": "EBAO0001"
+    },
+    "content": {
+        "extend": {
+            "plNetWtList": [
+                {
+                    "processBitMap": "0",
+                    "sourceList": [
+                        {
+                            "attType": "PackingList",
+                            "imageId": 2,
+                            "transformValue": "19101.60",
+                            "sepValueList": [
+                                {
+                                    "endy": 1158,
+                                    "endx": 1397,
+                                    "originalValue": "19101.60",
+                                    "starty": 1131,
+                                    "startx": 1227
+                                }
+                            ],
+                            "originalValue": "19101.60",
+                            "processBitMap": 0,
+                            "creditLevel": 0.99,
+                            "axisY": 1131,
+                            "sepValue": "19101.60",
+                            "axisX": 1227,
+                            "width": 170,
+                            "attTypeCode": 3,
+                            "height": 27
+                        }
+                    ],
+                    "parsedValue": "19101.60 KGS",
+                    "source_image": 2,
+                    "normalizedValue": "19101.60",
+                    "keyDesc": "装箱单商品净重",
+                    "value": "19101.60",
+                    "key": "plNetWt"
+                }
+            ],
+            "inAmountList": [
+                {
+                    "processBitMap": "0",
+                    "sourceList": [
+                        {
+                            "attType": "Invoice",
+                            "imageId": 1,
+                            "transformValue": "202071.94",
+                            "sepValueList": [
+                                {
+                                    "endy": 1195,
+                                    "endx": 1576,
+                                    "originalValue": "202071.94",
+                                    "starty": 1165,
+                                    "startx": 1408
+                                }
+                            ],
+                            "originalValue": "202071.94",
+                            "processBitMap": 0,
+                            "creditLevel": 0.99,
+                            "axisY": 1165,
+                            "sepValue": "202071.94",
+                            "axisX": 1408,
+                            "width": 168,
+                            "attTypeCode": 2,
+                            "height": 30
+                        }
+                    ],
+                    "parsedValue": "￥202,071.94",
+                    "source_image": 1,
+                    "normalizedValue": "202071.94",
+                    "keyDesc": "发票商品总价",
+                    "value": "202071.94",
+                    "key": "inAmount"
+                }
+            ],
+            "contrAmountList": [
+                {
+                    "processBitMap": "0",
+                    "sourceList": [
+                        {
+                            "attType": "Contract",
+                            "imageId": 4,
+                            "transformValue": "202071.94",
+                            "sepValueList": [
+                                {
+                                    "endy": 828,
+                                    "endx": 1442,
+                                    "originalValue": "202071.94",
+                                    "starty": 797,
+                                    "startx": 1262
+                                }
+                            ],
+                            "originalValue": "202071.94",
+                            "processBitMap": 0,
+                            "creditLevel": 0.99,
+                            "axisY": 797,
+                            "sepValue": "202071.94",
+                            "axisX": 1262,
+                            "width": 180,
+                            "attTypeCode": 1,
+                            "height": 31
+                        }
+                    ],
+                    "parsedValue": "￥202,071.94",
+                    "source_image": 4,
+                    "normalizedValue": "202071.94",
+                    "keyDesc": "合同商品总价",
+                    "value": "202071.94",
+                    "key": "contrAmount"
+                }
+            ]
+        },
+        "nlpRes": "http://smartebao-dev-ocr.oss-cn-hangzhou.aliyuncs.com/nlp/res/E67b6b9d13380c240ff088e24_nlp_res_url.json",
+        "preDecHead": [
+            {
+                "processBitMap": "0",
+                "sourceList": [
+                    {
+                        "attType": "Declaration",
+                        "imageId": 3,
+                        "transformValue": "否",
+                        "sepValueList": [
+                            {
+                                "endy": 1437,
+                                "endx": 304,
+                                "originalValue": "否",
+                                "starty": 1404,
+                                "startx": 79
+                            }
+                        ],
+                        "originalValue": "否",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "否",
+                        "processBitMap": "0",
+                        "creditLevel": 0.99,
+                        "axisY": 1404,
+                        "sepValue": "否",
+                        "axisX": 79,
+                        "width": 225,
+                        "attTypeCode": 4,
+                        "height": 33
+                    }
+                ],
+                "parsedValue": "特殊关系确认:否",
+                "source_image": 3,
+                "originalValue": "否",
+                "extractFrom": "nlp",
+                "normalizedValue": "否",
+                "keyDesc": "特殊关系确认",
+                "value": "否",
+                "key": "promiseItems1"
+            },
+            {
+                "processBitMap": "0",
+                "sourceList": [
+                    {
+                        "attType": "Declaration",
+                        "imageId": 3,
+                        "transformValue": "否",
+                        "sepValueList": [
+                            {
+                                "endy": 1438,
+                                "endx": 581,
+                                "originalValue": "否",
+                                "starty": 1404,
+                                "startx": 356
+                            }
+                        ],
+                        "originalValue": "否",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "否",
+                        "processBitMap": "0",
+                        "creditLevel": 0.99,
+                        "axisY": 1404,
+                        "sepValue": "否",
+                        "axisX": 356,
+                        "width": 225,
+                        "attTypeCode": 4,
+                        "height": 34
+                    }
+                ],
+                "parsedValue": "价格影响确认:否",
+                "source_image": 3,
+                "originalValue": "否",
+                "extractFrom": "nlp",
+                "normalizedValue": "否",
+                "keyDesc": "价格影响确认",
+                "value": "否",
+                "key": "promiseItems2"
+            },
+            {
+                "processBitMap": "0",
+                "sourceList": [
+                    {
+                        "attType": "Declaration",
+                        "imageId": 3,
+                        "transformValue": "否",
+                        "sepValueList": [
+                            {
+                                "endy": 1438,
+                                "endx": 985,
+                                "originalValue": "否",
+                                "starty": 1403,
+                                "startx": 647
+                            }
+                        ],
+                        "originalValue": "否",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "否",
+                        "processBitMap": "0",
+                        "creditLevel": 0.99,
+                        "axisY": 1403,
+                        "sepValue": "否",
+                        "axisX": 647,
+                        "width": 338,
+                        "attTypeCode": 4,
+                        "height": 35
+                    }
+                ],
+                "parsedValue": "支付特许权使用费确认:否",
+                "source_image": 3,
+                "originalValue": "否",
+                "extractFrom": "nlp",
+                "normalizedValue": "否",
+                "keyDesc": "支付特许权使用费确认",
+                "value": "否",
+                "key": "promiseItems3"
+            },
+            {
+                "processBitMap": "0",
+                "sourceList": [
+                    {
+                        "attType": "Declaration",
+                        "imageId": 3,
+                        "transformValue": "OOO\"ARKNIKA\"",
+                        "sepValueList": [
+                            {
+                                "endy": 323,
+                                "endx": 485,
+                                "originalValue": "OOO\"ARKNIKA\"",
+                                "starty": 296,
+                                "startx": 264
+                            }
+                        ],
+                        "originalValue": "OOO\"ARKNIKA\"",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "OOO\"ARKNIKA\"",
+                        "processBitMap": "0",
+                        "creditLevel": 0.99,
+                        "axisY": 296,
+                        "sepValue": "OOO\"ARKNIKA\"",
+                        "axisX": 264,
+                        "width": 221,
+                        "attTypeCode": 4,
+                        "height": 27
+                    },
+                    {
+                        "attType": "Contract",
+                        "imageId": 4,
+                        "transformValue": "OOO \"ARKNIKA\"",
+                        "sepValueList": [
+                            {
+                                "endy": 399,
+                                "endx": 478,
+                                "originalValue": "OOO \"ARKNIKA\"",
+                                "starty": 370,
+                                "startx": 240
+                            }
+                        ],
+                        "originalValue": "OOO \"ARKNIKA\"",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "OOO \"ARKNIKA\"",
+                        "processBitMap": "0",
+                        "creditLevel": 0.97,
+                        "axisY": 370,
+                        "sepValue": "OOO \"ARKNIKA\"",
+                        "axisX": 240,
+                        "width": 238,
+                        "attTypeCode": 1,
+                        "height": 29
+                    },
+                    {
+                        "attType": "Invoice",
+                        "imageId": 1,
+                        "transformValue": "OOO\"ARKNIKA\"",
+                        "sepValueList": [
+                            {
+                                "endy": 497,
+                                "endx": 313,
+                                "originalValue": "OOO\"ARKNIKA\"",
+                                "starty": 469,
+                                "startx": 89
+                            }
+                        ],
+                        "originalValue": "OOO\"ARKNIKA\"",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "OOO\"ARKNIKA\"",
+                        "processBitMap": "0",
+                        "creditLevel": 0.99,
+                        "axisY": 469,
+                        "sepValue": "OOO\"ARKNIKA\"",
+                        "axisX": 89,
+                        "width": 224,
+                        "attTypeCode": 2,
+                        "height": 28
+                    },
+                    {
+                        "attType": "PackingList",
+                        "imageId": 2,
+                        "transformValue": "OOO\"ARKNIKA\"",
+                        "sepValueList": [
+                            {
+                                "endy": 478,
+                                "endx": 269,
+                                "originalValue": "OOO\"ARKNIKA\"",
+                                "starty": 452,
+                                "startx": 48
+                            }
+                        ],
+                        "originalValue": "OOO\"ARKNIKA\"",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "OOO\"ARKNIKA\"",
+                        "processBitMap": "0",
+                        "creditLevel": 0.99,
+                        "axisY": 452,
+                        "sepValue": "OOO\"ARKNIKA\"",
+                        "axisX": 48,
+                        "width": 221,
+                        "attTypeCode": 3,
+                        "height": 26
+                    }
+                ],
+                "parsedValue": "OOO\"ARKNIKA\"",
+                "source_image": 3,
+                "originalValue": "OOO\"ARKNIKA\"",
+                "extractFrom": "nlp",
+                "normalizedValue": "OOO\"ARKNIKA\"",
+                "keyDesc": "境外收发货人",
+                "value": "OOO\"ARKNIKA\"",
+                "key": "consignorEname"
+            },
+            {
+                "processBitMap": "0",
+                "sourceList": [
+                    {
+                        "attType": "Declaration",
+                        "imageId": 3,
+                        "transformValue": "0110",
+                        "sepValueList": [
+                            {
+                                "endy": 426,
+                                "endx": 933,
+                                "originalValue": "一般贸易",
+                                "starty": 393,
+                                "startx": 825
+                            }
+                        ],
+                        "originalValue": "一般贸易",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "一般贸易",
+                        "processBitMap": "0",
+                        "creditLevel": 0.99,
+                        "axisY": 393,
+                        "sepValue": "一般贸易",
+                        "axisX": 825,
+                        "width": 108,
+                        "attTypeCode": 4,
+                        "height": 33
+                    }
+                ],
+                "existTranscoding": "True",
+                "parsedValue": "一般贸易",
+                "source_image": 3,
+                "originalValue": "一般贸易",
+                "extractFrom": "nlp",
+                "normalizedValue": "一般贸易",
+                "keyDesc": "监管方式",
+                "value": "0110",
+                "key": "supvModeCode"
+            },
+            {
+                "processBitMap": "0",
+                "sourceList": [
+                    {
+                        "attType": "Declaration",
+                        "imageId": 3,
+                        "transformValue": "SWG180207",
+                        "sepValueList": [
+                            {
+                                "endy": 569,
+                                "endx": 413,
+                                "originalValue": "SWG180207",
+                                "starty": 543,
+                                "startx": 265
+                            }
+                        ],
+                        "originalValue": "SWG180207",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "SWG180207",
+                        "processBitMap": "0",
+                        "creditLevel": 0.99,
+                        "axisY": 543,
+                        "sepValue": "SWG180207",
+                        "axisX": 265,
+                        "width": 148,
+                        "attTypeCode": 4,
+                        "height": 26
+                    },
+                    {
+                        "attType": "Contract",
+                        "imageId": 4,
+                        "transformValue": "SWG180207",
+                        "sepValueList": [
+                            {
+                                "endy": 320,
+                                "endx": 1338,
+                                "originalValue": "SWG180207",
+                                "starty": 293,
+                                "startx": 1211
+                            }
+                        ],
+                        "originalValue": "SWG180207",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "SWG180207",
+                        "processBitMap": "0",
+                        "creditLevel": 0.99,
+                        "axisY": 293,
+                        "sepValue": "SWG180207",
+                        "axisX": 1211,
+                        "width": 127,
+                        "attTypeCode": 1,
+                        "height": 27
+                    }
+                ],
+                "parsedValue": "SWG180207",
+                "source_image": 3,
+                "originalValue": "SWG180207",
+                "extractFrom": "nlp",
+                "normalizedValue": "SWG180207",
+                "keyDesc": "合同协议号",
+                "value": "SWG180207",
+                "key": "contrNo"
+            },
+            {
+                "processBitMap": "0",
+                "sourceList": [
+                    {
+                        "attType": "Declaration",
+                        "imageId": 3,
+                        "transformValue": "RUS",
+                        "sepValueList": [
+                            {
+                                "endy": 575,
+                                "endx": 817,
+                                "originalValue": "俄罗斯联邦",
+                                "starty": 541,
+                                "startx": 677
+                            }
+                        ],
+                        "originalValue": "俄罗斯联邦",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "俄罗斯联邦",
+                        "processBitMap": "0",
+                        "creditLevel": 0.99,
+                        "axisY": 541,
+                        "sepValue": "俄罗斯联邦",
+                        "axisX": 677,
+                        "width": 140,
+                        "attTypeCode": 4,
+                        "height": 34
+                    },
+                    {
+                        "attType": "Contract",
+                        "imageId": 4,
+                        "transformValue": "AUS",
+                        "sepValueList": [
+                            {
+                                "endy": 1033,
+                                "endx": 864,
+                                "originalValue": "到(to) vrangel bay",
+                                "starty": 1005,
+                                "startx": 576
+                            }
+                        ],
+                        "originalValue": "到(to) vrangel bay",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "到(to) vrangel bay",
+                        "processBitMap": "1",
+                        "creditLevel": 0.98,
+                        "existTranscoding": "True",
+                        "axisY": 1005,
+                        "sepValue": "到(to) vrangel bay",
+                        "axisX": 576,
+                        "width": 288,
+                        "attTypeCode": 1,
+                        "height": 28
+                    }
+                ],
+                "existTranscoding": "True",
+                "parsedValue": "俄罗斯联邦",
+                "source_image": 3,
+                "originalValue": "俄罗斯联邦",
+                "extractFrom": "nlp",
+                "normalizedValue": "俄罗斯联邦",
+                "keyDesc": "贸易国",
+                "value": "RUS",
+                "key": "cusTradeNationCode"
+            },
+            {
+                "processBitMap": "0",
+                "sourceList": [
+                    {
+                        "attType": "Declaration",
+                        "imageId": 3,
+                        "transformValue": "RUS",
+                        "sepValueList": [
+                            {
+                                "endy": 575,
+                                "endx": 1101,
+                                "originalValue": "俄罗斯联邦",
+                                "starty": 542,
+                                "startx": 963
+                            }
+                        ],
+                        "originalValue": "俄罗斯联邦",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "俄罗斯联邦",
+                        "processBitMap": "0",
+                        "creditLevel": 0.99,
+                        "axisY": 542,
+                        "sepValue": "俄罗斯联邦",
+                        "axisX": 963,
+                        "width": 138,
+                        "attTypeCode": 4,
+                        "height": 33
+                    },
+                    {
+                        "attType": "Contract",
+                        "imageId": 4,
+                        "transformValue": "AUS",
+                        "sepValueList": [
+                            {
+                                "endy": 1033,
+                                "endx": 864,
+                                "originalValue": "到(to) vrangel bay",
+                                "starty": 1005,
+                                "startx": 576
+                            }
+                        ],
+                        "originalValue": "到(to) vrangel bay",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "到(to) vrangel bay",
+                        "processBitMap": "1",
+                        "creditLevel": 0.98,
+                        "existTranscoding": "True",
+                        "axisY": 1005,
+                        "sepValue": "到(to) vrangel bay",
+                        "axisX": 576,
+                        "width": 288,
+                        "attTypeCode": 1,
+                        "height": 28
+                    }
+                ],
+                "existTranscoding": "True",
+                "parsedValue": "俄罗斯联邦",
+                "source_image": 3,
+                "originalValue": "俄罗斯联邦",
+                "extractFrom": "nlp",
+                "normalizedValue": "俄罗斯联邦",
+                "keyDesc": "运抵国",
+                "value": "RUS",
+                "key": "cusTradeCountry"
+            },
+            {
+                "processBitMap": "1",
+                "sourceList": [
+                    {
+                        "attType": "Declaration",
+                        "imageId": 3,
+                        "transformValue": "AUS003",
+                        "sepValueList": [
+                            {
+                                "endy": 569,
+                                "endx": 1391,
+                                "originalValue": "VRANGEL BAY",
+                                "starty": 544,
+                                "startx": 1261
+                            }
+                        ],
+                        "originalValue": "VRANGEL BAY",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "VRANGEL BAY",
+                        "processBitMap": "1",
+                        "creditLevel": 0.98,
+                        "axisY": 544,
+                        "sepValue": "VRANGEL BAY",
+                        "axisX": 1261,
+                        "width": 130,
+                        "attTypeCode": 4,
+                        "height": 25
+                    },
+                    {
+                        "attType": "Contract",
+                        "imageId": 4,
+                        "transformValue": "AUS003",
+                        "sepValueList": [
+                            {
+                                "endy": 1033,
+                                "endx": 864,
+                                "originalValue": "到(to) vrangel bay",
+                                "starty": 1005,
+                                "startx": 576
+                            }
+                        ],
+                        "originalValue": "到(to) vrangel bay",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "到(to) vrangel bay",
+                        "processBitMap": "1",
+                        "creditLevel": 0.98,
+                        "existTranscoding": "True",
+                        "axisY": 1005,
+                        "sepValue": "到(to) vrangel bay",
+                        "axisX": 576,
+                        "width": 288,
+                        "attTypeCode": 1,
+                        "height": 28
+                    }
+                ],
+                "existTranscoding": "True",
+                "parsedValue": "VRANGEL BAY",
+                "source_image": 3,
+                "originalValue": "VRANGEL BAY",
+                "extractFrom": "nlp",
+                "normalizedValue": "VRANGEL BAY",
+                "keyDesc": "指运港",
+                "value": "AUS003",
+                "key": "distinatePort"
+            },
+            {
+                "processBitMap": "0",
+                "sourceList": [
+                    {
+                        "attType": "Declaration",
+                        "imageId": 3,
+                        "transformValue": "22",
+                        "sepValueList": [
+                            {
+                                "endy": 746,
+                                "endx": 781,
+                                "originalValue": "纸箱",
+                                "starty": 717,
+                                "startx": 371
+                            },
+                            {
+                                "endy": 744,
+                                "endx": 781,
+                                "originalValue": "CTNS",
+                                "starty": 717,
+                                "startx": 708
+                            }
+                        ],
+                        "originalValue": "纸箱CTNS",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "纸箱 CTNS",
+                        "processBitMap": "0",
+                        "creditLevel": 0.9801,
+                        "axisY": 717,
+                        "sepValue": "纸箱;;CTNS",
+                        "axisX": 371,
+                        "width": 410,
+                        "attTypeCode": 4,
+                        "height": 29
+                    }
+                ],
+                "existTranscoding": "True",
+                "parsedValue": "纸箱CTNS",
+                "source_image": 3,
+                "originalValue": "纸箱CTNS",
+                "extractFrom": "nlp",
+                "normalizedValue": "纸箱 CTNS",
+                "keyDesc": "包装种类",
+                "value": "22",
+                "key": "wrapType"
+            },
+            {
+                "processBitMap": "0",
+                "sourceList": [
+                    {
+                        "attType": "Declaration",
+                        "imageId": 3,
+                        "transformValue": "738",
+                        "sepValueList": [
+                            {
+                                "endy": 743,
+                                "endx": 627,
+                                "originalValue": "738",
+                                "starty": 717,
+                                "startx": 581
+                            }
+                        ],
+                        "originalValue": "738",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "738",
+                        "processBitMap": "0",
+                        "creditLevel": 0.99,
+                        "axisY": 717,
+                        "sepValue": "738",
+                        "axisX": 581,
+                        "width": 46,
+                        "attTypeCode": 4,
+                        "height": 26
+                    },
+                    {
+                        "attType": "PackingList",
+                        "imageId": 2,
+                        "transformValue": "738",
+                        "sepValueList": [
+                            {
+                                "endy": 1158,
+                                "endx": 825,
+                                "originalValue": "738",
+                                "starty": 1131,
+                                "startx": 692
+                            }
+                        ],
+                        "originalValue": "738",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "738",
+                        "processBitMap": "0",
+                        "creditLevel": 0.96,
+                        "axisY": 1131,
+                        "sepValue": "738",
+                        "axisX": 692,
+                        "width": 133,
+                        "attTypeCode": 3,
+                        "height": 27
+                    }
+                ],
+                "parsedValue": "738",
+                "source_image": 3,
+                "originalValue": "738",
+                "extractFrom": "nlp",
+                "normalizedValue": "738",
+                "keyDesc": "件数",
+                "value": "738",
+                "key": "packNo"
+            },
+            {
+                "processBitMap": "0",
+                "sourceList": [
+                    {
+                        "attType": "Declaration",
+                        "imageId": 3,
+                        "transformValue": "3",
+                        "sepValueList": [
+                            {
+                                "endy": 743,
+                                "endx": 1520,
+                                "originalValue": "FOB",
+                                "starty": 717,
+                                "startx": 1460
+                            }
+                        ],
+                        "originalValue": "FOB",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "FOB",
+                        "processBitMap": "0",
+                        "creditLevel": 0.99,
+                        "axisY": 717,
+                        "sepValue": "FOB",
+                        "axisX": 1460,
+                        "width": 60,
+                        "attTypeCode": 4,
+                        "height": 26
+                    },
+                    {
+                        "attType": "Contract",
+                        "imageId": 4,
+                        "transformValue": "3",
+                        "sepValueList": [
+                            {
+                                "endy": 1081,
+                                "endx": 428,
+                                "originalValue": "FOB",
+                                "starty": 1055,
+                                "startx": 372
+                            }
+                        ],
+                        "originalValue": "FOB",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "FOB",
+                        "processBitMap": "0",
+                        "creditLevel": 0.99,
+                        "existTranscoding": "True",
+                        "axisY": 1055,
+                        "sepValue": "FOB",
+                        "axisX": 372,
+                        "width": 56,
+                        "attTypeCode": 1,
+                        "height": 26
+                    },
+                    {
+                        "attType": "Invoice",
+                        "imageId": 1,
+                        "transformValue": "3",
+                        "sepValueList": [
+                            {
+                                "endy": 890,
+                                "endx": 1347,
+                                "originalValue": "FOB NINGBO",
+                                "starty": 861,
+                                "startx": 1147
+                            }
+                        ],
+                        "originalValue": "FOB NINGBO",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "FOB NINGBO",
+                        "processBitMap": "1",
+                        "creditLevel": 0.97,
+                        "existTranscoding": "True",
+                        "axisY": 861,
+                        "sepValue": "FOB NINGBO",
+                        "axisX": 1147,
+                        "width": 200,
+                        "attTypeCode": 2,
+                        "height": 29
+                    }
+                ],
+                "existTranscoding": "True",
+                "parsedValue": "FOB",
+                "source_image": 3,
+                "originalValue": "FOB",
+                "extractFrom": "nlp",
+                "normalizedValue": "FOB",
+                "keyDesc": "成交方式",
+                "value": "3",
+                "key": "transMode"
+            },
+            {
+                "processBitMap": "0",
+                "sourceList": [
+                    {
+                        "attType": "Declaration",
+                        "imageId": 3,
+                        "transformValue": "杭州盛威实业有限公司",
+                        "sepValueList": [
+                            {
+                                "endy": 287,
+                                "endx": 954,
+                                "originalValue": "杭州盛威实业有限公司",
+                                "starty": 258,
+                                "startx": 265
+                            }
+                        ],
+                        "originalValue": "杭州盛威实业有限公司",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "杭州盛威实业有限公司",
+                        "processBitMap": "0",
+                        "creditLevel": 0.99,
+                        "axisY": 258,
+                        "sepValue": "杭州盛威实业有限公司",
+                        "axisX": 265,
+                        "width": 689,
+                        "attTypeCode": 4,
+                        "height": 29
+                    },
+                    {
+                        "attType": "Contract",
+                        "imageId": 4,
+                        "transformValue": "杭州盛威实业有限公司",
+                        "sepValueList": [
+                            {
+                                "endy": 188,
+                                "endx": 1181,
+                                "originalValue": "杭州盛威实业有限公司",
+                                "starty": 93,
+                                "startx": 391
+                            },
+                            {
+                                "endy": 188,
+                                "endx": 1181,
+                                "originalValue": "HANGZHOUSUNWAYINDUSTRYCO.,LTD.",
+                                "starty": 151,
+                                "startx": 391
+                            }
+                        ],
+                        "originalValue": "杭州盛威实业有限公司HANGZHOUSUNWAYINDUSTRYCO.,LTD.",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "杭州盛威实业有限公司",
+                        "processBitMap": "0",
+                        "creditLevel": 0.9801,
+                        "axisY": 93,
+                        "sepValue": "杭州盛威实业有限公司;;HANGZHOUSUNWAYINDUSTRYCO.,LTD.",
+                        "axisX": 391,
+                        "width": 790,
+                        "attTypeCode": 1,
+                        "height": 95
+                    },
+                    {
+                        "attType": "Invoice",
+                        "imageId": 1,
+                        "transformValue": "HANGZHOUSUNWAYINDUSTRYCO.,LTD",
+                        "sepValueList": [
+                            {
+                                "endy": 231,
+                                "endx": 657,
+                                "originalValue": "HANGZHOUSUNWAYINDUSTRYCO.,LTD",
+                                "starty": 203,
+                                "startx": 88
+                            }
+                        ],
+                        "originalValue": "HANGZHOUSUNWAYINDUSTRYCO.,LTD",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "HANGZHOUSUNWAYINDUSTRYCO.,LTD",
+                        "processBitMap": "0",
+                        "creditLevel": 0.99,
+                        "axisY": 203,
+                        "sepValue": "HANGZHOUSUNWAYINDUSTRYCO.,LTD",
+                        "axisX": 88,
+                        "width": 569,
+                        "attTypeCode": 2,
+                        "height": 28
+                    },
+                    {
+                        "attType": "PackingList",
+                        "imageId": 2,
+                        "transformValue": "杭州盛威实业有限公司",
+                        "sepValueList": [
+                            {
+                                "endy": 232,
+                                "endx": 1430,
+                                "originalValue": "HANGZHOUSUNWAYINDUSTRYCO.,LTD.",
+                                "starty": 193,
+                                "startx": 48
+                            },
+                            {
+                                "endy": 232,
+                                "endx": 1430,
+                                "originalValue": "杭州盛威实业有限公司",
+                                "starty": 193,
+                                "startx": 1111
+                            }
+                        ],
+                        "originalValue": "HANGZHOUSUNWAYINDUSTRYCO.,LTD.杭州盛威实业有限公司",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "杭州盛威实业有限公司",
+                        "processBitMap": "0",
+                        "creditLevel": 0.9801,
+                        "axisY": 193,
+                        "sepValue": "HANGZHOUSUNWAYINDUSTRYCO.,LTD.;;杭州盛威实业有限公司",
+                        "axisX": 48,
+                        "width": 1382,
+                        "attTypeCode": 3,
+                        "height": 39
+                    }
+                ],
+                "parsedValue": "杭州盛威实业有限公司33169630089133010972587504XT",
+                "source_image": 3,
+                "originalValue": "杭州盛威实业有限公司",
+                "extractFrom": "nlp",
+                "normalizedValue": "杭州盛威实业有限公司",
+                "keyDesc": "境内收发货人名称",
+                "value": "杭州盛威实业有限公司",
+                "key": "consigneeCname"
+            },
+            {
+                "processBitMap": "0",
+                "sourceList": [
+                    {
+                        "attType": "Declaration",
+                        "imageId": 3,
+                        "transformValue": "33169630089133010972587504XT",
+                        "sepValueList": [
+                            {
+                                "endy": 287,
+                                "endx": 954,
+                                "originalValue": "33169630089133010972587504XT",
+                                "starty": 258,
+                                "startx": 265
+                            }
+                        ],
+                        "originalValue": "33169630089133010972587504XT",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "33169630089133010972587504XT",
+                        "processBitMap": "0",
+                        "creditLevel": 0.99,
+                        "axisY": 258,
+                        "sepValue": "33169630089133010972587504XT",
+                        "axisX": 265,
+                        "width": 689,
+                        "attTypeCode": 4,
+                        "height": 29
+                    }
+                ],
+                "parsedValue": "杭州盛威实业有限公司33169630089133010972587504XT",
+                "source_image": 3,
+                "originalValue": "33169630089133010972587504XT",
+                "extractFrom": "nlp",
+                "normalizedValue": "33169630089133010972587504XT",
+                "keyDesc": "境内收发货人社会信用代码",
+                "value": "33169630089133010972587504XT",
+                "key": "rcvgdTradeScc"
+            },
+            {
+                "processBitMap": "0",
+                "sourceList": [
+                    {
+                        "attType": "Declaration",
+                        "imageId": 3,
+                        "transformValue": "杭州盛威实业有限公司",
+                        "sepValueList": [
+                            {
+                                "endy": 366,
+                                "endx": 954,
+                                "originalValue": "杭州盛威实业有限公司",
+                                "starty": 336,
+                                "startx": 81
+                            }
+                        ],
+                        "originalValue": "杭州盛威实业有限公司",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "杭州盛威实业有限公司",
+                        "processBitMap": "0",
+                        "creditLevel": 0.99,
+                        "axisY": 336,
+                        "sepValue": "杭州盛威实业有限公司",
+                        "axisX": 81,
+                        "width": 873,
+                        "attTypeCode": 4,
+                        "height": 30
+                    },
+                    {
+                        "attType": "Contract",
+                        "imageId": 4,
+                        "transformValue": "杭州盛威实业有限公司",
+                        "sepValueList": [
+                            {
+                                "endy": 188,
+                                "endx": 1181,
+                                "originalValue": "杭州盛威实业有限公司",
+                                "starty": 93,
+                                "startx": 391
+                            },
+                            {
+                                "endy": 188,
+                                "endx": 1181,
+                                "originalValue": "HANGZHOUSUNWAYINDUSTRYCO.,LTD.",
+                                "starty": 151,
+                                "startx": 391
+                            }
+                        ],
+                        "originalValue": "杭州盛威实业有限公司HANGZHOUSUNWAYINDUSTRYCO.,LTD.",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "杭州盛威实业有限公司",
+                        "processBitMap": "0",
+                        "creditLevel": 0.9801,
+                        "axisY": 93,
+                        "sepValue": "杭州盛威实业有限公司;;HANGZHOUSUNWAYINDUSTRYCO.,LTD.",
+                        "axisX": 391,
+                        "width": 790,
+                        "attTypeCode": 1,
+                        "height": 95
+                    },
+                    {
+                        "attType": "Invoice",
+                        "imageId": 1,
+                        "transformValue": "HANGZHOUSUNWAYINDUSTRYCO.,LTD",
+                        "sepValueList": [
+                            {
+                                "endy": 231,
+                                "endx": 657,
+                                "originalValue": "HANGZHOUSUNWAYINDUSTRYCO.,LTD",
+                                "starty": 203,
+                                "startx": 88
+                            }
+                        ],
+                        "originalValue": "HANGZHOUSUNWAYINDUSTRYCO.,LTD",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "HANGZHOUSUNWAYINDUSTRYCO.,LTD",
+                        "processBitMap": "0",
+                        "creditLevel": 0.99,
+                        "axisY": 203,
+                        "sepValue": "HANGZHOUSUNWAYINDUSTRYCO.,LTD",
+                        "axisX": 88,
+                        "width": 569,
+                        "attTypeCode": 2,
+                        "height": 28
+                    },
+                    {
+                        "attType": "PackingList",
+                        "imageId": 2,
+                        "transformValue": "杭州盛威实业有限公司",
+                        "sepValueList": [
+                            {
+                                "endy": 232,
+                                "endx": 1430,
+                                "originalValue": "HANGZHOUSUNWAYINDUSTRYCO.,LTD.",
+                                "starty": 193,
+                                "startx": 48
+                            },
+                            {
+                                "endy": 232,
+                                "endx": 1430,
+                                "originalValue": "杭州盛威实业有限公司",
+                                "starty": 193,
+                                "startx": 1111
+                            }
+                        ],
+                        "originalValue": "HANGZHOUSUNWAYINDUSTRYCO.,LTD.杭州盛威实业有限公司",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "杭州盛威实业有限公司",
+                        "processBitMap": "0",
+                        "creditLevel": 0.9801,
+                        "axisY": 193,
+                        "sepValue": "HANGZHOUSUNWAYINDUSTRYCO.,LTD.;;杭州盛威实业有限公司",
+                        "axisX": 48,
+                        "width": 1382,
+                        "attTypeCode": 3,
+                        "height": 39
+                    }
+                ],
+                "parsedValue": "生产销售单位杭州盛威实业有限公司33169630089133010972587504XT",
+                "source_image": 3,
+                "originalValue": "杭州盛威实业有限公司",
+                "extractFrom": "nlp",
+                "normalizedValue": "杭州盛威实业有限公司",
+                "keyDesc": "生产销售单位名称",
+                "value": "杭州盛威实业有限公司",
+                "key": "ownerName"
+            },
+            {
+                "processBitMap": "0",
+                "sourceList": [
+                    {
+                        "attType": "Declaration",
+                        "imageId": 3,
+                        "transformValue": "33169630089133010972587504XT",
+                        "sepValueList": [
+                            {
+                                "endy": 366,
+                                "endx": 954,
+                                "originalValue": "33169630089133010972587504XT",
+                                "starty": 336,
+                                "startx": 81
+                            }
+                        ],
+                        "originalValue": "33169630089133010972587504XT",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "33169630089133010972587504XT",
+                        "processBitMap": "0",
+                        "creditLevel": 0.99,
+                        "axisY": 336,
+                        "sepValue": "33169630089133010972587504XT",
+                        "axisX": 81,
+                        "width": 873,
+                        "attTypeCode": 4,
+                        "height": 30
+                    }
+                ],
+                "parsedValue": "生产销售单位杭州盛威实业有限公司33169630089133010972587504XT",
+                "source_image": 3,
+                "originalValue": "33169630089133010972587504XT",
+                "extractFrom": "nlp",
+                "normalizedValue": "33169630089133010972587504XT",
+                "keyDesc": "生产销售单位社会信用代码",
+                "value": "33169630089133010972587504XT",
+                "key": "ownerScc"
+            },
+            {
+                "processBitMap": "0",
+                "sourceList": [
+                    {
+                        "attType": "Contract",
+                        "imageId": 4,
+                        "transformValue": "202071.94",
+                        "sepValueList": [
+                            {
+                                "endy": 881,
+                                "endx": 1442,
+                                "originalValue": "202,071.94",
+                                "starty": 851,
+                                "startx": 1262
+                            }
+                        ],
+                        "originalValue": "202,071.94",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "202,071.94",
+                        "processBitMap": "0",
+                        "creditLevel": 0.99,
+                        "axisY": 851,
+                        "sepValue": "202,071.94",
+                        "axisX": 1262,
+                        "width": 180,
+                        "attTypeCode": 1,
+                        "height": 30
+                    },
+                    {
+                        "attType": "Invoice",
+                        "imageId": 1,
+                        "transformValue": "202071.94",
+                        "sepValueList": [
+                            {
+                                "endy": 1855,
+                                "endx": 1489,
+                                "originalValue": "202,071.94",
+                                "starty": 1822,
+                                "startx": 1319
+                            }
+                        ],
+                        "originalValue": "202,071.94",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "202,071.94",
+                        "processBitMap": "0",
+                        "creditLevel": 0.99,
+                        "axisY": 1822,
+                        "sepValue": "202,071.94",
+                        "axisX": 1319,
+                        "width": 170,
+                        "attTypeCode": 2,
+                        "height": 33
+                    }
+                ],
+                "parsedValue": "￥202,071.94",
+                "source_image": 4,
+                "originalValue": "202,071.94",
+                "extractFrom": "nlp",
+                "normalizedValue": "202,071.94",
+                "keyDesc": "总价总和",
+                "value": "202071.94",
+                "key": "totalAmount"
+            },
+            {
+                "processBitMap": "1",
+                "sourceList": [
+                    {
+                        "attType": "PackingList",
+                        "imageId": 2,
+                        "transformValue": "21224",
+                        "sepValueList": [
+                            {
+                                "endy": 1798,
+                                "endx": 1172,
+                                "originalValue": "21224",
+                                "starty": 1770,
+                                "startx": 1029
+                            }
+                        ],
+                        "originalValue": "21224",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "21224",
+                        "processBitMap": "0",
+                        "creditLevel": 0.96,
+                        "axisY": 1770,
+                        "sepValue": "21224",
+                        "axisX": 1029,
+                        "width": 143,
+                        "attTypeCode": 3,
+                        "height": 28
+                    }
+                ],
+                "parsedValue": "21224 KGS",
+                "source_image": 2,
+                "originalValue": "21224",
+                "extractFrom": "nlp",
+                "normalizedValue": "21224",
+                "keyDesc": "毛重",
+                "value": "21224",
+                "key": "grossWt"
+            },
+            {
+                "processBitMap": "0",
+                "sourceList": [
+                    {
+                        "attType": "PackingList",
+                        "imageId": 2,
+                        "transformValue": "19101.6",
+                        "sepValueList": [
+                            {
+                                "endy": 1798,
+                                "endx": 1399,
+                                "originalValue": "19101.6",
+                                "starty": 1770,
+                                "startx": 1240
+                            }
+                        ],
+                        "originalValue": "19101.6",
+                        "extractFrom": "nlp",
+                        "normalizedValue": "19101.6",
+                        "processBitMap": "0",
+                        "creditLevel": 0.99,
+                        "axisY": 1770,
+                        "sepValue": "19101.6",
+                        "axisX": 1240,
+                        "width": 159,
+                        "attTypeCode": 3,
+                        "height": 28
+                    }
+                ],
+                "parsedValue": "19101.6KGS",
+                "source_image": 2,
+                "originalValue": "19101.6",
+                "extractFrom": "nlp",
+                "normalizedValue": "19101.6",
+                "keyDesc": "净重",
+                "value": "19101.6",
+                "key": "netWt"
+            },
+            {
+                "processBitMap": "0",
+                "sourceList": [],
+                "existTranscoding": "True",
+                "parsedValue": "",
+                "source_image": 0,
+                "originalValue": "一般征税",
+                "extractFrom": "default",
+                "normalizedValue": "一般征税",
+                "keyDesc": "征免性质",
+                "value": "101",
+                "key": "cutMode"
+            },
+            {
+                "processBitMap": "0",
+                "sourceList": [],
+                "parsedValue": "特殊关系确认:否 价格影响确认:否 支付特许权使用费确认:否 ",
+                "source_image": 0,
+                "originalValue": "N/M",
+                "extractFrom": "default",
+                "normalizedValue": "N/M",
+                "keyDesc": "标记唛码",
+                "value": "N/M",
+                "key": "markNo"
+            },
+            {
+                "processBitMap": "000111",
+                "sourceList": [],
+                "source_image": 3,
+                "normalizedValue": "否 否 否 ",
+                "keyDesc": "承诺事项",
+                "value": "000999",
+                "key": "promiseItems"
+            }
+        ],
+        "preDecList": [
+            [
+                {
+                    "processBitMap": "0",
+                    "sourceList": [
+                        {
+                            "attType": "Declaration",
+                            "imageId": 3,
+                            "transformValue": "202071.94",
+                            "sepValueList": [
+                                {
+                                    "endy": 1043,
+                                    "endx": 1417,
+                                    "originalValue": "202071.94",
+                                    "starty": 1015,
+                                    "startx": 1266
+                                }
+                            ],
+                            "originalValue": "202071.94",
+                            "extractFrom": "nlp",
+                            "normalizedValue": "202071.94",
+                            "processBitMap": "0",
+                            "creditLevel": 0.99,
+                            "axisY": 1015,
+                            "sepValue": "202071.94",
+                            "axisX": 1266,
+                            "width": 151,
+                            "attTypeCode": 4,
+                            "height": 28
+                        },
+                        {
+                            "attType": "Contract",
+                            "imageId": 4,
+                            "transformValue": "202071.94",
+                            "sepValueList": [
+                                {
+                                    "endy": 828,
+                                    "endx": 1442,
+                                    "originalValue": "202071.94",
+                                    "starty": 797,
+                                    "startx": 1262
+                                }
+                            ],
+                            "originalValue": "202071.94",
+                            "extractFrom": "nlp",
+                            "normalizedValue": "202071.94",
+                            "processBitMap": "0",
+                            "creditLevel": 0.99,
+                            "axisY": 797,
+                            "sepValue": "202071.94",
+                            "axisX": 1262,
+                            "width": 180,
+                            "attTypeCode": 1,
+                            "height": 31
+                        },
+                        {
+                            "attType": "Invoice",
+                            "imageId": 1,
+                            "transformValue": "202071.94",
+                            "sepValueList": [
+                                {
+                                    "endy": 1195,
+                                    "endx": 1576,
+                                    "originalValue": "202071.94",
+                                    "starty": 1165,
+                                    "startx": 1408
+                                }
+                            ],
+                            "originalValue": "202071.94",
+                            "extractFrom": "nlp",
+                            "normalizedValue": "202071.94",
+                            "processBitMap": "0",
+                            "creditLevel": 0.99,
+                            "axisY": 1165,
+                            "sepValue": "202071.94",
+                            "axisX": 1408,
+                            "width": 168,
+                            "attTypeCode": 2,
+                            "height": 30
+                        }
+                    ],
+                    "parsedValue": "￥202,071.94",
+                    "source_image": 3,
+                    "originalValue": "202071.94",
+                    "extractFrom": "nlp",
+                    "normalizedValue": "202071.94",
+                    "keyDesc": "总价",
+                    "value": "202071.94",
+                    "key": "declTotal"
+                },
+                {
+                    "processBitMap": "0",
+                    "sourceList": [
+                        {
+                            "attType": "Declaration",
+                            "imageId": 3,
+                            "transformValue": "21224.00",
+                            "sepValueList": [
+                                {
+                                    "endy": 744,
+                                    "endx": 937,
+                                    "originalValue": "21224.00",
+                                    "starty": 717,
+                                    "startx": 826
+                                }
+                            ],
+                            "originalValue": "21224.00",
+                            "extractFrom": "nlp",
+                            "normalizedValue": "21224.00",
+                            "processBitMap": "0",
+                            "creditLevel": 0.99,
+                            "axisY": 717,
+                            "sepValue": "21224.00",
+                            "axisX": 826,
+                            "width": 111,
+                            "attTypeCode": 4,
+                            "height": 27
+                        },
+                        {
+                            "attType": "PackingList",
+                            "imageId": 2,
+                            "transformValue": "21224.00",
+                            "sepValueList": [
+                                {
+                                    "endy": 1158,
+                                    "endx": 1167,
+                                    "originalValue": "21224.00",
+                                    "starty": 1131,
+                                    "startx": 994
+                                }
+                            ],
+                            "originalValue": "21224.00",
+                            "extractFrom": "nlp",
+                            "normalizedValue": "21224.00",
+                            "processBitMap": "0",
+                            "creditLevel": 0.99,
+                            "axisY": 1131,
+                            "sepValue": "21224.00",
+                            "axisX": 994,
+                            "width": 173,
+                            "attTypeCode": 3,
+                            "height": 27
+                        }
+                    ],
+                    "parsedValue": "21224.00",
+                    "source_image": 3,
+                    "originalValue": "21224.00",
+                    "extractFrom": "nlp",
+                    "normalizedValue": "21224.00",
+                    "keyDesc": "毛重单项",
+                    "value": "21224.00",
+                    "key": "ggrossWt"
+                },
+                {
+                    "processBitMap": "0",
+                    "sourceList": [
+                        {
+                            "attType": "Declaration",
+                            "imageId": 3,
+                            "transformValue": "淋浴房",
+                            "sepValueList": [
+                                {
+                                    "endy": 1044,
+                                    "endx": 352,
+                                    "originalValue": "淋浴房",
+                                    "starty": 1014,
+                                    "startx": 116
+                                }
+                            ],
+                            "originalValue": "淋浴房",
+                            "extractFrom": "nlp",
+                            "normalizedValue": "淋浴房",
+                            "processBitMap": "0",
+                            "creditLevel": 0.99,
+                            "axisY": 1014,
+                            "sepValue": "淋浴房",
+                            "axisX": 116,
+                            "width": 236,
+                            "attTypeCode": 4,
+                            "height": 30
+                        },
+                        {
+                            "attType": "Contract",
+                            "imageId": 4,
+                            "transformValue": "SHOWER CABIN",
+                            "sepValueList": [
+                                {
+                                    "endy": 825,
+                                    "endx": 584,
+                                    "originalValue": "SHOWER CABIN",
+                                    "starty": 800,
+                                    "startx": 446
+                                }
+                            ],
+                            "originalValue": "SHOWER CABIN",
+                            "extractFrom": "nlp",
+                            "normalizedValue": "SHOWER CABIN",
+                            "processBitMap": "0",
+                            "creditLevel": 0.99,
+                            "axisY": 800,
+                            "sepValue": "SHOWER CABIN",
+                            "axisX": 446,
+                            "width": 138,
+                            "attTypeCode": 1,
+                            "height": 25
+                        }
+                    ],
+                    "parsedValue": "9406900090淋浴房",
+                    "source_image": 3,
+                    "originalValue": "淋浴房",
+                    "extractFrom": "nlp",
+                    "normalizedValue": "淋浴房",
+                    "keyDesc": "商品名称",
+                    "value": "淋浴房",
+                    "key": "gName"
+                },
+                {
+                    "processBitMap": "1",
+                    "sourceList": [
+                        {
+                            "attType": "Declaration",
+                            "imageId": 3,
+                            "transformValue": "{'品牌类型': ('品牌类型', '无品牌', 1), '出口享惠情况': ('出口享惠情况', '出口货物在最终目的国', 1)}",
+                            "sepValueList": [
+                                {
+                                    "endy": 1203,
+                                    "endx": 931,
+                                    "originalValue": "245套玻璃,铝合金框架",
+                                    "starty": 1093,
+                                    "startx": 265
+                                },
+                                {
+                                    "endy": 1126,
+                                    "endx": 931,
+                                    "originalValue": "塑料底盘,内部配置:花洒",
+                                    "starty": 1093,
+                                    "startx": 589
+                                },
+                                {
+                                    "endy": 1160,
+                                    "endx": 460,
+                                    "originalValue": "90x90x210CM",
+                                    "starty": 1132,
+                                    "startx": 265
+                                },
+                                {
+                                    "endy": 1203,
+                                    "endx": 677,
+                                    "originalValue": "无品牌,出口货物在最终目的国(",
+                                    "starty": 1172,
+                                    "startx": 267
+                                }
+                            ],
+                            "originalValue": "245套玻璃,铝合金框架塑料底盘,内部配置:花洒90x90x210CM无品牌,出口货物在最终目的国(",
+                            "extractFrom": "nlp",
+                            "normalizedValue": "245套玻璃,铝合金框架塑料底盘,内部配置:花洒90x90x210CM无品牌,出口货物在最终目的国(",
+                            "processBitMap": "1",
+                            "creditLevel": 0.9508930199999999,
+                            "axisY": 1093,
+                            "sepValue": "245套玻璃,铝合金框架;;塑料底盘,内部配置:花洒;;90x90x210CM;;无品牌,出口货物在最终目的国(",
+                            "axisX": 265,
+                            "width": 666,
+                            "attTypeCode": 4,
+                            "height": 110
+                        },
+                        {
+                            "attType": "Contract",
+                            "imageId": 4,
+                            "transformValue": "{'品牌类型': ('品牌类型', '', 1), '出口享惠情况': ('出口享惠情况', '', 1), '货号': ('货号', 'Article No', 1)}",
+                            "sepValueList": [
+                                {
+                                    "endy": 774,
+                                    "endx": 233,
+                                    "originalValue": " ; 货号:Article No.",
+                                    "starty": 747,
+                                    "startx": 83
+                                }
+                            ],
+                            "originalValue": " ; 货号:Article No.",
+                            "extractFrom": "nlp",
+                            "normalizedValue": " ; 货号:Article No.",
+                            "processBitMap": "1",
+                            "creditLevel": 0.98,
+                            "axisY": 747,
+                            "sepValue": " ; 货号:Article No.",
+                            "axisX": 83,
+                            "width": 150,
+                            "attTypeCode": 1,
+                            "height": 27
+                        }
+                    ],
+                    "parsedValue": "245套玻璃,铝合金框架塑料底盘,内部配置:花洒90x90x210CM无品牌,出口货物在最终目的国(",
+                    "source_image": 3,
+                    "originalValue": "[('品牌类型', '0', 1), ('出口享惠情况', '2', 1), ('货号', 'Article No', 1)]",
+                    "extractFrom": "nlp",
+                    "normalizedValue": "[('品牌类型', '0', 1), ('出口享惠情况', '2', 1), ('货号', 'Article No', 1)]",
+                    "keyDesc": "规格型号",
+                    "value": "0|2|Article No",
+                    "key": "gModel"
+                },
+                {
+                    "processBitMap": "1",
+                    "sourceList": [
+                        {
+                            "attType": "Declaration",
+                            "imageId": 3,
+                            "transformValue": "CHN",
+                            "sepValueList": [
+                                {
+                                    "endy": 1280,
+                                    "endx": 321,
+                                    "originalValue": "中国",
+                                    "starty": 1251,
+                                    "startx": 270
+                                }
+                            ],
+                            "originalValue": "中国",
+                            "extractFrom": "nlp",
+                            "normalizedValue": "中国",
+                            "processBitMap": "0",
+                            "creditLevel": 0.88,
+                            "axisY": 1251,
+                            "sepValue": "中国",
+                            "axisX": 270,
+                            "width": 51,
+                            "attTypeCode": 4,
+                            "height": 29
+                        },
+                        {
+                            "attType": "Invoice",
+                            "imageId": 1,
+                            "transformValue": "CHN",
+                            "sepValueList": [
+                                {
+                                    "endy": 803,
+                                    "endx": 1327,
+                                    "originalValue": "Country of origin of Goods",
+                                    "starty": 731,
+                                    "startx": 965
+                                },
+                                {
+                                    "endy": 803,
+                                    "endx": 1327,
+                                    "originalValue": "CHINA",
+                                    "starty": 774,
+                                    "startx": 1222
+                                }
+                            ],
+                            "originalValue": "Country of origin of GoodsCHINA",
+                            "extractFrom": "nlp",
+                            "normalizedValue": "Country of origin of Goods CHINA",
+                            "processBitMap": "1",
+                            "creditLevel": 0.9801,
+                            "existTranscoding": "True",
+                            "axisY": 731,
+                            "sepValue": "Country of origin of Goods;;CHINA",
+                            "axisX": 965,
+                            "width": 362,
+                            "attTypeCode": 2,
+                            "height": 72
+                        },
+                        {
+                            "attType": "PackingList",
+                            "imageId": 2,
+                            "transformValue": "CHN",
+                            "sepValueList": [
+                                {
+                                    "endy": 777,
+                                    "endx": 1324,
+                                    "originalValue": "Country of origin of Goods",
+                                    "starty": 708,
+                                    "startx": 955
+                                },
+                                {
+                                    "endy": 777,
+                                    "endx": 1324,
+                                    "originalValue": "CHINA",
+                                    "starty": 749,
+                                    "startx": 1221
+                                }
+                            ],
+                            "originalValue": "Country of origin of GoodsCHINA",
+                            "extractFrom": "nlp",
+                            "normalizedValue": "Country of origin of Goods CHINA",
+                            "processBitMap": "1",
+                            "creditLevel": 0.9801,
+                            "existTranscoding": "True",
+                            "axisY": 708,
+                            "sepValue": "Country of origin of Goods;;CHINA",
+                            "axisX": 955,
+                            "width": 369,
+                            "attTypeCode": 3,
+                            "height": 69
+                        }
+                    ],
+                    "existTranscoding": "True",
+                    "parsedValue": "中国",
+                    "source_image": 3,
+                    "originalValue": "中国",
+                    "extractFrom": "nlp",
+                    "normalizedValue": "中国",
+                    "keyDesc": "原产国",
+                    "value": "CHN",
+                    "key": "cusOriginCountry"
+                },
+                {
+                    "processBitMap": "0",
+                    "sourceList": [
+                        {
+                            "attType": "Declaration",
+                            "imageId": 3,
+                            "transformValue": "RUS",
+                            "sepValueList": [
+                                {
+                                    "endy": 1282,
+                                    "endx": 817,
+                                    "originalValue": "俄罗斯联邦",
+                                    "starty": 1250,
+                                    "startx": 677
+                                }
+                            ],
+                            "originalValue": "俄罗斯联邦",
+                            "extractFrom": "nlp",
+                            "normalizedValue": "俄罗斯联邦",
+                            "processBitMap": "0",
+                            "creditLevel": 0.99,
+                            "axisY": 1250,
+                            "sepValue": "俄罗斯联邦",
+                            "axisX": 677,
+                            "width": 140,
+                            "attTypeCode": 4,
+                            "height": 32
+                        },
+                        {
+                            "attType": "Contract",
+                            "imageId": 4,
+                            "transformValue": "AUS",
+                            "sepValueList": [
+                                {
+                                    "endy": 1033,
+                                    "endx": 864,
+                                    "originalValue": "到(to) vrangel bay",
+                                    "starty": 1005,
+                                    "startx": 576
+                                }
+                            ],
+                            "originalValue": "到(to) vrangel bay",
+                            "extractFrom": "nlp",
+                            "normalizedValue": "到(to) vrangel bay",
+                            "processBitMap": "1",
+                            "creditLevel": 0.98,
+                            "existTranscoding": "True",
+                            "axisY": 1005,
+                            "sepValue": "到(to) vrangel bay",
+                            "axisX": 576,
+                            "width": 288,
+                            "attTypeCode": 1,
+                            "height": 28
+                        }
+                    ],
+                    "existTranscoding": "True",
+                    "parsedValue": "俄罗斯联邦",
+                    "source_image": 3,
+                    "originalValue": "俄罗斯联邦",
+                    "extractFrom": "nlp",
+                    "normalizedValue": "俄罗斯联邦",
+                    "keyDesc": "最终目的国",
+                    "value": "RUS",
+                    "key": "destinationCountry"
+                },
+                {
+                    "processBitMap": "0",
+                    "sourceList": [
+                        {
+                            "attType": "Declaration",
+                            "imageId": 3,
+                            "transformValue": "10.58",
+                            "sepValueList": [
+                                {
+                                    "endy": 1041,
+                                    "endx": 1223,
+                                    "originalValue": "10.58",
+                                    "starty": 1015,
+                                    "startx": 1133
+                                }
+                            ],
+                            "originalValue": "10.58",
+                            "extractFrom": "nlp",
+                            "normalizedValue": "10.58",
+                            "processBitMap": "0",
+                            "creditLevel": 0.99,
+                            "axisY": 1015,
+                            "sepValue": "10.58",
+                            "axisX": 1133,
+                            "width": 90,
+                            "attTypeCode": 4,
+                            "height": 26
+                        },
+                        {
+                            "attType": "Contract",
+                            "imageId": 4,
+                            "transformValue": "10.58",
+                            "sepValueList": [
+                                {
+                                    "endy": 826,
+                                    "endx": 1163,
+                                    "originalValue": "10.58",
+                                    "starty": 797,
+                                    "startx": 1057
+                                }
+                            ],
+                            "originalValue": "10.58",
+                            "extractFrom": "nlp",
+                            "normalizedValue": "10.58",
+                            "processBitMap": "0",
+                            "creditLevel": 0.99,
+                            "axisY": 797,
+                            "sepValue": "10.58",
+                            "axisX": 1057,
+                            "width": 106,
+                            "attTypeCode": 1,
+                            "height": 29
+                        },
+                        {
+                            "attType": "Invoice",
+                            "imageId": 1,
+                            "transformValue": "10.58",
+                            "sepValueList": [
+                                {
+                                    "endy": 1193,
+                                    "endx": 1355,
+                                    "originalValue": "10.58",
+                                    "starty": 1165,
+                                    "startx": 1257
+                                }
+                            ],
+                            "originalValue": "10.58",
+                            "extractFrom": "nlp",
+                            "normalizedValue": "10.58",
+                            "processBitMap": "0",
+                            "creditLevel": 0.99,
+                            "axisY": 1165,
+                            "sepValue": "10.58",
+                            "axisX": 1257,
+                            "width": 98,
+                            "attTypeCode": 2,
+                            "height": 28
+                        }
+                    ],
+                    "parsedValue": "￥10.58",
+                    "source_image": 3,
+                    "originalValue": "10.58",
+                    "extractFrom": "nlp",
+                    "normalizedValue": "10.58",
+                    "keyDesc": "单价",
+                    "value": "10.58",
+                    "key": "declPrice"
+                },
+                {
+                    "processBitMap": "1",
+                    "sourceList": [
+                        {
+                            "attType": "Declaration",
+                            "imageId": 3,
+                            "transformValue": "CNY",
+                            "sepValueList": [
+                                {
+                                    "endy": 1043,
+                                    "endx": 1417,
+                                    "originalValue": "￥",
+                                    "starty": 1015,
+                                    "startx": 1133
+                                },
+                                {
+                                    "endy": 1043,
+                                    "endx": 1417,
+                                    "originalValue": "￥",
+                                    "starty": 1015,
+                                    "startx": 1266
+                                }
+                            ],
+                            "originalValue": "￥￥",
+                            "extractFrom": "nlp",
+                            "normalizedValue": "￥ ￥",
+                            "processBitMap": "1",
+                            "creditLevel": 0.9801,
+                            "axisY": 1015,
+                            "sepValue": "￥;;￥",
+                            "axisX": 1133,
+                            "width": 284,
+                            "attTypeCode": 4,
+                            "height": 28
+                        },
+                        {
+                            "attType": "Contract",
+                            "imageId": 4,
+                            "transformValue": "CNY",
+                            "sepValueList": [
+                                {
+                                    "endy": 828,
+                                    "endx": 1442,
+                                    "originalValue": "￥",
+                                    "starty": 797,
+                                    "startx": 1057
+                                },
+                                {
+                                    "endy": 828,
+                                    "endx": 1442,
+                                    "originalValue": "￥",
+                                    "starty": 797,
+                                    "startx": 1262
+                                }
+                            ],
+                            "originalValue": "￥￥",
+                            "extractFrom": "nlp",
+                            "normalizedValue": "￥￥",
+                            "processBitMap": "1",
+                            "creditLevel": 0.9801,
+                            "existTranscoding": "True",
+                            "axisY": 797,
+                            "sepValue": "￥;;￥",
+                            "axisX": 1057,
+                            "width": 385,
+                            "attTypeCode": 1,
+                            "height": 31
+                        },
+                        {
+                            "attType": "Invoice",
+                            "imageId": 1,
+                            "transformValue": "CNY",
+                            "sepValueList": [
+                                {
+                                    "endy": 1193,
+                                    "endx": 1355,
+                                    "originalValue": "￥10.58",
+                                    "starty": 1165,
+                                    "startx": 1257
+                                }
+                            ],
+                            "originalValue": "￥10.58",
+                            "extractFrom": "nlp",
+                            "normalizedValue": "￥10.58",
+                            "processBitMap": "1",
+                            "creditLevel": 0.99,
+                            "existTranscoding": "True",
+                            "axisY": 1165,
+                            "sepValue": "￥10.58",
+                            "axisX": 1257,
+                            "width": 98,
+                            "attTypeCode": 2,
+                            "height": 28
+                        }
+                    ],
+                    "existTranscoding": "True",
+                    "parsedValue": "￥10.58￥202,071.94",
+                    "source_image": 3,
+                    "originalValue": "￥￥",
+                    "extractFrom": "nlp",
+                    "normalizedValue": "￥￥",
+                    "keyDesc": "币制",
+                    "value": "CNY",
+                    "key": "tradeCurr"
+                },
+                {
+                    "processBitMap": "0",
+                    "sourceList": [
+                        {
+                            "attType": "Declaration",
+                            "imageId": 3,
+                            "transformValue": "33169",
+                            "sepValueList": [
+                                {
+                                    "endy": 1280,
+                                    "endx": 1204,
+                                    "originalValue": "萧山",
+                                    "starty": 1251,
+                                    "startx": 1148
+                                }
+                            ],
+                            "originalValue": "萧山",
+                            "extractFrom": "nlp",
+                            "normalizedValue": "萧山",
+                            "processBitMap": "0",
+                            "creditLevel": 0.99,
+                            "axisY": 1251,
+                            "sepValue": "萧山",
+                            "axisX": 1148,
+                            "width": 56,
+                            "attTypeCode": 4,
+                            "height": 29
+                        }
+                    ],
+                    "existTranscoding": "True",
+                    "parsedValue": "萧山",
+                    "source_image": 3,
+                    "originalValue": "萧山",
+                    "extractFrom": "nlp",
+                    "normalizedValue": "萧山",
+                    "keyDesc": "境内货源地",
+                    "value": "33169",
+                    "key": "districtCode"
+                },
+                {
+                    "processBitMap": "0",
+                    "sourceList": [
+                        {
+                            "attType": "PackingList",
+                            "imageId": 2,
+                            "transformValue": "19101.60",
+                            "sepValueList": [
+                                {
+                                    "endy": 1158,
+                                    "endx": 1397,
+                                    "originalValue": "19101.60",
+                                    "starty": 1131,
+                                    "startx": 1227
+                                }
+                            ],
+                            "originalValue": "19101.60",
+                            "extractFrom": "nlp",
+                            "normalizedValue": "19101.60",
+                            "processBitMap": "0",
+                            "creditLevel": 0.99,
+                            "axisY": 1131,
+                            "sepValue": "19101.60",
+                            "axisX": 1227,
+                            "width": 170,
+                            "attTypeCode": 3,
+                            "height": 27
+                        }
+                    ],
+                    "parsedValue": "19101.60 KGS",
+                    "source_image": 2,
+                    "originalValue": "19101.60",
+                    "extractFrom": "nlp",
+                    "normalizedValue": "19101.60",
+                    "keyDesc": "净重单项",
+                    "value": "19101.60",
+                    "key": "gnetWt"
+                },
+                {
+                    "processBitMap": "0",
+                    "sourceList": [],
+                    "existTranscoding": "True",
+                    "parsedValue": "",
+                    "source_image": 0,
+                    "originalValue": "照章征税",
+                    "extractFrom": "default",
+                    "normalizedValue": "照章征税",
+                    "keyDesc": "征免",
+                    "value": "1",
+                    "key": "dutyMode"
+                },
+                {
+                    "processBitMap": "1",
+                    "sourceList": [
+                        {
+                            "attType": "Declaration",
+                            "imageId": 3,
+                            "transformValue": "",
+                            "sepValueList": [],
+                            "originalValue": "",
+                            "extractFrom": "nlp",
+                            "normalizedValue": "",
+                            "processBitMap": "1",
+                            "creditLevel": 1,
+                            "axisY": 0,
+                            "sepValue": "",
+                            "axisX": 0,
+                            "width": 0,
+                            "attTypeCode": 4,
+                            "height": 0
+                        }
+                    ],
+                    "existTranscoding": "True",
+                    "parsedValue": "",
+                    "source_image": 3,
+                    "originalValue": "",
+                    "extractFrom": "nlp",
+                    "normalizedValue": "",
+                    "keyDesc": "法定第二单位",
+                    "value": "",
+                    "key": "unit2"
+                },
+                {
+                    "processBitMap": "0",
+                    "sourceList": [
+                        {
+                            "attType": "Declaration",
+                            "imageId": 3,
+                            "transformValue": "19101.60",
+                            "sepValueList": [
+                                {
+                                    "endy": 1041,
+                                    "endx": 1016,
+                                    "originalValue": "19101.60",
+                                    "starty": 1014,
+                                    "startx": 838
+                                }
+                            ],
+                            "originalValue": "19101.60",
+                            "extractFrom": "nlp",
+                            "normalizedValue": "19101.60",
+                            "processBitMap": "0",
+                            "creditLevel": 0.98,
+                            "axisY": 1014,
+                            "sepValue": "19101.60",
+                            "axisX": 838,
+                            "width": 178,
+                            "attTypeCode": 4,
+                            "height": 27
+                        }
+                    ],
+                    "parsedValue": "19101.60 KGS",
+                    "source_image": 3,
+                    "originalValue": "19101.60",
+                    "extractFrom": "nlp",
+                    "normalizedValue": "19101.60",
+                    "keyDesc": "法定第二数量",
+                    "value": "19101.60",
+                    "key": "qty2"
+                },
+                {
+                    "processBitMap": "0",
+                    "sourceList": [
+                        {
+                            "attType": "Contract",
+                            "imageId": 4,
+                            "transformValue": "035",
+                            "sepValueList": [
+                                {
+                                    "endy": 825,
+                                    "endx": 994,
+                                    "originalValue": "KGS",
+                                    "starty": 793,
+                                    "startx": 806
+                                }
+                            ],
+                            "originalValue": "KGS",
+                            "extractFrom": "nlp",
+                            "normalizedValue": "KGS",
+                            "processBitMap": "0",
+                            "creditLevel": 0.99,
+                            "axisY": 793,
+                            "sepValue": "KGS",
+                            "axisX": 806,
+                            "width": 188,
+                            "attTypeCode": 1,
+                            "height": 32
+                        },
+                        {
+                            "attType": "Invoice",
+                            "imageId": 1,
+                            "transformValue": "035",
+                            "sepValueList": [
+                                {
+                                    "endy": 1193,
+                                    "endx": 1161,
+                                    "originalValue": "KGS",
+                                    "starty": 1166,
+                                    "startx": 988
+                                }
+                            ],
+                            "originalValue": "KGS",
+                            "extractFrom": "nlp",
+                            "normalizedValue": "KGS",
+                            "processBitMap": "0",
+                            "creditLevel": 0.98,
+                            "existTranscoding": "True",
+                            "axisY": 1166,
+                            "sepValue": "KGS",
+                            "axisX": 988,
+                            "width": 173,
+                            "attTypeCode": 2,
+                            "height": 27
+                        }
+                    ],
+                    "existTranscoding": "True",
+                    "parsedValue": "19101.60KGS",
+                    "source_image": 4,
+                    "originalValue": "KGS",
+                    "extractFrom": "nlp",
+                    "normalizedValue": "KGS",
+                    "keyDesc": "成交单位",
+                    "value": "035",
+                    "key": "gUnit"
+                },
+                {
+                    "processBitMap": "0",
+                    "sourceList": [
+                        {
+                            "attType": "Contract",
+                            "imageId": 4,
+                            "transformValue": "19101.60",
+                            "sepValueList": [
+                                {
+                                    "endy": 825,
+                                    "endx": 994,
+                                    "originalValue": "19101.60",
+                                    "starty": 793,
+                                    "startx": 806
+                                }
+                            ],
+                            "originalValue": "19101.60",
+                            "extractFrom": "nlp",
+                            "normalizedValue": "19101.60",
+                            "processBitMap": "0",
+                            "creditLevel": 0.99,
+                            "axisY": 793,
+                            "sepValue": "19101.60",
+                            "axisX": 806,
+                            "width": 188,
+                            "attTypeCode": 1,
+                            "height": 32
+                        },
+                        {
+                            "attType": "Invoice",
+                            "imageId": 1,
+                            "transformValue": "19101.60",
+                            "sepValueList": [
+                                {
+                                    "endy": 1193,
+                                    "endx": 1161,
+                                    "originalValue": "19101.60",
+                                    "starty": 1166,
+                                    "startx": 988
+                                }
+                            ],
+                            "originalValue": "19101.60",
+                            "extractFrom": "nlp",
+                            "normalizedValue": "19101.60",
+                            "processBitMap": "0",
+                            "creditLevel": 0.98,
+                            "axisY": 1166,
+                            "sepValue": "19101.60",
+                            "axisX": 988,
+                            "width": 173,
+                            "attTypeCode": 2,
+                            "height": 27
+                        }
+                    ],
+                    "parsedValue": "19101.60KGS",
+                    "source_image": 4,
+                    "originalValue": "19101.60",
+                    "extractFrom": "nlp",
+                    "normalizedValue": "19101.60",
+                    "keyDesc": "成交数量",
+                    "value": "19101.60",
+                    "key": "gQty"
+                }
+            ]
+        ],
+        "resultCode": 0,
+        "operateImage": [
+            {
+                "callOcrOpen": true,
+                "imageWidth": "1786",
+                "originalFileName": "RELNBI09149报关.pdf",
+                "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02502/8d81c47c9c0b4dd7b436e4695830a506/2_RELNBI09149%E6%8A%A5%E5%85%B3.pdf.txt",
+                "imageId": 3,
+                "pdfDocPage": 2,
+                "extractSource": "nlp",
+                "originalFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02502/8d81c47c9c0b4dd7b436e4695830a506/RELNBI09149%E6%8A%A5%E5%85%B3.pdf",
+                "imageHeight": "2526",
+                "preAttTypeCode": 0,
+                "originalImageWidth": "1786",
+                "parseCode": 5,
+                "inputDocType": 1,
+                "imageUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02502/8d81c47c9c0b4dd7b436e4695830a506/2_RELNBI09149%E6%8A%A5%E5%85%B3.pdf.png",
+                "angle": 0,
+                "classifySource": "nlp",
+                "originalImageHeight": "2526",
+                "attTypeCode": 4,
+                "imageSuffix": "png"
+            }
+        ],
+        "preDecContainer": [
+            [
+                {
+                    "processBitMap": "0",
+                    "sourceList": [
+                        {
+                            "attType": "Declaration",
+                            "imageId": 3,
+                            "transformValue": "TLLU8504848",
+                            "sepValueList": [
+                                {
+                                    "endy": 924,
+                                    "endx": 440,
+                                    "originalValue": "TLLU8504848",
+                                    "starty": 897,
+                                    "startx": 264
+                                }
+                            ],
+                            "originalValue": "TLLU8504848",
+                            "processBitMap": 0,
+                            "creditLevel": 0.99,
+                            "axisY": 897,
+                            "sepValue": "TLLU8504848",
+                            "axisX": 264,
+                            "width": 176,
+                            "attTypeCode": 4,
+                            "height": 27
+                        }
+                    ],
+                    "source_image": 3,
+                    "extractFrom": "nlp",
+                    "normalizedValue": "TLLU8504848",
+                    "keyDesc": "柜号",
+                    "value": "TLLU8504848",
+                    "key": "containerNo"
+                }
+            ]
+        ],
+        "preDecLicense": [],
+        "preDecDoc": [
+            {
+                "attFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/ebao/input/E67b6b9d13380c240ff088e24/E67b6b9d13380c240ff088e24/preDecDoc_1.pdf",
+                "attSeqNo": "1",
+                "attTypeCode": "1"
+            },
+            {
+                "attFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/ebao/input/E67b6b9d13380c240ff088e24/E67b6b9d13380c240ff088e24/preDecDoc_2.pdf",
+                "attSeqNo": "2",
+                "attTypeCode": "2"
+            },
+            {
+                "attFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/ebao/input/E67b6b9d13380c240ff088e24/E67b6b9d13380c240ff088e24/preDecDoc_3.pdf",
+                "attSeqNo": "3",
+                "attTypeCode": "3"
+            },
+            {
+                "attFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/ebao/input/E67b6b9d13380c240ff088e24/E67b6b9d13380c240ff088e24/preDecDoc_4.pdf",
+                "attSeqNo": "4",
+                "attTypeCode": "4"
+            }
+        ],
+        "resultMessage": "识别成功",
+        "version": "3.221_fix_online_new"
+    }
+}
