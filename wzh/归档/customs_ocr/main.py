@@ -70,6 +70,15 @@ async def main_async(input_json_path: str, output_json_path: str):
         final_output = process_final_output(aggregated_data, image_infos)
         logger.info("后处理完成")
         
+        # 6.映射
+
+        # 7.申报要素
+
+        # 8.转为ocr.json格式
+
+
+
+
         # 6. 保存结果
         logger.info(f"保存结果到 {output_json_path}...")
         with open(output_json_path, 'w', encoding='utf-8') as f:
