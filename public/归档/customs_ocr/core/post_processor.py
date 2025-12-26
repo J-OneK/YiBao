@@ -139,6 +139,7 @@ def process_mainfactors(results: List[Dict]) -> List[Dict]:
             # 归一化商品编码
             code = normalize_values([code])[0]
             mf = model.get('mainfactors')
+            pixel = model.get('pixel')
             if not code or not mf:
                 continue
 
@@ -149,7 +150,8 @@ def process_mainfactors(results: List[Dict]) -> List[Dict]:
                     current_score += len(p)
             clean_item = {
                 'codeTs': code, 
-                'mainfactors': mf
+                'mainfactors': mf,
+                'pixel': pixel
             }
             if code not in best_results or current_score > best_results[code][0]:
                 best_results[code] = (current_score, clean_item)

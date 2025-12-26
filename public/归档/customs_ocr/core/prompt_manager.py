@@ -138,6 +138,7 @@ def generate_mainfactor_prompt(hsCodes: list, mainfactors: list) -> str:
 5. 如果没有识别到上述任何关键词，则不输出任何内容。
 6. 严格按照任务中要求的商品数量按实际顺序输出对应的商品规格型号信息，商品编码识别出来若有偏差，自行判断，补充完整。
 7. 按照JSON格式输出，不包含任何解释、说明或额外文字。
+8. 所有输出必须包含“pixel”字段，格式为[左上x, 左上y, 右下x, 右下y]，表示字段在图片中的位置。
 ### 输出示例
 ```json
 {
@@ -145,10 +146,12 @@ def generate_mainfactor_prompt(hsCodes: list, mainfactors: list) -> str:
     {
       "codeTs": "商品编码1",
       "mainfactors": "识别到的商品编码对应的规格型号属性值字符串，使用|分隔",
+      "pixel": [左上x, 左上y, 右下x, 右下y]
     },
     {
       "codeTs": "商品编码2",
       "mainfactors": "识别到的商品编码对应的规格型号属性值字符串，使用|分隔",
+      "pixel": [左上x, 左上y, 右下x, 右下y]
     }
     //如果有多组数据，继续添加更多对象
   ]

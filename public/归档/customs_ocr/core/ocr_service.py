@@ -95,7 +95,7 @@ async def recognize_image_async(image_info: ImageInfo, prompt: str, is_mainfacto
             # 获取返回的文本
             response_text = completion.choices[0].message.content
             logger.debug(f"模型返回: {response_text[:200]}...")
-            print(f"[DEBUG]模型输出结果: {response_text}")
+
             # 解析JSON
             if is_mainfactor:
                 parsed_data = json_utils.parse_mainfactor_json(response_text)
