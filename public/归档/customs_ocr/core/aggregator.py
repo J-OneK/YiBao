@@ -71,6 +71,7 @@ def aggregate_head_fields(results: List[ExtractionResult]) -> List[Dict]:
         aggregated.append({
             'keyDesc': key_desc,
             'key': key,
+            'if_unify': True,
             'sourceList': sources
         })
     
@@ -119,6 +120,7 @@ def aggregate_list_fields(results: List[ExtractionResult]) -> List[List[Dict]]:
             product_aggregated.append({
                 'keyDesc': key_desc,
                 'key': key,
+                'if_unify': True,
                 'sourceList': sources
             })
         
@@ -144,27 +146,46 @@ async def check_consistency_and_unify_async(aggregated_data: Dict) -> Dict:
     
     # 处理表头
     for field in aggregated_data['preDecHead']:
-        fields_to_process.append((field['keyDesc'],field['sourceList']))
+        fields_to_process.append((field['keyDesc'],field['if_unify'],field['sourceList']))
     
     # 处理表体
     for product_fields in aggregated_data['preDecList']:
         for field in product_fields:
-            fields_to_process.append((field['keyDesc'],field['sourceList']))
+            fields_to_process.append((field['keyDesc'],field['if_unify'],field['sourceList']))
     
     # 异步处理所有字段
-    for keyDesc, source_list in fields_to_process:
-        task = unify_source_list_async(keyDesc,source_list)
-        tasks.append(task)
+    for keyDesc, if_unify, source_list in fields_to_process:
+        if_unify_ref = {"value": if_unify}
+        task = unify_source_list_async(keyDesc, if_unify_ref, source_list)
+        tasks.append((task, if_unify_ref))
     
     # 等待所有任务完成
-    await asyncio.gather(*tasks, return_exceptions=True)
-    
+    results = await asyncio.gather(
+    *[t for t, _ in tasks], 
+    return_exceptions=True
+    )
+
+    # 把 if_unify 写回字段
+    idx = 0
+
+    # 表头
+    for field in aggregated_data["preDecHead"]:
+        field["if_unify"] = tasks[idx][1]["value"]
+        idx += 1
+
+    # 表体
+    for product_fields in aggregated_data["preDecList"]:
+        for field in product_fields:
+            field["if_unify"] = tasks[idx][1]["value"]
+            idx += 1
+
     return aggregated_data
 
 
 
 
-async def unify_source_list_async(keyDesc,source_list: List[Dict]):
+
+async def unify_source_list_async(keyDesc,if_unify,source_list: List[Dict]):
     """
     异步统一sourceList中的value
     如果所有value都一样，不做处理
@@ -186,16 +207,16 @@ async def unify_source_list_async(keyDesc,source_list: List[Dict]):
     # 如果值不一致，调用大模型判断
     logger.info(f"发现不一致的值: {unique_values}，调用大模型判断...")
     
-    should_unify, unified_value = await call_llm_to_judge_consistency_async(unique_values) #unifyed_value不在此处获得，而是按照优先级获得
-    unified_value,from_type = set_priority_value(keyDesc,source_list)
+    should_unify, _ = await call_llm_to_judge_consistency_async(unique_values)
+    if_unify["value"] = should_unify
 
-    if should_unify:
-        logger.info(f"大模型判断\'{keyDesc}\'里的值是同一含义，统一为最高优先级: {unified_value},来自att_type:{from_type}")
-        for item in source_list:
-            item['value'] = unified_value
+    if if_unify:
+        logger.info(f"大模型判断\'{keyDesc}\'里的值是同一含义，最高优先级: {unified_value},来自att_type:{from_type}。")
+        
     else:
         #不unify则把最高优先级放到list里的第一位，后续parsedvalue自动取
         logger.warning(f"大模型判断这些值含义不同，保持原样: {unique_values}")
+        
 
 
 def is_numeric(value: str) -> bool:

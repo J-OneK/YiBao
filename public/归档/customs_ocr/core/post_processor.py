@@ -9,7 +9,10 @@ import logging
 from typing import Dict, List
 from .models import ImageInfo
 from .mainfactor_utils import normalize_values
-
+import torch
+import torch.nn.functional as F
+from transformers import AutoTokenizer, AutoModel
+from torch import Tensor
 logger = logging.getLogger(__name__)
 
 
@@ -61,11 +64,16 @@ def process_field(field: Dict, image_map: Dict[str, ImageInfo]) -> Dict:
     """
     key_desc = field['keyDesc']
     key = field['key']
+    if_unify = field['if_unify']
     source_list = field['sourceList']
     
     # 生成parsedValue（简化版本：取第一个sourceList的value）
     parsed_value = source_list[0]['value'] if source_list else ''
     
+    # 生成transformedValue
+    #transformedValue_total = choose_top_similarity(key_desc, parsed_value)
+    transformedValue_total = parsed_value
+
     # 转换坐标
     processed_sources = []
     for source in source_list:
@@ -74,36 +82,120 @@ def process_field(field: Dict, image_map: Dict[str, ImageInfo]) -> Dict:
         att_type_code = source['att_type_code']
         # 获取图片信息
         image_info = image_map.get(image_id)
-        if not image_info or not image_info.width or not image_info.height:
-            logger.warning(f"未找到图片 {image_id} 的尺寸信息，使用原始坐标")
-            processed_sources.append({
-                'value': source['value'],
-                'startx': int(pixel[0]),
-                'starty': int(pixel[1]),
-                'endx': int(pixel[2]),
-                'endy': int(pixel[3]),
-                'imageId': image_id,
-                'attTypeCode': att_type_code
-            })
+        if if_unify:
+            if not image_info or not image_info.width or not image_info.height:
+                logger.warning(f"未找到图片 {image_id} 的尺寸信息，使用原始坐标")
+                processed_sources.append({
+                    'value': source['value'],
+                    'transformedValue': transformedValue_total,
+                    'startx': int(pixel[0]),
+                    'starty': int(pixel[1]),
+                    'endx': int(pixel[2]),
+                    'endy': int(pixel[3]),
+                    'imageId': image_id,
+                    'attTypeCode': att_type_code
+                })
+            else:
+                # 转换归一化坐标到实际坐标
+                processed_sources.append({
+                    'value': source['value'],
+                    'transformedValue': transformedValue_total,
+                    'startx': normalize_to_real(pixel[0], image_info.width),
+                    'starty': normalize_to_real(pixel[1], image_info.height),
+                    'endx': normalize_to_real(pixel[2], image_info.width),
+                    'endy': normalize_to_real(pixel[3], image_info.height),
+                    'imageId': image_id,
+                    'attTypeCode': att_type_code
+                })
         else:
-            # 转换归一化坐标到实际坐标
-            processed_sources.append({
-                'value': source['value'],
-                'startx': normalize_to_real(pixel[0], image_info.width),
-                'starty': normalize_to_real(pixel[1], image_info.height),
-                'endx': normalize_to_real(pixel[2], image_info.width),
-                'endy': normalize_to_real(pixel[3], image_info.height),
-                'imageId': image_id,
-                'attTypeCode': att_type_code
-            })
+            if not image_info or not image_info.width or not image_info.height:
+                logger.warning(f"未找到图片 {image_id} 的尺寸信息，使用原始坐标")
+                processed_sources.append({
+                    'value': source['value'],
+                    'transformedValue': source['value'],
+                    'startx': int(pixel[0]),
+                    'starty': int(pixel[1]),
+                    'endx': int(pixel[2]),
+                    'endy': int(pixel[3]),
+                    'imageId': image_id,
+                    'attTypeCode': att_type_code
+                })
+            else:
+                # 转换归一化坐标到实际坐标
+                processed_sources.append({
+                    'value': source['value'],
+                    'transformedValue': source['value'],
+                    'startx': normalize_to_real(pixel[0], image_info.width),
+                    'starty': normalize_to_real(pixel[1], image_info.height),
+                    'endx': normalize_to_real(pixel[2], image_info.width),
+                    'endy': normalize_to_real(pixel[3], image_info.height),
+                    'imageId': image_id,
+                    'attTypeCode': att_type_code
+                })
     
     return {
         'keyDesc': key_desc,
         'key': key,
         'parsedValue': parsed_value,
+        'transformedValue': transformedValue_total, 
+        'if_unify': if_unify,
         'sourceList': processed_sources
     }
 
+
+'''
+def choose_top_similarity(key_desc: str, parsed_value: str):
+    """
+    选择相似度最高的值作为transformedValue
+    """
+    
+    need_transform = {'归属地', '征免性质', '监管方式', '贸易方式', '币制', '成交方式'}
+    if key_desc not in need_transform:
+        return parsed_value
+    else:
+        query_text = f"query: {parsed_value}"
+        query_emb = encode_fn([query_text])
+        best_label = None
+        best_score = -1e9
+
+        # 遍历该 key 下的所有子类
+        for paramValue, param_emb, paramKey in tensor_store[key_desc].items():
+            if param_emb is None:
+                continue
+
+            # label_emb shape: (dim,)
+            score = torch.matmul(query_emb, param_emb.unsqueeze(1)).item()
+
+            if score > best_score:
+                best_score = score
+                best_paramKey = paramKey
+        return best_paramKey
+    
+
+def encode_fn(texts: List[str]):
+    tokenizer = AutoTokenizer.from_pretrained("intfloat/multilingual-e5-large")
+    model = AutoModel.from_pretrained("intfloat/multilingual-e5-large")
+    model.eval()
+    batch = tokenizer(
+        texts,
+        padding=True,
+        truncation=True,
+        max_length=256,
+        return_tensors="pt"
+    )
+
+    with torch.no_grad():
+        outputs = model(**batch)
+
+    # E5 推荐：取 CLS 向量
+    embeddings = outputs.last_hidden_state[:, 0]
+
+    # L2 normalize，便于 cosine / dot-product
+    embeddings = F.normalize(embeddings, p=2, dim=1)
+
+    return embeddings
+
+'''
 
 def normalize_to_real(normalized_coord: float, actual_size: int) -> int:
     """
