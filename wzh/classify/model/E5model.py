@@ -1,32 +1,17 @@
+import json
 import torch
 import torch.nn.functional as F
 from transformers import AutoTokenizer, AutoModel
-from torch import Tensor
+from typing import Dict
 
-
-def average_pool(last_hidden_states: Tensor,
-                 attention_mask: Tensor) -> Tensor:
-    last_hidden = last_hidden_states.masked_fill(
-        ~attention_mask[..., None].bool(), 0.0
-    )
-    return last_hidden.sum(dim=1) / attention_mask.sum(dim=1)[..., None]
-
-
-# ===== 1. 模型加载 =====
+# ===================== 模型加载 =====================
 tokenizer = AutoTokenizer.from_pretrained("intfloat/multilingual-e5-large")
 model = AutoModel.from_pretrained("intfloat/multilingual-e5-large")
 model.eval()
 
-
-# ===== 2. 构造类别原型 =====
-water = ["passage: 水路运输"]
-air = ["passage: 航空运输"]
-land = ["passage: 铁路运输"]
-
-query = ["query: by sea"]   # 待分类输入
-
-
-def encode(texts, normalize=True):
+# ===================== 辅助函数 =====================
+def encode_texts(texts):
+    """批量生成文本向量"""
     batch = tokenizer(
         texts,
         padding=True,
@@ -36,44 +21,42 @@ def encode(texts, normalize=True):
     )
     with torch.no_grad():
         outputs = model(**batch)
-
-    embeddings = average_pool(
-        outputs.last_hidden_state,
-        batch["attention_mask"]
-    )
-
-    if normalize:
-        embeddings = F.normalize(embeddings, p=2, dim=1)
-
+    # average pooling
+    attention_mask = batch["attention_mask"]
+    last_hidden = outputs.last_hidden_state.masked_fill(~attention_mask[..., None].bool(), 0.0)
+    embeddings = last_hidden.sum(dim=1) / attention_mask.sum(dim=1)[..., None]
+    embeddings = F.normalize(embeddings, p=2, dim=1)  # L2归一化
     return embeddings
 
+# ===================== 数据加载 =====================
+with open("1_运输方式_1009.json", "r", encoding="utf-8") as f:
+    data = json.load(f)
 
-# ===== 3. 计算 embedding =====
-emb_water = encode(water)      # shape: (1, dim)
-emb_air = encode(air)
-emb_land = encode(land)
-emb_query = encode(query)
+result_list = data["message"]["resultList"]
 
+# ===================== 提取 paramKey 和 paramValue =====================
+param_dict: Dict[str, str] = {}  # key: paramValue, value: paramKey
+values_to_encode = []
 
-# ===== 4. 相似度计算 =====
+for item in result_list:
+    value = item.get("paramValue", "").strip()
+    key = item.get("paramKey", "").strip()
+    if value and key:
+        param_dict[value] = key
+        values_to_encode.append(value)
 
-# 余弦相似度
-cos_water = F.cosine_similarity(emb_query, emb_water)
-cos_air = F.cosine_similarity(emb_query, emb_air)
-cos_land = F.cosine_similarity(emb_query, emb_land)
+# ===================== 生成向量 =====================
+embeddings = encode_texts(values_to_encode)
 
-# 矩阵乘
-dot_water = emb_query @ emb_water.T
-dot_air = emb_query @ emb_air.T
-dot_land = emb_query @ emb_land.T
+# ===================== 保存向量 =====================
+# 保存为字典: paramValue -> (paramKey, embedding tensor)
+embedding_store = {}
+for i, value in enumerate(values_to_encode):
+    embedding_store[value] = {
+        "paramKey": param_dict[value],
+        "embedding": embeddings[i].cpu()  # 可保存 tensor，也可以转 numpy
+    }
 
-
-print("=== Cosine similarity ===")
-print("water:", cos_water.item())
-print("air:", cos_air.item())
-print("land:", cos_land.item())
-
-print("\n=== Normalized dot product ===")
-print("water:", dot_water.item())
-print("air:", dot_air.item())
-print("land:", dot_land.item())
+# 保存为 torch 文件
+torch.save(embedding_store, "param_embeddings.pt")
+print(f"保存 {len(embedding_store)} 条 paramValue embedding 到 param_embeddings.pt")

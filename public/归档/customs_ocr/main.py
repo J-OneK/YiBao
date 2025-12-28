@@ -16,6 +16,7 @@ from core.post_processor import process_final_output, process_mainfactors
 from config import settings
 from core.mainfactor_utils import get_codets_values, normalize_values, get_mainfactor
 
+
 # 配置日志
 logging.basicConfig(
     level=getattr(logging, settings.LOG_LEVEL),

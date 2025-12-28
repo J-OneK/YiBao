@@ -211,7 +211,7 @@ async def unify_source_list_async(keyDesc,if_unify,source_list: List[Dict]):
     if_unify["value"] = should_unify
 
     if if_unify:
-        logger.info(f"大模型判断\'{keyDesc}\'里的值是同一含义，最高优先级: {unified_value},来自att_type:{from_type}。")
+        logger.info(f"大模型判断\'{keyDesc}\'里的值是同一含义。")
         
     else:
         #不unify则把最高优先级放到list里的第一位，后续parsedvalue自动取

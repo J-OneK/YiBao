@@ -71,8 +71,7 @@ def process_field(field: Dict, image_map: Dict[str, ImageInfo]) -> Dict:
     parsed_value = source_list[0]['value'] if source_list else ''
     
     # 生成transformedValue
-    #transformedValue_total = choose_top_similarity(key_desc, parsed_value)
-    transformedValue_total = parsed_value
+    transformedValue_total = choose_top_similarity(key_desc, parsed_value)
 
     # 转换坐标
     processed_sources = []
@@ -143,59 +142,54 @@ def process_field(field: Dict, image_map: Dict[str, ImageInfo]) -> Dict:
     }
 
 
-'''
-def choose_top_similarity(key_desc: str, parsed_value: str):
+
+def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
     """
-    选择相似度最高的值作为transformedValue
+    根据 key_desc 自动加载对应的 pt 文件（key_desc.pt），与 parsed_value 的 embedding 比较相似度，
+    返回相似度最高的 paramKey
+    
+    Args:
+        key_desc: 字段名称，会对应 pt 文件 key_desc.pt
+        parsed_value: 待查询文本
+        
+    Returns:
+        相似度最高的 paramKey
     """
-    
-    need_transform = {'归属地', '征免性质', '监管方式', '贸易方式', '币制', '成交方式'}
-    if key_desc not in need_transform:
-        return parsed_value
-    else:
-        query_text = f"query: {parsed_value}"
-        query_emb = encode_fn([query_text])
-        best_label = None
-        best_score = -1e9
-
-        # 遍历该 key 下的所有子类
-        for paramValue, param_emb, paramKey in tensor_store[key_desc].items():
-            if param_emb is None:
-                continue
-
-            # label_emb shape: (dim,)
-            score = torch.matmul(query_emb, param_emb.unsqueeze(1)).item()
-
-            if score > best_score:
-                best_score = score
-                best_paramKey = paramKey
-        return best_paramKey
-    
-
-def encode_fn(texts: List[str]):
     tokenizer = AutoTokenizer.from_pretrained("intfloat/multilingual-e5-large")
     model = AutoModel.from_pretrained("intfloat/multilingual-e5-large")
     model.eval()
-    batch = tokenizer(
-        texts,
-        padding=True,
-        truncation=True,
-        max_length=256,
-        return_tensors="pt"
-    )
+    # ===== 1. 编码 parsed_value =====
+    def encode_text(text: str):
+        batch = tokenizer(
+            [text],
+            padding=True,
+            truncation=True,
+            max_length=128,
+            return_tensors="pt"
+        )
+        with torch.no_grad():
+            outputs = model(**batch)
+        attention_mask = batch["attention_mask"]
+        last_hidden = outputs.last_hidden_state.masked_fill(~attention_mask[..., None].bool(), 0.0)
+        embeddings = last_hidden.sum(dim=1) / attention_mask.sum(dim=1)[..., None]
+        embeddings = F.normalize(embeddings, p=2, dim=1)
+        return embeddings  # (1, dim)
 
-    with torch.no_grad():
-        outputs = model(**batch)
+    input_emb = encode_text(parsed_value)
 
-    # E5 推荐：取 CLS 向量
-    embeddings = outputs.last_hidden_state[:, 0]
+    # ===== 2. 自动加载 key_desc.pt =====
+    pt_path = f"./embeddings/{key_desc}.pt"
+    store: Dict[str, Dict] = torch.load(pt_path)  # {paramValue: {"paramKey": str, "embedding": tensor}}
 
-    # L2 normalize，便于 cosine / dot-product
-    embeddings = F.normalize(embeddings, p=2, dim=1)
+    param_values = list(store.keys())
+    embeddings = torch.stack([store[v]["embedding"] for v in param_values])  # (N, dim)
 
-    return embeddings
+    # ===== 3. 计算相似度并返回最相似 paramKey =====
+    similarity = F.cosine_similarity(input_emb, embeddings)  # (N,)
+    idx = similarity.argmax().item()
 
-'''
+    return store[param_values[idx]]["paramKey"]
+
 
 def normalize_to_real(normalized_coord: float, actual_size: int) -> int:
     """
