@@ -29,7 +29,7 @@ def encode_texts(texts):
     return embeddings
 
 # ===================== 数据加载 =====================
-with open("1_运输方式_1009.json", "r", encoding="utf-8") as f:
+with open("2_监管方式_1001.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
 result_list = data["message"]["resultList"]

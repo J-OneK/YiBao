@@ -9,6 +9,10 @@ import logging
 from typing import Dict, List
 from .models import ImageInfo
 from .mainfactor_utils import normalize_values
+import torch
+import torch.nn.functional as F
+from transformers import AutoTokenizer, AutoModel
+from typing import Dict
 
 logger = logging.getLogger(__name__)
 
@@ -175,7 +179,7 @@ def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
     input_emb = encode_text(parsed_value)
 
     # ===== 2. 自动加载 key_desc.pt =====
-    pt_path = f"./embeddings/{key_desc}.pt"
+    pt_path = f"./presaved_embeddings/{key_desc}.pt"
     store: Dict[str, Dict] = torch.load(pt_path)  # {paramValue: {"paramKey": str, "embedding": tensor}}
 
     param_values = list(store.keys())
