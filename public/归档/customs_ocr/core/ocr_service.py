@@ -99,6 +99,9 @@ async def recognize_image_async(image_info: ImageInfo, prompt: str, is_mainfacto
             # 解析JSON
             if is_mainfactor:
                 parsed_data = json_utils.parse_mainfactor_json(response_text)
+                for item in parsed_data['gmodel']:
+                    item['imageId'] = image_info.image_id
+                    item['attTypeCode'] = image_info.att_type_code
             else:
                 parsed_data = json_utils.parse_and_validate(response_text)
 

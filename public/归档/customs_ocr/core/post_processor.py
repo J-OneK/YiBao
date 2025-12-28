@@ -9,10 +9,7 @@ import logging
 from typing import Dict, List
 from .models import ImageInfo
 from .mainfactor_utils import normalize_values
-import torch
-import torch.nn.functional as F
-from transformers import AutoTokenizer, AutoModel
-from torch import Tensor
+
 logger = logging.getLogger(__name__)
 
 
@@ -232,6 +229,8 @@ def process_mainfactors(results: List[Dict]) -> List[Dict]:
             code = normalize_values([code])[0]
             mf = model.get('mainfactors')
             pixel = model.get('pixel')
+            imageId = model.get('imageId')
+            attTypeCode = model.get('attTypeCode')
             if not code or not mf:
                 continue
 
@@ -243,7 +242,9 @@ def process_mainfactors(results: List[Dict]) -> List[Dict]:
             clean_item = {
                 'codeTs': code, 
                 'mainfactors': mf,
-                'pixel': pixel
+                'pixel': pixel,
+                'imageId': imageId,
+                'attTypeCode': attTypeCode
             }
             if code not in best_results or current_score > best_results[code][0]:
                 best_results[code] = (current_score, clean_item)

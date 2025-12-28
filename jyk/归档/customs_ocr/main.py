@@ -11,7 +11,7 @@ from pathlib import Path
 from core.data_loader import load_input_data
 from core.prompt_manager import generate_prompt, generate_mainfactor_prompt
 from core.ocr_service import recognize_images_batch
-from core.aggregator import aggregate_results, check_consistency_and_unify_async
+from core.aggregator import aggregate_results, check_consistency_and_unify_async, aggregate_mainfactors
 from core.post_processor import process_final_output, process_mainfactors
 from config import settings
 from core.mainfactor_utils import get_codets_values, normalize_values, get_mainfactor
@@ -65,7 +65,7 @@ async def main_async(input_json_path: str, output_json_path: str):
         aggregated_data = aggregate_results(valid_results)
         logger.info("聚合完成")
         
-        # print(f"聚合结果：{aggregated_data}")
+        print(f"聚合结果：{aggregated_data}")
 
         # 4. 根据聚合结果提取商品编号识别申报要素
         logger.info(f"步骤 4/{total_steps}: 并发调用视觉大模型识别图片...")
@@ -92,6 +92,10 @@ async def main_async(input_json_path: str, output_json_path: str):
 
         print(f"申报要素识别结果：{valid_results}")
 
+        logger.info("聚合申报要素识别结果")
+        aggregated_data = aggregate_mainfactors(aggregated_data, valid_results)
+        logger.info("聚合申报要素识别结果完成")
+        
         # 5. 异步检查一致性并统一
         logger.info(f"步骤 5/{total_steps}: 并发检查字段一致性...")
         aggregated_data = await check_consistency_and_unify_async(aggregated_data)

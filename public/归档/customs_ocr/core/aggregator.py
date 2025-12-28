@@ -514,3 +514,60 @@ def set_priority_value(keyDesc,source_list: List[Dict]) -> str:
                     source_list.insert(0, source_list.pop(idx))
                     return source_list[0].get("value", ""),att_type_code
     return source_list[0].get("value", ""),0
+
+def aggregate_mainfactors(data, factor_list):
+    """
+    将申报要素合并到 preDecList 中
+    """
+    # 1. 建立映射字典
+    factors_map = {item['codeTs']: item for item in factor_list}
+    
+    pre_dec_list = data.get('preDecList', [])
+
+    for item_list in pre_dec_list:
+        current_code_ts = None
+        
+        # 2. 获取当前商品的 codeTs
+        for field in item_list:
+            if field.get('key') == 'codeTs':
+                source_list = field.get('sourceList', [{}])
+                if source_list:
+                    current_code_ts = source_list[0].get('value')
+                break
+        
+        # 3. 如果匹配到申报要素，构造符合顺序的新字典
+        if current_code_ts and current_code_ts in factors_map:
+            target_factor = factors_map[current_code_ts]
+            
+            # --- 步骤 A: 构建内层字典 (按照 value -> pixel -> imageId 顺序) ---
+            new_source_item = {
+                'value': target_factor['mainfactors'],
+                'pixel': target_factor['pixel'],
+                'imageId': target_factor['imageId'],
+                'att_type_code': target_factor['attTypeCode']
+            }
+            
+            # --- 步骤 B: 构建外层字典 (按照 keyDesc -> key -> sourceList 顺序) ---
+            # 注意：如果原数据中 gModel 的 keyDesc 叫其他名字（极少见），这里统一重置为 '规格型号'
+            new_gmodel_field = {
+                'keyDesc': '规格型号',
+                'key': 'gModel',
+                'if_unify': True,
+                'sourceList': [new_source_item]
+            }
+
+            # --- 步骤 C: 替换或追加 ---
+            gmodel_index = -1
+            for i, field in enumerate(item_list):
+                if field.get('key') == 'gModel':
+                    gmodel_index = i
+                    break
+            
+            if gmodel_index != -1:
+                # 如果存在，直接替换整个字典对象，以保证 Key 的顺序完全重置
+                item_list[gmodel_index] = new_gmodel_field
+            else:
+                # 如果不存在，追加到末尾
+                item_list.append(new_gmodel_field)
+
+    return data
