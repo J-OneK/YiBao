@@ -156,6 +156,9 @@ def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
     Returns:
         相似度最高的 paramKey
     """
+    need_convert = ['监管方式','运输方式','成交方式']
+    if key_desc not in need_convert:
+        return parsed_value
     tokenizer = AutoTokenizer.from_pretrained("intfloat/multilingual-e5-large")
     model = AutoModel.from_pretrained("intfloat/multilingual-e5-large")
     model.eval()
@@ -188,6 +191,7 @@ def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
     # ===== 3. 计算相似度并返回最相似 paramKey =====
     similarity = F.cosine_similarity(input_emb, embeddings)  # (N,)
     idx = similarity.argmax().item()
+    print(f'{key_desc} 字段：输入值 "{parsed_value}" 被转换为 "{store[param_values[idx]]["paramKey"]}"')
 
     return store[param_values[idx]]["paramKey"]
 

@@ -5,36 +5,26 @@
       "key": "consigneeCname",
       "parsedValue": "郑州领未网络科技有限公司",
       "transformedValue": "郑州领未网络科技有限公司",
-      "if_unify": false,
+      "if_unify": true,
       "sourceList": [
         {
           "value": "郑州领未网络科技有限公司",
           "transformedValue": "郑州领未网络科技有限公司",
-          "startx": 393,
+          "startx": 389,
           "starty": 417,
-          "endx": 757,
-          "endy": 454,
+          "endx": 755,
+          "endy": 452,
           "imageId": "1",
           "attTypeCode": 14
         },
         {
           "value": "ZHENGZHOU LEDREM NETWORK TECHNOLOGY CO.,LTD.",
-          "transformedValue": "ZHENGZHOU LEDREM NETWORK TECHNOLOGY CO.,LTD.",
+          "transformedValue": "郑州领未网络科技有限公司",
           "startx": 636,
           "starty": 232,
           "endx": 1833,
           "endy": 288,
           "imageId": "3",
-          "attTypeCode": 1
-        },
-        {
-          "value": "ZIEL INTERNATIONAL CO., LIMITED",
-          "transformedValue": "ZIEL INTERNATIONAL CO., LIMITED",
-          "startx": 543,
-          "starty": 369,
-          "endx": 964,
-          "endy": 404,
-          "imageId": "6",
           "attTypeCode": 1
         }
       ]
@@ -49,10 +39,10 @@
         {
           "value": "美国",
           "transformedValue": "美国",
-          "startx": 732,
+          "startx": 729,
           "starty": 1296,
-          "endx": 798,
-          "endy": 1334,
+          "endx": 791,
+          "endy": 1329,
           "imageId": "1",
           "attTypeCode": 14
         },
@@ -67,11 +57,11 @@
           "attTypeCode": 1
         },
         {
-          "value": "LOS ANGELES,USA",
+          "value": "LOS ANGELES, USA",
           "transformedValue": "美国",
-          "startx": 2108,
+          "startx": 2104,
           "starty": 879,
-          "endx": 2322,
+          "endx": 2329,
           "endy": 995,
           "imageId": "6",
           "attTypeCode": 1
@@ -88,10 +78,10 @@
         {
           "value": "VASAGLE MADE IN CHINA",
           "transformedValue": "VASAGLE MADE IN CHINA",
-          "startx": 523,
+          "startx": 521,
           "starty": 1569,
-          "endx": 727,
-          "endy": 1642,
+          "endx": 723,
+          "endy": 1637,
           "imageId": "1",
           "attTypeCode": 14
         }
@@ -102,54 +92,44 @@
       "key": "consignorEname",
       "parsedValue": "ZIEL INTERNATIONAL CO., LIMITED",
       "transformedValue": "ZIEL INTERNATIONAL CO., LIMITED",
-      "if_unify": false,
+      "if_unify": true,
       "sourceList": [
         {
           "value": "ZIEL INTERNATIONAL CO., LIMITED",
           "transformedValue": "ZIEL INTERNATIONAL CO., LIMITED",
-          "startx": 239,
-          "starty": 920,
-          "endx": 771,
-          "endy": 970,
+          "startx": 246,
+          "starty": 925,
+          "endx": 768,
+          "endy": 980,
           "imageId": "3",
-          "attTypeCode": 1
-        },
-        {
-          "value": "ZHENGZHOU LEDREM NETWORK TECHNOLOGY CO.,LTD.",
-          "transformedValue": "ZHENGZHOU LEDREM NETWORK TECHNOLOGY CO.,LTD.",
-          "startx": 1629,
-          "starty": 369,
-          "endx": 2322,
-          "endy": 404,
-          "imageId": "6",
           "attTypeCode": 1
         }
       ]
     },
     {
-      "keyDesc": "贸易国",
-      "key": "cusTradeNationCode",
-      "parsedValue": "NINGBO,CHINA",
-      "transformedValue": "NINGBO,CHINA",
+      "keyDesc": "合同协议号",
+      "key": "contrNo",
+      "parsedValue": "US250660WH-1",
+      "transformedValue": "US250660WH-1",
       "if_unify": true,
       "sourceList": [
         {
-          "value": "NINGBO,CHINA",
-          "transformedValue": "NINGBO,CHINA",
-          "startx": 950,
-          "starty": 763,
-          "endx": 1297,
-          "endy": 808,
+          "value": "US250660WH-1",
+          "transformedValue": "US250660WH-1",
+          "startx": 1818,
+          "starty": 641,
+          "endx": 2047,
+          "endy": 687,
           "imageId": "3",
           "attTypeCode": 1
         },
         {
-          "value": "NINGBO,CHINA",
-          "transformedValue": "NINGBO,CHINA",
-          "startx": 1229,
-          "starty": 920,
-          "endx": 1561,
-          "endy": 950,
+          "value": "US250660 WH-1",
+          "transformedValue": "US250660WH-1",
+          "startx": 2154,
+          "starty": 743,
+          "endx": 2308,
+          "endy": 829,
           "imageId": "6",
           "attTypeCode": 1
         }
@@ -159,55 +139,26 @@
       "keyDesc": "成交方式",
       "key": "transMode",
       "parsedValue": "BY SEA",
-      "transformedValue": "BY SEA",
+      "transformedValue": "3",
       "if_unify": true,
       "sourceList": [
         {
           "value": "BY SEA",
-          "transformedValue": "BY SEA",
+          "transformedValue": "3",
           "startx": 578,
           "starty": 763,
-          "endx": 700,
+          "endx": 696,
           "endy": 808,
           "imageId": "3",
           "attTypeCode": 1
         },
         {
           "value": "BY SEA",
-          "transformedValue": "BY SEA",
-          "startx": 543,
-          "starty": 920,
-          "endx": 646,
-          "endy": 950,
-          "imageId": "6",
-          "attTypeCode": 1
-        }
-      ]
-    },
-    {
-      "keyDesc": "合同协议号",
-      "key": "contrNo",
-      "parsedValue": "US2506660WH-1",
-      "transformedValue": "US2506660WH-1",
-      "if_unify": false,
-      "sourceList": [
-        {
-          "value": "US2506660WH-1",
-          "transformedValue": "US2506660WH-1",
-          "startx": 1815,
-          "starty": 636,
-          "endx": 2047,
-          "endy": 682,
-          "imageId": "3",
-          "attTypeCode": 1
-        },
-        {
-          "value": "US250660 WH-1",
-          "transformedValue": "US250660 WH-1",
-          "startx": 2154,
-          "starty": 753,
-          "endx": 2301,
-          "endy": 829,
+          "transformedValue": "3",
+          "startx": 250,
+          "starty": 909,
+          "endx": 650,
+          "endy": 960,
           "imageId": "6",
           "attTypeCode": 1
         }
@@ -216,16 +167,16 @@
     {
       "keyDesc": "指运港",
       "key": "distinatePort",
-      "parsedValue": "LOS ANGELES,USA",
-      "transformedValue": "LOS ANGELES,USA",
+      "parsedValue": "NINGBO,CHINA",
+      "transformedValue": "NINGBO,CHINA",
       "if_unify": true,
       "sourceList": [
         {
-          "value": "LOS ANGELES,USA",
-          "transformedValue": "LOS ANGELES,USA",
-          "startx": 1751,
+          "value": "NINGBO,CHINA",
+          "transformedValue": "NINGBO,CHINA",
+          "startx": 950,
           "starty": 763,
-          "endx": 2090,
+          "endx": 1293,
           "endy": 808,
           "imageId": "3",
           "attTypeCode": 1
@@ -233,57 +184,48 @@
       ]
     },
     {
-      "keyDesc": "运费币制",
-      "key": "feeCurr",
-      "parsedValue": "CNY",
-      "transformedValue": "CNY",
-      "if_unify": true,
+      "keyDesc": "贸易国",
+      "key": "cusTradeNationCode",
+      "parsedValue": "CHINA",
+      "transformedValue": "CHINA",
+      "if_unify": false,
       "sourceList": [
         {
-          "value": "CNY",
-          "transformedValue": "CNY",
-          "startx": 1986,
-          "starty": 1430,
-          "endx": 2058,
-          "endy": 1476,
+          "value": "CHINA",
+          "transformedValue": "CHINA",
+          "startx": 950,
+          "starty": 763,
+          "endx": 1293,
+          "endy": 808,
           "imageId": "3",
+          "attTypeCode": 1
+        },
+        {
+          "value": "NINGBO,CHINA",
+          "transformedValue": "NINGBO,CHINA",
+          "startx": 1229,
+          "starty": 909,
+          "endx": 1565,
+          "endy": 960,
+          "imageId": "6",
           "attTypeCode": 1
         }
       ]
     },
     {
-      "keyDesc": "保费币制",
-      "key": "insurCurr",
-      "parsedValue": "CNY",
-      "transformedValue": "CNY",
+      "keyDesc": "总价总和",
+      "key": "totalAmount",
+      "parsedValue": "167604.14",
+      "transformedValue": "167604.14",
       "if_unify": true,
       "sourceList": [
         {
-          "value": "CNY",
-          "transformedValue": "CNY",
-          "startx": 1525,
-          "starty": 1430,
-          "endx": 1654,
-          "endy": 1476,
-          "imageId": "3",
-          "attTypeCode": 1
-        }
-      ]
-    },
-    {
-      "keyDesc": "杂费币制",
-      "key": "otherCurr",
-      "parsedValue": "CNY",
-      "transformedValue": "CNY",
-      "if_unify": true,
-      "sourceList": [
-        {
-          "value": "CNY",
-          "transformedValue": "CNY",
-          "startx": 1986,
-          "starty": 1430,
-          "endx": 2058,
-          "endy": 1476,
+          "value": "167604.14",
+          "transformedValue": "167604.14",
+          "startx": 1940,
+          "starty": 4160,
+          "endx": 2104,
+          "endy": 4200,
           "imageId": "3",
           "attTypeCode": 1
         }
@@ -303,8 +245,8 @@
             "value": "软包桌",
             "transformedValue": "软包桌",
             "startx": 83,
-            "starty": 732,
-            "endx": 176,
+            "starty": 738,
+            "endx": 171,
             "endy": 770,
             "imageId": "1",
             "attTypeCode": 14
@@ -313,8 +255,8 @@
             "value": "OTTOMAN TABLE",
             "transformedValue": "软包桌",
             "startx": 239,
-            "starty": 1516,
-            "endx": 514,
+            "starty": 1521,
+            "endx": 507,
             "endy": 1562,
             "imageId": "3",
             "attTypeCode": 1
@@ -322,10 +264,10 @@
           {
             "value": "OTTOMAN TABLE 软包桌",
             "transformedValue": "软包桌",
-            "startx": 243,
+            "startx": 250,
             "starty": 1592,
-            "endx": 614,
-            "endy": 1647,
+            "endx": 611,
+            "endy": 1642,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -343,8 +285,8 @@
             "transformedValue": "9403609990(P/Q)",
             "startx": 486,
             "starty": 738,
-            "endx": 727,
-            "endy": 773,
+            "endx": 723,
+            "endy": 770,
             "imageId": "1",
             "attTypeCode": 14
           }
@@ -361,18 +303,18 @@
             "value": "人民币",
             "transformedValue": "人民币",
             "startx": 1179,
-            "starty": 765,
-            "endx": 1213,
-            "endy": 801,
+            "starty": 773,
+            "endx": 1209,
+            "endy": 806,
             "imageId": "1",
             "attTypeCode": 14
           },
           {
             "value": "CNY",
             "transformedValue": "人民币",
-            "startx": 1986,
-            "starty": 1430,
-            "endx": 2058,
+            "startx": 1990,
+            "starty": 1440,
+            "endx": 2054,
             "endy": 1476,
             "imageId": "3",
             "attTypeCode": 1
@@ -382,7 +324,7 @@
             "transformedValue": "人民币",
             "startx": 2212,
             "starty": 1516,
-            "endx": 2279,
+            "endx": 2276,
             "endy": 1556,
             "imageId": "6",
             "attTypeCode": 1
@@ -402,15 +344,15 @@
             "startx": 1179,
             "starty": 738,
             "endx": 1356,
-            "endy": 773,
+            "endy": 770,
             "imageId": "1",
             "attTypeCode": 14
           },
           {
             "value": "6608.45",
             "transformedValue": "6608.45",
-            "startx": 1976,
-            "starty": 1516,
+            "startx": 1958,
+            "starty": 1521,
             "endx": 2079,
             "endy": 1562,
             "imageId": "3",
@@ -419,9 +361,9 @@
           {
             "value": "6608.45",
             "transformedValue": "6608.45",
-            "startx": 2204,
+            "startx": 2190,
             "starty": 1592,
-            "endx": 2304,
+            "endx": 2308,
             "endy": 1642,
             "imageId": "6",
             "attTypeCode": 1
@@ -438,9 +380,9 @@
           {
             "value": "美国",
             "transformedValue": "美国",
-            "startx": 732,
-            "starty": 1364,
-            "endx": 798,
+            "startx": 729,
+            "starty": 1367,
+            "endx": 791,
             "endy": 1402,
             "imageId": "1",
             "attTypeCode": 14
@@ -457,9 +399,9 @@
           {
             "value": "63",
             "transformedValue": "63",
-            "startx": 904,
-            "starty": 1516,
-            "endx": 946,
+            "startx": 900,
+            "starty": 1521,
+            "endx": 950,
             "endy": 1562,
             "imageId": "3",
             "attTypeCode": 1
@@ -469,7 +411,7 @@
             "transformedValue": "63",
             "startx": 1022,
             "starty": 1592,
-            "endx": 1072,
+            "endx": 1064,
             "endy": 1642,
             "imageId": "6",
             "attTypeCode": 1
@@ -486,9 +428,9 @@
           {
             "value": "104.90",
             "transformedValue": "104.90",
-            "startx": 1540,
-            "starty": 1516,
-            "endx": 1633,
+            "startx": 1536,
+            "starty": 1521,
+            "endx": 1636,
             "endy": 1562,
             "imageId": "3",
             "attTypeCode": 1
@@ -496,39 +438,10 @@
           {
             "value": "104.90",
             "transformedValue": "104.90",
-            "startx": 1851,
+            "startx": 1854,
             "starty": 1592,
-            "endx": 1933,
+            "endx": 1944,
             "endy": 1642,
-            "imageId": "6",
-            "attTypeCode": 1
-          }
-        ]
-      },
-      {
-        "keyDesc": "成交单位",
-        "key": "gUnit",
-        "parsedValue": "PCS",
-        "transformedValue": "PCS",
-        "if_unify": true,
-        "sourceList": [
-          {
-            "value": "PCS",
-            "transformedValue": "PCS",
-            "startx": 904,
-            "starty": 1430,
-            "endx": 954,
-            "endy": 1476,
-            "imageId": "3",
-            "attTypeCode": 1
-          },
-          {
-            "value": "PCS",
-            "transformedValue": "PCS",
-            "startx": 1022,
-            "starty": 1506,
-            "endx": 1072,
-            "endy": 1551,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -547,8 +460,8 @@
             "value": "JEWELRY STAND",
             "transformedValue": "JEWELRY STAND",
             "startx": 239,
-            "starty": 1642,
-            "endx": 486,
+            "starty": 1647,
+            "endx": 482,
             "endy": 1688,
             "imageId": "3",
             "attTypeCode": 1
@@ -556,10 +469,10 @@
           {
             "value": "JEWELRY STAND 首饰展架",
             "transformedValue": "JEWELRY STAND",
-            "startx": 243,
-            "starty": 1723,
-            "endx": 614,
-            "endy": 1774,
+            "startx": 250,
+            "starty": 1718,
+            "endx": 628,
+            "endy": 1769,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -575,9 +488,9 @@
           {
             "value": "280",
             "transformedValue": "280",
-            "startx": 904,
-            "starty": 1642,
-            "endx": 954,
+            "startx": 900,
+            "starty": 1647,
+            "endx": 950,
             "endy": 1688,
             "imageId": "3",
             "attTypeCode": 1
@@ -585,9 +498,9 @@
           {
             "value": "280",
             "transformedValue": "280",
-            "startx": 1011,
-            "starty": 1723,
-            "endx": 1061,
+            "startx": 1007,
+            "starty": 1718,
+            "endx": 1068,
             "endy": 1769,
             "imageId": "6",
             "attTypeCode": 1
@@ -604,9 +517,9 @@
           {
             "value": "34.36",
             "transformedValue": "34.36",
-            "startx": 1540,
-            "starty": 1642,
-            "endx": 1633,
+            "startx": 1536,
+            "starty": 1647,
+            "endx": 1636,
             "endy": 1688,
             "imageId": "3",
             "attTypeCode": 1
@@ -614,9 +527,9 @@
           {
             "value": "34.36",
             "transformedValue": "34.36",
-            "startx": 1851,
-            "starty": 1723,
-            "endx": 1933,
+            "startx": 1854,
+            "starty": 1718,
+            "endx": 1944,
             "endy": 1769,
             "imageId": "6",
             "attTypeCode": 1
@@ -633,8 +546,8 @@
           {
             "value": "9619.49",
             "transformedValue": "9619.49",
-            "startx": 1976,
-            "starty": 1642,
+            "startx": 1958,
+            "starty": 1647,
             "endx": 2079,
             "endy": 1688,
             "imageId": "3",
@@ -643,9 +556,9 @@
           {
             "value": "9619.49",
             "transformedValue": "9619.49",
-            "startx": 2204,
-            "starty": 1723,
-            "endx": 2304,
+            "startx": 2190,
+            "starty": 1718,
+            "endx": 2308,
             "endy": 1769,
             "imageId": "6",
             "attTypeCode": 1
@@ -662,9 +575,9 @@
           {
             "value": "CNY",
             "transformedValue": "CNY",
-            "startx": 1986,
-            "starty": 1430,
-            "endx": 2058,
+            "startx": 1990,
+            "starty": 1440,
+            "endx": 2054,
             "endy": 1476,
             "imageId": "3",
             "attTypeCode": 1
@@ -674,36 +587,7 @@
             "transformedValue": "CNY",
             "startx": 2212,
             "starty": 1516,
-            "endx": 2279,
-            "endy": 1556,
-            "imageId": "6",
-            "attTypeCode": 1
-          }
-        ]
-      },
-      {
-        "keyDesc": "成交单位",
-        "key": "gUnit",
-        "parsedValue": "SET",
-        "transformedValue": "SET",
-        "if_unify": true,
-        "sourceList": [
-          {
-            "value": "SET",
-            "transformedValue": "SET",
-            "startx": 1182,
-            "starty": 1430,
-            "endx": 1240,
-            "endy": 1476,
-            "imageId": "3",
-            "attTypeCode": 1
-          },
-          {
-            "value": "SET",
-            "transformedValue": "SET",
-            "startx": 1454,
-            "starty": 1516,
-            "endx": 1508,
+            "endx": 2276,
             "endy": 1556,
             "imageId": "6",
             "attTypeCode": 1
@@ -723,8 +607,8 @@
             "value": "MAKEUP SHELF",
             "transformedValue": "MAKEUP SHELF",
             "startx": 239,
-            "starty": 1769,
-            "endx": 468,
+            "starty": 1774,
+            "endx": 471,
             "endy": 1814,
             "imageId": "3",
             "attTypeCode": 1
@@ -732,10 +616,10 @@
           {
             "value": "MAKEUP SHELF 化妆品收纳架",
             "transformedValue": "MAKEUP SHELF",
-            "startx": 243,
-            "starty": 1845,
-            "endx": 675,
-            "endy": 1895,
+            "startx": 250,
+            "starty": 1840,
+            "endx": 678,
+            "endy": 1890,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -751,9 +635,9 @@
           {
             "value": "6",
             "transformedValue": "6",
-            "startx": 904,
-            "starty": 1769,
-            "endx": 929,
+            "startx": 911,
+            "starty": 1774,
+            "endx": 936,
             "endy": 1814,
             "imageId": "3",
             "attTypeCode": 1
@@ -762,8 +646,8 @@
             "value": "6",
             "transformedValue": "6",
             "startx": 1022,
-            "starty": 1845,
-            "endx": 1050,
+            "starty": 1840,
+            "endx": 1064,
             "endy": 1890,
             "imageId": "6",
             "attTypeCode": 1
@@ -780,9 +664,9 @@
           {
             "value": "43.89",
             "transformedValue": "43.89",
-            "startx": 1540,
-            "starty": 1769,
-            "endx": 1633,
+            "startx": 1536,
+            "starty": 1774,
+            "endx": 1636,
             "endy": 1814,
             "imageId": "3",
             "attTypeCode": 1
@@ -790,9 +674,9 @@
           {
             "value": "43.89",
             "transformedValue": "43.89",
-            "startx": 1851,
-            "starty": 1845,
-            "endx": 1933,
+            "startx": 1854,
+            "starty": 1840,
+            "endx": 1944,
             "endy": 1890,
             "imageId": "6",
             "attTypeCode": 1
@@ -809,9 +693,9 @@
           {
             "value": "263.32",
             "transformedValue": "263.32",
-            "startx": 1976,
-            "starty": 1769,
-            "endx": 2079,
+            "startx": 1972,
+            "starty": 1774,
+            "endx": 2069,
             "endy": 1814,
             "imageId": "3",
             "attTypeCode": 1
@@ -819,9 +703,9 @@
           {
             "value": "263.32",
             "transformedValue": "263.32",
-            "startx": 2204,
-            "starty": 1845,
-            "endx": 2304,
+            "startx": 2190,
+            "starty": 1840,
+            "endx": 2308,
             "endy": 1890,
             "imageId": "6",
             "attTypeCode": 1
@@ -838,9 +722,9 @@
           {
             "value": "CNY",
             "transformedValue": "CNY",
-            "startx": 1986,
-            "starty": 1430,
-            "endx": 2058,
+            "startx": 1990,
+            "starty": 1440,
+            "endx": 2054,
             "endy": 1476,
             "imageId": "3",
             "attTypeCode": 1
@@ -850,36 +734,7 @@
             "transformedValue": "CNY",
             "startx": 2212,
             "starty": 1516,
-            "endx": 2279,
-            "endy": 1556,
-            "imageId": "6",
-            "attTypeCode": 1
-          }
-        ]
-      },
-      {
-        "keyDesc": "成交单位",
-        "key": "gUnit",
-        "parsedValue": "PCS",
-        "transformedValue": "PCS",
-        "if_unify": false,
-        "sourceList": [
-          {
-            "value": "PCS",
-            "transformedValue": "PCS",
-            "startx": 904,
-            "starty": 1430,
-            "endx": 954,
-            "endy": 1476,
-            "imageId": "3",
-            "attTypeCode": 1
-          },
-          {
-            "value": "SET",
-            "transformedValue": "SET",
-            "startx": 1454,
-            "starty": 1516,
-            "endx": 1508,
+            "endx": 2276,
             "endy": 1556,
             "imageId": "6",
             "attTypeCode": 1
@@ -899,8 +754,8 @@
             "value": "MAKEUP SHELF",
             "transformedValue": "MAKEUP SHELF",
             "startx": 239,
-            "starty": 1895,
-            "endx": 468,
+            "starty": 1900,
+            "endx": 471,
             "endy": 1941,
             "imageId": "3",
             "attTypeCode": 1
@@ -908,10 +763,10 @@
           {
             "value": "MAKEUP SHELF 化妆品收纳架",
             "transformedValue": "MAKEUP SHELF",
-            "startx": 243,
-            "starty": 1961,
-            "endx": 675,
-            "endy": 2011,
+            "startx": 250,
+            "starty": 1966,
+            "endx": 678,
+            "endy": 2016,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -927,9 +782,9 @@
           {
             "value": "66",
             "transformedValue": "66",
-            "startx": 904,
-            "starty": 1895,
-            "endx": 954,
+            "startx": 900,
+            "starty": 1900,
+            "endx": 950,
             "endy": 1941,
             "imageId": "3",
             "attTypeCode": 1
@@ -937,10 +792,10 @@
           {
             "value": "66",
             "transformedValue": "66",
-            "startx": 1011,
-            "starty": 1961,
-            "endx": 1061,
-            "endy": 2006,
+            "startx": 1022,
+            "starty": 1966,
+            "endx": 1064,
+            "endy": 2016,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -956,9 +811,9 @@
           {
             "value": "43.89",
             "transformedValue": "43.89",
-            "startx": 1540,
-            "starty": 1895,
-            "endx": 1633,
+            "startx": 1536,
+            "starty": 1900,
+            "endx": 1636,
             "endy": 1941,
             "imageId": "3",
             "attTypeCode": 1
@@ -966,10 +821,10 @@
           {
             "value": "43.89",
             "transformedValue": "43.89",
-            "startx": 1851,
-            "starty": 1961,
-            "endx": 1933,
-            "endy": 2006,
+            "startx": 1854,
+            "starty": 1966,
+            "endx": 1944,
+            "endy": 2016,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -985,8 +840,8 @@
           {
             "value": "2896.56",
             "transformedValue": "2896.56",
-            "startx": 1976,
-            "starty": 1895,
+            "startx": 1958,
+            "starty": 1900,
             "endx": 2079,
             "endy": 1941,
             "imageId": "3",
@@ -995,10 +850,10 @@
           {
             "value": "2896.56",
             "transformedValue": "2896.56",
-            "startx": 2204,
-            "starty": 1961,
-            "endx": 2304,
-            "endy": 2006,
+            "startx": 2190,
+            "starty": 1966,
+            "endx": 2308,
+            "endy": 2016,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -1014,9 +869,9 @@
           {
             "value": "CNY",
             "transformedValue": "CNY",
-            "startx": 1986,
-            "starty": 1430,
-            "endx": 2058,
+            "startx": 1990,
+            "starty": 1440,
+            "endx": 2054,
             "endy": 1476,
             "imageId": "3",
             "attTypeCode": 1
@@ -1026,36 +881,7 @@
             "transformedValue": "CNY",
             "startx": 2212,
             "starty": 1516,
-            "endx": 2279,
-            "endy": 1556,
-            "imageId": "6",
-            "attTypeCode": 1
-          }
-        ]
-      },
-      {
-        "keyDesc": "成交单位",
-        "key": "gUnit",
-        "parsedValue": "SET",
-        "transformedValue": "SET",
-        "if_unify": true,
-        "sourceList": [
-          {
-            "value": "SET",
-            "transformedValue": "SET",
-            "startx": 1182,
-            "starty": 1430,
-            "endx": 1240,
-            "endy": 1476,
-            "imageId": "3",
-            "attTypeCode": 1
-          },
-          {
-            "value": "SET",
-            "transformedValue": "SET",
-            "startx": 1454,
-            "starty": 1516,
-            "endx": 1508,
+            "endx": 2276,
             "endy": 1556,
             "imageId": "6",
             "attTypeCode": 1
@@ -1075,18 +901,18 @@
             "value": "DRYING RACK",
             "transformedValue": "DRYING RACK",
             "startx": 239,
-            "starty": 2016,
+            "starty": 2027,
             "endx": 453,
-            "endy": 2062,
+            "endy": 2067,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "DRYING RACK 晾衣架",
             "transformedValue": "DRYING RACK",
-            "startx": 243,
+            "startx": 250,
             "starty": 2087,
-            "endx": 557,
+            "endx": 561,
             "endy": 2138,
             "imageId": "6",
             "attTypeCode": 1
@@ -1103,20 +929,20 @@
           {
             "value": "547",
             "transformedValue": "547",
-            "startx": 904,
-            "starty": 2016,
-            "endx": 954,
-            "endy": 2062,
+            "startx": 900,
+            "starty": 2027,
+            "endx": 950,
+            "endy": 2067,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "547",
             "transformedValue": "547",
-            "startx": 1011,
+            "startx": 1007,
             "starty": 2087,
-            "endx": 1061,
-            "endy": 2133,
+            "endx": 1068,
+            "endy": 2138,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -1132,20 +958,20 @@
           {
             "value": "85.36",
             "transformedValue": "85.36",
-            "startx": 1540,
-            "starty": 2016,
-            "endx": 1633,
-            "endy": 2062,
+            "startx": 1536,
+            "starty": 2027,
+            "endx": 1636,
+            "endy": 2067,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "85.36",
             "transformedValue": "85.36",
-            "startx": 1851,
+            "startx": 1854,
             "starty": 2087,
-            "endx": 1933,
-            "endy": 2133,
+            "endx": 1944,
+            "endy": 2138,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -1161,20 +987,20 @@
           {
             "value": "46689.63",
             "transformedValue": "46689.63",
-            "startx": 1976,
-            "starty": 2016,
+            "startx": 1958,
+            "starty": 2027,
             "endx": 2079,
-            "endy": 2062,
+            "endy": 2067,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "46689.63",
             "transformedValue": "46689.63",
-            "startx": 2204,
+            "startx": 2179,
             "starty": 2087,
-            "endx": 2304,
-            "endy": 2133,
+            "endx": 2308,
+            "endy": 2138,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -1190,9 +1016,9 @@
           {
             "value": "CNY",
             "transformedValue": "CNY",
-            "startx": 1986,
-            "starty": 1430,
-            "endx": 2058,
+            "startx": 1990,
+            "starty": 1440,
+            "endx": 2054,
             "endy": 1476,
             "imageId": "3",
             "attTypeCode": 1
@@ -1202,36 +1028,7 @@
             "transformedValue": "CNY",
             "startx": 2212,
             "starty": 1516,
-            "endx": 2279,
-            "endy": 1556,
-            "imageId": "6",
-            "attTypeCode": 1
-          }
-        ]
-      },
-      {
-        "keyDesc": "成交单位",
-        "key": "gUnit",
-        "parsedValue": "PCS",
-        "transformedValue": "PCS",
-        "if_unify": false,
-        "sourceList": [
-          {
-            "value": "PCS",
-            "transformedValue": "PCS",
-            "startx": 904,
-            "starty": 1430,
-            "endx": 954,
-            "endy": 1476,
-            "imageId": "3",
-            "attTypeCode": 1
-          },
-          {
-            "value": "SET",
-            "transformedValue": "SET",
-            "startx": 1454,
-            "starty": 1516,
-            "endx": 1508,
+            "endx": 2276,
             "endy": 1556,
             "imageId": "6",
             "attTypeCode": 1
@@ -1251,19 +1048,19 @@
             "value": "DRYING RACK",
             "transformedValue": "DRYING RACK",
             "startx": 239,
-            "starty": 2143,
+            "starty": 2153,
             "endx": 453,
-            "endy": 2188,
+            "endy": 2193,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "DRYING RACK 晾衣架",
             "transformedValue": "DRYING RACK",
-            "startx": 243,
-            "starty": 2209,
-            "endx": 557,
-            "endy": 2259,
+            "startx": 250,
+            "starty": 2214,
+            "endx": 561,
+            "endy": 2264,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -1279,20 +1076,20 @@
           {
             "value": "36",
             "transformedValue": "36",
-            "startx": 904,
-            "starty": 2143,
-            "endx": 954,
-            "endy": 2188,
+            "startx": 900,
+            "starty": 2153,
+            "endx": 950,
+            "endy": 2193,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "36",
             "transformedValue": "36",
-            "startx": 1011,
-            "starty": 2209,
-            "endx": 1061,
-            "endy": 2254,
+            "startx": 1022,
+            "starty": 2214,
+            "endx": 1064,
+            "endy": 2264,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -1308,20 +1105,20 @@
           {
             "value": "66.95",
             "transformedValue": "66.95",
-            "startx": 1540,
-            "starty": 2143,
-            "endx": 1633,
-            "endy": 2188,
+            "startx": 1536,
+            "starty": 2153,
+            "endx": 1636,
+            "endy": 2193,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "66.95",
             "transformedValue": "66.95",
-            "startx": 1851,
-            "starty": 2209,
-            "endx": 1933,
-            "endy": 2254,
+            "startx": 1854,
+            "starty": 2214,
+            "endx": 1944,
+            "endy": 2264,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -1337,20 +1134,20 @@
           {
             "value": "2410.24",
             "transformedValue": "2410.24",
-            "startx": 1976,
-            "starty": 2143,
+            "startx": 1958,
+            "starty": 2153,
             "endx": 2079,
-            "endy": 2188,
+            "endy": 2193,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "2410.24",
             "transformedValue": "2410.24",
-            "startx": 2204,
-            "starty": 2209,
-            "endx": 2304,
-            "endy": 2254,
+            "startx": 2190,
+            "starty": 2214,
+            "endx": 2308,
+            "endy": 2264,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -1366,9 +1163,9 @@
           {
             "value": "CNY",
             "transformedValue": "CNY",
-            "startx": 1986,
-            "starty": 1430,
-            "endx": 2058,
+            "startx": 1990,
+            "starty": 1440,
+            "endx": 2054,
             "endy": 1476,
             "imageId": "3",
             "attTypeCode": 1
@@ -1378,36 +1175,7 @@
             "transformedValue": "CNY",
             "startx": 2212,
             "starty": 1516,
-            "endx": 2279,
-            "endy": 1556,
-            "imageId": "6",
-            "attTypeCode": 1
-          }
-        ]
-      },
-      {
-        "keyDesc": "成交单位",
-        "key": "gUnit",
-        "parsedValue": "SET",
-        "transformedValue": "SET",
-        "if_unify": true,
-        "sourceList": [
-          {
-            "value": "SET",
-            "transformedValue": "SET",
-            "startx": 1182,
-            "starty": 1430,
-            "endx": 1240,
-            "endy": 1476,
-            "imageId": "3",
-            "attTypeCode": 1
-          },
-          {
-            "value": "SET",
-            "transformedValue": "SET",
-            "startx": 1454,
-            "starty": 1516,
-            "endx": 1508,
+            "endx": 2276,
             "endy": 1556,
             "imageId": "6",
             "attTypeCode": 1
@@ -1427,19 +1195,19 @@
             "value": "SHOE SHELF",
             "transformedValue": "SHOE SHELF",
             "startx": 239,
-            "starty": 2269,
-            "endx": 425,
-            "endy": 2315,
+            "starty": 2279,
+            "endx": 432,
+            "endy": 2320,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "SHOE SHELF 鞋架",
             "transformedValue": "SHOE SHELF",
-            "startx": 243,
-            "starty": 2330,
-            "endx": 500,
-            "endy": 2380,
+            "startx": 250,
+            "starty": 2340,
+            "endx": 503,
+            "endy": 2391,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -1455,20 +1223,20 @@
           {
             "value": "132",
             "transformedValue": "132",
-            "startx": 904,
-            "starty": 2269,
-            "endx": 954,
-            "endy": 2315,
+            "startx": 900,
+            "starty": 2279,
+            "endx": 950,
+            "endy": 2320,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "132",
             "transformedValue": "132",
-            "startx": 1011,
-            "starty": 2330,
-            "endx": 1061,
-            "endy": 2375,
+            "startx": 1022,
+            "starty": 2340,
+            "endx": 1068,
+            "endy": 2391,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -1484,20 +1252,20 @@
           {
             "value": "41.72",
             "transformedValue": "41.72",
-            "startx": 1540,
-            "starty": 2269,
-            "endx": 1633,
-            "endy": 2315,
+            "startx": 1536,
+            "starty": 2279,
+            "endx": 1636,
+            "endy": 2320,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "41.72",
             "transformedValue": "41.72",
-            "startx": 1851,
-            "starty": 2330,
-            "endx": 1933,
-            "endy": 2375,
+            "startx": 1854,
+            "starty": 2340,
+            "endx": 1944,
+            "endy": 2391,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -1513,20 +1281,20 @@
           {
             "value": "5507.58",
             "transformedValue": "5507.58",
-            "startx": 1976,
-            "starty": 2269,
+            "startx": 1958,
+            "starty": 2279,
             "endx": 2079,
-            "endy": 2315,
+            "endy": 2320,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "5507.58",
             "transformedValue": "5507.58",
-            "startx": 2204,
-            "starty": 2330,
-            "endx": 2304,
-            "endy": 2375,
+            "startx": 2190,
+            "starty": 2340,
+            "endx": 2308,
+            "endy": 2391,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -1542,9 +1310,9 @@
           {
             "value": "CNY",
             "transformedValue": "CNY",
-            "startx": 1986,
-            "starty": 1430,
-            "endx": 2058,
+            "startx": 1990,
+            "starty": 1440,
+            "endx": 2054,
             "endy": 1476,
             "imageId": "3",
             "attTypeCode": 1
@@ -1554,36 +1322,7 @@
             "transformedValue": "CNY",
             "startx": 2212,
             "starty": 1516,
-            "endx": 2279,
-            "endy": 1556,
-            "imageId": "6",
-            "attTypeCode": 1
-          }
-        ]
-      },
-      {
-        "keyDesc": "成交单位",
-        "key": "gUnit",
-        "parsedValue": "PCS",
-        "transformedValue": "PCS",
-        "if_unify": false,
-        "sourceList": [
-          {
-            "value": "PCS",
-            "transformedValue": "PCS",
-            "startx": 904,
-            "starty": 1430,
-            "endx": 954,
-            "endy": 1476,
-            "imageId": "3",
-            "attTypeCode": 1
-          },
-          {
-            "value": "SET",
-            "transformedValue": "SET",
-            "startx": 1454,
-            "starty": 1516,
-            "endx": 1508,
+            "endx": 2276,
             "endy": 1556,
             "imageId": "6",
             "attTypeCode": 1
@@ -1603,19 +1342,19 @@
             "value": "SHOE SHELF",
             "transformedValue": "SHOE SHELF",
             "startx": 239,
-            "starty": 2396,
-            "endx": 425,
-            "endy": 2441,
+            "starty": 2406,
+            "endx": 432,
+            "endy": 2446,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "SHOE SHELF 鞋架",
             "transformedValue": "SHOE SHELF",
-            "startx": 243,
-            "starty": 2451,
-            "endx": 500,
-            "endy": 2502,
+            "startx": 250,
+            "starty": 2461,
+            "endx": 503,
+            "endy": 2512,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -1631,20 +1370,20 @@
           {
             "value": "130",
             "transformedValue": "130",
-            "startx": 904,
-            "starty": 2396,
-            "endx": 954,
-            "endy": 2441,
+            "startx": 900,
+            "starty": 2406,
+            "endx": 950,
+            "endy": 2446,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "130",
             "transformedValue": "130",
-            "startx": 1011,
-            "starty": 2451,
-            "endx": 1061,
-            "endy": 2497,
+            "startx": 1022,
+            "starty": 2461,
+            "endx": 1068,
+            "endy": 2512,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -1660,20 +1399,20 @@
           {
             "value": "33.52",
             "transformedValue": "33.52",
-            "startx": 1540,
-            "starty": 2396,
-            "endx": 1633,
-            "endy": 2441,
+            "startx": 1536,
+            "starty": 2406,
+            "endx": 1636,
+            "endy": 2446,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "33.52",
             "transformedValue": "33.52",
-            "startx": 1851,
-            "starty": 2451,
-            "endx": 1933,
-            "endy": 2497,
+            "startx": 1854,
+            "starty": 2461,
+            "endx": 1944,
+            "endy": 2512,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -1689,20 +1428,20 @@
           {
             "value": "4357.29",
             "transformedValue": "4357.29",
-            "startx": 1976,
-            "starty": 2396,
+            "startx": 1958,
+            "starty": 2406,
             "endx": 2079,
-            "endy": 2441,
+            "endy": 2446,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "4357.29",
             "transformedValue": "4357.29",
-            "startx": 2204,
-            "starty": 2451,
-            "endx": 2304,
-            "endy": 2497,
+            "startx": 2190,
+            "starty": 2461,
+            "endx": 2308,
+            "endy": 2512,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -1718,9 +1457,9 @@
           {
             "value": "CNY",
             "transformedValue": "CNY",
-            "startx": 1986,
-            "starty": 1430,
-            "endx": 2058,
+            "startx": 1990,
+            "starty": 1440,
+            "endx": 2054,
             "endy": 1476,
             "imageId": "3",
             "attTypeCode": 1
@@ -1730,36 +1469,7 @@
             "transformedValue": "CNY",
             "startx": 2212,
             "starty": 1516,
-            "endx": 2279,
-            "endy": 1556,
-            "imageId": "6",
-            "attTypeCode": 1
-          }
-        ]
-      },
-      {
-        "keyDesc": "成交单位",
-        "key": "gUnit",
-        "parsedValue": "SET",
-        "transformedValue": "SET",
-        "if_unify": true,
-        "sourceList": [
-          {
-            "value": "SET",
-            "transformedValue": "SET",
-            "startx": 1182,
-            "starty": 1430,
-            "endx": 1240,
-            "endy": 1476,
-            "imageId": "3",
-            "attTypeCode": 1
-          },
-          {
-            "value": "SET",
-            "transformedValue": "SET",
-            "startx": 1454,
-            "starty": 1516,
-            "endx": 1508,
+            "endx": 2276,
             "endy": 1556,
             "imageId": "6",
             "attTypeCode": 1
@@ -1779,19 +1489,19 @@
             "value": "SHOE STORAGE BOXES",
             "transformedValue": "SHOE STORAGE BOXES",
             "startx": 239,
-            "starty": 2522,
-            "endx": 586,
-            "endy": 2567,
+            "starty": 2532,
+            "endx": 589,
+            "endy": 2573,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "SHOE STORAGE BOXES 收纳鞋盒 (套组)",
             "transformedValue": "SHOE STORAGE BOXES",
-            "startx": 243,
+            "startx": 250,
             "starty": 2573,
             "endx": 725,
-            "endy": 2628,
+            "endy": 2648,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -1807,20 +1517,20 @@
           {
             "value": "1458",
             "transformedValue": "1458",
-            "startx": 904,
-            "starty": 2522,
-            "endx": 964,
-            "endy": 2567,
+            "startx": 893,
+            "starty": 2532,
+            "endx": 957,
+            "endy": 2573,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "1458",
             "transformedValue": "1458",
-            "startx": 1011,
-            "starty": 2573,
-            "endx": 1061,
-            "endy": 2618,
+            "startx": 1007,
+            "starty": 2593,
+            "endx": 1072,
+            "endy": 2643,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -1836,20 +1546,20 @@
           {
             "value": "126.05",
             "transformedValue": "126.05",
-            "startx": 1540,
-            "starty": 2522,
-            "endx": 1633,
-            "endy": 2567,
+            "startx": 1536,
+            "starty": 2532,
+            "endx": 1636,
+            "endy": 2573,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "126.05",
             "transformedValue": "126.05",
-            "startx": 1851,
-            "starty": 2573,
-            "endx": 1933,
-            "endy": 2618,
+            "startx": 1854,
+            "starty": 2593,
+            "endx": 1944,
+            "endy": 2643,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -1865,20 +1575,20 @@
           {
             "value": "20041.34",
             "transformedValue": "20041.34",
-            "startx": 1976,
-            "starty": 2522,
+            "startx": 1958,
+            "starty": 2532,
             "endx": 2079,
-            "endy": 2567,
+            "endy": 2573,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "20041.34",
             "transformedValue": "20041.34",
-            "startx": 2204,
-            "starty": 2573,
-            "endx": 2304,
-            "endy": 2618,
+            "startx": 2179,
+            "starty": 2593,
+            "endx": 2308,
+            "endy": 2643,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -1894,9 +1604,9 @@
           {
             "value": "CNY",
             "transformedValue": "CNY",
-            "startx": 1986,
-            "starty": 1430,
-            "endx": 2058,
+            "startx": 1990,
+            "starty": 1440,
+            "endx": 2054,
             "endy": 1476,
             "imageId": "3",
             "attTypeCode": 1
@@ -1906,36 +1616,7 @@
             "transformedValue": "CNY",
             "startx": 2212,
             "starty": 1516,
-            "endx": 2279,
-            "endy": 1556,
-            "imageId": "6",
-            "attTypeCode": 1
-          }
-        ]
-      },
-      {
-        "keyDesc": "成交单位",
-        "key": "gUnit",
-        "parsedValue": "PCS",
-        "transformedValue": "PCS",
-        "if_unify": false,
-        "sourceList": [
-          {
-            "value": "PCS",
-            "transformedValue": "PCS",
-            "startx": 904,
-            "starty": 1430,
-            "endx": 954,
-            "endy": 1476,
-            "imageId": "3",
-            "attTypeCode": 1
-          },
-          {
-            "value": "SET",
-            "transformedValue": "SET",
-            "startx": 1454,
-            "starty": 1516,
-            "endx": 1508,
+            "endx": 2276,
             "endy": 1556,
             "imageId": "6",
             "attTypeCode": 1
@@ -1955,19 +1636,19 @@
             "value": "SHOE STORAGE BOX",
             "transformedValue": "SHOE STORAGE BOX",
             "startx": 239,
-            "starty": 2648,
-            "endx": 546,
-            "endy": 2694,
+            "starty": 2658,
+            "endx": 553,
+            "endy": 2699,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "SHOE STORAGE BOX 收纳鞋盒",
             "transformedValue": "SHOE STORAGE BOX",
-            "startx": 243,
-            "starty": 2699,
-            "endx": 696,
-            "endy": 2749,
+            "startx": 250,
+            "starty": 2704,
+            "endx": 689,
+            "endy": 2755,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -1983,20 +1664,20 @@
           {
             "value": "222",
             "transformedValue": "222",
-            "startx": 904,
-            "starty": 2648,
-            "endx": 954,
-            "endy": 2694,
+            "startx": 900,
+            "starty": 2658,
+            "endx": 950,
+            "endy": 2699,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "222",
             "transformedValue": "222",
-            "startx": 1011,
-            "starty": 2699,
-            "endx": 1061,
-            "endy": 2744,
+            "startx": 1022,
+            "starty": 2704,
+            "endx": 1068,
+            "endy": 2755,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -2012,20 +1693,20 @@
           {
             "value": "36.51",
             "transformedValue": "36.51",
-            "startx": 1540,
-            "starty": 2648,
-            "endx": 1633,
-            "endy": 2694,
+            "startx": 1536,
+            "starty": 2658,
+            "endx": 1636,
+            "endy": 2699,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "36.51",
             "transformedValue": "36.51",
-            "startx": 1851,
-            "starty": 2699,
-            "endx": 1933,
-            "endy": 2744,
+            "startx": 1854,
+            "starty": 2704,
+            "endx": 1944,
+            "endy": 2755,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -2041,20 +1722,20 @@
           {
             "value": "8106.01",
             "transformedValue": "8106.01",
-            "startx": 1976,
-            "starty": 2648,
+            "startx": 1958,
+            "starty": 2658,
             "endx": 2079,
-            "endy": 2694,
+            "endy": 2699,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "8106.01",
             "transformedValue": "8106.01",
-            "startx": 2204,
-            "starty": 2699,
-            "endx": 2304,
-            "endy": 2744,
+            "startx": 2190,
+            "starty": 2704,
+            "endx": 2308,
+            "endy": 2755,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -2070,9 +1751,9 @@
           {
             "value": "CNY",
             "transformedValue": "CNY",
-            "startx": 1986,
-            "starty": 1430,
-            "endx": 2058,
+            "startx": 1990,
+            "starty": 1440,
+            "endx": 2054,
             "endy": 1476,
             "imageId": "3",
             "attTypeCode": 1
@@ -2082,36 +1763,7 @@
             "transformedValue": "CNY",
             "startx": 2212,
             "starty": 1516,
-            "endx": 2279,
-            "endy": 1556,
-            "imageId": "6",
-            "attTypeCode": 1
-          }
-        ]
-      },
-      {
-        "keyDesc": "成交单位",
-        "key": "gUnit",
-        "parsedValue": "SET",
-        "transformedValue": "SET",
-        "if_unify": true,
-        "sourceList": [
-          {
-            "value": "SET",
-            "transformedValue": "SET",
-            "startx": 1182,
-            "starty": 1430,
-            "endx": 1240,
-            "endy": 1476,
-            "imageId": "3",
-            "attTypeCode": 1
-          },
-          {
-            "value": "SET",
-            "transformedValue": "SET",
-            "startx": 1454,
-            "starty": 1516,
-            "endx": 1508,
+            "endx": 2276,
             "endy": 1556,
             "imageId": "6",
             "attTypeCode": 1
@@ -2131,19 +1783,19 @@
             "value": "SHOE STORAGE BOX",
             "transformedValue": "SHOE STORAGE BOX",
             "startx": 239,
-            "starty": 2775,
-            "endx": 546,
-            "endy": 2820,
+            "starty": 2785,
+            "endx": 553,
+            "endy": 2825,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "SHOE STORAGE BOX 收纳鞋盒",
             "transformedValue": "SHOE STORAGE BOX",
-            "startx": 243,
-            "starty": 2820,
-            "endx": 696,
-            "endy": 2871,
+            "startx": 250,
+            "starty": 2825,
+            "endx": 689,
+            "endy": 2876,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -2159,20 +1811,20 @@
           {
             "value": "132",
             "transformedValue": "132",
-            "startx": 904,
-            "starty": 2775,
-            "endx": 954,
-            "endy": 2820,
+            "startx": 900,
+            "starty": 2785,
+            "endx": 950,
+            "endy": 2825,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "132",
             "transformedValue": "132",
-            "startx": 1011,
-            "starty": 2820,
-            "endx": 1061,
-            "endy": 2866,
+            "startx": 1022,
+            "starty": 2825,
+            "endx": 1068,
+            "endy": 2876,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -2188,20 +1840,20 @@
           {
             "value": "32.86",
             "transformedValue": "32.86",
-            "startx": 1540,
-            "starty": 2775,
-            "endx": 1633,
-            "endy": 2820,
+            "startx": 1536,
+            "starty": 2785,
+            "endx": 1636,
+            "endy": 2825,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "32.86",
             "transformedValue": "32.86",
-            "startx": 1851,
-            "starty": 2820,
-            "endx": 1933,
-            "endy": 2866,
+            "startx": 1854,
+            "starty": 2825,
+            "endx": 1944,
+            "endy": 2876,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -2217,20 +1869,20 @@
           {
             "value": "4337.98",
             "transformedValue": "4337.98",
-            "startx": 1976,
-            "starty": 2775,
+            "startx": 1958,
+            "starty": 2785,
             "endx": 2079,
-            "endy": 2820,
+            "endy": 2825,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "4337.98",
             "transformedValue": "4337.98",
-            "startx": 2204,
-            "starty": 2820,
-            "endx": 2304,
-            "endy": 2866,
+            "startx": 2190,
+            "starty": 2825,
+            "endx": 2308,
+            "endy": 2876,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -2246,9 +1898,9 @@
           {
             "value": "CNY",
             "transformedValue": "CNY",
-            "startx": 1986,
-            "starty": 1430,
-            "endx": 2058,
+            "startx": 1990,
+            "starty": 1440,
+            "endx": 2054,
             "endy": 1476,
             "imageId": "3",
             "attTypeCode": 1
@@ -2258,36 +1910,7 @@
             "transformedValue": "CNY",
             "startx": 2212,
             "starty": 1516,
-            "endx": 2279,
-            "endy": 1556,
-            "imageId": "6",
-            "attTypeCode": 1
-          }
-        ]
-      },
-      {
-        "keyDesc": "成交单位",
-        "key": "gUnit",
-        "parsedValue": "PCS",
-        "transformedValue": "PCS",
-        "if_unify": false,
-        "sourceList": [
-          {
-            "value": "PCS",
-            "transformedValue": "PCS",
-            "startx": 904,
-            "starty": 1430,
-            "endx": 954,
-            "endy": 1476,
-            "imageId": "3",
-            "attTypeCode": 1
-          },
-          {
-            "value": "SET",
-            "transformedValue": "SET",
-            "startx": 1454,
-            "starty": 1516,
-            "endx": 1508,
+            "endx": 2276,
             "endy": 1556,
             "imageId": "6",
             "attTypeCode": 1
@@ -2307,19 +1930,19 @@
             "value": "SHOE STORAGE BOXES",
             "transformedValue": "SHOE STORAGE BOXES",
             "startx": 239,
-            "starty": 2901,
-            "endx": 586,
-            "endy": 2947,
+            "starty": 2911,
+            "endx": 589,
+            "endy": 2952,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "SHOE STORAGE BOXES 收纳鞋盒 (套组)",
             "transformedValue": "SHOE STORAGE BOXES",
-            "startx": 243,
-            "starty": 2942,
+            "startx": 250,
+            "starty": 2947,
             "endx": 725,
-            "endy": 2997,
+            "endy": 3017,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -2335,20 +1958,20 @@
           {
             "value": "56",
             "transformedValue": "56",
-            "startx": 904,
-            "starty": 2901,
-            "endx": 954,
-            "endy": 2947,
+            "startx": 900,
+            "starty": 2911,
+            "endx": 950,
+            "endy": 2952,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "56",
             "transformedValue": "56",
-            "startx": 1011,
-            "starty": 2942,
-            "endx": 1061,
-            "endy": 2987,
+            "startx": 1022,
+            "starty": 2957,
+            "endx": 1064,
+            "endy": 3007,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -2364,20 +1987,20 @@
           {
             "value": "32.88",
             "transformedValue": "32.88",
-            "startx": 1540,
-            "starty": 2901,
-            "endx": 1633,
-            "endy": 2947,
+            "startx": 1536,
+            "starty": 2911,
+            "endx": 1636,
+            "endy": 2952,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "32.88",
             "transformedValue": "32.88",
-            "startx": 1851,
-            "starty": 2942,
-            "endx": 1933,
-            "endy": 2987,
+            "startx": 1854,
+            "starty": 2957,
+            "endx": 1944,
+            "endy": 3007,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -2393,20 +2016,20 @@
           {
             "value": "920.52",
             "transformedValue": "920.52",
-            "startx": 1976,
-            "starty": 2901,
-            "endx": 2079,
-            "endy": 2947,
+            "startx": 1972,
+            "starty": 2911,
+            "endx": 2069,
+            "endy": 2952,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "920.52",
             "transformedValue": "920.52",
-            "startx": 2204,
-            "starty": 2942,
-            "endx": 2304,
-            "endy": 2987,
+            "startx": 2190,
+            "starty": 2957,
+            "endx": 2308,
+            "endy": 3007,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -2422,9 +2045,9 @@
           {
             "value": "CNY",
             "transformedValue": "CNY",
-            "startx": 1986,
-            "starty": 1430,
-            "endx": 2058,
+            "startx": 1990,
+            "starty": 1440,
+            "endx": 2054,
             "endy": 1476,
             "imageId": "3",
             "attTypeCode": 1
@@ -2434,36 +2057,7 @@
             "transformedValue": "CNY",
             "startx": 2212,
             "starty": 1516,
-            "endx": 2279,
-            "endy": 1556,
-            "imageId": "6",
-            "attTypeCode": 1
-          }
-        ]
-      },
-      {
-        "keyDesc": "成交单位",
-        "key": "gUnit",
-        "parsedValue": "SET",
-        "transformedValue": "SET",
-        "if_unify": true,
-        "sourceList": [
-          {
-            "value": "SET",
-            "transformedValue": "SET",
-            "startx": 1182,
-            "starty": 1430,
-            "endx": 1240,
-            "endy": 1476,
-            "imageId": "3",
-            "attTypeCode": 1
-          },
-          {
-            "value": "SET",
-            "transformedValue": "SET",
-            "startx": 1454,
-            "starty": 1516,
-            "endx": 1508,
+            "endx": 2276,
             "endy": 1556,
             "imageId": "6",
             "attTypeCode": 1
@@ -2483,19 +2077,19 @@
             "value": "HANGING CLOSET ORGANIZER",
             "transformedValue": "HANGING CLOSET ORGANIZER",
             "startx": 239,
-            "starty": 3027,
+            "starty": 3038,
             "endx": 707,
-            "endy": 3073,
+            "endy": 3078,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "HANGING CLOSET ORGANIZER 收纳挂袋",
             "transformedValue": "HANGING CLOSET ORGANIZER",
-            "startx": 243,
-            "starty": 3063,
-            "endx": 736,
-            "endy": 3118,
+            "startx": 250,
+            "starty": 3068,
+            "endx": 739,
+            "endy": 3139,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -2511,20 +2105,20 @@
           {
             "value": "310",
             "transformedValue": "310",
-            "startx": 904,
-            "starty": 3027,
-            "endx": 954,
-            "endy": 3073,
+            "startx": 900,
+            "starty": 3038,
+            "endx": 950,
+            "endy": 3078,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "310",
             "transformedValue": "310",
-            "startx": 1011,
-            "starty": 3063,
-            "endx": 1061,
-            "endy": 3108,
+            "startx": 1022,
+            "starty": 3078,
+            "endx": 1068,
+            "endy": 3129,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -2540,20 +2134,20 @@
           {
             "value": "29.05",
             "transformedValue": "29.05",
-            "startx": 1540,
-            "starty": 3027,
-            "endx": 1633,
-            "endy": 3073,
+            "startx": 1536,
+            "starty": 3038,
+            "endx": 1636,
+            "endy": 3078,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "29.05",
             "transformedValue": "29.05",
-            "startx": 1851,
-            "starty": 3063,
-            "endx": 1933,
-            "endy": 3108,
+            "startx": 1854,
+            "starty": 3078,
+            "endx": 1944,
+            "endy": 3129,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -2569,20 +2163,20 @@
           {
             "value": "9005.15",
             "transformedValue": "9005.15",
-            "startx": 1976,
-            "starty": 3027,
+            "startx": 1958,
+            "starty": 3038,
             "endx": 2079,
-            "endy": 3073,
+            "endy": 3078,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "9005.15",
             "transformedValue": "9005.15",
-            "startx": 2204,
-            "starty": 3063,
-            "endx": 2304,
-            "endy": 3108,
+            "startx": 2190,
+            "starty": 3078,
+            "endx": 2308,
+            "endy": 3129,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -2598,9 +2192,9 @@
           {
             "value": "CNY",
             "transformedValue": "CNY",
-            "startx": 1986,
-            "starty": 1430,
-            "endx": 2058,
+            "startx": 1990,
+            "starty": 1440,
+            "endx": 2054,
             "endy": 1476,
             "imageId": "3",
             "attTypeCode": 1
@@ -2610,36 +2204,7 @@
             "transformedValue": "CNY",
             "startx": 2212,
             "starty": 1516,
-            "endx": 2279,
-            "endy": 1556,
-            "imageId": "6",
-            "attTypeCode": 1
-          }
-        ]
-      },
-      {
-        "keyDesc": "成交单位",
-        "key": "gUnit",
-        "parsedValue": "PCS",
-        "transformedValue": "PCS",
-        "if_unify": false,
-        "sourceList": [
-          {
-            "value": "PCS",
-            "transformedValue": "PCS",
-            "startx": 904,
-            "starty": 1430,
-            "endx": 954,
-            "endy": 1476,
-            "imageId": "3",
-            "attTypeCode": 1
-          },
-          {
-            "value": "SET",
-            "transformedValue": "SET",
-            "startx": 1454,
-            "starty": 1516,
-            "endx": 1508,
+            "endx": 2276,
             "endy": 1556,
             "imageId": "6",
             "attTypeCode": 1
@@ -2659,19 +2224,19 @@
             "value": "HANGING CLOSET ORGANIZERS",
             "transformedValue": "HANGING CLOSET ORGANIZERS",
             "startx": 239,
-            "starty": 3154,
+            "starty": 3164,
             "endx": 725,
-            "endy": 3199,
+            "endy": 3204,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "HANGING CLOSET ORGANIZERS 收纳挂袋 (套组)",
             "transformedValue": "HANGING CLOSET ORGANIZERS",
-            "startx": 243,
-            "starty": 3184,
-            "endx": 586,
-            "endy": 3240,
+            "startx": 250,
+            "starty": 3194,
+            "endx": 718,
+            "endy": 3265,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -2687,20 +2252,20 @@
           {
             "value": "100",
             "transformedValue": "100",
-            "startx": 904,
-            "starty": 3154,
-            "endx": 954,
-            "endy": 3199,
+            "startx": 900,
+            "starty": 3164,
+            "endx": 950,
+            "endy": 3204,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "100",
             "transformedValue": "100",
-            "startx": 1011,
-            "starty": 3184,
-            "endx": 1061,
-            "endy": 3230,
+            "startx": 1022,
+            "starty": 3204,
+            "endx": 1068,
+            "endy": 3255,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -2716,20 +2281,20 @@
           {
             "value": "58.10",
             "transformedValue": "58.10",
-            "startx": 1540,
-            "starty": 3154,
-            "endx": 1633,
-            "endy": 3199,
+            "startx": 1536,
+            "starty": 3164,
+            "endx": 1636,
+            "endy": 3204,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "58.10",
             "transformedValue": "58.10",
-            "startx": 1851,
-            "starty": 3184,
-            "endx": 1933,
-            "endy": 3230,
+            "startx": 1854,
+            "starty": 3204,
+            "endx": 1944,
+            "endy": 3255,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -2745,20 +2310,20 @@
           {
             "value": "2904.89",
             "transformedValue": "2904.89",
-            "startx": 1976,
-            "starty": 3154,
+            "startx": 1958,
+            "starty": 3164,
             "endx": 2079,
-            "endy": 3199,
+            "endy": 3204,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "2904.89",
             "transformedValue": "2904.89",
-            "startx": 2204,
-            "starty": 3184,
-            "endx": 2304,
-            "endy": 3230,
+            "startx": 2190,
+            "starty": 3204,
+            "endx": 2308,
+            "endy": 3255,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -2774,9 +2339,9 @@
           {
             "value": "CNY",
             "transformedValue": "CNY",
-            "startx": 1986,
-            "starty": 1430,
-            "endx": 2058,
+            "startx": 1990,
+            "starty": 1440,
+            "endx": 2054,
             "endy": 1476,
             "imageId": "3",
             "attTypeCode": 1
@@ -2786,36 +2351,7 @@
             "transformedValue": "CNY",
             "startx": 2212,
             "starty": 1516,
-            "endx": 2279,
-            "endy": 1556,
-            "imageId": "6",
-            "attTypeCode": 1
-          }
-        ]
-      },
-      {
-        "keyDesc": "成交单位",
-        "key": "gUnit",
-        "parsedValue": "SET",
-        "transformedValue": "SET",
-        "if_unify": true,
-        "sourceList": [
-          {
-            "value": "SET",
-            "transformedValue": "SET",
-            "startx": 1182,
-            "starty": 1430,
-            "endx": 1240,
-            "endy": 1476,
-            "imageId": "3",
-            "attTypeCode": 1
-          },
-          {
-            "value": "SET",
-            "transformedValue": "SET",
-            "startx": 1454,
-            "starty": 1516,
-            "endx": 1508,
+            "endx": 2276,
             "endy": 1556,
             "imageId": "6",
             "attTypeCode": 1
@@ -2835,19 +2371,19 @@
             "value": "METAL OPEN WARDROBE",
             "transformedValue": "METAL OPEN WARDROBE",
             "startx": 239,
-            "starty": 3280,
+            "starty": 3290,
             "endx": 625,
-            "endy": 3326,
+            "endy": 3331,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "METAL OPEN WARDROBE 衣柜",
             "transformedValue": "METAL OPEN WARDROBE",
-            "startx": 243,
-            "starty": 3311,
-            "endx": 614,
-            "endy": 3361,
+            "startx": 250,
+            "starty": 3321,
+            "endx": 700,
+            "endy": 3371,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -2863,20 +2399,20 @@
           {
             "value": "50",
             "transformedValue": "50",
-            "startx": 904,
-            "starty": 3280,
-            "endx": 954,
-            "endy": 3326,
+            "startx": 900,
+            "starty": 3290,
+            "endx": 950,
+            "endy": 3331,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "50",
             "transformedValue": "50",
-            "startx": 1011,
-            "starty": 3311,
-            "endx": 1061,
-            "endy": 3356,
+            "startx": 1022,
+            "starty": 3321,
+            "endx": 1064,
+            "endy": 3371,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -2892,20 +2428,20 @@
           {
             "value": "84.54",
             "transformedValue": "84.54",
-            "startx": 1540,
-            "starty": 3280,
-            "endx": 1633,
-            "endy": 3326,
+            "startx": 1536,
+            "starty": 3290,
+            "endx": 1636,
+            "endy": 3331,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "84.54",
             "transformedValue": "84.54",
-            "startx": 1851,
-            "starty": 3311,
-            "endx": 1933,
-            "endy": 3356,
+            "startx": 1854,
+            "starty": 3321,
+            "endx": 1944,
+            "endy": 3371,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -2921,20 +2457,20 @@
           {
             "value": "4226.95",
             "transformedValue": "4226.95",
-            "startx": 1976,
-            "starty": 3280,
+            "startx": 1958,
+            "starty": 3290,
             "endx": 2079,
-            "endy": 3326,
+            "endy": 3331,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "4226.95",
             "transformedValue": "4226.95",
-            "startx": 2204,
-            "starty": 3311,
-            "endx": 2304,
-            "endy": 3356,
+            "startx": 2190,
+            "starty": 3321,
+            "endx": 2308,
+            "endy": 3371,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -2950,9 +2486,9 @@
           {
             "value": "CNY",
             "transformedValue": "CNY",
-            "startx": 1986,
-            "starty": 1430,
-            "endx": 2058,
+            "startx": 1990,
+            "starty": 1440,
+            "endx": 2054,
             "endy": 1476,
             "imageId": "3",
             "attTypeCode": 1
@@ -2962,36 +2498,7 @@
             "transformedValue": "CNY",
             "startx": 2212,
             "starty": 1516,
-            "endx": 2279,
-            "endy": 1556,
-            "imageId": "6",
-            "attTypeCode": 1
-          }
-        ]
-      },
-      {
-        "keyDesc": "成交单位",
-        "key": "gUnit",
-        "parsedValue": "PCS",
-        "transformedValue": "PCS",
-        "if_unify": false,
-        "sourceList": [
-          {
-            "value": "PCS",
-            "transformedValue": "PCS",
-            "startx": 904,
-            "starty": 1430,
-            "endx": 954,
-            "endy": 1476,
-            "imageId": "3",
-            "attTypeCode": 1
-          },
-          {
-            "value": "SET",
-            "transformedValue": "SET",
-            "startx": 1454,
-            "starty": 1516,
-            "endx": 1508,
+            "endx": 2276,
             "endy": 1556,
             "imageId": "6",
             "attTypeCode": 1
@@ -3011,19 +2518,19 @@
             "value": "METAL OPEN WARDROBE",
             "transformedValue": "METAL OPEN WARDROBE",
             "startx": 239,
-            "starty": 3407,
+            "starty": 3417,
             "endx": 625,
-            "endy": 3452,
+            "endy": 3457,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "METAL OPEN WARDROBE 无纺布衣柜",
             "transformedValue": "METAL OPEN WARDROBE",
-            "startx": 243,
-            "starty": 3432,
+            "startx": 250,
+            "starty": 3442,
             "endx": 732,
-            "endy": 3482,
+            "endy": 3513,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -3039,20 +2546,20 @@
           {
             "value": "76",
             "transformedValue": "76",
-            "startx": 904,
-            "starty": 3407,
-            "endx": 954,
-            "endy": 3452,
+            "startx": 900,
+            "starty": 3417,
+            "endx": 950,
+            "endy": 3457,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "76",
             "transformedValue": "76",
-            "startx": 1011,
-            "starty": 3432,
-            "endx": 1061,
-            "endy": 3477,
+            "startx": 1022,
+            "starty": 3452,
+            "endx": 1064,
+            "endy": 3503,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -3068,20 +2575,20 @@
           {
             "value": "83.72",
             "transformedValue": "83.72",
-            "startx": 1540,
-            "starty": 3407,
-            "endx": 1633,
-            "endy": 3452,
+            "startx": 1536,
+            "starty": 3417,
+            "endx": 1636,
+            "endy": 3457,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "83.72",
             "transformedValue": "83.72",
-            "startx": 1851,
-            "starty": 3432,
-            "endx": 1933,
-            "endy": 3477,
+            "startx": 1854,
+            "starty": 3452,
+            "endx": 1944,
+            "endy": 3503,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -3097,20 +2604,20 @@
           {
             "value": "6362.74",
             "transformedValue": "6362.74",
-            "startx": 1976,
-            "starty": 3407,
+            "startx": 1958,
+            "starty": 3417,
             "endx": 2079,
-            "endy": 3452,
+            "endy": 3457,
             "imageId": "3",
             "attTypeCode": 1
           },
           {
             "value": "6362.74",
             "transformedValue": "6362.74",
-            "startx": 2204,
-            "starty": 3432,
-            "endx": 2304,
-            "endy": 3477,
+            "startx": 2190,
+            "starty": 3452,
+            "endx": 2308,
+            "endy": 3503,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -3126,9 +2633,9 @@
           {
             "value": "CNY",
             "transformedValue": "CNY",
-            "startx": 1986,
-            "starty": 1430,
-            "endx": 2058,
+            "startx": 1990,
+            "starty": 1440,
+            "endx": 2054,
             "endy": 1476,
             "imageId": "3",
             "attTypeCode": 1
@@ -3138,36 +2645,7 @@
             "transformedValue": "CNY",
             "startx": 2212,
             "starty": 1516,
-            "endx": 2279,
-            "endy": 1556,
-            "imageId": "6",
-            "attTypeCode": 1
-          }
-        ]
-      },
-      {
-        "keyDesc": "成交单位",
-        "key": "gUnit",
-        "parsedValue": "SET",
-        "transformedValue": "SET",
-        "if_unify": true,
-        "sourceList": [
-          {
-            "value": "SET",
-            "transformedValue": "SET",
-            "startx": 1182,
-            "starty": 1430,
-            "endx": 1240,
-            "endy": 1476,
-            "imageId": "3",
-            "attTypeCode": 1
-          },
-          {
-            "value": "SET",
-            "transformedValue": "SET",
-            "startx": 1454,
-            "starty": 1516,
-            "endx": 1508,
+            "endx": 2276,
             "endy": 1556,
             "imageId": "6",
             "attTypeCode": 1
@@ -3187,7 +2665,7 @@
             "value": "STACKABLE FABRIC BINS",
             "transformedValue": "STACKABLE FABRIC BINS",
             "startx": 239,
-            "starty": 3538,
+            "starty": 3543,
             "endx": 607,
             "endy": 3584,
             "imageId": "3",
@@ -3196,10 +2674,10 @@
           {
             "value": "STACKABLE FABRIC BINS 坦克收纳盒 (套组)",
             "transformedValue": "STACKABLE FABRIC BINS",
-            "startx": 243,
-            "starty": 3553,
-            "endx": 743,
-            "endy": 3609,
+            "startx": 250,
+            "starty": 3568,
+            "endx": 750,
+            "endy": 3639,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -3215,9 +2693,9 @@
           {
             "value": "100",
             "transformedValue": "100",
-            "startx": 904,
-            "starty": 3538,
-            "endx": 954,
+            "startx": 900,
+            "starty": 3543,
+            "endx": 950,
             "endy": 3584,
             "imageId": "3",
             "attTypeCode": 1
@@ -3225,10 +2703,10 @@
           {
             "value": "100",
             "transformedValue": "100",
-            "startx": 1011,
-            "starty": 3553,
-            "endx": 1061,
-            "endy": 3599,
+            "startx": 1022,
+            "starty": 3578,
+            "endx": 1068,
+            "endy": 3629,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -3244,9 +2722,9 @@
           {
             "value": "47.21",
             "transformedValue": "47.21",
-            "startx": 1540,
-            "starty": 3538,
-            "endx": 1633,
+            "startx": 1536,
+            "starty": 3543,
+            "endx": 1636,
             "endy": 3584,
             "imageId": "3",
             "attTypeCode": 1
@@ -3254,10 +2732,10 @@
           {
             "value": "47.21",
             "transformedValue": "47.21",
-            "startx": 1851,
-            "starty": 3553,
-            "endx": 1933,
-            "endy": 3599,
+            "startx": 1854,
+            "starty": 3578,
+            "endx": 1944,
+            "endy": 3629,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -3273,8 +2751,8 @@
           {
             "value": "2360.51",
             "transformedValue": "2360.51",
-            "startx": 1976,
-            "starty": 3538,
+            "startx": 1958,
+            "starty": 3543,
             "endx": 2079,
             "endy": 3584,
             "imageId": "3",
@@ -3283,10 +2761,10 @@
           {
             "value": "2360.51",
             "transformedValue": "2360.51",
-            "startx": 2204,
-            "starty": 3553,
-            "endx": 2304,
-            "endy": 3599,
+            "startx": 2190,
+            "starty": 3578,
+            "endx": 2308,
+            "endy": 3629,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -3302,9 +2780,9 @@
           {
             "value": "CNY",
             "transformedValue": "CNY",
-            "startx": 1986,
-            "starty": 1430,
-            "endx": 2058,
+            "startx": 1990,
+            "starty": 1440,
+            "endx": 2054,
             "endy": 1476,
             "imageId": "3",
             "attTypeCode": 1
@@ -3314,36 +2792,7 @@
             "transformedValue": "CNY",
             "startx": 2212,
             "starty": 1516,
-            "endx": 2279,
-            "endy": 1556,
-            "imageId": "6",
-            "attTypeCode": 1
-          }
-        ]
-      },
-      {
-        "keyDesc": "成交单位",
-        "key": "gUnit",
-        "parsedValue": "PCS",
-        "transformedValue": "PCS",
-        "if_unify": false,
-        "sourceList": [
-          {
-            "value": "PCS",
-            "transformedValue": "PCS",
-            "startx": 904,
-            "starty": 1430,
-            "endx": 954,
-            "endy": 1476,
-            "imageId": "3",
-            "attTypeCode": 1
-          },
-          {
-            "value": "SET",
-            "transformedValue": "SET",
-            "startx": 1454,
-            "starty": 1516,
-            "endx": 1508,
+            "endx": 2276,
             "endy": 1556,
             "imageId": "6",
             "attTypeCode": 1
@@ -3363,7 +2812,7 @@
             "value": "LAUNDRY HAMPER",
             "transformedValue": "LAUNDRY HAMPER",
             "startx": 239,
-            "starty": 3664,
+            "starty": 3669,
             "endx": 528,
             "endy": 3710,
             "imageId": "3",
@@ -3372,10 +2821,10 @@
           {
             "value": "LAUNDRY HAMPER 洗衣篮",
             "transformedValue": "LAUNDRY HAMPER",
-            "startx": 243,
-            "starty": 3675,
-            "endx": 628,
-            "endy": 3725,
+            "startx": 250,
+            "starty": 3695,
+            "endx": 636,
+            "endy": 3745,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -3391,9 +2840,9 @@
           {
             "value": "315",
             "transformedValue": "315",
-            "startx": 904,
-            "starty": 3664,
-            "endx": 954,
+            "startx": 900,
+            "starty": 3669,
+            "endx": 950,
             "endy": 3710,
             "imageId": "3",
             "attTypeCode": 1
@@ -3401,10 +2850,10 @@
           {
             "value": "315",
             "transformedValue": "315",
-            "startx": 1011,
-            "starty": 3675,
-            "endx": 1061,
-            "endy": 3720,
+            "startx": 1022,
+            "starty": 3695,
+            "endx": 1068,
+            "endy": 3745,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -3420,9 +2869,9 @@
           {
             "value": "50.69",
             "transformedValue": "50.69",
-            "startx": 1540,
-            "starty": 3664,
-            "endx": 1633,
+            "startx": 1536,
+            "starty": 3669,
+            "endx": 1636,
             "endy": 3710,
             "imageId": "3",
             "attTypeCode": 1
@@ -3430,10 +2879,10 @@
           {
             "value": "50.69",
             "transformedValue": "50.69",
-            "startx": 1851,
-            "starty": 3675,
-            "endx": 1933,
-            "endy": 3720,
+            "startx": 1854,
+            "starty": 3695,
+            "endx": 1944,
+            "endy": 3745,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -3449,8 +2898,8 @@
           {
             "value": "15968.90",
             "transformedValue": "15968.90",
-            "startx": 1976,
-            "starty": 3664,
+            "startx": 1958,
+            "starty": 3669,
             "endx": 2079,
             "endy": 3710,
             "imageId": "3",
@@ -3459,10 +2908,10 @@
           {
             "value": "15968.90",
             "transformedValue": "15968.90",
-            "startx": 2204,
-            "starty": 3675,
-            "endx": 2304,
-            "endy": 3720,
+            "startx": 2190,
+            "starty": 3695,
+            "endx": 2308,
+            "endy": 3745,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -3478,9 +2927,9 @@
           {
             "value": "CNY",
             "transformedValue": "CNY",
-            "startx": 1986,
-            "starty": 1430,
-            "endx": 2058,
+            "startx": 1990,
+            "starty": 1440,
+            "endx": 2054,
             "endy": 1476,
             "imageId": "3",
             "attTypeCode": 1
@@ -3490,36 +2939,7 @@
             "transformedValue": "CNY",
             "startx": 2212,
             "starty": 1516,
-            "endx": 2279,
-            "endy": 1556,
-            "imageId": "6",
-            "attTypeCode": 1
-          }
-        ]
-      },
-      {
-        "keyDesc": "成交单位",
-        "key": "gUnit",
-        "parsedValue": "SET",
-        "transformedValue": "SET",
-        "if_unify": true,
-        "sourceList": [
-          {
-            "value": "SET",
-            "transformedValue": "SET",
-            "startx": 1182,
-            "starty": 1430,
-            "endx": 1240,
-            "endy": 1476,
-            "imageId": "3",
-            "attTypeCode": 1
-          },
-          {
-            "value": "SET",
-            "transformedValue": "SET",
-            "startx": 1454,
-            "starty": 1516,
-            "endx": 1508,
+            "endx": 2276,
             "endy": 1556,
             "imageId": "6",
             "attTypeCode": 1
@@ -3539,7 +2959,7 @@
             "value": "LAUNDRY CART",
             "transformedValue": "LAUNDRY CART",
             "startx": 239,
-            "starty": 3791,
+            "starty": 3796,
             "endx": 478,
             "endy": 3836,
             "imageId": "3",
@@ -3548,10 +2968,10 @@
           {
             "value": "LAUNDRY CART 洗衣车",
             "transformedValue": "LAUNDRY CART",
-            "startx": 243,
-            "starty": 3796,
+            "startx": 250,
+            "starty": 3816,
             "endx": 586,
-            "endy": 3851,
+            "endy": 3867,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -3567,9 +2987,9 @@
           {
             "value": "84",
             "transformedValue": "84",
-            "startx": 904,
-            "starty": 3791,
-            "endx": 954,
+            "startx": 900,
+            "starty": 3796,
+            "endx": 950,
             "endy": 3836,
             "imageId": "3",
             "attTypeCode": 1
@@ -3577,10 +2997,10 @@
           {
             "value": "84",
             "transformedValue": "84",
-            "startx": 1011,
-            "starty": 3796,
-            "endx": 1061,
-            "endy": 3841,
+            "startx": 1022,
+            "starty": 3816,
+            "endx": 1064,
+            "endy": 3867,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -3596,9 +3016,9 @@
           {
             "value": "66.84",
             "transformedValue": "66.84",
-            "startx": 1540,
-            "starty": 3791,
-            "endx": 1633,
+            "startx": 1536,
+            "starty": 3796,
+            "endx": 1636,
             "endy": 3836,
             "imageId": "3",
             "attTypeCode": 1
@@ -3606,10 +3026,10 @@
           {
             "value": "66.84",
             "transformedValue": "66.84",
-            "startx": 1851,
-            "starty": 3796,
-            "endx": 1933,
-            "endy": 3841,
+            "startx": 1854,
+            "starty": 3816,
+            "endx": 1944,
+            "endy": 3867,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -3625,8 +3045,8 @@
           {
             "value": "5614.93",
             "transformedValue": "5614.93",
-            "startx": 1976,
-            "starty": 3791,
+            "startx": 1958,
+            "starty": 3796,
             "endx": 2079,
             "endy": 3836,
             "imageId": "3",
@@ -3635,10 +3055,10 @@
           {
             "value": "5614.93",
             "transformedValue": "5614.93",
-            "startx": 2204,
-            "starty": 3796,
-            "endx": 2304,
-            "endy": 3841,
+            "startx": 2190,
+            "starty": 3816,
+            "endx": 2308,
+            "endy": 3867,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -3654,9 +3074,9 @@
           {
             "value": "CNY",
             "transformedValue": "CNY",
-            "startx": 1986,
-            "starty": 1430,
-            "endx": 2058,
+            "startx": 1990,
+            "starty": 1440,
+            "endx": 2054,
             "endy": 1476,
             "imageId": "3",
             "attTypeCode": 1
@@ -3666,36 +3086,7 @@
             "transformedValue": "CNY",
             "startx": 2212,
             "starty": 1516,
-            "endx": 2279,
-            "endy": 1556,
-            "imageId": "6",
-            "attTypeCode": 1
-          }
-        ]
-      },
-      {
-        "keyDesc": "成交单位",
-        "key": "gUnit",
-        "parsedValue": "PCS",
-        "transformedValue": "PCS",
-        "if_unify": false,
-        "sourceList": [
-          {
-            "value": "PCS",
-            "transformedValue": "PCS",
-            "startx": 904,
-            "starty": 1430,
-            "endx": 954,
-            "endy": 1476,
-            "imageId": "3",
-            "attTypeCode": 1
-          },
-          {
-            "value": "SET",
-            "transformedValue": "SET",
-            "startx": 1454,
-            "starty": 1516,
-            "endx": 1508,
+            "endx": 2276,
             "endy": 1556,
             "imageId": "6",
             "attTypeCode": 1
@@ -3715,7 +3106,7 @@
             "value": "LAUNDRY CART",
             "transformedValue": "LAUNDRY CART",
             "startx": 239,
-            "starty": 3917,
+            "starty": 3922,
             "endx": 478,
             "endy": 3963,
             "imageId": "3",
@@ -3724,10 +3115,10 @@
           {
             "value": "LAUNDRY CART 洗衣车",
             "transformedValue": "LAUNDRY CART",
-            "startx": 243,
-            "starty": 3922,
+            "startx": 250,
+            "starty": 3942,
             "endx": 586,
-            "endy": 3973,
+            "endy": 3993,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -3743,9 +3134,9 @@
           {
             "value": "51",
             "transformedValue": "51",
-            "startx": 904,
-            "starty": 3917,
-            "endx": 954,
+            "startx": 900,
+            "starty": 3922,
+            "endx": 950,
             "endy": 3963,
             "imageId": "3",
             "attTypeCode": 1
@@ -3753,10 +3144,10 @@
           {
             "value": "51",
             "transformedValue": "51",
-            "startx": 1011,
-            "starty": 3922,
-            "endx": 1061,
-            "endy": 3968,
+            "startx": 1022,
+            "starty": 3942,
+            "endx": 1064,
+            "endy": 3993,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -3772,9 +3163,9 @@
           {
             "value": "71.98",
             "transformedValue": "71.98",
-            "startx": 1540,
-            "starty": 3917,
-            "endx": 1633,
+            "startx": 1536,
+            "starty": 3922,
+            "endx": 1636,
             "endy": 3963,
             "imageId": "3",
             "attTypeCode": 1
@@ -3782,10 +3173,10 @@
           {
             "value": "71.98",
             "transformedValue": "71.98",
-            "startx": 1851,
-            "starty": 3922,
-            "endx": 1933,
-            "endy": 3968,
+            "startx": 1854,
+            "starty": 3942,
+            "endx": 1944,
+            "endy": 3993,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -3801,8 +3192,8 @@
           {
             "value": "3670.84",
             "transformedValue": "3670.84",
-            "startx": 1976,
-            "starty": 3917,
+            "startx": 1958,
+            "starty": 3922,
             "endx": 2079,
             "endy": 3963,
             "imageId": "3",
@@ -3811,10 +3202,10 @@
           {
             "value": "3670.84",
             "transformedValue": "3670.84",
-            "startx": 2204,
-            "starty": 3922,
-            "endx": 2304,
-            "endy": 3968,
+            "startx": 2190,
+            "starty": 3942,
+            "endx": 2308,
+            "endy": 3993,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -3830,9 +3221,9 @@
           {
             "value": "CNY",
             "transformedValue": "CNY",
-            "startx": 1986,
-            "starty": 1430,
-            "endx": 2058,
+            "startx": 1990,
+            "starty": 1440,
+            "endx": 2054,
             "endy": 1476,
             "imageId": "3",
             "attTypeCode": 1
@@ -3842,36 +3233,7 @@
             "transformedValue": "CNY",
             "startx": 2212,
             "starty": 1516,
-            "endx": 2279,
-            "endy": 1556,
-            "imageId": "6",
-            "attTypeCode": 1
-          }
-        ]
-      },
-      {
-        "keyDesc": "成交单位",
-        "key": "gUnit",
-        "parsedValue": "SET",
-        "transformedValue": "SET",
-        "if_unify": true,
-        "sourceList": [
-          {
-            "value": "SET",
-            "transformedValue": "SET",
-            "startx": 1182,
-            "starty": 1430,
-            "endx": 1240,
-            "endy": 1476,
-            "imageId": "3",
-            "attTypeCode": 1
-          },
-          {
-            "value": "SET",
-            "transformedValue": "SET",
-            "startx": 1454,
-            "starty": 1516,
-            "endx": 1508,
+            "endx": 2276,
             "endy": 1556,
             "imageId": "6",
             "attTypeCode": 1
@@ -3891,8 +3253,8 @@
             "value": "FABRIC BINS WITHOUT LIDS",
             "transformedValue": "FABRIC BINS WITHOUT LIDS",
             "startx": 239,
-            "starty": 4044,
-            "endx": 653,
+            "starty": 4049,
+            "endx": 661,
             "endy": 4089,
             "imageId": "3",
             "attTypeCode": 1
@@ -3900,10 +3262,10 @@
           {
             "value": "FABRIC BINS WITHOUT LIDS 开口收纳盒 (套组)",
             "transformedValue": "FABRIC BINS WITHOUT LIDS",
-            "startx": 243,
-            "starty": 4044,
-            "endx": 725,
-            "endy": 4099,
+            "startx": 250,
+            "starty": 4059,
+            "endx": 732,
+            "endy": 4129,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -3912,16 +3274,16 @@
       {
         "keyDesc": "成交数量",
         "key": "gQty",
-        "parsedValue": "768",
-        "transformedValue": "768",
-        "if_unify": true,
+        "parsedValue": "96",
+        "transformedValue": "96",
+        "if_unify": false,
         "sourceList": [
           {
-            "value": "768",
-            "transformedValue": "768",
-            "startx": 904,
-            "starty": 4044,
-            "endx": 954,
+            "value": "96",
+            "transformedValue": "96",
+            "startx": 1186,
+            "starty": 4049,
+            "endx": 1225,
             "endy": 4089,
             "imageId": "3",
             "attTypeCode": 1
@@ -3929,10 +3291,10 @@
           {
             "value": "768",
             "transformedValue": "768",
-            "startx": 1011,
-            "starty": 4044,
-            "endx": 1061,
-            "endy": 4089,
+            "startx": 1007,
+            "starty": 4069,
+            "endx": 1072,
+            "endy": 4119,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -3948,9 +3310,9 @@
           {
             "value": "59.70",
             "transformedValue": "59.70",
-            "startx": 1540,
-            "starty": 4044,
-            "endx": 1633,
+            "startx": 1536,
+            "starty": 4049,
+            "endx": 1636,
             "endy": 4089,
             "imageId": "3",
             "attTypeCode": 1
@@ -3958,10 +3320,10 @@
           {
             "value": "59.70",
             "transformedValue": "59.70",
-            "startx": 1851,
-            "starty": 4044,
-            "endx": 1933,
-            "endy": 4089,
+            "startx": 1854,
+            "starty": 4069,
+            "endx": 1944,
+            "endy": 4119,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -3977,8 +3339,8 @@
           {
             "value": "5730.82",
             "transformedValue": "5730.82",
-            "startx": 1976,
-            "starty": 4044,
+            "startx": 1958,
+            "starty": 4049,
             "endx": 2079,
             "endy": 4089,
             "imageId": "3",
@@ -3987,10 +3349,10 @@
           {
             "value": "5730.82",
             "transformedValue": "5730.82",
-            "startx": 2204,
-            "starty": 4044,
-            "endx": 2304,
-            "endy": 4089,
+            "startx": 2190,
+            "starty": 4069,
+            "endx": 2308,
+            "endy": 4119,
             "imageId": "6",
             "attTypeCode": 1
           }
@@ -4006,9 +3368,9 @@
           {
             "value": "CNY",
             "transformedValue": "CNY",
-            "startx": 1986,
-            "starty": 1430,
-            "endx": 2058,
+            "startx": 1990,
+            "starty": 1440,
+            "endx": 2054,
             "endy": 1476,
             "imageId": "3",
             "attTypeCode": 1
@@ -4018,36 +3380,7 @@
             "transformedValue": "CNY",
             "startx": 2212,
             "starty": 1516,
-            "endx": 2279,
-            "endy": 1556,
-            "imageId": "6",
-            "attTypeCode": 1
-          }
-        ]
-      },
-      {
-        "keyDesc": "成交单位",
-        "key": "gUnit",
-        "parsedValue": "PCS",
-        "transformedValue": "PCS",
-        "if_unify": false,
-        "sourceList": [
-          {
-            "value": "PCS",
-            "transformedValue": "PCS",
-            "startx": 904,
-            "starty": 1430,
-            "endx": 954,
-            "endy": 1476,
-            "imageId": "3",
-            "attTypeCode": 1
-          },
-          {
-            "value": "SET",
-            "transformedValue": "SET",
-            "startx": 1454,
-            "starty": 1516,
-            "endx": 1508,
+            "endx": 2276,
             "endy": 1556,
             "imageId": "6",
             "attTypeCode": 1
