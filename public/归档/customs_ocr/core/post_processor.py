@@ -144,7 +144,17 @@ def process_field(field: Dict, image_map: Dict[str, ImageInfo]) -> Dict:
         'sourceList': processed_sources
     }
 
+KEY_DESC_ALIAS_MAP = {
 
+        "运抵国": "国家",
+        "收货国家": "国家",
+        "发货国家": "国家",
+        "起运国": "国家",
+        "目的国": "国家",
+
+        "抵运港": "港口",
+        "装运港": "港口",
+    }
 
 def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
     """
@@ -154,7 +164,9 @@ def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
     need_convert = ['监管方式', '运输方式', '成交方式','包装种类','口岸','国家','境内货源地','币值','征免方式','征减免税方式','港口','计量单位']
     if key_desc not in need_convert:
         return parsed_value
-
+    
+    
+    key_desc = KEY_DESC_ALIAS_MAP.get(key_desc, key_desc)
     # ===================== 1. 精确匹配（JSON） =====================
     json_path = f"./presaved_embeddings/{key_desc}.json"
     if os.path.exists(json_path):
@@ -179,8 +191,10 @@ def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
                     return param_key
 
     # ===================== 2. embedding 相似度（PT） =====================
-    tokenizer = AutoTokenizer.from_pretrained("intfloat/multilingual-e5-large")
-    model = AutoModel.from_pretrained("intfloat/multilingual-e5-large")
+    MODEL_PATH = './model-e5'
+
+    tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
+    model = AutoModel.from_pretrained(MODEL_PATH)
     model.eval()
 
     def encode_text(text: str):
