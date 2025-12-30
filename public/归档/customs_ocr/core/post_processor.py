@@ -13,6 +13,8 @@ import torch
 import torch.nn.functional as F
 from transformers import AutoTokenizer, AutoModel
 from typing import Dict
+import os
+import json
 
 logger = logging.getLogger(__name__)
 
@@ -146,23 +148,41 @@ def process_field(field: Dict, image_map: Dict[str, ImageInfo]) -> Dict:
 
 def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
     """
-    根据 key_desc 自动加载对应的 pt 文件（key_desc.pt），与 parsed_value 的 embedding 比较相似度，
-    返回相似度最高的 paramKey
-    
-    Args:
-        key_desc: 字段名称，会对应 pt 文件 key_desc.pt
-        parsed_value: 待查询文本
-        
-    Returns:
-        相似度最高的 paramKey
+    1. 先在 key_desc.json 中做精确匹配（paramValue / spt）
+    2. 若无命中，再使用 key_desc.pt 做 embedding 相似度匹配
     """
-    need_convert = ['监管方式','运输方式','成交方式']
+    need_convert = ['监管方式', '运输方式', '成交方式','包装种类','口岸','国家','境内货源地','币值','征免方式','征减免税方式','港口','计量单位']
     if key_desc not in need_convert:
         return parsed_value
+
+    # ===================== 1. 精确匹配（JSON） =====================
+    json_path = f"./presaved_embeddings/{key_desc}.json"
+    if os.path.exists(json_path):
+        with open(json_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        result_list = data.get("message", {}).get("resultList", [])
+        for item in result_list:
+            param_key = item.get("paramKey", "").strip()
+            if not param_key:
+                continue
+
+            # paramValue
+            if parsed_value == item.get("paramValue", "").strip():
+                print(f'{key_desc} 字段：精确匹配 paramValue -> {param_key}')
+                return param_key
+
+            # spt1 / spt2 / spt3
+            for spt_field in ("spt1", "spt2", "spt3"):
+                if parsed_value == item.get(spt_field, "").strip():
+                    print(f'{key_desc} 字段：精确匹配 {spt_field} -> {param_key}')
+                    return param_key
+
+    # ===================== 2. embedding 相似度（PT） =====================
     tokenizer = AutoTokenizer.from_pretrained("intfloat/multilingual-e5-large")
     model = AutoModel.from_pretrained("intfloat/multilingual-e5-large")
     model.eval()
-    # ===== 1. 编码 parsed_value =====
+
     def encode_text(text: str):
         batch = tokenizer(
             [text],
@@ -173,27 +193,33 @@ def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
         )
         with torch.no_grad():
             outputs = model(**batch)
+
         attention_mask = batch["attention_mask"]
-        last_hidden = outputs.last_hidden_state.masked_fill(~attention_mask[..., None].bool(), 0.0)
+        last_hidden = outputs.last_hidden_state.masked_fill(
+            ~attention_mask[..., None].bool(), 0.0
+        )
         embeddings = last_hidden.sum(dim=1) / attention_mask.sum(dim=1)[..., None]
         embeddings = F.normalize(embeddings, p=2, dim=1)
         return embeddings  # (1, dim)
 
     input_emb = encode_text(parsed_value)
 
-    # ===== 2. 自动加载 key_desc.pt =====
     pt_path = f"./presaved_embeddings/{key_desc}.pt"
-    store: Dict[str, Dict] = torch.load(pt_path)  # {paramValue: {"paramKey": str, "embedding": tensor}}
+    store: Dict[str, Dict] = torch.load(pt_path)
 
     param_values = list(store.keys())
-    embeddings = torch.stack([store[v]["embedding"] for v in param_values])  # (N, dim)
+    embeddings = torch.stack([store[v]["embedding"] for v in param_values])
 
-    # ===== 3. 计算相似度并返回最相似 paramKey =====
-    similarity = F.cosine_similarity(input_emb, embeddings)  # (N,)
+    similarity = F.cosine_similarity(input_emb, embeddings)
     idx = similarity.argmax().item()
-    print(f'{key_desc} 字段：输入值 "{parsed_value}" 被转换为 "{store[param_values[idx]]["paramKey"]}"')
 
-    return store[param_values[idx]]["paramKey"]
+    matched_param_key = store[param_values[idx]]["paramKey"]
+    print(
+        f'{key_desc} 字段：embedding 匹配 "{parsed_value}" -> '
+        f'{matched_param_key} (sim={similarity[idx]:.4f})'
+    )
+
+    return matched_param_key
 
 
 def normalize_to_real(normalized_coord: float, actual_size: int) -> int:
