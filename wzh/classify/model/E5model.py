@@ -2,15 +2,16 @@ import json
 import torch
 import torch.nn.functional as F
 from transformers import AutoTokenizer, AutoModel
-from typing import Dict
+from typing import Dict, List
 
 # ===================== 模型加载 =====================
 tokenizer = AutoTokenizer.from_pretrained("intfloat/multilingual-e5-large")
 model = AutoModel.from_pretrained("intfloat/multilingual-e5-large")
 model.eval()
 
+
 # ===================== 辅助函数 =====================
-def encode_texts(texts):
+def encode_texts(texts: List[str]) -> torch.Tensor:
     """批量生成文本向量"""
     batch = tokenizer(
         texts,
@@ -21,42 +22,59 @@ def encode_texts(texts):
     )
     with torch.no_grad():
         outputs = model(**batch)
-    # average pooling
+
     attention_mask = batch["attention_mask"]
-    last_hidden = outputs.last_hidden_state.masked_fill(~attention_mask[..., None].bool(), 0.0)
+    last_hidden = outputs.last_hidden_state.masked_fill(
+        ~attention_mask[..., None].bool(), 0.0
+    )
     embeddings = last_hidden.sum(dim=1) / attention_mask.sum(dim=1)[..., None]
-    embeddings = F.normalize(embeddings, p=2, dim=1)  # L2归一化
+    embeddings = F.normalize(embeddings, p=2, dim=1)
     return embeddings
 
+
 # ===================== 数据加载 =====================
-with open("1_运输方式_1009.json", "r", encoding="utf-8") as f:
+with open("12_征减免税方式_1010.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
 result_list = data["message"]["resultList"]
 
-# ===================== 提取 paramKey 和 paramValue =====================
-param_dict: Dict[str, str] = {}  # key: paramValue, value: paramKey
-values_to_encode = []
+
+# ===================== 收集所有需要编码的文本 =====================
+texts: List[str] = []
+meta: List[Dict] = []  # 与 texts 一一对应，记录 paramKey
 
 for item in result_list:
-    value = item.get("paramValue", "").strip()
-    key = item.get("paramKey", "").strip()
-    if value and key:
-        param_dict[value] = key
-        values_to_encode.append(value)
+    param_key = item.get("paramKey", "").strip()
+    if not param_key:
+        continue
+
+    # 1️⃣ paramValue
+    param_value = item.get("paramValue", "").strip()
+    if param_value:
+        texts.append(param_value)
+        meta.append({"paramKey": param_key})
+
+    # 2️⃣ spt1 / spt2 / spt3
+    for spt_field in ("spt1", "spt2", "spt3"):
+        spt_val = item.get(spt_field, "").strip()
+        if spt_val:
+            texts.append(spt_val)
+            meta.append({"paramKey": param_key})
+
 
 # ===================== 生成向量 =====================
-embeddings = encode_texts(values_to_encode)
+embeddings = encode_texts(texts)
+
 
 # ===================== 保存向量 =====================
-# 保存为字典: paramValue -> (paramKey, embedding tensor)
-embedding_store = {}
-for i, value in enumerate(values_to_encode):
-    embedding_store[value] = {
-        "paramKey": param_dict[value],
-        "embedding": embeddings[i].cpu()  # 可保存 tensor，也可以转 numpy
+embedding_store: Dict[str, Dict] = {}
+
+for i, text in enumerate(texts):
+    embedding_store[text] = {
+        "paramKey": meta[i]["paramKey"],
+        "embedding": embeddings[i].cpu()
     }
 
-# 保存为 torch 文件
 torch.save(embedding_store, "param_embeddings.pt")
-print(f"保存 {len(embedding_store)} 条 paramValue embedding 到 param_embeddings.pt")
+
+print(f"保存 {len(embedding_store)} 条 embedding 到 param_embeddings.pt")
