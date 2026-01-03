@@ -12,7 +12,7 @@ from core.data_loader import load_input_data
 from core.prompt_manager import generate_prompt, generate_mainfactor_prompt
 from core.ocr_service import recognize_images_batch
 from core.aggregator import aggregate_results, check_consistency_and_unify_async, aggregate_mainfactors
-from core.post_processor import process_final_output, process_mainfactors
+from core.post_processor import process_final_output, process_mainfactors, transform_final_output
 from config import settings
 from core.mainfactor_utils import get_codets_values, normalize_values, get_mainfactor
 
@@ -24,7 +24,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-total_steps = 6
+total_steps = 7
 
 
 async def main_async(input_json_path: str, output_json_path: str):
@@ -107,8 +107,13 @@ async def main_async(input_json_path: str, output_json_path: str):
         logger.info(f"步骤 6/{total_steps}: 后处理（生成parsedValue、坐标转换）...")
         final_output = process_final_output(aggregated_data, image_infos)
         logger.info("后处理完成")
-        
-        # 6. 保存结果
+
+        # 7. 转换成OCR.json格式
+        logger.info(f"步骤 7/{total_steps}: 转换成OCR.json格式...")
+        final_output = transform_final_output(final_output)
+        logger.info("转换完成")
+
+        # 8. 保存结果
         logger.info(f"保存结果到 {output_json_path}...")
         with open(output_json_path, 'w', encoding='utf-8') as f:
             json.dump(final_output, f, ensure_ascii=False, indent=2)

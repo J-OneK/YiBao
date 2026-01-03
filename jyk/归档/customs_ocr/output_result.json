@@ -1,443 +1,743 @@
 {
-  "preDecHead": [
-    {
-      "keyDesc": "境内收发货人名称",
-      "key": "consigneeCname",
-      "parsedValue": "杭州盛威实业有限公司",
-      "sourceList": [
-        {
-          "value": "杭州盛威实业有限公司",
-          "startx": 264,
-          "starty": 255,
-          "endx": 682,
-          "endy": 288,
-          "imageId": "3"
-        }
-      ]
-    },
-    {
-      "keyDesc": "境内收发货人海关代码",
-      "key": "rcvgdTradeCode",
-      "parsedValue": "3316963008",
-      "sourceList": [
-        {
-          "value": "3316963008",
-          "startx": 688,
-          "starty": 255,
-          "endx": 786,
-          "endy": 288,
-          "imageId": "3"
-        }
-      ]
-    },
-    {
-      "keyDesc": "境内收发货人社会信用代码",
-      "key": "rcvgdTradeScc",
-      "parsedValue": "9133010972587504XT",
-      "sourceList": [
-        {
-          "value": "9133010972587504XT",
-          "startx": 790,
-          "starty": 255,
-          "endx": 952,
-          "endy": 288,
-          "imageId": "3"
-        }
-      ]
-    },
-    {
-      "keyDesc": "境外收发货人",
-      "key": "consignorEname",
-      "parsedValue": "OOO \"ARKNIKA\"",
-      "sourceList": [
-        {
-          "value": "OOO \"ARKNIKA\"",
-          "startx": 264,
-          "starty": 293,
-          "endx": 484,
-          "endy": 323,
-          "imageId": "3"
-        }
-      ]
-    },
-    {
-      "keyDesc": "生产销售单位名称",
-      "key": "ownerName",
-      "parsedValue": "杭州盛威实业有限公司",
-      "sourceList": [
-        {
-          "value": "杭州盛威实业有限公司",
-          "startx": 264,
-          "starty": 331,
-          "endx": 682,
-          "endy": 364,
-          "imageId": "3"
-        }
-      ]
-    },
-    {
-      "keyDesc": "生产销售单位海关代码",
-      "key": "ownerCode",
-      "parsedValue": "3316963008",
-      "sourceList": [
-        {
-          "value": "3316963008",
-          "startx": 688,
-          "starty": 331,
-          "endx": 786,
-          "endy": 364,
-          "imageId": "3"
-        }
-      ]
-    },
-    {
-      "keyDesc": "生产销售单位社会信用代码",
-      "key": "ownerScc",
-      "parsedValue": "9133010972587504XT",
-      "sourceList": [
-        {
-          "value": "9133010972587504XT",
-          "startx": 790,
-          "starty": 331,
-          "endx": 952,
-          "endy": 364,
-          "imageId": "3"
-        }
-      ]
-    },
-    {
-      "keyDesc": "合同协议号",
-      "key": "contrNo",
-      "parsedValue": "SWG180207",
-      "sourceList": [
-        {
-          "value": "SWG180207",
-          "startx": 264,
-          "starty": 538,
-          "endx": 409,
-          "endy": 568,
-          "imageId": "3"
-        }
-      ]
-    },
-    {
-      "keyDesc": "贸易国",
-      "key": "cusTradeNationCode",
-      "parsedValue": "俄罗斯联邦",
-      "sourceList": [
-        {
-          "value": "俄罗斯联邦",
-          "startx": 673,
-          "starty": 538,
-          "endx": 817,
-          "endy": 568,
-          "imageId": "3"
-        }
-      ]
-    },
-    {
-      "keyDesc": "运抵国",
-      "key": "cusTradeCountry",
-      "parsedValue": "俄罗斯联邦",
-      "sourceList": [
-        {
-          "value": "俄罗斯联邦",
-          "startx": 956,
-          "starty": 538,
-          "endx": 1099,
-          "endy": 568,
-          "imageId": "3"
-        }
-      ]
-    },
-    {
-      "keyDesc": "指运港",
-      "key": "distinatePort",
-      "parsedValue": "VRANGEL BAY",
-      "sourceList": [
-        {
-          "value": "VRANGEL BAY",
-          "startx": 1265,
-          "starty": 538,
-          "endx": 1390,
-          "endy": 568,
-          "imageId": "3"
-        }
-      ]
-    },
-    {
-      "keyDesc": "包装种类",
-      "key": "wrapType",
-      "parsedValue": "纸箱",
-      "sourceList": [
-        {
-          "value": "纸箱",
-          "startx": 339,
-          "starty": 665,
-          "endx": 454,
-          "endy": 695,
-          "imageId": "3"
-        }
-      ]
-    },
-    {
-      "keyDesc": "件数",
-      "key": "packNo",
-      "parsedValue": "738",
-      "sourceList": [
-        {
-          "value": "738",
-          "startx": 572,
-          "starty": 665,
-          "endx": 629,
-          "endy": 695,
-          "imageId": "3"
-        }
-      ]
-    },
-    {
-      "keyDesc": "毛重",
-      "key": "grossWt",
-      "parsedValue": "21224.00",
-      "sourceList": [
-        {
-          "value": "21224.00",
-          "startx": 825,
-          "starty": 665,
-          "endx": 935,
-          "endy": 695,
-          "imageId": "3"
-        }
-      ]
-    },
-    {
-      "keyDesc": "净重",
-      "key": "netWt",
-      "parsedValue": "19101.60",
-      "sourceList": [
-        {
-          "value": "19101.60",
-          "startx": 1117,
-          "starty": 665,
-          "endx": 1224,
-          "endy": 695,
-          "imageId": "3"
-        }
-      ]
-    },
-    {
-      "keyDesc": "成交方式",
-      "key": "transMode",
-      "parsedValue": "FOB",
-      "sourceList": [
-        {
-          "value": "FOB",
-          "startx": 1433,
-          "starty": 665,
-          "endx": 1544,
-          "endy": 695,
-          "imageId": "3"
-        }
-      ]
-    },
-    {
-      "keyDesc": "备案号",
-      "key": "manualNo",
-      "parsedValue": "INVOICE NO.SWG24-1123 dtd. 23.01.2025 TLLU8504848",
-      "sourceList": [
-        {
-          "value": "INVOICE NO.SWG24-1123 dtd. 23.01.2025 TLLU8504848",
-          "startx": 134,
-          "starty": 854,
-          "endx": 777,
-          "endy": 922,
-          "imageId": "3"
-        }
-      ]
-    }
-  ],
-  "preDecList": [
-    [
+  "head": {
+    "resultCode": "0",
+    "resultMessage": "识别成功",
+    "version": "1.0",
+    "timestampStr": "2026-01-03 16:42:01"
+  },
+  "content": {
+    "preDecHead": [
       {
-        "keyDesc": "商品编号",
-        "key": "codeTs",
-        "parsedValue": "9406900090",
+        "processBitMap": "0",
         "sourceList": [
           {
-            "value": "9406900090",
-            "startx": 116,
-            "starty": 1008,
-            "endx": 259,
-            "endy": 1041,
-            "imageId": "3"
+            "attType": "未知文档",
+            "imageId": 3,
+            "transformValue": null,
+            "originalValue": "杭州盛威实业有限公司",
+            "normalizedValue": "杭州盛威实业有限公司",
+            "processBitMap": "0",
+            "axisX": 262,
+            "sepValue": "杭州盛威实业有限公司",
+            "axisY": 255,
+            "width": 422,
+            "attTypeCode": null,
+            "height": 33
           }
-        ]
+        ],
+        "source_image": 3,
+        "originalValue": "杭州盛威实业有限公司",
+        "normalizedValue": "杭州盛威实业有限公司",
+        "keyDesc": "境内收发货人名称",
+        "value": "杭州盛威实业有限公司",
+        "key": "consigneeCname"
       },
       {
-        "keyDesc": "商品名称",
-        "key": "gName",
-        "parsedValue": "淋浴房",
+        "processBitMap": "0",
         "sourceList": [
           {
-            "value": "淋浴房",
-            "startx": 264,
-            "starty": 1008,
-            "endx": 348,
-            "endy": 1041,
-            "imageId": "3"
+            "attType": "未知文档",
+            "imageId": 3,
+            "transformValue": null,
+            "originalValue": "3316963008",
+            "normalizedValue": "3316963008",
+            "processBitMap": "0",
+            "axisX": 688,
+            "sepValue": "3316963008",
+            "axisY": 257,
+            "width": 7,
+            "attTypeCode": null,
+            "height": 28
           }
-        ]
+        ],
+        "source_image": 3,
+        "originalValue": "3316963008",
+        "normalizedValue": "3316963008",
+        "keyDesc": "境内收发货人海关代码",
+        "value": "3316963008",
+        "key": "rcvgdTradeCode"
       },
       {
-        "keyDesc": "规格型号",
-        "key": "gModel",
-        "parsedValue": "0|0|铝合金|塑料底盘，内部配置：花洒|90 x 90x 210CM||",
+        "processBitMap": "0",
         "sourceList": [
           {
-            "value": "0|0|铝合金|塑料底盘，内部配置：花洒|90 x 90x 210CM||",
-            "startx": 259,
-            "starty": 1087,
-            "endx": 929,
-            "endy": 1284,
-            "imageId": "3"
+            "attType": "未知文档",
+            "imageId": 3,
+            "transformValue": null,
+            "originalValue": "9133010972587504XT",
+            "normalizedValue": "9133010972587504XT",
+            "processBitMap": "0",
+            "axisX": 700,
+            "sepValue": "9133010972587504XT",
+            "axisY": 257,
+            "width": 252,
+            "attTypeCode": null,
+            "height": 28
           }
-        ]
+        ],
+        "source_image": 3,
+        "originalValue": "9133010972587504XT",
+        "normalizedValue": "9133010972587504XT",
+        "keyDesc": "境内收发货人社会信用代码",
+        "value": "9133010972587504XT",
+        "key": "rcvgdTradeScc"
       },
       {
-        "keyDesc": "原产国",
-        "key": "cusOriginCountry",
-        "parsedValue": "中国",
+        "processBitMap": "0",
         "sourceList": [
           {
-            "value": "中国",
-            "startx": 264,
-            "starty": 1246,
-            "endx": 323,
-            "endy": 1279,
-            "imageId": "3"
+            "attType": "未知文档",
+            "imageId": 3,
+            "transformValue": null,
+            "originalValue": "OOO \"ARKNIKA\"",
+            "normalizedValue": "OOO \"ARKNIKA\"",
+            "processBitMap": "0",
+            "axisX": 262,
+            "sepValue": "OOO \"ARKNIKA\"",
+            "axisY": 293,
+            "width": 222,
+            "attTypeCode": null,
+            "height": 30
           }
-        ]
+        ],
+        "source_image": 3,
+        "originalValue": "OOO \"ARKNIKA\"",
+        "normalizedValue": "OOO \"ARKNIKA\"",
+        "keyDesc": "境外收发货人",
+        "value": "OOO \"ARKNIKA\"",
+        "key": "consignorEname"
       },
       {
-        "keyDesc": "最终目的国",
-        "key": "destinationCountry",
-        "parsedValue": "俄罗斯联邦",
+        "processBitMap": "0",
         "sourceList": [
           {
-            "value": "俄罗斯联邦",
-            "startx": 673,
-            "starty": 1246,
-            "endx": 817,
-            "endy": 1279,
-            "imageId": "3"
+            "attType": "未知文档",
+            "imageId": 3,
+            "transformValue": null,
+            "originalValue": "杭州盛威实业有限公司",
+            "normalizedValue": "杭州盛威实业有限公司",
+            "processBitMap": "0",
+            "axisX": 262,
+            "sepValue": "杭州盛威实业有限公司",
+            "axisY": 333,
+            "width": 422,
+            "attTypeCode": null,
+            "height": 31
           }
-        ]
+        ],
+        "source_image": 3,
+        "originalValue": "杭州盛威实业有限公司",
+        "normalizedValue": "杭州盛威实业有限公司",
+        "keyDesc": "生产销售单位名称",
+        "value": "杭州盛威实业有限公司",
+        "key": "ownerName"
       },
       {
-        "keyDesc": "境内货源地",
-        "key": "districtCode",
-        "parsedValue": "萧山",
+        "processBitMap": "0",
         "sourceList": [
           {
-            "value": "萧山",
-            "startx": 1145,
-            "starty": 1246,
-            "endx": 1204,
-            "endy": 1279,
-            "imageId": "3"
+            "attType": "未知文档",
+            "imageId": 3,
+            "transformValue": null,
+            "originalValue": "3316963008",
+            "normalizedValue": "3316963008",
+            "processBitMap": "0",
+            "axisX": 688,
+            "sepValue": "3316963008",
+            "axisY": 333,
+            "width": 7,
+            "attTypeCode": null,
+            "height": 28
           }
-        ]
+        ],
+        "source_image": 3,
+        "originalValue": "3316963008",
+        "normalizedValue": "3316963008",
+        "keyDesc": "生产销售单位海关代码",
+        "value": "3316963008",
+        "key": "ownerCode"
       },
       {
-        "keyDesc": "成交数量",
-        "key": "gQty",
-        "parsedValue": "19101.60 KGS",
+        "processBitMap": "0",
         "sourceList": [
           {
-            "value": "19101.60 KGS",
-            "startx": 838,
-            "starty": 1008,
-            "endx": 1010,
-            "endy": 1041,
-            "imageId": "3"
+            "attType": "未知文档",
+            "imageId": 3,
+            "transformValue": null,
+            "originalValue": "9133010972587504XT",
+            "normalizedValue": "9133010972587504XT",
+            "processBitMap": "0",
+            "axisX": 700,
+            "sepValue": "9133010972587504XT",
+            "axisY": 333,
+            "width": 252,
+            "attTypeCode": null,
+            "height": 28
           }
-        ]
+        ],
+        "source_image": 3,
+        "originalValue": "9133010972587504XT",
+        "normalizedValue": "9133010972587504XT",
+        "keyDesc": "生产销售单位社会信用代码",
+        "value": "9133010972587504XT",
+        "key": "ownerScc"
       },
       {
-        "keyDesc": "单价",
-        "key": "declPrice",
-        "parsedValue": "￥10.58",
+        "processBitMap": "0",
         "sourceList": [
           {
-            "value": "￥10.58",
-            "startx": 1129,
-            "starty": 1008,
-            "endx": 1224,
-            "endy": 1041,
-            "imageId": "3"
+            "attType": "未知文档",
+            "imageId": 3,
+            "transformValue": null,
+            "originalValue": "SWG180207",
+            "normalizedValue": "SWG180207",
+            "processBitMap": "0",
+            "axisX": 262,
+            "sepValue": "SWG180207",
+            "axisY": 538,
+            "width": 147,
+            "attTypeCode": null,
+            "height": 30
           }
-        ]
+        ],
+        "source_image": 3,
+        "originalValue": "SWG180207",
+        "normalizedValue": "SWG180207",
+        "keyDesc": "合同协议号",
+        "value": "SWG180207",
+        "key": "contrNo"
       },
       {
-        "keyDesc": "总价",
-        "key": "declTotal",
-        "parsedValue": "￥202,071.94",
+        "processBitMap": "0",
         "sourceList": [
           {
-            "value": "￥202,071.94",
-            "startx": 1265,
-            "starty": 1008,
-            "endx": 1415,
-            "endy": 1041,
-            "imageId": "3"
+            "attType": "未知文档",
+            "imageId": 3,
+            "transformValue": null,
+            "originalValue": "俄罗斯联邦",
+            "normalizedValue": "俄罗斯联邦",
+            "processBitMap": "0",
+            "axisX": 673,
+            "sepValue": "俄罗斯联邦",
+            "axisY": 538,
+            "width": 144,
+            "attTypeCode": null,
+            "height": 30
           }
-        ]
+        ],
+        "source_image": 3,
+        "originalValue": "俄罗斯联邦",
+        "normalizedValue": "俄罗斯联邦",
+        "keyDesc": "贸易国",
+        "value": "俄罗斯联邦",
+        "key": "cusTradeNationCode"
       },
       {
-        "keyDesc": "币制",
-        "key": "tradeCurr",
-        "parsedValue": "人民币",
+        "processBitMap": "0",
         "sourceList": [
           {
-            "value": "人民币",
-            "startx": 1560,
-            "starty": 1008,
-            "endx": 1641,
-            "endy": 1041,
-            "imageId": "3"
+            "attType": "未知文档",
+            "imageId": 3,
+            "transformValue": null,
+            "originalValue": "俄罗斯联邦",
+            "normalizedValue": "俄罗斯联邦",
+            "processBitMap": "0",
+            "axisX": 956,
+            "sepValue": "俄罗斯联邦",
+            "axisY": 538,
+            "width": 143,
+            "attTypeCode": null,
+            "height": 30
           }
-        ]
+        ],
+        "source_image": 3,
+        "originalValue": "俄罗斯联邦",
+        "normalizedValue": "俄罗斯联邦",
+        "keyDesc": "运抵国",
+        "value": "俄罗斯联邦",
+        "key": "cusTradeCountry"
       },
       {
-        "keyDesc": "净重单项",
-        "key": "gnetWt",
-        "parsedValue": "19101.60",
+        "processBitMap": "0",
         "sourceList": [
           {
-            "value": "19101.60",
-            "startx": 1117,
-            "starty": 715,
-            "endx": 1224,
-            "endy": 748,
-            "imageId": "3"
+            "attType": "未知文档",
+            "imageId": 3,
+            "transformValue": null,
+            "originalValue": "VRANGEL BAY",
+            "normalizedValue": "VRANGEL BAY",
+            "processBitMap": "0",
+            "axisX": 1263,
+            "sepValue": "VRANGEL BAY",
+            "axisY": 538,
+            "width": 126,
+            "attTypeCode": null,
+            "height": 30
           }
-        ]
+        ],
+        "source_image": 3,
+        "originalValue": "VRANGEL BAY",
+        "normalizedValue": "VRANGEL BAY",
+        "keyDesc": "指运港",
+        "value": "VRANGEL BAY",
+        "key": "distinatePort"
       },
       {
-        "keyDesc": "毛重单项",
-        "key": "ggrossWt",
-        "parsedValue": "21224.00",
+        "processBitMap": "0",
         "sourceList": [
           {
-            "value": "21224.00",
-            "startx": 825,
-            "starty": 715,
-            "endx": 935,
-            "endy": 748,
-            "imageId": "3"
+            "attType": "未知文档",
+            "imageId": 3,
+            "transformValue": null,
+            "originalValue": "纸箱",
+            "normalizedValue": "纸箱",
+            "processBitMap": "0",
+            "axisX": 339,
+            "sepValue": "纸箱",
+            "axisY": 665,
+            "width": 115,
+            "attTypeCode": null,
+            "height": 30
           }
-        ]
+        ],
+        "source_image": 3,
+        "originalValue": "纸箱",
+        "normalizedValue": "纸箱",
+        "keyDesc": "包装种类",
+        "value": "纸箱",
+        "key": "wrapType"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "未知文档",
+            "imageId": 3,
+            "transformValue": null,
+            "originalValue": "738",
+            "normalizedValue": "738",
+            "processBitMap": "0",
+            "axisX": 572,
+            "sepValue": "738",
+            "axisY": 670,
+            "width": 51,
+            "attTypeCode": null,
+            "height": 30
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "738",
+        "normalizedValue": "738",
+        "keyDesc": "件数",
+        "value": "738",
+        "key": "packNo"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "未知文档",
+            "imageId": 3,
+            "transformValue": null,
+            "originalValue": "21224.00",
+            "normalizedValue": "21224.00",
+            "processBitMap": "0",
+            "axisX": 825,
+            "sepValue": "21224.00",
+            "axisY": 670,
+            "width": 108,
+            "attTypeCode": null,
+            "height": 30
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "21224.00",
+        "normalizedValue": "21224.00",
+        "keyDesc": "毛重",
+        "value": "21224.00",
+        "key": "grossWt"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "未知文档",
+            "imageId": 3,
+            "transformValue": null,
+            "originalValue": "19101.60",
+            "normalizedValue": "19101.60",
+            "processBitMap": "0",
+            "axisX": 1115,
+            "sepValue": "19101.60",
+            "axisY": 707,
+            "width": 107,
+            "attTypeCode": null,
+            "height": 33
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "19101.60",
+        "normalizedValue": "19101.60",
+        "keyDesc": "净重",
+        "value": "19101.60",
+        "key": "netWt"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "未知文档",
+            "imageId": 3,
+            "transformValue": null,
+            "originalValue": "FOB",
+            "normalizedValue": "FOB",
+            "processBitMap": "0",
+            "axisX": 1460,
+            "sepValue": "FOB",
+            "axisY": 707,
+            "width": 59,
+            "attTypeCode": null,
+            "height": 33
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "FOB",
+        "normalizedValue": "FOB",
+        "keyDesc": "成交方式",
+        "value": "FOB",
+        "key": "transMode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "未知文档",
+            "imageId": 3,
+            "transformValue": null,
+            "originalValue": "INVOICE NO.SWG24-1123 dtd. 23.01.2025 TLLU8504848",
+            "normalizedValue": "INVOICE NO.SWG24-1123 dtd. 23.01.2025 TLLU8504848",
+            "processBitMap": "0",
+            "axisX": 262,
+            "sepValue": "INVOICE NO.SWG24-1123 dtd. 23.01.2025 TLLU8504848",
+            "axisY": 857,
+            "width": 512,
+            "attTypeCode": null,
+            "height": 68
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "INVOICE NO.SWG24-1123 dtd. 23.01.2025 TLLU8504848",
+        "normalizedValue": "INVOICE NO.SWG24-1123 dtd. 23.01.2025 TLLU8504848",
+        "keyDesc": "备案号",
+        "value": "INVOICE NO.SWG24-1123 dtd. 23.01.2025 TLLU8504848",
+        "key": "manualNo"
       }
-    ]
-  ]
+    ],
+    "preDecList": [
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "未知文档",
+              "imageId": 3,
+              "transformValue": null,
+              "originalValue": "9406900090",
+              "normalizedValue": "9406900090",
+              "processBitMap": "0",
+              "axisX": 114,
+              "sepValue": "9406900090",
+              "axisY": 1013,
+              "width": 145,
+              "attTypeCode": null,
+              "height": 31
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "9406900090",
+          "normalizedValue": "9406900090",
+          "keyDesc": "商品编号",
+          "value": "9406900090",
+          "key": "codeTs"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "未知文档",
+              "imageId": 3,
+              "transformValue": null,
+              "originalValue": "淋浴房",
+              "normalizedValue": "淋浴房",
+              "processBitMap": "0",
+              "axisX": 262,
+              "sepValue": "淋浴房",
+              "axisY": 1013,
+              "width": 88,
+              "attTypeCode": null,
+              "height": 31
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "淋浴房",
+          "normalizedValue": "淋浴房",
+          "keyDesc": "商品名称",
+          "value": "淋浴房",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "未知文档",
+              "imageId": 3,
+              "transformValue": null,
+              "originalValue": "0|0|铝合金|塑料底盘，内部配置：花洒|90 x 90x 210CM||",
+              "normalizedValue": "0|0|铝合金|塑料底盘，内部配置：花洒|90 x 90x 210CM||",
+              "processBitMap": "0",
+              "axisX": 262,
+              "sepValue": "0|0|铝合金|塑料底盘，内部配置：花洒|90 x 90x 210CM||",
+              "axisY": 1087,
+              "width": 667,
+              "attTypeCode": null,
+              "height": 197
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "0|0|铝合金|塑料底盘，内部配置：花洒|90 x 90x 210CM||",
+          "normalizedValue": "0|0|铝合金|塑料底盘，内部配置：花洒|90 x 90x 210CM||",
+          "keyDesc": "规格型号",
+          "value": "0|0|铝合金|塑料底盘，内部配置：花洒|90 x 90x 210CM||",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "未知文档",
+              "imageId": 3,
+              "transformValue": null,
+              "originalValue": "中国",
+              "normalizedValue": "中国",
+              "processBitMap": "0",
+              "axisX": 262,
+              "sepValue": "中国",
+              "axisY": 1246,
+              "width": 59,
+              "attTypeCode": null,
+              "height": 30
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "中国",
+          "normalizedValue": "中国",
+          "keyDesc": "原产国",
+          "value": "中国",
+          "key": "cusOriginCountry"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "未知文档",
+              "imageId": 3,
+              "transformValue": null,
+              "originalValue": "俄罗斯联邦",
+              "normalizedValue": "俄罗斯联邦",
+              "processBitMap": "0",
+              "axisX": 673,
+              "sepValue": "俄罗斯联邦",
+              "axisY": 1246,
+              "width": 144,
+              "attTypeCode": null,
+              "height": 30
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "俄罗斯联邦",
+          "normalizedValue": "俄罗斯联邦",
+          "keyDesc": "最终目的国",
+          "value": "俄罗斯联邦",
+          "key": "destinationCountry"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "未知文档",
+              "imageId": 3,
+              "transformValue": null,
+              "originalValue": "萧山",
+              "normalizedValue": "萧山",
+              "processBitMap": "0",
+              "axisX": 1144,
+              "sepValue": "萧山",
+              "axisY": 1246,
+              "width": 59,
+              "attTypeCode": null,
+              "height": 30
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "萧山",
+          "normalizedValue": "萧山",
+          "keyDesc": "境内货源地",
+          "value": "萧山",
+          "key": "districtCode"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "未知文档",
+              "imageId": 3,
+              "transformValue": null,
+              "originalValue": "¥10.58",
+              "normalizedValue": "¥10.58",
+              "processBitMap": "0",
+              "axisX": 1129,
+              "sepValue": "¥10.58",
+              "axisY": 1013,
+              "width": 93,
+              "attTypeCode": null,
+              "height": 31
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "¥10.58",
+          "normalizedValue": "¥10.58",
+          "keyDesc": "单价",
+          "value": "¥10.58",
+          "key": "declPrice"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "未知文档",
+              "imageId": 3,
+              "transformValue": null,
+              "originalValue": "¥202,071.94",
+              "normalizedValue": "¥202,071.94",
+              "processBitMap": "0",
+              "axisX": 1263,
+              "sepValue": "¥202,071.94",
+              "axisY": 1013,
+              "width": 152,
+              "attTypeCode": null,
+              "height": 31
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "¥202,071.94",
+          "normalizedValue": "¥202,071.94",
+          "keyDesc": "总价",
+          "value": "¥202,071.94",
+          "key": "declTotal"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "未知文档",
+              "imageId": 3,
+              "transformValue": null,
+              "originalValue": "人民币",
+              "normalizedValue": "人民币",
+              "processBitMap": "0",
+              "axisX": 1558,
+              "sepValue": "人民币",
+              "axisY": 1013,
+              "width": 83,
+              "attTypeCode": null,
+              "height": 31
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "人民币",
+          "normalizedValue": "人民币",
+          "keyDesc": "币制",
+          "value": "人民币",
+          "key": "tradeCurr"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "未知文档",
+              "imageId": 3,
+              "transformValue": null,
+              "originalValue": "19101.60 KGS",
+              "normalizedValue": "19101.60 KGS",
+              "processBitMap": "0",
+              "axisX": 836,
+              "sepValue": "19101.60 KGS",
+              "axisY": 1013,
+              "width": 175,
+              "attTypeCode": null,
+              "height": 31
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "19101.60 KGS",
+          "normalizedValue": "19101.60 KGS",
+          "keyDesc": "成交数量",
+          "value": "19101.60 KGS",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "未知文档",
+              "imageId": 3,
+              "transformValue": null,
+              "originalValue": "19101.60",
+              "normalizedValue": "19101.60",
+              "processBitMap": "0",
+              "axisX": 1115,
+              "sepValue": "19101.60",
+              "axisY": 707,
+              "width": 107,
+              "attTypeCode": null,
+              "height": 33
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "19101.60",
+          "normalizedValue": "19101.60",
+          "keyDesc": "净重单项",
+          "value": "19101.60",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "未知文档",
+              "imageId": 3,
+              "transformValue": null,
+              "originalValue": "21224.00",
+              "normalizedValue": "21224.00",
+              "processBitMap": "0",
+              "axisX": 825,
+              "sepValue": "21224.00",
+              "axisY": 707,
+              "width": 108,
+              "attTypeCode": null,
+              "height": 33
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "21224.00",
+          "normalizedValue": "21224.00",
+          "keyDesc": "毛重单项",
+          "value": "21224.00",
+          "key": "ggrossWt"
+        }
+      ]
+    ],
+    "preDecContainer": [],
+    "extend": {}
+  }
 }
