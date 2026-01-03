@@ -29,6 +29,31 @@ ATT_TYPE_NAMES = {
     24: "船代单"
 }
 
+ATT_TYPE_NAMES_EN = {
+    1: "Contract",
+    2: "Invoice",
+    3: "Packing List",
+    4: "Pre-entry Form",
+    5: "Declaration Elements",
+    14: "Electronic Ledger",
+    15: "Bill of Lading",
+    19: "Air Waybill",
+    6: "Warehouse Inventory List",
+    7: "Manifest",
+    8: "Customs Clearance Certificate",
+    9: "Power of Attorney",
+    10: "License/Permit",
+    11: "Certificate of Origin",
+    12: "Port-in Container List",
+    13: "Other",
+    17: "Inventory Collection List",
+    18: "Express Waybill",
+    21: "Stowage Plan",
+    22: "Port Entry Notice",
+    23: "Booking Confirmation",
+    24: "Shipping Agency Document"
+}
+
 # 中文字段名到英文 key 的映射
 KEY_DESC_TO_KEY = {
     # 表头字段

@@ -1,211 +1,47 @@
 {
   "preDecHead": [
     {
-      "keyDesc": "合同协议号",
-      "key": "contrNo",
-      "parsedValue": "SWG180207",
-      "transformedValue": "SWG180207",
-      "if_unify": true,
-      "sourceList": [
-        {
-          "value": "SWG180207",
-          "transformedValue": "SWG180207",
-          "startx": 262,
-          "starty": 457,
-          "endx": 411,
-          "endy": 505,
-          "imageId": "3",
-          "attTypeCode": 4
-        }
-      ]
-    },
-    {
-      "keyDesc": "贸易国",
-      "key": "cusTradeNationCode",
-      "parsedValue": "俄罗斯联邦",
-      "transformedValue": "俄罗斯联邦",
-      "if_unify": true,
-      "sourceList": [
-        {
-          "value": "俄罗斯联邦",
-          "transformedValue": "俄罗斯联邦",
-          "startx": 672,
-          "starty": 457,
-          "endx": 809,
-          "endy": 505,
-          "imageId": "3",
-          "attTypeCode": 4
-        }
-      ]
-    },
-    {
-      "keyDesc": "运抵国",
-      "key": "cusTradeCountry",
-      "parsedValue": "俄罗斯联邦",
-      "transformedValue": "俄罗斯联邦",
-      "if_unify": true,
-      "sourceList": [
-        {
-          "value": "俄罗斯联邦",
-          "transformedValue": "俄罗斯联邦",
-          "startx": 947,
-          "starty": 457,
-          "endx": 1103,
-          "endy": 505,
-          "imageId": "3",
-          "attTypeCode": 4
-        }
-      ]
-    },
-    {
-      "keyDesc": "指运港",
-      "key": "distinatePort",
-      "parsedValue": "VRANGEL BAY",
-      "transformedValue": "VRANGEL BAY",
-      "if_unify": true,
-      "sourceList": [
-        {
-          "value": "VRANGEL BAY",
-          "transformedValue": "VRANGEL BAY",
-          "startx": 1255,
-          "starty": 457,
-          "endx": 1410,
-          "endy": 505,
-          "imageId": "3",
-          "attTypeCode": 4
-        }
-      ]
-    },
-    {
-      "keyDesc": "包装种类",
-      "key": "wrapType",
-      "parsedValue": "纸箱",
-      "transformedValue": "纸箱",
-      "if_unify": true,
-      "sourceList": [
-        {
-          "value": "纸箱",
-          "transformedValue": "纸箱",
-          "startx": 332,
-          "starty": 659,
-          "endx": 463,
-          "endy": 707,
-          "imageId": "3",
-          "attTypeCode": 4
-        }
-      ]
-    },
-    {
-      "keyDesc": "件数",
-      "key": "packNo",
-      "parsedValue": "738",
-      "transformedValue": "738",
-      "if_unify": true,
-      "sourceList": [
-        {
-          "value": "738",
-          "transformedValue": "738",
-          "startx": 561,
-          "starty": 659,
-          "endx": 643,
-          "endy": 707,
-          "imageId": "3",
-          "attTypeCode": 4
-        }
-      ]
-    },
-    {
-      "keyDesc": "毛重",
-      "key": "grossWt",
-      "parsedValue": "21224.00",
-      "transformedValue": "21224.00",
-      "if_unify": true,
-      "sourceList": [
-        {
-          "value": "21224.00",
-          "transformedValue": "21224.00",
-          "startx": 818,
-          "starty": 659,
-          "endx": 943,
-          "endy": 707,
-          "imageId": "3",
-          "attTypeCode": 4
-        }
-      ]
-    },
-    {
-      "keyDesc": "净重",
-      "key": "netWt",
-      "parsedValue": "19101.60",
-      "transformedValue": "19101.60",
-      "if_unify": true,
-      "sourceList": [
-        {
-          "value": "19101.60",
-          "transformedValue": "19101.60",
-          "startx": 1103,
-          "starty": 659,
-          "endx": 1233,
-          "endy": 707,
-          "imageId": "3",
-          "attTypeCode": 4
-        }
-      ]
-    },
-    {
-      "keyDesc": "成交方式",
-      "key": "transMode",
-      "parsedValue": "FOB",
-      "transformedValue": "FOB",
-      "if_unify": true,
-      "sourceList": [
-        {
-          "value": "FOB",
-          "transformedValue": "FOB",
-          "startx": 1419,
-          "starty": 659,
-          "endx": 1555,
-          "endy": 707,
-          "imageId": "3",
-          "attTypeCode": 4
-        }
-      ]
-    },
-    {
       "keyDesc": "境内收发货人名称",
       "key": "consigneeCname",
       "parsedValue": "杭州盛威实业有限公司",
-      "transformedValue": "杭州盛威实业有限公司",
-      "if_unify": true,
       "sourceList": [
         {
           "value": "杭州盛威实业有限公司",
-          "transformedValue": "杭州盛威实业有限公司",
-          "startx": 262,
+          "startx": 264,
           "starty": 255,
-          "endx": 690,
-          "endy": 290,
-          "imageId": "3",
-          "attTypeCode": 4
+          "endx": 682,
+          "endy": 288,
+          "imageId": "3"
         }
       ]
     },
     {
       "keyDesc": "境内收发货人海关代码",
       "key": "rcvgdTradeCode",
+      "parsedValue": "3316963008",
+      "sourceList": [
+        {
+          "value": "3316963008",
+          "startx": 688,
+          "starty": 255,
+          "endx": 786,
+          "endy": 288,
+          "imageId": "3"
+        }
+      ]
+    },
+    {
+      "keyDesc": "境内收发货人社会信用代码",
+      "key": "rcvgdTradeScc",
       "parsedValue": "9133010972587504XT",
-      "transformedValue": "9133010972587504XT",
-      "if_unify": true,
       "sourceList": [
         {
           "value": "9133010972587504XT",
-          "transformedValue": "9133010972587504XT",
-          "startx": 691,
+          "startx": 790,
           "starty": 255,
-          "endx": 954,
-          "endy": 290,
-          "imageId": "3",
-          "attTypeCode": 4
+          "endx": 952,
+          "endy": 288,
+          "imageId": "3"
         }
       ]
     },
@@ -213,18 +49,14 @@
       "keyDesc": "境外收发货人",
       "key": "consignorEname",
       "parsedValue": "OOO \"ARKNIKA\"",
-      "transformedValue": "OOO \"ARKNIKA\"",
-      "if_unify": true,
       "sourceList": [
         {
           "value": "OOO \"ARKNIKA\"",
-          "transformedValue": "OOO \"ARKNIKA\"",
-          "startx": 262,
+          "startx": 264,
           "starty": 293,
-          "endx": 486,
-          "endy": 328,
-          "imageId": "3",
-          "attTypeCode": 4
+          "endx": 484,
+          "endy": 323,
+          "imageId": "3"
         }
       ]
     },
@@ -232,37 +64,179 @@
       "keyDesc": "生产销售单位名称",
       "key": "ownerName",
       "parsedValue": "杭州盛威实业有限公司",
-      "transformedValue": "杭州盛威实业有限公司",
-      "if_unify": true,
       "sourceList": [
         {
           "value": "杭州盛威实业有限公司",
-          "transformedValue": "杭州盛威实业有限公司",
-          "startx": 262,
+          "startx": 264,
           "starty": 331,
-          "endx": 690,
-          "endy": 366,
-          "imageId": "3",
-          "attTypeCode": 4
+          "endx": 682,
+          "endy": 364,
+          "imageId": "3"
         }
       ]
     },
     {
       "keyDesc": "生产销售单位海关代码",
       "key": "ownerCode",
+      "parsedValue": "3316963008",
+      "sourceList": [
+        {
+          "value": "3316963008",
+          "startx": 688,
+          "starty": 331,
+          "endx": 786,
+          "endy": 364,
+          "imageId": "3"
+        }
+      ]
+    },
+    {
+      "keyDesc": "生产销售单位社会信用代码",
+      "key": "ownerScc",
       "parsedValue": "9133010972587504XT",
-      "transformedValue": "9133010972587504XT",
-      "if_unify": true,
       "sourceList": [
         {
           "value": "9133010972587504XT",
-          "transformedValue": "9133010972587504XT",
-          "startx": 691,
+          "startx": 790,
           "starty": 331,
-          "endx": 954,
-          "endy": 366,
-          "imageId": "3",
-          "attTypeCode": 4
+          "endx": 952,
+          "endy": 364,
+          "imageId": "3"
+        }
+      ]
+    },
+    {
+      "keyDesc": "合同协议号",
+      "key": "contrNo",
+      "parsedValue": "SWG180207",
+      "sourceList": [
+        {
+          "value": "SWG180207",
+          "startx": 264,
+          "starty": 538,
+          "endx": 409,
+          "endy": 568,
+          "imageId": "3"
+        }
+      ]
+    },
+    {
+      "keyDesc": "贸易国",
+      "key": "cusTradeNationCode",
+      "parsedValue": "俄罗斯联邦",
+      "sourceList": [
+        {
+          "value": "俄罗斯联邦",
+          "startx": 673,
+          "starty": 538,
+          "endx": 817,
+          "endy": 568,
+          "imageId": "3"
+        }
+      ]
+    },
+    {
+      "keyDesc": "运抵国",
+      "key": "cusTradeCountry",
+      "parsedValue": "俄罗斯联邦",
+      "sourceList": [
+        {
+          "value": "俄罗斯联邦",
+          "startx": 956,
+          "starty": 538,
+          "endx": 1099,
+          "endy": 568,
+          "imageId": "3"
+        }
+      ]
+    },
+    {
+      "keyDesc": "指运港",
+      "key": "distinatePort",
+      "parsedValue": "VRANGEL BAY",
+      "sourceList": [
+        {
+          "value": "VRANGEL BAY",
+          "startx": 1265,
+          "starty": 538,
+          "endx": 1390,
+          "endy": 568,
+          "imageId": "3"
+        }
+      ]
+    },
+    {
+      "keyDesc": "包装种类",
+      "key": "wrapType",
+      "parsedValue": "纸箱",
+      "sourceList": [
+        {
+          "value": "纸箱",
+          "startx": 339,
+          "starty": 665,
+          "endx": 454,
+          "endy": 695,
+          "imageId": "3"
+        }
+      ]
+    },
+    {
+      "keyDesc": "件数",
+      "key": "packNo",
+      "parsedValue": "738",
+      "sourceList": [
+        {
+          "value": "738",
+          "startx": 572,
+          "starty": 665,
+          "endx": 629,
+          "endy": 695,
+          "imageId": "3"
+        }
+      ]
+    },
+    {
+      "keyDesc": "毛重",
+      "key": "grossWt",
+      "parsedValue": "21224.00",
+      "sourceList": [
+        {
+          "value": "21224.00",
+          "startx": 825,
+          "starty": 665,
+          "endx": 935,
+          "endy": 695,
+          "imageId": "3"
+        }
+      ]
+    },
+    {
+      "keyDesc": "净重",
+      "key": "netWt",
+      "parsedValue": "19101.60",
+      "sourceList": [
+        {
+          "value": "19101.60",
+          "startx": 1117,
+          "starty": 665,
+          "endx": 1224,
+          "endy": 695,
+          "imageId": "3"
+        }
+      ]
+    },
+    {
+      "keyDesc": "成交方式",
+      "key": "transMode",
+      "parsedValue": "FOB",
+      "sourceList": [
+        {
+          "value": "FOB",
+          "startx": 1433,
+          "starty": 665,
+          "endx": 1544,
+          "endy": 695,
+          "imageId": "3"
         }
       ]
     },
@@ -270,18 +244,14 @@
       "keyDesc": "备案号",
       "key": "manualNo",
       "parsedValue": "INVOICE NO.SWG24-1123 dtd. 23.01.2025 TLLU8504848",
-      "transformedValue": "INVOICE NO.SWG24-1123 dtd. 23.01.2025 TLLU8504848",
-      "if_unify": true,
       "sourceList": [
         {
           "value": "INVOICE NO.SWG24-1123 dtd. 23.01.2025 TLLU8504848",
-          "transformedValue": "INVOICE NO.SWG24-1123 dtd. 23.01.2025 TLLU8504848",
-          "startx": 262,
-          "starty": 857,
+          "startx": 134,
+          "starty": 854,
           "endx": 777,
-          "endy": 927,
-          "imageId": "3",
-          "attTypeCode": 4
+          "endy": 922,
+          "imageId": "3"
         }
       ]
     }
@@ -292,18 +262,14 @@
         "keyDesc": "商品编号",
         "key": "codeTs",
         "parsedValue": "9406900090",
-        "transformedValue": "9406900090",
-        "if_unify": true,
         "sourceList": [
           {
             "value": "9406900090",
-            "transformedValue": "9406900090",
-            "startx": 110,
+            "startx": 116,
             "starty": 1008,
-            "endx": 262,
-            "endy": 1044,
-            "imageId": "3",
-            "attTypeCode": 4
+            "endx": 259,
+            "endy": 1041,
+            "imageId": "3"
           }
         ]
       },
@@ -311,37 +277,29 @@
         "keyDesc": "商品名称",
         "key": "gName",
         "parsedValue": "淋浴房",
-        "transformedValue": "淋浴房",
-        "if_unify": true,
         "sourceList": [
           {
             "value": "淋浴房",
-            "transformedValue": "淋浴房",
-            "startx": 262,
+            "startx": 264,
             "starty": 1008,
-            "endx": 350,
-            "endy": 1044,
-            "imageId": "3",
-            "attTypeCode": 4
+            "endx": 348,
+            "endy": 1041,
+            "imageId": "3"
           }
         ]
       },
       {
         "keyDesc": "规格型号",
         "key": "gModel",
-        "parsedValue": "0|0|铝合金|塑料底盘，内部配置：花洒|90 x 90x 210CM|null|null",
-        "transformedValue": "0|0|铝合金|塑料底盘，内部配置：花洒|90 x 90x 210CM|null|null",
-        "if_unify": true,
+        "parsedValue": "0|0|铝合金|塑料底盘，内部配置：花洒|90 x 90x 210CM||",
         "sourceList": [
           {
-            "value": "0|0|铝合金|塑料底盘，内部配置：花洒|90 x 90x 210CM|null|null",
-            "transformedValue": "0|0|铝合金|塑料底盘，内部配置：花洒|90 x 90x 210CM|null|null",
-            "startx": 262,
-            "starty": 1089,
-            "endx": 926,
+            "value": "0|0|铝合金|塑料底盘，内部配置：花洒|90 x 90x 210CM||",
+            "startx": 259,
+            "starty": 1087,
+            "endx": 929,
             "endy": 1284,
-            "imageId": "3",
-            "attTypeCode": 4
+            "imageId": "3"
           }
         ]
       },
@@ -349,18 +307,14 @@
         "keyDesc": "原产国",
         "key": "cusOriginCountry",
         "parsedValue": "中国",
-        "transformedValue": "中国",
-        "if_unify": true,
         "sourceList": [
           {
             "value": "中国",
-            "transformedValue": "中国",
-            "startx": 262,
+            "startx": 264,
             "starty": 1246,
-            "endx": 325,
-            "endy": 1281,
-            "imageId": "3",
-            "attTypeCode": 4
+            "endx": 323,
+            "endy": 1279,
+            "imageId": "3"
           }
         ]
       },
@@ -368,18 +322,14 @@
         "keyDesc": "最终目的国",
         "key": "destinationCountry",
         "parsedValue": "俄罗斯联邦",
-        "transformedValue": "俄罗斯联邦",
-        "if_unify": true,
         "sourceList": [
           {
             "value": "俄罗斯联邦",
-            "transformedValue": "俄罗斯联邦",
-            "startx": 672,
+            "startx": 673,
             "starty": 1246,
-            "endx": 818,
-            "endy": 1281,
-            "imageId": "3",
-            "attTypeCode": 4
+            "endx": 817,
+            "endy": 1279,
+            "imageId": "3"
           }
         ]
       },
@@ -387,18 +337,14 @@
         "keyDesc": "境内货源地",
         "key": "districtCode",
         "parsedValue": "萧山",
-        "transformedValue": "萧山",
-        "if_unify": true,
         "sourceList": [
           {
             "value": "萧山",
-            "transformedValue": "萧山",
-            "startx": 1103,
-            "starty": 1203,
-            "endx": 1246,
-            "endy": 1281,
-            "imageId": "3",
-            "attTypeCode": 4
+            "startx": 1145,
+            "starty": 1246,
+            "endx": 1204,
+            "endy": 1279,
+            "imageId": "3"
           }
         ]
       },
@@ -406,56 +352,44 @@
         "keyDesc": "成交数量",
         "key": "gQty",
         "parsedValue": "19101.60 KGS",
-        "transformedValue": "19101.60 KGS",
-        "if_unify": true,
         "sourceList": [
           {
             "value": "19101.60 KGS",
-            "transformedValue": "19101.60 KGS",
-            "startx": 834,
+            "startx": 838,
             "starty": 1008,
-            "endx": 1015,
-            "endy": 1044,
-            "imageId": "3",
-            "attTypeCode": 4
+            "endx": 1010,
+            "endy": 1041,
+            "imageId": "3"
           }
         ]
       },
       {
         "keyDesc": "单价",
         "key": "declPrice",
-        "parsedValue": "¥10.58",
-        "transformedValue": "¥10.58",
-        "if_unify": true,
+        "parsedValue": "￥10.58",
         "sourceList": [
           {
-            "value": "¥10.58",
-            "transformedValue": "¥10.58",
-            "startx": 1128,
+            "value": "￥10.58",
+            "startx": 1129,
             "starty": 1008,
-            "endx": 1226,
-            "endy": 1044,
-            "imageId": "3",
-            "attTypeCode": 4
+            "endx": 1224,
+            "endy": 1041,
+            "imageId": "3"
           }
         ]
       },
       {
         "keyDesc": "总价",
         "key": "declTotal",
-        "parsedValue": "¥202,071.94",
-        "transformedValue": "¥202,071.94",
-        "if_unify": true,
+        "parsedValue": "￥202,071.94",
         "sourceList": [
           {
-            "value": "¥202,071.94",
-            "transformedValue": "¥202,071.94",
-            "startx": 1262,
+            "value": "￥202,071.94",
+            "startx": 1265,
             "starty": 1008,
-            "endx": 1423,
-            "endy": 1044,
-            "imageId": "3",
-            "attTypeCode": 4
+            "endx": 1415,
+            "endy": 1041,
+            "imageId": "3"
           }
         ]
       },
@@ -463,18 +397,14 @@
         "keyDesc": "币制",
         "key": "tradeCurr",
         "parsedValue": "人民币",
-        "transformedValue": "人民币",
-        "if_unify": true,
         "sourceList": [
           {
             "value": "人民币",
-            "transformedValue": "人民币",
-            "startx": 1557,
+            "startx": 1560,
             "starty": 1008,
-            "endx": 1650,
-            "endy": 1044,
-            "imageId": "3",
-            "attTypeCode": 4
+            "endx": 1641,
+            "endy": 1041,
+            "imageId": "3"
           }
         ]
       },
@@ -482,18 +412,14 @@
         "keyDesc": "净重单项",
         "key": "gnetWt",
         "parsedValue": "19101.60",
-        "transformedValue": "19101.60",
-        "if_unify": true,
         "sourceList": [
           {
             "value": "19101.60",
-            "transformedValue": "19101.60",
-            "startx": 1103,
-            "starty": 713,
-            "endx": 1233,
+            "startx": 1117,
+            "starty": 715,
+            "endx": 1224,
             "endy": 748,
-            "imageId": "3",
-            "attTypeCode": 4
+            "imageId": "3"
           }
         ]
       },
@@ -501,37 +427,14 @@
         "keyDesc": "毛重单项",
         "key": "ggrossWt",
         "parsedValue": "21224.00",
-        "transformedValue": "21224.00",
-        "if_unify": true,
         "sourceList": [
           {
             "value": "21224.00",
-            "transformedValue": "21224.00",
-            "startx": 818,
-            "starty": 713,
-            "endx": 943,
+            "startx": 825,
+            "starty": 715,
+            "endx": 935,
             "endy": 748,
-            "imageId": "3",
-            "attTypeCode": 4
-          }
-        ]
-      },
-      {
-        "keyDesc": "成交单位",
-        "key": "gUnit",
-        "parsedValue": "KGS",
-        "transformedValue": "KGS",
-        "if_unify": true,
-        "sourceList": [
-          {
-            "value": "KGS",
-            "transformedValue": "KGS",
-            "startx": 1303,
-            "starty": 713,
-            "endx": 1376,
-            "endy": 748,
-            "imageId": "3",
-            "attTypeCode": 4
+            "imageId": "3"
           }
         ]
       }
