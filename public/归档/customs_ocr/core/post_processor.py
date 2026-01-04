@@ -149,13 +149,36 @@ def process_field(field: Dict, image_map: Dict[str, ImageInfo]) -> Dict:
 KEY_DESC_ALIAS_MAP = {
 
         "运抵国": "国家",
-        "收货国家": "国家",
-        "发货国家": "国家",
-        "起运国": "国家",
-        "目的国": "国家",
+        "贸易国": "国家",
+        "原产国": "国家",
+        "最终目的国": "国家",
 
-        "抵运港": "港口",
-        "装运港": "港口",
+        "指运港": "港口",
+        
+        "运输方式": "运输方式",
+        
+        "监管方式": "监管方式",
+        
+        "征免性质": "征免方式",
+
+        "离境口岸": "口岸",
+        
+        "包装种类": "包装种类",
+
+        "运费币值": "币制",
+        "保险费币": "币制",
+        "成交币制": "币制",
+        "杂费币制": "币制",
+        "币值": "币制",
+
+        "成交方式": "成交方式",
+
+        "境内货源地": "境内货源地",
+
+        "征减免税方式": "征减免税方式",
+        
+        "成交计量单位": "计量单位",
+
     }
 
 def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
@@ -163,8 +186,8 @@ def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
     1. 先在 key_desc.json 中做精确匹配（paramValue / spt）
     2. 若无命中，再使用 key_desc.pt 做 embedding 相似度匹配
     """
-    need_convert = ['监管方式', '运输方式', '成交方式','包装种类','口岸','国家','境内货源地','币值','征免方式','征减免税方式','港口','计量单位']
-    if key_desc not in need_convert:
+    key_desc = KEY_DESC_ALIAS_MAP.get(key_desc, None)
+    if key_desc is None:
         return parsed_value
     
     
