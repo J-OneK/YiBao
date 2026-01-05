@@ -165,11 +165,11 @@ KEY_DESC_ALIAS_MAP = {
         
         "包装种类": "包装种类",
 
-        "运费币值": "币制",
-        "保险费币": "币制",
+        "运费币制": "币制",
+        "保费币制": "币制",
         "成交币制": "币制",
         "杂费币制": "币制",
-        "币值": "币制",
+        "币制": "币制",
 
         "成交方式": "成交方式",
 
@@ -186,14 +186,13 @@ def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
     1. 先在 key_desc.json 中做精确匹配（paramValue / spt）
     2. 若无命中，再使用 key_desc.pt 做 embedding 相似度匹配
     """
-    key_desc = KEY_DESC_ALIAS_MAP.get(key_desc, None)
-    if key_desc is None:
+    convert_class = KEY_DESC_ALIAS_MAP.get(key_desc, None)
+    if convert_class is None:
         return parsed_value
     
     
-    key_desc = KEY_DESC_ALIAS_MAP.get(key_desc, key_desc)
     # ===================== 1. 精确匹配（JSON） =====================
-    json_path = f"./presaved_embeddings/{key_desc}.json"
+    json_path = f"./presaved_embeddings/{convert_class}.json"
     if os.path.exists(json_path):
         with open(json_path, "r", encoding="utf-8") as f:
             data = json.load(f)
@@ -203,10 +202,14 @@ def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
             param_key = item.get("paramKey", "").strip()
             if not param_key:
                 continue
+            
+            if parsed_value == param_key:
+                print(f'{key_desc} 字段：精确匹配 {parsed_value} -> {param_key}')
+                return param_key
 
             # paramValue
             if parsed_value == item.get("paramValue", "").strip():
-                print(f'{key_desc} 字段：精确匹配 paramValue -> {param_key}')
+                print(f'{key_desc} 字段：精确匹配 {parsed_value} -> {param_key}')
                 return param_key
 
             # spt1 / spt2 / spt3
@@ -243,7 +246,7 @@ def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
 
     input_emb = encode_text(parsed_value)
 
-    pt_path = f"./presaved_embeddings/{key_desc}.pt"
+    pt_path = f"./presaved_embeddings/{convert_class}.pt"
     store: Dict[str, Dict] = torch.load(pt_path)
 
     param_values = list(store.keys())
@@ -252,10 +255,12 @@ def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
     similarity = F.cosine_similarity(input_emb, embeddings)
     idx = similarity.argmax().item()
 
-    matched_param_key = store[param_values[idx]]["paramKey"]
+    matched_param_value = param_values[idx]
+    matched_param_key = store[matched_param_value]["paramKey"]
+    matched_score = similarity[idx].item()
+    
     print(
-        f'{key_desc} 字段：embedding 匹配 "{parsed_value}" -> '
-        f'{matched_param_key} (sim={similarity[idx]:.4f})'
+        f'{key_desc} 字段：embedding 匹配'f' {parsed_value} -> {matched_param_value} -> {matched_param_key} (sim={matched_score:.4f})' 
     )
 
     return matched_param_key
