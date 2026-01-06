@@ -4,8 +4,9 @@ import torch.nn.functional as F
 from transformers import AutoTokenizer, AutoModel
 
 # === 模型只加载一次 ===
-_tokenizer = AutoTokenizer.from_pretrained("intfloat/multilingual-e5-large")
-_model = AutoModel.from_pretrained("intfloat/multilingual-e5-large")
+MODEL_PATH = 'D:\Desktop\YiBao\YiBao\public\归档\customs_ocr\model-e5'
+_tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
+_model = AutoModel.from_pretrained(MODEL_PATH)
 _model.eval()
 
 # === embeddings 目录：基于当前文件 ===
@@ -22,7 +23,7 @@ def verify_pt_and_choose_top(key_desc: str, input_text: str) -> str:
 
     
 
-    store = torch.load('监管方式.pt')
+    store = torch.load('运输方式.pt')
 
     if not store:
         raise ValueError("pt 文件为空")
@@ -60,18 +61,25 @@ def verify_pt_and_choose_top(key_desc: str, input_text: str) -> str:
     embeddings = torch.stack(embeddings)
 
     # ---- 相似度计算 ----
-    sims = F.cosine_similarity(input_emb, embeddings)
-    best_idx = sims.argmax().item()
+    # ---- 相似度计算 ----
+    sims = F.cosine_similarity(input_emb, embeddings)  # (N,)
 
-    best_param_value = param_values[best_idx]
-    best_param_key = store[best_param_value]["paramKey"]
-    best_score = sims[best_idx].item()
+    topk = min(3, sims.size(0))  # 防止不足 3 条
+    top_scores, top_indices = torch.topk(sims, k=topk)
 
-    print(
-        f"[VERIFY] key_desc={key_desc} | input='{input_text}'\n"
-        f"         best_match='{best_param_value}' | paramKey={best_param_key} | score={best_score:.4f}"
-    )
+    print(f"[VERIFY] key_desc={key_desc} | input='{input_text}'")
+    for rank, (score, idx) in enumerate(zip(top_scores.tolist(), top_indices.tolist()), start=1):
+        param_value = param_values[idx]
+        param_key = store[param_value]["paramKey"]
+        print(
+            f"  TOP{rank}: "
+            f"paramValue='{param_value}' | "
+            f"paramKey={param_key} | "
+            f"sim={score:.4f}"
+        )
 
-    return best_param_key
+# 仍然返回 Top1 的 paramKey（不影响原逻辑）
+    return store[param_values[top_indices[0]]]["paramKey"]
 
-verify_pt_and_choose_top("监管方式", "海关处理")
+
+verify_pt_and_choose_top("运输方式","运输:BY SEA")
