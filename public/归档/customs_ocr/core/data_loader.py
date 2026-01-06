@@ -32,5 +32,5 @@ def load_input_data(json_path: str) -> List[ImageInfo]:
             height=int(img_data.get('imageHeight', 0)) if img_data.get('imageHeight') else None
         )
         image_infos.append(image_info)
-    
-    return image_infos
+
+    return image_infos, operate_images

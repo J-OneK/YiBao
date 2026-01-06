@@ -365,7 +365,31 @@ def transform_item(item):
     
     return new_item
 
-def transform_final_output(data):
+def transform_operate_image(operate_list):
+    """
+    转换 operateImage 列表。
+    根据图片指示，剔除不需要的 Key。
+    """
+    keys_to_remove = {
+        "callOcrOpen", 
+        "extractSource", 
+        "preAttTypeCode", 
+        "parseCode", 
+        "inputDocType", 
+        "classifySource"
+    }
+
+    transformed = []
+    for item in operate_list:
+        new_item = {}
+        for k, v in item.items():
+            if k not in keys_to_remove:
+                new_item[k] = v
+        transformed.append(new_item)
+    return transformed
+
+
+def transform_final_output(data, operate_images):
     """
     转换最终输出文件格式为OCR.json
     """
@@ -380,15 +404,23 @@ def transform_final_output(data):
         "content": {
             "preDecHead": [],
             "preDecList": [],
-            "preDecContainer": [], # 保持为空或按需处理
-            "extend": {} 
+            "operateImage": [],
+            "preDecContainer": [] # 保持为空或按需处理
+            
         }
     }
 
     # 1. 转换 preDecHead
     if "preDecHead" in data:
         for item in data["preDecHead"]:
-            target_json["content"]["preDecHead"].append(transform_item(item))
+            transformed_item = transform_item(item)
+            #  检查是否是柜号 (key 为 containerNo)
+            if item.get("key") == "containerNo":
+                # 放入 preDecContainer，格式为 [[item]]
+                target_json["content"]["preDecContainer"].append([transformed_item])
+            else:
+                # 放入 preDecHead
+                target_json["content"]["preDecHead"].append(transformed_item)
 
     # 2. 转换 preDecList (嵌套列表)
     if "preDecList" in data:
@@ -397,5 +429,9 @@ def transform_final_output(data):
             for item in row:
                 new_row.append(transform_item(item))
             target_json["content"]["preDecList"].append(new_row)
+    
+    # 3. 转换 operateImage
+    transformed_item = transform_operate_image(operate_images)
+    target_json["content"]["operateImage"].append(transformed_item)
 
     return target_json

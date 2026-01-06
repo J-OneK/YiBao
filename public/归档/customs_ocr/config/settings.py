@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # API 配置
-API_KEY = os.getenv("API_KEY", "sk-0d4bceaee8b4459088226a6f2da0641f")
+API_KEY = os.getenv("API_KEY", "sk-e1964190d136477982e8fb553db5589f")
 API_BASE_URL = "https://dashscope.aliyuncs.com/compatible-mode/v1"
 MODEL_NAME = "qwen3-vl-flash"  # 用于图片识别的视觉模型
 TEXT_MODEL_NAME = "qwen-flash"  # 用于文本判断的快速模型
