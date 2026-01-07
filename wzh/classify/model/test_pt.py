@@ -82,4 +82,4 @@ def verify_pt_and_choose_top(key_desc: str, input_text: str) -> str:
     return store[param_values[top_indices[0]]]["paramKey"]
 
 
-verify_pt_and_choose_top("运输方式","运输:BY SEA")
+verify_pt_and_choose_top("1","运输方式：BY SEA")
