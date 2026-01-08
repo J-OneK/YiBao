@@ -42,7 +42,7 @@ async def main_async(input_json_path: str, output_json_path: str):
         
         # 1. 加载输入数据
         logger.info(f"步骤 1/{total_steps}: 加载输入数据...")
-        image_infos, operate_images = load_input_data(input_json_path)
+        image_infos, operate_images, head_list = load_input_data(input_json_path)
         logger.info(f"成功加载 {len(image_infos)} 张图片信息")
         
         # 2. 并发识别所有图片
@@ -110,7 +110,7 @@ async def main_async(input_json_path: str, output_json_path: str):
 
         # 7. 转换成OCR.json格式
         logger.info(f"步骤 7/{total_steps}: 转换成OCR.json格式...")
-        final_output = transform_final_output(final_output, operate_images)
+        final_output = transform_final_output(final_output, operate_images, head_list)
         logger.info("转换完成")
 
         # 8. 保存结果

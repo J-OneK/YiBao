@@ -417,18 +417,15 @@ def transform_operate_image(operate_list):
     return transformed
 
 
-def transform_final_output(data, operate_images):
+def transform_final_output(data, operate_images, head_list):
     """
     转换最终输出文件格式为OCR.json
     """
+    current_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+    head_list["timestampStr"] = current_time
     # 初始化目标结构
     target_json = {
-        "head": {
-            "resultCode": "0",
-            "resultMessage": "识别成功",
-            "version": "1.0",
-            "timestampStr": time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
-        },
+        "head": head_list,
         "content": {
             "preDecHead": [],
             "preDecList": [],
