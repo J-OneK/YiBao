@@ -22,7 +22,7 @@ def load_input_data(json_path: str) -> List[ImageInfo]:
     
     image_infos = []
     operate_images = data.get('content', {}).get('operateImage', [])
-    
+    head_list = data.get('head', {})
     for img_data in operate_images:
         image_info = ImageInfo(
             image_id=str(img_data.get('imageId', '')),
@@ -33,4 +33,4 @@ def load_input_data(json_path: str) -> List[ImageInfo]:
         )
         image_infos.append(image_info)
 
-    return image_infos, operate_images
+    return image_infos, operate_images, head_list
