@@ -219,10 +219,11 @@ def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
                     return param_key
 
     # ===================== 2. embedding 相似度（PT） =====================
-    MODEL_PATH = './model-e5'
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    MODEL_PATH = os.path.join(BASE_DIR, "../model-e5")
 
-    tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
-    model = AutoModel.from_pretrained(MODEL_PATH)
+    tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH, local_files_only=True)
+    model = AutoModel.from_pretrained(MODEL_PATH, local_files_only=True)
     model.eval()
 
     def encode_text(text: str):
