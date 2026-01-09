@@ -457,6 +457,7 @@ def transform_final_output(data, operate_images, head_list):
     
     # 3. 转换 operateImage
     transformed_item = transform_operate_image(operate_images)
-    target_json["content"]["operateImage"].append(transformed_item)
+    for item in transformed_item:
+        target_json["content"]["operateImage"].append(item)
 
     return target_json
