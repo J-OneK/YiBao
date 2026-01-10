@@ -299,6 +299,10 @@ def process_mainfactors(results: List[Dict]) -> List[Dict]:
         for model in entry.get('gmodel', []):
             code = model.get('codeTs')
             # 归一化商品编码
+            if not code:
+                continue
+            if not normalize_values([code]):
+                continue
             code = normalize_values([code])[0]
             mf = model.get('mainfactors')
             pixel = model.get('pixel')
