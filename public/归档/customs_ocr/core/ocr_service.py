@@ -153,6 +153,7 @@ def convert_to_extraction_result(data: dict, image_id: str, att_type_code: int) 
     pre_dec_head = []
     for item in data.get('preDecHead', []):
         key_desc = item['keyDesc']
+        print(f'<<{key_desc}>>')
         # 模糊匹配获取key
         key = fuzzy_match_key_desc(key_desc)
         
