@@ -120,7 +120,7 @@ def visualize_coordinates(image_path, json_path, output_path):
 
 # 调用部分保持不变
 image_file = '/Users/1k/code/YiBao/jyk/test_pos/0_报关资料.pdf (1).png'
-json_file = '/Users/1k/code/YiBao/public/归档/output.json'
+json_file = '/Users/1k/code/YiBao/public/归档/output_angle.json'
 result_file = '/Users/1k/code/YiBao/jyk/test_pos/1.jpg'
 
 visualize_coordinates(image_file, json_file, result_file)
