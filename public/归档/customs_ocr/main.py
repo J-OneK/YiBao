@@ -42,7 +42,7 @@ async def main_async(input_json_path: str, output_json_path: str):
         
         # 1. 加载输入数据
         logger.info(f"步骤 1/{total_steps}: 加载输入数据...")
-        image_infos, operate_images, head_list = load_input_data(input_json_path)
+        image_infos, operate_images, head_list, image_infos_classify_only = load_input_data(input_json_path)
         logger.info(f"成功加载 {len(image_infos)} 张图片信息")
         
         # 2. 并发识别所有图片

@@ -204,10 +204,11 @@ def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
                     return param_key
 
     # ===================== 2. embedding 相似度（PT） =====================
-    MODEL_PATH = './model-e5'
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    MODEL_PATH = os.path.join(BASE_DIR, "../model-e5")
 
-    tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
-    model = AutoModel.from_pretrained(MODEL_PATH)
+    tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH, local_files_only=True)
+    model = AutoModel.from_pretrained(MODEL_PATH, local_files_only=True)
     model.eval()
 
     def encode_text(text: str):
@@ -327,6 +328,10 @@ def process_mainfactors(results: List[Dict]) -> List[Dict]:
         for model in entry.get('gmodel', []):
             code = model.get('codeTs')
             # 归一化商品编码
+            if not code:
+                continue
+            if not normalize_values([code]):
+                continue
             code = normalize_values([code])[0]
             mf = model.get('mainfactors')
             pixel = model.get('pixel')
