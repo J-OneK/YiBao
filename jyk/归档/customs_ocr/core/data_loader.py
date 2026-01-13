@@ -29,7 +29,8 @@ def load_input_data(json_path: str) -> List[ImageInfo]:
             image_url=img_data.get('imageUrl', ''),
             att_type_code=img_data.get('attTypeCode', 0),
             width=int(img_data.get('imageWidth', 0)) if img_data.get('imageWidth') else None,
-            height=int(img_data.get('imageHeight', 0)) if img_data.get('imageHeight') else None
+            height=int(img_data.get('imageHeight', 0)) if img_data.get('imageHeight') else None,
+            angle=int(img_data.get('angle', 0)) if img_data.get('angle') else None,
         )
         image_infos.append(image_info)
 

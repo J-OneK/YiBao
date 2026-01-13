@@ -13,6 +13,9 @@ class ImageInfo:
     att_type_code: int
     width: Optional[int] = None
     height: Optional[int] = None
+    original_width: Optional[int] = None
+    original_height: Optional[int] = None
+    angle: Optional[int] = None
 
 
 @dataclass

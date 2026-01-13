@@ -77,26 +77,41 @@ def process_field(field: Dict, image_map: Dict[str, ImageInfo]) -> Dict:
         
         # 获取图片信息
         image_info = image_map.get(image_id)
+
+        current_box = {}
         if not image_info or not image_info.width or not image_info.height:
             logger.warning(f"未找到图片 {image_id} 的尺寸信息，使用原始坐标")
-            processed_sources.append({
-                'value': source['value'],
+            current_box = {
                 'startx': int(pixel[0]),
                 'starty': int(pixel[1]),
                 'endx': int(pixel[2]),
-                'endy': int(pixel[3]),
-                'imageId': image_id
-            })
+                'endy': int(pixel[3])
+            }
         else:
             # 转换归一化坐标到实际坐标
-            processed_sources.append({
-                'value': source['value'],
+            current_box = {
                 'startx': normalize_to_real(pixel[0], image_info.width),
                 'starty': normalize_to_real(pixel[1], image_info.height),
                 'endx': normalize_to_real(pixel[2], image_info.width),
-                'endy': normalize_to_real(pixel[3], image_info.height),
-                'imageId': image_id
-            })
+                'endy': normalize_to_real(pixel[3], image_info.height)
+            }
+            # 【新增】2. 如果有角度，在实际坐标基础上进行旋转
+            if image_info.angle:
+                current_box = rotate_real_box(
+                    current_box, 
+                    image_info.width, 
+                    image_info.height, 
+                    image_info.angle
+                )
+        # 组装结果
+        processed_sources.append({
+            'value': source['value'],
+            'startx': current_box['startx'],
+            'starty': current_box['starty'],
+            'endx': current_box['endx'],
+            'endy': current_box['endy'],
+            'imageId': image_id
+        })
     
     return {
         'keyDesc': key_desc,
@@ -119,6 +134,55 @@ def normalize_to_real(normalized_coord: float, actual_size: int) -> int:
     """
     return int(normalized_coord * actual_size / 999)
 
+def rotate_real_box(box: Dict[str, int], img_w: int, img_h: int, angle: int) -> Dict[str, int]:
+    """
+    旋转实际像素坐标
+    
+    Args:
+        box: 包含 startx, starty, endx, endy 的字典
+        img_w: 原图宽度
+        img_h: 原图高度
+        angle: 旋转角度
+    """
+    if not angle or angle % 360 == 0:
+        return box
+
+    x1, y1 = box['startx'], box['starty']
+    x2, y2 = box['endx'], box['endy']
+    
+    angle = angle % 360
+    angle = (360 - angle) % 360  # 转为顺时针角度
+    nx1, ny1, nx2, ny2 = x1, y1, x2, y2
+
+    # 注意：这里的逻辑是基于【原图尺寸】进行旋转
+    if angle == 90:
+        # 交换宽高
+        tmp = img_h
+        img_h = img_w
+        img_w = tmp
+        # 顺时针90度: (x, y) -> (H - y, x)
+        nx1, ny1 = img_h - y1, x1
+        nx2, ny2 = img_h - y2, x2
+    elif angle == 180:
+        # 顺时针180度: (x, y) -> (W - x, H - y)
+        nx1, ny1 = img_w - x1, img_h - y1
+        nx2, ny2 = img_w - x2, img_h - y2
+    elif angle == 270:
+        # 交换宽高
+        tmp = img_h
+        img_h = img_w
+        img_w = tmp
+        # 顺时针270度: (x, y) -> (y, W - x)
+        nx1, ny1 = y1, img_w - x1
+        nx2, ny2 = y2, img_w - x2
+
+    # 重新计算 start/end (min/max)
+    return {
+        'startx': int(min(nx1, nx2)),
+        'starty': int(min(ny1, ny2)),
+        'endx': int(max(nx1, nx2)),
+        'endy': int(max(ny1, ny2))
+    }
 
 def process_mainfactors(results: List[Dict]) -> List[Dict]:
     """

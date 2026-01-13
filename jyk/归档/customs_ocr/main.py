@@ -204,7 +204,7 @@ def main(input_json_path: str, output_json_path: str):
 
 if __name__ == "__main__":
     # 默认路径
-    input_path = "/Users/1k/code/YiBao/jyk/归档/customs_ocr/OCR识别报文.json"
+    input_path = "/Users/1k/code/YiBao/public/归档/OCR识别报文.json"
     output_path = "/Users/1k/code/YiBao/jyk/归档/customs_ocr/output_result.json"
 
     # 如果提供了命令行参数，使用命令行参数
