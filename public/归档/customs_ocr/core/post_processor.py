@@ -177,7 +177,9 @@ def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
     
     
     # ===================== 1. 精确匹配（JSON） =====================
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     json_path = f"./presaved_embeddings/{convert_class}.json"
+    json_path = os.path.join(BASE_DIR, "../presaved_embeddings", f"{convert_class}.json")
     if os.path.exists(json_path):
         with open(json_path, "r", encoding="utf-8") as f:
             data = json.load(f)
@@ -204,7 +206,6 @@ def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
                     return param_key
 
     # ===================== 2. embedding 相似度（PT） =====================
-    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     MODEL_PATH = os.path.join(BASE_DIR, "../model-e5")
 
     tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH, local_files_only=True)
@@ -232,7 +233,7 @@ def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
 
     input_emb = encode_text(parsed_value)
 
-    pt_path = f"./presaved_embeddings/{convert_class}.pt"
+    pt_path = MODEL_PATH = os.path.join(BASE_DIR, "../presaved_embeddings", f"{convert_class}.pt")
     store: Dict[str, Dict] = torch.load(pt_path)
 
     param_values = list(store.keys())
