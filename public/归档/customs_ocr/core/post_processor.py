@@ -164,6 +164,10 @@ KEY_DESC_ALIAS_MAP = {
         
         "成交计量单位": "计量单位",
 
+        "运费标记": "费用标记",
+        "保费标记": "费用标记",
+        "杂费标记": "费用标记",
+
     }
 
 def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
@@ -245,6 +249,10 @@ def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
     matched_param_value = param_values[idx]
     matched_param_key = store[matched_param_value]["paramKey"]
     matched_score = similarity[idx].item()
+
+    if matched_score < 0.8:
+        print(f'{key_desc} 字段：embedding 匹配分数过低 {parsed_value} -> {matched_param_value} (sim={matched_score:.4f})，保持原值')
+        return parsed_value
     
     print(
         f'{key_desc} 字段：embedding 匹配'f' {parsed_value} -> {matched_param_value} -> {matched_param_key} (sim={matched_score:.4f})' 
