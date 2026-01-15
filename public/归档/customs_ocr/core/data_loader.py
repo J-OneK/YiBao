@@ -22,6 +22,7 @@ def load_input_data(json_path: str) -> List[ImageInfo]:
     
     image_infos = []
     image_infos_classify_only = []
+    image_infos_mainfactor = []
     operate_images = data.get('content', {}).get('operateImage', [])
     head_list = data.get('head', {})
     for img_data in operate_images:
@@ -37,7 +38,10 @@ def load_input_data(json_path: str) -> List[ImageInfo]:
         )
         if image_info.att_type_code not in [1,2,3,4,5,14,15,19]:
             image_infos_classify_only.append(image_info)
-        else :
+        elif image_info.att_type_code == 5:
+            image_infos_mainfactor.append(image_info)
+        else:
             image_infos.append(image_info)
+            image_infos_mainfactor.append(image_info)
 
-    return image_infos, operate_images, head_list, image_infos_classify_only
+    return image_infos, image_infos_mainfactor, operate_images, head_list, image_infos_classify_only

@@ -42,7 +42,7 @@ async def main_async(input_json_path: str, output_json_path: str):
         
         # 1. 加载输入数据
         logger.info(f"步骤 1/{total_steps}: 加载输入数据...")
-        image_infos, operate_images, head_list, image_infos_classify_only = load_input_data(input_json_path)
+        image_infos, image_infos_mainfactor, operate_images, head_list, image_infos_classify_only = load_input_data(input_json_path)
         logger.info(f"成功加载 {len(image_infos)} 张图片信息")
         
         # 2. 并发识别所有图片
@@ -82,8 +82,8 @@ async def main_async(input_json_path: str, output_json_path: str):
         mainfactors = [mainfactor for mainfactor in mainfactors if mainfactor]
         logger.info(f"成功提取 {len(mainfactors)} 个申报要素，分别是：{mainfactors}")
 
-        prompts = [generate_mainfactor_prompt(hsCodes, mainfactors) for i in range(len(image_infos))]
-        results = await recognize_images_batch(image_infos, prompts, is_mainfactor=True)
+        prompts = [generate_mainfactor_prompt(hsCodes, mainfactors) for i in range(len(image_infos_mainfactor))]
+        results = await recognize_images_batch(image_infos_mainfactor, prompts, is_mainfactor=True)
 
         # 过滤掉识别失败的结果
         mainfactor_results = [r for r in results if r is not None]
@@ -105,7 +105,7 @@ async def main_async(input_json_path: str, output_json_path: str):
 
         # 6. 后处理：生成parsedValue、坐标转换
         logger.info(f"步骤 6/{total_steps}: 后处理（生成parsedValue、坐标转换）...")
-        final_output = process_final_output(aggregated_data, image_infos)
+        final_output = process_final_output(aggregated_data, image_infos_mainfactor)
         logger.info("后处理完成")
 
         # 7. 转换成OCR.json格式
