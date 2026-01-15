@@ -18,3 +18,6 @@ MAX_RETRIES = 3
 
 # 日志配置
 LOG_LEVEL = "INFO"
+
+# 图片预处理配置
+ENABLE_IMAGE_ROTATION = True  # 是否启用 TesseractOSD 图片旋转矫正
