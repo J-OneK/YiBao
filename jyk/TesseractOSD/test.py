@@ -4,9 +4,6 @@ import requests
 import io
 import re
 
-# --- 配置区域 (如果需要) ---
-# 如果 Tesseract 不在你的系统 PATH 中，请取消下面这行的注释并修改为正确的路径
-# pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 def load_image_from_url(url):
     """
@@ -83,7 +80,7 @@ def detect_and_rotate(img):
 if __name__ == "__main__":
     # 示例 URL：这是一张被故意倒置（旋转了180度）的图片
     # 你可以替换成你自己的图片 URL 进行测试
-    IMAGE_URL = "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02509/c3db4357c2424cab9051d7b68528e79b/0_%E6%8A%A5%E5%85%B3%E8%B5%84%E6%96%99.pdf.png" 
+    IMAGE_URL = "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/455d60c9-421c-4280-94a1-57146900f0de/1ZG331E30458071596/file/11_668E87B90CE4ECB5415DE28C22458CA3C1DD.pdf.png" 
 
     # 1. 加载图片
     original_image = load_image_from_url(IMAGE_URL)
@@ -96,7 +93,7 @@ if __name__ == "__main__":
         corrected_image = detect_and_rotate(original_image)
 
         # 3. 保存结果
-        output_filename = "fixed_orientation_image.png"
+        output_filename = "/Users/1k/code/YiBao/jyk/TesseractOSD/wrong_image.png"
         corrected_image.save(output_filename)
         print(f"\n校正后的图片已保存为: {output_filename}")
 

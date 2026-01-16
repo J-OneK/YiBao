@@ -59,26 +59,32 @@ def detect_and_rotate(img: Image.Image) -> Tuple[Image.Image, int]:
         
         logger.debug(f"Tesseract OSD 输出: {osd_result_text.strip()}")
 
-        # 解析输出结果，找到需要的旋转角度 (Rotate)
-        match = re.search(r'Rotate:\s*(\d+)', osd_result_text)
+        # 解析输出结果
+        rotate_match = re.search(r'Rotate:\s*(\d+)', osd_result_text)
+        rotate_angle = int(rotate_match.group(1)) if rotate_match else 0
         
-        if match:
-            rotation_needed_clockwise = int(match.group(1))
-        else:
-            logger.warning("无法从 OSD 输出中解析出 'Rotate' 值，默认不旋转")
-            rotation_needed_clockwise = 0
+        conf_match = re.search(r'Orientation confidence:\s*([\d\.]+)', osd_result_text)
+        orientation_conf = float(conf_match.group(1)) if conf_match else 0.0
+        
+        script_match = re.search(r'Script:\s*([a-zA-Z]+)', osd_result_text)
+        script_name = script_match.group(1) if script_match else "Unknown"
+        
+        script_conf_match = re.search(r'Script confidence:\s*([\d\.]+)', osd_result_text)
+        script_conf = float(script_conf_match.group(1)) if script_conf_match else 0.0
 
-        logger.debug(f"检测结果：需要顺时针旋转 {rotation_needed_clockwise} 度")
+        print(f"检测结果 -> 角度: {rotate_angle}°, 语言: {script_name}, 方向置信度: {orientation_conf}, 语言置信度: {script_conf}")
+
+        logger.debug(f"检测结果：需要顺时针旋转 {rotate_angle} 度")
 
         # 执行旋转
-        if rotation_needed_clockwise > 0:
+        if rotate_angle > 0 and orientation_conf > 0.5:
             # Pillow 的 rotate 方法默认是逆时针旋转
             # Tesseract 告诉我们需要顺时针旋转，所以传入负值
-            corrected_img = img.rotate(-rotation_needed_clockwise, expand=True)
-            logger.info(f"图片已顺时针旋转 {rotation_needed_clockwise} 度")
-            return corrected_img, rotation_needed_clockwise
+            corrected_img = img.rotate(-rotate_angle, expand=True)
+            logger.info(f"图片已顺时针旋转 {rotate_angle} 度")
+            return corrected_img, rotate_angle
         else:
-            logger.debug("图片方向正确，无需旋转")
+            logger.debug("图片方向正确或方向置信度过低，默认不旋转")
             return img, 0
 
     except pytesseract.TesseractError as e:

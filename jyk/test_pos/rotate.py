@@ -28,9 +28,11 @@ def rotate_image(image, angle):
 # --- 使用示例 ---
 # 读取图片
 img = cv2.imread('/Users/1k/code/YiBao/jyk/test_pos/11_668E87B90CE4ECB5415DE28C22458CA3C1DD.pdf.png')
-
+print(img.shape)
 # 逆时针旋转 2 度
-result = rotate_image(img, 2)
+result = rotate_image(img, 90)
 
 # 保存或显示
-cv2.imwrite('/Users/1k/code/YiBao/jyk/test_pos/corrected.jpg', result)
+cv2.imwrite('/Users/1k/code/YiBao/jyk/test_pos/corrected_90.jpg', result)
+img = cv2.imread('/Users/1k/code/YiBao/jyk/test_pos/corrected_90.jpg')
+print(img.shape)

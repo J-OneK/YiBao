@@ -119,8 +119,8 @@ def visualize_coordinates(image_path, json_path, output_path):
     print(f"保存至: {output_path}")
 
 # 调用部分保持不变
-image_file = '/Users/1k/code/YiBao/jyk/test_pos/corrected.jpg'
+image_file = '/Users/1k/code/YiBao/jyk/test_pos/11_668E87B90CE4ECB5415DE28C22458CA3C1DD.pdf.png'
 json_file = '/Users/1k/code/YiBao/public/归档/1ZG331E30458071596_output.json'
-result_file = '/Users/1k/code/YiBao/jyk/test_pos/corrected_2.jpg'
+result_file = '/Users/1k/code/YiBao/jyk/test_pos/not_corrected_3.jpg'
 
 visualize_coordinates(image_file, json_file, result_file)
