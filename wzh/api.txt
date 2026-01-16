@@ -1,0 +1,7 @@
+export API_KEY="sk-60998103d47542f394adab584e19ca08"
+python /home/wzh/project/YiBao/public/归档/customs_ocr/run_multiple_times.py
+python /home/wzh/project/YiBao/public/归档/customs_ocr/main.py
+
+ssh -vvv -N -R 7890:localhost:7890 -p 10215 wzh@10.130.151.10
+export http_proxy=http://127.0.0.1:7890;  
+export https_proxy=http://127.0.0.1:7890; 
