@@ -67,6 +67,19 @@ async def recognize_image_async(image_info: ImageInfo, prompt: str, is_mainfacto
         base_url=settings.API_BASE_URL
     )
     
+    # 图片预处理：检测方向并旋转
+    from .image_preprocessor import preprocess_image
+    preprocessed_url, rotation_angle = preprocess_image(image_info.image_url)
+    
+    # 使用预处理后的 base64 URL，失败则回退到原始 URL
+    if preprocessed_url:
+        actual_image_url = preprocessed_url
+        image_info.angle = rotation_angle
+        logger.info(f"图片 {image_info.image_id} 预处理完成，旋转 {rotation_angle} 度")
+    else:
+        actual_image_url = image_info.image_url
+        logger.debug(f"图片 {image_info.image_id} 使用原始 URL")
+    
     # 最多重试3次
     for attempt in range(settings.MAX_RETRIES):
         try:
@@ -81,7 +94,7 @@ async def recognize_image_async(image_info: ImageInfo, prompt: str, is_mainfacto
                         "content": [
                             {
                                 "type": "image_url",
-                                "image_url": {"url": image_info.image_url}
+                                "image_url": {"url": actual_image_url}
                             },
                             {
                                 "type": "text",
