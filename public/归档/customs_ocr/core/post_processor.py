@@ -76,6 +76,10 @@ def process_field(field: Dict, image_map: Dict[str, ImageInfo]) -> Dict:
     for source in source_list:
         image_id = source['imageId']
         pixel = source['pixel']
+        if pixel is None:
+            logger.warning(f"字段 {key_desc} 的 pixel 为空，填写0，0，0，0作为默认坐标")
+            pixel = [0, 0, 0, 0]
+            source['pixel'] = [0, 0, 0, 0]  # 同时修改 source 中的 pixel
         att_type_code = source['att_type_code']
         # 获取图片信息
         image_info = image_map.get(image_id)
