@@ -85,10 +85,8 @@ def process_field(field: Dict, image_map: Dict[str, ImageInfo]) -> Dict:
         image_info = image_map.get(image_id)
         
         # 提取图片基础信息
-        img_w = image_info.original_width if image_info else 0
-        img_h = image_info.original_height if image_info else 0
-        # 获取角度，假设 ImageInfo 对象中有 angle 属性，没有则默认为 0
-        angle = getattr(image_info, 'angle', 0) if image_info else 0
+        img_w = image_info.width if image_info else 0
+        img_h = image_info.height if image_info else 0
 
         # 定义一个内部闭包或变量来存储计算出的最终坐标
         final_sx, final_sy, final_ex, final_ey = 0, 0, 0, 0
@@ -102,15 +100,10 @@ def process_field(field: Dict, image_map: Dict[str, ImageInfo]) -> Dict:
             final_sx, final_sy, final_ex, final_ey = int(pixel[0]), int(pixel[1]), int(pixel[2]), int(pixel[3])
         else:
             # 1. 先进行归一化转实际坐标
-            raw_sx = normalize_to_real(pixel[0], img_w)
-            raw_sy = normalize_to_real(pixel[1], img_h)
-            raw_ex = normalize_to_real(pixel[2], img_w)
-            raw_ey = normalize_to_real(pixel[3], img_h)
-            
-            # 2. 再进行角度旋转修正 (这是新增的改动点)
-            final_sx, final_sy, final_ex, final_ey = transform_coords_by_angle(
-                raw_sx, raw_sy, raw_ex, raw_ey, img_w, img_h, angle
-            )
+            final_sx = normalize_to_real(pixel[0], img_w)
+            final_sy = normalize_to_real(pixel[1], img_h)
+            final_ex = normalize_to_real(pixel[2], img_w)
+            final_ey = normalize_to_real(pixel[3], img_h)
 
         # 构造结果字典
         # 根据 if_unify 区分 transformedValue 的取值
@@ -263,51 +256,6 @@ def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
     )
 
     return matched_param_key
-
-def transform_coords_by_angle(startx: int, starty: int, endx: int, endy: int, 
-                              img_w: int, img_h: int, angle: int) -> tuple:
-    """
-    根据图片旋转角度，修正坐标到正向视觉位置
-    
-    Args:
-        startx, starty, endx, endy: 原始坐标（基于原图尺寸）
-        img_w, img_h: 原图宽、高
-        angle: OCR返回的角度（通常是逆时针角度）
-        
-    Returns:
-        (nx1, ny1, nx2, ny2): 旋转修正后的坐标
-    """
-    if not angle or angle % 360 == 0:
-        return startx, starty, endx, endy
-
-    # 将逆时针角度转换为顺时针旋转需要的角度
-    rotate_angle = (360 - angle) % 360
-    
-    x1, y1 = startx, starty
-    x2, y2 = endx, endy
-    nx1, ny1, nx2, ny2 = x1, y1, x2, y2
-
-    if rotate_angle == 90:
-        # 顺时针旋转90度: (x, y) -> (H - y, x)
-        # 注意：旋转后的X轴受原图H影响
-        nx1, ny1 = img_h - y1, x1
-        nx2, ny2 = img_h - y2, x2
-    elif rotate_angle == 180:
-        # 顺时针旋转180度: (x, y) -> (W - x, H - y)
-        nx1, ny1 = img_w - x1, img_h - y1
-        nx2, ny2 = img_w - x2, img_h - y2
-    elif rotate_angle == 270:
-        # 顺时针旋转270度: (x, y) -> (y, W - x)
-        nx1, ny1 = y1, img_w - x1
-        nx2, ny2 = y2, img_w - x2
-
-    # 旋转后 start/end 可能会互换大小关系，需要重新确立 min/max
-    return (
-        int(min(nx1, nx2)),
-        int(min(ny1, ny2)),
-        int(max(nx1, nx2)),
-        int(max(ny1, ny2))
-    )
 
 def normalize_to_real(normalized_coord: float, actual_size: int) -> int:
     """
