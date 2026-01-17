@@ -8,7 +8,7 @@ MAIN_PY = "/home/wzh/project/YiBao/public/归档/customs_ocr/main.py"
 INPUT_DIR = Path("/home/wzh/project/YiBao/public/JSON/OCR识别报文")
 OUTPUT_DIR = Path("/home/wzh/project/YiBao/public/JSON/VLM识别报文")
 
-RANDOM_COUNT = 2   # 随机抽取数量
+RANDOM_COUNT = 100   # 随机抽取数量
 PYTHON_BIN = "python"  # 或者写绝对路径 /home/wzh/miniconda3/envs/YIBAO/bin/python
 # ===================
 

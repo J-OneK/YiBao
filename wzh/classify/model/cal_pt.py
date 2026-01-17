@@ -3,10 +3,14 @@ import torch
 import torch.nn.functional as F
 from transformers import AutoTokenizer, AutoModel
 from typing import Dict, List
+import os
 
 # ===================== 模型加载 =====================
-tokenizer = AutoTokenizer.from_pretrained("intfloat/multilingual-e5-large")
-model = AutoModel.from_pretrained("intfloat/multilingual-e5-large")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "../../../public/归档/customs_ocr/model-e5")
+
+tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH, local_files_only=True)
+model = AutoModel.from_pretrained(MODEL_PATH, local_files_only=True)
 model.eval()
 
 
