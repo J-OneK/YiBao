@@ -196,19 +196,19 @@ def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
                 continue
             
             if parsed_value == param_key:
-                print(f'[{key_desc:8s}] 精确匹配 | {parsed_value:20s} -> {param_key}')
+                print(f'{key_desc} 字段：精确匹配 {parsed_value} -> {param_key}')
                 return param_key
 
             # paramValue
             if parsed_value == item.get("paramValue", "").strip():
-                print(f'[{key_desc:8s}] 精确匹配 | {parsed_value:20s} -> {param_key}')
+                print(f'{key_desc} 字段：精确匹配 {parsed_value} -> {param_key}')
                 return param_key
 
             # spt1 / spt2 / spt3
             for spt_field in ("spt1", "spt2", "spt3"):
                 spt_value = item.get(spt_field, "").strip()
                 if parsed_value == spt_value:
-                    print(f'[{key_desc:8s}] 精确匹配 | {parsed_value:20s} -> {param_key}')
+                    print(f'{key_desc} 字段：精确匹配 {parsed_value} -> {param_key}')
                     return param_key
 
     # ===================== 2. embedding 相似度（PT） =====================
@@ -253,10 +253,12 @@ def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
     matched_score = similarity[idx].item()
 
     if matched_score < 0.85:
-        print(f'[{key_desc:8s}] 相似度低 | {parsed_value:20s} (分数={matched_score:.4f}) 保持原值')
+        print(f'{key_desc} 字段：embedding 匹配分数过低 {parsed_value} -> {matched_param_value} (sim={matched_score:.4f})，保持原值')
         return parsed_value
     
-    print(f'[{key_desc:8s}] 相似匹配 | {parsed_value:20s} -> {matched_param_key:10s} (分数={matched_score:.4f})')
+    print(
+        f'{key_desc} 字段：embedding 匹配'f' {parsed_value} -> {matched_param_value} -> {matched_param_key} (sim={matched_score:.4f})' 
+    )
 
     return matched_param_key
 
