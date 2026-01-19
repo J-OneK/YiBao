@@ -5,3 +5,12 @@ python /home/wzh/project/YiBao/public/归档/customs_ocr/main.py
 ssh -vvv -N -R 7890:localhost:7890 -p 10215 wzh@10.130.151.10
 export http_proxy=http://127.0.0.1:7890;  
 export https_proxy=http://127.0.0.1:7890; 
+
+**通用原则**
+
+1.回答保持简洁和可维护性，避免过度工程化和不必要的防御性设计
+2.回答内容和代码注释使用中文
+
+**开发工作流**
+1.渐进式开发：通过多轮对话明确需求，理清所有疑点后再开始设计代码
+2.结构化流程：严格遵守‘构思方案->提交审核->分解为具体任务’的工作顺序

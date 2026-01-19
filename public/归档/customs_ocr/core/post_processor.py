@@ -76,6 +76,10 @@ def process_field(field: Dict, image_map: Dict[str, ImageInfo]) -> Dict:
     for source in source_list:
         image_id = source['imageId']
         pixel = source['pixel']
+        if pixel is None:
+            logger.warning(f"字段 {key_desc} 的 pixel 为空，填写0，0，0，0作为默认坐标")
+            pixel = [0, 0, 0, 0]
+            source['pixel'] = [0, 0, 0, 0]  # 同时修改 source 中的 pixel
         att_type_code = source['att_type_code']
         # 获取图片信息
         image_info = image_map.get(image_id)
@@ -168,6 +172,10 @@ def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
     1. 先在 key_desc.json 中做精确匹配（paramValue / spt）
     2. 若无命中，再使用 key_desc.pt 做 embedding 相似度匹配
     """
+    # 如果值为空，直接返回，不进行映射
+    if not parsed_value or parsed_value.strip() == "":
+        return parsed_value
+    
     convert_class = KEY_DESC_ALIAS_MAP.get(key_desc, None)
     if convert_class is None:
         return parsed_value
@@ -198,8 +206,9 @@ def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
 
             # spt1 / spt2 / spt3
             for spt_field in ("spt1", "spt2", "spt3"):
-                if parsed_value == item.get(spt_field, "").strip():
-                    print(f'{key_desc} 字段：精确匹配 {spt_field} -> {param_key}')
+                spt_value = item.get(spt_field, "").strip()
+                if parsed_value == spt_value:
+                    print(f'{key_desc} 字段：精确匹配 {parsed_value} -> {param_key}')
                     return param_key
 
     # ===================== 2. embedding 相似度（PT） =====================
@@ -384,6 +393,46 @@ def transform_item(item):
     
     return new_item
 
+def normalize_operate_images(operate_images, angle_threshold=3):
+    """
+    归一化 operateImage 列表中的角度和尺寸信息
+    
+    Args:
+        operate_images: 图片信息列表
+        angle_threshold: 角度归一化的阈值（度），默认为3度
+    
+    处理逻辑：
+    1. 角度归一化：将角度归一化到最近的90度倍数（0, 90, 180, 270）
+    2. 尺寸赋值：将 imageWidth 和 imageHeight 设置为对应的 original 值
+    """
+    for img in operate_images:
+        # 角度归一化
+        if "angle" in img:
+            angle = float(img["angle"])
+            
+            # 归一化到最近的90度倍数
+            if (angle >= 360 - angle_threshold) or (angle <= angle_threshold):
+                # 357-360度 或 0-3度 → 0度
+                img["angle"] = 0
+            elif abs(angle - 90) <= angle_threshold:
+                # 87-93度 → 90度
+                img["angle"] = 90
+            elif abs(angle - 180) <= angle_threshold:
+                # 177-183度 → 180度
+                img["angle"] = 180
+            elif abs(angle - 270) <= angle_threshold:
+                # 267-273度 → 270度
+                img["angle"] = 270
+        
+        # 将 imageHeight 和 imageWidth 设置为原始值
+        if "originalImageWidth" in img:
+            img["imageWidth"] = img["originalImageWidth"]
+        if "originalImageHeight" in img:
+            img["imageHeight"] = img["originalImageHeight"]
+    
+    return operate_images
+
+
 def transform_operate_image(operate_list):
     """
     转换 operateImage 列表。
@@ -447,7 +496,10 @@ def transform_final_output(data, operate_images, head_list):
             target_json["content"]["preDecList"].append(new_row)
     
     # 3. 转换 operateImage
-    transformed_item = transform_operate_image(operate_images)
+    # 3.1 先归一化角度和尺寸
+    normalized_images = normalize_operate_images(operate_images, angle_threshold=3)
+    # 3.2 再转换格式
+    transformed_item = transform_operate_image(normalized_images)
     for item in transformed_item:
         target_json["content"]["operateImage"].append(item)
 
