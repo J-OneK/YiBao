@@ -167,10 +167,15 @@ KEY_DESC_ALIAS_MAP = {
 
     }
 
+# 缓存字典，用于存储已计算过的字段相似度匹配结果
+# key: (key_desc, parsed_value)，value: 匹配结果
+_similarity_cache: Dict[tuple, str] = {}
+
 def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
     """
     1. 先在 key_desc.json 中做精确匹配（paramValue / spt）
     2. 若无命中，再使用 key_desc.pt 做 embedding 相似度匹配
+    3. 使用缓存机制，避免重复计算相同字段的相似度
     """
     # 如果值为空，直接返回，不进行映射
     if not parsed_value or parsed_value.strip() == "":
@@ -179,6 +184,13 @@ def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
     convert_class = KEY_DESC_ALIAS_MAP.get(key_desc, None)
     if convert_class is None:
         return parsed_value
+    
+    # 检查缓存，如果已计算过则直接返回
+    cache_key = (key_desc, parsed_value)
+    if cache_key in _similarity_cache:
+        cached_result = _similarity_cache[cache_key]
+        print(f'{key_desc} 字段：从缓存获取匹配结果 {parsed_value} -> {cached_result}')
+        return cached_result
     
     
     # ===================== 1. 精确匹配（JSON） =====================
@@ -197,11 +209,13 @@ def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
             
             if parsed_value == param_key:
                 print(f'{key_desc} 字段：精确匹配 {parsed_value} -> {param_key}')
+                _similarity_cache[cache_key] = param_key
                 return param_key
 
             # paramValue
             if parsed_value == item.get("paramValue", "").strip():
                 print(f'{key_desc} 字段：精确匹配 {parsed_value} -> {param_key}')
+                _similarity_cache[cache_key] = param_key
                 return param_key
 
             # spt1 / spt2 / spt3
@@ -209,6 +223,7 @@ def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
                 spt_value = item.get(spt_field, "").strip()
                 if parsed_value == spt_value:
                     print(f'{key_desc} 字段：精确匹配 {parsed_value} -> {param_key}')
+                    _similarity_cache[cache_key] = param_key
                     return param_key
 
     # ===================== 2. embedding 相似度（PT） =====================
@@ -254,13 +269,25 @@ def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
 
     if matched_score < 0.85:
         print(f'{key_desc} 字段：embedding 匹配分数过低 {parsed_value} -> {matched_param_value} (sim={matched_score:.4f})，保持原值')
+        _similarity_cache[cache_key] = parsed_value
         return parsed_value
     
     print(
         f'{key_desc} 字段：embedding 匹配'f' {parsed_value} -> {matched_param_value} -> {matched_param_key} (sim={matched_score:.4f})' 
     )
-
+    
+    _similarity_cache[cache_key] = matched_param_key
     return matched_param_key
+
+def clear_similarity_cache():
+    """
+    清空相似度匹配缓存
+    通常在处理完一个批次后调用，或在需要重新计算所有字段时调用
+    """
+    global _similarity_cache
+    _similarity_cache.clear()
+    print(f"相似度匹配缓存已清空")
+
 
 def normalize_to_real(normalized_coord: float, actual_size: int) -> int:
     """
