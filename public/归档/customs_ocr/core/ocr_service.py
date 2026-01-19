@@ -11,6 +11,7 @@ from config import settings
 from config.field_mapping import fuzzy_match_key_desc, is_valid_source
 from .models import ImageInfo, ExtractionResult, ExtractedField
 from . import json_utils
+from .image_preprocessor import preprocess_image
 
 # 配置日志
 logging.basicConfig(level=getattr(logging, settings.LOG_LEVEL))
@@ -68,7 +69,6 @@ async def recognize_image_async(image_info: ImageInfo, prompt: str, is_mainfacto
     )
     
     # 图片预处理：检测方向并旋转
-    from .image_preprocessor import preprocess_image
     preprocessed_url, rotation_angle = preprocess_image(image_info.image_url)
     
     # 使用预处理后的 base64 URL，失败则回退到原始 URL
