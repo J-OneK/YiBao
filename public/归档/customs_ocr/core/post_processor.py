@@ -20,6 +20,43 @@ from config.field_mapping import ATT_TYPE_NAMES_EN
 
 logger = logging.getLogger(__name__)
 
+_BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+_MODEL_PATH = os.path.join(_BASE_DIR, "../model-e5")
+
+_TOKENIZER = None
+_MODEL = None
+_EMBEDDINGS_CACHE: Dict[str, Dict[str, object]] = {}
+
+
+def _get_text_model():
+    global _TOKENIZER, _MODEL
+    if _TOKENIZER is None or _MODEL is None:
+        _TOKENIZER = AutoTokenizer.from_pretrained(_MODEL_PATH, local_files_only=True)
+        _MODEL = AutoModel.from_pretrained(_MODEL_PATH, local_files_only=True)
+        _MODEL.eval()
+    return _TOKENIZER, _MODEL
+
+
+def _get_embeddings(convert_class: str):
+    cached = _EMBEDDINGS_CACHE.get(convert_class)
+    if cached is not None:
+        return cached
+
+    pt_path = os.path.join(_BASE_DIR, "../presaved_embeddings", f"{convert_class}.pt")
+    if not os.path.exists(pt_path):
+        return None
+
+    store: Dict[str, Dict] = torch.load(pt_path)
+    param_values = list(store.keys())
+    embeddings = torch.stack([store[v]["embedding"] for v in param_values])
+    cached = {
+        "store": store,
+        "param_values": param_values,
+        "embeddings": embeddings,
+    }
+    _EMBEDDINGS_CACHE[convert_class] = cached
+    return cached
+
 
 def process_final_output(aggregated_data: Dict, image_infos: List[ImageInfo]) -> Dict:
     """
@@ -194,9 +231,7 @@ def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
     
     
     # ===================== 1. 精确匹配（JSON） =====================
-    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-    json_path = f"./presaved_embeddings/{convert_class}.json"
-    json_path = os.path.join(BASE_DIR, "../presaved_embeddings", f"{convert_class}.json")
+    json_path = os.path.join(_BASE_DIR, "../presaved_embeddings", f"{convert_class}.json")
     if os.path.exists(json_path):
         with open(json_path, "r", encoding="utf-8") as f:
             data = json.load(f)
@@ -227,11 +262,12 @@ def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
                     return param_key
 
     # ===================== 2. embedding 相似度（PT） =====================
-    MODEL_PATH = os.path.join(BASE_DIR, "../model-e5")
+    embed_cache = _get_embeddings(convert_class)
+    if embed_cache is None:
+        _similarity_cache[cache_key] = parsed_value
+        return parsed_value
 
-    tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH, local_files_only=True)
-    model = AutoModel.from_pretrained(MODEL_PATH, local_files_only=True)
-    model.eval()
+    tokenizer, model = _get_text_model()
 
     def encode_text(text: str):
         batch = tokenizer(
@@ -254,11 +290,9 @@ def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
 
     input_emb = encode_text(parsed_value)
 
-    pt_path = MODEL_PATH = os.path.join(BASE_DIR, "../presaved_embeddings", f"{convert_class}.pt")
-    store: Dict[str, Dict] = torch.load(pt_path)
-
-    param_values = list(store.keys())
-    embeddings = torch.stack([store[v]["embedding"] for v in param_values])
+    param_values = embed_cache["param_values"]
+    embeddings = embed_cache["embeddings"]
+    store = embed_cache["store"]
 
     similarity = F.cosine_similarity(input_emb, embeddings)
     idx = similarity.argmax().item()

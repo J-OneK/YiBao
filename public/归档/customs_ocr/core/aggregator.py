@@ -210,7 +210,7 @@ async def unify_source_list_async(keyDesc,if_unify,source_list: List[Dict]):
     should_unify, _ = await call_llm_to_judge_consistency_async(unique_values)
     if_unify["value"] = should_unify
 
-    if if_unify:
+    if if_unify["value"]:
         logger.info(f"大模型判断\'{keyDesc}\'里的值是同一含义。")
         
     else:
