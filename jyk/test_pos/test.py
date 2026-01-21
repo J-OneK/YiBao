@@ -19,7 +19,7 @@ def visualize_coordinates(image_path, json_path, output_path):
 
     # 3. 获取 JSON 中定义的尺寸和角度
     target_info = None
-    target_image_id = 12
+    target_image_id = 4
     
     # ... (此处省略你原有的 operateImage 查找代码，保持不变) ...
     # 假设你已经找到了 target_info
@@ -49,7 +49,6 @@ def visualize_coordinates(image_path, json_path, output_path):
         json_h = int(target_info.get('imageHeight', 0))
         angle = int(target_info.get('angle', 0))
         print(f"JSON 定义坐标系: 宽={json_w}, 高={json_h}, 角度={angle}")
-
         # 4. 旋转逻辑 (保持你原有的逻辑不变)
         if (json_w == current_h and json_h == current_w):
             print(">>> 旋转修正...")
@@ -119,8 +118,8 @@ def visualize_coordinates(image_path, json_path, output_path):
     print(f"保存至: {output_path}")
 
 # 调用部分保持不变
-image_file = '/Users/1k/code/YiBao/jyk/test_pos/11_668E87B90CE4ECB5415DE28C22458CA3C1DD.pdf.png'
-json_file = '/Users/1k/code/YiBao/public/归档/1ZG331E30458071596_output.json'
-result_file = '/Users/1k/code/YiBao/jyk/test_pos/not_corrected_3.jpg'
+image_file = '/Users/1k/code/YiBao/jyk/test_pos/3_09D25561E0C1A47B56064DFDF2C1257E2247.pdf.png'
+json_file = '/Users/1k/code/YiBao/jyk/test_pos/1ZG331E30459136989_output(1).json'
+result_file = '/Users/1k/code/YiBao/jyk/test_pos/修改角度后_3.jpg'
 
 visualize_coordinates(image_file, json_file, result_file)

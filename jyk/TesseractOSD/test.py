@@ -80,7 +80,7 @@ def detect_and_rotate(img):
 if __name__ == "__main__":
     # 示例 URL：这是一张被故意倒置（旋转了180度）的图片
     # 你可以替换成你自己的图片 URL 进行测试
-    IMAGE_URL = "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/455d60c9-421c-4280-94a1-57146900f0de/1ZG331E30458071596/file/11_668E87B90CE4ECB5415DE28C22458CA3C1DD.pdf.png" 
+    IMAGE_URL = "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02504/fa5e446306bd434484aa94ee0b2f3fa7/%E7%AE%B1%E9%97%A81.jpg?x-oss-process=image/auto-orient,0" 
 
     # 1. 加载图片
     original_image = load_image_from_url(IMAGE_URL)
@@ -93,7 +93,7 @@ if __name__ == "__main__":
         corrected_image = detect_and_rotate(original_image)
 
         # 3. 保存结果
-        output_filename = "/Users/1k/code/YiBao/jyk/TesseractOSD/wrong_image.png"
+        output_filename = "/Users/1k/code/YiBao/jyk/TesseractOSD/箱门1.jpg"
         corrected_image.save(output_filename)
         print(f"\n校正后的图片已保存为: {output_filename}")
 
