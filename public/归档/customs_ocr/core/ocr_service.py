@@ -17,6 +17,18 @@ from .image_preprocessor import preprocess_image
 logging.basicConfig(level=getattr(logging, settings.LOG_LEVEL))
 logger = logging.getLogger(__name__)
 
+_CLIENT = None
+
+
+def _get_client():
+    global _CLIENT
+    if _CLIENT is None:
+        _CLIENT = AsyncOpenAI(
+            api_key=settings.API_KEY,
+            base_url=settings.API_BASE_URL
+        )
+    return _CLIENT
+
 
 async def recognize_images_batch(image_infos: List[ImageInfo], prompts: List[str], is_mainfactor: bool) -> List[Optional[ExtractionResult]]:
     """
@@ -63,10 +75,7 @@ async def recognize_image_async(image_info: ImageInfo, prompt: str, is_mainfacto
     Returns:
         提取结果，失败返回None
     """
-    client = AsyncOpenAI(
-        api_key=settings.API_KEY,
-        base_url=settings.API_BASE_URL
-    )
+    client = _get_client()
     
     # 图片预处理：检测方向并旋转
     preprocessed_url, rotation_angle = preprocess_image(image_info.image_url)
