@@ -454,42 +454,45 @@ def transform_item(item):
     
     return new_item
 
-def normalize_operate_images(operate_images, angle_threshold=3):
+def normalize_operate_images(operate_images, image_infos=None, angle_threshold=3):
     """
     归一化 operateImage 列表中的角度和尺寸信息
     
     Args:
         operate_images: 图片信息列表
-        angle_threshold: 角度归一化的阈值（度），默认为3度
+        image_infos: ImageInfo 对象列表，包含预处理后的图片尺寸和OSS URL
+        angle_threshold: 角度归一化的阈值（度），已弃用，保留参数兼容性
     
     处理逻辑：
-    1. 角度归一化：将角度归一化到最近的90度倍数（0, 90, 180, 270）
-    2. 尺寸赋值：将 imageWidth 和 imageHeight 设置为对应的 original 值
+    1. 角度归一化：将所有角度统一设为0（图片已在预处理阶段完成旋转矫正）
+    2. 尺寸替换：用 image_infos 中的 width 和 height 替换 imageWidth 和 imageHeight
+    3. URL替换：用 image_infos 中的 image_url 替换 imageUrl（如果已上传到OSS）
     """
+    # 创建 imageId -> ImageInfo 的映射
+    image_info_map = {}
+    if image_infos:
+        for info in image_infos:
+            image_info_map[str(info.image_id)] = info
+    
     for img in operate_images:
-        # 角度归一化
+        # 角度归一化：统一设为0（图片已在预处理时旋转矫正）
         if "angle" in img:
-            angle = float(img["angle"])
-            
-            # 归一化到最近的90度倍数
-            if (angle >= 360 - angle_threshold) or (angle <= angle_threshold):
-                # 357-360度 或 0-3度 → 0度
-                img["angle"] = 0
-            elif abs(angle - 90) <= angle_threshold:
-                # 87-93度 → 90度
-                img["angle"] = 90
-            elif abs(angle - 180) <= angle_threshold:
-                # 177-183度 → 180度
-                img["angle"] = 180
-            elif abs(angle - 270) <= angle_threshold:
-                # 267-273度 → 270度
-                img["angle"] = 270
+            img["angle"] = 0
         
-        # 将 imageHeight 和 imageWidth 设置为原始值
-        if "originalImageWidth" in img:
-            img["imageWidth"] = img["originalImageWidth"]
-        if "originalImageHeight" in img:
-            img["imageHeight"] = img["originalImageHeight"]
+        # 用预处理后的尺寸和URL替换
+        image_id = str(img.get("imageId", ""))
+        if image_id in image_info_map:
+            info = image_info_map[image_id]
+            
+            # 更新宽度和高度
+            if info.width is not None and info.width > 0:
+                img["imageWidth"] = str(info.width)
+            if info.height is not None and info.height > 0:
+                img["imageHeight"] = str(info.height)
+            
+            # 更新URL为OSS URL（如果存在且不是base64）
+            if info.image_url and not info.image_url.startswith('data:'):
+                img["imageUrl"] = info.image_url
     
     return operate_images
 
@@ -518,9 +521,15 @@ def transform_operate_image(operate_list):
     return transformed
 
 
-def transform_final_output(data, operate_images, head_list):
+def transform_final_output(data, operate_images, head_list, image_infos=None):
     """
     转换最终输出文件格式为OCR.json
+    
+    Args:
+        data: 处理后的识别数据
+        operate_images: 原始 operateImage 列表
+        head_list: 头部信息
+        image_infos: ImageInfo 对象列表，包含预处理后的图片尺寸
     """
     current_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
     head_list["timestampStr"] = current_time
@@ -557,8 +566,8 @@ def transform_final_output(data, operate_images, head_list):
             target_json["content"]["preDecList"].append(new_row)
     
     # 3. 转换 operateImage
-    # 3.1 先归一化角度和尺寸
-    normalized_images = normalize_operate_images(operate_images, angle_threshold=3)
+    # 3.1 先归一化角度和尺寸（使用预处理后的图片尺寸）
+    normalized_images = normalize_operate_images(operate_images, image_infos=image_infos, angle_threshold=3)
     # 3.2 再转换格式
     transformed_item = transform_operate_image(normalized_images)
     for item in transformed_item:

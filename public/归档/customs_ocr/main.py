@@ -10,7 +10,7 @@ from pathlib import Path
 
 from core.data_loader import load_input_data
 from core.prompt_manager import generate_prompt, generate_mainfactor_prompt
-from core.ocr_service import recognize_images_batch
+from core.ocr_service import recognize_images_batch, recognize_images_batch_no_preprocess
 from core.aggregator import aggregate_results, check_consistency_and_unify_async, aggregate_mainfactors
 from core.post_processor import process_final_output, process_mainfactors, transform_final_output
 from config import settings
@@ -83,7 +83,8 @@ async def main_async(input_json_path: str, output_json_path: str):
         logger.info(f"成功提取 {len(mainfactors)} 个申报要素，分别是：{mainfactors}")
 
         prompts = [generate_mainfactor_prompt(hsCodes, mainfactors) for i in range(len(image_infos_mainfactor))]
-        results = await recognize_images_batch(image_infos_mainfactor, prompts, is_mainfactor=True)
+        # 第二次调用使用不含预处理的函数，复用第一次已处理的图片
+        results = await recognize_images_batch_no_preprocess(image_infos_mainfactor, prompts, is_mainfactor=True)
 
         # 过滤掉识别失败的结果
         mainfactor_results = [r for r in results if r is not None]
@@ -110,7 +111,9 @@ async def main_async(input_json_path: str, output_json_path: str):
 
         # 7. 转换成OCR.json格式
         logger.info(f"步骤 7/{total_steps}: 转换成OCR.json格式...")
-        final_output = transform_final_output(final_output, operate_images, head_list)
+        # 合并所有 image_infos 以获取预处理后的图片尺寸
+        all_image_infos = image_infos + image_infos_mainfactor + image_infos_classify_only
+        final_output = transform_final_output(final_output, operate_images, head_list, image_infos=all_image_infos)
         logger.info("转换完成")
 
         # 8. 保存结果
@@ -146,8 +149,8 @@ def main(input_json_path: str, output_json_path: str):
 
 if __name__ == "__main__":
     # 默认路径
-    input_path = "../1ZG331E30459136989.json"
-    output_path = "../1ZG331E30459136989_output.json"
+    input_path = "../61559331834_6554444061.json"
+    output_path = "../61559331834_6554444061_output.json"
 
     # 如果提供了命令行参数，使用命令行参数
     if len(sys.argv) > 1:
