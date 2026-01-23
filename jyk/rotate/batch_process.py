@@ -55,17 +55,17 @@ def coarse_adjust_with_tesseract(img):
         angle = int(match.group(1)) if match else 0
         conf_match = re.search(r'Orientation confidence:\s*([\d\.]+)', osd)
         orientation_conf = float(conf_match.group(1)) if conf_match else 0.0
-        print(orientation_conf)
+        # print(orientation_conf)
         # Tesseract 的 Rotate 通常指“为了摆正需要旋转的角度”
         # 这里为了计算总角度，我们记录它建议的旋转量
         
-        if angle != 0 and orientation_conf > 1:
+        if angle != 0 and orientation_conf > 0:
             # Pillow rotate 是逆时针，Tesseract 返回的是顺时针需要的角度
             # 所以 rotate(angle) 还是 rotate(-angle)?
             # 通常 osd 返回 90 意味着图片是顺时针歪了90度，需要逆时针转90度修复
             # 但用户脚本里写的是 img.rotate(-angle)，我们保持用户逻辑一致
             img = img.rotate(-angle, expand=True)
-        if orientation_conf <= 1:
+        if orientation_conf <= 0:
             return img, 0
         if angle == 90 or angle == 270:
             angle = 360 - angle    
@@ -127,7 +127,8 @@ def process_item(item):
     """处理单条数据"""
     url = item.get("imageUrl")
     gt_angle = item.get("angle", 0) # Ground Truth
-    
+    source_file = item.get("sourceFile")
+
     result_item = copy.deepcopy(item)
     result_item["status"] = "failed"
     result_item["detected_angle"] = 0
@@ -174,7 +175,15 @@ def process_item(item):
     
     error = get_angle_diff(norm_gt, norm_dt)
     result_item["angle_error"] = round(error, 2)
-    
+
+    # 如果误差过大就保存对应图片，文件名为json前缀_angle.png
+    if error > 70:
+        # 提取文件前缀 (去掉 .json)
+        file_prefix = source_file.replace('.json', '')
+        ext = '.png'
+        filename = f"{file_prefix}_{int(gt_angle)}{ext}"
+        img.save("/Users/1k/code/YiBao/jyk/rotate/err_image/"+filename)
+
     # 判定是否准确：误差小于 3 度，或者 (针对 90/180/270 的情况) 允许 Tesseract 误判但精调正确的特殊逻辑？
     # 这里使用严格误差 < 3 度作为判定标准
     if error < 3:

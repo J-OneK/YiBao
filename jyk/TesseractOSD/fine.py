@@ -139,4 +139,4 @@ def full_pipeline(img_path):
     cv2.imwrite("fine_result.jpg", final_img)
 
 # 测试
-full_pipeline("http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02504/fa5e446306bd434484aa94ee0b2f3fa7/%E7%AE%B1%E9%97%A81.jpg?x-oss-process=image/auto-orient,0")
+full_pipeline("/Users/1k/code/YiBao/jyk/test_pos/11_668E87B90CE4ECB5415DE28C22458CA3C1DD.pdf.png")

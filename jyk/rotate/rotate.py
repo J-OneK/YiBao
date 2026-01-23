@@ -157,7 +157,7 @@ def pipeline(url):
     # 4. 保存
     final_img.save("/Users/1k/code/YiBao/jyk/rotate/final_corrected_output.jpg")
     print("\n✅ 处理完成，保存为 final_corrected_result.jpg")
-    print(f"已旋转角度: {angle1}度")
+    print(f"已旋转角度: {angle1+angle2}度")
     img = cv2.imread("/Users/1k/code/YiBao/jyk/rotate/final_corrected_output.jpg")
     print(img.shape)
 
