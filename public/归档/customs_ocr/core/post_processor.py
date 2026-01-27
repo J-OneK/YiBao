@@ -479,7 +479,7 @@ def normalize_operate_images(operate_images, image_infos=None, angle_threshold=3
         if "angle" in img:
             img["angle"] = 0
         if "imageSuffix" in img:
-            img["imageSuffix"] = "jpg"
+            img["imageSuffix"] = "png"
         # 用预处理后的尺寸和URL替换
         image_id = str(img.get("imageId", ""))
         if image_id in image_info_map:

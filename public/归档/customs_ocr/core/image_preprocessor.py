@@ -282,9 +282,7 @@ def image_to_base64_url(img: Image.Image, format: str = "PNG") -> str:
     """
     buffer = io.BytesIO()
     
-    # 处理 RGBA 图片（PNG 可能包含透明通道）
-    if img.mode == 'RGBA' and format.upper() == 'JPEG':
-        img = img.convert('RGB')
+    # PNG 支持 RGBA，无需转换
     
     img.save(buffer, format=format)
     buffer.seek(0)
@@ -327,17 +325,15 @@ def preprocess_image(image_url: str) -> Tuple[Optional[str], int, int, int]:
         if oss_uploader is not None:
             try:
                 # 保存到临时文件
-                with tempfile.NamedTemporaryFile(delete=False, suffix='.jpg') as temp_file:
+                with tempfile.NamedTemporaryFile(delete=False, suffix='.png') as temp_file:
                     temp_file_path = temp_file.name
-                    # 转换为RGB模式（JPEG不支持RGBA）
-                    if corrected_img.mode == 'RGBA':
-                        corrected_img = corrected_img.convert('RGB')
-                    corrected_img.save(temp_file_path, format='JPEG', quality=95)
+                    # PNG 支持 RGBA，无需转换模式
+                    corrected_img.save(temp_file_path, format='PNG', optimize=True)
                 
                 # 从原始URL提取文件名
                 original_filename = os.path.basename(image_url.split('?')[0])  # 去除URL参数
                 if not original_filename or '.' not in original_filename:
-                    original_filename = 'image.jpg'  # 默认文件名
+                    original_filename = 'image.png'  # 默认文件名
                 
                 # 上传到OSS（使用MD5文件名，但保留原文件名用于下载）
                 oss_url = oss_uploader.upload_file(
@@ -363,7 +359,7 @@ def preprocess_image(image_url: str) -> Tuple[Optional[str], int, int, int]:
                         pass
         
         # 如果OSS上传失败或未配置，降级使用base64
-        base64_url = image_to_base64_url(corrected_img)
+        base64_url = image_to_base64_url(corrected_img, format='PNG')
         logger.debug("使用base64格式返回图片")
         return base64_url, angle, width, height 
         
