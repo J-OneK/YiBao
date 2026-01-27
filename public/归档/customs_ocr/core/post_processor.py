@@ -478,7 +478,8 @@ def normalize_operate_images(operate_images, image_infos=None, angle_threshold=3
         # 角度归一化：统一设为0（图片已在预处理时旋转矫正）
         if "angle" in img:
             img["angle"] = 0
-        
+        if "imageSuffix" in img:
+            img["imageSuffix"] = "jpg"
         # 用预处理后的尺寸和URL替换
         image_id = str(img.get("imageId", ""))
         if image_id in image_info_map:
@@ -487,8 +488,10 @@ def normalize_operate_images(operate_images, image_infos=None, angle_threshold=3
             # 更新宽度和高度
             if info.width is not None and info.width > 0:
                 img["imageWidth"] = str(info.width)
+                img["originalImageWidth"] = str(info.width)
             if info.height is not None and info.height > 0:
                 img["imageHeight"] = str(info.height)
+                img["originalImageHeight"] = str(info.height)
             
             # 更新URL为OSS URL（如果存在且不是base64）
             if info.image_url and not info.image_url.startswith('data:'):

@@ -149,8 +149,8 @@ def main(input_json_path: str, output_json_path: str):
 
 if __name__ == "__main__":
     # 默认路径
-    input_path = "../61559331834_6554444061.json"
-    output_path = "../61559331834_6554444061_output.json"
+    input_path = "../1ZG331E30459136989.json"
+    output_path = "../1ZG331E30459136989_output.json"
 
     # 如果提供了命令行参数，使用命令行参数
     if len(sys.argv) > 1:
