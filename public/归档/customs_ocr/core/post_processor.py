@@ -372,6 +372,12 @@ def process_mainfactors(results: List[Dict]) -> List[Dict]:
                 p = part.strip()
                 if p and p not in ignore_set:
                     current_score += len(p)
+            # 使用 | 分割字符串
+            parts = mf.split('|')
+            # 过滤掉 'null' 字段并替换为空字符串
+            cleaned_parts = ['' if part == 'null' else part for part in parts]
+            # 用 | 连接回字符串
+            mf = '|'.join(cleaned_parts)
             clean_item = {
                 'codeTs': code, 
                 'mainfactors': mf,

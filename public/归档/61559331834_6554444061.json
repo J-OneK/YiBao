@@ -1,3197 +1,1675 @@
 {
-    "head": {
-        "signInfo": "",
-        "receiptType": 0,
-        "bizCode": "DUB00113",
-        "appId": "ALIYUN01",
-        "bizId": "E691e9adc38f34347476c8f10",
-        "resultCode": "0",
-        "msgId": "596024985",
-        "resultMessage": "识别成功",
-        "version": "1.0",
-        "timestampStr": "2025-11-20 12:38:04",
-        "receiveId": "EBAO0001"
-    },
-    "content": {
-        "extend": {
-            "plNetWtList": [
-                {
-                    "processBitMap": "0",
-                    "sourceList": [
-                        {
-                            "attType": "PackingList",
-                            "imageId": 4,
-                            "transformValue": "0.01",
-                            "sepValueList": [
-                                {
-                                    "endy": 1578,
-                                    "endx": 1365,
-                                    "originalValue": "0.01",
-                                    "starty": 1550,
-                                    "startx": 1307
-                                }
-                            ],
-                            "originalValue": "0.01",
-                            "processBitMap": 0,
-                            "creditLevel": 0.99,
-                            "axisY": 1550,
-                            "sepValue": "0.01",
-                            "axisX": 1307,
-                            "width": 58,
-                            "attTypeCode": 3,
-                            "height": 28
-                        }
-                    ],
-                    "parsedValue": "0.01",
-                    "source_image": 4,
-                    "normalizedValue": "0.01",
-                    "keyDesc": "装箱单商品净重",
-                    "value": "0.01",
-                    "key": "plNetWt"
-                }
-            ],
-            "inAmountList": [
-                {
-                    "processBitMap": "0",
-                    "sourceList": [
-                        {
-                            "attType": "Invoice",
-                            "imageId": 3,
-                            "transformValue": "4.61",
-                            "sepValueList": [
-                                {
-                                    "endy": 1640,
-                                    "endx": 1227,
-                                    "originalValue": "4.61",
-                                    "starty": 1611,
-                                    "startx": 1168
-                                }
-                            ],
-                            "originalValue": "4.61",
-                            "processBitMap": 0,
-                            "creditLevel": 0.99,
-                            "axisY": 1611,
-                            "sepValue": "4.61",
-                            "axisX": 1168,
-                            "width": 59,
-                            "attTypeCode": 2,
-                            "height": 29
-                        }
-                    ],
-                    "parsedValue": "4.61",
-                    "source_image": 3,
-                    "normalizedValue": "4.61",
-                    "keyDesc": "发票商品总价",
-                    "value": "4.61",
-                    "key": "inAmount"
-                }
-            ],
-            "contrAmountList": [
-                {
-                    "processBitMap": "0",
-                    "sourceList": [
-                        {
-                            "attType": "Contract",
-                            "imageId": 5,
-                            "transformValue": "4.61",
-                            "sepValueList": [
-                                {
-                                    "endy": 1482,
-                                    "endx": 1258,
-                                    "originalValue": "4.61",
-                                    "starty": 1452,
-                                    "startx": 1192
-                                }
-                            ],
-                            "originalValue": "4.61",
-                            "processBitMap": 0,
-                            "creditLevel": 0.99,
-                            "axisY": 1452,
-                            "sepValue": "4.61",
-                            "axisX": 1192,
-                            "width": 66,
-                            "attTypeCode": 1,
-                            "height": 30
-                        }
-                    ],
-                    "parsedValue": "4.61",
-                    "source_image": 5,
-                    "normalizedValue": "4.61",
-                    "keyDesc": "合同商品总价",
-                    "value": "4.61",
-                    "key": "contrAmount"
-                }
-            ]
+  "head": {
+    "signInfo": "",
+    "receiptType": 0,
+    "bizCode": "DUB00113",
+    "appId": "ALIYUN01",
+    "bizId": "E691e9adc38f34347476c8f10",
+    "resultCode": "0",
+    "msgId": "596024985",
+    "resultMessage": "识别成功",
+    "version": "1.0",
+    "timestampStr": "2026-01-28 10:52:08",
+    "receiveId": "EBAO0001"
+  },
+  "content": {
+    "preDecHead": [
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "ANGELALIGN FRANCE TECHNOLOGY (VAT: FR92921941894 ; EORI: FR92194189400021)",
+            "originalValue": "ANGELALIGN FRANCE TECHNOLOGY (VAT: FR92921941894 ; EORI: FR92194189400021)",
+            "normalizedValue": "ANGELALIGN FRANCE TECHNOLOGY (VAT: FR92921941894 ; EORI: FR92194189400021)",
+            "processBitMap": "0",
+            "axisX": 167,
+            "sepValue": "ANGELALIGN FRANCE TECHNOLOGY (VAT: FR92921941894 ; EORI: FR92194189400021)",
+            "axisY": 452,
+            "width": 363,
+            "attTypeCode": 4,
+            "height": 91
+          },
+          {
+            "attType": "Invoice",
+            "imageId": 3,
+            "transformValue": "ANGELALIGN FRANCE TECHNOLOGY (VAT: FR92921941894 ; EORI: FR92194189400021)",
+            "originalValue": "ANGELALIGN FRANCE TECHNOLOGY (VAT: FR92921941894 ; EORI: FR92194189400021)",
+            "normalizedValue": "ANGELALIGN FRANCE TECHNOLOGY (VAT: FR92921941894 ; EORI: FR92194189400021)",
+            "processBitMap": "0",
+            "axisX": 579,
+            "sepValue": "ANGELALIGN FRANCE TECHNOLOGY (VAT: FR92921941894 ; EORI: FR92194189400021)",
+            "axisY": 838,
+            "width": 787,
+            "attTypeCode": 2,
+            "height": 58
+          },
+          {
+            "attType": "PackingList",
+            "imageId": 4,
+            "transformValue": "ANGELALIGN FRANCE TECHNOLOGY (VAT: FR92921941894 ; EORI: FR92194189400021)",
+            "originalValue": "ANGELALIGN FRANCE TECHNOLOGY (VAT: FR92921941894 ; EORI: FR92194189400021)",
+            "normalizedValue": "ANGELALIGN FRANCE TECHNOLOGY (VAT: FR92921941894 ; EORI: FR92194189400021)",
+            "processBitMap": "0",
+            "axisX": 630,
+            "sepValue": "ANGELALIGN FRANCE TECHNOLOGY (VAT: FR92921941894 ; EORI: FR92194189400021)",
+            "axisY": 844,
+            "width": 785,
+            "attTypeCode": 3,
+            "height": 63
+          },
+          {
+            "attType": "Contract",
+            "imageId": 5,
+            "transformValue": "ANGELALIGN FRANCE TECHNOLOGY (VAT: FR92921941894 ; EORI: FR92194189400021)",
+            "originalValue": "ANGELALIGN FRANCE TECHNOLOGY (VAT: FR92921941894 ; EORI: FR92194189400021)",
+            "normalizedValue": "ANGELALIGN FRANCE TECHNOLOGY (VAT: FR92921941894 ; EORI: FR92194189400021)",
+            "processBitMap": "0",
+            "axisX": 558,
+            "sepValue": "ANGELALIGN FRANCE TECHNOLOGY (VAT: FR92921941894 ; EORI: FR92194189400021)",
+            "axisY": 715,
+            "width": 849,
+            "attTypeCode": 1,
+            "height": 66
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "ANGELALIGN FRANCE TECHNOLOGY (VAT: FR92921941894 ; EORI: FR92194189400021)",
+        "normalizedValue": "ANGELALIGN FRANCE TECHNOLOGY (VAT: FR92921941894 ; EORI: FR92194189400021)",
+        "keyDesc": "境外收发货人",
+        "value": "ANGELALIGN FRANCE TECHNOLOGY (VAT: FR92921941894 ; EORI: FR92194189400021)",
+        "key": "consignorEname"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "无锡时代天使医疗器械科技有限公司",
+            "originalValue": "无锡时代天使医疗器械科技有限公司",
+            "normalizedValue": "无锡时代天使医疗器械科技有限公司",
+            "processBitMap": "0",
+            "axisX": 167,
+            "sepValue": "无锡时代天使医疗器械科技有限公司",
+            "axisY": 589,
+            "width": 340,
+            "attTypeCode": 4,
+            "height": 28
+          },
+          {
+            "attType": "Invoice",
+            "imageId": 3,
+            "transformValue": "无锡时代天使医疗器械科技有限公司",
+            "originalValue": "Wuxi EA Medical Instruments Technologies Limited",
+            "normalizedValue": "Wuxi EA Medical Instruments Technologies Limited",
+            "processBitMap": "0",
+            "axisX": 579,
+            "sepValue": "Wuxi EA Medical Instruments Technologies Limited",
+            "axisY": 365,
+            "width": 683,
+            "attTypeCode": 2,
+            "height": 37
+          },
+          {
+            "attType": "PackingList",
+            "imageId": 4,
+            "transformValue": "无锡时代天使医疗器械科技有限公司",
+            "originalValue": "Wuxi EA Medical Instruments Technologies Limited",
+            "normalizedValue": "Wuxi EA Medical Instruments Technologies Limited",
+            "processBitMap": "0",
+            "axisX": 630,
+            "sepValue": "Wuxi EA Medical Instruments Technologies Limited",
+            "axisY": 549,
+            "width": 680,
+            "attTypeCode": 3,
+            "height": 37
+          },
+          {
+            "attType": "Contract",
+            "imageId": 5,
+            "transformValue": "无锡时代天使医疗器械科技有限公司",
+            "originalValue": "Wuxi EA Medical Instruments Technologies Limited",
+            "normalizedValue": "Wuxi EA Medical Instruments Technologies Limited",
+            "processBitMap": "0",
+            "axisX": 558,
+            "sepValue": "Wuxi EA Medical Instruments Technologies Limited",
+            "axisY": 320,
+            "width": 735,
+            "attTypeCode": 1,
+            "height": 36
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "无锡时代天使医疗器械科技有限公司",
+        "normalizedValue": "无锡时代天使医疗器械科技有限公司",
+        "keyDesc": "生产销售单位名称",
+        "value": "无锡时代天使医疗器械科技有限公司",
+        "key": "ownerName"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "C1202511190548",
+            "originalValue": "C1202511190548",
+            "normalizedValue": "C1202511190548",
+            "processBitMap": "0",
+            "axisX": 167,
+            "sepValue": "C1202511190548",
+            "axisY": 710,
+            "width": 152,
+            "attTypeCode": 4,
+            "height": 27
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "C1202511190548",
+        "normalizedValue": "C1202511190548",
+        "keyDesc": "生产销售单位海关代码",
+        "value": "C1202511190548",
+        "key": "ownerCode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "C1202511190548",
+            "originalValue": "C1202511190548",
+            "normalizedValue": "C1202511190548",
+            "processBitMap": "0",
+            "axisX": 167,
+            "sepValue": "C1202511190548",
+            "axisY": 690,
+            "width": 152,
+            "attTypeCode": 4,
+            "height": 47
+          },
+          {
+            "attType": "Contract",
+            "imageId": 5,
+            "transformValue": "C1202511190548",
+            "originalValue": "C1202511190548",
+            "normalizedValue": "C1202511190548",
+            "processBitMap": "0",
+            "axisX": 965,
+            "sepValue": "C1202511190548",
+            "axisY": 190,
+            "width": 217,
+            "attTypeCode": 1,
+            "height": 33
+          },
+          {
+            "attType": "Invoice",
+            "imageId": 9,
+            "transformValue": "C1202511190548",
+            "originalValue": "C1202511190548",
+            "normalizedValue": "C1202511190548",
+            "processBitMap": "0",
+            "axisX": 849,
+            "sepValue": "C1202511190548",
+            "axisY": 415,
+            "width": 233,
+            "attTypeCode": 2,
+            "height": 42
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "C1202511190548",
+        "normalizedValue": "C1202511190548",
+        "keyDesc": "合同协议号",
+        "value": "C1202511190548",
+        "key": "contrNo"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "法国",
+            "originalValue": "法国",
+            "normalizedValue": "法国",
+            "processBitMap": "0",
+            "axisX": 598,
+            "sepValue": "法国",
+            "axisY": 690,
+            "width": 144,
+            "attTypeCode": 4,
+            "height": 47
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "法国",
+        "normalizedValue": "法国",
+        "keyDesc": "贸易国（地区）",
+        "value": "法国",
+        "key": "cusTradeNationCode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "5",
+            "originalValue": "空运",
+            "normalizedValue": "空运",
+            "processBitMap": "0",
+            "axisX": 598,
+            "sepValue": "空运",
+            "axisY": 452,
+            "width": 95,
+            "attTypeCode": 4,
+            "height": 48
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "空运",
+        "normalizedValue": "5",
+        "keyDesc": "运输方式",
+        "value": "5",
+        "key": "cusTrafMode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "0110",
+            "originalValue": "一般贸易",
+            "normalizedValue": "一般贸易",
+            "processBitMap": "0",
+            "axisX": 598,
+            "sepValue": "一般贸易",
+            "axisY": 571,
+            "width": 89,
+            "attTypeCode": 4,
+            "height": 46
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "一般贸易",
+        "normalizedValue": "0110",
+        "keyDesc": "监管方式",
+        "value": "0110",
+        "key": "supvModeCode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "101",
+            "originalValue": "一般征税",
+            "normalizedValue": "一般征税",
+            "processBitMap": "0",
+            "axisX": 1177,
+            "sepValue": "一般征税",
+            "axisY": 575,
+            "width": 88,
+            "attTypeCode": 4,
+            "height": 48
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "一般征税",
+        "normalizedValue": "101",
+        "keyDesc": "征免性质",
+        "value": "101",
+        "key": "cutMode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "22",
+            "originalValue": "纸箱",
+            "normalizedValue": "纸箱",
+            "processBitMap": "0",
+            "axisX": 167,
+            "sepValue": "纸箱",
+            "axisY": 779,
+            "width": 86,
+            "attTypeCode": 4,
+            "height": 49
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "纸箱",
+        "normalizedValue": "22",
+        "keyDesc": "包装种类",
+        "value": "22",
+        "key": "wrapType"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "1",
+            "originalValue": "1",
+            "normalizedValue": "1",
+            "processBitMap": "0",
+            "axisX": 598,
+            "sepValue": "1",
+            "axisY": 779,
+            "width": 48,
+            "attTypeCode": 4,
+            "height": 49
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "1",
+        "normalizedValue": "1",
+        "keyDesc": "件数",
+        "value": "1",
+        "key": "packNo"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "0.3100",
+            "originalValue": "0.3100",
+            "normalizedValue": "0.3100",
+            "processBitMap": "0",
+            "axisX": 891,
+            "sepValue": "0.3100",
+            "axisY": 783,
+            "width": 123,
+            "attTypeCode": 4,
+            "height": 45
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "0.3100",
+        "normalizedValue": "0.3100",
+        "keyDesc": "毛重（千克）",
+        "value": "0.3100",
+        "key": "grossWt"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "0.0100",
+            "originalValue": "0.0100",
+            "normalizedValue": "0.0100",
+            "processBitMap": "0",
+            "axisX": 1177,
+            "sepValue": "0.0100",
+            "axisY": 783,
+            "width": 73,
+            "attTypeCode": 4,
+            "height": 45
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "0.0100",
+        "normalizedValue": "0.0100",
+        "keyDesc": "净重（千克）",
+        "value": "0.0100",
+        "key": "netWt"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "DDP",
+            "originalValue": "DDP",
+            "normalizedValue": "DDP",
+            "processBitMap": "0",
+            "axisX": 1454,
+            "sepValue": "DDP",
+            "axisY": 783,
+            "width": 91,
+            "attTypeCode": 4,
+            "height": 45
+          },
+          {
+            "attType": "Invoice",
+            "imageId": 3,
+            "transformValue": "DDP",
+            "originalValue": "DDP",
+            "normalizedValue": "DDP",
+            "processBitMap": "0",
+            "axisX": 579,
+            "sepValue": "DDP",
+            "axisY": 1847,
+            "width": 48,
+            "attTypeCode": 2,
+            "height": 28
+          },
+          {
+            "attType": "Contract",
+            "imageId": 5,
+            "transformValue": "DDP",
+            "originalValue": "DDP",
+            "normalizedValue": "DDP",
+            "processBitMap": "0",
+            "axisX": 526,
+            "sepValue": "DDP",
+            "axisY": 1762,
+            "width": 62,
+            "attTypeCode": 1,
+            "height": 31
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "DDP",
+        "normalizedValue": "DDP",
+        "keyDesc": "成交方式",
+        "value": "DDP",
+        "key": "transMode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "2.00",
+            "originalValue": "2.00",
+            "normalizedValue": "2.00",
+            "processBitMap": "0",
+            "axisX": 1694,
+            "sepValue": "2.00",
+            "axisY": 783,
+            "width": 100,
+            "attTypeCode": 4,
+            "height": 45
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "2.00",
+        "normalizedValue": "2.00",
+        "keyDesc": "运费（USD）",
+        "value": "2.00",
+        "key": "feeRate"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "0.0100",
+            "originalValue": "0.0100",
+            "normalizedValue": "0.0100",
+            "processBitMap": "0",
+            "axisX": 1946,
+            "sepValue": "0.0100",
+            "axisY": 783,
+            "width": 83,
+            "attTypeCode": 4,
+            "height": 45
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "0.0100",
+        "normalizedValue": "0.0100",
+        "keyDesc": "保费（USD）",
+        "value": "0.0100",
+        "key": "insurRate"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "0.00",
+            "originalValue": "0.00",
+            "normalizedValue": "0.00",
+            "processBitMap": "0",
+            "axisX": 2165,
+            "sepValue": "0.00",
+            "axisY": 783,
+            "width": 87,
+            "attTypeCode": 4,
+            "height": 45
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "0.00",
+        "normalizedValue": "0.00",
+        "keyDesc": "杂费（USD）",
+        "value": "0.00",
+        "key": "otherRate"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "FRA000",
+            "originalValue": "法国",
+            "normalizedValue": "法国",
+            "processBitMap": "0",
+            "axisX": 1694,
+            "sepValue": "法国",
+            "axisY": 698,
+            "width": 68,
+            "attTypeCode": 4,
+            "height": 48
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "法国",
+        "normalizedValue": "FRA000",
+        "keyDesc": "指运港",
+        "value": "FRA000",
+        "key": "distinatePort"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "310302",
+            "originalValue": "上海浦东",
+            "normalizedValue": "上海浦东",
+            "processBitMap": "0",
+            "axisX": 1946,
+            "sepValue": "上海浦东",
+            "axisY": 698,
+            "width": 86,
+            "attTypeCode": 4,
+            "height": 48
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "上海浦东",
+        "normalizedValue": "310302",
+        "keyDesc": "离境口岸",
+        "value": "310302",
+        "key": "ciqEntyPortCode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "无",
+            "originalValue": "无",
+            "normalizedValue": "无",
+            "processBitMap": "0",
+            "axisX": 167,
+            "sepValue": "无",
+            "axisY": 943,
+            "width": 152,
+            "attTypeCode": 4,
+            "height": 36
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "无",
+        "normalizedValue": "无",
+        "keyDesc": "标记唛码及备注",
+        "value": "无",
+        "key": "noteS"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "I1202511190548",
+            "originalValue": "I1202511190548",
+            "normalizedValue": "I1202511190548",
+            "processBitMap": "0",
+            "axisX": 167,
+            "sepValue": "I1202511190548",
+            "axisY": 860,
+            "width": 152,
+            "attTypeCode": 4,
+            "height": 42
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "I1202511190548",
+        "normalizedValue": "I1202511190548",
+        "keyDesc": "随附单证及编号",
+        "value": "I1202511190548",
+        "key": "Edoc"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 3,
+            "transformValue": "C1202511190548",
+            "originalValue": "C1202511190548",
+            "normalizedValue": "C1202511190548",
+            "processBitMap": "0",
+            "axisX": 579,
+            "sepValue": "C1202511190548",
+            "axisY": 721,
+            "width": 202,
+            "attTypeCode": 2,
+            "height": 28
+          },
+          {
+            "attType": "PackingList",
+            "imageId": 4,
+            "transformValue": "C1202511190548",
+            "originalValue": "C1202511190548",
+            "normalizedValue": "C1202511190548",
+            "processBitMap": "0",
+            "axisX": 630,
+            "sepValue": "C1202511190548",
+            "axisY": 729,
+            "width": 201,
+            "attTypeCode": 3,
+            "height": 32
+          },
+          {
+            "attType": "Contract",
+            "imageId": 5,
+            "transformValue": "C1202511190548",
+            "originalValue": "C1202511190548",
+            "normalizedValue": "C1202511190548",
+            "processBitMap": "0",
+            "axisX": 558,
+            "sepValue": "C1202511190548",
+            "axisY": 635,
+            "width": 214,
+            "attTypeCode": 1,
+            "height": 31
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "C1202511190548",
+        "normalizedValue": "C1202511190548",
+        "keyDesc": "生产销售单位社会信用代码",
+        "value": "C1202511190548",
+        "key": "ownerScc"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 3,
+            "transformValue": "China",
+            "originalValue": "China",
+            "normalizedValue": "China",
+            "processBitMap": "0",
+            "axisX": 745,
+            "sepValue": "China",
+            "axisY": 1964,
+            "width": 159,
+            "attTypeCode": 2,
+            "height": 29
+          },
+          {
+            "attType": "PackingList",
+            "imageId": 4,
+            "transformValue": "France",
+            "originalValue": "France",
+            "normalizedValue": "France",
+            "processBitMap": "0",
+            "axisX": 630,
+            "sepValue": "France",
+            "axisY": 1105,
+            "width": 219,
+            "attTypeCode": 3,
+            "height": 34
+          },
+          {
+            "attType": "Contract",
+            "imageId": 5,
+            "transformValue": "China",
+            "originalValue": "China",
+            "normalizedValue": "China",
+            "processBitMap": "0",
+            "axisX": 833,
+            "sepValue": "China",
+            "axisY": 408,
+            "width": 78,
+            "attTypeCode": 1,
+            "height": 34
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "China",
+        "normalizedValue": "CHN",
+        "keyDesc": "贸易国",
+        "value": "CHN",
+        "key": "cusTradeNationCode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 3,
+            "transformValue": "FRA",
+            "originalValue": "FRANCE",
+            "normalizedValue": "FRANCE",
+            "processBitMap": "0",
+            "axisX": 1318,
+            "sepValue": "FRANCE",
+            "axisY": 1964,
+            "width": 87,
+            "attTypeCode": 2,
+            "height": 29
+          },
+          {
+            "attType": "PackingList",
+            "imageId": 4,
+            "transformValue": "FRA",
+            "originalValue": "France",
+            "normalizedValue": "France",
+            "processBitMap": "0",
+            "axisX": 630,
+            "sepValue": "France",
+            "axisY": 1105,
+            "width": 219,
+            "attTypeCode": 3,
+            "height": 34
+          },
+          {
+            "attType": "Contract",
+            "imageId": 5,
+            "transformValue": "FRA",
+            "originalValue": "FRANCE",
+            "normalizedValue": "FRANCE",
+            "processBitMap": "0",
+            "axisX": 1446,
+            "sepValue": "FRANCE",
+            "axisY": 1848,
+            "width": 95,
+            "attTypeCode": 1,
+            "height": 34
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "FRANCE",
+        "normalizedValue": "FRA",
+        "keyDesc": "运抵国",
+        "value": "FRA",
+        "key": "cusTradeCountry"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 3,
+            "transformValue": "6.62",
+            "originalValue": "6.62",
+            "normalizedValue": "6.62",
+            "processBitMap": "0",
+            "axisX": 1500,
+            "sepValue": "6.62",
+            "axisY": 1664,
+            "width": 57,
+            "attTypeCode": 2,
+            "height": 28
+          },
+          {
+            "attType": "Contract",
+            "imageId": 5,
+            "transformValue": "6.62",
+            "originalValue": "6.62 (USD)",
+            "normalizedValue": "6.62 (USD)",
+            "processBitMap": "0",
+            "axisX": 492,
+            "sepValue": "6.62 (USD)",
+            "axisY": 1546,
+            "width": 168,
+            "attTypeCode": 1,
+            "height": 34
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "6.62",
+        "normalizedValue": "6.62",
+        "keyDesc": "总价总和",
+        "value": "6.62",
+        "key": "totalAmount"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 3,
+            "transformValue": "USD",
+            "originalValue": "USD",
+            "normalizedValue": "USD",
+            "processBitMap": "0",
+            "axisX": 1164,
+            "sepValue": "USD",
+            "axisY": 1528,
+            "width": 59,
+            "attTypeCode": 2,
+            "height": 26
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "USD",
+        "normalizedValue": "USD",
+        "keyDesc": "运费币制",
+        "value": "USD",
+        "key": "feeCurr"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 3,
+            "transformValue": "USD",
+            "originalValue": "USD",
+            "normalizedValue": "USD",
+            "processBitMap": "0",
+            "axisX": 1500,
+            "sepValue": "USD",
+            "axisY": 1528,
+            "width": 57,
+            "attTypeCode": 2,
+            "height": 26
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "USD",
+        "normalizedValue": "USD",
+        "keyDesc": "保费币制",
+        "value": "USD",
+        "key": "insurCurr"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 3,
+            "transformValue": "2",
+            "originalValue": "2",
+            "normalizedValue": "2",
+            "processBitMap": "0",
+            "axisX": 1355,
+            "sepValue": "2",
+            "axisY": 1609,
+            "width": 22,
+            "attTypeCode": 2,
+            "height": 23
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "2",
+        "normalizedValue": "2",
+        "keyDesc": "运费标记",
+        "value": "2",
+        "key": "feeMark"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 3,
+            "transformValue": "0.01",
+            "originalValue": "0.01",
+            "normalizedValue": "0.01",
+            "processBitMap": "0",
+            "axisX": 1501,
+            "sepValue": "0.01",
+            "axisY": 1609,
+            "width": 56,
+            "attTypeCode": 2,
+            "height": 26
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "0.01",
+        "normalizedValue": "0.01",
+        "keyDesc": "保费标记",
+        "value": "0.01",
+        "key": "insurMark"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 3,
+            "transformValue": "USD",
+            "originalValue": "USD",
+            "normalizedValue": "USD",
+            "processBitMap": "0",
+            "axisX": 1164,
+            "sepValue": "USD",
+            "axisY": 1528,
+            "width": 59,
+            "attTypeCode": 2,
+            "height": 26
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "USD",
+        "normalizedValue": "USD",
+        "keyDesc": "杂费币制",
+        "value": "USD",
+        "key": "otherCurr"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 3,
+            "transformValue": "2",
+            "originalValue": "2",
+            "normalizedValue": "2",
+            "processBitMap": "0",
+            "axisX": 1355,
+            "sepValue": "2",
+            "axisY": 1609,
+            "width": 22,
+            "attTypeCode": 2,
+            "height": 23
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "2",
+        "normalizedValue": "2",
+        "keyDesc": "杂费标记",
+        "value": "2",
+        "key": "otherMark"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "PackingList",
+            "imageId": 4,
+            "transformValue": "无锡时代天使医疗器械科技有限公司",
+            "originalValue": "无锡时代天使医疗器械科技有限公司",
+            "normalizedValue": "无锡时代天使医疗器械科技有限公司",
+            "processBitMap": "0",
+            "axisX": 1011,
+            "sepValue": "无锡时代天使医疗器械科技有限公司",
+            "axisY": 1238,
+            "width": 226,
+            "attTypeCode": 3,
+            "height": 49
+          }
+        ],
+        "source_image": 4,
+        "originalValue": "无锡时代天使医疗器械科技有限公司",
+        "normalizedValue": "无锡时代天使医疗器械科技有限公司",
+        "keyDesc": "境内收发货人名称",
+        "value": "无锡时代天使医疗器械科技有限公司",
+        "key": "consigneeCname"
+      }
+    ],
+    "preDecList": [
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 2,
+              "transformValue": "9021100090",
+              "originalValue": "9021100090",
+              "normalizedValue": "9021100090",
+              "processBitMap": "0",
+              "axisX": 408,
+              "sepValue": "9021100090",
+              "axisY": 1139,
+              "width": 88,
+              "attTypeCode": 4,
+              "height": 25
+            },
+            {
+              "attType": "Invoice",
+              "imageId": 3,
+              "transformValue": "90211000",
+              "originalValue": "90211000",
+              "normalizedValue": "90211000",
+              "processBitMap": "0",
+              "axisX": 576,
+              "sepValue": "90211000",
+              "axisY": 1591,
+              "width": 117,
+              "attTypeCode": 2,
+              "height": 28
+            },
+            {
+              "attType": "Contract",
+              "imageId": 5,
+              "transformValue": "90211000",
+              "originalValue": "90211000",
+              "normalizedValue": "90211000",
+              "processBitMap": "0",
+              "axisX": 554,
+              "sepValue": "90211000",
+              "axisY": 1426,
+              "width": 127,
+              "attTypeCode": 1,
+              "height": 34
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "9021100090",
+          "normalizedValue": "9021100090",
+          "keyDesc": "商品编号",
+          "value": "9021100090",
+          "key": "codeTs"
         },
-        "nlpRes": "http://smartebao-dev-ocr.oss-cn-hangzhou.aliyuncs.com/nlp/res/E691e9adc38f34347476c8f10_nlp_res_url.json",
-        "preDecHead": [
+        {
+          "processBitMap": "0",
+          "sourceList": [
             {
-                "processBitMap": "0",
-                "sourceList": [
-                    {
-                        "attType": "Declaration",
-                        "imageId": 2,
-                        "transformValue": "EORI:FR92194189400021)",
-                        "sepValueList": [
-                            {
-                                "endy": 522,
-                                "endx": 393,
-                                "originalValue": "EORI:",
-                                "starty": 496,
-                                "startx": 167
-                            },
-                            {
-                                "endy": 544,
-                                "endx": 352,
-                                "originalValue": "FR92194189400021)",
-                                "starty": 520,
-                                "startx": 167
-                            }
-                        ],
-                        "originalValue": "EORI:FR92194189400021)",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "EORI:FR92194189400021)",
-                        "processBitMap": "0",
-                        "creditLevel": 0.9801,
-                        "axisY": 473,
-                        "sepValue": "EORI:;;FR92194189400021)",
-                        "axisX": 167,
-                        "width": 365,
-                        "attTypeCode": 4,
-                        "height": 71
-                    },
-                    {
-                        "attType": "Contract",
-                        "imageId": 5,
-                        "transformValue": "FR92921941894;EORI:",
-                        "sepValueList": [
-                            {
-                                "endy": 754,
-                                "endx": 1407,
-                                "originalValue": "FR92921941894;EORI:",
-                                "starty": 719,
-                                "startx": 560
-                            }
-                        ],
-                        "originalValue": "FR92921941894;EORI:",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "FR92921941894;EORI:",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 719,
-                        "sepValue": "FR92921941894;EORI:",
-                        "axisX": 560,
-                        "width": 847,
-                        "attTypeCode": 1,
-                        "height": 35
-                    },
-                    {
-                        "attType": "Invoice",
-                        "imageId": 3,
-                        "transformValue": "FR92921941894;EORI:",
-                        "sepValueList": [
-                            {
-                                "endy": 870,
-                                "endx": 1367,
-                                "originalValue": "FR92921941894;EORI:",
-                                "starty": 838,
-                                "startx": 582
-                            }
-                        ],
-                        "originalValue": "FR92921941894;EORI:",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "FR92921941894;EORI:",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 838,
-                        "sepValue": "FR92921941894;EORI:",
-                        "axisX": 582,
-                        "width": 785,
-                        "attTypeCode": 2,
-                        "height": 32
-                    },
-                    {
-                        "attType": "PackingList",
-                        "imageId": 4,
-                        "transformValue": "FR92921941894:EORI:",
-                        "sepValueList": [
-                            {
-                                "endy": 879,
-                                "endx": 1415,
-                                "originalValue": "FR92921941894:EORI:",
-                                "starty": 846,
-                                "startx": 633
-                            }
-                        ],
-                        "originalValue": "FR92921941894:EORI:",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "FR92921941894:EORI:",
-                        "processBitMap": "0",
-                        "creditLevel": 0.98,
-                        "axisY": 846,
-                        "sepValue": "FR92921941894:EORI:",
-                        "axisX": 633,
-                        "width": 782,
-                        "attTypeCode": 3,
-                        "height": 33
-                    }
-                ],
-                "parsedValue": "ANGELALIGN FRANCE TECHNOLOGY(VAT:FR92921941894:EORI:FR92194189400021)",
-                "source_image": 2,
-                "originalValue": "EORI:FR92194189400021)",
-                "extractFrom": "nlp",
-                "normalizedValue": "EORI:FR92194189400021)",
-                "keyDesc": "境外收发货人",
-                "value": "EORI:FR92194189400021)",
-                "key": "consignorEname"
-            },
-            {
-                "processBitMap": "0",
-                "sourceList": [
-                    {
-                        "attType": "Declaration",
-                        "imageId": 2,
-                        "transformValue": "5",
-                        "sepValueList": [
-                            {
-                                "endy": 501,
-                                "endx": 649,
-                                "originalValue": "空运",
-                                "starty": 477,
-                                "startx": 600
-                            }
-                        ],
-                        "originalValue": "空运",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "空运",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 477,
-                        "sepValue": "空运",
-                        "axisX": 600,
-                        "width": 49,
-                        "attTypeCode": 4,
-                        "height": 24
-                    }
-                ],
-                "existTranscoding": "True",
-                "parsedValue": "空运",
-                "source_image": 2,
-                "originalValue": "空运",
-                "extractFrom": "nlp",
-                "normalizedValue": "空运",
-                "keyDesc": "运输方式",
-                "value": "5",
-                "key": "cusTrafMode"
-            },
-            {
-                "processBitMap": "0",
-                "sourceList": [
-                    {
-                        "attType": "Declaration",
-                        "imageId": 2,
-                        "transformValue": "0110",
-                        "sepValueList": [
-                            {
-                                "endy": 620,
-                                "endx": 688,
-                                "originalValue": "一般贸易",
-                                "starty": 594,
-                                "startx": 602
-                            }
-                        ],
-                        "originalValue": "一般贸易",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "一般贸易",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 594,
-                        "sepValue": "一般贸易",
-                        "axisX": 602,
-                        "width": 86,
-                        "attTypeCode": 4,
-                        "height": 26
-                    }
-                ],
-                "existTranscoding": "True",
-                "parsedValue": "一般贸易",
-                "source_image": 2,
-                "originalValue": "一般贸易",
-                "extractFrom": "nlp",
-                "normalizedValue": "一般贸易",
-                "keyDesc": "监管方式",
-                "value": "0110",
-                "key": "supvModeCode"
-            },
-            {
-                "processBitMap": "0",
-                "sourceList": [
-                    {
-                        "attType": "Declaration",
-                        "imageId": 2,
-                        "transformValue": "101",
-                        "sepValueList": [
-                            {
-                                "endy": 624,
-                                "endx": 1267,
-                                "originalValue": "一般征税",
-                                "starty": 599,
-                                "startx": 1182
-                            }
-                        ],
-                        "originalValue": "一般征税",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "一般征税",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 599,
-                        "sepValue": "一般征税",
-                        "axisX": 1182,
-                        "width": 85,
-                        "attTypeCode": 4,
-                        "height": 25
-                    }
-                ],
-                "existTranscoding": "True",
-                "parsedValue": "一般征税",
-                "source_image": 2,
-                "originalValue": "一般征税",
-                "extractFrom": "nlp",
-                "normalizedValue": "一般征税",
-                "keyDesc": "征免性质",
-                "value": "101",
-                "key": "cutMode"
-            },
-            {
-                "processBitMap": "0",
-                "sourceList": [
-                    {
-                        "attType": "Declaration",
-                        "imageId": 2,
-                        "transformValue": "C1202511190548",
-                        "sepValueList": [
-                            {
-                                "endy": 736,
-                                "endx": 321,
-                                "originalValue": "C1202511190548",
-                                "starty": 712,
-                                "startx": 166
-                            }
-                        ],
-                        "originalValue": "C1202511190548",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "C1202511190548",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 712,
-                        "sepValue": "C1202511190548",
-                        "axisX": 166,
-                        "width": 155,
-                        "attTypeCode": 4,
-                        "height": 24
-                    },
-                    {
-                        "attType": "Contract",
-                        "imageId": 5,
-                        "transformValue": "C1202511190548",
-                        "sepValueList": [
-                            {
-                                "endy": 223,
-                                "endx": 1183,
-                                "originalValue": "C1202511190548",
-                                "starty": 193,
-                                "startx": 967
-                            }
-                        ],
-                        "originalValue": "C1202511190548",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "C1202511190548",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 193,
-                        "sepValue": "C1202511190548",
-                        "axisX": 967,
-                        "width": 216,
-                        "attTypeCode": 1,
-                        "height": 30
-                    }
-                ],
-                "parsedValue": "C1202511190548",
-                "source_image": 2,
-                "originalValue": "C1202511190548",
-                "extractFrom": "nlp",
-                "normalizedValue": "C1202511190548",
-                "keyDesc": "合同协议号",
-                "value": "C1202511190548",
-                "key": "contrNo"
-            },
-            {
-                "processBitMap": "0",
-                "sourceList": [
-                    {
-                        "attType": "Declaration",
-                        "imageId": 2,
-                        "transformValue": "FRA",
-                        "sepValueList": [
-                            {
-                                "endy": 738,
-                                "endx": 645,
-                                "originalValue": "法国",
-                                "starty": 714,
-                                "startx": 599
-                            }
-                        ],
-                        "originalValue": "法国",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "法国",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 714,
-                        "sepValue": "法国",
-                        "axisX": 599,
-                        "width": 46,
-                        "attTypeCode": 4,
-                        "height": 24
-                    },
-                    {
-                        "attType": "Contract",
-                        "imageId": 5,
-                        "transformValue": "FRA",
-                        "sepValueList": [
-                            {
-                                "endy": 1881,
-                                "endx": 1542,
-                                "originalValue": "france",
-                                "starty": 1851,
-                                "startx": 1443
-                            }
-                        ],
-                        "originalValue": "france",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "france",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "existTranscoding": "True",
-                        "axisY": 1851,
-                        "sepValue": "france",
-                        "axisX": 1443,
-                        "width": 99,
-                        "attTypeCode": 1,
-                        "height": 30
-                    },
-                    {
-                        "attType": "Invoice",
-                        "imageId": 3,
-                        "transformValue": "FRA",
-                        "sepValueList": [
-                            {
-                                "endy": 1997,
-                                "endx": 1410,
-                                "originalValue": "france",
-                                "starty": 1968,
-                                "startx": 1317
-                            }
-                        ],
-                        "originalValue": "france",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "france",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "existTranscoding": "True",
-                        "axisY": 1968,
-                        "sepValue": "france",
-                        "axisX": 1317,
-                        "width": 93,
-                        "attTypeCode": 2,
-                        "height": 29
-                    }
-                ],
-                "existTranscoding": "True",
-                "parsedValue": "法国",
-                "source_image": 2,
-                "originalValue": "法国",
-                "extractFrom": "nlp",
-                "normalizedValue": "法国",
-                "keyDesc": "贸易国",
-                "value": "FRA",
-                "key": "cusTradeNationCode"
-            },
-            {
-                "processBitMap": "0",
-                "sourceList": [
-                    {
-                        "attType": "Declaration",
-                        "imageId": 2,
-                        "transformValue": "FRA",
-                        "sepValueList": [
-                            {
-                                "endy": 743,
-                                "endx": 1224,
-                                "originalValue": "法国",
-                                "starty": 719,
-                                "startx": 1177
-                            }
-                        ],
-                        "originalValue": "法国",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "法国",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 719,
-                        "sepValue": "法国",
-                        "axisX": 1177,
-                        "width": 47,
-                        "attTypeCode": 4,
-                        "height": 24
-                    },
-                    {
-                        "attType": "Contract",
-                        "imageId": 5,
-                        "transformValue": "FRA",
-                        "sepValueList": [
-                            {
-                                "endy": 1881,
-                                "endx": 1542,
-                                "originalValue": "france",
-                                "starty": 1851,
-                                "startx": 1443
-                            }
-                        ],
-                        "originalValue": "france",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "france",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "existTranscoding": "True",
-                        "axisY": 1851,
-                        "sepValue": "france",
-                        "axisX": 1443,
-                        "width": 99,
-                        "attTypeCode": 1,
-                        "height": 30
-                    },
-                    {
-                        "attType": "Invoice",
-                        "imageId": 3,
-                        "transformValue": "FRA",
-                        "sepValueList": [
-                            {
-                                "endy": 1997,
-                                "endx": 1410,
-                                "originalValue": "france",
-                                "starty": 1968,
-                                "startx": 1317
-                            }
-                        ],
-                        "originalValue": "france",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "france",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "existTranscoding": "True",
-                        "axisY": 1968,
-                        "sepValue": "france",
-                        "axisX": 1317,
-                        "width": 93,
-                        "attTypeCode": 2,
-                        "height": 29
-                    }
-                ],
-                "existTranscoding": "True",
-                "parsedValue": "法国",
-                "source_image": 2,
-                "originalValue": "法国",
-                "extractFrom": "nlp",
-                "normalizedValue": "法国",
-                "keyDesc": "运抵国",
-                "value": "FRA",
-                "key": "cusTradeCountry"
-            },
-            {
-                "processBitMap": "0",
-                "sourceList": [
-                    {
-                        "attType": "Declaration",
-                        "imageId": 2,
-                        "transformValue": "FRA000",
-                        "sepValueList": [
-                            {
-                                "endy": 747,
-                                "endx": 1745,
-                                "originalValue": "法国",
-                                "starty": 723,
-                                "startx": 1700
-                            }
-                        ],
-                        "originalValue": "法国",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "法国",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 723,
-                        "sepValue": "法国",
-                        "axisX": 1700,
-                        "width": 45,
-                        "attTypeCode": 4,
-                        "height": 24
-                    },
-                    {
-                        "attType": "Contract",
-                        "imageId": 5,
-                        "transformValue": "FRA000",
-                        "sepValueList": [
-                            {
-                                "endy": 1881,
-                                "endx": 1542,
-                                "originalValue": "france",
-                                "starty": 1851,
-                                "startx": 1443
-                            }
-                        ],
-                        "originalValue": "france",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "france",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "existTranscoding": "True",
-                        "axisY": 1851,
-                        "sepValue": "france",
-                        "axisX": 1443,
-                        "width": 99,
-                        "attTypeCode": 1,
-                        "height": 30
-                    },
-                    {
-                        "attType": "Invoice",
-                        "imageId": 3,
-                        "transformValue": "FRA000",
-                        "sepValueList": [
-                            {
-                                "endy": 1997,
-                                "endx": 1410,
-                                "originalValue": "france",
-                                "starty": 1968,
-                                "startx": 1317
-                            }
-                        ],
-                        "originalValue": "france",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "france",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "existTranscoding": "True",
-                        "axisY": 1968,
-                        "sepValue": "france",
-                        "axisX": 1317,
-                        "width": 93,
-                        "attTypeCode": 2,
-                        "height": 29
-                    }
-                ],
-                "existTranscoding": "True",
-                "parsedValue": "法国",
-                "source_image": 2,
-                "originalValue": "法国",
-                "extractFrom": "nlp",
-                "normalizedValue": "法国",
-                "keyDesc": "指运港",
-                "value": "FRA000",
-                "key": "distinatePort"
-            },
-            {
-                "processBitMap": "0",
-                "sourceList": [
-                    {
-                        "attType": "Declaration",
-                        "imageId": 2,
-                        "transformValue": "310302",
-                        "sepValueList": [
-                            {
-                                "endy": 749,
-                                "endx": 2032,
-                                "originalValue": "上海浦东",
-                                "starty": 725,
-                                "startx": 1948
-                            }
-                        ],
-                        "originalValue": "上海浦东",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "上海浦东",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 725,
-                        "sepValue": "上海浦东",
-                        "axisX": 1948,
-                        "width": 84,
-                        "attTypeCode": 4,
-                        "height": 24
-                    }
-                ],
-                "existTranscoding": "True",
-                "parsedValue": "上海浦东",
-                "source_image": 2,
-                "originalValue": "上海浦东",
-                "extractFrom": "nlp",
-                "normalizedValue": "上海浦东",
-                "keyDesc": "离境口岸",
-                "value": "310302",
-                "key": "ciqEntyPortCode"
-            },
-            {
-                "processBitMap": "0",
-                "sourceList": [
-                    {
-                        "attType": "Declaration",
-                        "imageId": 2,
-                        "transformValue": "22",
-                        "sepValueList": [
-                            {
-                                "endy": 829,
-                                "endx": 213,
-                                "originalValue": "纸箱",
-                                "starty": 805,
-                                "startx": 166
-                            }
-                        ],
-                        "originalValue": "纸箱",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "纸箱",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 805,
-                        "sepValue": "纸箱",
-                        "axisX": 166,
-                        "width": 47,
-                        "attTypeCode": 4,
-                        "height": 24
-                    }
-                ],
-                "existTranscoding": "True",
-                "parsedValue": "纸箱",
-                "source_image": 2,
-                "originalValue": "纸箱",
-                "extractFrom": "nlp",
-                "normalizedValue": "纸箱",
-                "keyDesc": "包装种类",
-                "value": "22",
-                "key": "wrapType"
-            },
-            {
-                "processBitMap": "1",
-                "sourceList": [
-                    {
-                        "attType": "Declaration",
-                        "imageId": 2,
-                        "transformValue": "1",
-                        "sepValueList": [
-                            {
-                                "endy": 830,
-                                "endx": 612,
-                                "originalValue": "1",
-                                "starty": 810,
-                                "startx": 600
-                            }
-                        ],
-                        "originalValue": "1",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "1",
-                        "processBitMap": "0",
-                        "creditLevel": 0.91,
-                        "axisY": 810,
-                        "sepValue": "1",
-                        "axisX": 600,
-                        "width": 12,
-                        "attTypeCode": 4,
-                        "height": 20
-                    }
-                ],
-                "parsedValue": "1",
-                "source_image": 2,
-                "originalValue": "1",
-                "extractFrom": "nlp",
-                "normalizedValue": "1",
-                "keyDesc": "件数",
-                "value": "1",
-                "key": "packNo"
-            },
-            {
-                "processBitMap": "0",
-                "sourceList": [
-                    {
-                        "attType": "Declaration",
-                        "imageId": 2,
-                        "transformValue": "0.3100",
-                        "sepValueList": [
-                            {
-                                "endy": 834,
-                                "endx": 961,
-                                "originalValue": "0.3100",
-                                "starty": 810,
-                                "startx": 891
-                            }
-                        ],
-                        "originalValue": "0.3100",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "0.3100",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 810,
-                        "sepValue": "0.3100",
-                        "axisX": 891,
-                        "width": 70,
-                        "attTypeCode": 4,
-                        "height": 24
-                    },
-                    {
-                        "attType": "PackingList",
-                        "imageId": 4,
-                        "transformValue": "0.31",
-                        "sepValueList": [
-                            {
-                                "endy": 1640,
-                                "endx": 1227,
-                                "originalValue": "0.31",
-                                "starty": 1612,
-                                "startx": 1167
-                            }
-                        ],
-                        "originalValue": "0.31",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "0.31",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 1612,
-                        "sepValue": "0.31",
-                        "axisX": 1167,
-                        "width": 60,
-                        "attTypeCode": 3,
-                        "height": 28
-                    }
-                ],
-                "parsedValue": "0.3100",
-                "source_image": 2,
-                "originalValue": "0.3100",
-                "extractFrom": "nlp",
-                "normalizedValue": "0.3100",
-                "keyDesc": "毛重",
-                "value": "0.3100",
-                "key": "grossWt"
-            },
-            {
-                "processBitMap": "0",
-                "sourceList": [
-                    {
-                        "attType": "Declaration",
-                        "imageId": 2,
-                        "transformValue": "0.0100",
-                        "sepValueList": [
-                            {
-                                "endy": 837,
-                                "endx": 1247,
-                                "originalValue": "0.0100",
-                                "starty": 813,
-                                "startx": 1176
-                            }
-                        ],
-                        "originalValue": "0.0100",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "0.0100",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 813,
-                        "sepValue": "0.0100",
-                        "axisX": 1176,
-                        "width": 71,
-                        "attTypeCode": 4,
-                        "height": 24
-                    },
-                    {
-                        "attType": "PackingList",
-                        "imageId": 4,
-                        "transformValue": "0.01",
-                        "sepValueList": [
-                            {
-                                "endy": 1641,
-                                "endx": 1364,
-                                "originalValue": "0.01",
-                                "starty": 1613,
-                                "startx": 1304
-                            }
-                        ],
-                        "originalValue": "0.01",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "0.01",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 1613,
-                        "sepValue": "0.01",
-                        "axisX": 1304,
-                        "width": 60,
-                        "attTypeCode": 3,
-                        "height": 28
-                    }
-                ],
-                "parsedValue": "0.0100",
-                "source_image": 2,
-                "originalValue": "0.0100",
-                "extractFrom": "nlp",
-                "normalizedValue": "0.0100",
-                "keyDesc": "净重",
-                "value": "0.0100",
-                "key": "netWt"
-            },
-            {
-                "processBitMap": "0",
-                "sourceList": [
-                    {
-                        "attType": "Declaration",
-                        "imageId": 2,
-                        "transformValue": "1",
-                        "sepValueList": [
-                            {
-                                "endy": 838,
-                                "endx": 1494,
-                                "originalValue": "DDP",
-                                "starty": 816,
-                                "startx": 1457
-                            }
-                        ],
-                        "originalValue": "DDP",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "DDP",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 816,
-                        "sepValue": "DDP",
-                        "axisX": 1457,
-                        "width": 37,
-                        "attTypeCode": 4,
-                        "height": 22
-                    },
-                    {
-                        "attType": "Contract",
-                        "imageId": 5,
-                        "transformValue": "1",
-                        "sepValueList": [
-                            {
-                                "endy": 1798,
-                                "endx": 591,
-                                "originalValue": "5.贸易方式(Trade Term):DDP",
-                                "starty": 1758,
-                                "startx": 159
-                            }
-                        ],
-                        "originalValue": "5.贸易方式(Trade Term):DDP",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "5.贸易方式(Trade Term):DDP",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "existTranscoding": "True",
-                        "axisY": 1758,
-                        "sepValue": "5.贸易方式(Trade Term):DDP",
-                        "axisX": 159,
-                        "width": 432,
-                        "attTypeCode": 1,
-                        "height": 40
-                    },
-                    {
-                        "attType": "Invoice",
-                        "imageId": 3,
-                        "transformValue": "1",
-                        "sepValueList": [
-                            {
-                                "endy": 1880,
-                                "endx": 630,
-                                "originalValue": "3.贸易方式(Trade Term):DDP",
-                                "starty": 1848,
-                                "startx": 217
-                            }
-                        ],
-                        "originalValue": "3.贸易方式(Trade Term):DDP",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "3.贸易方式(Trade Term):DDP",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "existTranscoding": "True",
-                        "axisY": 1848,
-                        "sepValue": "3.贸易方式(Trade Term):DDP",
-                        "axisX": 217,
-                        "width": 413,
-                        "attTypeCode": 2,
-                        "height": 32
-                    }
-                ],
-                "existTranscoding": "True",
-                "parsedValue": "DDP",
-                "source_image": 2,
-                "originalValue": "DDP",
-                "extractFrom": "nlp",
-                "normalizedValue": "DDP",
-                "keyDesc": "成交方式",
-                "value": "1",
-                "key": "transMode"
-            },
-            {
-                "processBitMap": "0",
-                "sourceList": [
-                    {
-                        "attType": "Declaration",
-                        "imageId": 2,
-                        "transformValue": "I1202511190548",
-                        "sepValueList": [
-                            {
-                                "endy": 913,
-                                "endx": 320,
-                                "originalValue": "I1202511190548",
-                                "starty": 889,
-                                "startx": 166
-                            }
-                        ],
-                        "originalValue": "I1202511190548",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "I1202511190548",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 889,
-                        "sepValue": "I1202511190548",
-                        "axisX": 166,
-                        "width": 154,
-                        "attTypeCode": 4,
-                        "height": 24
-                    }
-                ],
-                "parsedValue": "I1202511190548",
-                "source_image": 2,
-                "originalValue": "I1202511190548",
-                "extractFrom": "nlp",
-                "normalizedValue": "I1202511190548",
-                "keyDesc": "随附单证及编号",
-                "value": "I1202511190548",
-                "key": "Edoc"
-            },
-            {
-                "processBitMap": "0",
-                "sourceList": [
-                    {
-                        "attType": "Declaration",
-                        "imageId": 2,
-                        "transformValue": "无",
-                        "sepValueList": [
-                            {
-                                "endy": 1030,
-                                "endx": 191,
-                                "originalValue": "无",
-                                "starty": 1003,
-                                "startx": 164
-                            }
-                        ],
-                        "originalValue": "无",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "无",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 1003,
-                        "sepValue": "无",
-                        "axisX": 164,
-                        "width": 27,
-                        "attTypeCode": 4,
-                        "height": 27
-                    }
-                ],
-                "parsedValue": "无",
-                "source_image": 2,
-                "originalValue": "无",
-                "extractFrom": "nlp",
-                "normalizedValue": "无",
-                "keyDesc": "标记唛码及备注",
-                "value": "无",
-                "key": "noteS"
-            },
-            {
-                "processBitMap": "0",
-                "sourceList": [
-                    {
-                        "attType": "Declaration",
-                        "imageId": 2,
-                        "transformValue": "无锡时代天使医疗器械科技有限公司",
-                        "sepValueList": [
-                            {
-                                "endy": 359,
-                                "endx": 514,
-                                "originalValue": "无锡时代天使医疗器械科技有限公司",
-                                "starty": 333,
-                                "startx": 169
-                            }
-                        ],
-                        "originalValue": "无锡时代天使医疗器械科技有限公司",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "无锡时代天使医疗器械科技有限公司",
-                        "processBitMap": "0",
-                        "creditLevel": 0.98,
-                        "axisY": 333,
-                        "sepValue": "无锡时代天使医疗器械科技有限公司",
-                        "axisX": 169,
-                        "width": 345,
-                        "attTypeCode": 4,
-                        "height": 26
-                    },
-                    {
-                        "attType": "Contract",
-                        "imageId": 5,
-                        "transformValue": "WuxiEAMedicalInstrumentsTechnologiesLimited",
-                        "sepValueList": [
-                            {
-                                "endy": 365,
-                                "endx": 1290,
-                                "originalValue": "WuxiEAMedicalInstrumentsTechnologiesLimited",
-                                "starty": 324,
-                                "startx": 565
-                            }
-                        ],
-                        "originalValue": "WuxiEAMedicalInstrumentsTechnologiesLimited",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "WuxiEAMedicalInstrumentsTechnologiesLimited",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 324,
-                        "sepValue": "WuxiEAMedicalInstrumentsTechnologiesLimited",
-                        "axisX": 565,
-                        "width": 725,
-                        "attTypeCode": 1,
-                        "height": 41
-                    },
-                    {
-                        "attType": "Invoice",
-                        "imageId": 3,
-                        "transformValue": "WuxiEAMedicalInstrumentsTechnologiesLimited",
-                        "sepValueList": [
-                            {
-                                "endy": 408,
-                                "endx": 1264,
-                                "originalValue": "WuxiEAMedicalInstrumentsTechnologiesLimited",
-                                "starty": 370,
-                                "startx": 587
-                            }
-                        ],
-                        "originalValue": "WuxiEAMedicalInstrumentsTechnologiesLimited",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "WuxiEAMedicalInstrumentsTechnologiesLimited",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 370,
-                        "sepValue": "WuxiEAMedicalInstrumentsTechnologiesLimited",
-                        "axisX": 587,
-                        "width": 677,
-                        "attTypeCode": 2,
-                        "height": 38
-                    },
-                    {
-                        "attType": "PackingList",
-                        "imageId": 4,
-                        "transformValue": "WuxiEAMedicalInstrumentsTechnologiesLimited",
-                        "sepValueList": [
-                            {
-                                "endy": 411,
-                                "endx": 1311,
-                                "originalValue": "WuxiEAMedicalInstrumentsTechnologiesLimited",
-                                "starty": 370,
-                                "startx": 301
-                            }
-                        ],
-                        "originalValue": "WuxiEAMedicalInstrumentsTechnologiesLimited",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "WuxiEAMedicalInstrumentsTechnologiesLimited",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 370,
-                        "sepValue": "WuxiEAMedicalInstrumentsTechnologiesLimited",
-                        "axisX": 301,
-                        "width": 1010,
-                        "attTypeCode": 3,
-                        "height": 41
-                    }
-                ],
-                "parsedValue": "无锡时代天使医疗器械科技有限公司",
-                "source_image": 2,
-                "originalValue": "无锡时代天使医疗器械科技有限公司",
-                "extractFrom": "nlp",
-                "normalizedValue": "无锡时代天使医疗器械科技有限公司",
-                "keyDesc": "境内收发货人名称",
-                "value": "无锡时代天使医疗器械科技有限公司",
-                "key": "consigneeCname"
-            },
-            {
-                "processBitMap": "0",
-                "sourceList": [
-                    {
-                        "attType": "Declaration",
-                        "imageId": 2,
-                        "transformValue": "91320200550292909M",
-                        "sepValueList": [
-                            {
-                                "endy": 380,
-                                "endx": 370,
-                                "originalValue": "91320200550292909M",
-                                "starty": 354,
-                                "startx": 169
-                            }
-                        ],
-                        "originalValue": "91320200550292909M",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "91320200550292909M",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 354,
-                        "sepValue": "91320200550292909M",
-                        "axisX": 169,
-                        "width": 201,
-                        "attTypeCode": 4,
-                        "height": 26
-                    }
-                ],
-                "parsedValue": "91320200550292909M",
-                "source_image": 2,
-                "originalValue": "91320200550292909M",
-                "extractFrom": "nlp",
-                "normalizedValue": "91320200550292909M",
-                "keyDesc": "境内收发货人社会信用代码",
-                "value": "91320200550292909M",
-                "key": "rcvgdTradeScc"
-            },
-            {
-                "processBitMap": "0",
-                "sourceList": [
-                    {
-                        "attType": "Declaration",
-                        "imageId": 2,
-                        "transformValue": "无锡时代天使医疗器械科技有限公司",
-                        "sepValueList": [
-                            {
-                                "endy": 619,
-                                "endx": 513,
-                                "originalValue": "无锡时代天使医疗器械科技有限公司",
-                                "starty": 591,
-                                "startx": 168
-                            }
-                        ],
-                        "originalValue": "无锡时代天使医疗器械科技有限公司",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "无锡时代天使医疗器械科技有限公司",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 591,
-                        "sepValue": "无锡时代天使医疗器械科技有限公司",
-                        "axisX": 168,
-                        "width": 345,
-                        "attTypeCode": 4,
-                        "height": 28
-                    },
-                    {
-                        "attType": "Contract",
-                        "imageId": 5,
-                        "transformValue": "WuxiEAMedicalInstrumentsTechnologiesLimited",
-                        "sepValueList": [
-                            {
-                                "endy": 365,
-                                "endx": 1290,
-                                "originalValue": "WuxiEAMedicalInstrumentsTechnologiesLimited",
-                                "starty": 324,
-                                "startx": 565
-                            }
-                        ],
-                        "originalValue": "WuxiEAMedicalInstrumentsTechnologiesLimited",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "WuxiEAMedicalInstrumentsTechnologiesLimited",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 324,
-                        "sepValue": "WuxiEAMedicalInstrumentsTechnologiesLimited",
-                        "axisX": 565,
-                        "width": 725,
-                        "attTypeCode": 1,
-                        "height": 41
-                    },
-                    {
-                        "attType": "Invoice",
-                        "imageId": 3,
-                        "transformValue": "WuxiEAMedicalInstrumentsTechnologiesLimited",
-                        "sepValueList": [
-                            {
-                                "endy": 408,
-                                "endx": 1264,
-                                "originalValue": "WuxiEAMedicalInstrumentsTechnologiesLimited",
-                                "starty": 370,
-                                "startx": 587
-                            }
-                        ],
-                        "originalValue": "WuxiEAMedicalInstrumentsTechnologiesLimited",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "WuxiEAMedicalInstrumentsTechnologiesLimited",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 370,
-                        "sepValue": "WuxiEAMedicalInstrumentsTechnologiesLimited",
-                        "axisX": 587,
-                        "width": 677,
-                        "attTypeCode": 2,
-                        "height": 38
-                    },
-                    {
-                        "attType": "PackingList",
-                        "imageId": 4,
-                        "transformValue": "WuxiEAMedicalInstrumentsTechnologiesLimited",
-                        "sepValueList": [
-                            {
-                                "endy": 411,
-                                "endx": 1311,
-                                "originalValue": "WuxiEAMedicalInstrumentsTechnologiesLimited",
-                                "starty": 370,
-                                "startx": 301
-                            }
-                        ],
-                        "originalValue": "WuxiEAMedicalInstrumentsTechnologiesLimited",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "WuxiEAMedicalInstrumentsTechnologiesLimited",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 370,
-                        "sepValue": "WuxiEAMedicalInstrumentsTechnologiesLimited",
-                        "axisX": 301,
-                        "width": 1010,
-                        "attTypeCode": 3,
-                        "height": 41
-                    }
-                ],
-                "parsedValue": "无锡时代天使医疗器械科技有限公司",
-                "source_image": 2,
-                "originalValue": "无锡时代天使医疗器械科技有限公司",
-                "extractFrom": "nlp",
-                "normalizedValue": "无锡时代天使医疗器械科技有限公司",
-                "keyDesc": "生产销售单位名称",
-                "value": "无锡时代天使医疗器械科技有限公司",
-                "key": "ownerName"
-            },
-            {
-                "processBitMap": "0",
-                "sourceList": [
-                    {
-                        "attType": "Declaration",
-                        "imageId": 2,
-                        "transformValue": "3",
-                        "sepValueList": [
-                            {
-                                "endy": 840,
-                                "endx": 1796,
-                                "originalValue": "(USD)",
-                                "starty": 793,
-                                "startx": 1698
-                            },
-                            {
-                                "endy": 840,
-                                "endx": 1745,
-                                "originalValue": "2.00",
-                                "starty": 817,
-                                "startx": 1698
-                            }
-                        ],
-                        "originalValue": "(USD)2.00",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "(USD)2.00",
-                        "processBitMap": "0",
-                        "creditLevel": 0.9801,
-                        "axisY": 793,
-                        "sepValue": "(USD);;2.00",
-                        "axisX": 1698,
-                        "width": 98,
-                        "attTypeCode": 4,
-                        "height": 47
-                    },
-                    {
-                        "attType": "Contract",
-                        "imageId": 5,
-                        "transformValue": "3",
-                        "sepValueList": [
-                            {
-                                "endy": 1481,
-                                "endx": 1417,
-                                "originalValue": "2",
-                                "starty": 1452,
-                                "startx": 1394
-                            }
-                        ],
-                        "originalValue": "2",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "2",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 1452,
-                        "sepValue": "2",
-                        "axisX": 1394,
-                        "width": 23,
-                        "attTypeCode": 1,
-                        "height": 29
-                    },
-                    {
-                        "attType": "Invoice",
-                        "imageId": 3,
-                        "transformValue": "3",
-                        "sepValueList": [
-                            {
-                                "endy": 1641,
-                                "endx": 1378,
-                                "originalValue": "2",
-                                "starty": 1612,
-                                "startx": 1355
-                            }
-                        ],
-                        "originalValue": "2",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "2",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 1612,
-                        "sepValue": "2",
-                        "axisX": 1355,
-                        "width": 23,
-                        "attTypeCode": 2,
-                        "height": 29
-                    }
-                ],
-                "parsedValue": "运费(USD)2.00",
-                "source_image": 2,
-                "originalValue": "(USD)2.00",
-                "extractFrom": "nlp",
-                "normalizedValue": "(USD)2.00",
-                "keyDesc": "运费标记",
-                "value": "3",
-                "key": "feeMark"
-            },
-            {
-                "processBitMap": "0",
-                "sourceList": [
-                    {
-                        "attType": "Declaration",
-                        "imageId": 2,
-                        "transformValue": "USD",
-                        "sepValueList": [
-                            {
-                                "endy": 818,
-                                "endx": 1796,
-                                "originalValue": "USD",
-                                "starty": 793,
-                                "startx": 1698
-                            }
-                        ],
-                        "originalValue": "USD",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "USD",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 793,
-                        "sepValue": "USD",
-                        "axisX": 1698,
-                        "width": 98,
-                        "attTypeCode": 4,
-                        "height": 25
-                    }
-                ],
-                "parsedValue": "运费(USD)",
-                "source_image": 2,
-                "originalValue": "USD",
-                "extractFrom": "nlp",
-                "normalizedValue": "USD",
-                "keyDesc": "运费币制",
-                "value": "USD",
-                "key": "feeCurr"
-            },
-            {
-                "processBitMap": "0",
-                "sourceList": [
-                    {
-                        "attType": "Declaration",
-                        "imageId": 2,
-                        "transformValue": "2.00",
-                        "sepValueList": [
-                            {
-                                "endy": 840,
-                                "endx": 1745,
-                                "originalValue": "2.00",
-                                "starty": 817,
-                                "startx": 1698
-                            }
-                        ],
-                        "originalValue": "2.00",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "2.00",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 817,
-                        "sepValue": "2.00",
-                        "axisX": 1698,
-                        "width": 47,
-                        "attTypeCode": 4,
-                        "height": 23
-                    },
-                    {
-                        "attType": "Contract",
-                        "imageId": 5,
-                        "transformValue": "2",
-                        "sepValueList": [
-                            {
-                                "endy": 1481,
-                                "endx": 1417,
-                                "originalValue": "2",
-                                "starty": 1452,
-                                "startx": 1394
-                            }
-                        ],
-                        "originalValue": "2",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "2",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 1452,
-                        "sepValue": "2",
-                        "axisX": 1394,
-                        "width": 23,
-                        "attTypeCode": 1,
-                        "height": 29
-                    },
-                    {
-                        "attType": "Invoice",
-                        "imageId": 3,
-                        "transformValue": "2",
-                        "sepValueList": [
-                            {
-                                "endy": 1641,
-                                "endx": 1378,
-                                "originalValue": "2",
-                                "starty": 1612,
-                                "startx": 1355
-                            }
-                        ],
-                        "originalValue": "2",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "2",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 1612,
-                        "sepValue": "2",
-                        "axisX": 1355,
-                        "width": 23,
-                        "attTypeCode": 2,
-                        "height": 29
-                    }
-                ],
-                "parsedValue": "2.00",
-                "source_image": 2,
-                "originalValue": "2.00",
-                "extractFrom": "nlp",
-                "normalizedValue": "2.00",
-                "keyDesc": "运费率",
-                "value": "2.00",
-                "key": "feeRate"
-            },
-            {
-                "processBitMap": "0",
-                "sourceList": [
-                    {
-                        "attType": "Declaration",
-                        "imageId": 2,
-                        "transformValue": "3",
-                        "sepValueList": [
-                            {
-                                "endy": 842,
-                                "endx": 2012,
-                                "originalValue": "0.0100",
-                                "starty": 819,
-                                "startx": 1942
-                            }
-                        ],
-                        "originalValue": "0.0100",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "0.0100",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 819,
-                        "sepValue": "0.0100",
-                        "axisX": 1942,
-                        "width": 70,
-                        "attTypeCode": 4,
-                        "height": 23
-                    },
-                    {
-                        "attType": "Contract",
-                        "imageId": 5,
-                        "transformValue": "3",
-                        "sepValueList": [
-                            {
-                                "endy": 1483,
-                                "endx": 1616,
-                                "originalValue": "0.01",
-                                "starty": 1453,
-                                "startx": 1550
-                            }
-                        ],
-                        "originalValue": "0.01",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "0.01",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 1453,
-                        "sepValue": "0.01",
-                        "axisX": 1550,
-                        "width": 66,
-                        "attTypeCode": 1,
-                        "height": 30
-                    },
-                    {
-                        "attType": "Invoice",
-                        "imageId": 3,
-                        "transformValue": "3",
-                        "sepValueList": [
-                            {
-                                "endy": 1641,
-                                "endx": 1560,
-                                "originalValue": "0.01",
-                                "starty": 1612,
-                                "startx": 1500
-                            }
-                        ],
-                        "originalValue": "0.01",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "0.01",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 1612,
-                        "sepValue": "0.01",
-                        "axisX": 1500,
-                        "width": 60,
-                        "attTypeCode": 2,
-                        "height": 29
-                    }
-                ],
-                "parsedValue": "0.0100",
-                "source_image": 2,
-                "originalValue": "0.0100",
-                "extractFrom": "nlp",
-                "normalizedValue": "0.0100",
-                "keyDesc": "保费标记",
-                "value": "3",
-                "key": "insurMark"
-            },
-            {
-                "processBitMap": "0",
-                "sourceList": [
-                    {
-                        "attType": "Declaration",
-                        "imageId": 2,
-                        "transformValue": "0.0100",
-                        "sepValueList": [
-                            {
-                                "endy": 842,
-                                "endx": 2012,
-                                "originalValue": "0.0100",
-                                "starty": 819,
-                                "startx": 1942
-                            }
-                        ],
-                        "originalValue": "0.0100",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "0.0100",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 819,
-                        "sepValue": "0.0100",
-                        "axisX": 1942,
-                        "width": 70,
-                        "attTypeCode": 4,
-                        "height": 23
-                    },
-                    {
-                        "attType": "Contract",
-                        "imageId": 5,
-                        "transformValue": "0.01",
-                        "sepValueList": [
-                            {
-                                "endy": 1483,
-                                "endx": 1616,
-                                "originalValue": "0.01",
-                                "starty": 1453,
-                                "startx": 1550
-                            }
-                        ],
-                        "originalValue": "0.01",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "0.01",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 1453,
-                        "sepValue": "0.01",
-                        "axisX": 1550,
-                        "width": 66,
-                        "attTypeCode": 1,
-                        "height": 30
-                    },
-                    {
-                        "attType": "Invoice",
-                        "imageId": 3,
-                        "transformValue": "0.01",
-                        "sepValueList": [
-                            {
-                                "endy": 1641,
-                                "endx": 1560,
-                                "originalValue": "0.01",
-                                "starty": 1612,
-                                "startx": 1500
-                            }
-                        ],
-                        "originalValue": "0.01",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "0.01",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 1612,
-                        "sepValue": "0.01",
-                        "axisX": 1500,
-                        "width": 60,
-                        "attTypeCode": 2,
-                        "height": 29
-                    }
-                ],
-                "parsedValue": "0.0100",
-                "source_image": 2,
-                "originalValue": "0.0100",
-                "extractFrom": "nlp",
-                "normalizedValue": "0.0100",
-                "keyDesc": "保费率",
-                "value": "0.0100",
-                "key": "insurRate"
-            },
-            {
-                "processBitMap": "0",
-                "sourceList": [
-                    {
-                        "attType": "Contract",
-                        "imageId": 5,
-                        "transformValue": "6.62",
-                        "sepValueList": [
-                            {
-                                "endy": 1541,
-                                "endx": 1619,
-                                "originalValue": "6.62",
-                                "starty": 1512,
-                                "startx": 1550
-                            }
-                        ],
-                        "originalValue": "6.62",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "6.62",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 1512,
-                        "sepValue": "6.62",
-                        "axisX": 1550,
-                        "width": 69,
-                        "attTypeCode": 1,
-                        "height": 29
-                    },
-                    {
-                        "attType": "Invoice",
-                        "imageId": 3,
-                        "transformValue": "6.62",
-                        "sepValueList": [
-                            {
-                                "endy": 1696,
-                                "endx": 1563,
-                                "originalValue": "6.62",
-                                "starty": 1667,
-                                "startx": 1499
-                            }
-                        ],
-                        "originalValue": "6.62",
-                        "extractFrom": "nlp",
-                        "normalizedValue": "6.62",
-                        "processBitMap": "0",
-                        "creditLevel": 0.99,
-                        "axisY": 1667,
-                        "sepValue": "6.62",
-                        "axisX": 1499,
-                        "width": 64,
-                        "attTypeCode": 2,
-                        "height": 29
-                    }
-                ],
-                "parsedValue": "6.62",
-                "source_image": 5,
-                "originalValue": "6.62",
-                "extractFrom": "nlp",
-                "normalizedValue": "6.62",
-                "keyDesc": "总价总和",
-                "value": "6.62",
-                "key": "totalAmount"
-            },
-            {
-                "processBitMap": "0",
-                "sourceList": [],
-                "parsedValue": "",
-                "source_image": 0,
-                "originalValue": "N/M",
-                "extractFrom": "default",
-                "normalizedValue": "N/M",
-                "keyDesc": "标记唛码",
-                "value": "N/M",
-                "key": "markNo"
-            },
-            {
-                "processBitMap": "111111",
-                "sourceList": [],
-                "source_image": 0,
-                "normalizedValue": "",
-                "keyDesc": "承诺事项",
-                "value": "999999",
-                "key": "promiseItems"
+              "attType": "Declaration",
+              "imageId": 2,
+              "transformValue": "矫治器",
+              "originalValue": "矫治器",
+              "normalizedValue": "矫治器",
+              "processBitMap": "0",
+              "axisX": 598,
+              "sepValue": "矫治器",
+              "axisY": 1139,
+              "width": 50,
+              "attTypeCode": 4,
+              "height": 25
             }
-        ],
-        "preDecList": [
-            [
-                {
-                    "processBitMap": "0",
-                    "sourceList": [
-                        {
-                            "attType": "Declaration",
-                            "imageId": 2,
-                            "transformValue": "9021100090",
-                            "sepValueList": [
-                                {
-                                    "endy": 1166,
-                                    "endx": 500,
-                                    "originalValue": "9021100090",
-                                    "starty": 1145,
-                                    "startx": 409
-                                }
-                            ],
-                            "originalValue": "9021100090",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "9021100090",
-                            "processBitMap": "0",
-                            "creditLevel": 0.99,
-                            "axisY": 1145,
-                            "sepValue": "9021100090",
-                            "axisX": 409,
-                            "width": 91,
-                            "attTypeCode": 4,
-                            "height": 21
-                        },
-                        {
-                            "attType": "Contract",
-                            "imageId": 5,
-                            "transformValue": "9021100090",
-                            "sepValueList": [
-                                {
-                                    "endy": 1463,
-                                    "endx": 682,
-                                    "originalValue": "90211000",
-                                    "starty": 1431,
-                                    "startx": 555
-                                }
-                            ],
-                            "originalValue": "90211000",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "9021100090",
-                            "processBitMap": "2",
-                            "creditLevel": 0.99,
-                            "axisY": 1431,
-                            "sepValue": "90211000",
-                            "axisX": 555,
-                            "width": 127,
-                            "attTypeCode": 1,
-                            "height": 32
-                        },
-                        {
-                            "attType": "Invoice",
-                            "imageId": 3,
-                            "transformValue": "9021100090",
-                            "sepValueList": [
-                                {
-                                    "endy": 1623,
-                                    "endx": 696,
-                                    "originalValue": "90211000",
-                                    "starty": 1594,
-                                    "startx": 579
-                                }
-                            ],
-                            "originalValue": "90211000",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "9021100090",
-                            "processBitMap": "2",
-                            "creditLevel": 0.99,
-                            "axisY": 1594,
-                            "sepValue": "90211000",
-                            "axisX": 579,
-                            "width": 117,
-                            "attTypeCode": 2,
-                            "height": 29
-                        },
-                        {
-                            "attType": "Attributes",
-                            "imageId": 6,
-                            "transformValue": "9021100090",
-                            "sepValueList": [
-                                {
-                                    "endy": 1040,
-                                    "endx": 1572,
-                                    "originalValue": "9021100090",
-                                    "starty": 184,
-                                    "startx": 265
-                                }
-                            ],
-                            "originalValue": "9021100090",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "9021100090",
-                            "processBitMap": "0",
-                            "creditLevel": 1.0,
-                            "axisY": 184,
-                            "sepValue": "9021100090",
-                            "axisX": 265,
-                            "width": 1307,
-                            "attTypeCode": 5,
-                            "height": 856
-                        }
-                    ],
-                    "parsedValue": "9021100090",
-                    "source_image": 2,
-                    "originalValue": "9021100090",
-                    "extractFrom": "nlp",
-                    "normalizedValue": "9021100090",
-                    "keyDesc": "商品编号",
-                    "value": "9021100090",
-                    "key": "codeTs"
-                },
-                {
-                    "processBitMap": "1",
-                    "sourceList": [
-                        {
-                            "attType": "Declaration",
-                            "imageId": 2,
-                            "transformValue": "矫治器",
-                            "sepValueList": [
-                                {
-                                    "endy": 1167,
-                                    "endx": 650,
-                                    "originalValue": "矫治器",
-                                    "starty": 1145,
-                                    "startx": 596
-                                }
-                            ],
-                            "originalValue": "矫治器",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "矫治器",
-                            "processBitMap": "0",
-                            "creditLevel": 0.89,
-                            "axisY": 1145,
-                            "sepValue": "矫治器",
-                            "axisX": 596,
-                            "width": 54,
-                            "attTypeCode": 4,
-                            "height": 22
-                        },
-                        {
-                            "attType": "Contract",
-                            "imageId": 5,
-                            "transformValue": "矫治器(aligner)",
-                            "sepValueList": [
-                                {
-                                    "endy": 1484,
-                                    "endx": 465,
-                                    "originalValue": "矫治器(aligner)",
-                                    "starty": 1445,
-                                    "startx": 240
-                                }
-                            ],
-                            "originalValue": "矫治器(aligner)",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "矫治器(aligner)",
-                            "processBitMap": "0",
-                            "creditLevel": 0.99,
-                            "axisY": 1445,
-                            "sepValue": "矫治器(aligner)",
-                            "axisX": 240,
-                            "width": 225,
-                            "attTypeCode": 1,
-                            "height": 39
-                        },
-                        {
-                            "attType": "Invoice",
-                            "imageId": 3,
-                            "transformValue": "矫治器(aligner)",
-                            "sepValueList": [
-                                {
-                                    "endy": 1642,
-                                    "endx": 497,
-                                    "originalValue": "矫治器(aligner)",
-                                    "starty": 1607,
-                                    "startx": 285
-                                }
-                            ],
-                            "originalValue": "矫治器(aligner)",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "矫治器(aligner)",
-                            "processBitMap": "0",
-                            "creditLevel": 0.99,
-                            "axisY": 1607,
-                            "sepValue": "矫治器(aligner)",
-                            "axisX": 285,
-                            "width": 212,
-                            "attTypeCode": 2,
-                            "height": 35
-                        },
-                        {
-                            "attType": "PackingList",
-                            "imageId": 4,
-                            "transformValue": "矫治器(aligner)",
-                            "sepValueList": [
-                                {
-                                    "endy": 1578,
-                                    "endx": 841,
-                                    "originalValue": "矫治器(aligner)",
-                                    "starty": 1547,
-                                    "startx": 648
-                                }
-                            ],
-                            "originalValue": "矫治器(aligner)",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "矫治器(aligner)",
-                            "processBitMap": "0",
-                            "creditLevel": 0.99,
-                            "axisY": 1547,
-                            "sepValue": "矫治器(aligner)",
-                            "axisX": 648,
-                            "width": 193,
-                            "attTypeCode": 3,
-                            "height": 31
-                        },
-                        {
-                            "attType": "Attributes",
-                            "imageId": 6,
-                            "transformValue": "器具",
-                            "sepValueList": [
-                                {
-                                    "endy": 1040,
-                                    "endx": 1572,
-                                    "originalValue": "器具",
-                                    "starty": 184,
-                                    "startx": 265
-                                }
-                            ],
-                            "originalValue": "器具",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "器具",
-                            "processBitMap": "0",
-                            "creditLevel": 1.0,
-                            "axisY": 184,
-                            "sepValue": "器具",
-                            "axisX": 265,
-                            "width": 1307,
-                            "attTypeCode": 5,
-                            "height": 856
-                        }
-                    ],
-                    "parsedValue": "矫治器",
-                    "source_image": 2,
-                    "originalValue": "矫治器",
-                    "extractFrom": "nlp",
-                    "normalizedValue": "矫治器",
-                    "keyDesc": "商品名称",
-                    "value": "矫治器",
-                    "key": "gName"
-                },
-                {
-                    "processBitMap": "0",
-                    "sourceList": [
-                        {
-                            "attType": "Declaration",
-                            "imageId": 2,
-                            "transformValue": "2.3031",
-                            "sepValueList": [
-                                {
-                                    "endy": 1173,
-                                    "endx": 1305,
-                                    "originalValue": "2.3031",
-                                    "starty": 1150,
-                                    "startx": 1173
-                                }
-                            ],
-                            "originalValue": "2.3031",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "2.3031",
-                            "processBitMap": "0",
-                            "creditLevel": 0.99,
-                            "axisY": 1150,
-                            "sepValue": "2.3031",
-                            "axisX": 1173,
-                            "width": 132,
-                            "attTypeCode": 4,
-                            "height": 23
-                        },
-                        {
-                            "attType": "Contract",
-                            "imageId": 5,
-                            "transformValue": "2.3031",
-                            "sepValueList": [
-                                {
-                                    "endy": 1483,
-                                    "endx": 1093,
-                                    "originalValue": "2.3031",
-                                    "starty": 1450,
-                                    "startx": 997
-                                }
-                            ],
-                            "originalValue": "2.3031",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "2.3031",
-                            "processBitMap": "0",
-                            "creditLevel": 0.99,
-                            "axisY": 1450,
-                            "sepValue": "2.3031",
-                            "axisX": 997,
-                            "width": 96,
-                            "attTypeCode": 1,
-                            "height": 33
-                        },
-                        {
-                            "attType": "Invoice",
-                            "imageId": 3,
-                            "transformValue": "2.3031",
-                            "sepValueList": [
-                                {
-                                    "endy": 1640,
-                                    "endx": 1077,
-                                    "originalValue": "2.3031",
-                                    "starty": 1610,
-                                    "startx": 987
-                                }
-                            ],
-                            "originalValue": "2.3031",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "2.3031",
-                            "processBitMap": "0",
-                            "creditLevel": 0.99,
-                            "axisY": 1610,
-                            "sepValue": "2.3031",
-                            "axisX": 987,
-                            "width": 90,
-                            "attTypeCode": 2,
-                            "height": 30
-                        }
-                    ],
-                    "parsedValue": "2.3031/6.62/USD",
-                    "source_image": 2,
-                    "originalValue": "2.3031",
-                    "extractFrom": "nlp",
-                    "normalizedValue": "2.3031",
-                    "keyDesc": "单价",
-                    "value": "2.3031",
-                    "key": "declPrice"
-                },
-                {
-                    "processBitMap": "0",
-                    "sourceList": [
-                        {
-                            "attType": "Declaration",
-                            "imageId": 2,
-                            "transformValue": "USD",
-                            "sepValueList": [
-                                {
-                                    "endy": 1173,
-                                    "endx": 1305,
-                                    "originalValue": "USD",
-                                    "starty": 1150,
-                                    "startx": 1173
-                                }
-                            ],
-                            "originalValue": "USD",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "USD",
-                            "processBitMap": "0",
-                            "creditLevel": 0.99,
-                            "axisY": 1150,
-                            "sepValue": "USD",
-                            "axisX": 1173,
-                            "width": 132,
-                            "attTypeCode": 4,
-                            "height": 23
-                        },
-                        {
-                            "attType": "Contract",
-                            "imageId": 5,
-                            "transformValue": "USD",
-                            "sepValueList": [
-                                {
-                                    "endy": 1412,
-                                    "endx": 1082,
-                                    "originalValue": "USD",
-                                    "starty": 1378,
-                                    "startx": 1013
-                                }
-                            ],
-                            "originalValue": "USD",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "USD",
-                            "processBitMap": "0",
-                            "creditLevel": 0.99,
-                            "existTranscoding": "True",
-                            "axisY": 1378,
-                            "sepValue": "USD",
-                            "axisX": 1013,
-                            "width": 69,
-                            "attTypeCode": 1,
-                            "height": 34
-                        },
-                        {
-                            "attType": "Invoice",
-                            "imageId": 3,
-                            "transformValue": "USD",
-                            "sepValueList": [
-                                {
-                                    "endy": 1558,
-                                    "endx": 1066,
-                                    "originalValue": "USD",
-                                    "starty": 1528,
-                                    "startx": 1000
-                                }
-                            ],
-                            "originalValue": "USD",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "USD",
-                            "processBitMap": "0",
-                            "creditLevel": 0.99,
-                            "existTranscoding": "True",
-                            "axisY": 1528,
-                            "sepValue": "USD",
-                            "axisX": 1000,
-                            "width": 66,
-                            "attTypeCode": 2,
-                            "height": 30
-                        }
-                    ],
-                    "existTranscoding": "True",
-                    "parsedValue": "2.3031/6.62/USD",
-                    "source_image": 2,
-                    "originalValue": "USD",
-                    "extractFrom": "nlp",
-                    "normalizedValue": "USD",
-                    "keyDesc": "币制",
-                    "value": "USD",
-                    "key": "tradeCurr"
-                },
-                {
-                    "processBitMap": "0",
-                    "sourceList": [
-                        {
-                            "attType": "Declaration",
-                            "imageId": 2,
-                            "transformValue": "6.62",
-                            "sepValueList": [
-                                {
-                                    "endy": 1173,
-                                    "endx": 1305,
-                                    "originalValue": "6.62",
-                                    "starty": 1150,
-                                    "startx": 1173
-                                }
-                            ],
-                            "originalValue": "6.62",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "6.62",
-                            "processBitMap": "0",
-                            "creditLevel": 0.99,
-                            "axisY": 1150,
-                            "sepValue": "6.62",
-                            "axisX": 1173,
-                            "width": 132,
-                            "attTypeCode": 4,
-                            "height": 23
-                        },
-                        {
-                            "attType": "Contract",
-                            "imageId": 5,
-                            "transformValue": "4.61",
-                            "sepValueList": [
-                                {
-                                    "endy": 1482,
-                                    "endx": 1258,
-                                    "originalValue": "4.61",
-                                    "starty": 1452,
-                                    "startx": 1192
-                                }
-                            ],
-                            "originalValue": "4.61",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "4.61",
-                            "processBitMap": "0",
-                            "creditLevel": 0.99,
-                            "axisY": 1452,
-                            "sepValue": "4.61",
-                            "axisX": 1192,
-                            "width": 66,
-                            "attTypeCode": 1,
-                            "height": 30
-                        },
-                        {
-                            "attType": "Invoice",
-                            "imageId": 3,
-                            "transformValue": "4.61",
-                            "sepValueList": [
-                                {
-                                    "endy": 1640,
-                                    "endx": 1227,
-                                    "originalValue": "4.61",
-                                    "starty": 1611,
-                                    "startx": 1168
-                                }
-                            ],
-                            "originalValue": "4.61",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "4.61",
-                            "processBitMap": "0",
-                            "creditLevel": 0.99,
-                            "axisY": 1611,
-                            "sepValue": "4.61",
-                            "axisX": 1168,
-                            "width": 59,
-                            "attTypeCode": 2,
-                            "height": 29
-                        }
-                    ],
-                    "parsedValue": "2.3031/6.62/USD",
-                    "source_image": 2,
-                    "originalValue": "6.62",
-                    "extractFrom": "nlp",
-                    "normalizedValue": "6.62",
-                    "keyDesc": "总价",
-                    "value": "6.62",
-                    "key": "declTotal"
-                },
-                {
-                    "processBitMap": "0",
-                    "sourceList": [
-                        {
-                            "attType": "Declaration",
-                            "imageId": 2,
-                            "transformValue": "CHN",
-                            "sepValueList": [
-                                {
-                                    "endy": 1174,
-                                    "endx": 1493,
-                                    "originalValue": "中国",
-                                    "starty": 1151,
-                                    "startx": 1456
-                                }
-                            ],
-                            "originalValue": "中国",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "中国",
-                            "processBitMap": "0",
-                            "creditLevel": 0.99,
-                            "axisY": 1151,
-                            "sepValue": "中国",
-                            "axisX": 1456,
-                            "width": 37,
-                            "attTypeCode": 4,
-                            "height": 23
-                        }
-                    ],
-                    "existTranscoding": "True",
-                    "parsedValue": "中国",
-                    "source_image": 2,
-                    "originalValue": "中国",
-                    "extractFrom": "nlp",
-                    "normalizedValue": "中国",
-                    "keyDesc": "原产国",
-                    "value": "CHN",
-                    "key": "cusOriginCountry"
-                },
-                {
-                    "processBitMap": "0",
-                    "sourceList": [
-                        {
-                            "attType": "Declaration",
-                            "imageId": 2,
-                            "transformValue": "FRA",
-                            "sepValueList": [
-                                {
-                                    "endy": 1175,
-                                    "endx": 1734,
-                                    "originalValue": "法国",
-                                    "starty": 1155,
-                                    "startx": 1696
-                                }
-                            ],
-                            "originalValue": "法国",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "法国",
-                            "processBitMap": "0",
-                            "creditLevel": 0.99,
-                            "axisY": 1155,
-                            "sepValue": "法国",
-                            "axisX": 1696,
-                            "width": 38,
-                            "attTypeCode": 4,
-                            "height": 20
-                        },
-                        {
-                            "attType": "Contract",
-                            "imageId": 5,
-                            "transformValue": "FRA",
-                            "sepValueList": [
-                                {
-                                    "endy": 1881,
-                                    "endx": 1542,
-                                    "originalValue": "france",
-                                    "starty": 1851,
-                                    "startx": 1443
-                                }
-                            ],
-                            "originalValue": "france",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "france",
-                            "processBitMap": "0",
-                            "creditLevel": 0.99,
-                            "existTranscoding": "True",
-                            "axisY": 1851,
-                            "sepValue": "france",
-                            "axisX": 1443,
-                            "width": 99,
-                            "attTypeCode": 1,
-                            "height": 30
-                        },
-                        {
-                            "attType": "Invoice",
-                            "imageId": 3,
-                            "transformValue": "FRA",
-                            "sepValueList": [
-                                {
-                                    "endy": 1997,
-                                    "endx": 1410,
-                                    "originalValue": "france",
-                                    "starty": 1968,
-                                    "startx": 1317
-                                }
-                            ],
-                            "originalValue": "france",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "france",
-                            "processBitMap": "0",
-                            "creditLevel": 0.99,
-                            "existTranscoding": "True",
-                            "axisY": 1968,
-                            "sepValue": "france",
-                            "axisX": 1317,
-                            "width": 93,
-                            "attTypeCode": 2,
-                            "height": 29
-                        }
-                    ],
-                    "existTranscoding": "True",
-                    "parsedValue": "法国",
-                    "source_image": 2,
-                    "originalValue": "法国",
-                    "extractFrom": "nlp",
-                    "normalizedValue": "法国",
-                    "keyDesc": "最终目的国",
-                    "value": "FRA",
-                    "key": "destinationCountry"
-                },
-                {
-                    "processBitMap": "0",
-                    "sourceList": [
-                        {
-                            "attType": "Declaration",
-                            "imageId": 2,
-                            "transformValue": "1",
-                            "sepValueList": [
-                                {
-                                    "endy": 1180,
-                                    "endx": 2235,
-                                    "originalValue": "照章税",
-                                    "starty": 1157,
-                                    "startx": 2165
-                                }
-                            ],
-                            "originalValue": "照章税",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "照章税",
-                            "processBitMap": "0",
-                            "creditLevel": 0.99,
-                            "axisY": 1157,
-                            "sepValue": "照章税",
-                            "axisX": 2165,
-                            "width": 70,
-                            "attTypeCode": 4,
-                            "height": 23
-                        }
-                    ],
-                    "existTranscoding": "True",
-                    "parsedValue": "照章税",
-                    "source_image": 2,
-                    "originalValue": "照章税",
-                    "extractFrom": "nlp",
-                    "normalizedValue": "照章税",
-                    "keyDesc": "征免",
-                    "value": "1",
-                    "key": "dutyMode"
-                },
-                {
-                    "processBitMap": "0",
-                    "sourceList": [
-                        {
-                            "attType": "Declaration",
-                            "imageId": 2,
-                            "transformValue": "32029",
-                            "sepValueList": [
-                                {
-                                    "endy": 1177,
-                                    "endx": 2010,
-                                    "originalValue": "中国无锡",
-                                    "starty": 1156,
-                                    "startx": 1942
-                                }
-                            ],
-                            "originalValue": "中国无锡",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "中国无锡",
-                            "processBitMap": "0",
-                            "creditLevel": 0.99,
-                            "axisY": 1156,
-                            "sepValue": "中国无锡",
-                            "axisX": 1942,
-                            "width": 68,
-                            "attTypeCode": 4,
-                            "height": 21
-                        }
-                    ],
-                    "existTranscoding": "True",
-                    "parsedValue": "中国无锡",
-                    "source_image": 2,
-                    "originalValue": "中国无锡",
-                    "extractFrom": "nlp",
-                    "normalizedValue": "中国无锡",
-                    "keyDesc": "境内货源地",
-                    "value": "32029",
-                    "key": "districtCode"
-                },
-                {
-                    "processBitMap": "1111111111",
-                    "sourceList": [
-                        {
-                            "attType": "Declaration",
-                            "imageId": 2,
-                            "transformValue": "{'品牌类型': ('品牌类型', None, 1), '出口享惠情况': ('出口享惠情况', None, 1), '用途': ('用途', None, 1), '品牌(中文或外文名称)': ('品牌(中文或外文名称)', 无中文及外文品牌, 1), '材质': ('材质', None, 1), '型号': ('型号', None, 1), '技术参数': ('技术参数', None, 1), '如有医疗器械注册编号请申报注册编号': ('如有医疗器械注册编号请申报注册编号', None, 1), 'GTIN': ('GTIN', None, 1), 'CAS': ('CAS', None, 1), '其他': ('其他', '', 1)}",
-                            "sepValueList": [
-                                {
-                                    "endy": 1030,
-                                    "endx": 191,
-                                    "originalValue": "无",
-                                    "starty": 1003,
-                                    "startx": 164
-                                },
-                                {
-                                    "endy": 1030,
-                                    "endx": 191,
-                                    "originalValue": "无",
-                                    "starty": 1003,
-                                    "startx": 164
-                                }
-                            ],
-                            "originalValue": "无无",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "无无",
-                            "processBitMap": "1",
-                            "creditLevel": 0.9801,
-                            "axisY": 1003,
-                            "sepValue": "无;;无",
-                            "axisX": 164,
-                            "width": 27,
-                            "attTypeCode": 4,
-                            "height": 27
-                        },
-                        {
-                            "attType": "Invoice",
-                            "imageId": 3,
-                            "transformValue": "{'品牌类型': ('品牌类型', None, 1), '出口享惠情况': ('出口享惠情况', None, 1), '用途': ('用途', None, 1), '品牌(中文或外文名称)': ('品牌(中文或外文名称)', Haufre牌,无中文品牌, 1), '材质': ('材质', None, 1), '型号': ('型号', None, 1), '技术参数': ('技术参数', None, 1), '如有医疗器械注册编号请申报注册编号': ('如有医疗器械注册编号请申报注册编号', None, 1), 'GTIN': ('GTIN', None, 1), 'CAS': ('CAS', None, 1), '其他': ('其他', '', 1)}",
-                            "sepValueList": [
-                                {
-                                    "endy": 1642,
-                                    "endx": 497,
-                                    "originalValue": "Haufre",
-                                    "starty": 1568,
-                                    "startx": 285
-                                },
-                                {
-                                    "endy": 1642,
-                                    "endx": 497,
-                                    "originalValue": "矫治器(aligner)",
-                                    "starty": 1607,
-                                    "startx": 285
-                                }
-                            ],
-                            "originalValue": "Haufre矫治器(aligner)",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "Haufre矫治器(aligner)",
-                            "processBitMap": "1",
-                            "creditLevel": 0.7424999999999999,
-                            "axisY": 1568,
-                            "sepValue": "Haufre;;矫治器(aligner)",
-                            "axisX": 285,
-                            "width": 212,
-                            "attTypeCode": 2,
-                            "height": 74
-                        },
-                        {
-                            "attType": "Attributes",
-                            "imageId": 6,
-                            "transformValue": "{'品牌类型': ('品牌类型', '境内自主品牌', 1), '出口享惠情况': ('出口享惠情况', '出口货物不能确定在最', 1), '用途': ('用途', '适用于正畸治疗,采取持续的外力调整牙齿位置使其恢复正确咬合关系或用于巩固牙颌畸形矫治完成后的疗效。', 1), '品牌(中文或外文名称)': ('品牌(中文或外文名称)', Angel Aligner牌,无中文品牌, 1), '材质': ('材质', '无托槽隐形牙畸形矫治器是由透明的热塑性聚氨酯材料或透明的热塑性共聚多酯-聚氨酯多层复合材料热压制成的产品,同', 1), '型号': ('型号', 'Retainer', 1), '技术参数': ('技术参数', '无', 1), '如有医疗器械注册编号请申报注册编号': ('如有医疗器械注册编号请申报注册编号', '苏械注准20212170198', 1), 'GTIN': ('GTIN', '', 1), 'CAS': ('CAS', '', 1), '其他': ('其他', '', 1)}",
-                            "sepValueList": [
-                                {
-                                    "endy": 1040,
-                                    "endx": 1572,
-                                    "originalValue": "C1202511190548 申报要素 商品信息:9021100090-其他矫形或骨折用器具 规格型号: 1.品牌类型: 境内自主品牌 2.出口享惠情况: : 出口货物不能确定在最终目的国(地区)享受优惠关税 3.用途: 适用于正畸治疗,采取持续的外力调整牙齿位置使其恢复正确咬合关系 或用于巩固牙颌畸形矫治完成后的疗效。 4.品牌(中文或外文名称): Angel Aligner 5.材质: 无托槽隐形牙畸形矫治器是由透明的热塑性聚氨酯材料或透明的热塑 性共聚多酯-聚氨酯多层复合材料热压制成的产品,同时根据临床设计 可以选配热塑性聚氨酯材料制成的牵引附件。牵引附件通过丙烯酸酯 聚氨酯制成的粘接剂粘接于产品外表面。 6.型号: Retainer 7.技术参数: 8.如有医疗器械注册编号请申报注册编号: 苏 苏械注准20212170198 9.GTIN: 无 10.CAS: 11.其他:",
-                                    "starty": 184,
-                                    "startx": 265
-                                }
-                            ],
-                            "originalValue": "C1202511190548 申报要素 商品信息:9021100090-其他矫形或骨折用器具 规格型号: 1.品牌类型: 境内自主品牌 2.出口享惠情况: : 出口货物不能确定在最终目的国(地区)享受优惠关税 3.用途: 适用于正畸治疗,采取持续的外力调整牙齿位置使其恢复正确咬合关系 或用于巩固牙颌畸形矫治完成后的疗效。 4.品牌(中文或外文名称): Angel Aligner 5.材质: 无托槽隐形牙畸形矫治器是由透明的热塑性聚氨酯材料或透明的热塑 性共聚多酯-聚氨酯多层复合材料热压制成的产品,同时根据临床设计 可以选配热塑性聚氨酯材料制成的牵引附件。牵引附件通过丙烯酸酯 聚氨酯制成的粘接剂粘接于产品外表面。 6.型号: Retainer 7.技术参数: 8.如有医疗器械注册编号请申报注册编号: 苏 苏械注准20212170198 9.GTIN: 无 10.CAS: 11.其他:",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "C1202511190548 申报要素 商品信息:9021100090-其他矫形或骨折用器具 规格型号: 1.品牌类型: 境内自主品牌 2.出口享惠情况: : 出口货物不能确定在最终目的国(地区)享受优惠关税 3.用途: 适用于正畸治疗,采取持续的外力调整牙齿位置使其恢复正确咬合关系 或用于巩固牙颌畸形矫治完成后的疗效。 4.品牌(中文或外文名称): Angel Aligner 5.材质: 无托槽隐形牙畸形矫治器是由透明的热塑性聚氨酯材料或透明的热塑 性共聚多酯-聚氨酯多层复合材料热压制成的产品,同时根据临床设计 可以选配热塑性聚氨酯材料制成的牵引附件。牵引附件通过丙烯酸酯 聚氨酯制成的粘接剂粘接于产品外表面。 6.型号: Retainer 7.技术参数: 8.如有医疗器械注册编号请申报注册编号: 苏 苏械注准20212170198 9.GTIN: 无 10.CAS: 11.其他:",
-                            "processBitMap": "0",
-                            "creditLevel": 1.0,
-                            "axisY": 184,
-                            "sepValue": "C1202511190548 申报要素 商品信息:9021100090-其他矫形或骨折用器具 规格型号: 1.品牌类型: 境内自主品牌 2.出口享惠情况: : 出口货物不能确定在最终目的国(地区)享受优惠关税 3.用途: 适用于正畸治疗,采取持续的外力调整牙齿位置使其恢复正确咬合关系 或用于巩固牙颌畸形矫治完成后的疗效。 4.品牌(中文或外文名称): Angel Aligner 5.材质: 无托槽隐形牙畸形矫治器是由透明的热塑性聚氨酯材料或透明的热塑 性共聚多酯-聚氨酯多层复合材料热压制成的产品,同时根据临床设计 可以选配热塑性聚氨酯材料制成的牵引附件。牵引附件通过丙烯酸酯 聚氨酯制成的粘接剂粘接于产品外表面。 6.型号: Retainer 7.技术参数: 8.如有医疗器械注册编号请申报注册编号: 苏 苏械注准20212170198 9.GTIN: 无 10.CAS: 11.其他:",
-                            "axisX": 265,
-                            "width": 1307,
-                            "attTypeCode": 5,
-                            "height": 856
-                        }
-                    ],
-                    "parsedValue": "无无",
-                    "source_image": 2,
-                    "originalValue": "[('品牌类型', '1', 1), ('出口享惠情况', '2', 1), ('用途', '适用于正畸治疗,采取持续的外力调整牙齿位置使其恢复正确咬合关系或用于巩固牙颌畸形矫治完成后的疗效。', 1), ('品牌', 'Angel Aligner', 1), ('材质', '无托槽隐形牙畸形矫治器是由透明的热塑性聚氨酯材料或透明的热塑性共聚多酯-聚氨酯多层复合材料热压制成的产品,同', 1), ('型号', 'Retainer', 1), ('技术参数', '无', 1), ('如有医疗器械注册编号请申报注册编号', '苏械注准20212170198', 1), ('GTIN', '', '1'), ('CAS', '', '1')]",
-                    "extractFrom": "nlp",
-                    "normalizedValue": "[('品牌类型', '1', 1), ('出口享惠情况', '2', 1), ('用途', '适用于正畸治疗,采取持续的外力调整牙齿位置使其恢复正确咬合关系或用于巩固牙颌畸形矫治完成后的疗效。', 1), ('品牌', 'Angel Aligner', 1), ('材质', '无托槽隐形牙畸形矫治器是由透明的热塑性聚氨酯材料或透明的热塑性共聚多酯-聚氨酯多层复合材料热压制成的产品,同', 1), ('型号', 'Retainer', 1), ('技术参数', '无', 1), ('如有医疗器械注册编号请申报注册编号', '苏械注准20212170198', 1), ('GTIN', '', '1'), ('CAS', '', '1')]",
-                    "keyDesc": "规格型号",
-                    "value": "1|2|适用于正畸治疗，采取持续的外力调整牙齿位置使其恢复正确咬合关系或用于巩固牙颌畸形矫治完成后的疗效。|Angel Aligner|无托槽隐形牙畸形矫治器是由透明的热塑性聚氨酯材料或透明的热塑性共聚多酯-聚氨酯多层复合材料热压制成的产品，同|Retainer|无|苏械注准20212170198||",
-                    "key": "gModel"
-                },
-                {
-                    "processBitMap": "0",
-                    "sourceList": [
-                        {
-                            "attType": "PackingList",
-                            "imageId": 4,
-                            "transformValue": "0.01",
-                            "sepValueList": [
-                                {
-                                    "endy": 1578,
-                                    "endx": 1365,
-                                    "originalValue": "0.01",
-                                    "starty": 1550,
-                                    "startx": 1307
-                                }
-                            ],
-                            "originalValue": "0.01",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "0.01",
-                            "processBitMap": "0",
-                            "creditLevel": 0.99,
-                            "axisY": 1550,
-                            "sepValue": "0.01",
-                            "axisX": 1307,
-                            "width": 58,
-                            "attTypeCode": 3,
-                            "height": 28
-                        }
-                    ],
-                    "parsedValue": "0.01",
-                    "source_image": 4,
-                    "originalValue": "0.01",
-                    "extractFrom": "nlp",
-                    "normalizedValue": "0.01",
-                    "keyDesc": "净重单项",
-                    "value": "0.01",
-                    "key": "gnetWt"
-                },
-                {
-                    "processBitMap": "0",
-                    "sourceList": [
-                        {
-                            "attType": "PackingList",
-                            "imageId": 4,
-                            "transformValue": "0.31",
-                            "sepValueList": [
-                                {
-                                    "endy": 1577,
-                                    "endx": 1226,
-                                    "originalValue": "0.31",
-                                    "starty": 1550,
-                                    "startx": 1170
-                                }
-                            ],
-                            "originalValue": "0.31",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "0.31",
-                            "processBitMap": "0",
-                            "creditLevel": 0.99,
-                            "axisY": 1550,
-                            "sepValue": "0.31",
-                            "axisX": 1170,
-                            "width": 56,
-                            "attTypeCode": 3,
-                            "height": 27
-                        }
-                    ],
-                    "parsedValue": "0.31",
-                    "source_image": 4,
-                    "originalValue": "0.31",
-                    "extractFrom": "nlp",
-                    "normalizedValue": "0.31",
-                    "keyDesc": "毛重单项",
-                    "value": "0.31",
-                    "key": "ggrossWt"
-                },
-                {
-                    "processBitMap": "0",
-                    "sourceList": [],
-                    "normalizedValue": "035",
-                    "keyDesc": "法定第一单位",
-                    "value": "035",
-                    "key": "unit1"
-                },
-                {
-                    "processBitMap": "0",
-                    "sourceList": [
-                        {
-                            "attType": "Declaration",
-                            "imageId": 2,
-                            "transformValue": "0.0100",
-                            "sepValueList": [
-                                {
-                                    "endy": 837,
-                                    "endx": 1247,
-                                    "originalValue": "0.0100",
-                                    "starty": 813,
-                                    "startx": 1176
-                                }
-                            ],
-                            "originalValue": "0.0100",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "0.0100",
-                            "processBitMap": "0",
-                            "creditLevel": 0.99,
-                            "axisY": 813,
-                            "sepValue": "0.0100",
-                            "axisX": 1176,
-                            "width": 71,
-                            "attTypeCode": 4,
-                            "height": 24
-                        },
-                        {
-                            "attType": "PackingList",
-                            "imageId": 4,
-                            "transformValue": "0.01",
-                            "sepValueList": [
-                                {
-                                    "endy": 1641,
-                                    "endx": 1364,
-                                    "originalValue": "0.01",
-                                    "starty": 1613,
-                                    "startx": 1304
-                                }
-                            ],
-                            "originalValue": "0.01",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "0.01",
-                            "processBitMap": "0",
-                            "creditLevel": 0.99,
-                            "axisY": 1613,
-                            "sepValue": "0.01",
-                            "axisX": 1304,
-                            "width": 60,
-                            "attTypeCode": 3,
-                            "height": 28
-                        }
-                    ],
-                    "parsedValue": "0.0100",
-                    "source_image": 2,
-                    "originalValue": "0.0100",
-                    "extractFrom": "nlp",
-                    "normalizedValue": "0.0100",
-                    "keyDesc": "法定第一数量",
-                    "value": "0.0100",
-                    "key": "qty1"
-                },
-                {
-                    "processBitMap": "0",
-                    "sourceList": [
-                        {
-                            "attType": "Declaration",
-                            "imageId": 2,
-                            "transformValue": "2",
-                            "sepValueList": [
-                                {
-                                    "endy": 1169,
-                                    "endx": 923,
-                                    "originalValue": "2",
-                                    "starty": 1149,
-                                    "startx": 888
-                                }
-                            ],
-                            "originalValue": "2",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "2",
-                            "processBitMap": "0",
-                            "creditLevel": 0.99,
-                            "axisY": 1149,
-                            "sepValue": "2",
-                            "axisX": 888,
-                            "width": 35,
-                            "attTypeCode": 4,
-                            "height": 20
-                        },
-                        {
-                            "attType": "PackingList",
-                            "imageId": 4,
-                            "transformValue": "2",
-                            "sepValueList": [
-                                {
-                                    "endy": 1640,
-                                    "endx": 1073,
-                                    "originalValue": "2",
-                                    "starty": 1613,
-                                    "startx": 1051
-                                }
-                            ],
-                            "originalValue": "2",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "2",
-                            "processBitMap": "0",
-                            "creditLevel": 0.99,
-                            "axisY": 1613,
-                            "sepValue": "2",
-                            "axisX": 1051,
-                            "width": 22,
-                            "attTypeCode": 3,
-                            "height": 27
-                        }
-                    ],
-                    "parsedValue": "2/个",
-                    "source_image": 2,
-                    "originalValue": "2",
-                    "extractFrom": "nlp",
-                    "normalizedValue": "2",
-                    "keyDesc": "成交数量",
-                    "value": "2",
-                    "key": "gQty"
-                },
-                {
-                    "processBitMap": "0",
-                    "sourceList": [
-                        {
-                            "attType": "Declaration",
-                            "imageId": 2,
-                            "transformValue": "007",
-                            "sepValueList": [
-                                {
-                                    "endy": 1169,
-                                    "endx": 923,
-                                    "originalValue": "个",
-                                    "starty": 1149,
-                                    "startx": 888
-                                }
-                            ],
-                            "originalValue": "个",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "个",
-                            "processBitMap": "0",
-                            "creditLevel": 0.99,
-                            "axisY": 1149,
-                            "sepValue": "个",
-                            "axisX": 888,
-                            "width": 35,
-                            "attTypeCode": 4,
-                            "height": 20
-                        },
-                        {
-                            "attType": "PackingList",
-                            "imageId": 4,
-                            "transformValue": "007",
-                            "sepValueList": [
-                                {
-                                    "endy": 1525,
-                                    "endx": 1120,
-                                    "originalValue": "数量(个)Quantity",
-                                    "starty": 1429,
-                                    "startx": 1001
-                                }
-                            ],
-                            "originalValue": "数量(个)Quantity",
-                            "extractFrom": "nlp",
-                            "normalizedValue": "数量(个)Quantity",
-                            "processBitMap": "1",
-                            "creditLevel": 0.940896,
-                            "existTranscoding": "True",
-                            "axisY": 1429,
-                            "sepValue": "数量(个)Quantity",
-                            "axisX": 1001,
-                            "width": 119,
-                            "attTypeCode": 3,
-                            "height": 96
-                        }
-                    ],
-                    "existTranscoding": "True",
-                    "parsedValue": "2/个",
-                    "source_image": 2,
-                    "originalValue": "个",
-                    "extractFrom": "nlp",
-                    "normalizedValue": "个",
-                    "keyDesc": "成交单位",
-                    "value": "007",
-                    "key": "gUnit"
-                }
-            ]
-        ],
-        "resultCode": 0,
-        "operateImage": [
+          ],
+          "source_image": 2,
+          "originalValue": "矫治器",
+          "normalizedValue": "矫治器",
+          "keyDesc": "商品名称及规格型号",
+          "value": "矫治器",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
             {
-                "callOcrOpen": true,
-                "imageWidth": "873",
-                "originalFileName": "7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
-                "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/0_7E69958045FE14F0E90FE2C96DDB84F7669F.pdf.txt",
-                "imageId": 1,
-                "pdfDocPage": 0,
-                "extractSource": "nlp",
-                "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
-                "imageHeight": "1797",
-                "preAttTypeCode": 0,
-                "originalImageWidth": "873",
-                "parseCode": 5,
-                "inputDocType": 1,
-                "imageUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/0_7E69958045FE14F0E90FE2C96DDB84F7669F.pdf.png",
-                "angle": 0,
-                "classifySource": "nlp",
-                "originalImageHeight": "1797",
-                "attTypeCode": 13,
-                "imageSuffix": "png"
-            },
-            {
-                "callOcrOpen": true,
-                "imageWidth": "2613",
-                "originalFileName": "7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
-                "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/1_7E69958045FE14F0E90FE2C96DDB84F7669F.pdf.txt",
-                "imageId": 2,
-                "pdfDocPage": 1,
-                "extractSource": "nlp",
-                "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
-                "imageHeight": "1779",
-                "preAttTypeCode": 0,
-                "originalImageWidth": "1779",
-                "parseCode": 5,
-                "inputDocType": 1,
-                "imageUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/1_7E69958045FE14F0E90FE2C96DDB84F7669F.pdf.png",
-                "angle": 90,
-                "classifySource": "nlp",
-                "originalImageHeight": "2613",
-                "attTypeCode": 4,
-                "imageSuffix": "png"
-            },
-            {
-                "callOcrOpen": true,
-                "imageWidth": "1782",
-                "originalFileName": "7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
-                "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/2_7E69958045FE14F0E90FE2C96DDB84F7669F.pdf.txt",
-                "imageId": 3,
-                "pdfDocPage": 2,
-                "extractSource": "nlp",
-                "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
-                "imageHeight": "2610",
-                "preAttTypeCode": 0,
-                "originalImageWidth": "1782",
-                "parseCode": 5,
-                "inputDocType": 1,
-                "imageUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/2_7E69958045FE14F0E90FE2C96DDB84F7669F.pdf.png",
-                "angle": 0,
-                "classifySource": "nlp",
-                "originalImageHeight": "2610",
-                "attTypeCode": 2,
-                "imageSuffix": "png"
-            },
-            {
-                "callOcrOpen": true,
-                "imageWidth": "1779",
-                "originalFileName": "7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
-                "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/3_7E69958045FE14F0E90FE2C96DDB84F7669F.pdf.txt",
-                "imageId": 4,
-                "pdfDocPage": 3,
-                "extractSource": "nlp",
-                "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
-                "imageHeight": "2604",
-                "preAttTypeCode": 0,
-                "originalImageWidth": "1779",
-                "parseCode": 5,
-                "inputDocType": 1,
-                "imageUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/3_7E69958045FE14F0E90FE2C96DDB84F7669F.pdf.png",
-                "angle": 0,
-                "classifySource": "nlp",
-                "originalImageHeight": "2604",
-                "attTypeCode": 3,
-                "imageSuffix": "png"
-            },
-            {
-                "callOcrOpen": true,
-                "imageWidth": "1782",
-                "originalFileName": "7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
-                "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/4_7E69958045FE14F0E90FE2C96DDB84F7669F.pdf.txt",
-                "imageId": 5,
-                "pdfDocPage": 4,
-                "extractSource": "nlp",
-                "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
-                "imageHeight": "2601",
-                "preAttTypeCode": 0,
-                "originalImageWidth": "1782",
-                "parseCode": 5,
-                "inputDocType": 1,
-                "imageUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/4_7E69958045FE14F0E90FE2C96DDB84F7669F.pdf.png",
-                "angle": 0,
-                "classifySource": "nlp",
-                "originalImageHeight": "2601",
-                "attTypeCode": 1,
-                "imageSuffix": "png"
-            },
-            {
-                "callOcrOpen": true,
-                "imageWidth": "1782",
-                "originalFileName": "7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
-                "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/5_7E69958045FE14F0E90FE2C96DDB84F7669F.pdf.txt",
-                "imageId": 6,
-                "pdfDocPage": 5,
-                "extractSource": "nlp",
-                "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
-                "imageHeight": "2604",
-                "preAttTypeCode": 0,
-                "originalImageWidth": "1782",
-                "parseCode": 5,
-                "inputDocType": 1,
-                "imageUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/5_7E69958045FE14F0E90FE2C96DDB84F7669F.pdf.png",
-                "angle": 0,
-                "classifySource": "nlp",
-                "originalImageHeight": "2604",
-                "attTypeCode": 5,
-                "imageSuffix": "png"
-            },
-            {
-                "callOcrOpen": true,
-                "imageWidth": "1782",
-                "originalFileName": "7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
-                "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/6_7E69958045FE14F0E90FE2C96DDB84F7669F.pdf.txt",
-                "imageId": 7,
-                "pdfDocPage": 6,
-                "extractSource": "nlp",
-                "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
-                "imageHeight": "2610",
-                "preAttTypeCode": 0,
-                "originalImageWidth": "1782",
-                "parseCode": 5,
-                "inputDocType": 1,
-                "imageUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/6_7E69958045FE14F0E90FE2C96DDB84F7669F.pdf.png",
-                "angle": 0,
-                "classifySource": "nlp",
-                "originalImageHeight": "2610",
-                "attTypeCode": 9,
-                "imageSuffix": "png"
-            },
-            {
-                "callOcrOpen": true,
-                "imageWidth": "1779",
-                "originalFileName": "7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
-                "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/7_7E69958045FE14F0E90FE2C96DDB84F7669F.pdf.txt",
-                "imageId": 8,
-                "pdfDocPage": 7,
-                "extractSource": "nlp",
-                "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
-                "imageHeight": "2598",
-                "preAttTypeCode": 0,
-                "originalImageWidth": "1779",
-                "parseCode": 5,
-                "inputDocType": 1,
-                "imageUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/7_7E69958045FE14F0E90FE2C96DDB84F7669F.pdf.png",
-                "angle": 0,
-                "classifySource": "nlp",
-                "originalImageHeight": "2598",
-                "attTypeCode": 9,
-                "imageSuffix": "png"
-            },
-            {
-                "callOcrOpen": true,
-                "imageWidth": "1782",
-                "originalFileName": "7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
-                "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/8_7E69958045FE14F0E90FE2C96DDB84F7669F.pdf.txt",
-                "imageId": 9,
-                "pdfDocPage": 8,
-                "extractSource": "nlp",
-                "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
-                "imageHeight": "2613",
-                "preAttTypeCode": 0,
-                "originalImageWidth": "1782",
-                "parseCode": 5,
-                "inputDocType": 1,
-                "imageUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/8_7E69958045FE14F0E90FE2C96DDB84F7669F.pdf.png",
-                "angle": 0,
-                "classifySource": "nlp",
-                "originalImageHeight": "2613",
-                "attTypeCode": 2,
-                "imageSuffix": "png"
+              "attType": "Declaration",
+              "imageId": 2,
+              "transformValue": "2.3031/6.62/USD",
+              "originalValue": "2.3031/6.62/USD",
+              "normalizedValue": "2.3031/6.62/USD",
+              "processBitMap": "0",
+              "axisX": 1177,
+              "sepValue": "2.3031/6.62/USD",
+              "axisY": 1139,
+              "width": 125,
+              "attTypeCode": 4,
+              "height": 30
             }
-        ],
-        "preDecContainer": [],
-        "preDecLicense": [],
-        "preDecDoc": [
+          ],
+          "source_image": 2,
+          "originalValue": "2.3031/6.62/USD",
+          "normalizedValue": "2.3031/6.62/USD",
+          "keyDesc": "单价/总价/币制",
+          "value": "2.3031/6.62/USD",
+          "key": "declPrice"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
             {
-                "attFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/ebao/input/E691e9adc38f34347476c8f10/E691e9adc38f34347476c8f10/preDecDoc_1.pdf",
-                "attSeqNo": "1",
-                "attTypeCode": "1"
-            },
-            {
-                "attFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/ebao/input/E691e9adc38f34347476c8f10/E691e9adc38f34347476c8f10/preDecDoc_13.pdf",
-                "attSeqNo": "2",
-                "attTypeCode": "13"
-            },
-            {
-                "attFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/ebao/input/E691e9adc38f34347476c8f10/E691e9adc38f34347476c8f10/preDecDoc_2.pdf",
-                "attSeqNo": "3",
-                "attTypeCode": "2"
-            },
-            {
-                "attFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/ebao/input/E691e9adc38f34347476c8f10/E691e9adc38f34347476c8f10/preDecDoc_3.pdf",
-                "attSeqNo": "4",
-                "attTypeCode": "3"
-            },
-            {
-                "attFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/ebao/input/E691e9adc38f34347476c8f10/E691e9adc38f34347476c8f10/preDecDoc_4.pdf",
-                "attSeqNo": "5",
-                "attTypeCode": "4"
-            },
-            {
-                "attFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/ebao/input/E691e9adc38f34347476c8f10/E691e9adc38f34347476c8f10/preDecDoc_5.pdf",
-                "attSeqNo": "6",
-                "attTypeCode": "5"
-            },
-            {
-                "attFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/ebao/input/E691e9adc38f34347476c8f10/E691e9adc38f34347476c8f10/preDecDoc_9.pdf",
-                "attSeqNo": "7",
-                "attTypeCode": "9"
+              "attType": "Declaration",
+              "imageId": 2,
+              "transformValue": "中国",
+              "originalValue": "中国",
+              "normalizedValue": "中国",
+              "processBitMap": "0",
+              "axisX": 1454,
+              "sepValue": "中国",
+              "axisY": 1139,
+              "width": 39,
+              "attTypeCode": 4,
+              "height": 30
             }
-        ],
-        "resultMessage": "识别成功",
-        "version": "3.221_fix_online_new"
-    }
+          ],
+          "source_image": 2,
+          "originalValue": "中国",
+          "normalizedValue": "中国",
+          "keyDesc": "原产国（地区）",
+          "value": "中国",
+          "key": "cusOriginCountry"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 2,
+              "transformValue": "法国",
+              "originalValue": "法国",
+              "normalizedValue": "法国",
+              "processBitMap": "0",
+              "axisX": 1694,
+              "sepValue": "法国",
+              "axisY": 1139,
+              "width": 37,
+              "attTypeCode": 4,
+              "height": 30
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "法国",
+          "normalizedValue": "法国",
+          "keyDesc": "最终目的国（地区）",
+          "value": "法国",
+          "key": "destinationCountry"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 2,
+              "transformValue": "32029",
+              "originalValue": "中国无锡",
+              "normalizedValue": "中国无锡",
+              "processBitMap": "0",
+              "axisX": 1946,
+              "sepValue": "中国无锡",
+              "axisY": 1139,
+              "width": 68,
+              "attTypeCode": 4,
+              "height": 30
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "中国无锡",
+          "normalizedValue": "32029",
+          "keyDesc": "境内货源地",
+          "value": "32029",
+          "key": "districtCode"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 2,
+              "transformValue": "照章征税",
+              "originalValue": "照章征税",
+              "normalizedValue": "照章征税",
+              "processBitMap": "0",
+              "axisX": 2165,
+              "sepValue": "照章征税",
+              "axisY": 1139,
+              "width": 71,
+              "attTypeCode": 4,
+              "height": 30
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "照章征税",
+          "normalizedValue": "照章征税",
+          "keyDesc": "征免",
+          "value": "照章征税",
+          "key": "dutyMode"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 3,
+              "transformValue": "矫治器(aligner)",
+              "originalValue": "矫治器(aligner)",
+              "normalizedValue": "矫治器(aligner)",
+              "processBitMap": "0",
+              "axisX": 281,
+              "sepValue": "矫治器(aligner)",
+              "axisY": 1601,
+              "width": 213,
+              "attTypeCode": 2,
+              "height": 34
+            },
+            {
+              "attType": "PackingList",
+              "imageId": 4,
+              "transformValue": "矫治器(aligner)",
+              "originalValue": "矫治器(aligner)",
+              "normalizedValue": "矫治器(aligner)",
+              "processBitMap": "0",
+              "axisX": 644,
+              "sepValue": "矫治器(aligner)",
+              "axisY": 1543,
+              "width": 192,
+              "attTypeCode": 3,
+              "height": 31
+            },
+            {
+              "attType": "Contract",
+              "imageId": 5,
+              "transformValue": "矫治器(aligner)",
+              "originalValue": "矫治器(aligner)",
+              "normalizedValue": "矫治器(aligner)",
+              "processBitMap": "0",
+              "axisX": 233,
+              "sepValue": "矫治器(aligner)",
+              "axisY": 1439,
+              "width": 229,
+              "attTypeCode": 1,
+              "height": 39
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "矫治器(aligner)",
+          "normalizedValue": "矫治器(aligner)",
+          "keyDesc": "商品名称",
+          "value": "矫治器(aligner)",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 3,
+              "transformValue": "PCS",
+              "originalValue": "PCS",
+              "normalizedValue": "PCS",
+              "processBitMap": "0",
+              "axisX": 734,
+              "sepValue": "PCS",
+              "axisY": 1604,
+              "width": 47,
+              "attTypeCode": 2,
+              "height": 28
+            },
+            {
+              "attType": "Contract",
+              "imageId": 5,
+              "transformValue": "PCS",
+              "originalValue": "PCS",
+              "normalizedValue": "PCS",
+              "processBitMap": "0",
+              "axisX": 724,
+              "sepValue": "PCS",
+              "axisY": 1445,
+              "width": 51,
+              "attTypeCode": 1,
+              "height": 33
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "PCS",
+          "normalizedValue": "PCS",
+          "keyDesc": "成交单位",
+          "value": "PCS",
+          "key": "gUnit"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 3,
+              "transformValue": "2",
+              "originalValue": "2",
+              "normalizedValue": "2",
+              "processBitMap": "0",
+              "axisX": 868,
+              "sepValue": "2",
+              "axisY": 1606,
+              "width": 23,
+              "attTypeCode": 2,
+              "height": 26
+            },
+            {
+              "attType": "Contract",
+              "imageId": 5,
+              "transformValue": "2",
+              "originalValue": "2",
+              "normalizedValue": "2",
+              "processBitMap": "0",
+              "axisX": 872,
+              "sepValue": "2",
+              "axisY": 1445,
+              "width": 23,
+              "attTypeCode": 1,
+              "height": 33
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "2",
+          "normalizedValue": "2",
+          "keyDesc": "成交数量",
+          "value": "2",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 3,
+              "transformValue": "2.3031",
+              "originalValue": "2.3031",
+              "normalizedValue": "2.3031",
+              "processBitMap": "0",
+              "axisX": 984,
+              "sepValue": "2.3031",
+              "axisY": 1606,
+              "width": 86,
+              "attTypeCode": 2,
+              "height": 29
+            },
+            {
+              "attType": "Contract",
+              "imageId": 5,
+              "transformValue": "2.3031",
+              "originalValue": "2.3031",
+              "normalizedValue": "2.3031",
+              "processBitMap": "0",
+              "axisX": 995,
+              "sepValue": "2.3031",
+              "axisY": 1445,
+              "width": 93,
+              "attTypeCode": 1,
+              "height": 33
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "2.3031",
+          "normalizedValue": "2.3031",
+          "keyDesc": "单价",
+          "value": "2.3031",
+          "key": "declPrice"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 3,
+              "transformValue": "4.61",
+              "originalValue": "4.61",
+              "normalizedValue": "4.61",
+              "processBitMap": "0",
+              "axisX": 1164,
+              "sepValue": "4.61",
+              "axisY": 1606,
+              "width": 59,
+              "attTypeCode": 2,
+              "height": 29
+            },
+            {
+              "attType": "Contract",
+              "imageId": 5,
+              "transformValue": "4.61",
+              "originalValue": "4.61",
+              "normalizedValue": "4.61",
+              "processBitMap": "0",
+              "axisX": 1191,
+              "sepValue": "4.61",
+              "axisY": 1445,
+              "width": 66,
+              "attTypeCode": 1,
+              "height": 33
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "4.61",
+          "normalizedValue": "4.61",
+          "keyDesc": "总价",
+          "value": "4.61",
+          "key": "declTotal"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 3,
+              "transformValue": "USD",
+              "originalValue": "USD",
+              "normalizedValue": "USD",
+              "processBitMap": "0",
+              "axisX": 995,
+              "sepValue": "USD",
+              "axisY": 1528,
+              "width": 64,
+              "attTypeCode": 2,
+              "height": 26
+            },
+            {
+              "attType": "Contract",
+              "imageId": 5,
+              "transformValue": "USD",
+              "originalValue": "USD",
+              "normalizedValue": "USD",
+              "processBitMap": "0",
+              "axisX": 1011,
+              "sepValue": "USD",
+              "axisY": 1377,
+              "width": 66,
+              "attTypeCode": 1,
+              "height": 34
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "USD",
+          "normalizedValue": "USD",
+          "keyDesc": "币制",
+          "value": "USD",
+          "key": "tradeCurr"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Attributes",
+              "imageId": 6,
+              "transformValue": "1|2|适用于正畸治疗，采取持续的外力调整牙齿位置使其恢复正确咬合关系或用于巩固牙颌畸形矫治完成后的疗效。|Angel Aligner|无托槽隐形牙颌畸形矫治器是由透明的热塑性聚氨酯材料或透明的热塑性共聚多酯-聚氨酯多层复合材料热压制成的产品，同时根据临床设计，可以选配热塑性聚氨酯材料制成的牵引附件。牵引附件通过丙烯酸酯聚氨酯制成的粘接剂粘接于产品外表面。|Retainer|无|苏械注准20212170198||",
+              "originalValue": "1|2|适用于正畸治疗，采取持续的外力调整牙齿位置使其恢复正确咬合关系或用于巩固牙颌畸形矫治完成后的疗效。|Angel Aligner|无托槽隐形牙颌畸形矫治器是由透明的热塑性聚氨酯材料或透明的热塑性共聚多酯-聚氨酯多层复合材料热压制成的产品，同时根据临床设计，可以选配热塑性聚氨酯材料制成的牵引附件。牵引附件通过丙烯酸酯聚氨酯制成的粘接剂粘接于产品外表面。|Retainer|无|苏械注准20212170198||",
+              "normalizedValue": "1|2|适用于正畸治疗，采取持续的外力调整牙齿位置使其恢复正确咬合关系或用于巩固牙颌畸形矫治完成后的疗效。|Angel Aligner|无托槽隐形牙颌畸形矫治器是由透明的热塑性聚氨酯材料或透明的热塑性共聚多酯-聚氨酯多层复合材料热压制成的产品，同时根据临床设计，可以选配热塑性聚氨酯材料制成的牵引附件。牵引附件通过丙烯酸酯聚氨酯制成的粘接剂粘接于产品外表面。|Retainer|无|苏械注准20212170198||",
+              "processBitMap": "0",
+              "axisX": 265,
+              "sepValue": "1|2|适用于正畸治疗，采取持续的外力调整牙齿位置使其恢复正确咬合关系或用于巩固牙颌畸形矫治完成后的疗效。|Angel Aligner|无托槽隐形牙颌畸形矫治器是由透明的热塑性聚氨酯材料或透明的热塑性共聚多酯-聚氨酯多层复合材料热压制成的产品，同时根据临床设计，可以选配热塑性聚氨酯材料制成的牵引附件。牵引附件通过丙烯酸酯聚氨酯制成的粘接剂粘接于产品外表面。|Retainer|无|苏械注准20212170198||",
+              "axisY": 169,
+              "width": 1313,
+              "attTypeCode": 5,
+              "height": 881
+            }
+          ],
+          "source_image": 6,
+          "originalValue": "1|2|适用于正畸治疗，采取持续的外力调整牙齿位置使其恢复正确咬合关系或用于巩固牙颌畸形矫治完成后的疗效。|Angel Aligner|无托槽隐形牙颌畸形矫治器是由透明的热塑性聚氨酯材料或透明的热塑性共聚多酯-聚氨酯多层复合材料热压制成的产品，同时根据临床设计，可以选配热塑性聚氨酯材料制成的牵引附件。牵引附件通过丙烯酸酯聚氨酯制成的粘接剂粘接于产品外表面。|Retainer|无|苏械注准20212170198||",
+          "normalizedValue": "1|2|适用于正畸治疗，采取持续的外力调整牙齿位置使其恢复正确咬合关系或用于巩固牙颌畸形矫治完成后的疗效。|Angel Aligner|无托槽隐形牙颌畸形矫治器是由透明的热塑性聚氨酯材料或透明的热塑性共聚多酯-聚氨酯多层复合材料热压制成的产品，同时根据临床设计，可以选配热塑性聚氨酯材料制成的牵引附件。牵引附件通过丙烯酸酯聚氨酯制成的粘接剂粘接于产品外表面。|Retainer|无|苏械注准20212170198||",
+          "keyDesc": "规格型号",
+          "value": "1|2|适用于正畸治疗，采取持续的外力调整牙齿位置使其恢复正确咬合关系或用于巩固牙颌畸形矫治完成后的疗效。|Angel Aligner|无托槽隐形牙颌畸形矫治器是由透明的热塑性聚氨酯材料或透明的热塑性共聚多酯-聚氨酯多层复合材料热压制成的产品，同时根据临床设计，可以选配热塑性聚氨酯材料制成的牵引附件。牵引附件通过丙烯酸酯聚氨酯制成的粘接剂粘接于产品外表面。|Retainer|无|苏械注准20212170198||",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Contract",
+              "imageId": 5,
+              "transformValue": "FRA",
+              "originalValue": "FRANCE",
+              "normalizedValue": "FRANCE",
+              "processBitMap": "0",
+              "axisX": 1443,
+              "sepValue": "FRANCE",
+              "axisY": 1848,
+              "width": 98,
+              "attTypeCode": 1,
+              "height": 34
+            }
+          ],
+          "source_image": 5,
+          "originalValue": "FRANCE",
+          "normalizedValue": "FRA",
+          "keyDesc": "最终目的国",
+          "value": "FRA",
+          "key": "destinationCountry"
+        }
+      ]
+    ],
+    "operateImage": [
+      {
+        "imageWidth": "873",
+        "originalFileName": "7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/0_7E69958045FE14F0E90FE2C96DDB84F7669F.pdf.txt",
+        "imageId": 1,
+        "pdfDocPage": 0,
+        "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
+        "imageHeight": "1797",
+        "originalImageWidth": "873",
+        "imageUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/0_7E69958045FE14F0E90FE2C96DDB84F7669F.pdf.png",
+        "angle": 0,
+        "originalImageHeight": "1797",
+        "attTypeCode": 13,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "2613",
+        "originalFileName": "7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/1_7E69958045FE14F0E90FE2C96DDB84F7669F.pdf.txt",
+        "imageId": 2,
+        "pdfDocPage": 1,
+        "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
+        "imageHeight": "1779",
+        "originalImageWidth": "2613",
+        "imageUrl": "https://smartebao-dub-zd-ocr.oss-cn-shanghai.aliyuncs.com/ocr/operateImage/2026-01-28/7a5615f65cfadfef344894483bf62f3b.png",
+        "angle": 0,
+        "originalImageHeight": "1779",
+        "attTypeCode": 4,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "1782",
+        "originalFileName": "7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/2_7E69958045FE14F0E90FE2C96DDB84F7669F.pdf.txt",
+        "imageId": 3,
+        "pdfDocPage": 2,
+        "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
+        "imageHeight": "2610",
+        "originalImageWidth": "1782",
+        "imageUrl": "https://smartebao-dub-zd-ocr.oss-cn-shanghai.aliyuncs.com/ocr/operateImage/2026-01-28/a61c2807b06f517bdb94e6a489d0be3c.png",
+        "angle": 0,
+        "originalImageHeight": "2610",
+        "attTypeCode": 2,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "1779",
+        "originalFileName": "7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/3_7E69958045FE14F0E90FE2C96DDB84F7669F.pdf.txt",
+        "imageId": 4,
+        "pdfDocPage": 3,
+        "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
+        "imageHeight": "2604",
+        "originalImageWidth": "1779",
+        "imageUrl": "https://smartebao-dub-zd-ocr.oss-cn-shanghai.aliyuncs.com/ocr/operateImage/2026-01-28/bd9c365b702790986f1da00a548c50d5.png",
+        "angle": 0,
+        "originalImageHeight": "2604",
+        "attTypeCode": 3,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "1782",
+        "originalFileName": "7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/4_7E69958045FE14F0E90FE2C96DDB84F7669F.pdf.txt",
+        "imageId": 5,
+        "pdfDocPage": 4,
+        "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
+        "imageHeight": "2601",
+        "originalImageWidth": "1782",
+        "imageUrl": "https://smartebao-dub-zd-ocr.oss-cn-shanghai.aliyuncs.com/ocr/operateImage/2026-01-28/33bc3387e2e3d18d888cd34141f51183.png",
+        "angle": 0,
+        "originalImageHeight": "2601",
+        "attTypeCode": 1,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "1782",
+        "originalFileName": "7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/5_7E69958045FE14F0E90FE2C96DDB84F7669F.pdf.txt",
+        "imageId": 6,
+        "pdfDocPage": 5,
+        "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
+        "imageHeight": "2604",
+        "originalImageWidth": "1782",
+        "imageUrl": "https://smartebao-dub-zd-ocr.oss-cn-shanghai.aliyuncs.com/ocr/operateImage/2026-01-28/2ffb6fc108b7688618e5d23bb7bbabf2.png",
+        "angle": 0,
+        "originalImageHeight": "2604",
+        "attTypeCode": 5,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "1782",
+        "originalFileName": "7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/6_7E69958045FE14F0E90FE2C96DDB84F7669F.pdf.txt",
+        "imageId": 7,
+        "pdfDocPage": 6,
+        "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
+        "imageHeight": "2610",
+        "originalImageWidth": "1782",
+        "imageUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/6_7E69958045FE14F0E90FE2C96DDB84F7669F.pdf.png",
+        "angle": 0,
+        "originalImageHeight": "2610",
+        "attTypeCode": 9,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "1779",
+        "originalFileName": "7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/7_7E69958045FE14F0E90FE2C96DDB84F7669F.pdf.txt",
+        "imageId": 8,
+        "pdfDocPage": 7,
+        "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
+        "imageHeight": "2598",
+        "originalImageWidth": "1779",
+        "imageUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/7_7E69958045FE14F0E90FE2C96DDB84F7669F.pdf.png",
+        "angle": 0,
+        "originalImageHeight": "2598",
+        "attTypeCode": 9,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "1782",
+        "originalFileName": "7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/8_7E69958045FE14F0E90FE2C96DDB84F7669F.pdf.txt",
+        "imageId": 9,
+        "pdfDocPage": 8,
+        "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/930c5aed-eb03-48b3-a172-8bd0bce160ac/6554444061/file/7E69958045FE14F0E90FE2C96DDB84F7669F.pdf",
+        "imageHeight": "2613",
+        "originalImageWidth": "1782",
+        "imageUrl": "https://smartebao-dub-zd-ocr.oss-cn-shanghai.aliyuncs.com/ocr/operateImage/2026-01-28/1e86b3cf6c3e8b222d2694a7437efec7.png",
+        "angle": 0,
+        "originalImageHeight": "2613",
+        "attTypeCode": 2,
+        "imageSuffix": "png"
+      }
+    ],
+    "preDecContainer": []
+  }
 }
