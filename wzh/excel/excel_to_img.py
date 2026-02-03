@@ -1,4 +1,3 @@
-import argparse
 import os
 import re
 import time
@@ -72,20 +71,6 @@ def find_used_range(ws, app):
     first_col = used.Column
     last_row = first_row + used.Rows.Count - 1
     last_col = first_col + used.Columns.Count - 1
-
-    while last_row >= first_row:
-        row_rng = ws.Range(ws.Cells(last_row, first_col), ws.Cells(last_row, last_col))
-        if app.WorksheetFunction.CountA(row_rng) == 0:
-            last_row -= 1
-        else:
-            break
-
-    while last_col >= first_col:
-        col_rng = ws.Range(ws.Cells(first_row, last_col), ws.Cells(last_row, last_col))
-        if app.WorksheetFunction.CountA(col_rng) == 0:
-            last_col -= 1
-        else:
-            break
 
     if last_row < first_row or last_col < first_col:
         return None
@@ -162,6 +147,33 @@ def export_range_as_image(rng, output_path: str) -> None:
         chart_obj.Delete()
 
 
+def get_image_rows_cols(ws):
+    image_rows = set()
+    image_cols = set()
+    try:
+        shapes = ws.Shapes
+    except Exception:
+        return image_rows, image_cols
+
+    try:
+        count = shapes.Count
+    except Exception:
+        return image_rows, image_cols
+
+    for i in range(1, count + 1):
+        try:
+            shp = shapes.Item(i)
+            tl = shp.TopLeftCell
+            br = shp.BottomRightCell
+            for r in range(tl.Row, br.Row + 1):
+                image_rows.add(r)
+            for c in range(tl.Column, br.Column + 1):
+                image_cols.add(c)
+        except Exception:
+            continue
+
+    return image_rows, image_cols
+
 def excel_to_images(
     excel_path: str,
     output_dir: str,
@@ -173,6 +185,7 @@ def excel_to_images(
     padding: int = 2,
     visible: bool = False,
     include_hidden: bool = False,
+    disable_shrink_to_fit: bool = True,
 ) -> None:
     if win32 is None:
         raise RuntimeError("pywin32 is required on Windows. Install: pip install pywin32 pillow")
@@ -255,9 +268,11 @@ def excel_to_images(
                 print(f"  -> {last_exc}")
             return
 
+        base_name = sanitize_filename(os.path.splitext(os.path.basename(excel_path))[0])
+        image_index = 1
+
         for ws in wb.Worksheets:
             sheet_name = ws.Name
-            safe_sheet_name = sanitize_filename(sheet_name)
             print(f"Processing sheet: {sheet_name}")
 
             original_visibility = ws.Visible
@@ -277,18 +292,31 @@ def excel_to_images(
             first_row, first_col, last_row, last_col = used
             rng = ws.Range(ws.Cells(first_row, first_col), ws.Cells(last_row, last_col))
 
+            if disable_shrink_to_fit:
+                rng.ShrinkToFit = False
             rng.WrapText = True
-            rng.EntireColumn.AutoFit()
-            rng.EntireRow.AutoFit()
+            image_rows, image_cols = get_image_rows_cols(ws)
+            for col in range(first_col, last_col + 1):
+                if col in image_cols:
+                    continue
+                try:
+                    ws.Columns(col).AutoFit()
+                except Exception:
+                    pass
+            for row in range(first_row, last_row + 1):
+                if row in image_rows:
+                    continue
+                try:
+                    ws.Rows(row).AutoFit()
+                except Exception:
+                    pass
 
             row_chunks = split_rows_by_height(ws, first_row, last_row, max_height_px, dpi)
 
             for idx, (row_start, row_end) in enumerate(row_chunks, start=1):
                 chunk_rng = ws.Range(ws.Cells(row_start, first_col), ws.Cells(row_end, last_col))
-                if len(row_chunks) == 1:
-                    filename = f"{safe_sheet_name}.png"
-                else:
-                    filename = f"{safe_sheet_name}_part_{idx}.png"
+                filename = f"{base_name}_{image_index}.png"
+                image_index += 1
                 output_path = os.path.join(output_dir, filename)
 
                 export_range_as_image(chunk_rng, output_path)
@@ -316,32 +344,30 @@ def excel_to_images(
             pass
 
 
-def build_arg_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="Export Excel sheets to images using Excel COM (hidden by default).")
-    parser.add_argument("excel_path", help="Path to .xls or .xlsx file")
-    parser.add_argument("output_dir", nargs="?", default="result_imgs", help="Output directory")
-    parser.add_argument("--max-height", type=int, default=1600, help="Max image height in px")
-    parser.add_argument("--max-width", type=int, default=2400, help="Max image width in px")
-    parser.add_argument("--dpi", type=int, default=96, help="DPI used for row-height estimation")
-    parser.add_argument("--no-trim", action="store_true", help="Disable white border trimming")
-    parser.add_argument("--diff-threshold", type=int, default=10, help="White trim sensitivity")
-    parser.add_argument("--padding", type=int, default=2, help="Padding after trimming")
-    parser.add_argument("--visible", action="store_true", help="Show Excel window while rendering")
-    parser.add_argument("--include-hidden", action="store_true", help="Include hidden sheets in export")
-    return parser
+EXCEL_PATH = r"SHCOL26063198_20260129000286.xlsx"
+OUTPUT_DIR = r"result_imgs"
+MAX_HEIGHT_PX = 1600
+MAX_WIDTH_PX = 2400
+DPI = 96
+TRIM_WHITE = False
+DIFF_THRESHOLD = 10
+PADDING = 2
+VISIBLE = False
+INCLUDE_HIDDEN = False
+DISABLE_SHRINK_TO_FIT = True
 
 
 if __name__ == "__main__":
-    args = build_arg_parser().parse_args()
     excel_to_images(
-        args.excel_path,
-        args.output_dir,
-        max_height_px=args.max_height,
-        max_width_px=args.max_width,
-        dpi=args.dpi,
-        trim_white=not args.no_trim,
-        diff_threshold=args.diff_threshold,
-        padding=args.padding,
-        visible=args.visible,
-        include_hidden=args.include_hidden,
+        EXCEL_PATH,
+        OUTPUT_DIR,
+        max_height_px=MAX_HEIGHT_PX,
+        max_width_px=MAX_WIDTH_PX,
+        dpi=DPI,
+        trim_white=TRIM_WHITE,
+        diff_threshold=DIFF_THRESHOLD,
+        padding=PADDING,
+        visible=VISIBLE,
+        include_hidden=INCLUDE_HIDDEN,
+        disable_shrink_to_fit=DISABLE_SHRINK_TO_FIT,
     )

@@ -19,7 +19,7 @@ def visualize_coordinates(image_path, json_path, output_path):
 
     # 3. 获取 JSON 中定义的尺寸和角度
     target_info = None
-    target_image_id = 2
+    target_image_id = 1
     
     # ... (此处省略你原有的 operateImage 查找代码，保持不变) ...
     # 假设你已经找到了 target_info
@@ -118,9 +118,9 @@ def visualize_coordinates(image_path, json_path, output_path):
     cv2.imwrite(output_path, img)
     print(f"保存至: {output_path}")
 
-# 调用部分保持不变
-image_file = '/Users/1k/code/YiBao/jyk/test_pos/1_7E69958045FE14F0E90FE2C96DDB84F7669F.pdf (1).png'
-json_file = '/Users/1k/code/YiBao/public/归档/61559331834_6554444061.json'
-result_file = '/Users/1k/code/YiBao/jyk/test_pos/test_Ali.jpg'
+# 调用部分保持r不变
+image_file = r'0_25YKM1268-9I票报关.xlsx.png'
+json_file = r'D:\Desktop\YiBao\public\JSON\VLM识别报文\COAU7262025430I.json'
+result_file = r'result.png'
 
 visualize_coordinates(image_file, json_file, result_file)

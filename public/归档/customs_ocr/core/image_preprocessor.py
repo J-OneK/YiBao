@@ -1,4 +1,4 @@
-"""
+﻿"""
 图片预处理模块 - 使用 TesseractOSD 进行图片方向检测与旋转矫正
 增加 OpenCV 精调功能，处理小角度倾斜并自动扩展画布
 集成阿里云OSS上传功能
@@ -293,6 +293,34 @@ def image_to_base64_url(img: Image.Image, format: str = "PNG") -> str:
     return f"data:{mime_type};base64,{base64_data}"
 
 
+def resize_if_exceeds_max_pixels(img: Image.Image, max_pixels: int = 4096 * 4096) -> Image.Image:
+    """
+    If total pixels exceed the limit, scale down proportionally until within limit.
+    """
+    width, height = img.size
+    total_pixels = width * height
+    if total_pixels <= max_pixels:
+        return img
+
+    scale = (max_pixels / float(total_pixels)) ** 0.5
+    new_width = max(1, int(round(width * scale)))
+    new_height = max(1, int(round(height * scale)))
+
+    # Avoid rounding overflow over the pixel limit
+    while new_width * new_height > max_pixels and (new_width > 1 or new_height > 1):
+        if new_width >= new_height and new_width > 1:
+            new_width -= 1
+        elif new_height > 1:
+            new_height -= 1
+        else:
+            break
+
+    logger.info(
+        f"Total pixels {total_pixels} exceed limit {max_pixels}, resizing to {new_width}x{new_height}"
+    )
+    return img.resize((new_width, new_height), Image.LANCZOS)
+
+
 def preprocess_image(image_url: str) -> Tuple[Optional[str], int, int, int]:
     """
     预处理图片：下载、检测方向、旋转矫正、上传到OSS。
@@ -318,6 +346,9 @@ def preprocess_image(image_url: str) -> Tuple[Optional[str], int, int, int]:
         
         # 检测并旋转
         corrected_img, angle = detect_and_rotate(img)
+
+        # Resize if total pixels exceed limit
+        corrected_img = resize_if_exceeds_max_pixels(corrected_img)
         width, height = corrected_img.size
 
         # 尝试上传到OSS
