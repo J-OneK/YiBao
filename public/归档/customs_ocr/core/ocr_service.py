@@ -13,6 +13,28 @@ from .models import ImageInfo, ExtractionResult, ExtractedField
 from . import json_utils
 from .image_preprocessor import preprocess_image
 
+# 不去除空格的字段白名单（中文字段名 key_desc）
+_NO_STRIP_KEYS = {
+    # 用户明确指定的字段
+    "境外收发货人", "存放地点", "标记唛码及备注", "商品名称", "规格型号",
+    # 需要代码映射的字段
+    "运抵国", "贸易国", "原产国", "最终目的国",
+    "指运港", "离境口岸",
+    "运输方式", "监管方式", "成交方式",
+    "征免性质", "征免", "征减免税方式",
+    "包装种类",
+    "运费币制", "保费币制", "成交币制", "杂费币制", "币制",
+    "运费标记", "保费标记", "杂费标记",
+    "境内货源地", "成交单位", "成交计量单位",
+}
+
+
+def _strip_spaces(value: str, key_desc: str) -> str:
+    """对字段值去除所有空格，白名单字段跳过"""
+    if key_desc in _NO_STRIP_KEYS:
+        return value
+    return value.replace(" ", "")
+
 # 配置日志
 logging.basicConfig(level=getattr(logging, settings.LOG_LEVEL))
 logger = logging.getLogger(__name__)
@@ -199,7 +221,7 @@ def convert_to_extraction_result(data: dict, image_id: str, att_type_code: int) 
         
         field = ExtractedField(
             key_desc=key_desc,
-            value=str(item['value']),
+            value=_strip_spaces(str(item['value']), key_desc),
             pixel=item['pixel'],
             image_id=image_id,
             att_type_code=att_type_code
@@ -227,7 +249,7 @@ def convert_to_extraction_result(data: dict, image_id: str, att_type_code: int) 
             
             field = ExtractedField(
                 key_desc=key_desc,
-                value=str(item['value']),
+                value=_strip_spaces(str(item['value']), key_desc),
                 pixel=item['pixel'],
                 image_id=image_id,
                 att_type_code=att_type_code
