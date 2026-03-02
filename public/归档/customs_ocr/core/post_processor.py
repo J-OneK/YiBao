@@ -302,9 +302,9 @@ def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
     matched_score = similarity[idx].item()
 
     if matched_score < 0.85:
-        print(f'{key_desc} 字段：embedding 匹配分数过低 {parsed_value} -> {matched_param_value} (sim={matched_score:.4f})，保持原值')
-        _similarity_cache[cache_key] = parsed_value
-        return parsed_value
+        print(f'{key_desc} 字段：embedding 匹配分数过低 {parsed_value} -> {matched_param_value} (sim={matched_score:.4f})，输出空白')
+        _similarity_cache[cache_key] = ""
+        return ""
     
     print(
         f'{key_desc} 字段：embedding 匹配'f' {parsed_value} -> {matched_param_value} -> {matched_param_key} (sim={matched_score:.4f})' 
