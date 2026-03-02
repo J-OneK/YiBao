@@ -9,6 +9,7 @@ import logging
 from typing import Dict, List
 from .models import ImageInfo
 from .mainfactor_utils import normalize_values
+import re
 import torch
 import torch.nn.functional as F
 from transformers import AutoTokenizer, AutoModel
@@ -107,6 +108,8 @@ def process_field(field: Dict, image_map: Dict[str, ImageInfo]) -> Dict:
     
     # 生成transformedValue
     transformedValue_total = choose_top_similarity(key_desc, parsed_value)
+    # 数字类字段：对 transformedValue 做单位去除和数值归一化
+    transformedValue_total = _normalize_numeric(transformedValue_total, key_desc)
 
     # 转换坐标
     processed_sources = []
@@ -164,6 +167,40 @@ def process_field(field: Dict, image_map: Dict[str, ImageInfo]) -> Dict:
         'if_unify': if_unify,
         'sourceList': processed_sources
     }
+
+# 输出整数的字段（key_desc）
+_INT_KEYS = {"件数", "件数单项"}
+
+# 输出整数或小数的字段（key_desc）
+_FLOAT_KEYS = {
+    "保费率", "杂费率", "运费率",
+    "净重", "净重单项", "毛重", "毛重单项",
+    "总价总和", "单价", "总价",
+    "成交数量", "法定第一数量", "法定第二数量",
+}
+
+
+def _normalize_numeric(value: str, key_desc: str) -> str:
+    """对数字类字段去除单位/汉字/字母，归一化为纯数字字符串。
+    解析失败时返回空字符串。"""
+    if key_desc not in _INT_KEYS and key_desc not in _FLOAT_KEYS:
+        return value
+    if not value or not value.strip():
+        return value
+    # 提取第一个合法数字（支持负号、千位逗号、小数点）
+    match = re.search(r'-?[\d,]+\.?\d*', value)
+    if not match:
+        return ""
+    num_str = match.group().replace(',', '')
+    try:
+        if key_desc in _INT_KEYS:
+            return str(int(round(float(num_str))))
+        else:
+            # 去掉尾部多余零，如 1234.50 -> "1234.5"，1234.0 -> "1234"
+            return f'{float(num_str):g}'
+    except (ValueError, OverflowError):
+        return ""
+
 
 KEY_DESC_ALIAS_MAP = {
 
@@ -302,9 +339,9 @@ def choose_top_similarity(key_desc: str, parsed_value: str) -> str:
     matched_score = similarity[idx].item()
 
     if matched_score < 0.85:
-        print(f'{key_desc} 字段：embedding 匹配分数过低 {parsed_value} -> {matched_param_value} (sim={matched_score:.4f})，保持原值')
-        _similarity_cache[cache_key] = parsed_value
-        return parsed_value
+        print(f'{key_desc} 字段：embedding 匹配分数过低 {parsed_value} -> {matched_param_value} (sim={matched_score:.4f})，输出空白')
+        _similarity_cache[cache_key] = ""
+        return ""
     
     print(
         f'{key_desc} 字段：embedding 匹配'f' {parsed_value} -> {matched_param_value} -> {matched_param_key} (sim={matched_score:.4f})' 
