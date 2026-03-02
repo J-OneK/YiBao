@@ -35,6 +35,27 @@ def _strip_spaces(value: str, key_desc: str) -> str:
         return value
     return value.replace(" ", "")
 
+
+# 海关代码字段：必须为 10 位数字或字母
+_CODE_10_KEYS = {"境内收发货人海关代码", "生产销售单位海关代码"}
+# 社会信用代码字段：必须为 18 位数字或字母
+_CODE_18_KEYS = {"境内收发货人社会信用代码", "生产销售单位社会信用代码"}
+
+
+def _validate_code(value: str, key_desc: str) -> str:
+    """对代码类字段做长度校验，不符合格式则返回空字符串"""
+    if key_desc in _CODE_10_KEYS:
+        if len(value) == 10 and value.isalnum():
+            return value
+        print(f'{key_desc} 代码长度有误："{value}"（长度={len(value)}，期望10位字母数字），输出空')
+        return ""
+    if key_desc in _CODE_18_KEYS:
+        if len(value) == 18 and value.isalnum():
+            return value
+        print(f'{key_desc} 代码长度有误："{value}"（长度={len(value)}，期望18位字母数字），输出空')
+        return ""
+    return value
+
 # 配置日志
 logging.basicConfig(level=getattr(logging, settings.LOG_LEVEL))
 logger = logging.getLogger(__name__)
@@ -221,7 +242,7 @@ def convert_to_extraction_result(data: dict, image_id: str, att_type_code: int) 
         
         field = ExtractedField(
             key_desc=key_desc,
-            value=_strip_spaces(str(item['value']), key_desc),
+            value=_validate_code(_strip_spaces(str(item['value']), key_desc), key_desc),
             pixel=item['pixel'],
             image_id=image_id,
             att_type_code=att_type_code
@@ -249,7 +270,7 @@ def convert_to_extraction_result(data: dict, image_id: str, att_type_code: int) 
             
             field = ExtractedField(
                 key_desc=key_desc,
-                value=_strip_spaces(str(item['value']), key_desc),
+                value=_validate_code(_strip_spaces(str(item['value']), key_desc), key_desc),
                 pixel=item['pixel'],
                 image_id=image_id,
                 att_type_code=att_type_code
