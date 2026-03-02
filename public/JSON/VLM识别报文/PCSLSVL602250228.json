@@ -1,0 +1,1787 @@
+{
+  "head": {
+    "signInfo": "",
+    "receiptType": 0,
+    "bizCode": "DUB00113",
+    "appId": "ALIYUN01",
+    "bizId": "E67bd87d017932923b46019cb",
+    "resultCode": "0",
+    "msgId": "119424151",
+    "resultMessage": "识别成功",
+    "version": "1.0",
+    "timestampStr": "2026-01-28 15:27:11",
+    "receiveId": "EBAO0001"
+  },
+  "content": {
+    "preDecHead": [
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Bill",
+            "imageId": 1,
+            "transformValue": "杭州千岛湖啤酒有限公司",
+            "originalValue": "杭州千岛湖啤酒有限公司",
+            "normalizedValue": "杭州千岛湖啤酒有限公司",
+            "processBitMap": "0",
+            "axisX": 393,
+            "sepValue": "杭州千岛湖啤酒有限公司",
+            "axisY": 417,
+            "width": 334,
+            "attTypeCode": 14,
+            "height": 37
+          },
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "杭州千岛湖啤酒有限公司",
+            "originalValue": "HANGZHOU CHEERDAY BREWERY CO.,LTD",
+            "normalizedValue": "HANGZHOU CHEERDAY BREWERY CO.,LTD",
+            "processBitMap": "0",
+            "axisX": 153,
+            "sepValue": "HANGZHOU CHEERDAY BREWERY CO.,LTD",
+            "axisY": 374,
+            "width": 392,
+            "attTypeCode": 4,
+            "height": 60
+          },
+          {
+            "attType": "PackingList",
+            "imageId": 3,
+            "transformValue": "杭州千岛湖啤酒有限公司",
+            "originalValue": "HANGZHOU CHEERDAY BREWERY CO., LTD",
+            "normalizedValue": "HANGZHOU CHEERDAY BREWERY CO., LTD",
+            "processBitMap": "0",
+            "axisX": 877,
+            "sepValue": "HANGZHOU CHEERDAY BREWERY CO., LTD",
+            "axisY": 175,
+            "width": 604,
+            "attTypeCode": 3,
+            "height": 34
+          },
+          {
+            "attType": "Contract",
+            "imageId": 5,
+            "transformValue": "杭州千岛湖啤酒有限公司",
+            "originalValue": "杭州千岛湖啤酒有限公司",
+            "normalizedValue": "杭州千岛湖啤酒有限公司",
+            "processBitMap": "0",
+            "axisX": 620,
+            "sepValue": "杭州千岛湖啤酒有限公司",
+            "axisY": 164,
+            "width": 531,
+            "attTypeCode": 1,
+            "height": 55
+          }
+        ],
+        "source_image": 1,
+        "originalValue": "杭州千岛湖啤酒有限公司",
+        "normalizedValue": "杭州千岛湖啤酒有限公司",
+        "keyDesc": "境内收发货人名称",
+        "value": "杭州千岛湖啤酒有限公司",
+        "key": "consigneeCname"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Bill",
+            "imageId": 1,
+            "transformValue": "2",
+            "originalValue": "水路运输",
+            "normalizedValue": "水路运输",
+            "processBitMap": "0",
+            "axisX": 373,
+            "sepValue": "水路运输",
+            "axisY": 1160,
+            "width": 123,
+            "attTypeCode": 14,
+            "height": 35
+          },
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "2",
+            "originalValue": "BY SEA",
+            "normalizedValue": "BY SEA",
+            "processBitMap": "0",
+            "axisX": 673,
+            "sepValue": "BY SEA",
+            "axisY": 465,
+            "width": 135,
+            "attTypeCode": 4,
+            "height": 131
+          }
+        ],
+        "source_image": 1,
+        "originalValue": "水路运输",
+        "normalizedValue": "2",
+        "keyDesc": "运输方式",
+        "value": "2",
+        "key": "cusTrafMode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Bill",
+            "imageId": 1,
+            "transformValue": "RUS",
+            "originalValue": "俄罗斯",
+            "normalizedValue": "俄罗斯",
+            "processBitMap": "0",
+            "axisX": 729,
+            "sepValue": "俄罗斯",
+            "axisY": 1299,
+            "width": 92,
+            "attTypeCode": 14,
+            "height": 35
+          },
+          {
+            "attType": "PackingList",
+            "imageId": 3,
+            "transformValue": "RUS",
+            "originalValue": "RUSSIA",
+            "normalizedValue": "RUSSIA",
+            "processBitMap": "0",
+            "axisX": 1618,
+            "sepValue": "RUSSIA",
+            "axisY": 638,
+            "width": 139,
+            "attTypeCode": 3,
+            "height": 30
+          },
+          {
+            "attType": "Invoice",
+            "imageId": 4,
+            "transformValue": "RUS",
+            "originalValue": "RUSSIA",
+            "normalizedValue": "RUSSIA",
+            "processBitMap": "0",
+            "axisX": 1868,
+            "sepValue": "RUSSIA",
+            "axisY": 665,
+            "width": 142,
+            "attTypeCode": 2,
+            "height": 35
+          },
+          {
+            "attType": "Contract",
+            "imageId": 5,
+            "transformValue": "RUS",
+            "originalValue": "RUSSIA",
+            "normalizedValue": "RUSSIA",
+            "processBitMap": "0",
+            "axisX": 1133,
+            "sepValue": "RUSSIA",
+            "axisY": 1155,
+            "width": 105,
+            "attTypeCode": 1,
+            "height": 33
+          }
+        ],
+        "source_image": 1,
+        "originalValue": "俄罗斯",
+        "normalizedValue": "RUS",
+        "keyDesc": "运抵国",
+        "value": "RUS",
+        "key": "cusTradeCountry"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Bill",
+            "imageId": 1,
+            "transformValue": "CHEERDAY",
+            "originalValue": "CHEERDAY",
+            "normalizedValue": "CHEERDAY",
+            "processBitMap": "0",
+            "axisX": 523,
+            "sepValue": "CHEERDAY",
+            "axisY": 1569,
+            "width": 125,
+            "attTypeCode": 14,
+            "height": 35
+          }
+        ],
+        "source_image": 1,
+        "originalValue": "CHEERDAY",
+        "normalizedValue": "CHEERDAY",
+        "keyDesc": "随附单证及编号",
+        "value": "CHEERDAY",
+        "key": "Edoc"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "3301932294",
+            "originalValue": "3301932294",
+            "normalizedValue": "3301932294",
+            "processBitMap": "0",
+            "axisX": 305,
+            "sepValue": "3301932294",
+            "axisY": 417,
+            "width": 159,
+            "attTypeCode": 4,
+            "height": 30
+          },
+          {
+            "attType": "Contract",
+            "imageId": 5,
+            "transformValue": "HANGZHOU CHEERDAY BREWERY CO.,LTD",
+            "originalValue": "HANGZHOU CHEERDAY BREWERY CO.,LTD",
+            "normalizedValue": "HANGZHOU CHEERDAY BREWERY CO.,LTD",
+            "processBitMap": "0",
+            "axisX": 523,
+            "sepValue": "HANGZHOU CHEERDAY BREWERY CO.,LTD",
+            "axisY": 219,
+            "width": 698,
+            "attTypeCode": 1,
+            "height": 43
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "3301932294",
+        "normalizedValue": "3301932294",
+        "keyDesc": "境内收发货人海关代码",
+        "value": "3301932294",
+        "key": "rcvgdTradeCode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "HANGZHOU CHEERDAY BREWERY CO.,LTD",
+            "originalValue": "HANGZHOU CHEERDAY BREWERY CO.,LTD",
+            "normalizedValue": "HANGZHOU CHEERDAY BREWERY CO.,LTD",
+            "processBitMap": "0",
+            "axisX": 153,
+            "sepValue": "HANGZHOU CHEERDAY BREWERY CO.,LTD",
+            "axisY": 525,
+            "width": 392,
+            "attTypeCode": 4,
+            "height": 61
+          },
+          {
+            "attType": "Invoice",
+            "imageId": 4,
+            "transformValue": "HANGZHOU CHEERDAY BREWERY CO.,LTD",
+            "originalValue": "HANGZHOU CHEERDAY BREWERY CO., LTD",
+            "normalizedValue": "HANGZHOU CHEERDAY BREWERY CO., LTD",
+            "processBitMap": "0",
+            "axisX": 973,
+            "sepValue": "HANGZHOU CHEERDAY BREWERY CO., LTD",
+            "axisY": 173,
+            "width": 645,
+            "attTypeCode": 2,
+            "height": 41
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "HANGZHOU CHEERDAY BREWERY CO.,LTD",
+        "normalizedValue": "HANGZHOU CHEERDAY BREWERY CO.,LTD",
+        "keyDesc": "生产销售单位名称",
+        "value": "HANGZHOU CHEERDAY BREWERY CO.,LTD",
+        "key": "ownerName"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "3301932294",
+            "originalValue": "3301932294",
+            "normalizedValue": "3301932294",
+            "processBitMap": "0",
+            "axisX": 305,
+            "sepValue": "3301932294",
+            "axisY": 566,
+            "width": 159,
+            "attTypeCode": 4,
+            "height": 30
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "3301932294",
+        "normalizedValue": "3301932294",
+        "keyDesc": "生产销售单位海关代码",
+        "value": "3301932294",
+        "key": "ownerCode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "NORMAL",
+            "originalValue": "NORMAL",
+            "normalizedValue": "NORMAL",
+            "processBitMap": "0",
+            "axisX": 673,
+            "sepValue": "NORMAL",
+            "axisY": 616,
+            "width": 110,
+            "attTypeCode": 4,
+            "height": 74
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "NORMAL",
+        "normalizedValue": "NORMAL",
+        "keyDesc": "监管方式",
+        "value": "NORMAL",
+        "key": "supvModeCode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "",
+            "originalValue": "",
+            "normalizedValue": "",
+            "processBitMap": "0",
+            "axisX": 1090,
+            "sepValue": "",
+            "axisY": 614,
+            "width": 136,
+            "attTypeCode": 4,
+            "height": 45
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "",
+        "normalizedValue": "",
+        "keyDesc": "征免性质",
+        "value": "",
+        "key": "cutMode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "",
+            "originalValue": "",
+            "normalizedValue": "",
+            "processBitMap": "0",
+            "axisX": 1347,
+            "sepValue": "",
+            "axisY": 614,
+            "width": 97,
+            "attTypeCode": 4,
+            "height": 45
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "",
+        "normalizedValue": "",
+        "keyDesc": "备案号",
+        "value": "",
+        "key": "manualNo"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "RUSSIA",
+            "originalValue": "RUSSIA",
+            "normalizedValue": "RUSSIA",
+            "processBitMap": "0",
+            "axisX": 153,
+            "sepValue": "RUSSIA",
+            "axisY": 700,
+            "width": 197,
+            "attTypeCode": 4,
+            "height": 48
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "RUSSIA",
+        "normalizedValue": "RUSSIA",
+        "keyDesc": "贸易国(地区)",
+        "value": "RUSSIA",
+        "key": "cusTradeNationCode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "RUSSIA",
+            "originalValue": "RUSSIA",
+            "normalizedValue": "RUSSIA",
+            "processBitMap": "0",
+            "axisX": 625,
+            "sepValue": "RUSSIA",
+            "axisY": 725,
+            "width": 109,
+            "attTypeCode": 4,
+            "height": 56
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "RUSSIA",
+        "normalizedValue": "RUSSIA",
+        "keyDesc": "运抵国(地区)",
+        "value": "RUSSIA",
+        "key": "cusTradeCountry"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "",
+            "originalValue": "",
+            "normalizedValue": "",
+            "processBitMap": "0",
+            "axisX": 943,
+            "sepValue": "",
+            "axisY": 700,
+            "width": 106,
+            "attTypeCode": 4,
+            "height": 48
+          },
+          {
+            "attType": "PackingList",
+            "imageId": 3,
+            "transformValue": "RUSSIA",
+            "originalValue": "RUSSIA",
+            "normalizedValue": "RUSSIA",
+            "processBitMap": "0",
+            "axisX": 1618,
+            "sepValue": "RUSSIA",
+            "axisY": 638,
+            "width": 139,
+            "attTypeCode": 3,
+            "height": 30
+          },
+          {
+            "attType": "Invoice",
+            "imageId": 4,
+            "transformValue": "SHANGHAI",
+            "originalValue": "SHANGHAI",
+            "normalizedValue": "SHANGHAI",
+            "processBitMap": "0",
+            "axisX": 1868,
+            "sepValue": "SHANGHAI",
+            "axisY": 618,
+            "width": 238,
+            "attTypeCode": 2,
+            "height": 38
+          },
+          {
+            "attType": "Contract",
+            "imageId": 5,
+            "transformValue": "SHANGHAI,CHINA",
+            "originalValue": "SHANGHAI,CHINA",
+            "normalizedValue": "SHANGHAI,CHINA",
+            "processBitMap": "0",
+            "axisX": 688,
+            "sepValue": "SHANGHAI,CHINA",
+            "axisY": 1155,
+            "width": 173,
+            "attTypeCode": 1,
+            "height": 33
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "",
+        "normalizedValue": "",
+        "keyDesc": "指运港",
+        "value": "",
+        "key": "distinatePort"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "",
+            "originalValue": "",
+            "normalizedValue": "",
+            "processBitMap": "0",
+            "axisX": 153,
+            "sepValue": "",
+            "axisY": 786,
+            "width": 133,
+            "attTypeCode": 4,
+            "height": 45
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "",
+        "normalizedValue": "",
+        "keyDesc": "许可证号",
+        "value": "",
+        "key": "licenseNo"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "FOB SHANGHAI",
+            "originalValue": "FOB SHANGHAI",
+            "normalizedValue": "FOB SHANGHAI",
+            "processBitMap": "0",
+            "axisX": 625,
+            "sepValue": "FOB SHANGHAI",
+            "axisY": 793,
+            "width": 183,
+            "attTypeCode": 4,
+            "height": 74
+          },
+          {
+            "attType": "Invoice",
+            "imageId": 4,
+            "transformValue": "BY T/T",
+            "originalValue": "BY T/T",
+            "normalizedValue": "BY T/T",
+            "processBitMap": "0",
+            "axisX": 1868,
+            "sepValue": "BY T/T",
+            "axisY": 777,
+            "width": 89,
+            "attTypeCode": 2,
+            "height": 36
+          },
+          {
+            "attType": "Contract",
+            "imageId": 5,
+            "transformValue": "FOB SHANGHAI",
+            "originalValue": "FOB SHANGHAI",
+            "normalizedValue": "FOB SHANGHAI",
+            "processBitMap": "0",
+            "axisX": 1092,
+            "sepValue": "FOB SHANGHAI",
+            "axisY": 804,
+            "width": 184,
+            "attTypeCode": 1,
+            "height": 27
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "FOB SHANGHAI",
+        "normalizedValue": "3",
+        "keyDesc": "成交方式",
+        "value": "3",
+        "key": "transMode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "",
+            "originalValue": "",
+            "normalizedValue": "",
+            "processBitMap": "0",
+            "axisX": 817,
+            "sepValue": "",
+            "axisY": 786,
+            "width": 69,
+            "attTypeCode": 4,
+            "height": 45
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "",
+        "normalizedValue": "",
+        "keyDesc": "运费",
+        "value": "",
+        "key": "feeRate"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "",
+            "originalValue": "",
+            "normalizedValue": "",
+            "processBitMap": "0",
+            "axisX": 947,
+            "sepValue": "",
+            "axisY": 786,
+            "width": 66,
+            "attTypeCode": 4,
+            "height": 45
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "",
+        "normalizedValue": "",
+        "keyDesc": "保费",
+        "value": "",
+        "key": "insurRate"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "",
+            "originalValue": "",
+            "normalizedValue": "",
+            "processBitMap": "0",
+            "axisX": 1301,
+            "sepValue": "",
+            "axisY": 786,
+            "width": 66,
+            "attTypeCode": 4,
+            "height": 45
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "",
+        "normalizedValue": "",
+        "keyDesc": "杂费",
+        "value": "",
+        "key": "otherRate"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "QDH25TG001",
+            "originalValue": "QDH25TG001",
+            "normalizedValue": "QDH25TG001",
+            "processBitMap": "0",
+            "axisX": 153,
+            "sepValue": "QDH25TG001",
+            "axisY": 867,
+            "width": 317,
+            "attTypeCode": 4,
+            "height": 78
+          },
+          {
+            "attType": "Invoice",
+            "imageId": 4,
+            "transformValue": "QDH25TG00101",
+            "originalValue": "QDH25TG00101",
+            "normalizedValue": "QDH25TG00101",
+            "processBitMap": "0",
+            "axisX": 1868,
+            "sepValue": "QDH25TG00101",
+            "axisY": 482,
+            "width": 218,
+            "attTypeCode": 2,
+            "height": 38
+          },
+          {
+            "attType": "Contract",
+            "imageId": 5,
+            "transformValue": "QDH25TG001",
+            "originalValue": "QDH25TG001",
+            "normalizedValue": "QDH25TG001",
+            "processBitMap": "0",
+            "axisX": 1365,
+            "sepValue": "QDH25TG001",
+            "axisY": 273,
+            "width": 177,
+            "attTypeCode": 1,
+            "height": 30
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "QDH25TG001",
+        "normalizedValue": "QDH25TG001",
+        "keyDesc": "合同协议号",
+        "value": "QDH25TG001",
+        "key": "contrNo"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "3,528",
+            "originalValue": "3,528",
+            "normalizedValue": "3,528",
+            "processBitMap": "0",
+            "axisX": 625,
+            "sepValue": "3,528",
+            "axisY": 867,
+            "width": 183,
+            "attTypeCode": 4,
+            "height": 78
+          },
+          {
+            "attType": "PackingList",
+            "imageId": 3,
+            "transformValue": "3,528",
+            "originalValue": "3,528",
+            "normalizedValue": "3,528",
+            "processBitMap": "0",
+            "axisX": 1324,
+            "sepValue": "3,528",
+            "axisY": 888,
+            "width": 64,
+            "attTypeCode": 3,
+            "height": 29
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "3,528",
+        "normalizedValue": "3,528",
+        "keyDesc": "件数",
+        "value": "3,528",
+        "key": "packNo"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "CTNS",
+            "originalValue": "CTNS",
+            "normalizedValue": "CTNS",
+            "processBitMap": "0",
+            "axisX": 943,
+            "sepValue": "CTNS",
+            "axisY": 867,
+            "width": 93,
+            "attTypeCode": 4,
+            "height": 78
+          },
+          {
+            "attType": "PackingList",
+            "imageId": 3,
+            "transformValue": "CARTONS",
+            "originalValue": "CARTONS",
+            "normalizedValue": "CARTONS",
+            "processBitMap": "0",
+            "axisX": 1097,
+            "sepValue": "CARTONS",
+            "axisY": 1072,
+            "width": 134,
+            "attTypeCode": 3,
+            "height": 29
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "CTNS",
+        "normalizedValue": "CTNS",
+        "keyDesc": "包装种类",
+        "value": "CTNS",
+        "key": "wrapType"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "24,696.00",
+            "originalValue": "24,696.00",
+            "normalizedValue": "24,696.00",
+            "processBitMap": "0",
+            "axisX": 1090,
+            "sepValue": "24,696.00",
+            "axisY": 867,
+            "width": 179,
+            "attTypeCode": 4,
+            "height": 78
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "24,696.00",
+        "normalizedValue": "24,696.00",
+        "keyDesc": "毛重(千克)",
+        "value": "24,696.00",
+        "key": "grossWt"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "贸易国别:俄罗斯 原产国:中国 目的国:俄罗斯",
+            "originalValue": "贸易国别:俄罗斯 原产国:中国 目的国:俄罗斯",
+            "normalizedValue": "贸易国别:俄罗斯 原产国:中国 目的国:俄罗斯",
+            "processBitMap": "0",
+            "axisX": 153,
+            "sepValue": "贸易国别:俄罗斯 原产国:中国 目的国:俄罗斯",
+            "axisY": 1072,
+            "width": 790,
+            "attTypeCode": 4,
+            "height": 101
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "贸易国别:俄罗斯 原产国:中国 目的国:俄罗斯",
+        "normalizedValue": "贸易国别:俄罗斯 原产国:中国 目的国:俄罗斯",
+        "keyDesc": "标记唛码及备注",
+        "value": "贸易国别:俄罗斯 原产国:中国 目的国:俄罗斯",
+        "key": "noteS"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "",
+            "originalValue": "",
+            "normalizedValue": "",
+            "processBitMap": "0",
+            "axisX": 1301,
+            "sepValue": "",
+            "axisY": 465,
+            "width": 143,
+            "attTypeCode": 4,
+            "height": 131
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "",
+        "normalizedValue": "",
+        "keyDesc": "提运单号",
+        "value": "",
+        "key": "billNo"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "",
+            "originalValue": "",
+            "normalizedValue": "",
+            "processBitMap": "0",
+            "axisX": 1135,
+            "sepValue": "",
+            "axisY": 318,
+            "width": 143,
+            "attTypeCode": 4,
+            "height": 129
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "",
+        "normalizedValue": "",
+        "keyDesc": "出口日期",
+        "value": "",
+        "key": "pageNo"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 2,
+            "transformValue": "",
+            "originalValue": "",
+            "normalizedValue": "",
+            "processBitMap": "0",
+            "axisX": 1347,
+            "sepValue": "",
+            "axisY": 318,
+            "width": 144,
+            "attTypeCode": 4,
+            "height": 129
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "",
+        "normalizedValue": "",
+        "keyDesc": "申报日期",
+        "value": "",
+        "key": "pageNo"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "PackingList",
+            "imageId": 3,
+            "transformValue": "Trade Group Co. Ltd",
+            "originalValue": "Trade Group Co. Ltd",
+            "normalizedValue": "Trade Group Co. Ltd",
+            "processBitMap": "0",
+            "axisX": 106,
+            "sepValue": "Trade Group Co. Ltd",
+            "axisY": 513,
+            "width": 255,
+            "attTypeCode": 3,
+            "height": 30
+          },
+          {
+            "attType": "Invoice",
+            "imageId": 4,
+            "transformValue": "Trade Group Co. Ltd",
+            "originalValue": "Trade Group Co. Ltd",
+            "normalizedValue": "Trade Group Co. Ltd",
+            "processBitMap": "0",
+            "axisX": 313,
+            "sepValue": "Trade Group Co. Ltd",
+            "axisY": 525,
+            "width": 276,
+            "attTypeCode": 2,
+            "height": 39
+          },
+          {
+            "attType": "Contract",
+            "imageId": 5,
+            "transformValue": "CHEERDAY",
+            "originalValue": "CHEERDAY",
+            "normalizedValue": "CHEERDAY",
+            "processBitMap": "0",
+            "axisX": 915,
+            "sepValue": "CHEERDAY",
+            "axisY": 437,
+            "width": 114,
+            "attTypeCode": 1,
+            "height": 33
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "Trade Group Co. Ltd",
+        "normalizedValue": "Trade Group Co. Ltd",
+        "keyDesc": "境外收发货人",
+        "value": "Trade Group Co. Ltd",
+        "key": "consignorEname"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "PackingList",
+            "imageId": 3,
+            "transformValue": "24,696.00",
+            "originalValue": "24,696.00",
+            "normalizedValue": "24,696.00",
+            "processBitMap": "0",
+            "axisX": 1443,
+            "sepValue": "24,696.00",
+            "axisY": 888,
+            "width": 117,
+            "attTypeCode": 3,
+            "height": 29
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "24,696.00",
+        "normalizedValue": "24,696.00",
+        "keyDesc": "毛重",
+        "value": "24,696.00",
+        "key": "grossWt"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "PackingList",
+            "imageId": 3,
+            "transformValue": "21,425.10",
+            "originalValue": "21,425.10",
+            "normalizedValue": "21,425.10",
+            "processBitMap": "0",
+            "axisX": 1653,
+            "sepValue": "21,425.10",
+            "axisY": 888,
+            "width": 119,
+            "attTypeCode": 3,
+            "height": 29
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "21,425.10",
+        "normalizedValue": "21,425.10",
+        "keyDesc": "净重",
+        "value": "21,425.10",
+        "key": "netWt"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "PackingList",
+            "imageId": 3,
+            "transformValue": "SGP",
+            "originalValue": "SHANGHAI",
+            "normalizedValue": "SHANGHAI",
+            "processBitMap": "0",
+            "axisX": 1595,
+            "sepValue": "SHANGHAI",
+            "axisY": 595,
+            "width": 255,
+            "attTypeCode": 3,
+            "height": 30
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "SHANGHAI",
+        "normalizedValue": "SGP",
+        "keyDesc": "贸易国",
+        "value": "SGP",
+        "key": "cusTradeNationCode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 4,
+            "transformValue": "杭州千岛湖啤酒有限公司",
+            "originalValue": "杭州千岛湖啤酒有限公司",
+            "normalizedValue": "杭州千岛湖啤酒有限公司",
+            "processBitMap": "0",
+            "axisX": 1125,
+            "sepValue": "杭州千岛湖啤酒有限公司",
+            "axisY": 232,
+            "width": 336,
+            "attTypeCode": 2,
+            "height": 37
+          }
+        ],
+        "source_image": 4,
+        "originalValue": "杭州千岛湖啤酒有限公司",
+        "normalizedValue": "杭州千岛湖啤酒有限公司",
+        "keyDesc": "生产销售单位社会信用代码",
+        "value": "杭州千岛湖啤酒有限公司",
+        "key": "ownerScc"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 4,
+            "transformValue": "¥147,752.64",
+            "originalValue": "¥147,752.64",
+            "normalizedValue": "¥147,752.64",
+            "processBitMap": "0",
+            "axisX": 2106,
+            "sepValue": "¥147,752.64",
+            "axisY": 1187,
+            "width": 157,
+            "attTypeCode": 2,
+            "height": 37
+          },
+          {
+            "attType": "Contract",
+            "imageId": 5,
+            "transformValue": "¥147,752.64",
+            "originalValue": "¥147,752.64",
+            "normalizedValue": "¥147,752.64",
+            "processBitMap": "0",
+            "axisX": 1362,
+            "sepValue": "¥147,752.64",
+            "axisY": 986,
+            "width": 171,
+            "attTypeCode": 1,
+            "height": 35
+          }
+        ],
+        "source_image": 4,
+        "originalValue": "¥147,752.64",
+        "normalizedValue": "¥147,752.64",
+        "keyDesc": "总价总和",
+        "value": "¥147,752.64",
+        "key": "totalAmount"
+      }
+    ],
+    "preDecList": [
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Bill",
+              "imageId": 1,
+              "transformValue": "麦芽酿造的啤酒",
+              "originalValue": "麦芽酿造的啤酒",
+              "normalizedValue": "麦芽酿造的啤酒",
+              "processBitMap": "0",
+              "axisX": 82,
+              "sepValue": "麦芽酿造的啤酒",
+              "axisY": 738,
+              "width": 211,
+              "attTypeCode": 14,
+              "height": 32
+            },
+            {
+              "attType": "Declaration",
+              "imageId": 2,
+              "transformValue": "BEER",
+              "originalValue": "BEER",
+              "normalizedValue": "BEER",
+              "processBitMap": "0",
+              "axisX": 446,
+              "sepValue": "BEER",
+              "axisY": 1314,
+              "width": 67,
+              "attTypeCode": 4,
+              "height": 38
+            },
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "CHEERDAY Cheerday Longjing beer 1000 ml 4%",
+              "originalValue": "CHEERDAY Cheerday Longjing beer 1000 ml 4%",
+              "normalizedValue": "CHEERDAY Cheerday Longjing beer 1000 ml 4%",
+              "processBitMap": "0",
+              "axisX": 176,
+              "sepValue": "CHEERDAY Cheerday Longjing beer 1000 ml 4%",
+              "axisY": 888,
+              "width": 605,
+              "attTypeCode": 3,
+              "height": 34
+            },
+            {
+              "attType": "Invoice",
+              "imageId": 4,
+              "transformValue": "Cheerday Longjing beer 1000 ml 4%",
+              "originalValue": "Cheerday Longjing beer 1000 ml 4%",
+              "normalizedValue": "Cheerday Longjing beer 1000 ml 4%",
+              "processBitMap": "0",
+              "axisX": 571,
+              "sepValue": "Cheerday Longjing beer 1000 ml 4%",
+              "axisY": 1027,
+              "width": 496,
+              "attTypeCode": 2,
+              "height": 43
+            },
+            {
+              "attType": "Contract",
+              "imageId": 5,
+              "transformValue": "Cheerday Longjing beer 1000 ml 4%",
+              "originalValue": "Cheerday Longjing beer 1000 ml 4%",
+              "normalizedValue": "Cheerday Longjing beer 1000 ml 4%",
+              "processBitMap": "0",
+              "axisX": 164,
+              "sepValue": "Cheerday Longjing beer 1000 ml 4%",
+              "axisY": 872,
+              "width": 438,
+              "attTypeCode": 1,
+              "height": 38
+            }
+          ],
+          "source_image": 1,
+          "originalValue": "麦芽酿造的啤酒",
+          "normalizedValue": "麦芽酿造的啤酒",
+          "keyDesc": "商品名称",
+          "value": "麦芽酿造的啤酒",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Bill",
+              "imageId": 1,
+              "transformValue": "2203000000(R/S)",
+              "originalValue": "2203000000(R/S)",
+              "normalizedValue": "2203000000(R/S)",
+              "processBitMap": "0",
+              "axisX": 484,
+              "sepValue": "2203000000(R/S)",
+              "axisY": 738,
+              "width": 237,
+              "attTypeCode": 14,
+              "height": 32
+            },
+            {
+              "attType": "Declaration",
+              "imageId": 2,
+              "transformValue": "2203000000(R/S)",
+              "originalValue": "2203000000",
+              "normalizedValue": "2203000000",
+              "processBitMap": "0",
+              "axisX": 234,
+              "sepValue": "2203000000",
+              "axisY": 1314,
+              "width": 155,
+              "attTypeCode": 4,
+              "height": 38
+            }
+          ],
+          "source_image": 1,
+          "originalValue": "2203000000(R/S)",
+          "normalizedValue": "2203000000(R/S)",
+          "keyDesc": "商品编号",
+          "value": "2203000000(R/S)",
+          "key": "codeTs"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Bill",
+              "imageId": 1,
+              "transformValue": "CNY",
+              "originalValue": "人民币",
+              "normalizedValue": "人民币",
+              "processBitMap": "0",
+              "axisX": 1182,
+              "sepValue": "人民币",
+              "axisY": 775,
+              "width": 58,
+              "attTypeCode": 14,
+              "height": 31
+            },
+            {
+              "attType": "Declaration",
+              "imageId": 2,
+              "transformValue": "CNY",
+              "originalValue": "",
+              "normalizedValue": "",
+              "processBitMap": "0",
+              "axisX": 1347,
+              "sepValue": "",
+              "axisY": 1180,
+              "width": 72,
+              "attTypeCode": 4,
+              "height": 38
+            },
+            {
+              "attType": "Contract",
+              "imageId": 5,
+              "transformValue": "CNY",
+              "originalValue": "RMB",
+              "normalizedValue": "RMB",
+              "processBitMap": "0",
+              "axisX": 1092,
+              "sepValue": "RMB",
+              "axisY": 763,
+              "width": 184,
+              "attTypeCode": 1,
+              "height": 36
+            }
+          ],
+          "source_image": 1,
+          "originalValue": "人民币",
+          "normalizedValue": "CNY",
+          "keyDesc": "币制",
+          "value": "CNY",
+          "key": "tradeCurr"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Bill",
+              "imageId": 1,
+              "transformValue": "147752.64",
+              "originalValue": "147752.64",
+              "normalizedValue": "147752.64",
+              "processBitMap": "0",
+              "axisX": 1182,
+              "sepValue": "147752.64",
+              "axisY": 738,
+              "width": 177,
+              "attTypeCode": 14,
+              "height": 32
+            },
+            {
+              "attType": "Declaration",
+              "imageId": 2,
+              "transformValue": "147752.64",
+              "originalValue": "¥147,752.64",
+              "normalizedValue": "¥147,752.64",
+              "processBitMap": "0",
+              "axisX": 1263,
+              "sepValue": "¥147,752.64",
+              "axisY": 1314,
+              "width": 169,
+              "attTypeCode": 4,
+              "height": 38
+            },
+            {
+              "attType": "Contract",
+              "imageId": 5,
+              "transformValue": "147752.64",
+              "originalValue": "¥147,752.64",
+              "normalizedValue": "¥147,752.64",
+              "processBitMap": "0",
+              "axisX": 1362,
+              "sepValue": "¥147,752.64",
+              "axisY": 872,
+              "width": 171,
+              "attTypeCode": 1,
+              "height": 33
+            }
+          ],
+          "source_image": 1,
+          "originalValue": "147752.64",
+          "normalizedValue": "147752.64",
+          "keyDesc": "总价",
+          "value": "147752.64",
+          "key": "declTotal"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Bill",
+              "imageId": 1,
+              "transformValue": "杭州千岛湖啤酒有限公司",
+              "originalValue": "杭州千岛湖啤酒有限公司",
+              "normalizedValue": "杭州千岛湖啤酒有限公司",
+              "processBitMap": "0",
+              "axisX": 1266,
+              "sepValue": "杭州千岛湖啤酒有限公司",
+              "axisY": 1367,
+              "width": 370,
+              "attTypeCode": 14,
+              "height": 35
+            }
+          ],
+          "source_image": 1,
+          "originalValue": "杭州千岛湖啤酒有限公司",
+          "normalizedValue": "杭州千岛湖啤酒有限公司",
+          "keyDesc": "最终目的国",
+          "value": "杭州千岛湖啤酒有限公司",
+          "key": "destinationCountry"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 2,
+              "transformValue": "啤酒",
+              "originalValue": "啤酒",
+              "normalizedValue": "啤酒",
+              "processBitMap": "0",
+              "axisX": 477,
+              "sepValue": "啤酒",
+              "axisY": 1388,
+              "width": 64,
+              "attTypeCode": 4,
+              "height": 38
+            },
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "BEER，CAN, ALC 4.0%, 6X1000ML",
+              "originalValue": "BEER，CAN, ALC 4.0%, 6X1000ML",
+              "normalizedValue": "BEER，CAN, ALC 4.0%, 6X1000ML",
+              "processBitMap": "0",
+              "axisX": 857,
+              "sepValue": "BEER，CAN, ALC 4.0%, 6X1000ML",
+              "axisY": 888,
+              "width": 394,
+              "attTypeCode": 3,
+              "height": 29
+            },
+            {
+              "attType": "Contract",
+              "imageId": 5,
+              "transformValue": "BEER",
+              "originalValue": "BEER",
+              "normalizedValue": "BEER",
+              "processBitMap": "0",
+              "axisX": 736,
+              "sepValue": "BEER",
+              "axisY": 872,
+              "width": 88,
+              "attTypeCode": 1,
+              "height": 33
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "啤酒",
+          "normalizedValue": "啤酒",
+          "keyDesc": "规格型号",
+          "value": "啤酒",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 2,
+              "transformValue": "CTNS",
+              "originalValue": "CTNS",
+              "normalizedValue": "CTNS",
+              "processBitMap": "0",
+              "axisX": 715,
+              "sepValue": "CTNS",
+              "axisY": 1314,
+              "width": 164,
+              "attTypeCode": 4,
+              "height": 38
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "CTNS",
+          "normalizedValue": "CTNS",
+          "keyDesc": "最终目的国(地区)",
+          "value": "CTNS",
+          "key": "destinationCountry"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 2,
+              "transformValue": "CTNS",
+              "originalValue": "CTNS",
+              "normalizedValue": "CTNS",
+              "processBitMap": "0",
+              "axisX": 922,
+              "sepValue": "CTNS",
+              "axisY": 1314,
+              "width": 147,
+              "attTypeCode": 4,
+              "height": 38
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "CTNS",
+          "normalizedValue": "CTNS",
+          "keyDesc": "原产国(地区)",
+          "value": "CTNS",
+          "key": "cusOriginCountry"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 2,
+              "transformValue": "¥41.88",
+              "originalValue": "¥41.88",
+              "normalizedValue": "¥41.88",
+              "processBitMap": "0",
+              "axisX": 985,
+              "sepValue": "¥41.88",
+              "axisY": 1314,
+              "width": 93,
+              "attTypeCode": 4,
+              "height": 38
+            },
+            {
+              "attType": "Contract",
+              "imageId": 5,
+              "transformValue": "¥41.88",
+              "originalValue": "¥41.88",
+              "normalizedValue": "¥41.88",
+              "processBitMap": "0",
+              "axisX": 1187,
+              "sepValue": "¥41.88",
+              "axisY": 872,
+              "width": 89,
+              "attTypeCode": 1,
+              "height": 33
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "¥41.88",
+          "normalizedValue": "¥41.88",
+          "keyDesc": "单价",
+          "value": "¥41.88",
+          "key": "declPrice"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 2,
+              "transformValue": "",
+              "originalValue": "",
+              "normalizedValue": "",
+              "processBitMap": "0",
+              "axisX": 1440,
+              "sepValue": "",
+              "axisY": 1180,
+              "width": 72,
+              "attTypeCode": 4,
+              "height": 38
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "",
+          "normalizedValue": "",
+          "keyDesc": "征免",
+          "value": "",
+          "key": "dutyMode"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "3,528",
+              "originalValue": "3,528",
+              "normalizedValue": "3,528",
+              "processBitMap": "0",
+              "axisX": 1337,
+              "sepValue": "3,528",
+              "axisY": 988,
+              "width": 63,
+              "attTypeCode": 3,
+              "height": 29
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "3,528",
+          "normalizedValue": "3,528",
+          "keyDesc": "件数单项",
+          "value": "3,528",
+          "key": "gpackNo"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "21,425.10",
+              "originalValue": "21,425.10",
+              "normalizedValue": "21,425.10",
+              "processBitMap": "0",
+              "axisX": 1661,
+              "sepValue": "21,425.10",
+              "axisY": 988,
+              "width": 111,
+              "attTypeCode": 3,
+              "height": 29
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "21,425.10",
+          "normalizedValue": "21,425.10",
+          "keyDesc": "净重单项",
+          "value": "21,425.10",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "24,696.00",
+              "originalValue": "24,696.00",
+              "normalizedValue": "24,696.00",
+              "processBitMap": "0",
+              "axisX": 1443,
+              "sepValue": "24,696.00",
+              "axisY": 988,
+              "width": 117,
+              "attTypeCode": 3,
+              "height": 29
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "24,696.00",
+          "normalizedValue": "24,696.00",
+          "keyDesc": "毛重单项",
+          "value": "24,696.00",
+          "key": "ggrossWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "3,528",
+              "originalValue": "3,528",
+              "normalizedValue": "3,528",
+              "processBitMap": "0",
+              "axisX": 1324,
+              "sepValue": "3,528",
+              "axisY": 888,
+              "width": 64,
+              "attTypeCode": 3,
+              "height": 29
+            },
+            {
+              "attType": "Contract",
+              "imageId": 5,
+              "transformValue": "3,528",
+              "originalValue": "3,528",
+              "normalizedValue": "3,528",
+              "processBitMap": "0",
+              "axisX": 936,
+              "sepValue": "3,528",
+              "axisY": 872,
+              "width": 72,
+              "attTypeCode": 1,
+              "height": 33
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "3,528",
+          "normalizedValue": "3,528",
+          "keyDesc": "成交数量",
+          "value": "3,528",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "CTNS",
+              "originalValue": "CTNS",
+              "normalizedValue": "CTNS",
+              "processBitMap": "0",
+              "axisX": 1317,
+              "sepValue": "CTNS",
+              "axisY": 797,
+              "width": 78,
+              "attTypeCode": 3,
+              "height": 30
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "CTNS",
+          "normalizedValue": "CTNS",
+          "keyDesc": "成交单位",
+          "value": "CTNS",
+          "key": "gUnit"
+        }
+      ]
+    ],
+    "operateImage": [
+      {
+        "imageWidth": "1785",
+        "originalFileName": "225N29290001220.pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02502/09ef4349acff4dc69122def023028dd8/PCSLSVL602250228/225N29290001220.pdf.txt",
+        "imageId": 1,
+        "pdfDocPage": 0,
+        "originalFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02502/09ef4349acff4dc69122def023028dd8/PCSLSVL602250228/225N29290001220.pdf",
+        "imageHeight": "2525",
+        "originalImageWidth": "1785",
+        "imageUrl": "https://smartebao-dub-zd-ocr.oss-cn-shanghai.aliyuncs.com/ocr/operateImage/2026-01-28/08ff69d713916382121151f58a5b7581.png",
+        "ocrStructuredResultUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02502/09ef4349acff4dc69122def023028dd8/PCSLSVL602250228/E67bd87d017932923b46019cb_1_extract.txt",
+        "angle": 0,
+        "originalImageHeight": "2525",
+        "attTypeCode": 14,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "1786",
+        "originalFileName": "QDH25TG00101-CHEERDAY-TG-PL- INV-CO-2025-02-24-报关-longjing.xlsx",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02502/09ef4349acff4dc69122def023028dd8/PCSLSVL602250228/0_QDH25TG00101-CHEERDAY-TG-PL-%20INV-CO-2025-02-24-%E6%8A%A5%E5%85%B3-longjing.xlsx.txt",
+        "imageId": 2,
+        "officeFileParseResultUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02502/09ef4349acff4dc69122def023028dd8/PCSLSVL602250228/QDH25TG00101-CHEERDAY-TG-PL-%20INV-CO-2025-02-24-%E6%8A%A5%E5%85%B3-longjing.xlsx_parse2.txt",
+        "pdfDocPage": 0,
+        "originalFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02502/09ef4349acff4dc69122def023028dd8/PCSLSVL602250228/QDH25TG00101-CHEERDAY-TG-PL-%20INV-CO-2025-02-24-%E6%8A%A5%E5%85%B3-longjing.xlsx",
+        "imageHeight": "2526",
+        "originalImageWidth": "1786",
+        "imageUrl": "https://smartebao-dub-zd-ocr.oss-cn-shanghai.aliyuncs.com/ocr/operateImage/2026-01-28/f0757094887773c6c1230f15b0537028.png",
+        "angle": 0,
+        "originalImageHeight": "2526",
+        "attTypeCode": 4,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "2526",
+        "originalFileName": "QDH25TG00101-CHEERDAY-TG-PL- INV-CO-2025-02-24-报关-longjing.xlsx",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02502/09ef4349acff4dc69122def023028dd8/PCSLSVL602250228/1_QDH25TG00101-CHEERDAY-TG-PL-%20INV-CO-2025-02-24-%E6%8A%A5%E5%85%B3-longjing.xlsx.txt",
+        "imageId": 3,
+        "officeFileParseResultUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02502/09ef4349acff4dc69122def023028dd8/PCSLSVL602250228/QDH25TG00101-CHEERDAY-TG-PL-%20INV-CO-2025-02-24-%E6%8A%A5%E5%85%B3-longjing.xlsx_parse2.txt",
+        "pdfDocPage": 1,
+        "originalFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02502/09ef4349acff4dc69122def023028dd8/PCSLSVL602250228/QDH25TG00101-CHEERDAY-TG-PL-%20INV-CO-2025-02-24-%E6%8A%A5%E5%85%B3-longjing.xlsx",
+        "imageHeight": "1786",
+        "originalImageWidth": "2526",
+        "imageUrl": "https://smartebao-dub-zd-ocr.oss-cn-shanghai.aliyuncs.com/ocr/operateImage/2026-01-28/3b7c8959050fc7d0fee1f5dc5f8a8ad6.png",
+        "angle": 0,
+        "originalImageHeight": "1786",
+        "attTypeCode": 3,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "2526",
+        "originalFileName": "QDH25TG00101-CHEERDAY-TG-PL- INV-CO-2025-02-24-报关-longjing.xlsx",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02502/09ef4349acff4dc69122def023028dd8/PCSLSVL602250228/2_QDH25TG00101-CHEERDAY-TG-PL-%20INV-CO-2025-02-24-%E6%8A%A5%E5%85%B3-longjing.xlsx.txt",
+        "imageId": 4,
+        "officeFileParseResultUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02502/09ef4349acff4dc69122def023028dd8/PCSLSVL602250228/QDH25TG00101-CHEERDAY-TG-PL-%20INV-CO-2025-02-24-%E6%8A%A5%E5%85%B3-longjing.xlsx_parse2.txt",
+        "pdfDocPage": 2,
+        "originalFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02502/09ef4349acff4dc69122def023028dd8/PCSLSVL602250228/QDH25TG00101-CHEERDAY-TG-PL-%20INV-CO-2025-02-24-%E6%8A%A5%E5%85%B3-longjing.xlsx",
+        "imageHeight": "1786",
+        "originalImageWidth": "2526",
+        "imageUrl": "https://smartebao-dub-zd-ocr.oss-cn-shanghai.aliyuncs.com/ocr/operateImage/2026-01-28/0628871e0885e7be464df6e78e2008c1.png",
+        "angle": 0,
+        "originalImageHeight": "1786",
+        "attTypeCode": 2,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "1786",
+        "originalFileName": "QDH25TG00101-CHEERDAY-TG-PL- INV-CO-2025-02-24-报关-longjing.xlsx",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02502/09ef4349acff4dc69122def023028dd8/PCSLSVL602250228/3_QDH25TG00101-CHEERDAY-TG-PL-%20INV-CO-2025-02-24-%E6%8A%A5%E5%85%B3-longjing.xlsx.txt",
+        "imageId": 5,
+        "officeFileParseResultUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02502/09ef4349acff4dc69122def023028dd8/PCSLSVL602250228/QDH25TG00101-CHEERDAY-TG-PL-%20INV-CO-2025-02-24-%E6%8A%A5%E5%85%B3-longjing.xlsx_parse2.txt",
+        "pdfDocPage": 3,
+        "originalFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02502/09ef4349acff4dc69122def023028dd8/PCSLSVL602250228/QDH25TG00101-CHEERDAY-TG-PL-%20INV-CO-2025-02-24-%E6%8A%A5%E5%85%B3-longjing.xlsx",
+        "imageHeight": "2526",
+        "originalImageWidth": "1786",
+        "imageUrl": "https://smartebao-dub-zd-ocr.oss-cn-shanghai.aliyuncs.com/ocr/operateImage/2026-01-28/6bb030d941db71b6988f9da1e1349166.png",
+        "angle": 0,
+        "originalImageHeight": "2526",
+        "attTypeCode": 1,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "1508",
+        "originalFileName": "箱封号.png",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02502/09ef4349acff4dc69122def023028dd8/PCSLSVL602250228/%E7%AE%B1%E5%B0%81%E5%8F%B7.png.txt",
+        "imageId": 6,
+        "pdfDocPage": 0,
+        "originalFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02502/09ef4349acff4dc69122def023028dd8/PCSLSVL602250228/%E7%AE%B1%E5%B0%81%E5%8F%B7.png",
+        "imageHeight": "904",
+        "originalImageWidth": "1508",
+        "imageUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02502/09ef4349acff4dc69122def023028dd8/PCSLSVL602250228/%E7%AE%B1%E5%B0%81%E5%8F%B7.png",
+        "angle": 0,
+        "originalImageHeight": "904",
+        "attTypeCode": 13,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "1279",
+        "originalFileName": "箱门.jpg",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02502/09ef4349acff4dc69122def023028dd8/PCSLSVL602250228/%E7%AE%B1%E9%97%A8.jpg.txt",
+        "imageId": 7,
+        "pdfDocPage": 0,
+        "originalFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02502/09ef4349acff4dc69122def023028dd8/PCSLSVL602250228/%E7%AE%B1%E9%97%A8.jpg?x-oss-process=image/auto-orient,0",
+        "imageHeight": "1706",
+        "originalImageWidth": "1279",
+        "imageUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02502/09ef4349acff4dc69122def023028dd8/PCSLSVL602250228/%E7%AE%B1%E9%97%A8.jpg?x-oss-process=image/auto-orient,0",
+        "angle": 0,
+        "originalImageHeight": "1706",
+        "attTypeCode": 13,
+        "imageSuffix": "png"
+      }
+    ],
+    "preDecContainer": []
+  }
+}

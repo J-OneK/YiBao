@@ -1,0 +1,1967 @@
+{
+  "head": {
+    "signInfo": "",
+    "receiptType": 0,
+    "bizCode": "DUB00113",
+    "appId": "ALIYUN01",
+    "bizId": "E6809df1f3a86361e7233b544",
+    "resultCode": "0",
+    "msgId": "425132933",
+    "resultMessage": "识别成功",
+    "version": "1.0",
+    "timestampStr": "2026-01-28 11:43:10",
+    "receiveId": "EBAO0001"
+  },
+  "content": {
+    "preDecHead": [
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 1,
+            "transformValue": "GK 25011A & 25013B",
+            "originalValue": "GK 25011A & 25013B",
+            "normalizedValue": "GK 25011A & 25013B",
+            "processBitMap": "0",
+            "axisX": 311,
+            "sepValue": "GK 25011A & 25013B",
+            "axisY": 591,
+            "width": 307,
+            "attTypeCode": 2,
+            "height": 36
+          },
+          {
+            "attType": "Contract",
+            "imageId": 5,
+            "transformValue": "GK 25011A & 25013B",
+            "originalValue": "GK 25011A & 25013B",
+            "normalizedValue": "GK 25011A & 25013B",
+            "processBitMap": "0",
+            "axisX": 1169,
+            "sepValue": "GK 25011A & 25013B",
+            "axisY": 563,
+            "width": 264,
+            "attTypeCode": 1,
+            "height": 28
+          }
+        ],
+        "source_image": 1,
+        "originalValue": "GK 25011A & 25013B",
+        "normalizedValue": "GK 25011A & 25013B",
+        "keyDesc": "合同协议号",
+        "value": "GK 25011A & 25013B",
+        "key": "contrNo"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 1,
+            "transformValue": "Clear Trading LLC",
+            "originalValue": "Clear Trading LLC",
+            "normalizedValue": "Clear Trading LLC",
+            "processBitMap": "0",
+            "axisX": 318,
+            "sepValue": "Clear Trading LLC",
+            "axisY": 682,
+            "width": 246,
+            "attTypeCode": 2,
+            "height": 36
+          },
+          {
+            "attType": "PackingList",
+            "imageId": 2,
+            "transformValue": "Clear Trading LLC",
+            "originalValue": "Clear Trading LLC",
+            "normalizedValue": "Clear Trading LLC",
+            "processBitMap": "0",
+            "axisX": 368,
+            "sepValue": "Clear Trading LLC",
+            "axisY": 740,
+            "width": 272,
+            "attTypeCode": 3,
+            "height": 38
+          },
+          {
+            "attType": "Contract",
+            "imageId": 5,
+            "transformValue": "Clear Trading LLC",
+            "originalValue": "Clear Trading LLC",
+            "normalizedValue": "Clear Trading LLC",
+            "processBitMap": "0",
+            "axisX": 405,
+            "sepValue": "Clear Trading LLC",
+            "axisY": 563,
+            "width": 226,
+            "attTypeCode": 1,
+            "height": 28
+          }
+        ],
+        "source_image": 1,
+        "originalValue": "Clear Trading LLC",
+        "normalizedValue": "Clear Trading LLC",
+        "keyDesc": "境外收发货人",
+        "value": "Clear Trading LLC",
+        "key": "consignorEname"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 1,
+            "transformValue": "FROM SHANGHAI TO SAVANNAH, BY SEA",
+            "originalValue": "FROM SHANGHAI TO SAVANNAH, BY SEA",
+            "normalizedValue": "FROM SHANGHAI TO SAVANNAH, BY SEA",
+            "processBitMap": "0",
+            "axisX": 318,
+            "sepValue": "FROM SHANGHAI TO SAVANNAH, BY SEA",
+            "axisY": 847,
+            "width": 570,
+            "attTypeCode": 2,
+            "height": 35
+          },
+          {
+            "attType": "PackingList",
+            "imageId": 2,
+            "transformValue": "CHINA",
+            "originalValue": "CHINA",
+            "normalizedValue": "CHINA",
+            "processBitMap": "0",
+            "axisX": 368,
+            "sepValue": "CHINA",
+            "axisY": 900,
+            "width": 293,
+            "attTypeCode": 3,
+            "height": 38
+          },
+          {
+            "attType": "Declaration",
+            "imageId": 3,
+            "transformValue": "USA",
+            "originalValue": "USA",
+            "normalizedValue": "USA",
+            "processBitMap": "0",
+            "axisX": 1022,
+            "sepValue": "USA",
+            "axisY": 599,
+            "width": 72,
+            "attTypeCode": 4,
+            "height": 38
+          },
+          {
+            "attType": "Contract",
+            "imageId": 5,
+            "transformValue": "CHINA",
+            "originalValue": "CHINA",
+            "normalizedValue": "CHINA",
+            "processBitMap": "0",
+            "axisX": 405,
+            "sepValue": "CHINA",
+            "axisY": 1170,
+            "width": 179,
+            "attTypeCode": 1,
+            "height": 28
+          }
+        ],
+        "source_image": 1,
+        "originalValue": "FROM SHANGHAI TO SAVANNAH, BY SEA",
+        "normalizedValue": "FROM SHANGHAI TO SAVANNAH, BY SEA",
+        "keyDesc": "贸易国",
+        "value": "FROM SHANGHAI TO SAVANNAH, BY SEA",
+        "key": "cusTradeNationCode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "PackingList",
+            "imageId": 2,
+            "transformValue": "聊城昕鼎国际贸易有限公司",
+            "originalValue": "聊城昕鼎国际贸易有限公司",
+            "normalizedValue": "聊城昕鼎国际贸易有限公司",
+            "processBitMap": "0",
+            "axisX": 513,
+            "sepValue": "聊城昕鼎国际贸易有限公司",
+            "axisY": 192,
+            "width": 763,
+            "attTypeCode": 3,
+            "height": 73
+          },
+          {
+            "attType": "Declaration",
+            "imageId": 3,
+            "transformValue": "聊城昕鼎国际贸易有限公司",
+            "originalValue": "聊城昕鼎国际贸易有限公司",
+            "normalizedValue": "聊城昕鼎国际贸易有限公司",
+            "processBitMap": "0",
+            "axisX": 103,
+            "sepValue": "聊城昕鼎国际贸易有限公司",
+            "axisY": 447,
+            "width": 504,
+            "attTypeCode": 4,
+            "height": 48
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "聊城昕鼎国际贸易有限公司",
+        "normalizedValue": "聊城昕鼎国际贸易有限公司",
+        "keyDesc": "境内收发货人名称",
+        "value": "聊城昕鼎国际贸易有限公司",
+        "key": "consigneeCname"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "PackingList",
+            "imageId": 2,
+            "transformValue": "LIAOCHENG GOLDEN KING INDUSTRIAL CO., LTD",
+            "originalValue": "LIAOCHENG GOLDEN KING INDUSTRIAL CO., LTD",
+            "normalizedValue": "LIAOCHENG GOLDEN KING INDUSTRIAL CO., LTD",
+            "processBitMap": "0",
+            "axisX": 284,
+            "sepValue": "LIAOCHENG GOLDEN KING INDUSTRIAL CO., LTD",
+            "axisY": 270,
+            "width": 1226,
+            "attTypeCode": 3,
+            "height": 53
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "LIAOCHENG GOLDEN KING INDUSTRIAL CO., LTD",
+        "normalizedValue": "LIAOCHENG GOLDEN KING INDUSTRIAL CO., LTD",
+        "keyDesc": "境内收发货人社会信用代码",
+        "value": "LIAOCHENG GOLDEN KING INDUSTRIAL CO., LTD",
+        "key": "rcvgdTradeScc"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "PackingList",
+            "imageId": 2,
+            "transformValue": "SAVANNAH",
+            "originalValue": "SAVANNAH",
+            "normalizedValue": "SAVANNAH",
+            "processBitMap": "0",
+            "axisX": 668,
+            "sepValue": "SAVANNAH",
+            "axisY": 900,
+            "width": 333,
+            "attTypeCode": 3,
+            "height": 38
+          },
+          {
+            "attType": "Declaration",
+            "imageId": 3,
+            "transformValue": "聊城",
+            "originalValue": "聊城",
+            "normalizedValue": "聊城",
+            "processBitMap": "0",
+            "axisX": 1492,
+            "sepValue": "聊城",
+            "axisY": 599,
+            "width": 68,
+            "attTypeCode": 4,
+            "height": 38
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "SAVANNAH",
+        "normalizedValue": "SAVANNAH",
+        "keyDesc": "运抵国",
+        "value": "SAVANNAH",
+        "key": "cusTradeCountry"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "PackingList",
+            "imageId": 2,
+            "transformValue": "USA477",
+            "originalValue": "SAVANNAH",
+            "normalizedValue": "SAVANNAH",
+            "processBitMap": "0",
+            "axisX": 668,
+            "sepValue": "SAVANNAH",
+            "axisY": 900,
+            "width": 333,
+            "attTypeCode": 3,
+            "height": 38
+          },
+          {
+            "attType": "Declaration",
+            "imageId": 3,
+            "transformValue": "USA477",
+            "originalValue": "SAVANNAH",
+            "normalizedValue": "SAVANNAH",
+            "processBitMap": "0",
+            "axisX": 700,
+            "sepValue": "SAVANNAH",
+            "axisY": 599,
+            "width": 190,
+            "attTypeCode": 4,
+            "height": 38
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "SAVANNAH",
+        "normalizedValue": "USA477",
+        "keyDesc": "指运港",
+        "value": "USA477",
+        "key": "distinatePort"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "PackingList",
+            "imageId": 2,
+            "transformValue": "PACKING LIST",
+            "originalValue": "PACKING LIST",
+            "normalizedValue": "PACKING LIST",
+            "processBitMap": "0",
+            "axisX": 720,
+            "sepValue": "PACKING LIST",
+            "axisY": 424,
+            "width": 354,
+            "attTypeCode": 3,
+            "height": 48
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "PACKING LIST",
+        "normalizedValue": "PACKING LIST",
+        "keyDesc": "包装种类",
+        "value": "PACKING LIST",
+        "key": "wrapType"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "PackingList",
+            "imageId": 2,
+            "transformValue": "29",
+            "originalValue": "29",
+            "normalizedValue": "29",
+            "processBitMap": "0",
+            "axisX": 765,
+            "sepValue": "29",
+            "axisY": 1352,
+            "width": 34,
+            "attTypeCode": 3,
+            "height": 28
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "29",
+        "normalizedValue": "29",
+        "keyDesc": "件数",
+        "value": "29",
+        "key": "packNo"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "PackingList",
+            "imageId": 2,
+            "transformValue": "25640.00",
+            "originalValue": "25640.00",
+            "normalizedValue": "25640.00",
+            "processBitMap": "0",
+            "axisX": 1172,
+            "sepValue": "25640.00",
+            "axisY": 1352,
+            "width": 124,
+            "attTypeCode": 3,
+            "height": 28
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "25640.00",
+        "normalizedValue": "25640.00",
+        "keyDesc": "毛重",
+        "value": "25640.00",
+        "key": "grossWt"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "PackingList",
+            "imageId": 2,
+            "transformValue": "24045.00",
+            "originalValue": "24045.00",
+            "normalizedValue": "24045.00",
+            "processBitMap": "0",
+            "axisX": 1351,
+            "sepValue": "24045.00",
+            "axisY": 1352,
+            "width": 122,
+            "attTypeCode": 3,
+            "height": 28
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "24045.00",
+        "normalizedValue": "24045.00",
+        "keyDesc": "净重",
+        "value": "24045.00",
+        "key": "netWt"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 3,
+            "transformValue": "BY SEA",
+            "originalValue": "BY SEA",
+            "normalizedValue": "BY SEA",
+            "processBitMap": "0",
+            "axisX": 797,
+            "sepValue": "BY SEA",
+            "axisY": 455,
+            "width": 121,
+            "attTypeCode": 4,
+            "height": 38
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "BY SEA",
+        "normalizedValue": "BY SEA",
+        "keyDesc": "运输方式",
+        "value": "BY SEA",
+        "key": "cusTrafMode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 3,
+            "transformValue": "FOB",
+            "originalValue": "FOB",
+            "normalizedValue": "FOB",
+            "processBitMap": "0",
+            "axisX": 636,
+            "sepValue": "FOB",
+            "axisY": 685,
+            "width": 68,
+            "attTypeCode": 4,
+            "height": 38
+          },
+          {
+            "attType": "Contract",
+            "imageId": 5,
+            "transformValue": "FOB TIANJIN",
+            "originalValue": "FOB TIANJIN",
+            "normalizedValue": "FOB TIANJIN",
+            "processBitMap": "0",
+            "axisX": 1305,
+            "sepValue": "FOB TIANJIN",
+            "axisY": 862,
+            "width": 182,
+            "attTypeCode": 1,
+            "height": 28
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "FOB",
+        "normalizedValue": "3",
+        "keyDesc": "成交方式",
+        "value": "3",
+        "key": "transMode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 3,
+            "transformValue": "G.T.",
+            "originalValue": "G.T.",
+            "normalizedValue": "G.T.",
+            "processBitMap": "0",
+            "axisX": 927,
+            "sepValue": "G.T.",
+            "axisY": 533,
+            "width": 65,
+            "attTypeCode": 4,
+            "height": 38
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "G.T.",
+        "normalizedValue": "G.T.",
+        "keyDesc": "离境口岸",
+        "value": "G.T.",
+        "key": "ciqEntyPortCode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 3,
+            "transformValue": "T/T",
+            "originalValue": "T/T",
+            "normalizedValue": "T/T",
+            "processBitMap": "0",
+            "axisX": 1498,
+            "sepValue": "T/T",
+            "axisY": 533,
+            "width": 57,
+            "attTypeCode": 4,
+            "height": 38
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "T/T",
+        "normalizedValue": "T/T",
+        "keyDesc": "标记唛码及备注",
+        "value": "T/T",
+        "key": "noteS"
+      }
+    ],
+    "preDecList": [
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 1,
+              "transformValue": "PLATE 支架 WASSHER 垫圈 METAL RING 抱箍",
+              "originalValue": "PLATE 支架 WASSHER 垫圈 METAL RING 抱箍",
+              "normalizedValue": "PLATE 支架 WASSHER 垫圈 METAL RING 抱箍",
+              "processBitMap": "0",
+              "axisX": 318,
+              "sepValue": "PLATE 支架 WASSHER 垫圈 METAL RING 抱箍",
+              "axisY": 1074,
+              "width": 241,
+              "attTypeCode": 2,
+              "height": 114
+            },
+            {
+              "attType": "PackingList",
+              "imageId": 2,
+              "transformValue": "PLATE 支架 WASSHER 垫圈 METAL RING 抱箍",
+              "originalValue": "PLATE 支架",
+              "normalizedValue": "PLATE 支架",
+              "processBitMap": "0",
+              "axisX": 368,
+              "sepValue": "PLATE 支架",
+              "axisY": 1180,
+              "width": 171,
+              "attTypeCode": 3,
+              "height": 38
+            },
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "PLATE 支架 WASSHER 垫圈 METAL RING 抱箍",
+              "originalValue": "PLATE 支架",
+              "normalizedValue": "PLATE 支架",
+              "processBitMap": "0",
+              "axisX": 327,
+              "sepValue": "PLATE 支架",
+              "axisY": 1175,
+              "width": 182,
+              "attTypeCode": 4,
+              "height": 38
+            },
+            {
+              "attType": "Contract",
+              "imageId": 5,
+              "transformValue": "PLATE 支架 WASSHER 垫圈 METAL RING 抱箍",
+              "originalValue": "PLATE 支架",
+              "normalizedValue": "PLATE 支架",
+              "processBitMap": "0",
+              "axisX": 405,
+              "sepValue": "PLATE 支架",
+              "axisY": 927,
+              "width": 161,
+              "attTypeCode": 1,
+              "height": 33
+            }
+          ],
+          "source_image": 1,
+          "originalValue": "PLATE 支架 WASSHER 垫圈 METAL RING 抱箍",
+          "normalizedValue": "PLATE 支架 WASSHER 垫圈 METAL RING 抱箍",
+          "keyDesc": "商品名称",
+          "value": "PLATE 支架 WASSHER 垫圈 METAL RING 抱箍",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 2,
+              "transformValue": "7",
+              "originalValue": "7",
+              "normalizedValue": "7",
+              "processBitMap": "0",
+              "axisX": 772,
+              "sepValue": "7",
+              "axisY": 1180,
+              "width": 27,
+              "attTypeCode": 3,
+              "height": 38
+            },
+            {
+              "attType": "Contract",
+              "imageId": 5,
+              "transformValue": "7",
+              "originalValue": "7",
+              "normalizedValue": "7",
+              "processBitMap": "0",
+              "axisX": 722,
+              "sepValue": "7",
+              "axisY": 933,
+              "width": 23,
+              "attTypeCode": 1,
+              "height": 27
+            },
+            {
+              "attType": "Contract",
+              "imageId": 5,
+              "transformValue": "16",
+              "originalValue": "16",
+              "normalizedValue": "16",
+              "processBitMap": "0",
+              "axisX": 722,
+              "sepValue": "16",
+              "axisY": 970,
+              "width": 23,
+              "attTypeCode": 1,
+              "height": 28
+            },
+            {
+              "attType": "Contract",
+              "imageId": 5,
+              "transformValue": "6",
+              "originalValue": "6",
+              "normalizedValue": "6",
+              "processBitMap": "0",
+              "axisX": 722,
+              "sepValue": "6",
+              "axisY": 1008,
+              "width": 23,
+              "attTypeCode": 1,
+              "height": 28
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "7",
+          "normalizedValue": "7",
+          "keyDesc": "件数单项",
+          "value": "7",
+          "key": "gpackNo"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 2,
+              "transformValue": "6,880.00",
+              "originalValue": "6,880.00",
+              "normalizedValue": "6,880.00",
+              "processBitMap": "0",
+              "axisX": 1172,
+              "sepValue": "6,880.00",
+              "axisY": 1180,
+              "width": 124,
+              "attTypeCode": 3,
+              "height": 38
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "6,880.00",
+          "normalizedValue": "6,880.00",
+          "keyDesc": "毛重单项",
+          "value": "6,880.00",
+          "key": "ggrossWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 2,
+              "transformValue": "6,210.00",
+              "originalValue": "6,210.00",
+              "normalizedValue": "6,210.00",
+              "processBitMap": "0",
+              "axisX": 1351,
+              "sepValue": "6,210.00",
+              "axisY": 1180,
+              "width": 122,
+              "attTypeCode": 3,
+              "height": 38
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "6,210.00",
+          "normalizedValue": "6,210.00",
+          "keyDesc": "净重单项",
+          "value": "6,210.00",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "73089000",
+              "originalValue": "73089000",
+              "normalizedValue": "73089000",
+              "processBitMap": "0",
+              "axisX": 103,
+              "sepValue": "73089000",
+              "axisY": 1175,
+              "width": 136,
+              "attTypeCode": 4,
+              "height": 38
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "73089000",
+          "normalizedValue": "73089000",
+          "keyDesc": "商品编号",
+          "value": "73089000",
+          "key": "codeTs"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "2940.00",
+              "originalValue": "2940.00",
+              "normalizedValue": "2940.00",
+              "processBitMap": "0",
+              "axisX": 1036,
+              "sepValue": "2940.00",
+              "axisY": 1175,
+              "width": 109,
+              "attTypeCode": 4,
+              "height": 38
+            },
+            {
+              "attType": "Contract",
+              "imageId": 5,
+              "transformValue": "2.137",
+              "originalValue": "2.137",
+              "normalizedValue": "2.137",
+              "processBitMap": "0",
+              "axisX": 1256,
+              "sepValue": "2.137",
+              "axisY": 933,
+              "width": 68,
+              "attTypeCode": 1,
+              "height": 27
+            },
+            {
+              "attType": "Contract",
+              "imageId": 5,
+              "transformValue": "0.045",
+              "originalValue": "0.045",
+              "normalizedValue": "0.045",
+              "processBitMap": "0",
+              "axisX": 1256,
+              "sepValue": "0.045",
+              "axisY": 970,
+              "width": 68,
+              "attTypeCode": 1,
+              "height": 28
+            },
+            {
+              "attType": "Contract",
+              "imageId": 5,
+              "transformValue": "2.898",
+              "originalValue": "2.898",
+              "normalizedValue": "2.898",
+              "processBitMap": "0",
+              "axisX": 1256,
+              "sepValue": "2.898",
+              "axisY": 1008,
+              "width": 68,
+              "attTypeCode": 1,
+              "height": 28
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "2940.00",
+          "normalizedValue": "2940.00",
+          "keyDesc": "单价",
+          "value": "2940.00",
+          "key": "declPrice"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "USD 6,283.79",
+              "originalValue": "USD 6,283.79",
+              "normalizedValue": "USD 6,283.79",
+              "processBitMap": "0",
+              "axisX": 1365,
+              "sepValue": "USD 6,283.79",
+              "axisY": 1175,
+              "width": 193,
+              "attTypeCode": 4,
+              "height": 38
+            },
+            {
+              "attType": "Contract",
+              "imageId": 5,
+              "transformValue": "6283.79",
+              "originalValue": "6283.79",
+              "normalizedValue": "6283.79",
+              "processBitMap": "0",
+              "axisX": 1467,
+              "sepValue": "6283.79",
+              "axisY": 933,
+              "width": 97,
+              "attTypeCode": 1,
+              "height": 27
+            },
+            {
+              "attType": "Contract",
+              "imageId": 5,
+              "transformValue": "11602.42",
+              "originalValue": "11602.42",
+              "normalizedValue": "11602.42",
+              "processBitMap": "0",
+              "axisX": 1467,
+              "sepValue": "11602.42",
+              "axisY": 970,
+              "width": 106,
+              "attTypeCode": 1,
+              "height": 28
+            },
+            {
+              "attType": "Contract",
+              "imageId": 5,
+              "transformValue": "4347.00",
+              "originalValue": "4347.00",
+              "normalizedValue": "4347.00",
+              "processBitMap": "0",
+              "axisX": 1467,
+              "sepValue": "4347.00",
+              "axisY": 1008,
+              "width": 97,
+              "attTypeCode": 1,
+              "height": 28
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "USD 6,283.79",
+          "normalizedValue": "USD 6,283.79",
+          "keyDesc": "总价",
+          "value": "USD 6,283.79",
+          "key": "declTotal"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "USD",
+              "originalValue": "USD",
+              "normalizedValue": "USD",
+              "processBitMap": "0",
+              "axisX": 1365,
+              "sepValue": "USD",
+              "axisY": 1175,
+              "width": 193,
+              "attTypeCode": 4,
+              "height": 38
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "USD",
+          "normalizedValue": "USD",
+          "keyDesc": "币制",
+          "value": "USD",
+          "key": "tradeCurr"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Contract",
+              "imageId": 5,
+              "transformValue": "WASHER 垫圈",
+              "originalValue": "WASHER 垫圈",
+              "normalizedValue": "WASHER 垫圈",
+              "processBitMap": "0",
+              "axisX": 405,
+              "sepValue": "WASHER 垫圈",
+              "axisY": 965,
+              "width": 193,
+              "attTypeCode": 1,
+              "height": 33
+            },
+            {
+              "attType": "Contract",
+              "imageId": 5,
+              "transformValue": "METAL RING 抱箍",
+              "originalValue": "METAL RING 抱箍",
+              "normalizedValue": "METAL RING 抱箍",
+              "processBitMap": "0",
+              "axisX": 405,
+              "sepValue": "METAL RING 抱箍",
+              "axisY": 1003,
+              "width": 251,
+              "attTypeCode": 1,
+              "height": 33
+            }
+          ],
+          "source_image": 5,
+          "originalValue": "WASHER 垫圈",
+          "normalizedValue": "WASHER 垫圈",
+          "keyDesc": "规格型号",
+          "value": "WASHER 垫圈",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Contract",
+              "imageId": 5,
+              "transformValue": "2940 PCS",
+              "originalValue": "2940 PCS",
+              "normalizedValue": "2940 PCS",
+              "processBitMap": "0",
+              "axisX": 850,
+              "sepValue": "2940 PCS",
+              "axisY": 933,
+              "width": 249,
+              "attTypeCode": 1,
+              "height": 27
+            },
+            {
+              "attType": "Contract",
+              "imageId": 5,
+              "transformValue": "259200 PCS",
+              "originalValue": "259200 PCS",
+              "normalizedValue": "259200 PCS",
+              "processBitMap": "0",
+              "axisX": 840,
+              "sepValue": "259200 PCS",
+              "axisY": 970,
+              "width": 259,
+              "attTypeCode": 1,
+              "height": 28
+            },
+            {
+              "attType": "Contract",
+              "imageId": 5,
+              "transformValue": "1500 PCS",
+              "originalValue": "1500 PCS",
+              "normalizedValue": "1500 PCS",
+              "processBitMap": "0",
+              "axisX": 858,
+              "sepValue": "1500 PCS",
+              "axisY": 1008,
+              "width": 241,
+              "attTypeCode": 1,
+              "height": 28
+            }
+          ],
+          "source_image": 5,
+          "originalValue": "2940 PCS",
+          "normalizedValue": "2940 PCS",
+          "keyDesc": "成交数量",
+          "value": "2940 PCS",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Contract",
+              "imageId": 5,
+              "transformValue": "PKGS",
+              "originalValue": "PKGS",
+              "normalizedValue": "PKGS",
+              "processBitMap": "0",
+              "axisX": 693,
+              "sepValue": "PKGS",
+              "axisY": 862,
+              "width": 82,
+              "attTypeCode": 1,
+              "height": 28
+            }
+          ],
+          "source_image": 5,
+          "originalValue": "PKGS",
+          "normalizedValue": "PKGS",
+          "keyDesc": "成交单位",
+          "value": "PKGS",
+          "key": "gUnit"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 1,
+              "transformValue": "7",
+              "originalValue": "7",
+              "normalizedValue": "7",
+              "processBitMap": "0",
+              "axisX": 806,
+              "sepValue": "7",
+              "axisY": 1074,
+              "width": 25,
+              "attTypeCode": 2,
+              "height": 30
+            },
+            {
+              "attType": "PackingList",
+              "imageId": 2,
+              "transformValue": "16",
+              "originalValue": "16",
+              "normalizedValue": "16",
+              "processBitMap": "0",
+              "axisX": 772,
+              "sepValue": "16",
+              "axisY": 1244,
+              "width": 27,
+              "attTypeCode": 3,
+              "height": 37
+            }
+          ],
+          "source_image": 1,
+          "originalValue": "7",
+          "normalizedValue": "7",
+          "keyDesc": "件数单项",
+          "value": "7",
+          "key": "gpackNo"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 2,
+              "transformValue": "WASHER 垫圈",
+              "originalValue": "WASHER 垫圈",
+              "normalizedValue": "WASHER 垫圈",
+              "processBitMap": "0",
+              "axisX": 368,
+              "sepValue": "WASHER 垫圈",
+              "axisY": 1244,
+              "width": 207,
+              "attTypeCode": 3,
+              "height": 37
+            },
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "WASHER 垫圈",
+              "originalValue": "WASHER 垫圈",
+              "normalizedValue": "WASHER 垫圈",
+              "processBitMap": "0",
+              "axisX": 327,
+              "sepValue": "WASHER 垫圈",
+              "axisY": 1244,
+              "width": 218,
+              "attTypeCode": 4,
+              "height": 37
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "WASHER 垫圈",
+          "normalizedValue": "WASHER 垫圈",
+          "keyDesc": "商品名称",
+          "value": "WASHER 垫圈",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 2,
+              "transformValue": "12,660.00",
+              "originalValue": "12,660.00",
+              "normalizedValue": "12,660.00",
+              "processBitMap": "0",
+              "axisX": 1172,
+              "sepValue": "12,660.00",
+              "axisY": 1244,
+              "width": 124,
+              "attTypeCode": 3,
+              "height": 37
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "12,660.00",
+          "normalizedValue": "12,660.00",
+          "keyDesc": "毛重单项",
+          "value": "12,660.00",
+          "key": "ggrossWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 2,
+              "transformValue": "11,845.00",
+              "originalValue": "11,845.00",
+              "normalizedValue": "11,845.00",
+              "processBitMap": "0",
+              "axisX": 1351,
+              "sepValue": "11,845.00",
+              "axisY": 1244,
+              "width": 122,
+              "attTypeCode": 3,
+              "height": 37
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "11,845.00",
+          "normalizedValue": "11,845.00",
+          "keyDesc": "净重单项",
+          "value": "11,845.00",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "7318220001",
+              "originalValue": "7318220001",
+              "normalizedValue": "7318220001",
+              "processBitMap": "0",
+              "axisX": 103,
+              "sepValue": "7318220001",
+              "axisY": 1244,
+              "width": 166,
+              "attTypeCode": 4,
+              "height": 37
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "7318220001",
+          "normalizedValue": "7318220001",
+          "keyDesc": "商品编号",
+          "value": "7318220001",
+          "key": "codeTs"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "259200.00",
+              "originalValue": "259200.00",
+              "normalizedValue": "259200.00",
+              "processBitMap": "0",
+              "axisX": 1004,
+              "sepValue": "259200.00",
+              "axisY": 1244,
+              "width": 141,
+              "attTypeCode": 4,
+              "height": 37
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "259200.00",
+          "normalizedValue": "259200.00",
+          "keyDesc": "单价",
+          "value": "259200.00",
+          "key": "declPrice"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "USD 11,602.42",
+              "originalValue": "USD 11,602.42",
+              "normalizedValue": "USD 11,602.42",
+              "processBitMap": "0",
+              "axisX": 1362,
+              "sepValue": "USD 11,602.42",
+              "axisY": 1244,
+              "width": 202,
+              "attTypeCode": 4,
+              "height": 37
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "USD 11,602.42",
+          "normalizedValue": "USD 11,602.42",
+          "keyDesc": "总价",
+          "value": "USD 11,602.42",
+          "key": "declTotal"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "USD",
+              "originalValue": "USD",
+              "normalizedValue": "USD",
+              "processBitMap": "0",
+              "axisX": 1362,
+              "sepValue": "USD",
+              "axisY": 1244,
+              "width": 202,
+              "attTypeCode": 4,
+              "height": 37
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "USD",
+          "normalizedValue": "USD",
+          "keyDesc": "币制",
+          "value": "USD",
+          "key": "tradeCurr"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Attributes",
+              "imageId": 4,
+              "transformValue": "0|2|钢铁|无品牌|3/8, 1/2 等",
+              "originalValue": "0|2|钢铁|无品牌|3/8, 1/2 等",
+              "normalizedValue": "0|2|钢铁|无品牌|3/8, 1/2 等",
+              "processBitMap": "0",
+              "axisX": 164,
+              "sepValue": "0|2|钢铁|无品牌|3/8, 1/2 等",
+              "axisY": 796,
+              "width": 769,
+              "attTypeCode": 5,
+              "height": 329
+            }
+          ],
+          "source_image": 4,
+          "originalValue": "0|2|钢铁|无品牌|3/8, 1/2 等",
+          "normalizedValue": "0|2|钢铁|无品牌|3/8, 1/2 等",
+          "keyDesc": "规格型号",
+          "value": "0|2|钢铁|无品牌|3/8, 1/2 等",
+          "key": "gModel"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 1,
+              "transformValue": "2940 PCS",
+              "originalValue": "2940 PCS",
+              "normalizedValue": "2940 PCS",
+              "processBitMap": "0",
+              "axisX": 909,
+              "sepValue": "2940 PCS",
+              "axisY": 1074,
+              "width": 151,
+              "attTypeCode": 2,
+              "height": 30
+            }
+          ],
+          "source_image": 1,
+          "originalValue": "2940 PCS",
+          "normalizedValue": "2940 PCS",
+          "keyDesc": "成交数量",
+          "value": "2940 PCS",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 2,
+              "transformValue": "METAL RING 抱箍",
+              "originalValue": "METAL RING 抱箍",
+              "normalizedValue": "METAL RING 抱箍",
+              "processBitMap": "0",
+              "axisX": 368,
+              "sepValue": "METAL RING 抱箍",
+              "axisY": 1304,
+              "width": 268,
+              "attTypeCode": 3,
+              "height": 41
+            },
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "METAL RING 抱箍",
+              "originalValue": "METAL RING 抱箍",
+              "normalizedValue": "METAL RING 抱箍",
+              "processBitMap": "0",
+              "axisX": 327,
+              "sepValue": "METAL RING 抱箍",
+              "axisY": 1314,
+              "width": 280,
+              "attTypeCode": 4,
+              "height": 38
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "METAL RING 抱箍",
+          "normalizedValue": "METAL RING 抱箍",
+          "keyDesc": "商品名称",
+          "value": "METAL RING 抱箍",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 2,
+              "transformValue": "6",
+              "originalValue": "6",
+              "normalizedValue": "6",
+              "processBitMap": "0",
+              "axisX": 772,
+              "sepValue": "6",
+              "axisY": 1304,
+              "width": 27,
+              "attTypeCode": 3,
+              "height": 41
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "6",
+          "normalizedValue": "6",
+          "keyDesc": "件数单项",
+          "value": "6",
+          "key": "gpackNo"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 2,
+              "transformValue": "6,100.00",
+              "originalValue": "6,100.00",
+              "normalizedValue": "6,100.00",
+              "processBitMap": "0",
+              "axisX": 1172,
+              "sepValue": "6,100.00",
+              "axisY": 1304,
+              "width": 124,
+              "attTypeCode": 3,
+              "height": 41
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "6,100.00",
+          "normalizedValue": "6,100.00",
+          "keyDesc": "毛重单项",
+          "value": "6,100.00",
+          "key": "ggrossWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 2,
+              "transformValue": "5,990.00",
+              "originalValue": "5,990.00",
+              "normalizedValue": "5,990.00",
+              "processBitMap": "0",
+              "axisX": 1351,
+              "sepValue": "5,990.00",
+              "axisY": 1304,
+              "width": 122,
+              "attTypeCode": 3,
+              "height": 41
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "5,990.00",
+          "normalizedValue": "5,990.00",
+          "keyDesc": "净重单项",
+          "value": "5,990.00",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "7318290000",
+              "originalValue": "7318290000",
+              "normalizedValue": "7318290000",
+              "processBitMap": "0",
+              "axisX": 103,
+              "sepValue": "7318290000",
+              "axisY": 1314,
+              "width": 166,
+              "attTypeCode": 4,
+              "height": 38
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "7318290000",
+          "normalizedValue": "7318290000",
+          "keyDesc": "商品编号",
+          "value": "7318290000",
+          "key": "codeTs"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "1500.00",
+              "originalValue": "1500.00",
+              "normalizedValue": "1500.00",
+              "processBitMap": "0",
+              "axisX": 1036,
+              "sepValue": "1500.00",
+              "axisY": 1314,
+              "width": 109,
+              "attTypeCode": 4,
+              "height": 38
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "1500.00",
+          "normalizedValue": "1500.00",
+          "keyDesc": "单价",
+          "value": "1500.00",
+          "key": "declPrice"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "USD 4,347.00",
+              "originalValue": "USD 4,347.00",
+              "normalizedValue": "USD 4,347.00",
+              "processBitMap": "0",
+              "axisX": 1365,
+              "sepValue": "USD 4,347.00",
+              "axisY": 1314,
+              "width": 193,
+              "attTypeCode": 4,
+              "height": 38
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "USD 4,347.00",
+          "normalizedValue": "USD 4,347.00",
+          "keyDesc": "总价",
+          "value": "USD 4,347.00",
+          "key": "declTotal"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "USD",
+              "originalValue": "USD",
+              "normalizedValue": "USD",
+              "processBitMap": "0",
+              "axisX": 1365,
+              "sepValue": "USD",
+              "axisY": 1314,
+              "width": 193,
+              "attTypeCode": 4,
+              "height": 38
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "USD",
+          "normalizedValue": "USD",
+          "keyDesc": "币制",
+          "value": "USD",
+          "key": "tradeCurr"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Attributes",
+              "imageId": 4,
+              "transformValue": "0|2|钢铁|无品牌|2 x 0.105 x 104.01 x 33.125等",
+              "originalValue": "0|2|钢铁|无品牌|2 x 0.105 x 104.01 x 33.125等",
+              "normalizedValue": "0|2|钢铁|无品牌|2 x 0.105 x 104.01 x 33.125等",
+              "processBitMap": "0",
+              "axisX": 164,
+              "sepValue": "0|2|钢铁|无品牌|2 x 0.105 x 104.01 x 33.125等",
+              "axisY": 1218,
+              "width": 769,
+              "attTypeCode": 5,
+              "height": 329
+            }
+          ],
+          "source_image": 4,
+          "originalValue": "0|2|钢铁|无品牌|2 x 0.105 x 104.01 x 33.125等",
+          "normalizedValue": "0|2|钢铁|无品牌|2 x 0.105 x 104.01 x 33.125等",
+          "keyDesc": "规格型号",
+          "value": "0|2|钢铁|无品牌|2 x 0.105 x 104.01 x 33.125等",
+          "key": "gModel"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 1,
+              "transformValue": "2.137",
+              "originalValue": "2.137",
+              "normalizedValue": "2.137",
+              "processBitMap": "0",
+              "axisX": 1174,
+              "sepValue": "2.137",
+              "axisY": 1074,
+              "width": 66,
+              "attTypeCode": 2,
+              "height": 30
+            }
+          ],
+          "source_image": 1,
+          "originalValue": "2.137",
+          "normalizedValue": "2.137",
+          "keyDesc": "单价",
+          "value": "2.137",
+          "key": "declPrice"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 1,
+              "transformValue": "6283.79",
+              "originalValue": "6283.79",
+              "normalizedValue": "6283.79",
+              "processBitMap": "0",
+              "axisX": 1364,
+              "sepValue": "6283.79",
+              "axisY": 1074,
+              "width": 96,
+              "attTypeCode": 2,
+              "height": 30
+            }
+          ],
+          "source_image": 1,
+          "originalValue": "6283.79",
+          "normalizedValue": "6283.79",
+          "keyDesc": "总价",
+          "value": "6283.79",
+          "key": "declTotal"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 1,
+              "transformValue": "WASSHER 垫圈",
+              "originalValue": "WASSHER 垫圈",
+              "normalizedValue": "WASSHER 垫圈",
+              "processBitMap": "0",
+              "axisX": 318,
+              "sepValue": "WASSHER 垫圈",
+              "axisY": 1112,
+              "width": 187,
+              "attTypeCode": 2,
+              "height": 35
+            }
+          ],
+          "source_image": 1,
+          "originalValue": "WASSHER 垫圈",
+          "normalizedValue": "WASSHER 垫圈",
+          "keyDesc": "商品名称",
+          "value": "WASSHER 垫圈",
+          "key": "gName"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 1,
+              "transformValue": "16",
+              "originalValue": "16",
+              "normalizedValue": "16",
+              "processBitMap": "0",
+              "axisX": 806,
+              "sepValue": "16",
+              "axisY": 1112,
+              "width": 25,
+              "attTypeCode": 2,
+              "height": 35
+            }
+          ],
+          "source_image": 1,
+          "originalValue": "16",
+          "normalizedValue": "16",
+          "keyDesc": "件数单项",
+          "value": "16",
+          "key": "gpackNo"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 1,
+              "transformValue": "259200 PCS",
+              "originalValue": "259200 PCS",
+              "normalizedValue": "259200 PCS",
+              "processBitMap": "0",
+              "axisX": 893,
+              "sepValue": "259200 PCS",
+              "axisY": 1112,
+              "width": 167,
+              "attTypeCode": 2,
+              "height": 35
+            }
+          ],
+          "source_image": 1,
+          "originalValue": "259200 PCS",
+          "normalizedValue": "259200 PCS",
+          "keyDesc": "成交数量",
+          "value": "259200 PCS",
+          "key": "gQty"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 1,
+              "transformValue": "0.045",
+              "originalValue": "0.045",
+              "normalizedValue": "0.045",
+              "processBitMap": "0",
+              "axisX": 1174,
+              "sepValue": "0.045",
+              "axisY": 1112,
+              "width": 66,
+              "attTypeCode": 2,
+              "height": 35
+            }
+          ],
+          "source_image": 1,
+          "originalValue": "0.045",
+          "normalizedValue": "0.045",
+          "keyDesc": "单价",
+          "value": "0.045",
+          "key": "declPrice"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 1,
+              "transformValue": "11602.42",
+              "originalValue": "11602.42",
+              "normalizedValue": "11602.42",
+              "processBitMap": "0",
+              "axisX": 1364,
+              "sepValue": "11602.42",
+              "axisY": 1112,
+              "width": 96,
+              "attTypeCode": 2,
+              "height": 35
+            }
+          ],
+          "source_image": 1,
+          "originalValue": "11602.42",
+          "normalizedValue": "11602.42",
+          "keyDesc": "总价",
+          "value": "11602.42",
+          "key": "declTotal"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 1,
+              "transformValue": "METAL RING 抱箍",
+              "originalValue": "METAL RING 抱箍",
+              "normalizedValue": "METAL RING 抱箍",
+              "processBitMap": "0",
+              "axisX": 318,
+              "sepValue": "METAL RING 抱箍",
+              "axisY": 1150,
+              "width": 241,
+              "attTypeCode": 2,
+              "height": 38
+            }
+          ],
+          "source_image": 1,
+          "originalValue": "METAL RING 抱箍",
+          "normalizedValue": "METAL RING 抱箍",
+          "keyDesc": "商品名称",
+          "value": "METAL RING 抱箍",
+          "key": "gName"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 1,
+              "transformValue": "6",
+              "originalValue": "6",
+              "normalizedValue": "6",
+              "processBitMap": "0",
+              "axisX": 806,
+              "sepValue": "6",
+              "axisY": 1150,
+              "width": 25,
+              "attTypeCode": 2,
+              "height": 38
+            }
+          ],
+          "source_image": 1,
+          "originalValue": "6",
+          "normalizedValue": "6",
+          "keyDesc": "件数单项",
+          "value": "6",
+          "key": "gpackNo"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 1,
+              "transformValue": "1500 PCS",
+              "originalValue": "1500 PCS",
+              "normalizedValue": "1500 PCS",
+              "processBitMap": "0",
+              "axisX": 909,
+              "sepValue": "1500 PCS",
+              "axisY": 1150,
+              "width": 151,
+              "attTypeCode": 2,
+              "height": 38
+            }
+          ],
+          "source_image": 1,
+          "originalValue": "1500 PCS",
+          "normalizedValue": "1500 PCS",
+          "keyDesc": "成交数量",
+          "value": "1500 PCS",
+          "key": "gQty"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 1,
+              "transformValue": "2.898",
+              "originalValue": "2.898",
+              "normalizedValue": "2.898",
+              "processBitMap": "0",
+              "axisX": 1174,
+              "sepValue": "2.898",
+              "axisY": 1150,
+              "width": 66,
+              "attTypeCode": 2,
+              "height": 38
+            }
+          ],
+          "source_image": 1,
+          "originalValue": "2.898",
+          "normalizedValue": "2.898",
+          "keyDesc": "单价",
+          "value": "2.898",
+          "key": "declPrice"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 1,
+              "transformValue": "4347.00",
+              "originalValue": "4347.00",
+              "normalizedValue": "4347.00",
+              "processBitMap": "0",
+              "axisX": 1364,
+              "sepValue": "4347.00",
+              "axisY": 1150,
+              "width": 96,
+              "attTypeCode": 2,
+              "height": 38
+            }
+          ],
+          "source_image": 1,
+          "originalValue": "4347.00",
+          "normalizedValue": "4347.00",
+          "keyDesc": "总价",
+          "value": "4347.00",
+          "key": "declTotal"
+        }
+      ]
+    ],
+    "operateImage": [
+      {
+        "imageWidth": "1786",
+        "originalFileName": "25011A25013B-报关资料.xls",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02504/a089f2abdc0b41e1b51f931df98d49d3/0_25011A25013B-%E6%8A%A5%E5%85%B3%E8%B5%84%E6%96%99.xls.txt",
+        "imageId": 1,
+        "officeFileParseResultUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02504/a089f2abdc0b41e1b51f931df98d49d3/25011A25013B-%E6%8A%A5%E5%85%B3%E8%B5%84%E6%96%99.xls_parse2.txt",
+        "pdfDocPage": 0,
+        "originalFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02504/a089f2abdc0b41e1b51f931df98d49d3/25011A25013B-%E6%8A%A5%E5%85%B3%E8%B5%84%E6%96%99.xls",
+        "imageHeight": "2526",
+        "originalImageWidth": "1786",
+        "imageUrl": "https://smartebao-dub-zd-ocr.oss-cn-shanghai.aliyuncs.com/ocr/operateImage/2026-01-28/8bc4a5f81360617b1e374e804b60bdd1.png",
+        "angle": 0,
+        "originalImageHeight": "2526",
+        "attTypeCode": 2,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "1786",
+        "originalFileName": "25011A25013B-报关资料.xls",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02504/a089f2abdc0b41e1b51f931df98d49d3/1_25011A25013B-%E6%8A%A5%E5%85%B3%E8%B5%84%E6%96%99.xls.txt",
+        "imageId": 2,
+        "officeFileParseResultUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02504/a089f2abdc0b41e1b51f931df98d49d3/25011A25013B-%E6%8A%A5%E5%85%B3%E8%B5%84%E6%96%99.xls_parse2.txt",
+        "pdfDocPage": 1,
+        "originalFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02504/a089f2abdc0b41e1b51f931df98d49d3/25011A25013B-%E6%8A%A5%E5%85%B3%E8%B5%84%E6%96%99.xls",
+        "imageHeight": "2526",
+        "originalImageWidth": "1786",
+        "imageUrl": "https://smartebao-dub-zd-ocr.oss-cn-shanghai.aliyuncs.com/ocr/operateImage/2026-01-28/2057c4970f51dd2a7f185050dc084e7f.png",
+        "angle": 0,
+        "originalImageHeight": "2526",
+        "attTypeCode": 3,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "1786",
+        "originalFileName": "25011A25013B-报关资料.xls",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02504/a089f2abdc0b41e1b51f931df98d49d3/2_25011A25013B-%E6%8A%A5%E5%85%B3%E8%B5%84%E6%96%99.xls.txt",
+        "imageId": 3,
+        "officeFileParseResultUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02504/a089f2abdc0b41e1b51f931df98d49d3/25011A25013B-%E6%8A%A5%E5%85%B3%E8%B5%84%E6%96%99.xls_parse2.txt",
+        "pdfDocPage": 2,
+        "originalFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02504/a089f2abdc0b41e1b51f931df98d49d3/25011A25013B-%E6%8A%A5%E5%85%B3%E8%B5%84%E6%96%99.xls",
+        "imageHeight": "2526",
+        "originalImageWidth": "1786",
+        "imageUrl": "https://smartebao-dub-zd-ocr.oss-cn-shanghai.aliyuncs.com/ocr/operateImage/2026-01-28/815dfd46e9d48271fd85b73fbc687474.png",
+        "angle": 0,
+        "originalImageHeight": "2526",
+        "attTypeCode": 4,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "1786",
+        "originalFileName": "25011A25013B-报关资料.xls",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02504/a089f2abdc0b41e1b51f931df98d49d3/3_25011A25013B-%E6%8A%A5%E5%85%B3%E8%B5%84%E6%96%99.xls.txt",
+        "imageId": 4,
+        "officeFileParseResultUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02504/a089f2abdc0b41e1b51f931df98d49d3/25011A25013B-%E6%8A%A5%E5%85%B3%E8%B5%84%E6%96%99.xls_parse2.txt",
+        "pdfDocPage": 3,
+        "originalFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02504/a089f2abdc0b41e1b51f931df98d49d3/25011A25013B-%E6%8A%A5%E5%85%B3%E8%B5%84%E6%96%99.xls",
+        "imageHeight": "2526",
+        "originalImageWidth": "1786",
+        "imageUrl": "https://smartebao-dub-zd-ocr.oss-cn-shanghai.aliyuncs.com/ocr/operateImage/2026-01-28/31af1d8d001a9a33aed612186582c977.png",
+        "angle": 0,
+        "originalImageHeight": "2526",
+        "attTypeCode": 5,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "1786",
+        "originalFileName": "25011A25013B-报关资料.xls",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02504/a089f2abdc0b41e1b51f931df98d49d3/4_25011A25013B-%E6%8A%A5%E5%85%B3%E8%B5%84%E6%96%99.xls.txt",
+        "imageId": 5,
+        "officeFileParseResultUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02504/a089f2abdc0b41e1b51f931df98d49d3/25011A25013B-%E6%8A%A5%E5%85%B3%E8%B5%84%E6%96%99.xls_parse2.txt",
+        "pdfDocPage": 4,
+        "originalFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02504/a089f2abdc0b41e1b51f931df98d49d3/25011A25013B-%E6%8A%A5%E5%85%B3%E8%B5%84%E6%96%99.xls",
+        "imageHeight": "2526",
+        "originalImageWidth": "1786",
+        "imageUrl": "https://smartebao-dub-zd-ocr.oss-cn-shanghai.aliyuncs.com/ocr/operateImage/2026-01-28/ac118e9cd0ada955585012386a57b7b2.png",
+        "angle": 0,
+        "originalImageHeight": "2526",
+        "attTypeCode": 1,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "1785",
+        "originalFileName": "25011A25013B-报关资料.xls",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02504/a089f2abdc0b41e1b51f931df98d49d3/5_25011A25013B-%E6%8A%A5%E5%85%B3%E8%B5%84%E6%96%99.xls.txt",
+        "imageId": 6,
+        "officeFileParseResultUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02504/a089f2abdc0b41e1b51f931df98d49d3/25011A25013B-%E6%8A%A5%E5%85%B3%E8%B5%84%E6%96%99.xls_parse2.txt",
+        "pdfDocPage": 5,
+        "originalFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02504/a089f2abdc0b41e1b51f931df98d49d3/25011A25013B-%E6%8A%A5%E5%85%B3%E8%B5%84%E6%96%99.xls",
+        "imageHeight": "2525",
+        "originalImageWidth": "1785",
+        "imageUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02504/a089f2abdc0b41e1b51f931df98d49d3/5_25011A25013B-%E6%8A%A5%E5%85%B3%E8%B5%84%E6%96%99.xls.png",
+        "angle": 0,
+        "originalImageHeight": "2525",
+        "attTypeCode": 13,
+        "imageSuffix": "png"
+      }
+    ],
+    "preDecContainer": []
+  }
+}

@@ -1,0 +1,903 @@
+{
+  "head": {
+    "signInfo": "",
+    "receiptType": 0,
+    "bizCode": "DUB00113",
+    "appId": "ALIYUN01",
+    "bizId": "E690bdbd5720e3247210581cf",
+    "resultCode": "0",
+    "msgId": "326960113",
+    "resultMessage": "识别成功",
+    "version": "1.0",
+    "timestampStr": "2026-01-28 11:43:53",
+    "receiveId": "EBAO0001"
+  },
+  "content": {
+    "preDecHead": [
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Contract",
+            "imageId": 2,
+            "transformValue": "21202869338",
+            "originalValue": "21202869338",
+            "normalizedValue": "21202869338",
+            "processBitMap": "0",
+            "axisX": 1308,
+            "sepValue": "21202869338",
+            "axisY": 125,
+            "width": 146,
+            "attTypeCode": 1,
+            "height": 28
+          },
+          {
+            "attType": "Invoice",
+            "imageId": 4,
+            "transformValue": "21202869338",
+            "originalValue": "PO:21202869338",
+            "normalizedValue": "PO:21202869338",
+            "processBitMap": "0",
+            "axisX": 474,
+            "sepValue": "PO:21202869338",
+            "axisY": 1066,
+            "width": 218,
+            "attTypeCode": 2,
+            "height": 34
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "21202869338",
+        "normalizedValue": "21202869338",
+        "keyDesc": "合同协议号",
+        "value": "21202869338",
+        "key": "contrNo"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Contract",
+            "imageId": 2,
+            "transformValue": "SHENZHEN AOLI CASTING HARDWARE PRODUCTS CO., LTD",
+            "originalValue": "SHENZHEN AOLI CASTING HARDWARE PRODUCTS CO., LTD",
+            "normalizedValue": "SHENZHEN AOLI CASTING HARDWARE PRODUCTS CO., LTD",
+            "processBitMap": "0",
+            "axisX": 355,
+            "sepValue": "SHENZHEN AOLI CASTING HARDWARE PRODUCTS CO., LTD",
+            "axisY": 265,
+            "width": 628,
+            "attTypeCode": 1,
+            "height": 31
+          },
+          {
+            "attType": "PackingList",
+            "imageId": 3,
+            "transformValue": "深圳市奥力精密智造有限公司",
+            "originalValue": "深圳市奥力精密智造有限公司",
+            "normalizedValue": "深圳市奥力精密智造有限公司",
+            "processBitMap": "0",
+            "axisX": 62,
+            "sepValue": "深圳市奥力精密智造有限公司",
+            "axisY": 89,
+            "width": 632,
+            "attTypeCode": 3,
+            "height": 54
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "SHENZHEN AOLI CASTING HARDWARE PRODUCTS CO., LTD",
+        "normalizedValue": "SHENZHEN AOLI CASTING HARDWARE PRODUCTS CO., LTD",
+        "keyDesc": "境内收发货人名称",
+        "value": "SHENZHEN AOLI CASTING HARDWARE PRODUCTS CO., LTD",
+        "key": "consigneeCname"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Contract",
+            "imageId": 2,
+            "transformValue": "A12.NO.2#,3RD IND.ZONE",
+            "originalValue": "A12.NO.2#,3RD IND.ZONE",
+            "normalizedValue": "A12.NO.2#,3RD IND.ZONE",
+            "processBitMap": "0",
+            "axisX": 356,
+            "sepValue": "A12.NO.2#,3RD IND.ZONE",
+            "axisY": 294,
+            "width": 270,
+            "attTypeCode": 1,
+            "height": 25
+          },
+          {
+            "attType": "PackingList",
+            "imageId": 3,
+            "transformValue": "8517799000",
+            "originalValue": "8517799000",
+            "normalizedValue": "8517799000",
+            "processBitMap": "0",
+            "axisX": 1136,
+            "sepValue": "8517799000",
+            "axisY": 797,
+            "width": 273,
+            "attTypeCode": 3,
+            "height": 34
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "A12.NO.2#,3RD IND.ZONE",
+        "normalizedValue": "A12.NO.2#,3RD IND.ZONE",
+        "keyDesc": "境内收发货人海关代码",
+        "value": "A12.NO.2#,3RD IND.ZONE",
+        "key": "rcvgdTradeCode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Contract",
+            "imageId": 2,
+            "transformValue": "Fabrinet Co., Ltd.",
+            "originalValue": "Fabrinet Co., Ltd.",
+            "normalizedValue": "Fabrinet Co., Ltd.",
+            "processBitMap": "0",
+            "axisX": 1254,
+            "sepValue": "Fabrinet Co., Ltd.",
+            "axisY": 283,
+            "width": 175,
+            "attTypeCode": 1,
+            "height": 26
+          },
+          {
+            "attType": "PackingList",
+            "imageId": 3,
+            "transformValue": "Fabrinet C/O Fabrinet Pte.Ltd.",
+            "originalValue": "Fabrinet C/O Fabrinet Pte.Ltd.",
+            "normalizedValue": "Fabrinet C/O Fabrinet Pte.Ltd.",
+            "processBitMap": "0",
+            "axisX": 191,
+            "sepValue": "Fabrinet C/O Fabrinet Pte.Ltd.",
+            "axisY": 711,
+            "width": 291,
+            "attTypeCode": 3,
+            "height": 74
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "Fabrinet Co., Ltd.",
+        "normalizedValue": "Fabrinet Co., Ltd.",
+        "keyDesc": "境外收发货人",
+        "value": "Fabrinet Co., Ltd.",
+        "key": "consignorEname"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Contract",
+            "imageId": 2,
+            "transformValue": "China",
+            "originalValue": "China",
+            "normalizedValue": "China",
+            "processBitMap": "0",
+            "axisX": 356,
+            "sepValue": "China",
+            "axisY": 393,
+            "width": 65,
+            "attTypeCode": 1,
+            "height": 23
+          },
+          {
+            "attType": "PackingList",
+            "imageId": 3,
+            "transformValue": "ShenZhen",
+            "originalValue": "ShenZhen",
+            "normalizedValue": "ShenZhen",
+            "processBitMap": "0",
+            "axisX": 1074,
+            "sepValue": "ShenZhen",
+            "axisY": 984,
+            "width": 225,
+            "attTypeCode": 3,
+            "height": 33
+          },
+          {
+            "attType": "Invoice",
+            "imageId": 4,
+            "transformValue": "From ShenZhen",
+            "originalValue": "From ShenZhen",
+            "normalizedValue": "From ShenZhen",
+            "processBitMap": "0",
+            "axisX": 1285,
+            "sepValue": "From ShenZhen",
+            "axisY": 724,
+            "width": 219,
+            "attTypeCode": 2,
+            "height": 35
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "China",
+        "normalizedValue": "CHN",
+        "keyDesc": "贸易国",
+        "value": "CHN",
+        "key": "cusTradeNationCode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Contract",
+            "imageId": 2,
+            "transformValue": "Thailand",
+            "originalValue": "Thailand",
+            "normalizedValue": "Thailand",
+            "processBitMap": "0",
+            "axisX": 1254,
+            "sepValue": "Thailand",
+            "axisY": 375,
+            "width": 86,
+            "attTypeCode": 1,
+            "height": 26
+          },
+          {
+            "attType": "PackingList",
+            "imageId": 3,
+            "transformValue": "Thailand",
+            "originalValue": "Thailand",
+            "normalizedValue": "Thailand",
+            "processBitMap": "0",
+            "axisX": 1074,
+            "sepValue": "Thailand",
+            "axisY": 1028,
+            "width": 170,
+            "attTypeCode": 3,
+            "height": 35
+          },
+          {
+            "attType": "Invoice",
+            "imageId": 4,
+            "transformValue": "To Thailand",
+            "originalValue": "To Thailand",
+            "normalizedValue": "To Thailand",
+            "processBitMap": "0",
+            "axisX": 1285,
+            "sepValue": "To Thailand",
+            "axisY": 772,
+            "width": 164,
+            "attTypeCode": 2,
+            "height": 33
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "Thailand",
+        "normalizedValue": "THA",
+        "keyDesc": "运抵国",
+        "value": "THA",
+        "key": "cusTradeCountry"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Contract",
+            "imageId": 2,
+            "transformValue": "USD",
+            "originalValue": "USD",
+            "normalizedValue": "USD",
+            "processBitMap": "0",
+            "axisX": 1299,
+            "sepValue": "USD",
+            "axisY": 2276,
+            "width": 77,
+            "attTypeCode": 1,
+            "height": 33
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "USD",
+        "normalizedValue": "USD",
+        "keyDesc": "运费币制",
+        "value": "USD",
+        "key": "feeCurr"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Contract",
+            "imageId": 2,
+            "transformValue": "546.00",
+            "originalValue": "546.00",
+            "normalizedValue": "546.00",
+            "processBitMap": "0",
+            "axisX": 1659,
+            "sepValue": "546.00",
+            "axisY": 2286,
+            "width": 82,
+            "attTypeCode": 1,
+            "height": 28
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "546.00",
+        "normalizedValue": "546.00",
+        "keyDesc": "总价总和",
+        "value": "546.00",
+        "key": "totalAmount"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "PackingList",
+            "imageId": 3,
+            "transformValue": "6.50",
+            "originalValue": "6.50",
+            "normalizedValue": "6.50",
+            "processBitMap": "0",
+            "axisX": 1614,
+            "sepValue": "6.50",
+            "axisY": 1508,
+            "width": 66,
+            "attTypeCode": 3,
+            "height": 36
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "6.50",
+        "normalizedValue": "6.50",
+        "keyDesc": "毛重",
+        "value": "6.50",
+        "key": "grossWt"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "PackingList",
+            "imageId": 3,
+            "transformValue": "5.40",
+            "originalValue": "5.40",
+            "normalizedValue": "5.40",
+            "processBitMap": "0",
+            "axisX": 1350,
+            "sepValue": "5.40",
+            "axisY": 1508,
+            "width": 71,
+            "attTypeCode": 3,
+            "height": 36
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "5.40",
+        "normalizedValue": "5.40",
+        "keyDesc": "净重",
+        "value": "5.40",
+        "key": "netWt"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 4,
+            "transformValue": "深圳市奥力精密智造有限公司",
+            "originalValue": "深圳市奥力精密智造有限公司",
+            "normalizedValue": "深圳市奥力精密智造有限公司",
+            "processBitMap": "0",
+            "axisX": 88,
+            "sepValue": "深圳市奥力精密智造有限公司",
+            "axisY": 79,
+            "width": 632,
+            "attTypeCode": 2,
+            "height": 54
+          }
+        ],
+        "source_image": 4,
+        "originalValue": "深圳市奥力精密智造有限公司",
+        "normalizedValue": "深圳市奥力精密智造有限公司",
+        "keyDesc": "生产销售单位名称",
+        "value": "深圳市奥力精密智造有限公司",
+        "key": "ownerName"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 4,
+            "transformValue": "4403962298240",
+            "originalValue": "4403962298240",
+            "normalizedValue": "4403962298240",
+            "processBitMap": "0",
+            "axisX": 731,
+            "sepValue": "4403962298240",
+            "axisY": 895,
+            "width": 199,
+            "attTypeCode": 2,
+            "height": 51
+          }
+        ],
+        "source_image": 4,
+        "originalValue": "4403962298240",
+        "normalizedValue": "4403962298240",
+        "keyDesc": "生产销售单位海关代码",
+        "value": "4403962298240",
+        "key": "ownerCode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 4,
+            "transformValue": "7",
+            "originalValue": "EX-WORKS",
+            "normalizedValue": "EX-WORKS",
+            "processBitMap": "0",
+            "axisX": 1285,
+            "sepValue": "EX-WORKS",
+            "axisY": 946,
+            "width": 322,
+            "attTypeCode": 2,
+            "height": 33
+          }
+        ],
+        "source_image": 4,
+        "originalValue": "EX-WORKS",
+        "normalizedValue": "7",
+        "keyDesc": "成交方式",
+        "value": "7",
+        "key": "transMode"
+      }
+    ],
+    "preDecList": [
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Contract",
+              "imageId": 2,
+              "transformValue": "P8116647",
+              "originalValue": "P8116647",
+              "normalizedValue": "P8116647",
+              "processBitMap": "0",
+              "axisX": 198,
+              "sepValue": "P8116647",
+              "axisY": 1242,
+              "width": 98,
+              "attTypeCode": 1,
+              "height": 26
+            },
+            {
+              "attType": "Invoice",
+              "imageId": 4,
+              "transformValue": "PO:21202869338",
+              "originalValue": "PO:21202869338",
+              "normalizedValue": "PO:21202869338",
+              "processBitMap": "0",
+              "axisX": 474,
+              "sepValue": "PO:21202869338",
+              "axisY": 1066,
+              "width": 218,
+              "attTypeCode": 2,
+              "height": 34
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "P8116647",
+          "normalizedValue": "P8116647",
+          "keyDesc": "商品编号",
+          "value": "P8116647",
+          "key": "codeTs"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Contract",
+              "imageId": 2,
+              "transformValue": "Metalwork,Cover,ZAMAK3,QSFP POLS,cast **This material must comply to EU RoHS Directive. CoC required for each lot .COMMODITY: Mechanical Part,(MFG/MFG Part Number): (SHENZHEN AOLI CASTING HARDWARE/P6116647)",
+              "originalValue": "Metalwork,Cover,ZAMAK3,QSFP POLS,cast **This material must comply to EU RoHS Directive. CoC required for each lot .COMMODITY: Mechanical Part,(MFG/MFG Part Number): (SHENZHEN AOLI CASTING HARDWARE/P6116647)",
+              "normalizedValue": "Metalwork,Cover,ZAMAK3,QSFP POLS,cast **This material must comply to EU RoHS Directive. CoC required for each lot .COMMODITY: Mechanical Part,(MFG/MFG Part Number): (SHENZHEN AOLI CASTING HARDWARE/P6116647)",
+              "processBitMap": "0",
+              "axisX": 198,
+              "sepValue": "Metalwork,Cover,ZAMAK3,QSFP POLS,cast **This material must comply to EU RoHS Directive. CoC required for each lot .COMMODITY: Mechanical Part,(MFG/MFG Part Number): (SHENZHEN AOLI CASTING HARDWARE/P6116647)",
+              "axisY": 1242,
+              "width": 621,
+              "attTypeCode": 1,
+              "height": 103
+            },
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "Metalwork,Cover,ZAMAK3,QSFP POLS,cast **This material must comply to EU RoHS Directive. CoC required for each lot .COMMODITY: Mechanical Part,(MFG/MFG Part Number): (SHENZHEN AOLI CASTING HARDWARE/P6116647)",
+              "originalValue": "光收发模块上盖 Metalwork, Cover, ZAMAK3, QSFP POLS, cast P6116647",
+              "normalizedValue": "光收发模块上盖 Metalwork, Cover, ZAMAK3, QSFP POLS, cast P6116647",
+              "processBitMap": "0",
+              "axisX": 219,
+              "sepValue": "光收发模块上盖 Metalwork, Cover, ZAMAK3, QSFP POLS, cast P6116647",
+              "axisY": 1347,
+              "width": 562,
+              "attTypeCode": 3,
+              "height": 118
+            },
+            {
+              "attType": "Invoice",
+              "imageId": 4,
+              "transformValue": "Metalwork,Cover,ZAMAK3,QSFP POLS,cast **This material must comply to EU RoHS Directive. CoC required for each lot .COMMODITY: Mechanical Part,(MFG/MFG Part Number): (SHENZHEN AOLI CASTING HARDWARE/P6116647)",
+              "originalValue": "光收发模块上盖 Metalwork, Cover, ZAMAK3, QSFP POLS, cast P6116647",
+              "normalizedValue": "光收发模块上盖 Metalwork, Cover, ZAMAK3, QSFP POLS, cast P6116647",
+              "processBitMap": "0",
+              "axisX": 300,
+              "sepValue": "光收发模块上盖 Metalwork, Cover, ZAMAK3, QSFP POLS, cast P6116647",
+              "axisY": 1107,
+              "width": 564,
+              "attTypeCode": 2,
+              "height": 108
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "Metalwork,Cover,ZAMAK3,QSFP POLS,cast **This material must comply to EU RoHS Directive. CoC required for each lot .COMMODITY: Mechanical Part,(MFG/MFG Part Number): (SHENZHEN AOLI CASTING HARDWARE/P6116647)",
+          "normalizedValue": "Metalwork,Cover,ZAMAK3,QSFP POLS,cast **This material must comply to EU RoHS Directive. CoC required for each lot .COMMODITY: Mechanical Part,(MFG/MFG Part Number): (SHENZHEN AOLI CASTING HARDWARE/P6116647)",
+          "keyDesc": "商品名称",
+          "value": "Metalwork,Cover,ZAMAK3,QSFP POLS,cast **This material must comply to EU RoHS Directive. CoC required for each lot .COMMODITY: Mechanical Part,(MFG/MFG Part Number): (SHENZHEN AOLI CASTING HARDWARE/P6116647)",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Contract",
+              "imageId": 2,
+              "transformValue": "Each",
+              "originalValue": "Each",
+              "normalizedValue": "Each",
+              "processBitMap": "0",
+              "axisX": 1242,
+              "sepValue": "Each",
+              "axisY": 1245,
+              "width": 55,
+              "attTypeCode": 1,
+              "height": 23
+            },
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "Each",
+              "originalValue": "pcs",
+              "normalizedValue": "pcs",
+              "processBitMap": "0",
+              "axisX": 1079,
+              "sepValue": "pcs",
+              "axisY": 1391,
+              "width": 66,
+              "attTypeCode": 3,
+              "height": 36
+            },
+            {
+              "attType": "Invoice",
+              "imageId": 4,
+              "transformValue": "Each",
+              "originalValue": "PCS",
+              "normalizedValue": "PCS",
+              "processBitMap": "0",
+              "axisX": 1184,
+              "sepValue": "PCS",
+              "axisY": 1123,
+              "width": 76,
+              "attTypeCode": 2,
+              "height": 36
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "Each",
+          "normalizedValue": "Each",
+          "keyDesc": "成交单位",
+          "value": "Each",
+          "key": "gUnit"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Contract",
+              "imageId": 2,
+              "transformValue": "300",
+              "originalValue": "300",
+              "normalizedValue": "300",
+              "processBitMap": "0",
+              "axisX": 1094,
+              "sepValue": "300",
+              "axisY": 1245,
+              "width": 35,
+              "attTypeCode": 1,
+              "height": 23
+            },
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "300",
+              "originalValue": "300",
+              "normalizedValue": "300",
+              "processBitMap": "0",
+              "axisX": 840,
+              "sepValue": "300",
+              "axisY": 1386,
+              "width": 58,
+              "attTypeCode": 3,
+              "height": 36
+            },
+            {
+              "attType": "Invoice",
+              "imageId": 4,
+              "transformValue": "300",
+              "originalValue": "300",
+              "normalizedValue": "300",
+              "processBitMap": "0",
+              "axisX": 1028,
+              "sepValue": "300",
+              "axisY": 1123,
+              "width": 56,
+              "attTypeCode": 2,
+              "height": 36
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "300",
+          "normalizedValue": "300",
+          "keyDesc": "成交数量",
+          "value": "300",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Contract",
+              "imageId": 2,
+              "transformValue": "1.82000",
+              "originalValue": "1.82000",
+              "normalizedValue": "1.82000",
+              "processBitMap": "0",
+              "axisX": 1427,
+              "sepValue": "1.82000",
+              "axisY": 1245,
+              "width": 74,
+              "attTypeCode": 1,
+              "height": 23
+            },
+            {
+              "attType": "Invoice",
+              "imageId": 4,
+              "transformValue": "1.82000",
+              "originalValue": "1.82",
+              "normalizedValue": "1.82",
+              "processBitMap": "0",
+              "axisX": 1326,
+              "sepValue": "1.82",
+              "axisY": 1123,
+              "width": 62,
+              "attTypeCode": 2,
+              "height": 36
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "1.82000",
+          "normalizedValue": "1.82000",
+          "keyDesc": "单价",
+          "value": "1.82000",
+          "key": "declPrice"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Contract",
+              "imageId": 2,
+              "transformValue": "USD",
+              "originalValue": "USD",
+              "normalizedValue": "USD",
+              "processBitMap": "0",
+              "axisX": 1299,
+              "sepValue": "USD",
+              "axisY": 2276,
+              "width": 77,
+              "attTypeCode": 1,
+              "height": 33
+            },
+            {
+              "attType": "Invoice",
+              "imageId": 4,
+              "transformValue": "USD",
+              "originalValue": "USD",
+              "normalizedValue": "USD",
+              "processBitMap": "0",
+              "axisX": 1459,
+              "sepValue": "USD",
+              "axisY": 1002,
+              "width": 188,
+              "attTypeCode": 2,
+              "height": 36
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "USD",
+          "normalizedValue": "USD",
+          "keyDesc": "币制",
+          "value": "USD",
+          "key": "tradeCurr"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Contract",
+              "imageId": 2,
+              "transformValue": "546.00",
+              "originalValue": "546.00",
+              "normalizedValue": "546.00",
+              "processBitMap": "0",
+              "axisX": 1606,
+              "sepValue": "546.00",
+              "axisY": 1245,
+              "width": 62,
+              "attTypeCode": 1,
+              "height": 23
+            },
+            {
+              "attType": "Invoice",
+              "imageId": 4,
+              "transformValue": "546.00",
+              "originalValue": "546.00",
+              "normalizedValue": "546.00",
+              "processBitMap": "0",
+              "axisX": 1575,
+              "sepValue": "546.00",
+              "axisY": 1120,
+              "width": 96,
+              "attTypeCode": 2,
+              "height": 39
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "546.00",
+          "normalizedValue": "546.00",
+          "keyDesc": "总价",
+          "value": "546.00",
+          "key": "declTotal"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "5.4",
+              "originalValue": "5.4",
+              "normalizedValue": "5.4",
+              "processBitMap": "0",
+              "axisX": 1209,
+              "sepValue": "5.4",
+              "axisY": 1391,
+              "width": 53,
+              "attTypeCode": 3,
+              "height": 36
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "5.4",
+          "normalizedValue": "5.4",
+          "keyDesc": "净重单项",
+          "value": "5.4",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "6.5",
+              "originalValue": "6.5",
+              "normalizedValue": "6.5",
+              "processBitMap": "0",
+              "axisX": 1494,
+              "sepValue": "6.5",
+              "axisY": 1391,
+              "width": 57,
+              "attTypeCode": 3,
+              "height": 36
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "6.5",
+          "normalizedValue": "6.5",
+          "keyDesc": "毛重单项",
+          "value": "6.5",
+          "key": "ggrossWt"
+        }
+      ]
+    ],
+    "operateImage": [
+      {
+        "imageWidth": "2556",
+        "originalFileName": "358C1253EE628C50F9DE07E8EDA327BA4119.pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/3805cdb4-fc90-4284-af3b-1bde3f887409/885769352590/file/0_358C1253EE628C50F9DE07E8EDA327BA4119.pdf.txt",
+        "imageId": 1,
+        "pdfDocPage": 0,
+        "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/3805cdb4-fc90-4284-af3b-1bde3f887409/885769352590/file/358C1253EE628C50F9DE07E8EDA327BA4119.pdf",
+        "imageHeight": "1783",
+        "originalImageWidth": "2556",
+        "imageUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/3805cdb4-fc90-4284-af3b-1bde3f887409/885769352590/file/0_358C1253EE628C50F9DE07E8EDA327BA4119.pdf.png",
+        "angle": 0,
+        "originalImageHeight": "1783",
+        "attTypeCode": 13,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "1783",
+        "originalFileName": "358C1253EE628C50F9DE07E8EDA327BA4119.pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/3805cdb4-fc90-4284-af3b-1bde3f887409/885769352590/file/1_358C1253EE628C50F9DE07E8EDA327BA4119.pdf.txt",
+        "imageId": 2,
+        "pdfDocPage": 1,
+        "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/3805cdb4-fc90-4284-af3b-1bde3f887409/885769352590/file/358C1253EE628C50F9DE07E8EDA327BA4119.pdf",
+        "imageHeight": "2555",
+        "originalImageWidth": "1783",
+        "imageUrl": "https://smartebao-dub-zd-ocr.oss-cn-shanghai.aliyuncs.com/ocr/operateImage/2026-01-28/d45a06a7a11f42ca5bdf1a8738e31cd3.png",
+        "angle": 0,
+        "originalImageHeight": "2555",
+        "attTypeCode": 1,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "1771",
+        "originalFileName": "358C1253EE628C50F9DE07E8EDA327BA4119.pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/3805cdb4-fc90-4284-af3b-1bde3f887409/885769352590/file/2_358C1253EE628C50F9DE07E8EDA327BA4119.pdf.txt",
+        "imageId": 3,
+        "pdfDocPage": 2,
+        "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/3805cdb4-fc90-4284-af3b-1bde3f887409/885769352590/file/358C1253EE628C50F9DE07E8EDA327BA4119.pdf",
+        "imageHeight": "2555",
+        "originalImageWidth": "1771",
+        "imageUrl": "https://smartebao-dub-zd-ocr.oss-cn-shanghai.aliyuncs.com/ocr/operateImage/2026-01-28/e6179b09a33b12b5485e52097a751167.png",
+        "angle": 0,
+        "originalImageHeight": "2555",
+        "attTypeCode": 3,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "1774",
+        "originalFileName": "358C1253EE628C50F9DE07E8EDA327BA4119.pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/3805cdb4-fc90-4284-af3b-1bde3f887409/885769352590/file/3_358C1253EE628C50F9DE07E8EDA327BA4119.pdf.txt",
+        "imageId": 4,
+        "pdfDocPage": 3,
+        "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/3805cdb4-fc90-4284-af3b-1bde3f887409/885769352590/file/358C1253EE628C50F9DE07E8EDA327BA4119.pdf",
+        "imageHeight": "2556",
+        "originalImageWidth": "1774",
+        "imageUrl": "https://smartebao-dub-zd-ocr.oss-cn-shanghai.aliyuncs.com/ocr/operateImage/2026-01-28/a0de6111ec66c5f1e575af88f0558aa8.png",
+        "angle": 0,
+        "originalImageHeight": "2556",
+        "attTypeCode": 2,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "2557",
+        "originalFileName": "358C1253EE628C50F9DE07E8EDA327BA4119.pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/3805cdb4-fc90-4284-af3b-1bde3f887409/885769352590/file/4_358C1253EE628C50F9DE07E8EDA327BA4119.pdf.txt",
+        "imageId": 5,
+        "pdfDocPage": 4,
+        "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/3805cdb4-fc90-4284-af3b-1bde3f887409/885769352590/file/358C1253EE628C50F9DE07E8EDA327BA4119.pdf",
+        "imageHeight": "1783",
+        "originalImageWidth": "2557",
+        "imageUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/3805cdb4-fc90-4284-af3b-1bde3f887409/885769352590/file/4_358C1253EE628C50F9DE07E8EDA327BA4119.pdf.png",
+        "angle": 0,
+        "originalImageHeight": "1783",
+        "attTypeCode": 16,
+        "imageSuffix": "png"
+      }
+    ],
+    "preDecContainer": []
+  }
+}

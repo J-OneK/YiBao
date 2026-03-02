@@ -1,0 +1,1874 @@
+{
+  "head": {
+    "signInfo": "",
+    "receiptType": 0,
+    "bizCode": "DUB00113",
+    "appId": "ALIYUN01",
+    "bizId": "E691911db720e3247210b8745",
+    "resultCode": "0",
+    "msgId": "258311964",
+    "resultMessage": "识别成功",
+    "version": "1.0",
+    "timestampStr": "2026-01-28 11:56:41",
+    "receiveId": "EBAO0001"
+  },
+  "content": {
+    "preDecHead": [
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "ExpressFedex",
+            "imageId": 2,
+            "transformValue": "8860 6872 1550",
+            "originalValue": "8860 6872 1550",
+            "normalizedValue": "8860 6872 1550",
+            "processBitMap": "0",
+            "axisX": 887,
+            "sepValue": "8860 6872 1550",
+            "axisY": 211,
+            "width": 44,
+            "attTypeCode": 15,
+            "height": 236
+          },
+          {
+            "attType": "Declaration",
+            "imageId": 5,
+            "transformValue": "",
+            "originalValue": "",
+            "normalizedValue": "",
+            "processBitMap": "0",
+            "axisX": 1455,
+            "sepValue": "",
+            "axisY": 239,
+            "width": 319,
+            "attTypeCode": 4,
+            "height": 32
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "8860 6872 1550",
+        "normalizedValue": "8860 6872 1550",
+        "keyDesc": "提运单号",
+        "value": "8860 6872 1550",
+        "key": "billNo"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "ExpressFedex",
+            "imageId": 2,
+            "transformValue": "1 of 3",
+            "originalValue": "1 of 3",
+            "normalizedValue": "1 of 3",
+            "processBitMap": "0",
+            "axisX": 946,
+            "sepValue": "1 of 3",
+            "axisY": 209,
+            "width": 24,
+            "attTypeCode": 15,
+            "height": 90
+          },
+          {
+            "attType": "Declaration",
+            "imageId": 5,
+            "transformValue": "3",
+            "originalValue": "3",
+            "normalizedValue": "3",
+            "processBitMap": "0",
+            "axisX": 535,
+            "sepValue": "3",
+            "axisY": 548,
+            "width": 286,
+            "attTypeCode": 4,
+            "height": 32
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "1 of 3",
+        "normalizedValue": "1 of 3",
+        "keyDesc": "件数",
+        "value": "1 of 3",
+        "key": "packNo"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "ExpressFedex",
+            "imageId": 2,
+            "transformValue": "30X22X20 CM",
+            "originalValue": "30X22X20 CM",
+            "normalizedValue": "30X22X20 CM",
+            "processBitMap": "0",
+            "axisX": 1648,
+            "sepValue": "30X22X20 CM",
+            "axisY": 604,
+            "width": 37,
+            "attTypeCode": 15,
+            "height": 176
+          },
+          {
+            "attType": "PackingList",
+            "imageId": 4,
+            "transformValue": "65.4 KGS",
+            "originalValue": "65.4 KGS",
+            "normalizedValue": "65.4 KGS",
+            "processBitMap": "0",
+            "axisX": 1474,
+            "sepValue": "65.4 KGS",
+            "axisY": 1301,
+            "width": 76,
+            "attTypeCode": 3,
+            "height": 36
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "30X22X20 CM",
+        "normalizedValue": "30X22X20 CM",
+        "keyDesc": "毛重",
+        "value": "30X22X20 CM",
+        "key": "grossWt"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "ExpressFedex",
+            "imageId": 2,
+            "transformValue": "KUNSHAN",
+            "originalValue": "KUNSHAN",
+            "normalizedValue": "KUNSHAN",
+            "processBitMap": "0",
+            "axisX": 1589,
+            "sepValue": "KUNSHAN",
+            "axisY": 126,
+            "width": 43,
+            "attTypeCode": 15,
+            "height": 161
+          },
+          {
+            "attType": "Invoice",
+            "imageId": 3,
+            "transformValue": "KUNSHAN",
+            "originalValue": "Taicang",
+            "normalizedValue": "Taicang",
+            "processBitMap": "0",
+            "axisX": 938,
+            "sepValue": "Taicang",
+            "axisY": 437,
+            "width": 209,
+            "attTypeCode": 2,
+            "height": 38
+          },
+          {
+            "attType": "PackingList",
+            "imageId": 4,
+            "transformValue": "KUNSHAN",
+            "originalValue": "TAICANG",
+            "normalizedValue": "TAICANG",
+            "processBitMap": "0",
+            "axisX": 916,
+            "sepValue": "TAICANG",
+            "axisY": 480,
+            "width": 232,
+            "attTypeCode": 3,
+            "height": 35
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "KUNSHAN",
+        "normalizedValue": "KUNSHAN",
+        "keyDesc": "运抵国",
+        "value": "KUNSHAN",
+        "key": "cusTradeCountry"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 3,
+            "transformValue": "明澔模具技术（太仓）有限公司",
+            "originalValue": "明澔模具技术（太仓）有限公司",
+            "normalizedValue": "明澔模具技术（太仓）有限公司",
+            "processBitMap": "0",
+            "axisX": 589,
+            "sepValue": "明澔模具技术（太仓）有限公司",
+            "axisY": 93,
+            "width": 599,
+            "attTypeCode": 2,
+            "height": 53
+          },
+          {
+            "attType": "PackingList",
+            "imageId": 4,
+            "transformValue": "明澔模具技术（太仓）有限公司",
+            "originalValue": "明澔模具技术（太仓）有限公司",
+            "normalizedValue": "明澔模具技术（太仓）有限公司",
+            "processBitMap": "0",
+            "axisX": 573,
+            "sepValue": "明澔模具技术（太仓）有限公司",
+            "axisY": 113,
+            "width": 631,
+            "attTypeCode": 3,
+            "height": 53
+          },
+          {
+            "attType": "Declaration",
+            "imageId": 5,
+            "transformValue": "明潞模具技术（太仓）有限公司",
+            "originalValue": "明潞模具技术（太仓）有限公司",
+            "normalizedValue": "明潞模具技术（太仓）有限公司",
+            "processBitMap": "0",
+            "axisX": 68,
+            "sepValue": "明潞模具技术（太仓）有限公司",
+            "axisY": 148,
+            "width": 462,
+            "attTypeCode": 4,
+            "height": 30
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "明澔模具技术（太仓）有限公司",
+        "normalizedValue": "明澔模具技术（太仓）有限公司",
+        "keyDesc": "境内收发货人名称",
+        "value": "明澔模具技术（太仓）有限公司",
+        "key": "consigneeCname"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 3,
+            "transformValue": "No. 28, Xinliu Road, Ludu Street, Taicang City, Jiangsu Province",
+            "originalValue": "No. 28, Xinliu Road, Ludu Street, Taicang City, Jiangsu Province",
+            "normalizedValue": "No. 28, Xinliu Road, Ludu Street, Taicang City, Jiangsu Province",
+            "processBitMap": "0",
+            "axisX": 462,
+            "sepValue": "No. 28, Xinliu Road, Ludu Street, Taicang City, Jiangsu Province",
+            "axisY": 156,
+            "width": 862,
+            "attTypeCode": 2,
+            "height": 53
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "No. 28, Xinliu Road, Ludu Street, Taicang City, Jiangsu Province",
+        "normalizedValue": "No. 28, Xinliu Road, Ludu Street, Taicang City, Jiangsu Province",
+        "keyDesc": "境内收发货人社会信用代码",
+        "value": "No. 28, Xinliu Road, Ludu Street, Taicang City, Jiangsu Province",
+        "key": "rcvgdTradeScc"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 3,
+            "transformValue": "NORM SOMUN SAN VE TICARET AŞ.",
+            "originalValue": "NORM SOMUN SAN VE TICARET AŞ.",
+            "normalizedValue": "NORM SOMUN SAN VE TICARET AŞ.",
+            "processBitMap": "0",
+            "axisX": 278,
+            "sepValue": "NORM SOMUN SAN VE TICARET AŞ.",
+            "axisY": 540,
+            "width": 506,
+            "attTypeCode": 2,
+            "height": 41
+          },
+          {
+            "attType": "PackingList",
+            "imageId": 4,
+            "transformValue": "NORM SOMUN SAN VE TICARET AŞ.",
+            "originalValue": "NORM SOMUN SAN VE TICARET AŞ.",
+            "normalizedValue": "NORM SOMUN SAN VE TICARET AŞ.",
+            "processBitMap": "0",
+            "axisX": 309,
+            "sepValue": "NORM SOMUN SAN VE TICARET AŞ.",
+            "axisY": 599,
+            "width": 530,
+            "attTypeCode": 3,
+            "height": 42
+          },
+          {
+            "attType": "Declaration",
+            "imageId": 5,
+            "transformValue": "NORM SOMUN SAN VE TICARET AŞ.",
+            "originalValue": "NORM SOMUN SAN VE TICARET AS.",
+            "normalizedValue": "NORM SOMUN SAN VE TICARET AS.",
+            "processBitMap": "0",
+            "axisX": 68,
+            "sepValue": "NORM SOMUN SAN VE TICARET AS.",
+            "axisY": 298,
+            "width": 462,
+            "attTypeCode": 4,
+            "height": 34
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "NORM SOMUN SAN VE TICARET AŞ.",
+        "normalizedValue": "NORM SOMUN SAN VE TICARET AŞ.",
+        "keyDesc": "境外收发货人",
+        "value": "NORM SOMUN SAN VE TICARET AŞ.",
+        "key": "consignorEname"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 3,
+            "transformValue": "MH251110-3",
+            "originalValue": "MH251110-3",
+            "normalizedValue": "MH251110-3",
+            "processBitMap": "0",
+            "axisX": 278,
+            "sepValue": "MH251110-3",
+            "axisY": 348,
+            "width": 166,
+            "attTypeCode": 2,
+            "height": 38
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "MH251110-3",
+        "normalizedValue": "MH251110-3",
+        "keyDesc": "合同协议号",
+        "value": "MH251110-3",
+        "key": "contrNo"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 3,
+            "transformValue": "FOB Shanghai",
+            "originalValue": "FOB Shanghai",
+            "normalizedValue": "FOB Shanghai",
+            "processBitMap": "0",
+            "axisX": 1209,
+            "sepValue": "FOB Shanghai",
+            "axisY": 927,
+            "width": 182,
+            "attTypeCode": 2,
+            "height": 38
+          },
+          {
+            "attType": "Declaration",
+            "imageId": 5,
+            "transformValue": "FOB",
+            "originalValue": "FOB",
+            "normalizedValue": "FOB",
+            "processBitMap": "0",
+            "axisX": 836,
+            "sepValue": "FOB",
+            "axisY": 593,
+            "width": 561,
+            "attTypeCode": 4,
+            "height": 28
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "FOB Shanghai",
+        "normalizedValue": "3",
+        "keyDesc": "成交方式",
+        "value": "3",
+        "key": "transMode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 3,
+            "transformValue": "Shanghai",
+            "originalValue": "Shanghai",
+            "normalizedValue": "Shanghai",
+            "processBitMap": "0",
+            "axisX": 1265,
+            "sepValue": "Shanghai",
+            "axisY": 927,
+            "width": 126,
+            "attTypeCode": 2,
+            "height": 38
+          },
+          {
+            "attType": "PackingList",
+            "imageId": 4,
+            "transformValue": "TAICANG",
+            "originalValue": "TAICANG",
+            "normalizedValue": "TAICANG",
+            "processBitMap": "0",
+            "axisX": 916,
+            "sepValue": "TAICANG",
+            "axisY": 381,
+            "width": 134,
+            "attTypeCode": 3,
+            "height": 38
+          },
+          {
+            "attType": "Declaration",
+            "imageId": 5,
+            "transformValue": "IZMIR",
+            "originalValue": "IZMIR",
+            "normalizedValue": "IZMIR",
+            "processBitMap": "0",
+            "axisX": 1455,
+            "sepValue": "IZMIR",
+            "axisY": 453,
+            "width": 319,
+            "attTypeCode": 4,
+            "height": 34
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "Shanghai",
+        "normalizedValue": "CHN331",
+        "keyDesc": "指运港",
+        "value": "CHN331",
+        "key": "distinatePort"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 3,
+            "transformValue": "EUR",
+            "originalValue": "EUR",
+            "normalizedValue": "EUR",
+            "processBitMap": "0",
+            "axisX": 1202,
+            "sepValue": "EUR",
+            "axisY": 1157,
+            "width": 55,
+            "attTypeCode": 2,
+            "height": 35
+          },
+          {
+            "attType": "Declaration",
+            "imageId": 5,
+            "transformValue": "",
+            "originalValue": "",
+            "normalizedValue": "",
+            "processBitMap": "0",
+            "axisX": 1455,
+            "sepValue": "",
+            "axisY": 548,
+            "width": 319,
+            "attTypeCode": 4,
+            "height": 32
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "EUR",
+        "normalizedValue": "EUR",
+        "keyDesc": "运费币制",
+        "value": "EUR",
+        "key": "feeCurr"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 3,
+            "transformValue": "EUR",
+            "originalValue": "EUR",
+            "normalizedValue": "EUR",
+            "processBitMap": "0",
+            "axisX": 1456,
+            "sepValue": "EUR",
+            "axisY": 1157,
+            "width": 55,
+            "attTypeCode": 2,
+            "height": 35
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "EUR",
+        "normalizedValue": "EUR",
+        "keyDesc": "杂费币制",
+        "value": "EUR",
+        "key": "otherCurr"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 3,
+            "transformValue": "2,580.00 €",
+            "originalValue": "2,580.00 €",
+            "normalizedValue": "2,580.00 €",
+            "processBitMap": "0",
+            "axisX": 1565,
+            "sepValue": "2,580.00 €",
+            "axisY": 1223,
+            "width": 121,
+            "attTypeCode": 2,
+            "height": 38
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "2,580.00 €",
+        "normalizedValue": "2,580.00 €",
+        "keyDesc": "总价总和",
+        "value": "2,580.00 €",
+        "key": "totalAmount"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "PackingList",
+            "imageId": 4,
+            "transformValue": "TAICANG",
+            "originalValue": "TAICANG",
+            "normalizedValue": "TAICANG",
+            "processBitMap": "0",
+            "axisX": 916,
+            "sepValue": "TAICANG",
+            "axisY": 381,
+            "width": 134,
+            "attTypeCode": 3,
+            "height": 38
+          }
+        ],
+        "source_image": 4,
+        "originalValue": "TAICANG",
+        "normalizedValue": "TAICANG",
+        "keyDesc": "贸易国",
+        "value": "TAICANG",
+        "key": "cusTradeNationCode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "PackingList",
+            "imageId": 4,
+            "transformValue": "MH251110-3",
+            "originalValue": "MH251110-3",
+            "normalizedValue": "MH251110-3",
+            "processBitMap": "0",
+            "axisX": 309,
+            "sepValue": "MH251110-3",
+            "axisY": 381,
+            "width": 175,
+            "attTypeCode": 3,
+            "height": 38
+          },
+          {
+            "attType": "Declaration",
+            "imageId": 5,
+            "transformValue": "",
+            "originalValue": "",
+            "normalizedValue": "",
+            "processBitMap": "0",
+            "axisX": 1781,
+            "sepValue": "",
+            "axisY": 148,
+            "width": 354,
+            "attTypeCode": 4,
+            "height": 30
+          }
+        ],
+        "source_image": 4,
+        "originalValue": "MH251110-3",
+        "normalizedValue": "MH251110-3",
+        "keyDesc": "备案号",
+        "value": "MH251110-3",
+        "key": "manualNo"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "PackingList",
+            "imageId": 4,
+            "transformValue": "64.2 KGS",
+            "originalValue": "64.2 KGS",
+            "normalizedValue": "64.2 KGS",
+            "processBitMap": "0",
+            "axisX": 1206,
+            "sepValue": "64.2 KGS",
+            "axisY": 1213,
+            "width": 75,
+            "attTypeCode": 3,
+            "height": 38
+          }
+        ],
+        "source_image": 4,
+        "originalValue": "64.2 KGS",
+        "normalizedValue": "64.2 KGS",
+        "keyDesc": "净重",
+        "value": "64.2 KGS",
+        "key": "netWt"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 5,
+            "transformValue": "91320585MA27DFLE76",
+            "originalValue": "91320585MA27DFLE76",
+            "normalizedValue": "91320585MA27DFLE76",
+            "processBitMap": "0",
+            "axisX": 68,
+            "sepValue": "91320585MA27DFLE76",
+            "axisY": 189,
+            "width": 462,
+            "attTypeCode": 4,
+            "height": 32
+          }
+        ],
+        "source_image": 5,
+        "originalValue": "91320585MA27DFLE76",
+        "normalizedValue": "91320585MA27DFLE76",
+        "keyDesc": "境内收发货人海关代码",
+        "value": "91320585MA27DFLE76",
+        "key": "rcvgdTradeCode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 5,
+            "transformValue": "明潞模具技术（太仓）有限公司",
+            "originalValue": "明潞模具技术（太仓）有限公司",
+            "normalizedValue": "明潞模具技术（太仓）有限公司",
+            "processBitMap": "0",
+            "axisX": 68,
+            "sepValue": "明潞模具技术（太仓）有限公司",
+            "axisY": 407,
+            "width": 462,
+            "attTypeCode": 4,
+            "height": 34
+          }
+        ],
+        "source_image": 5,
+        "originalValue": "明潞模具技术（太仓）有限公司",
+        "normalizedValue": "明潞模具技术（太仓）有限公司",
+        "keyDesc": "生产销售单位名称",
+        "value": "明潞模具技术（太仓）有限公司",
+        "key": "ownerName"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 5,
+            "transformValue": "91320585MA27DFLE76",
+            "originalValue": "91320585MA27DFLE76",
+            "normalizedValue": "91320585MA27DFLE76",
+            "processBitMap": "0",
+            "axisX": 68,
+            "sepValue": "91320585MA27DFLE76",
+            "axisY": 441,
+            "width": 462,
+            "attTypeCode": 4,
+            "height": 34
+          }
+        ],
+        "source_image": 5,
+        "originalValue": "91320585MA27DFLE76",
+        "normalizedValue": "91320585MA27DFLE76",
+        "keyDesc": "生产销售单位海关代码",
+        "value": "91320585MA27DFLE76",
+        "key": "ownerCode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 5,
+            "transformValue": "",
+            "originalValue": "",
+            "normalizedValue": "",
+            "processBitMap": "0",
+            "axisX": 535,
+            "sepValue": "",
+            "axisY": 148,
+            "width": 286,
+            "attTypeCode": 4,
+            "height": 30
+          }
+        ],
+        "source_image": 5,
+        "originalValue": "",
+        "normalizedValue": "",
+        "keyDesc": "出境关别",
+        "value": "",
+        "key": "iEPort"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 5,
+            "transformValue": "",
+            "originalValue": "",
+            "normalizedValue": "",
+            "processBitMap": "0",
+            "axisX": 836,
+            "sepValue": "",
+            "axisY": 148,
+            "width": 561,
+            "attTypeCode": 4,
+            "height": 30
+          }
+        ],
+        "source_image": 5,
+        "originalValue": "",
+        "normalizedValue": "",
+        "keyDesc": "出口日期",
+        "value": "",
+        "key": "pageNo"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 5,
+            "transformValue": "",
+            "originalValue": "",
+            "normalizedValue": "",
+            "processBitMap": "0",
+            "axisX": 1455,
+            "sepValue": "",
+            "axisY": 148,
+            "width": 319,
+            "attTypeCode": 4,
+            "height": 30
+          }
+        ],
+        "source_image": 5,
+        "originalValue": "",
+        "normalizedValue": "",
+        "keyDesc": "申报日期",
+        "value": "",
+        "key": "pageNo"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 5,
+            "transformValue": "BY AIR",
+            "originalValue": "BY AIR",
+            "normalizedValue": "BY AIR",
+            "processBitMap": "0",
+            "axisX": 535,
+            "sepValue": "BY AIR",
+            "axisY": 239,
+            "width": 286,
+            "attTypeCode": 4,
+            "height": 32
+          }
+        ],
+        "source_image": 5,
+        "originalValue": "BY AIR",
+        "normalizedValue": "BY AIR",
+        "keyDesc": "运输方式",
+        "value": "BY AIR",
+        "key": "cusTrafMode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 5,
+            "transformValue": "0110",
+            "originalValue": "一般贸易",
+            "normalizedValue": "一般贸易",
+            "processBitMap": "0",
+            "axisX": 535,
+            "sepValue": "一般贸易",
+            "axisY": 364,
+            "width": 286,
+            "attTypeCode": 4,
+            "height": 32
+          }
+        ],
+        "source_image": 5,
+        "originalValue": "一般贸易",
+        "normalizedValue": "0110",
+        "keyDesc": "监管方式",
+        "value": "0110",
+        "key": "supvModeCode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 5,
+            "transformValue": "101",
+            "originalValue": "一般征税",
+            "normalizedValue": "一般征税",
+            "processBitMap": "0",
+            "axisX": 836,
+            "sepValue": "一般征税",
+            "axisY": 364,
+            "width": 561,
+            "attTypeCode": 4,
+            "height": 32
+          }
+        ],
+        "source_image": 5,
+        "originalValue": "一般征税",
+        "normalizedValue": "101",
+        "keyDesc": "征免性质",
+        "value": "101",
+        "key": "cutMode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 5,
+            "transformValue": "",
+            "originalValue": "",
+            "normalizedValue": "",
+            "processBitMap": "0",
+            "axisX": 1455,
+            "sepValue": "",
+            "axisY": 364,
+            "width": 319,
+            "attTypeCode": 4,
+            "height": 32
+          }
+        ],
+        "source_image": 5,
+        "originalValue": "",
+        "normalizedValue": "",
+        "keyDesc": "许可证号",
+        "value": "",
+        "key": "licenseNo"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 5,
+            "transformValue": "土耳其",
+            "originalValue": "土耳其",
+            "normalizedValue": "土耳其",
+            "processBitMap": "0",
+            "axisX": 535,
+            "sepValue": "土耳其",
+            "axisY": 475,
+            "width": 286,
+            "attTypeCode": 4,
+            "height": 34
+          }
+        ],
+        "source_image": 5,
+        "originalValue": "土耳其",
+        "normalizedValue": "土耳其",
+        "keyDesc": "贸易国(地区)",
+        "value": "土耳其",
+        "key": "cusTradeNationCode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 5,
+            "transformValue": "土耳其",
+            "originalValue": "土耳其",
+            "normalizedValue": "土耳其",
+            "processBitMap": "0",
+            "axisX": 836,
+            "sepValue": "土耳其",
+            "axisY": 475,
+            "width": 561,
+            "attTypeCode": 4,
+            "height": 34
+          }
+        ],
+        "source_image": 5,
+        "originalValue": "土耳其",
+        "normalizedValue": "土耳其",
+        "keyDesc": "运抵国(地区)",
+        "value": "土耳其",
+        "key": "cusTradeCountry"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 5,
+            "transformValue": "CTN",
+            "originalValue": "CTN",
+            "normalizedValue": "CTN",
+            "processBitMap": "0",
+            "axisX": 68,
+            "sepValue": "CTN",
+            "axisY": 548,
+            "width": 462,
+            "attTypeCode": 4,
+            "height": 32
+          }
+        ],
+        "source_image": 5,
+        "originalValue": "CTN",
+        "normalizedValue": "CTN",
+        "keyDesc": "包装种类",
+        "value": "CTN",
+        "key": "wrapType"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 5,
+            "transformValue": "65.40",
+            "originalValue": "65.40",
+            "normalizedValue": "65.40",
+            "processBitMap": "0",
+            "axisX": 672,
+            "sepValue": "65.40",
+            "axisY": 593,
+            "width": 149,
+            "attTypeCode": 4,
+            "height": 28
+          }
+        ],
+        "source_image": 5,
+        "originalValue": "65.40",
+        "normalizedValue": "65.40",
+        "keyDesc": "毛重(千克)",
+        "value": "65.40",
+        "key": "grossWt"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 5,
+            "transformValue": "",
+            "originalValue": "",
+            "normalizedValue": "",
+            "processBitMap": "0",
+            "axisX": 1781,
+            "sepValue": "",
+            "axisY": 548,
+            "width": 354,
+            "attTypeCode": 4,
+            "height": 32
+          }
+        ],
+        "source_image": 5,
+        "originalValue": "",
+        "normalizedValue": "",
+        "keyDesc": "保费",
+        "value": "",
+        "key": "insurRate"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 5,
+            "transformValue": "",
+            "originalValue": "",
+            "normalizedValue": "",
+            "processBitMap": "0",
+            "axisX": 1976,
+            "sepValue": "",
+            "axisY": 548,
+            "width": 159,
+            "attTypeCode": 4,
+            "height": 32
+          }
+        ],
+        "source_image": 5,
+        "originalValue": "",
+        "normalizedValue": "",
+        "keyDesc": "杂费",
+        "value": "",
+        "key": "otherRate"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 5,
+            "transformValue": "电子报关",
+            "originalValue": "电子报关",
+            "normalizedValue": "电子报关",
+            "processBitMap": "0",
+            "axisX": 50,
+            "sepValue": "电子报关",
+            "axisY": 727,
+            "width": 2085,
+            "attTypeCode": 4,
+            "height": 73
+          }
+        ],
+        "source_image": 5,
+        "originalValue": "电子报关",
+        "normalizedValue": "电子报关",
+        "keyDesc": "标记唛码及备注",
+        "value": "电子报关",
+        "key": "noteS"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 5,
+            "transformValue": "",
+            "originalValue": "",
+            "normalizedValue": "",
+            "processBitMap": "0",
+            "axisX": 50,
+            "sepValue": "",
+            "axisY": 634,
+            "width": 2085,
+            "attTypeCode": 4,
+            "height": 32
+          }
+        ],
+        "source_image": 5,
+        "originalValue": "",
+        "normalizedValue": "",
+        "keyDesc": "随附单证及编号",
+        "value": "",
+        "key": "Edoc"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 5,
+            "transformValue": "",
+            "originalValue": "",
+            "normalizedValue": "",
+            "processBitMap": "0",
+            "axisX": 1908,
+            "sepValue": "",
+            "axisY": 101,
+            "width": 131,
+            "attTypeCode": 4,
+            "height": 31
+          }
+        ],
+        "source_image": 5,
+        "originalValue": "",
+        "normalizedValue": "",
+        "keyDesc": "页码/页数",
+        "value": "",
+        "key": "pageNo"
+      }
+    ],
+    "preDecList": [
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "ExpressFedex",
+              "imageId": 2,
+              "transformValue": "TAICANG",
+              "originalValue": "TAICANG",
+              "normalizedValue": "TAICANG",
+              "processBitMap": "0",
+              "axisX": 1648,
+              "sepValue": "TAICANG",
+              "axisY": 126,
+              "width": 37,
+              "attTypeCode": 15,
+              "height": 161
+            },
+            {
+              "attType": "Declaration",
+              "imageId": 5,
+              "transformValue": "土耳其",
+              "originalValue": "土耳其",
+              "normalizedValue": "土耳其",
+              "processBitMap": "0",
+              "axisX": 1642,
+              "sepValue": "土耳其",
+              "axisY": 875,
+              "width": 89,
+              "attTypeCode": 4,
+              "height": 30
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "TAICANG",
+          "normalizedValue": "TAICANG",
+          "keyDesc": "最终目的国",
+          "value": "TAICANG",
+          "key": "destinationCountry"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 3,
+              "transformValue": "Fastener mould",
+              "originalValue": "Fastener mould",
+              "normalizedValue": "Fastener mould",
+              "processBitMap": "0",
+              "axisX": 478,
+              "sepValue": "Fastener mould",
+              "axisY": 973,
+              "width": 251,
+              "attTypeCode": 2,
+              "height": 35
+            },
+            {
+              "attType": "PackingList",
+              "imageId": 4,
+              "transformValue": "Fastener mould",
+              "originalValue": "Fastener mould",
+              "normalizedValue": "Fastener mould",
+              "processBitMap": "0",
+              "axisX": 482,
+              "sepValue": "Fastener mould",
+              "axisY": 947,
+              "width": 257,
+              "attTypeCode": 3,
+              "height": 38
+            },
+            {
+              "attType": "Declaration",
+              "imageId": 5,
+              "transformValue": "模具",
+              "originalValue": "模具",
+              "normalizedValue": "模具",
+              "processBitMap": "0",
+              "axisX": 619,
+              "sepValue": "模具",
+              "axisY": 875,
+              "width": 68,
+              "attTypeCode": 4,
+              "height": 30
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "Fastener mould",
+          "normalizedValue": "Fastener mould",
+          "keyDesc": "商品名称",
+          "value": "Fastener mould",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 4,
+              "transformValue": "8207300090",
+              "originalValue": "8207300090",
+              "normalizedValue": "8207300090",
+              "processBitMap": "0",
+              "axisX": 521,
+              "sepValue": "8207300090",
+              "axisY": 1046,
+              "width": 181,
+              "attTypeCode": 3,
+              "height": 38
+            },
+            {
+              "attType": "Declaration",
+              "imageId": 5,
+              "transformValue": "8207300090",
+              "originalValue": "8207300090",
+              "normalizedValue": "8207300090",
+              "processBitMap": "0",
+              "axisX": 235,
+              "sepValue": "8207300090",
+              "axisY": 875,
+              "width": 179,
+              "attTypeCode": 4,
+              "height": 30
+            }
+          ],
+          "source_image": 4,
+          "originalValue": "8207300090",
+          "normalizedValue": "8207300090",
+          "keyDesc": "商品编号",
+          "value": "8207300090",
+          "key": "codeTs"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 4,
+              "transformValue": "PCS",
+              "originalValue": "PCS",
+              "normalizedValue": "PCS",
+              "processBitMap": "0",
+              "axisX": 1084,
+              "sepValue": "PCS",
+              "axisY": 1155,
+              "width": 54,
+              "attTypeCode": 3,
+              "height": 35
+            },
+            {
+              "attType": "Declaration",
+              "imageId": 5,
+              "transformValue": "PCS",
+              "originalValue": "个",
+              "normalizedValue": "个",
+              "processBitMap": "0",
+              "axisX": 1023,
+              "sepValue": "个",
+              "axisY": 966,
+              "width": 30,
+              "attTypeCode": 4,
+              "height": 27
+            }
+          ],
+          "source_image": 4,
+          "originalValue": "PCS",
+          "normalizedValue": "PCS",
+          "keyDesc": "成交单位",
+          "value": "PCS",
+          "key": "gUnit"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 4,
+              "transformValue": "6",
+              "originalValue": "6",
+              "normalizedValue": "6",
+              "processBitMap": "0",
+              "axisX": 968,
+              "sepValue": "6",
+              "axisY": 1155,
+              "width": 21,
+              "attTypeCode": 3,
+              "height": 35
+            },
+            {
+              "attType": "Declaration",
+              "imageId": 5,
+              "transformValue": "6",
+              "originalValue": "6",
+              "normalizedValue": "6",
+              "processBitMap": "0",
+              "axisX": 904,
+              "sepValue": "6",
+              "axisY": 966,
+              "width": 23,
+              "attTypeCode": 4,
+              "height": 27
+            }
+          ],
+          "source_image": 4,
+          "originalValue": "6",
+          "normalizedValue": "6",
+          "keyDesc": "成交数量",
+          "value": "6",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 5,
+              "transformValue": "0|1|冷镦生产(铣削，锻压，镗孔用等)|硬质合金|是|模具|64.2|KGS|40.19|2580.00|欧元|中国|土耳其|江苏太仓",
+              "originalValue": "0|1|冷镦生产(铣削，锻压，镗孔用等)|硬质合金|是|模具|64.2|KGS|40.19|2580.00|欧元|中国|土耳其|江苏太仓",
+              "normalizedValue": "0|1|冷镦生产(铣削，锻压，镗孔用等)|硬质合金|是|模具|64.2|KGS|40.19|2580.00|欧元|中国|土耳其|江苏太仓",
+              "processBitMap": "0",
+              "axisX": 108,
+              "sepValue": "0|1|冷镦生产(铣削，锻压，镗孔用等)|硬质合金|是|模具|64.2|KGS|40.19|2580.00|欧元|中国|土耳其|江苏太仓",
+              "axisY": 855,
+              "width": 2030,
+              "attTypeCode": 4,
+              "height": 281
+            }
+          ],
+          "source_image": 5,
+          "originalValue": "0|1|冷镦生产(铣削，锻压，镗孔用等)|硬质合金|是|模具|64.2|KGS|40.19|2580.00|欧元|中国|土耳其|江苏太仓",
+          "normalizedValue": "0|1|冷镦生产(铣削，锻压，镗孔用等)|硬质合金|是|模具|64.2|KGS|40.19|2580.00|欧元|中国|土耳其|江苏太仓",
+          "keyDesc": "规格型号",
+          "value": "0|1|冷镦生产(铣削，锻压，镗孔用等)|硬质合金|是|模具|64.2|KGS|40.19|2580.00|欧元|中国|土耳其|江苏太仓",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 4,
+              "transformValue": "64.20 KGS",
+              "originalValue": "64.20 KGS",
+              "normalizedValue": "64.20 KGS",
+              "processBitMap": "0",
+              "axisX": 1474,
+              "sepValue": "64.20 KGS",
+              "axisY": 1155,
+              "width": 76,
+              "attTypeCode": 3,
+              "height": 35
+            }
+          ],
+          "source_image": 4,
+          "originalValue": "64.20 KGS",
+          "normalizedValue": "64.20 KGS",
+          "keyDesc": "毛重单项",
+          "value": "64.20 KGS",
+          "key": "ggrossWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 4,
+              "transformValue": "64.20 KGS",
+              "originalValue": "64.20 KGS",
+              "normalizedValue": "64.20 KGS",
+              "processBitMap": "0",
+              "axisX": 1206,
+              "sepValue": "64.20 KGS",
+              "axisY": 1155,
+              "width": 75,
+              "attTypeCode": 3,
+              "height": 35
+            }
+          ],
+          "source_image": 4,
+          "originalValue": "64.20 KGS",
+          "normalizedValue": "64.20 KGS",
+          "keyDesc": "净重单项",
+          "value": "64.20 KGS",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 5,
+              "transformValue": "64.2",
+              "originalValue": "64.2",
+              "normalizedValue": "64.2",
+              "processBitMap": "0",
+              "axisX": 879,
+              "sepValue": "64.2",
+              "axisY": 875,
+              "width": 63,
+              "attTypeCode": 4,
+              "height": 30
+            }
+          ],
+          "source_image": 5,
+          "originalValue": "64.2",
+          "normalizedValue": "64.2",
+          "keyDesc": "法定第一数量",
+          "value": "64.2",
+          "key": "qty1"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 5,
+              "transformValue": "6",
+              "originalValue": "6",
+              "normalizedValue": "6",
+              "processBitMap": "0",
+              "axisX": 904,
+              "sepValue": "6",
+              "axisY": 966,
+              "width": 23,
+              "attTypeCode": 4,
+              "height": 27
+            }
+          ],
+          "source_image": 5,
+          "originalValue": "6",
+          "normalizedValue": "6",
+          "keyDesc": "法定第二数量",
+          "value": "6",
+          "key": "qty2"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 5,
+              "transformValue": "40.19",
+              "originalValue": "40.19",
+              "normalizedValue": "40.19",
+              "processBitMap": "0",
+              "axisX": 1124,
+              "sepValue": "40.19",
+              "axisY": 875,
+              "width": 71,
+              "attTypeCode": 4,
+              "height": 30
+            }
+          ],
+          "source_image": 5,
+          "originalValue": "40.19",
+          "normalizedValue": "40.19",
+          "keyDesc": "单价",
+          "value": "40.19",
+          "key": "declPrice"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 5,
+              "transformValue": "2580.00",
+              "originalValue": "2580.00",
+              "normalizedValue": "2580.00",
+              "processBitMap": "0",
+              "axisX": 1251,
+              "sepValue": "2580.00",
+              "axisY": 875,
+              "width": 101,
+              "attTypeCode": 4,
+              "height": 30
+            }
+          ],
+          "source_image": 5,
+          "originalValue": "2580.00",
+          "normalizedValue": "2580.00",
+          "keyDesc": "总价",
+          "value": "2580.00",
+          "key": "declTotal"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 5,
+              "transformValue": "EUR",
+              "originalValue": "欧元",
+              "normalizedValue": "欧元",
+              "processBitMap": "0",
+              "axisX": 1392,
+              "sepValue": "欧元",
+              "axisY": 875,
+              "width": 58,
+              "attTypeCode": 4,
+              "height": 30
+            }
+          ],
+          "source_image": 5,
+          "originalValue": "欧元",
+          "normalizedValue": "EUR",
+          "keyDesc": "币制",
+          "value": "EUR",
+          "key": "tradeCurr"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 5,
+              "transformValue": "CHN",
+              "originalValue": "中国",
+              "normalizedValue": "中国",
+              "processBitMap": "0",
+              "axisX": 1501,
+              "sepValue": "中国",
+              "axisY": 875,
+              "width": 58,
+              "attTypeCode": 4,
+              "height": 30
+            }
+          ],
+          "source_image": 5,
+          "originalValue": "中国",
+          "normalizedValue": "CHN",
+          "keyDesc": "原产国",
+          "value": "CHN",
+          "key": "cusOriginCountry"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 5,
+              "transformValue": "32269",
+              "originalValue": "江苏太仓",
+              "normalizedValue": "江苏太仓",
+              "processBitMap": "0",
+              "axisX": 1845,
+              "sepValue": "江苏太仓",
+              "axisY": 875,
+              "width": 113,
+              "attTypeCode": 4,
+              "height": 30
+            }
+          ],
+          "source_image": 5,
+          "originalValue": "江苏太仓",
+          "normalizedValue": "32269",
+          "keyDesc": "境内货源地",
+          "value": "32269",
+          "key": "districtCode"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 5,
+              "transformValue": "照章",
+              "originalValue": "照章",
+              "normalizedValue": "照章",
+              "processBitMap": "0",
+              "axisX": 2054,
+              "sepValue": "照章",
+              "axisY": 982,
+              "width": 53,
+              "attTypeCode": 4,
+              "height": 31
+            }
+          ],
+          "source_image": 5,
+          "originalValue": "照章",
+          "normalizedValue": "照章",
+          "keyDesc": "征免",
+          "value": "照章",
+          "key": "dutyMode"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 3,
+              "transformValue": "8207300090",
+              "originalValue": "8207300090",
+              "normalizedValue": "8207300090",
+              "processBitMap": "0",
+              "axisX": 512,
+              "sepValue": "8207300090",
+              "axisY": 1061,
+              "width": 184,
+              "attTypeCode": 2,
+              "height": 38
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "8207300090",
+          "normalizedValue": "8207300090",
+          "keyDesc": "商品编号",
+          "value": "8207300090",
+          "key": "codeTs"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 5,
+              "transformValue": "0|1|冷镦生产(铣削，锻压，镗孔用等)|硬质合金|是|模具|64.2|KGS|40.19|2580.00|欧元|中国|土耳其|江苏太仓",
+              "originalValue": "0|1|冷镦生产(铣削，锻压，镗孔用等)|硬质合金|是|模具|64.2|KGS|40.19|2580.00|欧元|中国|土耳其|江苏太仓",
+              "normalizedValue": "0|1|冷镦生产(铣削，锻压，镗孔用等)|硬质合金|是|模具|64.2|KGS|40.19|2580.00|欧元|中国|土耳其|江苏太仓",
+              "processBitMap": "0",
+              "axisX": 108,
+              "sepValue": "0|1|冷镦生产(铣削，锻压，镗孔用等)|硬质合金|是|模具|64.2|KGS|40.19|2580.00|欧元|中国|土耳其|江苏太仓",
+              "axisY": 855,
+              "width": 2030,
+              "attTypeCode": 4,
+              "height": 281
+            }
+          ],
+          "source_image": 5,
+          "originalValue": "0|1|冷镦生产(铣削，锻压，镗孔用等)|硬质合金|是|模具|64.2|KGS|40.19|2580.00|欧元|中国|土耳其|江苏太仓",
+          "normalizedValue": "0|1|冷镦生产(铣削，锻压，镗孔用等)|硬质合金|是|模具|64.2|KGS|40.19|2580.00|欧元|中国|土耳其|江苏太仓",
+          "keyDesc": "规格型号",
+          "value": "0|1|冷镦生产(铣削，锻压，镗孔用等)|硬质合金|是|模具|64.2|KGS|40.19|2580.00|欧元|中国|土耳其|江苏太仓",
+          "key": "gModel"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 3,
+              "transformValue": "PCS",
+              "originalValue": "PCS",
+              "normalizedValue": "PCS",
+              "processBitMap": "0",
+              "axisX": 1084,
+              "sepValue": "PCS",
+              "axisY": 1157,
+              "width": 52,
+              "attTypeCode": 2,
+              "height": 35
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "PCS",
+          "normalizedValue": "PCS",
+          "keyDesc": "成交单位",
+          "value": "PCS",
+          "key": "gUnit"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 3,
+              "transformValue": "6",
+              "originalValue": "6",
+              "normalizedValue": "6",
+              "processBitMap": "0",
+              "axisX": 979,
+              "sepValue": "6",
+              "axisY": 1157,
+              "width": 25,
+              "attTypeCode": 2,
+              "height": 35
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "6",
+          "normalizedValue": "6",
+          "keyDesc": "成交数量",
+          "value": "6",
+          "key": "gQty"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 3,
+              "transformValue": "430.00 €",
+              "originalValue": "430.00 €",
+              "normalizedValue": "430.00 €",
+              "processBitMap": "0",
+              "axisX": 1300,
+              "sepValue": "430.00 €",
+              "axisY": 1157,
+              "width": 118,
+              "attTypeCode": 2,
+              "height": 35
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "430.00 €",
+          "normalizedValue": "430.00 €",
+          "keyDesc": "单价",
+          "value": "430.00 €",
+          "key": "declPrice"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 3,
+              "transformValue": "EUR",
+              "originalValue": "EUR",
+              "normalizedValue": "EUR",
+              "processBitMap": "0",
+              "axisX": 1202,
+              "sepValue": "EUR",
+              "axisY": 1157,
+              "width": 55,
+              "attTypeCode": 2,
+              "height": 35
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "EUR",
+          "normalizedValue": "EUR",
+          "keyDesc": "币制",
+          "value": "EUR",
+          "key": "tradeCurr"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 3,
+              "transformValue": "2,580.00 €",
+              "originalValue": "2,580.00 €",
+              "normalizedValue": "2,580.00 €",
+              "processBitMap": "0",
+              "axisX": 1565,
+              "sepValue": "2,580.00 €",
+              "axisY": 1157,
+              "width": 121,
+              "attTypeCode": 2,
+              "height": 35
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "2,580.00 €",
+          "normalizedValue": "2,580.00 €",
+          "keyDesc": "总价",
+          "value": "2,580.00 €",
+          "key": "declTotal"
+        }
+      ]
+    ],
+    "operateImage": [
+      {
+        "imageWidth": "1785",
+        "originalFileName": "D06884A7815D3DAE1AD64B1F90A4C7D9D818.pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/edac30f5-220a-4361-b166-79e23dcc7990/886068721550/file/0_D06884A7815D3DAE1AD64B1F90A4C7D9D818.pdf.txt",
+        "imageId": 1,
+        "pdfDocPage": 0,
+        "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/edac30f5-220a-4361-b166-79e23dcc7990/886068721550/file/D06884A7815D3DAE1AD64B1F90A4C7D9D818.pdf",
+        "imageHeight": "1860",
+        "originalImageWidth": "1785",
+        "imageUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/edac30f5-220a-4361-b166-79e23dcc7990/886068721550/file/0_D06884A7815D3DAE1AD64B1F90A4C7D9D818.pdf.png",
+        "angle": 0,
+        "originalImageHeight": "1860",
+        "attTypeCode": 13,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "1836",
+        "originalFileName": "D06884A7815D3DAE1AD64B1F90A4C7D9D818.pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/edac30f5-220a-4361-b166-79e23dcc7990/886068721550/file/1_D06884A7815D3DAE1AD64B1F90A4C7D9D818.pdf.txt",
+        "imageId": 2,
+        "pdfDocPage": 1,
+        "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/edac30f5-220a-4361-b166-79e23dcc7990/886068721550/file/D06884A7815D3DAE1AD64B1F90A4C7D9D818.pdf",
+        "imageHeight": "2376",
+        "originalImageWidth": "1836",
+        "imageUrl": "https://smartebao-dub-zd-ocr.oss-cn-shanghai.aliyuncs.com/ocr/operateImage/2026-01-28/aaa24fdde4ee758d90b6656a3c7f3f74.png",
+        "ocrStructuredResultUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/edac30f5-220a-4361-b166-79e23dcc7990/886068721550/file/E691911db720e3247210b8745_2_extract.txt",
+        "angle": 0,
+        "originalImageHeight": "2376",
+        "attTypeCode": 15,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "1785",
+        "originalFileName": "D06884A7815D3DAE1AD64B1F90A4C7D9D818.pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/edac30f5-220a-4361-b166-79e23dcc7990/886068721550/file/2_D06884A7815D3DAE1AD64B1F90A4C7D9D818.pdf.txt",
+        "imageId": 3,
+        "pdfDocPage": 2,
+        "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/edac30f5-220a-4361-b166-79e23dcc7990/886068721550/file/D06884A7815D3DAE1AD64B1F90A4C7D9D818.pdf",
+        "imageHeight": "2525",
+        "originalImageWidth": "1785",
+        "imageUrl": "https://smartebao-dub-zd-ocr.oss-cn-shanghai.aliyuncs.com/ocr/operateImage/2026-01-28/fa29c3272c9645e96d340d7c9a493473.png",
+        "angle": 0,
+        "originalImageHeight": "2525",
+        "attTypeCode": 2,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "1785",
+        "originalFileName": "D06884A7815D3DAE1AD64B1F90A4C7D9D818.pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/edac30f5-220a-4361-b166-79e23dcc7990/886068721550/file/3_D06884A7815D3DAE1AD64B1F90A4C7D9D818.pdf.txt",
+        "imageId": 4,
+        "pdfDocPage": 3,
+        "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/edac30f5-220a-4361-b166-79e23dcc7990/886068721550/file/D06884A7815D3DAE1AD64B1F90A4C7D9D818.pdf",
+        "imageHeight": "2525",
+        "originalImageWidth": "1785",
+        "imageUrl": "https://smartebao-dub-zd-ocr.oss-cn-shanghai.aliyuncs.com/ocr/operateImage/2026-01-28/fe5f192331ff0324d4b02aef7db7fda4.png",
+        "angle": 0,
+        "originalImageHeight": "2525",
+        "attTypeCode": 3,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "2525",
+        "originalFileName": "D06884A7815D3DAE1AD64B1F90A4C7D9D818.pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/edac30f5-220a-4361-b166-79e23dcc7990/886068721550/file/4_D06884A7815D3DAE1AD64B1F90A4C7D9D818.pdf.txt",
+        "imageId": 5,
+        "pdfDocPage": 4,
+        "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/edac30f5-220a-4361-b166-79e23dcc7990/886068721550/file/D06884A7815D3DAE1AD64B1F90A4C7D9D818.pdf",
+        "imageHeight": "1785",
+        "originalImageWidth": "2525",
+        "imageUrl": "https://smartebao-dub-zd-ocr.oss-cn-shanghai.aliyuncs.com/ocr/operateImage/2026-01-28/e80de395d5d94390bea347e5dafcf3d4.png",
+        "angle": 0,
+        "originalImageHeight": "1785",
+        "attTypeCode": 4,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "1785",
+        "originalFileName": "D06884A7815D3DAE1AD64B1F90A4C7D9D818.pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/edac30f5-220a-4361-b166-79e23dcc7990/886068721550/file/5_D06884A7815D3DAE1AD64B1F90A4C7D9D818.pdf.txt",
+        "imageId": 6,
+        "pdfDocPage": 5,
+        "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/edac30f5-220a-4361-b166-79e23dcc7990/886068721550/file/D06884A7815D3DAE1AD64B1F90A4C7D9D818.pdf",
+        "imageHeight": "2525",
+        "originalImageWidth": "1785",
+        "imageUrl": "https://smartebao-dub-zd-ocr.oss-cn-shanghai.aliyuncs.com/ocr/operateImage/2026-01-28/d4243e2c13dc1b12be168aeb3da546b0.png",
+        "angle": 0,
+        "originalImageHeight": "2525",
+        "attTypeCode": 5,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "1785",
+        "originalFileName": "D06884A7815D3DAE1AD64B1F90A4C7D9D818.pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/edac30f5-220a-4361-b166-79e23dcc7990/886068721550/file/6_D06884A7815D3DAE1AD64B1F90A4C7D9D818.pdf.txt",
+        "imageId": 7,
+        "pdfDocPage": 6,
+        "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/edac30f5-220a-4361-b166-79e23dcc7990/886068721550/file/D06884A7815D3DAE1AD64B1F90A4C7D9D818.pdf",
+        "imageHeight": "2525",
+        "originalImageWidth": "1785",
+        "imageUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/edac30f5-220a-4361-b166-79e23dcc7990/886068721550/file/6_D06884A7815D3DAE1AD64B1F90A4C7D9D818.pdf.png",
+        "angle": 0,
+        "originalImageHeight": "2525",
+        "attTypeCode": 13,
+        "imageSuffix": "png"
+      }
+    ],
+    "preDecContainer": []
+  }
+}
