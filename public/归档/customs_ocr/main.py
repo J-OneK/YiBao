@@ -12,7 +12,7 @@ from core.data_loader import load_input_data
 from core.prompt_manager import generate_prompt, generate_mainfactor_prompt
 from core.ocr_service import recognize_images_batch, recognize_images_batch_no_preprocess
 from core.aggregator import aggregate_results, check_consistency_and_unify_async, aggregate_mainfactors
-from core.post_processor import process_final_output, process_mainfactors, transform_final_output
+from core.post_processor import process_final_output, process_mainfactors, transform_final_output, normalize_codets_in_output
 from config import settings
 from core.mainfactor_utils import get_codets_values, normalize_values, get_mainfactor
 
@@ -114,6 +114,7 @@ async def main_async(input_json_path: str, output_json_path: str):
         # 合并所有 image_infos 以获取预处理后的图片尺寸
         all_image_infos = image_infos + image_infos_mainfactor + image_infos_classify_only
         final_output = transform_final_output(final_output, operate_images, head_list, image_infos=all_image_infos)
+        final_output = normalize_codets_in_output(final_output)
         logger.info("转换完成")
 
         # 8. 保存结果
@@ -149,8 +150,8 @@ def main(input_json_path: str, output_json_path: str):
 
 if __name__ == "__main__":
     # 默认路径
-    input_path = "../COAU7262025430I.json"
-    output_path = "../COAU7262025430I_output.json"
+    input_path = "/Users/1k/code/YiBao/public/归档/1ZG331E30458071596.json"
+    output_path = "/Users/1k/code/YiBao/public/归档/1ZG331E30458071596_output_test.json"
 
     # 如果提供了命令行参数，使用命令行参数
     if len(sys.argv) > 1:

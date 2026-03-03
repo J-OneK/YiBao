@@ -8,7 +8,7 @@
 import logging
 from typing import Dict, List
 from .models import ImageInfo
-from .mainfactor_utils import normalize_values
+from .mainfactor_utils import normalize_values, normalize_value
 import re
 import torch
 import torch.nn.functional as F
@@ -57,6 +57,39 @@ def _get_embeddings(convert_class: str):
     }
     _EMBEDDINGS_CACHE[convert_class] = cached
     return cached
+
+
+def normalize_codets_in_output(output_data: Dict) -> Dict:
+    """
+    对最终输出结果中所有 key 为 'codeTs' 的字段值调用 normalize_value 进行归一化。
+    
+    处理范围：
+    - content.preDecList 中每行每个字段项
+    - 仅归一化字段的顶层 value 和 normalizedValue
+    - originalValue 和 sourceList 中的值保持不变
+    
+    Args:
+        output_data: transform_final_output 产出的最终输出字典
+        
+    Returns:
+        归一化后的输出字典（原地修改）
+    """
+    content = output_data.get("content", {})
+    
+    for row in content.get("preDecList", []):
+        for item in row:
+            if item.get("key") != "codeTs":
+                continue
+            
+            # 仅归一化顶层 value 和 normalizedValue
+            for field in ("value", "normalizedValue"):
+                raw = item.get(field)
+                if raw:
+                    normalized = normalize_value(raw)
+                    # None 或 "" 都统一写入 ""
+                    item[field] = normalized if normalized is not None else ""
+    
+    return output_data
 
 
 def process_final_output(aggregated_data: Dict, image_infos: List[ImageInfo]) -> Dict:

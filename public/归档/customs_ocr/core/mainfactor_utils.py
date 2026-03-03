@@ -31,13 +31,43 @@ def get_codets_values(data_dict):
     except Exception as e:
         print(f"读取出错: {e}") 
 
+def normalize_value(value):
+    """
+    处理商品编码：
+    1. 分割: 处理 "1;4202920000" 这种带分号的情况。
+    2. 清洗: 去除小数点等非数字符号。
+    3. 过滤: 丢弃长度小于 4 的纯数字 (视为序号)。
+    """
+    parts = re.split(r'[;,\/\|\n]+', str(value))  # 支持多种分隔符
+    for part in parts:
+        part = part.strip()
+        if not part:
+            continue
+
+        clean_digits = re.sub(r'[^\d]', '', part) # 去除非数字字符
+        if len(clean_digits) < 4: #过滤长度小于4
+            continue
+        if len(clean_digits) > 10:
+            clean_digits = get_codeTs(clean_digits[:10]) # 截断到10位
+            if clean_digits is None:
+                clean_digits = ""
+        elif len(clean_digits) < 10:
+            clean_digits = get_codeTs(clean_digits)
+            if clean_digits is None:
+                clean_digits = ""
+
+        return clean_digits
+
+    return ""
+
+
 def normalize_values(values):
     """
     处理得到的商品编码列表（不重复）：
     1. 分割: 处理 "1;4202920000" 这种带分号的情况。
     2. 清洗: 去除小数点等非数字符号。
     3. 过滤: 丢弃长度小于 4 的纯数字 (视为序号)。
-    4. 补全: 不足 10 位后补 0。
+    4. 补全: 不足 10 位查易豹接口获取。
     """
     valid_values = []
     for v in values:
@@ -51,9 +81,9 @@ def normalize_values(values):
             if len(clean_digits) < 4: #过滤长度小于4
                 continue
             if len(clean_digits) > 10:
-                clean_digits = clean_digits[:10] # 截断到10位
+                clean_digits = get_codeTs(clean_digits[:10]) # 截断到10位
             elif len(clean_digits) < 10:
-                clean_digits = clean_digits.ljust(10, '0') # 补全到10位
+                clean_digits = get_codeTs(clean_digits)
             
             valid_values.append(clean_digits)
 
@@ -87,3 +117,27 @@ def get_mainfactor(hsCode):
         print(f"HS编码 {hsCode} 未找到对应的申报要素信息！")
         return ""
     return reback(hsCode)["message"]["resultList"][0]["mainfactor"]
+
+# ------------------------------------------调用易豹对应接口得到codeTs字段------------------------------------------
+
+def reback_codeTs(codeTs):
+    app_secret = "Tu!ikcIQlctS5Hytc9#Zm2C#?f~qU~BUKN*?wa7v"
+    current_time = str(int(time.time() * 1000))
+    content = '{"platformId":"ALIYUN01","codeTs":"%s"}' % codeTs
+    sign = sha1_encrypt("bizCode=DUB00907&bizId=12&content=%s&timestamp=%s&appKey=%s" % (
+        content, current_time, app_secret))
+    print(f"SHA1 Encrypted gModel: {sign}")
+    payload = {"appId": "ZDOCR001", "bizCode": "DUB00907", "bizId": "12",
+               "content": content, "timestamp": current_time, "sign": sign}
+    response = requests.post("https://openapi-dub.smartebao.com/gateway/receive", data=payload, )
+    data = response.json()
+    return data
+
+def get_codeTs(codeTs):
+    '''
+    调用易豹报关单证识别对接接口文档的中的2.8接口获取正确codeTs，如果接口返回多条数据则默认取第一条。
+    '''
+    if "resultList" not in reback_codeTs(codeTs)["message"]:
+        print(f"codeTs {codeTs} 未找到对应的商品编码信息！")
+        return ""
+    return reback_codeTs(codeTs)["message"]["resultList"][0]["codeTs"]
