@@ -18,6 +18,7 @@ import os
 import json
 import time
 from config.field_mapping import ATT_TYPE_NAMES_EN
+from .aggregator import sort_source_list_by_priority, _normalize_numeric
 
 logger = logging.getLogger(__name__)
 
@@ -136,8 +137,8 @@ def process_field(field: Dict, image_map: Dict[str, ImageInfo]) -> Dict:
     if_unify = field['if_unify']
     source_list = field['sourceList']
     
-    # 生成parsedValue
-    parsed_value = source_list[0]['value'] if source_list else ''
+    # 按优先级全量排序 source_list（就地修改），取优先级最高的值作为 parsedValue
+    parsed_value = sort_source_list_by_priority(key_desc, source_list) if source_list else ''
     
     # 生成transformedValue
     transformedValue_total = choose_top_similarity(key_desc, parsed_value)
@@ -200,39 +201,6 @@ def process_field(field: Dict, image_map: Dict[str, ImageInfo]) -> Dict:
         'if_unify': if_unify,
         'sourceList': processed_sources
     }
-
-# 输出整数的字段（key_desc）
-_INT_KEYS = {"件数", "件数单项"}
-
-# 输出整数或小数的字段（key_desc）
-_FLOAT_KEYS = {
-    "保费率", "杂费率", "运费率",
-    "净重", "净重单项", "毛重", "毛重单项",
-    "总价总和", "单价", "总价",
-    "成交数量", "法定第一数量", "法定第二数量",
-}
-
-
-def _normalize_numeric(value: str, key_desc: str) -> str:
-    """对数字类字段去除单位/汉字/字母，归一化为纯数字字符串。
-    解析失败时返回空字符串。"""
-    if key_desc not in _INT_KEYS and key_desc not in _FLOAT_KEYS:
-        return value
-    if not value or not value.strip():
-        return value
-    # 提取第一个合法数字（支持负号、千位逗号、小数点）
-    match = re.search(r'-?[\d,]+\.?\d*', value)
-    if not match:
-        return ""
-    num_str = match.group().replace(',', '')
-    try:
-        if key_desc in _INT_KEYS:
-            return str(int(round(float(num_str))))
-        else:
-            # 去掉尾部多余零，如 1234.50 -> "1234.5"，1234.0 -> "1234"
-            return f'{float(num_str):g}'
-    except (ValueError, OverflowError):
-        return ""
 
 
 KEY_DESC_ALIAS_MAP = {

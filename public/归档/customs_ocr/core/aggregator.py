@@ -13,6 +13,38 @@ from openai import AsyncOpenAI
 from config import settings
 from config.field_mapping import fuzzy_match_key_desc
 from .models import ExtractionResult, ExtractedField
+import re
+
+# 输出整数的字段
+_INT_KEYS = {"件数", "件数单项"}
+
+# 输出整数或小数的字段
+_FLOAT_KEYS = {
+    "保费率", "杂费率", "运费率",
+    "净重", "净重单项", "毛重", "毛重单项",
+    "总价总和", "单价", "总价",
+    "成交数量", "法定第一数量", "法定第二数量",
+}
+
+
+def _normalize_numeric(value: str, key_desc: str) -> str:
+    """对数字类字段去除单位/汉字/字母，归一化为纯数字字符串。
+    解析失败时返回空字符串。"""
+    if key_desc not in _INT_KEYS and key_desc not in _FLOAT_KEYS:
+        return value
+    if not value or not value.strip():
+        return value
+    match = re.search(r'-?[\d,]+\.?\d*', value)
+    if not match:
+        return ""
+    num_str = match.group().replace(',', '')
+    try:
+        if key_desc in _INT_KEYS:
+            return str(int(round(float(num_str))))
+        else:
+            return f'{float(num_str):g}'
+    except (ValueError, OverflowError):
+        return ""
 
 logger = logging.getLogger(__name__)
 
@@ -196,7 +228,15 @@ async def unify_source_list_async(keyDesc,if_unify,source_list: List[Dict]):
     """
     if not source_list:
         return
-    
+
+    # 数字类字段：先归一化每个来源的值，再做一致性比较
+    # 避免 '300' 和 '300个' 这类情况触发 LLM 判断
+    for item in source_list:
+        normalized = _normalize_numeric(item['value'], keyDesc)
+        if normalized != item['value']:
+            print(f'{keyDesc} 字段：归一化值 "{item["value"]}" -> "{normalized}"')
+            item['value'] = normalized
+
     values = [item['value'] for item in source_list]
     unique_values = set(values)
     
@@ -373,12 +413,16 @@ def get_unified_value(source_list: List[Dict]) -> str:
     return source_list[0]['value']
 
 
-def set_priority_value(keyDesc,source_list: List[Dict]) -> str:
+def sort_source_list_by_priority(keyDesc: str, source_list: List[Dict]) -> str:
+    """
+    按 keyDesc 的优先级队列，对 source_list 就地全量稳定排序。
+    优先级队列中靠前的 att_type_code 排在前面；
+    不在队列中的来源排在末尾，内部保持原有相对顺序。
+    返回排序后第一项的 value。
+    """
     if not source_list:
         return ""
-    
-    existing_atttype_codes = [item['att_type_code'] for item in source_list if item.get('att_type_code') is not None]
-    
+
     match keyDesc:
         case '主运单号':
             priority_queue = [19]
@@ -505,15 +549,14 @@ def set_priority_value(keyDesc,source_list: List[Dict]) -> str:
         case _:
             priority_queue = []
 
-    for att_type_code in priority_queue:
-        if att_type_code in existing_atttype_codes:
-            # 找到对应的 item
-            for idx, item in enumerate(source_list):
-                if item.get("att_type_code") == att_type_code:
-                    # 移动到第一位
-                    source_list.insert(0, source_list.pop(idx))
-                    return source_list[0].get("value", ""),att_type_code
-    return source_list[0].get("value", ""),0
+    if priority_queue:
+        # 构建优先级索引映射，不在队列中的用 len(priority_queue) 兜底排末尾
+        priority_index = {code: i for i, code in enumerate(priority_queue)}
+        source_list.sort(
+            key=lambda item: priority_index.get(item.get("att_type_code"), len(priority_queue))
+        )
+
+    return source_list[0].get("value", "")
 
 def aggregate_mainfactors(data, factor_list):
     """

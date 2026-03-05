@@ -1,0 +1,1921 @@
+{
+  "head": {
+    "signInfo": "",
+    "receiptType": 0,
+    "bizCode": "DUB00113",
+    "appId": "ALIYUN01",
+    "bizId": "E690c82c9720e324721060b6b",
+    "resultCode": "0",
+    "msgId": "761456607",
+    "resultMessage": "识别成功",
+    "version": "1.0",
+    "timestampStr": "2026-03-04 14:25:29",
+    "receiveId": "EBAO0001"
+  },
+  "content": {
+    "preDecHead": [
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "ExpressFedex",
+            "imageId": 2,
+            "transformValue": "469373570501",
+            "originalValue": "469373570501",
+            "normalizedValue": "469373570501",
+            "processBitMap": "0",
+            "axisX": 197,
+            "sepValue": "469373570501",
+            "axisY": 911,
+            "width": 243,
+            "attTypeCode": 15,
+            "height": 39
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "469373570501",
+        "normalizedValue": "469373570501",
+        "keyDesc": "提运单号",
+        "value": "469373570501",
+        "key": "billNo"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "ExpressFedex",
+            "imageId": 2,
+            "transformValue": "0.30KG",
+            "originalValue": "0.30KG",
+            "normalizedValue": "0.30KG",
+            "processBitMap": "0",
+            "axisX": 673,
+            "sepValue": "0.30KG",
+            "axisY": 102,
+            "width": 92,
+            "attTypeCode": 15,
+            "height": 22
+          },
+          {
+            "attType": "Declaration",
+            "imageId": 3,
+            "transformValue": "0.33",
+            "originalValue": "0.33",
+            "normalizedValue": "0.33",
+            "processBitMap": "0",
+            "axisX": 866,
+            "sepValue": "0.33",
+            "axisY": 437,
+            "width": 64,
+            "attTypeCode": 4,
+            "height": 29
+          },
+          {
+            "attType": "PackingList",
+            "imageId": 5,
+            "transformValue": "0.33",
+            "originalValue": "0.33",
+            "normalizedValue": "0.33",
+            "processBitMap": "0",
+            "axisX": 1086,
+            "sepValue": "0.33",
+            "axisY": 525,
+            "width": 53,
+            "attTypeCode": 3,
+            "height": 28
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "0.30KG",
+        "normalizedValue": "0.3",
+        "keyDesc": "毛重",
+        "value": "0.3",
+        "key": "grossWt"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "ExpressFedex",
+            "imageId": 2,
+            "transformValue": "IL",
+            "originalValue": "IL",
+            "normalizedValue": "IL",
+            "processBitMap": "0",
+            "axisX": 839,
+            "sepValue": "IL",
+            "axisY": 444,
+            "width": 57,
+            "attTypeCode": 15,
+            "height": 39
+          },
+          {
+            "attType": "Declaration",
+            "imageId": 3,
+            "transformValue": "以色列",
+            "originalValue": "以色列",
+            "normalizedValue": "以色列",
+            "processBitMap": "0",
+            "axisX": 1150,
+            "sepValue": "以色列",
+            "axisY": 335,
+            "width": 83,
+            "attTypeCode": 4,
+            "height": 56
+          },
+          {
+            "attType": "Invoice",
+            "imageId": 4,
+            "transformValue": "IL",
+            "originalValue": "IL",
+            "normalizedValue": "IL",
+            "processBitMap": "0",
+            "axisX": 939,
+            "sepValue": "IL",
+            "axisY": 672,
+            "width": 34,
+            "attTypeCode": 2,
+            "height": 28
+          },
+          {
+            "attType": "Contract",
+            "imageId": 6,
+            "transformValue": "IL",
+            "originalValue": "IL",
+            "normalizedValue": "IL",
+            "processBitMap": "0",
+            "axisX": 834,
+            "sepValue": "IL",
+            "axisY": 609,
+            "width": 50,
+            "attTypeCode": 1,
+            "height": 30
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "IL",
+        "normalizedValue": "ISR",
+        "keyDesc": "运抵国",
+        "value": "ISR",
+        "key": "cusTradeCountry"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "ExpressFedex",
+            "imageId": 2,
+            "transformValue": "",
+            "originalValue": "TLV",
+            "normalizedValue": "TLV",
+            "processBitMap": "0",
+            "axisX": 806,
+            "sepValue": "TLV",
+            "axisY": 1065,
+            "width": 81,
+            "attTypeCode": 15,
+            "height": 32
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "TLV",
+        "normalizedValue": "",
+        "keyDesc": "指运港",
+        "value": "",
+        "key": "distinatePort"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 3,
+            "transformValue": "深圳市万兆通光电技术有限公司",
+            "originalValue": "深圳市万兆通光电技术有限公司",
+            "normalizedValue": "深圳市万兆通光电技术有限公司",
+            "processBitMap": "0",
+            "axisX": 17,
+            "sepValue": "深圳市万兆通光电技术有限公司",
+            "axisY": 121,
+            "width": 473,
+            "attTypeCode": 4,
+            "height": 36
+          },
+          {
+            "attType": "Invoice",
+            "imageId": 4,
+            "transformValue": "深圳市万兆通光电技术有限公司",
+            "originalValue": "深圳市万兆通光电技术有限公司",
+            "normalizedValue": "深圳市万兆通光电技术有限公司",
+            "processBitMap": "0",
+            "axisX": 3,
+            "sepValue": "深圳市万兆通光电技术有限公司",
+            "axisY": 166,
+            "width": 413,
+            "attTypeCode": 2,
+            "height": 33
+          },
+          {
+            "attType": "Contract",
+            "imageId": 6,
+            "transformValue": "深圳市万兆通光电技术有限公司",
+            "originalValue": "Shenzhen10GtekTransceiversCo.,Ltd",
+            "normalizedValue": "Shenzhen10GtekTransceiversCo.,Ltd",
+            "processBitMap": "0",
+            "axisX": 23,
+            "sepValue": "Shenzhen10GtekTransceiversCo.,Ltd",
+            "axisY": 452,
+            "width": 482,
+            "attTypeCode": 1,
+            "height": 30
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "深圳市万兆通光电技术有限公司",
+        "normalizedValue": "深圳市万兆通光电技术有限公司",
+        "keyDesc": "境内收发货人名称",
+        "value": "深圳市万兆通光电技术有限公司",
+        "key": "consigneeCname"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 3,
+            "transformValue": "91440300678577372N",
+            "originalValue": "91440300678577372N",
+            "normalizedValue": "91440300678577372N",
+            "processBitMap": "0",
+            "axisX": 267,
+            "sepValue": "91440300678577372N",
+            "axisY": 94,
+            "width": 220,
+            "attTypeCode": 4,
+            "height": 27
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "91440300678577372N",
+        "normalizedValue": "91440300678577372N",
+        "keyDesc": "境内收发货人社会信用代码",
+        "value": "91440300678577372N",
+        "key": "rcvgdTradeScc"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 3,
+            "transformValue": "4403169CK5",
+            "originalValue": "4403169CK5",
+            "normalizedValue": "4403169CK5",
+            "processBitMap": "0",
+            "axisX": 571,
+            "sepValue": "4403169CK5",
+            "axisY": 125,
+            "width": 161,
+            "attTypeCode": 4,
+            "height": 32
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "4403169CK5",
+        "normalizedValue": "4403169CK5",
+        "keyDesc": "境内收发货人海关代码",
+        "value": "4403169CK5",
+        "key": "rcvgdTradeCode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 3,
+            "transformValue": "10Gtek (HK) Co., Limited",
+            "originalValue": "10Gtek (HK) Co., Limited",
+            "normalizedValue": "10Gtek (HK) Co., Limited",
+            "processBitMap": "0",
+            "axisX": 17,
+            "sepValue": "10Gtek (HK) Co., Limited",
+            "axisY": 192,
+            "width": 306,
+            "attTypeCode": 4,
+            "height": 36
+          },
+          {
+            "attType": "Invoice",
+            "imageId": 4,
+            "transformValue": "10Gtek (HK) Co., Limited",
+            "originalValue": "10Gtek (HK) Co., Limited",
+            "normalizedValue": "10Gtek (HK) Co., Limited",
+            "processBitMap": "0",
+            "axisX": 3,
+            "sepValue": "10Gtek (HK) Co., Limited",
+            "axisY": 513,
+            "width": 304,
+            "attTypeCode": 2,
+            "height": 32
+          },
+          {
+            "attType": "Contract",
+            "imageId": 6,
+            "transformValue": "ZIV-AV",
+            "originalValue": "ZIV-AV",
+            "normalizedValue": "ZIV-AV",
+            "processBitMap": "0",
+            "axisX": 834,
+            "sepValue": "ZIV-AV",
+            "axisY": 452,
+            "width": 134,
+            "attTypeCode": 1,
+            "height": 30
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "10Gtek (HK) Co., Limited",
+        "normalizedValue": "10Gtek (HK) Co., Limited",
+        "keyDesc": "境外收发货人",
+        "value": "10Gtek (HK) Co., Limited",
+        "key": "consignorEname"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 3,
+            "transformValue": "深圳市万兆通光电技术有限公司",
+            "originalValue": "深圳市万兆通光电技术有限公司",
+            "normalizedValue": "深圳市万兆通光电技术有限公司",
+            "processBitMap": "0",
+            "axisX": 17,
+            "sepValue": "深圳市万兆通光电技术有限公司",
+            "axisY": 264,
+            "width": 412,
+            "attTypeCode": 4,
+            "height": 36
+          },
+          {
+            "attType": "PackingList",
+            "imageId": 5,
+            "transformValue": "ShenZhen10GtekTransceiversCo.Ltd深圳市万兆通光电技术有限公司",
+            "originalValue": "ShenZhen10GtekTransceiversCo.Ltd深圳市万兆通光电技术有限公司",
+            "normalizedValue": "ShenZhen10GtekTransceiversCo.Ltd深圳市万兆通光电技术有限公司",
+            "processBitMap": "0",
+            "axisX": 505,
+            "sepValue": "ShenZhen10GtekTransceiversCo.Ltd深圳市万兆通光电技术有限公司",
+            "axisY": 25,
+            "width": 768,
+            "attTypeCode": 3,
+            "height": 83
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "深圳市万兆通光电技术有限公司",
+        "normalizedValue": "深圳市万兆通光电技术有限公司",
+        "keyDesc": "生产销售单位名称",
+        "value": "深圳市万兆通光电技术有限公司",
+        "key": "ownerName"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 3,
+            "transformValue": "91440300678577372N",
+            "originalValue": "91440300678577372N",
+            "normalizedValue": "91440300678577372N",
+            "processBitMap": "0",
+            "axisX": 267,
+            "sepValue": "91440300678577372N",
+            "axisY": 239,
+            "width": 220,
+            "attTypeCode": 4,
+            "height": 27
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "91440300678577372N",
+        "normalizedValue": "91440300678577372N",
+        "keyDesc": "生产销售单位社会信用代码",
+        "value": "91440300678577372N",
+        "key": "ownerScc"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 3,
+            "transformValue": "0110",
+            "originalValue": "一般贸易",
+            "normalizedValue": "一般贸易",
+            "processBitMap": "0",
+            "axisX": 571,
+            "sepValue": "一般贸易",
+            "axisY": 264,
+            "width": 124,
+            "attTypeCode": 4,
+            "height": 36
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "一般贸易",
+        "normalizedValue": "0110",
+        "keyDesc": "监管方式",
+        "value": "0110",
+        "key": "supvModeCode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 3,
+            "transformValue": "101",
+            "originalValue": "一般征税",
+            "normalizedValue": "一般征税",
+            "processBitMap": "0",
+            "axisX": 1150,
+            "sepValue": "一般征税",
+            "axisY": 264,
+            "width": 121,
+            "attTypeCode": 4,
+            "height": 36
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "一般征税",
+        "normalizedValue": "101",
+        "keyDesc": "征免性质",
+        "value": "101",
+        "key": "cutMode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 3,
+            "transformValue": "000003223",
+            "originalValue": "000003223",
+            "normalizedValue": "000003223",
+            "processBitMap": "0",
+            "axisX": 17,
+            "sepValue": "000003223",
+            "axisY": 335,
+            "width": 124,
+            "attTypeCode": 4,
+            "height": 56
+          },
+          {
+            "attType": "Invoice",
+            "imageId": 4,
+            "transformValue": "000003223",
+            "originalValue": "000003223",
+            "normalizedValue": "000003223",
+            "processBitMap": "0",
+            "axisX": 1334,
+            "sepValue": "000003223",
+            "axisY": 187,
+            "width": 134,
+            "attTypeCode": 2,
+            "height": 27
+          },
+          {
+            "attType": "Contract",
+            "imageId": 6,
+            "transformValue": "000003223",
+            "originalValue": "000003223",
+            "normalizedValue": "000003223",
+            "processBitMap": "0",
+            "axisX": 1340,
+            "sepValue": "000003223",
+            "axisY": 242,
+            "width": 135,
+            "attTypeCode": 1,
+            "height": 36
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "000003223",
+        "normalizedValue": "000003223",
+        "keyDesc": "合同协议号",
+        "value": "000003223",
+        "key": "contrNo"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 3,
+            "transformValue": "HKG",
+            "originalValue": "中国香港",
+            "normalizedValue": "中国香港",
+            "processBitMap": "0",
+            "axisX": 571,
+            "sepValue": "中国香港",
+            "axisY": 335,
+            "width": 124,
+            "attTypeCode": 4,
+            "height": 56
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "中国香港",
+        "normalizedValue": "HKG",
+        "keyDesc": "贸易国",
+        "value": "HKG",
+        "key": "cusTradeNationCode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 3,
+            "transformValue": "22",
+            "originalValue": "纸制或者纤维板制盒/箱",
+            "normalizedValue": "纸制或者纤维板制盒/箱",
+            "processBitMap": "0",
+            "axisX": 17,
+            "sepValue": "纸制或者纤维板制盒/箱",
+            "axisY": 407,
+            "width": 306,
+            "attTypeCode": 4,
+            "height": 59
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "纸制或者纤维板制盒/箱",
+        "normalizedValue": "22",
+        "keyDesc": "包装种类",
+        "value": "22",
+        "key": "wrapType"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 3,
+            "transformValue": "1",
+            "originalValue": "1",
+            "normalizedValue": "1",
+            "processBitMap": "0",
+            "axisX": 571,
+            "sepValue": "1",
+            "axisY": 437,
+            "width": 38,
+            "attTypeCode": 4,
+            "height": 29
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "1",
+        "normalizedValue": "1",
+        "keyDesc": "件数",
+        "value": "1",
+        "key": "packNo"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 3,
+            "transformValue": "0.3",
+            "originalValue": "0.30",
+            "normalizedValue": "0.30",
+            "processBitMap": "0",
+            "axisX": 1150,
+            "sepValue": "0.30",
+            "axisY": 437,
+            "width": 65,
+            "attTypeCode": 4,
+            "height": 29
+          },
+          {
+            "attType": "PackingList",
+            "imageId": 5,
+            "transformValue": "0.3",
+            "originalValue": "0.30",
+            "normalizedValue": "0.30",
+            "processBitMap": "0",
+            "axisX": 1200,
+            "sepValue": "0.30",
+            "axisY": 525,
+            "width": 52,
+            "attTypeCode": 3,
+            "height": 28
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "0.30",
+        "normalizedValue": "0.3",
+        "keyDesc": "净重",
+        "value": "0.3",
+        "key": "netWt"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 3,
+            "transformValue": "2",
+            "originalValue": "C&F",
+            "normalizedValue": "C&F",
+            "processBitMap": "0",
+            "axisX": 1438,
+            "sepValue": "C&F",
+            "axisY": 437,
+            "width": 40,
+            "attTypeCode": 4,
+            "height": 29
+          },
+          {
+            "attType": "Invoice",
+            "imageId": 4,
+            "transformValue": "2",
+            "originalValue": "C&F",
+            "normalizedValue": "C&F",
+            "processBitMap": "0",
+            "axisX": 1334,
+            "sepValue": "C&F",
+            "axisY": 315,
+            "width": 52,
+            "attTypeCode": 2,
+            "height": 28
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "C&F",
+        "normalizedValue": "2",
+        "keyDesc": "成交方式",
+        "value": "2",
+        "key": "transMode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 3,
+            "transformValue": "USD",
+            "originalValue": "美元",
+            "normalizedValue": "美元",
+            "processBitMap": "0",
+            "axisX": 1769,
+            "sepValue": "美元",
+            "axisY": 437,
+            "width": 58,
+            "attTypeCode": 4,
+            "height": 29
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "美元",
+        "normalizedValue": "USD",
+        "keyDesc": "运费币制",
+        "value": "USD",
+        "key": "feeCurr"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 3,
+            "transformValue": "成交方式为C&F时麻烦将\"Shipping Cost\"的运费金额分摊到第一项",
+            "originalValue": "成交方式为C&F时麻烦将\"Shipping Cost\"的运费金额分摊到第一项",
+            "normalizedValue": "成交方式为C&F时麻烦将\"Shipping Cost\"的运费金额分摊到第一项",
+            "processBitMap": "0",
+            "axisX": 17,
+            "sepValue": "成交方式为C&F时麻烦将\"Shipping Cost\"的运费金额分摊到第一项",
+            "axisY": 521,
+            "width": 1170,
+            "attTypeCode": 4,
+            "height": 38
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "成交方式为C&F时麻烦将\"Shipping Cost\"的运费金额分摊到第一项",
+        "normalizedValue": "成交方式为C&F时麻烦将\"Shipping Cost\"的运费金额分摊到第一项",
+        "keyDesc": "标记唛码及备注",
+        "value": "成交方式为C&F时麻烦将\"Shipping Cost\"的运费金额分摊到第一项",
+        "key": "noteS"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 3,
+            "transformValue": "1/4",
+            "originalValue": "1/4",
+            "normalizedValue": "1/4",
+            "processBitMap": "0",
+            "axisX": 2064,
+            "sepValue": "1/4",
+            "axisY": 50,
+            "width": 175,
+            "attTypeCode": 4,
+            "height": 28
+          }
+        ],
+        "source_image": 3,
+        "originalValue": "1/4",
+        "normalizedValue": "1/4",
+        "keyDesc": "页码页数",
+        "value": "1/4",
+        "key": "pageNo"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 4,
+            "transformValue": "185",
+            "originalValue": "$185.00",
+            "normalizedValue": "$185.00",
+            "processBitMap": "0",
+            "axisX": 1590,
+            "sepValue": "$185.00",
+            "axisY": 968,
+            "width": 96,
+            "attTypeCode": 2,
+            "height": 27
+          },
+          {
+            "attType": "Contract",
+            "imageId": 6,
+            "transformValue": "185",
+            "originalValue": "$185.00",
+            "normalizedValue": "$185.00",
+            "processBitMap": "0",
+            "axisX": 1561,
+            "sepValue": "$185.00",
+            "axisY": 942,
+            "width": 98,
+            "attTypeCode": 1,
+            "height": 31
+          }
+        ],
+        "source_image": 4,
+        "originalValue": "$185.00",
+        "normalizedValue": "185",
+        "keyDesc": "总价总和",
+        "value": "185",
+        "key": "totalAmount"
+      }
+    ],
+    "preDecList": [
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "ExpressFedex",
+              "imageId": 2,
+              "transformValue": "IL",
+              "originalValue": "IL",
+              "normalizedValue": "IL",
+              "processBitMap": "0",
+              "axisX": 839,
+              "sepValue": "IL",
+              "axisY": 444,
+              "width": 57,
+              "attTypeCode": 15,
+              "height": 39
+            },
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "以色列",
+              "originalValue": "以色列",
+              "normalizedValue": "以色列",
+              "processBitMap": "0",
+              "axisX": 1968,
+              "sepValue": "以色列",
+              "axisY": 639,
+              "width": 84,
+              "attTypeCode": 4,
+              "height": 29
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "IL",
+          "normalizedValue": "ISR",
+          "keyDesc": "最终目的国",
+          "value": "ISR",
+          "key": "destinationCountry"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "8517795000",
+              "originalValue": "8517795000",
+              "normalizedValue": "8517795000",
+              "processBitMap": "0",
+              "axisX": 80,
+              "sepValue": "8517795000",
+              "axisY": 639,
+              "width": 137,
+              "attTypeCode": 4,
+              "height": 29
+            },
+            {
+              "attType": "Contract",
+              "imageId": 6,
+              "transformValue": "AZS85-S28-M1",
+              "originalValue": "AZS85-S28-M1",
+              "normalizedValue": "AZS85-S28-M1",
+              "processBitMap": "0",
+              "axisX": 98,
+              "sepValue": "AZS85-S28-M1",
+              "axisY": 834,
+              "width": 184,
+              "attTypeCode": 1,
+              "height": 30
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "8517795000",
+          "normalizedValue": "8517795000",
+          "keyDesc": "商品编号",
+          "value": "8517795000",
+          "key": "codeTs"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "光纤模块",
+              "originalValue": "光纤模块",
+              "normalizedValue": "光纤模块",
+              "processBitMap": "0",
+              "axisX": 315,
+              "sepValue": "光纤模块",
+              "axisY": 639,
+              "width": 114,
+              "attTypeCode": 4,
+              "height": 29
+            },
+            {
+              "attType": "Invoice",
+              "imageId": 4,
+              "transformValue": "25G SFP28-SR, 850-nm, 100-m",
+              "originalValue": "25G SFP28-SR, 850-nm, 100-m",
+              "normalizedValue": "25G SFP28-SR, 850-nm, 100-m",
+              "processBitMap": "0",
+              "axisX": 446,
+              "sepValue": "25G SFP28-SR, 850-nm, 100-m",
+              "axisY": 851,
+              "width": 347,
+              "attTypeCode": 2,
+              "height": 28
+            },
+            {
+              "attType": "PackingList",
+              "imageId": 5,
+              "transformValue": "25G SFP28-SR, 850-nm, 100-m",
+              "originalValue": "25G SFP28-SR, 850-nm, 100-m",
+              "normalizedValue": "25G SFP28-SR, 850-nm, 100-m",
+              "processBitMap": "0",
+              "axisX": 443,
+              "sepValue": "25G SFP28-SR, 850-nm, 100-m",
+              "axisY": 386,
+              "width": 346,
+              "attTypeCode": 3,
+              "height": 28
+            },
+            {
+              "attType": "Contract",
+              "imageId": 6,
+              "transformValue": "25G SFP28-SR, 850-nm, 100-m",
+              "originalValue": "25G SFP28-SR, 850-nm, 100-m",
+              "normalizedValue": "25G SFP28-SR, 850-nm, 100-m",
+              "processBitMap": "0",
+              "axisX": 402,
+              "sepValue": "25G SFP28-SR, 850-nm, 100-m",
+              "axisY": 834,
+              "width": 346,
+              "attTypeCode": 1,
+              "height": 30
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "光纤模块",
+          "normalizedValue": "光纤模块",
+          "keyDesc": "商品名称",
+          "value": "光纤模块",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "1|0|用于网络数据传输中网络设备、存储设备的连接，如计算机网卡和网络设备之间的连接等，Cisco Catalyst 35XX Switches 等交换机|10Gtek|AZS85-S28-M1||",
+              "originalValue": "1|0|用于网络数据传输中网络设备、存储设备的连接，如计算机网卡和网络设备之间的连接等，Cisco Catalyst 35XX Switches 等交换机|10Gtek|AZS85-S28-M1||",
+              "normalizedValue": "1|0|用于网络数据传输中网络设备、存储设备的连接，如计算机网卡和网络设备之间的连接等，Cisco Catalyst 35XX Switches 等交换机|10Gtek|AZS85-S28-M1||",
+              "processBitMap": "0",
+              "axisX": 17,
+              "sepValue": "1|0|用于网络数据传输中网络设备、存储设备的连接，如计算机网卡和网络设备之间的连接等，Cisco Catalyst 35XX Switches 等交换机|10Gtek|AZS85-S28-M1||",
+              "axisY": 637,
+              "width": 2406,
+              "attTypeCode": 4,
+              "height": 134
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "1|0|用于网络数据传输中网络设备、存储设备的连接，如计算机网卡和网络设备之间的连接等，Cisco Catalyst 35XX Switches 等交换机|10Gtek|AZS85-S28-M1||",
+          "normalizedValue": "1|0|用于网络数据传输中网络设备、存储设备的连接，如计算机网卡和网络设备之间的连接等，Cisco Catalyst 35XX Switches 等交换机|10Gtek|AZS85-S28-M1||",
+          "keyDesc": "规格型号",
+          "value": "1|0|用于网络数据传输中网络设备、存储设备的连接，如计算机网卡和网络设备之间的连接等，Cisco Catalyst 35XX Switches 等交换机|10Gtek|AZS85-S28-M1||",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "0.3",
+              "originalValue": "0.30",
+              "normalizedValue": "0.30",
+              "processBitMap": "0",
+              "axisX": 1390,
+              "sepValue": "0.30",
+              "axisY": 639,
+              "width": 63,
+              "attTypeCode": 4,
+              "height": 29
+            },
+            {
+              "attType": "PackingList",
+              "imageId": 5,
+              "transformValue": "0.3",
+              "originalValue": "0.30",
+              "normalizedValue": "0.30",
+              "processBitMap": "0",
+              "axisX": 1193,
+              "sepValue": "0.30",
+              "axisY": 386,
+              "width": 54,
+              "attTypeCode": 3,
+              "height": 28
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "0.30",
+          "normalizedValue": "0.3",
+          "keyDesc": "净重单项",
+          "value": "0.3",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "10",
+              "originalValue": "10.00",
+              "normalizedValue": "10.00",
+              "processBitMap": "0",
+              "axisX": 1516,
+              "sepValue": "10.00",
+              "axisY": 639,
+              "width": 71,
+              "attTypeCode": 4,
+              "height": 29
+            },
+            {
+              "attType": "Invoice",
+              "imageId": 4,
+              "transformValue": "10",
+              "originalValue": "10",
+              "normalizedValue": "10",
+              "processBitMap": "0",
+              "axisX": 1243,
+              "sepValue": "10",
+              "axisY": 851,
+              "width": 30,
+              "attTypeCode": 2,
+              "height": 28
+            },
+            {
+              "attType": "PackingList",
+              "imageId": 5,
+              "transformValue": "10",
+              "originalValue": "10",
+              "normalizedValue": "10",
+              "processBitMap": "0",
+              "axisX": 1338,
+              "sepValue": "10",
+              "axisY": 386,
+              "width": 28,
+              "attTypeCode": 3,
+              "height": 28
+            },
+            {
+              "attType": "Contract",
+              "imageId": 6,
+              "transformValue": "10",
+              "originalValue": "10",
+              "normalizedValue": "10",
+              "processBitMap": "0",
+              "axisX": 1397,
+              "sepValue": "10",
+              "axisY": 834,
+              "width": 30,
+              "attTypeCode": 1,
+              "height": 30
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "10.00",
+          "normalizedValue": "10",
+          "keyDesc": "成交数量",
+          "value": "10",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "只",
+              "originalValue": "只",
+              "normalizedValue": "只",
+              "processBitMap": "0",
+              "axisX": 1556,
+              "sepValue": "只",
+              "axisY": 675,
+              "width": 31,
+              "attTypeCode": 4,
+              "height": 28
+            },
+            {
+              "attType": "Invoice",
+              "imageId": 4,
+              "transformValue": "pcs",
+              "originalValue": "pcs",
+              "normalizedValue": "pcs",
+              "processBitMap": "0",
+              "axisX": 1356,
+              "sepValue": "pcs",
+              "axisY": 851,
+              "width": 41,
+              "attTypeCode": 2,
+              "height": 28
+            },
+            {
+              "attType": "PackingList",
+              "imageId": 5,
+              "transformValue": "pcs",
+              "originalValue": "pcs",
+              "normalizedValue": "pcs",
+              "processBitMap": "0",
+              "axisX": 1425,
+              "sepValue": "pcs",
+              "axisY": 386,
+              "width": 45,
+              "attTypeCode": 3,
+              "height": 28
+            },
+            {
+              "attType": "Contract",
+              "imageId": 6,
+              "transformValue": "pcs",
+              "originalValue": "pcs",
+              "normalizedValue": "pcs",
+              "processBitMap": "0",
+              "axisX": 1452,
+              "sepValue": "pcs",
+              "axisY": 834,
+              "width": 43,
+              "attTypeCode": 1,
+              "height": 30
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "只",
+          "normalizedValue": "只",
+          "keyDesc": "成交单位",
+          "value": "只",
+          "key": "gUnit"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "15.00000",
+              "originalValue": "15.00000",
+              "normalizedValue": "15.00000",
+              "processBitMap": "0",
+              "axisX": 1708,
+              "sepValue": "15.00000",
+              "axisY": 639,
+              "width": 111,
+              "attTypeCode": 4,
+              "height": 29
+            },
+            {
+              "attType": "Invoice",
+              "imageId": 4,
+              "transformValue": "$15.00",
+              "originalValue": "$15.00",
+              "normalizedValue": "$15.00",
+              "processBitMap": "0",
+              "axisX": 986,
+              "sepValue": "$15.00",
+              "axisY": 851,
+              "width": 86,
+              "attTypeCode": 2,
+              "height": 28
+            },
+            {
+              "attType": "Contract",
+              "imageId": 6,
+              "transformValue": "$15",
+              "originalValue": "$15",
+              "normalizedValue": "$15",
+              "processBitMap": "0",
+              "axisX": 1229,
+              "sepValue": "$15",
+              "axisY": 834,
+              "width": 48,
+              "attTypeCode": 1,
+              "height": 30
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "15.00000",
+          "normalizedValue": "15",
+          "keyDesc": "单价",
+          "value": "15",
+          "key": "declPrice"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "150",
+              "originalValue": "150.00",
+              "normalizedValue": "150.00",
+              "processBitMap": "0",
+              "axisX": 1733,
+              "sepValue": "150.00",
+              "axisY": 675,
+              "width": 86,
+              "attTypeCode": 4,
+              "height": 28
+            },
+            {
+              "attType": "Invoice",
+              "imageId": 4,
+              "transformValue": "150",
+              "originalValue": "$150.00",
+              "normalizedValue": "$150.00",
+              "processBitMap": "0",
+              "axisX": 1590,
+              "sepValue": "$150.00",
+              "axisY": 851,
+              "width": 100,
+              "attTypeCode": 2,
+              "height": 28
+            },
+            {
+              "attType": "Contract",
+              "imageId": 6,
+              "transformValue": "150",
+              "originalValue": "$150.00",
+              "normalizedValue": "$150.00",
+              "processBitMap": "0",
+              "axisX": 1565,
+              "sepValue": "$150.00",
+              "axisY": 834,
+              "width": 96,
+              "attTypeCode": 1,
+              "height": 30
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "150.00",
+          "normalizedValue": "150",
+          "keyDesc": "总价",
+          "value": "150",
+          "key": "declTotal"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "USD",
+              "originalValue": "美元",
+              "normalizedValue": "美元",
+              "processBitMap": "0",
+              "axisX": 1761,
+              "sepValue": "美元",
+              "axisY": 703,
+              "width": 58,
+              "attTypeCode": 4,
+              "height": 29
+            },
+            {
+              "attType": "Invoice",
+              "imageId": 4,
+              "transformValue": "USD",
+              "originalValue": "USD",
+              "normalizedValue": "USD",
+              "processBitMap": "0",
+              "axisX": 1045,
+              "sepValue": "USD",
+              "axisY": 796,
+              "width": 71,
+              "attTypeCode": 2,
+              "height": 27
+            },
+            {
+              "attType": "Contract",
+              "imageId": 6,
+              "transformValue": "USD",
+              "originalValue": "USD",
+              "normalizedValue": "USD",
+              "processBitMap": "0",
+              "axisX": 1241,
+              "sepValue": "USD",
+              "axisY": 783,
+              "width": 72,
+              "attTypeCode": 1,
+              "height": 30
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "美元",
+          "normalizedValue": "USD",
+          "keyDesc": "币制",
+          "value": "USD",
+          "key": "tradeCurr"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "CHN",
+              "originalValue": "中国",
+              "normalizedValue": "中国",
+              "processBitMap": "0",
+              "axisX": 1852,
+              "sepValue": "中国",
+              "axisY": 639,
+              "width": 58,
+              "attTypeCode": 4,
+              "height": 29
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "中国",
+          "normalizedValue": "CHN",
+          "keyDesc": "原产国",
+          "value": "CHN",
+          "key": "cusOriginCountry"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "44031",
+              "originalValue": "(44031) 深圳特区",
+              "normalizedValue": "(44031) 深圳特区",
+              "processBitMap": "0",
+              "axisX": 2097,
+              "sepValue": "(44031) 深圳特区",
+              "axisY": 639,
+              "width": 96,
+              "attTypeCode": 4,
+              "height": 93
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "(44031) 深圳特区",
+          "normalizedValue": "44031",
+          "keyDesc": "境内货源地",
+          "value": "44031",
+          "key": "districtCode"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "照章征税",
+              "originalValue": "照章征税",
+              "normalizedValue": "照章征税",
+              "processBitMap": "0",
+              "axisX": 2257,
+              "sepValue": "照章征税",
+              "axisY": 639,
+              "width": 111,
+              "attTypeCode": 4,
+              "height": 29
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "照章征税",
+          "normalizedValue": "照章征税",
+          "keyDesc": "征免",
+          "value": "照章征税",
+          "key": "dutyMode"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 5,
+              "transformValue": "1",
+              "originalValue": "1",
+              "normalizedValue": "1",
+              "processBitMap": "0",
+              "axisX": 1572,
+              "sepValue": "1",
+              "axisY": 386,
+              "width": 14,
+              "attTypeCode": 3,
+              "height": 28
+            }
+          ],
+          "source_image": 5,
+          "originalValue": "1",
+          "normalizedValue": "1",
+          "keyDesc": "件数单项",
+          "value": "1",
+          "key": "gpackNo"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "Shipping Cost",
+              "originalValue": "Shipping Cost",
+              "normalizedValue": "Shipping Cost",
+              "processBitMap": "0",
+              "axisX": 315,
+              "sepValue": "Shipping Cost",
+              "axisY": 812,
+              "width": 241,
+              "attTypeCode": 4,
+              "height": 29
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "Shipping Cost",
+          "normalizedValue": "Shipping Cost",
+          "keyDesc": "规格型号",
+          "value": "Shipping Cost",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "1",
+              "originalValue": "1",
+              "normalizedValue": "1",
+              "processBitMap": "0",
+              "axisX": 1572,
+              "sepValue": "1",
+              "axisY": 782,
+              "width": 15,
+              "attTypeCode": 4,
+              "height": 29
+            },
+            {
+              "attType": "Invoice",
+              "imageId": 4,
+              "transformValue": "1",
+              "originalValue": "1",
+              "normalizedValue": "1",
+              "processBitMap": "0",
+              "axisX": 1259,
+              "sepValue": "1",
+              "axisY": 912,
+              "width": 14,
+              "attTypeCode": 2,
+              "height": 28
+            },
+            {
+              "attType": "Contract",
+              "imageId": 6,
+              "transformValue": "1",
+              "originalValue": "1",
+              "normalizedValue": "1",
+              "processBitMap": "0",
+              "axisX": 1411,
+              "sepValue": "1",
+              "axisY": 897,
+              "width": 16,
+              "attTypeCode": 1,
+              "height": 30
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "1",
+          "normalizedValue": "1",
+          "keyDesc": "成交数量",
+          "value": "1",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "35",
+              "originalValue": "35.00000",
+              "normalizedValue": "35.00000",
+              "processBitMap": "0",
+              "axisX": 1708,
+              "sepValue": "35.00000",
+              "axisY": 782,
+              "width": 111,
+              "attTypeCode": 4,
+              "height": 29
+            },
+            {
+              "attType": "Invoice",
+              "imageId": 4,
+              "transformValue": "35",
+              "originalValue": "$35.00",
+              "normalizedValue": "$35.00",
+              "processBitMap": "0",
+              "axisX": 986,
+              "sepValue": "$35.00",
+              "axisY": 912,
+              "width": 86,
+              "attTypeCode": 2,
+              "height": 28
+            },
+            {
+              "attType": "Contract",
+              "imageId": 6,
+              "transformValue": "35",
+              "originalValue": "$35",
+              "normalizedValue": "$35",
+              "processBitMap": "0",
+              "axisX": 1229,
+              "sepValue": "$35",
+              "axisY": 897,
+              "width": 48,
+              "attTypeCode": 1,
+              "height": 30
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "35.00000",
+          "normalizedValue": "35",
+          "keyDesc": "单价",
+          "value": "35",
+          "key": "declPrice"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "35",
+              "originalValue": "35.00",
+              "normalizedValue": "35.00",
+              "processBitMap": "0",
+              "axisX": 1746,
+              "sepValue": "35.00",
+              "axisY": 811,
+              "width": 73,
+              "attTypeCode": 4,
+              "height": 30
+            },
+            {
+              "attType": "Invoice",
+              "imageId": 4,
+              "transformValue": "35",
+              "originalValue": "$35.00",
+              "normalizedValue": "$35.00",
+              "processBitMap": "0",
+              "axisX": 1590,
+              "sepValue": "$35.00",
+              "axisY": 912,
+              "width": 100,
+              "attTypeCode": 2,
+              "height": 28
+            },
+            {
+              "attType": "Contract",
+              "imageId": 6,
+              "transformValue": "35",
+              "originalValue": "$35.00",
+              "normalizedValue": "$35.00",
+              "processBitMap": "0",
+              "axisX": 1581,
+              "sepValue": "$35.00",
+              "axisY": 897,
+              "width": 80,
+              "attTypeCode": 1,
+              "height": 30
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "35.00",
+          "normalizedValue": "35",
+          "keyDesc": "总价",
+          "value": "35",
+          "key": "declTotal"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "USD",
+              "originalValue": "美元",
+              "normalizedValue": "美元",
+              "processBitMap": "0",
+              "axisX": 1761,
+              "sepValue": "美元",
+              "axisY": 841,
+              "width": 58,
+              "attTypeCode": 4,
+              "height": 29
+            },
+            {
+              "attType": "Invoice",
+              "imageId": 4,
+              "transformValue": "USD",
+              "originalValue": "USD",
+              "normalizedValue": "USD",
+              "processBitMap": "0",
+              "axisX": 1045,
+              "sepValue": "USD",
+              "axisY": 796,
+              "width": 71,
+              "attTypeCode": 2,
+              "height": 27
+            },
+            {
+              "attType": "Contract",
+              "imageId": 6,
+              "transformValue": "USD",
+              "originalValue": "USD",
+              "normalizedValue": "USD",
+              "processBitMap": "0",
+              "axisX": 1241,
+              "sepValue": "USD",
+              "axisY": 783,
+              "width": 72,
+              "attTypeCode": 1,
+              "height": 30
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "美元",
+          "normalizedValue": "USD",
+          "keyDesc": "币制",
+          "value": "USD",
+          "key": "tradeCurr"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "CHN",
+              "originalValue": "中国",
+              "normalizedValue": "中国",
+              "processBitMap": "0",
+              "axisX": 1852,
+              "sepValue": "中国",
+              "axisY": 782,
+              "width": 58,
+              "attTypeCode": 4,
+              "height": 29
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "中国",
+          "normalizedValue": "CHN",
+          "keyDesc": "原产国",
+          "value": "CHN",
+          "key": "cusOriginCountry"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "ISR",
+              "originalValue": "以色列",
+              "normalizedValue": "以色列",
+              "processBitMap": "0",
+              "axisX": 1968,
+              "sepValue": "以色列",
+              "axisY": 782,
+              "width": 84,
+              "attTypeCode": 4,
+              "height": 29
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "以色列",
+          "normalizedValue": "ISR",
+          "keyDesc": "最终目的国",
+          "value": "ISR",
+          "key": "destinationCountry"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "44031",
+              "originalValue": "(44031) 深圳特区",
+              "normalizedValue": "(44031) 深圳特区",
+              "processBitMap": "0",
+              "axisX": 2097,
+              "sepValue": "(44031) 深圳特区",
+              "axisY": 782,
+              "width": 96,
+              "attTypeCode": 4,
+              "height": 88
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "(44031) 深圳特区",
+          "normalizedValue": "44031",
+          "keyDesc": "境内货源地",
+          "value": "44031",
+          "key": "districtCode"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 3,
+              "transformValue": "照章征税",
+              "originalValue": "照章征税",
+              "normalizedValue": "照章征税",
+              "processBitMap": "0",
+              "axisX": 2257,
+              "sepValue": "照章征税",
+              "axisY": 782,
+              "width": 111,
+              "attTypeCode": 4,
+              "height": 29
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "照章征税",
+          "normalizedValue": "照章征税",
+          "keyDesc": "征免",
+          "value": "照章征税",
+          "key": "dutyMode"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 4,
+              "transformValue": "Shipping Cost",
+              "originalValue": "Shipping Cost",
+              "normalizedValue": "Shipping Cost",
+              "processBitMap": "0",
+              "axisX": 446,
+              "sepValue": "Shipping Cost",
+              "axisY": 912,
+              "width": 154,
+              "attTypeCode": 2,
+              "height": 28
+            },
+            {
+              "attType": "Contract",
+              "imageId": 6,
+              "transformValue": "Shipping Cost",
+              "originalValue": "Shipping Cost",
+              "normalizedValue": "Shipping Cost",
+              "processBitMap": "0",
+              "axisX": 402,
+              "sepValue": "Shipping Cost",
+              "axisY": 897,
+              "width": 151,
+              "attTypeCode": 1,
+              "height": 30
+            }
+          ],
+          "source_image": 4,
+          "originalValue": "Shipping Cost",
+          "normalizedValue": "Shipping Cost",
+          "keyDesc": "商品名称",
+          "value": "Shipping Cost",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 4,
+              "transformValue": "pcs",
+              "originalValue": "pcs",
+              "normalizedValue": "pcs",
+              "processBitMap": "0",
+              "axisX": 1356,
+              "sepValue": "pcs",
+              "axisY": 912,
+              "width": 41,
+              "attTypeCode": 2,
+              "height": 28
+            },
+            {
+              "attType": "Contract",
+              "imageId": 6,
+              "transformValue": "pcs",
+              "originalValue": "pcs",
+              "normalizedValue": "pcs",
+              "processBitMap": "0",
+              "axisX": 1452,
+              "sepValue": "pcs",
+              "axisY": 897,
+              "width": 43,
+              "attTypeCode": 1,
+              "height": 30
+            }
+          ],
+          "source_image": 4,
+          "originalValue": "pcs",
+          "normalizedValue": "pcs",
+          "keyDesc": "成交单位",
+          "value": "pcs",
+          "key": "gUnit"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Contract",
+              "imageId": 6,
+              "transformValue": "Z10011",
+              "originalValue": "Z10011",
+              "normalizedValue": "Z10011",
+              "processBitMap": "0",
+              "axisX": 982,
+              "sepValue": "Z10011",
+              "axisY": 897,
+              "width": 90,
+              "attTypeCode": 1,
+              "height": 30
+            }
+          ],
+          "source_image": 6,
+          "originalValue": "Z10011",
+          "normalizedValue": "1001110001",
+          "keyDesc": "商品编号",
+          "value": "1001110001",
+          "key": "codeTs"
+        }
+      ]
+    ],
+    "operateImage": [
+      {
+        "imageWidth": "1785",
+        "originalFileName": "A7AC36D44583CBEFBD401754DB4CD891A766.pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/4456c3b9-c2e5-4ef8-9335-787f8e81f1a7/469373570501/file/0_A7AC36D44583CBEFBD401754DB4CD891A766.pdf.txt",
+        "imageId": 1,
+        "pdfDocPage": 0,
+        "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/4456c3b9-c2e5-4ef8-9335-787f8e81f1a7/469373570501/file/A7AC36D44583CBEFBD401754DB4CD891A766.pdf",
+        "imageHeight": "1860",
+        "originalImageWidth": "1785",
+        "imageUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/4456c3b9-c2e5-4ef8-9335-787f8e81f1a7/469373570501/file/0_A7AC36D44583CBEFBD401754DB4CD891A766.pdf.png",
+        "angle": 0,
+        "originalImageHeight": "1860",
+        "attTypeCode": 13,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "2376",
+        "originalFileName": "A7AC36D44583CBEFBD401754DB4CD891A766.pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/4456c3b9-c2e5-4ef8-9335-787f8e81f1a7/469373570501/file/1_A7AC36D44583CBEFBD401754DB4CD891A766.pdf.txt",
+        "imageId": 2,
+        "pdfDocPage": 1,
+        "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/4456c3b9-c2e5-4ef8-9335-787f8e81f1a7/469373570501/file/A7AC36D44583CBEFBD401754DB4CD891A766.pdf",
+        "imageHeight": "1836",
+        "originalImageWidth": "2376",
+        "imageUrl": "https://smartebao-dub-zd-ocr.oss-cn-shanghai.aliyuncs.com/ocr/operateImage/2026-03-04/adc3142dfcbd4b3b963385ad4a6585ba.png",
+        "ocrStructuredResultUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/4456c3b9-c2e5-4ef8-9335-787f8e81f1a7/469373570501/file/E690c82c9720e324721060b6b_2_extract.txt",
+        "angle": 0,
+        "originalImageHeight": "1836",
+        "attTypeCode": 15,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "2525",
+        "originalFileName": "A7AC36D44583CBEFBD401754DB4CD891A766.pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/4456c3b9-c2e5-4ef8-9335-787f8e81f1a7/469373570501/file/2_A7AC36D44583CBEFBD401754DB4CD891A766.pdf.txt",
+        "imageId": 3,
+        "pdfDocPage": 2,
+        "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/4456c3b9-c2e5-4ef8-9335-787f8e81f1a7/469373570501/file/A7AC36D44583CBEFBD401754DB4CD891A766.pdf",
+        "imageHeight": "1785",
+        "originalImageWidth": "2525",
+        "imageUrl": "https://smartebao-dub-zd-ocr.oss-cn-shanghai.aliyuncs.com/ocr/operateImage/2026-03-04/c6831accc988655c71a64d64bc925226.png",
+        "angle": 0,
+        "originalImageHeight": "1785",
+        "attTypeCode": 4,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "1785",
+        "originalFileName": "A7AC36D44583CBEFBD401754DB4CD891A766.pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/4456c3b9-c2e5-4ef8-9335-787f8e81f1a7/469373570501/file/3_A7AC36D44583CBEFBD401754DB4CD891A766.pdf.txt",
+        "imageId": 4,
+        "pdfDocPage": 3,
+        "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/4456c3b9-c2e5-4ef8-9335-787f8e81f1a7/469373570501/file/A7AC36D44583CBEFBD401754DB4CD891A766.pdf",
+        "imageHeight": "2525",
+        "originalImageWidth": "1785",
+        "imageUrl": "https://smartebao-dub-zd-ocr.oss-cn-shanghai.aliyuncs.com/ocr/operateImage/2026-03-04/d6bbdb4085ad75f8ef0ac326a7c97e10.png",
+        "angle": 0,
+        "originalImageHeight": "2525",
+        "attTypeCode": 2,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "1785",
+        "originalFileName": "A7AC36D44583CBEFBD401754DB4CD891A766.pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/4456c3b9-c2e5-4ef8-9335-787f8e81f1a7/469373570501/file/4_A7AC36D44583CBEFBD401754DB4CD891A766.pdf.txt",
+        "imageId": 5,
+        "pdfDocPage": 4,
+        "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/4456c3b9-c2e5-4ef8-9335-787f8e81f1a7/469373570501/file/A7AC36D44583CBEFBD401754DB4CD891A766.pdf",
+        "imageHeight": "2525",
+        "originalImageWidth": "1785",
+        "imageUrl": "https://smartebao-dub-zd-ocr.oss-cn-shanghai.aliyuncs.com/ocr/operateImage/2026-03-04/1c223990d910cc2cbfc04f8b31892f75.png",
+        "angle": 0,
+        "originalImageHeight": "2525",
+        "attTypeCode": 3,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "1785",
+        "originalFileName": "A7AC36D44583CBEFBD401754DB4CD891A766.pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/4456c3b9-c2e5-4ef8-9335-787f8e81f1a7/469373570501/file/5_A7AC36D44583CBEFBD401754DB4CD891A766.pdf.txt",
+        "imageId": 6,
+        "pdfDocPage": 5,
+        "originalFileUrl": "http://dub-opt-declare.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/4456c3b9-c2e5-4ef8-9335-787f8e81f1a7/469373570501/file/A7AC36D44583CBEFBD401754DB4CD891A766.pdf",
+        "imageHeight": "2525",
+        "originalImageWidth": "1785",
+        "imageUrl": "https://smartebao-dub-zd-ocr.oss-cn-shanghai.aliyuncs.com/ocr/operateImage/2026-03-04/3a21c899aa1b8b9b6806c54cfd248018.png",
+        "angle": 0,
+        "originalImageHeight": "2525",
+        "attTypeCode": 1,
+        "imageSuffix": "png"
+      }
+    ],
+    "preDecContainer": []
+  }
+}

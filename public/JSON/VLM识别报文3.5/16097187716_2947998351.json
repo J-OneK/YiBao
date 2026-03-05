@@ -1,0 +1,800 @@
+{
+  "head": {
+    "signInfo": "",
+    "receiptType": 0,
+    "bizCode": "DUB00113",
+    "appId": "ALIYUN01",
+    "bizId": "E6917f07f720e3247210b494d",
+    "resultCode": "0",
+    "msgId": "236589495",
+    "resultMessage": "识别成功",
+    "version": "1.0",
+    "timestampStr": "2026-03-04 13:40:32",
+    "receiveId": "EBAO0001"
+  },
+  "content": {
+    "preDecHead": [
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 2,
+            "transformValue": "K-Tronics(Suzhou)TechnologyCo.,Ltd",
+            "originalValue": "K-Tronics(Suzhou)TechnologyCo.,Ltd",
+            "normalizedValue": "K-Tronics(Suzhou)TechnologyCo.,Ltd",
+            "processBitMap": "0",
+            "axisX": 44,
+            "sepValue": "K-Tronics(Suzhou)TechnologyCo.,Ltd",
+            "axisY": 323,
+            "width": 497,
+            "attTypeCode": 2,
+            "height": 31
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "K-Tronics(Suzhou)TechnologyCo.,Ltd",
+        "normalizedValue": "K-Tronics(Suzhou)TechnologyCo.,Ltd",
+        "keyDesc": "境内收发货人名称",
+        "value": "K-Tronics(Suzhou)TechnologyCo.,Ltd",
+        "key": "consigneeCname"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 2,
+            "transformValue": "K-Tronics(Suzhou)TechnologyCo.,Ltd",
+            "originalValue": "K-Tronics(Suzhou)TechnologyCo.,Ltd",
+            "normalizedValue": "K-Tronics(Suzhou)TechnologyCo.,Ltd",
+            "processBitMap": "0",
+            "axisX": 44,
+            "sepValue": "K-Tronics(Suzhou)TechnologyCo.,Ltd",
+            "axisY": 323,
+            "width": 497,
+            "attTypeCode": 2,
+            "height": 31
+          },
+          {
+            "attType": "Invoice",
+            "imageId": 4,
+            "transformValue": "K-Tronics(Suzhou)TechnologyCo.,Ltd",
+            "originalValue": "K-Tronics(Suzhou)TechnologyCo.,Ltd",
+            "normalizedValue": "K-Tronics(Suzhou)TechnologyCo.,Ltd",
+            "processBitMap": "0",
+            "axisX": 42,
+            "sepValue": "K-Tronics(Suzhou)TechnologyCo.,Ltd",
+            "axisY": 317,
+            "width": 494,
+            "attTypeCode": 2,
+            "height": 33
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "K-Tronics(Suzhou)TechnologyCo.,Ltd",
+        "normalizedValue": "K-Tronics(Suzhou)TechnologyCo.,Ltd",
+        "keyDesc": "生产销售单位名称",
+        "value": "K-Tronics(Suzhou)TechnologyCo.,Ltd",
+        "key": "ownerName"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 2,
+            "transformValue": "4200018505",
+            "originalValue": "4200018505",
+            "normalizedValue": "4200018505",
+            "processBitMap": "0",
+            "axisX": 898,
+            "sepValue": "4200018505",
+            "axisY": 561,
+            "width": 143,
+            "attTypeCode": 2,
+            "height": 28
+          },
+          {
+            "attType": "Invoice",
+            "imageId": 4,
+            "transformValue": "4200018505",
+            "originalValue": "4200018505",
+            "normalizedValue": "4200018505",
+            "processBitMap": "0",
+            "axisX": 896,
+            "sepValue": "4200018505",
+            "axisY": 555,
+            "width": 140,
+            "attTypeCode": 2,
+            "height": 30
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "4200018505",
+        "normalizedValue": "4200018505",
+        "keyDesc": "合同协议号",
+        "value": "4200018505",
+        "key": "contrNo"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 2,
+            "transformValue": "BOEVT (HONGKONG) CO., LIMITED",
+            "originalValue": "BOEVT (HONGKONG) CO., LIMITED",
+            "normalizedValue": "BOEVT (HONGKONG) CO., LIMITED",
+            "processBitMap": "0",
+            "axisX": 898,
+            "sepValue": "BOEVT (HONGKONG) CO., LIMITED",
+            "axisY": 634,
+            "width": 410,
+            "attTypeCode": 2,
+            "height": 31
+          },
+          {
+            "attType": "Invoice",
+            "imageId": 4,
+            "transformValue": "AMTEC ELECTRONICS CORPORATION",
+            "originalValue": "AMTEC ELECTRONICS CORPORATION",
+            "normalizedValue": "AMTEC ELECTRONICS CORPORATION",
+            "processBitMap": "0",
+            "axisX": 42,
+            "sepValue": "AMTEC ELECTRONICS CORPORATION",
+            "axisY": 623,
+            "width": 412,
+            "attTypeCode": 2,
+            "height": 30
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "BOEVT (HONGKONG) CO., LIMITED",
+        "normalizedValue": "BOEVT (HONGKONG) CO., LIMITED",
+        "keyDesc": "境外收发货人",
+        "value": "BOEVT (HONGKONG) CO., LIMITED",
+        "key": "consignorEname"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 2,
+            "transformValue": "1",
+            "originalValue": "CIF",
+            "normalizedValue": "CIF",
+            "processBitMap": "0",
+            "axisX": 1183,
+            "sepValue": "CIF",
+            "axisY": 875,
+            "width": 49,
+            "attTypeCode": 2,
+            "height": 28
+          },
+          {
+            "attType": "Invoice",
+            "imageId": 4,
+            "transformValue": "1",
+            "originalValue": "CIF",
+            "normalizedValue": "CIF",
+            "processBitMap": "0",
+            "axisX": 1181,
+            "sepValue": "CIF",
+            "axisY": 870,
+            "width": 44,
+            "attTypeCode": 2,
+            "height": 28
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "CIF",
+        "normalizedValue": "1",
+        "keyDesc": "成交方式",
+        "value": "1",
+        "key": "transMode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 2,
+            "transformValue": "",
+            "originalValue": "PHU MY",
+            "normalizedValue": "PHU MY",
+            "processBitMap": "0",
+            "axisX": 719,
+            "sepValue": "PHU MY",
+            "axisY": 1085,
+            "width": 86,
+            "attTypeCode": 2,
+            "height": 27
+          },
+          {
+            "attType": "Invoice",
+            "imageId": 4,
+            "transformValue": "",
+            "originalValue": "PHU MY",
+            "normalizedValue": "PHU MY",
+            "processBitMap": "0",
+            "axisX": 718,
+            "sepValue": "PHU MY",
+            "axisY": 1082,
+            "width": 83,
+            "attTypeCode": 2,
+            "height": 28
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "PHU MY",
+        "normalizedValue": "",
+        "keyDesc": "指运港",
+        "value": "",
+        "key": "distinatePort"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 2,
+            "transformValue": "HKG",
+            "originalValue": "HongKong",
+            "normalizedValue": "HongKong",
+            "processBitMap": "0",
+            "axisX": 898,
+            "sepValue": "HongKong",
+            "axisY": 720,
+            "width": 239,
+            "attTypeCode": 2,
+            "height": 31
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "HongKong",
+        "normalizedValue": "HKG",
+        "keyDesc": "贸易国",
+        "value": "HKG",
+        "key": "cusTradeNationCode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 2,
+            "transformValue": "67787.2",
+            "originalValue": "67787.16",
+            "normalizedValue": "67787.16",
+            "processBitMap": "0",
+            "axisX": 1183,
+            "sepValue": "67787.16",
+            "axisY": 1252,
+            "width": 118,
+            "attTypeCode": 2,
+            "height": 27
+          },
+          {
+            "attType": "Invoice",
+            "imageId": 4,
+            "transformValue": "67787.2",
+            "originalValue": "67787.16",
+            "normalizedValue": "67787.16",
+            "processBitMap": "0",
+            "axisX": 1181,
+            "sepValue": "67787.16",
+            "axisY": 1249,
+            "width": 119,
+            "attTypeCode": 2,
+            "height": 27
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "67787.16",
+        "normalizedValue": "67787.2",
+        "keyDesc": "总价总和",
+        "value": "67787.2",
+        "key": "totalAmount"
+      }
+    ],
+    "preDecList": [
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 2,
+              "transformValue": "60607-01800",
+              "originalValue": "60607-01800",
+              "normalizedValue": "60607-01800",
+              "processBitMap": "0",
+              "axisX": 48,
+              "sepValue": "60607-01800",
+              "axisY": 1188,
+              "width": 157,
+              "attTypeCode": 2,
+              "height": 28
+            },
+            {
+              "attType": "Invoice",
+              "imageId": 4,
+              "transformValue": "60607-01800",
+              "originalValue": "60607-01800",
+              "normalizedValue": "60607-01800",
+              "processBitMap": "0",
+              "axisX": 42,
+              "sepValue": "60607-01800",
+              "axisY": 1183,
+              "width": 161,
+              "attTypeCode": 2,
+              "height": 28
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "60607-01800",
+          "normalizedValue": "6060701800",
+          "keyDesc": "商品编号",
+          "value": "6060701800",
+          "key": "codeTs"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 2,
+              "transformValue": "! IC",
+              "originalValue": "! IC",
+              "normalizedValue": "! IC",
+              "processBitMap": "0",
+              "axisX": 316,
+              "sepValue": "! IC",
+              "axisY": 1188,
+              "width": 50,
+              "attTypeCode": 2,
+              "height": 28
+            },
+            {
+              "attType": "Invoice",
+              "imageId": 4,
+              "transformValue": "! IC",
+              "originalValue": "IC",
+              "normalizedValue": "IC",
+              "processBitMap": "0",
+              "axisX": 317,
+              "sepValue": "IC",
+              "axisY": 1183,
+              "width": 48,
+              "attTypeCode": 2,
+              "height": 28
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "! IC",
+          "normalizedValue": "! IC",
+          "keyDesc": "商品名称",
+          "value": "! IC",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 2,
+              "transformValue": "6580",
+              "originalValue": "6580",
+              "normalizedValue": "6580",
+              "processBitMap": "0",
+              "axisX": 635,
+              "sepValue": "6580",
+              "axisY": 1188,
+              "width": 56,
+              "attTypeCode": 2,
+              "height": 28
+            },
+            {
+              "attType": "Invoice",
+              "imageId": 4,
+              "transformValue": "6580",
+              "originalValue": "6580",
+              "normalizedValue": "6580",
+              "processBitMap": "0",
+              "axisX": 634,
+              "sepValue": "6580",
+              "axisY": 1183,
+              "width": 55,
+              "attTypeCode": 2,
+              "height": 28
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "6580",
+          "normalizedValue": "6580",
+          "keyDesc": "成交数量",
+          "value": "6580",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 2,
+              "transformValue": "PC",
+              "originalValue": "PC",
+              "normalizedValue": "PC",
+              "processBitMap": "0",
+              "axisX": 826,
+              "sepValue": "PC",
+              "axisY": 1188,
+              "width": 31,
+              "attTypeCode": 2,
+              "height": 28
+            },
+            {
+              "attType": "Invoice",
+              "imageId": 4,
+              "transformValue": "PC",
+              "originalValue": "PC",
+              "normalizedValue": "PC",
+              "processBitMap": "0",
+              "axisX": 824,
+              "sepValue": "PC",
+              "axisY": 1183,
+              "width": 29,
+              "attTypeCode": 2,
+              "height": 28
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "PC",
+          "normalizedValue": "PC",
+          "keyDesc": "成交单位",
+          "value": "PC",
+          "key": "gUnit"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 2,
+              "transformValue": "10.302",
+              "originalValue": "10.302",
+              "normalizedValue": "10.302",
+              "processBitMap": "0",
+              "axisX": 973,
+              "sepValue": "10.302",
+              "axisY": 1188,
+              "width": 84,
+              "attTypeCode": 2,
+              "height": 28
+            },
+            {
+              "attType": "Invoice",
+              "imageId": 4,
+              "transformValue": "10.302",
+              "originalValue": "10.302",
+              "normalizedValue": "10.302",
+              "processBitMap": "0",
+              "axisX": 972,
+              "sepValue": "10.302",
+              "axisY": 1183,
+              "width": 82,
+              "attTypeCode": 2,
+              "height": 28
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "10.302",
+          "normalizedValue": "10.302",
+          "keyDesc": "单价",
+          "value": "10.302",
+          "key": "declPrice"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 2,
+              "transformValue": "USD",
+              "originalValue": "USD",
+              "normalizedValue": "USD",
+              "processBitMap": "0",
+              "axisX": 898,
+              "sepValue": "USD",
+              "axisY": 1188,
+              "width": 44,
+              "attTypeCode": 2,
+              "height": 28
+            },
+            {
+              "attType": "Invoice",
+              "imageId": 4,
+              "transformValue": "USD",
+              "originalValue": "USD",
+              "normalizedValue": "USD",
+              "processBitMap": "0",
+              "axisX": 896,
+              "sepValue": "USD",
+              "axisY": 1183,
+              "width": 46,
+              "attTypeCode": 2,
+              "height": 28
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "USD",
+          "normalizedValue": "USD",
+          "keyDesc": "币制",
+          "value": "USD",
+          "key": "tradeCurr"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 2,
+              "transformValue": "67787.2",
+              "originalValue": "67787.16",
+              "normalizedValue": "67787.16",
+              "processBitMap": "0",
+              "axisX": 1183,
+              "sepValue": "67787.16",
+              "axisY": 1188,
+              "width": 118,
+              "attTypeCode": 2,
+              "height": 28
+            },
+            {
+              "attType": "Invoice",
+              "imageId": 4,
+              "transformValue": "67787.2",
+              "originalValue": "67787.16",
+              "normalizedValue": "67787.16",
+              "processBitMap": "0",
+              "axisX": 1181,
+              "sepValue": "67787.16",
+              "axisY": 1183,
+              "width": 119,
+              "attTypeCode": 2,
+              "height": 28
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "67787.16",
+          "normalizedValue": "67787.2",
+          "keyDesc": "总价",
+          "value": "67787.2",
+          "key": "declTotal"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 2,
+              "transformValue": "7.71",
+              "originalValue": "7.71",
+              "normalizedValue": "7.71",
+              "processBitMap": "0",
+              "axisX": 1362,
+              "sepValue": "7.71",
+              "axisY": 1188,
+              "width": 55,
+              "attTypeCode": 2,
+              "height": 28
+            },
+            {
+              "attType": "Invoice",
+              "imageId": 4,
+              "transformValue": "7.71",
+              "originalValue": "7.71",
+              "normalizedValue": "7.71",
+              "processBitMap": "0",
+              "axisX": 1359,
+              "sepValue": "7.71",
+              "axisY": 1183,
+              "width": 55,
+              "attTypeCode": 2,
+              "height": 28
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "7.71",
+          "normalizedValue": "7.71",
+          "keyDesc": "净重单项",
+          "value": "7.71",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 2,
+              "transformValue": "33",
+              "originalValue": "33",
+              "normalizedValue": "33",
+              "processBitMap": "0",
+              "axisX": 1546,
+              "sepValue": "33",
+              "axisY": 1188,
+              "width": 29,
+              "attTypeCode": 2,
+              "height": 28
+            },
+            {
+              "attType": "Invoice",
+              "imageId": 4,
+              "transformValue": "33",
+              "originalValue": "33",
+              "normalizedValue": "33",
+              "processBitMap": "0",
+              "axisX": 1543,
+              "sepValue": "33",
+              "axisY": 1183,
+              "width": 28,
+              "attTypeCode": 2,
+              "height": 28
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "33",
+          "normalizedValue": "33",
+          "keyDesc": "毛重单项",
+          "value": "33",
+          "key": "ggrossWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 2,
+              "transformValue": "2",
+              "originalValue": "2",
+              "normalizedValue": "2",
+              "processBitMap": "0",
+              "axisX": 316,
+              "sepValue": "2",
+              "axisY": 1279,
+              "width": 16,
+              "attTypeCode": 2,
+              "height": 28
+            },
+            {
+              "attType": "Invoice",
+              "imageId": 4,
+              "transformValue": "2",
+              "originalValue": "2",
+              "normalizedValue": "2",
+              "processBitMap": "0",
+              "axisX": 190,
+              "sepValue": "2",
+              "axisY": 1276,
+              "width": 14,
+              "attTypeCode": 2,
+              "height": 28
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "2",
+          "normalizedValue": "2",
+          "keyDesc": "件数单项",
+          "value": "2",
+          "key": "gpackNo"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 4,
+              "transformValue": "",
+              "originalValue": "WUJIANG",
+              "normalizedValue": "WUJIANG",
+              "processBitMap": "0",
+              "axisX": 285,
+              "sepValue": "WUJIANG",
+              "axisY": 1082,
+              "width": 99,
+              "attTypeCode": 2,
+              "height": 28
+            }
+          ],
+          "source_image": 4,
+          "originalValue": "WUJIANG",
+          "normalizedValue": "",
+          "keyDesc": "境内货源地",
+          "value": "",
+          "key": "districtCode"
+        }
+      ]
+    ],
+    "operateImage": [
+      {
+        "imageWidth": "2525",
+        "originalFileName": "294_20765533693245015492851600948888597.pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/ae61d539-e1b1-4829-813c-c4c55a24b83a/2947998351_%E4%B8%8A%E4%BC%A020251114203303/file/F1E79D46079D707DF34EB0DE605CD319A333/0_294_20765533693245015492851600948888597.pdf.txt",
+        "imageId": 1,
+        "pdfDocPage": 0,
+        "originalFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/ae61d539-e1b1-4829-813c-c4c55a24b83a/2947998351_%E4%B8%8A%E4%BC%A020251114203303/file/F1E79D46079D707DF34EB0DE605CD319A333/294_20765533693245015492851600948888597.pdf",
+        "imageHeight": "1786",
+        "originalImageWidth": "2525",
+        "imageUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/ae61d539-e1b1-4829-813c-c4c55a24b83a/2947998351_%E4%B8%8A%E4%BC%A020251114203303/file/F1E79D46079D707DF34EB0DE605CD319A333/0_294_20765533693245015492851600948888597.pdf.png",
+        "angle": 0,
+        "originalImageHeight": "1786",
+        "attTypeCode": 13,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "1784",
+        "originalFileName": "294_20765533693245015492851600948888597.pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/ae61d539-e1b1-4829-813c-c4c55a24b83a/2947998351_%E4%B8%8A%E4%BC%A020251114203303/file/F1E79D46079D707DF34EB0DE605CD319A333/1_294_20765533693245015492851600948888597.pdf.txt",
+        "imageId": 2,
+        "pdfDocPage": 1,
+        "originalFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/ae61d539-e1b1-4829-813c-c4c55a24b83a/2947998351_%E4%B8%8A%E4%BC%A020251114203303/file/F1E79D46079D707DF34EB0DE605CD319A333/294_20765533693245015492851600948888597.pdf",
+        "imageHeight": "2527",
+        "originalImageWidth": "1784",
+        "imageUrl": "https://smartebao-dub-zd-ocr.oss-cn-shanghai.aliyuncs.com/ocr/operateImage/2026-03-04/78e7809b054ce2b818fabd0596dad072.png",
+        "angle": 0,
+        "originalImageHeight": "2527",
+        "attTypeCode": 2,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "2520",
+        "originalFileName": "294_20765533693245015492851600948888597.pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/ae61d539-e1b1-4829-813c-c4c55a24b83a/2947998351_%E4%B8%8A%E4%BC%A020251114203303/file/F1E79D46079D707DF34EB0DE605CD319A333/2_294_20765533693245015492851600948888597.pdf.txt",
+        "imageId": 3,
+        "pdfDocPage": 2,
+        "originalFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/ae61d539-e1b1-4829-813c-c4c55a24b83a/2947998351_%E4%B8%8A%E4%BC%A020251114203303/file/F1E79D46079D707DF34EB0DE605CD319A333/294_20765533693245015492851600948888597.pdf",
+        "imageHeight": "1782",
+        "originalImageWidth": "2520",
+        "imageUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/ae61d539-e1b1-4829-813c-c4c55a24b83a/2947998351_%E4%B8%8A%E4%BC%A020251114203303/file/F1E79D46079D707DF34EB0DE605CD319A333/2_294_20765533693245015492851600948888597.pdf.png",
+        "angle": 0,
+        "originalImageHeight": "1782",
+        "attTypeCode": 13,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "1780",
+        "originalFileName": "294_20765533693245015492851600948888597.pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/ae61d539-e1b1-4829-813c-c4c55a24b83a/2947998351_%E4%B8%8A%E4%BC%A020251114203303/file/F1E79D46079D707DF34EB0DE605CD319A333/3_294_20765533693245015492851600948888597.pdf.txt",
+        "imageId": 4,
+        "pdfDocPage": 3,
+        "originalFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/ae61d539-e1b1-4829-813c-c4c55a24b83a/2947998351_%E4%B8%8A%E4%BC%A020251114203303/file/F1E79D46079D707DF34EB0DE605CD319A333/294_20765533693245015492851600948888597.pdf",
+        "imageHeight": "2521",
+        "originalImageWidth": "1780",
+        "imageUrl": "https://smartebao-dub-zd-ocr.oss-cn-shanghai.aliyuncs.com/ocr/operateImage/2026-03-04/6a899456519ff2e63989d331a4adc0c4.png",
+        "angle": 0,
+        "originalImageHeight": "2521",
+        "attTypeCode": 2,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "2527",
+        "originalFileName": "294_20765533693245015492851600948888597.pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/ae61d539-e1b1-4829-813c-c4c55a24b83a/2947998351_%E4%B8%8A%E4%BC%A020251114203303/file/F1E79D46079D707DF34EB0DE605CD319A333/4_294_20765533693245015492851600948888597.pdf.txt",
+        "imageId": 5,
+        "pdfDocPage": 4,
+        "originalFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/ae61d539-e1b1-4829-813c-c4c55a24b83a/2947998351_%E4%B8%8A%E4%BC%A020251114203303/file/F1E79D46079D707DF34EB0DE605CD319A333/294_20765533693245015492851600948888597.pdf",
+        "imageHeight": "1782",
+        "originalImageWidth": "2527",
+        "imageUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/dub/002/1/2020/12/23/ae61d539-e1b1-4829-813c-c4c55a24b83a/2947998351_%E4%B8%8A%E4%BC%A020251114203303/file/F1E79D46079D707DF34EB0DE605CD319A333/4_294_20765533693245015492851600948888597.pdf.png",
+        "angle": 0,
+        "originalImageHeight": "1782",
+        "attTypeCode": 13,
+        "imageSuffix": "png"
+      }
+    ],
+    "preDecContainer": []
+  }
+}
