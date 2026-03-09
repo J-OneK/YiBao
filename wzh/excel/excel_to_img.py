@@ -109,6 +109,15 @@ def grab_clipboard_image(retries: int = 8, delay: float = 0.2):
     return None
 
 
+def _is_valid_image(path: str) -> bool:
+    """检查文件是否为 PIL 可识别的有效图片"""
+    try:
+        Image.open(path).verify()
+        return True
+    except Exception:
+        return False
+
+
 def export_range_as_image(rng, output_path: str) -> None:
     ws = rng.Worksheet
     ws.Activate()
@@ -138,6 +147,14 @@ def export_range_as_image(rng, output_path: str) -> None:
             chart.Export(output_path, "PNG")
         except Exception:
             chart.Export(output_path)
+
+        # 验证导出文件是否有效，无效则用剪贴板兜底
+        if not _is_valid_image(output_path):
+            img = grab_clipboard_image()
+            if img is not None:
+                img.save(output_path)
+            else:
+                raise RuntimeError(f"导出图片无效且剪贴板无图: {output_path}")
     except Exception as exc:
         img = grab_clipboard_image()
         if img is None:
@@ -320,6 +337,9 @@ def excel_to_images(
                 output_path = os.path.join(output_dir, filename)
 
                 export_range_as_image(chunk_rng, output_path)
+                if not _is_valid_image(output_path):
+                    print(f"  -> 警告: 图片无效，跳过后处理 {output_path}")
+                    continue
                 postprocess_image(
                     output_path,
                     max_width_px=max_width_px,
@@ -344,8 +364,8 @@ def excel_to_images(
             pass
 
 
-EXCEL_PATH = r"SHCOL26063198_20260129000286.xlsx"
-OUTPUT_DIR = r"result_imgs"
+EXCEL_PATH = "D:\\Desktop\\YiBao\\wzh\\excel\\LS250005-NPO舱单SI&VGM.xls"
+OUTPUT_DIR = "D:\\Desktop\\YiBao\\wzh\\excel\\result_imgs"
 MAX_HEIGHT_PX = 1600
 MAX_WIDTH_PX = 2400
 DPI = 96

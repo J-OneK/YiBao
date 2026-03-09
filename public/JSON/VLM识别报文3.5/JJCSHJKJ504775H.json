@@ -1,0 +1,5286 @@
+{
+  "head": {
+    "signInfo": "",
+    "receiptType": 0,
+    "bizCode": "DUB00113",
+    "appId": "ALIYUN01",
+    "bizId": "E67e355ff17932923b4610b71",
+    "resultCode": "0",
+    "msgId": "613296325",
+    "resultMessage": "识别成功",
+    "version": "1.0",
+    "timestampStr": "2026-03-06 15:20:12",
+    "receiveId": "EBAO0001"
+  },
+  "content": {
+    "preDecHead": [
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 1,
+            "transformValue": "3122441153",
+            "originalValue": "3122441153",
+            "normalizedValue": "3122441153",
+            "processBitMap": "0",
+            "axisX": 285,
+            "sepValue": "3122441153",
+            "axisY": 294,
+            "width": 109,
+            "attTypeCode": 4,
+            "height": 22
+          }
+        ],
+        "source_image": 1,
+        "originalValue": "3122441153",
+        "normalizedValue": "3122441153",
+        "keyDesc": "境内收发货人海关代码",
+        "value": "3122441153",
+        "key": "rcvgdTradeCode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 1,
+            "transformValue": "上海三景贸易有限公司",
+            "originalValue": "上海三景贸易有限公司",
+            "normalizedValue": "上海三景贸易有限公司",
+            "processBitMap": "0",
+            "axisX": 159,
+            "sepValue": "上海三景贸易有限公司",
+            "axisY": 320,
+            "width": 212,
+            "attTypeCode": 4,
+            "height": 23
+          },
+          {
+            "attType": "Invoice",
+            "imageId": 2,
+            "transformValue": "上海三景贸易有限公司",
+            "originalValue": "上海三景贸易有限公司",
+            "normalizedValue": "上海三景贸易有限公司",
+            "processBitMap": "0",
+            "axisX": 82,
+            "sepValue": "上海三景贸易有限公司",
+            "axisY": 268,
+            "width": 280,
+            "attTypeCode": 2,
+            "height": 35
+          },
+          {
+            "attType": "PackingList",
+            "imageId": 3,
+            "transformValue": "上海三景贸易有限公司",
+            "originalValue": "上海三景贸易有限公司SHANGHAISANKEITRADINGCO.,LTD",
+            "normalizedValue": "上海三景贸易有限公司SHANGHAISANKEITRADINGCO.,LTD",
+            "processBitMap": "0",
+            "axisX": 625,
+            "sepValue": "上海三景贸易有限公司SHANGHAISANKEITRADINGCO.,LTD",
+            "axisY": 146,
+            "width": 501,
+            "attTypeCode": 3,
+            "height": 101
+          }
+        ],
+        "source_image": 1,
+        "originalValue": "上海三景贸易有限公司",
+        "normalizedValue": "上海三景贸易有限公司",
+        "keyDesc": "境内收发货人名称",
+        "value": "上海三景贸易有限公司",
+        "key": "consigneeCname"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 1,
+            "transformValue": "913101156073723459",
+            "originalValue": "913101156073723459",
+            "normalizedValue": "913101156073723459",
+            "processBitMap": "0",
+            "axisX": 376,
+            "sepValue": "913101156073723459",
+            "axisY": 320,
+            "width": 192,
+            "attTypeCode": 4,
+            "height": 23
+          }
+        ],
+        "source_image": 1,
+        "originalValue": "913101156073723459",
+        "normalizedValue": "913101156073723459",
+        "keyDesc": "境内收发货人社会信用代码",
+        "value": "913101156073723459",
+        "key": "rcvgdTradeScc"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 1,
+            "transformValue": "2",
+            "originalValue": "水",
+            "normalizedValue": "水",
+            "processBitMap": "0",
+            "axisX": 872,
+            "sepValue": "水",
+            "axisY": 391,
+            "width": 50,
+            "attTypeCode": 4,
+            "height": 38
+          }
+        ],
+        "source_image": 1,
+        "originalValue": "水",
+        "normalizedValue": "2",
+        "keyDesc": "运输方式",
+        "value": "2",
+        "key": "cusTrafMode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 1,
+            "transformValue": "0110",
+            "originalValue": "一般",
+            "normalizedValue": "一般",
+            "processBitMap": "0",
+            "axisX": 723,
+            "sepValue": "一般",
+            "axisY": 470,
+            "width": 35,
+            "attTypeCode": 4,
+            "height": 23
+          }
+        ],
+        "source_image": 1,
+        "originalValue": "一般",
+        "normalizedValue": "0110",
+        "keyDesc": "监管方式",
+        "value": "0110",
+        "key": "supvModeCode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 1,
+            "transformValue": "101",
+            "originalValue": "一般",
+            "normalizedValue": "一般",
+            "processBitMap": "0",
+            "axisX": 1102,
+            "sepValue": "一般",
+            "axisY": 470,
+            "width": 35,
+            "attTypeCode": 4,
+            "height": 23
+          }
+        ],
+        "source_image": 1,
+        "originalValue": "一般",
+        "normalizedValue": "101",
+        "keyDesc": "征免性质",
+        "value": "101",
+        "key": "cutMode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 1,
+            "transformValue": "IDN",
+            "originalValue": "印尼",
+            "normalizedValue": "印尼",
+            "processBitMap": "0",
+            "axisX": 824,
+            "sepValue": "印尼",
+            "axisY": 541,
+            "width": 98,
+            "attTypeCode": 4,
+            "height": 47
+          }
+        ],
+        "source_image": 1,
+        "originalValue": "印尼",
+        "normalizedValue": "IDN",
+        "keyDesc": "贸易国",
+        "value": "IDN",
+        "key": "cusTradeNationCode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 1,
+            "transformValue": "IDN",
+            "originalValue": "印尼",
+            "normalizedValue": "印尼",
+            "processBitMap": "0",
+            "axisX": 1226,
+            "sepValue": "印尼",
+            "axisY": 536,
+            "width": 101,
+            "attTypeCode": 4,
+            "height": 53
+          }
+        ],
+        "source_image": 1,
+        "originalValue": "印尼",
+        "normalizedValue": "IDN",
+        "keyDesc": "运抵国",
+        "value": "IDN",
+        "key": "cusTradeCountry"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 1,
+            "transformValue": "44",
+            "originalValue": "44",
+            "normalizedValue": "44",
+            "processBitMap": "0",
+            "axisX": 758,
+            "sepValue": "44",
+            "axisY": 643,
+            "width": 58,
+            "attTypeCode": 4,
+            "height": 39
+          }
+        ],
+        "source_image": 1,
+        "originalValue": "44",
+        "normalizedValue": "44",
+        "keyDesc": "件数",
+        "value": "44",
+        "key": "packNo"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 1,
+            "transformValue": "1245",
+            "originalValue": "1245",
+            "normalizedValue": "1245",
+            "processBitMap": "0",
+            "axisX": 915,
+            "sepValue": "1245",
+            "axisY": 647,
+            "width": 96,
+            "attTypeCode": 4,
+            "height": 35
+          }
+        ],
+        "source_image": 1,
+        "originalValue": "1245",
+        "normalizedValue": "1245",
+        "keyDesc": "毛重",
+        "value": "1245",
+        "key": "grossWt"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 1,
+            "transformValue": "1201.8",
+            "originalValue": "1201.8",
+            "normalizedValue": "1201.8",
+            "processBitMap": "0",
+            "axisX": 1132,
+            "sepValue": "1201.8",
+            "axisY": 634,
+            "width": 132,
+            "attTypeCode": 4,
+            "height": 48
+          }
+        ],
+        "source_image": 1,
+        "originalValue": "1201.8",
+        "normalizedValue": "1201.8",
+        "keyDesc": "净重",
+        "value": "1201.8",
+        "key": "netWt"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 1,
+            "transformValue": "3",
+            "originalValue": "FOB",
+            "normalizedValue": "FOB",
+            "processBitMap": "0",
+            "axisX": 1330,
+            "sepValue": "FOB",
+            "axisY": 625,
+            "width": 48,
+            "attTypeCode": 4,
+            "height": 27
+          },
+          {
+            "attType": "Invoice",
+            "imageId": 2,
+            "transformValue": "3",
+            "originalValue": "FOB",
+            "normalizedValue": "FOB",
+            "processBitMap": "0",
+            "axisX": 879,
+            "sepValue": "FOB",
+            "axisY": 705,
+            "width": 68,
+            "attTypeCode": 2,
+            "height": 30
+          }
+        ],
+        "source_image": 1,
+        "originalValue": "FOB",
+        "normalizedValue": "3",
+        "keyDesc": "成交方式",
+        "value": "3",
+        "key": "transMode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 1,
+            "transformValue": "3122441153",
+            "originalValue": "3122441153",
+            "normalizedValue": "3122441153",
+            "processBitMap": "0",
+            "axisX": 323,
+            "sepValue": "3122441153",
+            "axisY": 446,
+            "width": 111,
+            "attTypeCode": 4,
+            "height": 22
+          }
+        ],
+        "source_image": 1,
+        "originalValue": "3122441153",
+        "normalizedValue": "3122441153",
+        "keyDesc": "生产销售单位海关代码",
+        "value": "3122441153",
+        "key": "ownerCode"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 1,
+            "transformValue": "上海三景贸易有限公司",
+            "originalValue": "上海三景贸易有限公司",
+            "normalizedValue": "上海三景贸易有限公司",
+            "processBitMap": "0",
+            "axisX": 159,
+            "sepValue": "上海三景贸易有限公司",
+            "axisY": 470,
+            "width": 212,
+            "attTypeCode": 4,
+            "height": 23
+          }
+        ],
+        "source_image": 1,
+        "originalValue": "上海三景贸易有限公司",
+        "normalizedValue": "上海三景贸易有限公司",
+        "keyDesc": "生产销售单位名称",
+        "value": "上海三景贸易有限公司",
+        "key": "ownerName"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Declaration",
+            "imageId": 1,
+            "transformValue": "913101156073723459",
+            "originalValue": "913101156073723459",
+            "normalizedValue": "913101156073723459",
+            "processBitMap": "0",
+            "axisX": 376,
+            "sepValue": "913101156073723459",
+            "axisY": 470,
+            "width": 192,
+            "attTypeCode": 4,
+            "height": 23
+          }
+        ],
+        "source_image": 1,
+        "originalValue": "913101156073723459",
+        "normalizedValue": "913101156073723459",
+        "keyDesc": "生产销售单位社会信用代码",
+        "value": "913101156073723459",
+        "key": "ownerScc"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 2,
+            "transformValue": "PT.ECO SMART GARMENT INDONESIA",
+            "originalValue": "PT.ECO SMART GARMENT INDONESIA",
+            "normalizedValue": "PT.ECO SMART GARMENT INDONESIA",
+            "processBitMap": "0",
+            "axisX": 82,
+            "sepValue": "PT.ECO SMART GARMENT INDONESIA",
+            "axisY": 488,
+            "width": 423,
+            "attTypeCode": 2,
+            "height": 32
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "PT.ECO SMART GARMENT INDONESIA",
+        "normalizedValue": "PT.ECO SMART GARMENT INDONESIA",
+        "keyDesc": "境外收发货人",
+        "value": "PT.ECO SMART GARMENT INDONESIA",
+        "key": "consignorEname"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 2,
+            "transformValue": "0329SEA-PB",
+            "originalValue": "0329SEA-PB",
+            "normalizedValue": "0329SEA-PB",
+            "processBitMap": "0",
+            "axisX": 1212,
+            "sepValue": "0329SEA-PB",
+            "axisY": 402,
+            "width": 143,
+            "attTypeCode": 2,
+            "height": 30
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "0329SEA-PB",
+        "normalizedValue": "0329SEA-PB",
+        "keyDesc": "合同协议号",
+        "value": "0329SEA-PB",
+        "key": "contrNo"
+      },
+      {
+        "processBitMap": "0",
+        "sourceList": [
+          {
+            "attType": "Invoice",
+            "imageId": 2,
+            "transformValue": "5854.32",
+            "originalValue": "5854.32",
+            "normalizedValue": "5854.32",
+            "processBitMap": "0",
+            "axisX": 1553,
+            "sepValue": "5854.32",
+            "axisY": 1160,
+            "width": 113,
+            "attTypeCode": 2,
+            "height": 30
+          }
+        ],
+        "source_image": 2,
+        "originalValue": "5854.32",
+        "normalizedValue": "5854.32",
+        "keyDesc": "总价总和",
+        "value": "5854.32",
+        "key": "totalAmount"
+      }
+    ],
+    "preDecList": [
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 1,
+              "transformValue": "54075200",
+              "originalValue": "54075200",
+              "normalizedValue": "54075200",
+              "processBitMap": "0",
+              "axisX": 176,
+              "sepValue": "54075200",
+              "axisY": 956,
+              "width": 241,
+              "attTypeCode": 4,
+              "height": 54
+            }
+          ],
+          "source_image": 1,
+          "originalValue": "54075200",
+          "normalizedValue": "5407520000",
+          "keyDesc": "商品编号",
+          "value": "5407520000",
+          "key": "codeTs"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 1,
+              "transformValue": "里布",
+              "originalValue": "里布",
+              "normalizedValue": "里布",
+              "processBitMap": "0",
+              "axisX": 505,
+              "sepValue": "里布",
+              "axisY": 947,
+              "width": 114,
+              "attTypeCode": 4,
+              "height": 63
+            },
+            {
+              "attType": "Invoice",
+              "imageId": 2,
+              "transformValue": "SS4200T Polyester Dyed Taffeta 147cm",
+              "originalValue": "SS4200T Polyester Dyed Taffeta 147cm",
+              "normalizedValue": "SS4200T Polyester Dyed Taffeta 147cm",
+              "processBitMap": "0",
+              "axisX": 298,
+              "sepValue": "SS4200T Polyester Dyed Taffeta 147cm",
+              "axisY": 1059,
+              "width": 504,
+              "attTypeCode": 2,
+              "height": 33
+            },
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "SS4200T",
+              "originalValue": "SS4200T",
+              "normalizedValue": "SS4200T",
+              "processBitMap": "0",
+              "axisX": 294,
+              "sepValue": "SS4200T",
+              "axisY": 627,
+              "width": 304,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 1,
+          "originalValue": "里布",
+          "normalizedValue": "里布",
+          "keyDesc": "商品名称",
+          "value": "里布",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 1,
+              "transformValue": "8131",
+              "originalValue": "8131",
+              "normalizedValue": "8131",
+              "processBitMap": "0",
+              "axisX": 670,
+              "sepValue": "8131",
+              "axisY": 956,
+              "width": 126,
+              "attTypeCode": 4,
+              "height": 54
+            }
+          ],
+          "source_image": 1,
+          "originalValue": "8131",
+          "normalizedValue": "8131",
+          "keyDesc": "法定第一数量",
+          "value": "8131",
+          "key": "qty1"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 1,
+              "transformValue": "8131",
+              "originalValue": "8131",
+              "normalizedValue": "8131",
+              "processBitMap": "0",
+              "axisX": 670,
+              "sepValue": "8131",
+              "axisY": 956,
+              "width": 126,
+              "attTypeCode": 4,
+              "height": 54
+            },
+            {
+              "attType": "Invoice",
+              "imageId": 2,
+              "transformValue": "8131",
+              "originalValue": "8131",
+              "normalizedValue": "8131",
+              "processBitMap": "0",
+              "axisX": 879,
+              "sepValue": "8131",
+              "axisY": 1092,
+              "width": 104,
+              "attTypeCode": 2,
+              "height": 30
+            },
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "66",
+              "originalValue": "66",
+              "normalizedValue": "66",
+              "processBitMap": "0",
+              "axisX": 920,
+              "sepValue": "66",
+              "axisY": 627,
+              "width": 125,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 1,
+          "originalValue": "8131",
+          "normalizedValue": "8131",
+          "keyDesc": "成交数量",
+          "value": "8131",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 1,
+              "transformValue": "米",
+              "originalValue": "米",
+              "normalizedValue": "米",
+              "processBitMap": "0",
+              "axisX": 809,
+              "sepValue": "米",
+              "axisY": 947,
+              "width": 63,
+              "attTypeCode": 4,
+              "height": 63
+            },
+            {
+              "attType": "Invoice",
+              "imageId": 2,
+              "transformValue": "米",
+              "originalValue": "M",
+              "normalizedValue": "M",
+              "processBitMap": "0",
+              "axisX": 988,
+              "sepValue": "M",
+              "axisY": 1092,
+              "width": 25,
+              "attTypeCode": 2,
+              "height": 30
+            }
+          ],
+          "source_image": 1,
+          "originalValue": "米",
+          "normalizedValue": "米",
+          "keyDesc": "成交单位",
+          "value": "米",
+          "key": "gUnit"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 1,
+              "transformValue": "1201.8",
+              "originalValue": "1201.8",
+              "normalizedValue": "1201.8",
+              "processBitMap": "0",
+              "axisX": 910,
+              "sepValue": "1201.8",
+              "axisY": 956,
+              "width": 114,
+              "attTypeCode": 4,
+              "height": 54
+            }
+          ],
+          "source_image": 1,
+          "originalValue": "1201.8",
+          "normalizedValue": "1201.8",
+          "keyDesc": "法定第二数量",
+          "value": "1201.8",
+          "key": "qty2"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 1,
+              "transformValue": "USD",
+              "originalValue": "USD",
+              "normalizedValue": "USD",
+              "processBitMap": "0",
+              "axisX": 1201,
+              "sepValue": "USD",
+              "axisY": 956,
+              "width": 101,
+              "attTypeCode": 4,
+              "height": 54
+            },
+            {
+              "attType": "Invoice",
+              "imageId": 2,
+              "transformValue": "USD",
+              "originalValue": "USD",
+              "normalizedValue": "USD",
+              "processBitMap": "0",
+              "axisX": 1408,
+              "sepValue": "USD",
+              "axisY": 1092,
+              "width": 56,
+              "attTypeCode": 2,
+              "height": 30
+            }
+          ],
+          "source_image": 1,
+          "originalValue": "USD",
+          "normalizedValue": "USD",
+          "keyDesc": "币制",
+          "value": "USD",
+          "key": "tradeCurr"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 1,
+              "transformValue": "5854.32",
+              "originalValue": "5854.32",
+              "normalizedValue": "5854.32",
+              "processBitMap": "0",
+              "axisX": 1314,
+              "sepValue": "5854.32",
+              "axisY": 956,
+              "width": 139,
+              "attTypeCode": 4,
+              "height": 54
+            },
+            {
+              "attType": "Invoice",
+              "imageId": 2,
+              "transformValue": "5854.32",
+              "originalValue": "5854.32",
+              "normalizedValue": "5854.32",
+              "processBitMap": "0",
+              "axisX": 1553,
+              "sepValue": "5854.32",
+              "axisY": 1092,
+              "width": 113,
+              "attTypeCode": 2,
+              "height": 30
+            }
+          ],
+          "source_image": 1,
+          "originalValue": "5854.32",
+          "normalizedValue": "5854.32",
+          "keyDesc": "总价",
+          "value": "5854.32",
+          "key": "declTotal"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 1,
+              "transformValue": "CHN",
+              "originalValue": "中国",
+              "normalizedValue": "中国",
+              "processBitMap": "0",
+              "axisX": 1580,
+              "sepValue": "中国",
+              "axisY": 947,
+              "width": 114,
+              "attTypeCode": 4,
+              "height": 63
+            }
+          ],
+          "source_image": 1,
+          "originalValue": "中国",
+          "normalizedValue": "CHN",
+          "keyDesc": "原产国",
+          "value": "CHN",
+          "key": "cusOriginCountry"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 1,
+              "transformValue": "IDN",
+              "originalValue": "印尼",
+              "normalizedValue": "印尼",
+              "processBitMap": "0",
+              "axisX": 1782,
+              "sepValue": "印尼",
+              "axisY": 947,
+              "width": 127,
+              "attTypeCode": 4,
+              "height": 63
+            }
+          ],
+          "source_image": 1,
+          "originalValue": "印尼",
+          "normalizedValue": "IDN",
+          "keyDesc": "最终目的国",
+          "value": "IDN",
+          "key": "destinationCountry"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 1,
+              "transformValue": "31222",
+              "originalValue": "浦东新区",
+              "normalizedValue": "浦东新区",
+              "processBitMap": "0",
+              "axisX": 1959,
+              "sepValue": "浦东新区",
+              "axisY": 947,
+              "width": 240,
+              "attTypeCode": 4,
+              "height": 63
+            }
+          ],
+          "source_image": 1,
+          "originalValue": "浦东新区",
+          "normalizedValue": "31222",
+          "keyDesc": "境内货源地",
+          "value": "31222",
+          "key": "districtCode"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Declaration",
+              "imageId": 1,
+              "transformValue": "无品牌 不享受 机织 染色 斜纹 涤纶100% 147cm 100g/m²",
+              "originalValue": "无品牌 不享受 机织 染色 斜纹 涤纶100% 147cm 100g/m²",
+              "normalizedValue": "无品牌 不享受 机织 染色 斜纹 涤纶100% 147cm 100g/m²",
+              "processBitMap": "0",
+              "axisX": 176,
+              "sepValue": "无品牌 不享受 机织 染色 斜纹 涤纶100% 147cm 100g/m²",
+              "axisY": 1036,
+              "width": 1467,
+              "attTypeCode": 4,
+              "height": 72
+            },
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "09 99290",
+              "originalValue": "09 99290",
+              "normalizedValue": "09 99290",
+              "processBitMap": "0",
+              "axisX": 652,
+              "sepValue": "09 99290",
+              "axisY": 627,
+              "width": 215,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 1,
+          "originalValue": "无品牌 不享受 机织 染色 斜纹 涤纶100% 147cm 100g/m²",
+          "normalizedValue": "无品牌 不享受 机织 染色 斜纹 涤纶100% 147cm 100g/m²",
+          "keyDesc": "规格型号",
+          "value": "无品牌 不享受 机织 染色 斜纹 涤纶100% 147cm 100g/m²",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "Invoice",
+              "imageId": 2,
+              "transformValue": "0.72",
+              "originalValue": "0.72",
+              "normalizedValue": "0.72",
+              "processBitMap": "0",
+              "axisX": 1263,
+              "sepValue": "0.72",
+              "axisY": 1092,
+              "width": 84,
+              "attTypeCode": 2,
+              "height": 30
+            }
+          ],
+          "source_image": 2,
+          "originalValue": "0.72",
+          "normalizedValue": "0.72",
+          "keyDesc": "单价",
+          "value": "0.72",
+          "key": "declPrice"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "9.6",
+              "originalValue": "9.6",
+              "normalizedValue": "9.6",
+              "processBitMap": "0",
+              "axisX": 1081,
+              "sepValue": "9.6",
+              "axisY": 627,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "9.6",
+          "normalizedValue": "9.6",
+          "keyDesc": "净重单项",
+          "value": "9.6",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "10",
+              "originalValue": "10",
+              "normalizedValue": "10",
+              "processBitMap": "0",
+              "axisX": 1260,
+              "sepValue": "10",
+              "axisY": 627,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "10",
+          "normalizedValue": "10",
+          "keyDesc": "毛重单项",
+          "value": "10",
+          "key": "ggrossWt"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "SS4200T",
+              "originalValue": "SS4200T",
+              "normalizedValue": "SS4200T",
+              "processBitMap": "0",
+              "axisX": 294,
+              "sepValue": "SS4200T",
+              "axisY": 682,
+              "width": 304,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "SS4200T",
+          "normalizedValue": "SS4200T",
+          "keyDesc": "商品名称",
+          "value": "SS4200T",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "09 99290",
+              "originalValue": "09 99290",
+              "normalizedValue": "09 99290",
+              "processBitMap": "0",
+              "axisX": 652,
+              "sepValue": "09 99290",
+              "axisY": 682,
+              "width": 215,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "09 99290",
+          "normalizedValue": "09 99290",
+          "keyDesc": "规格型号",
+          "value": "09 99290",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "100",
+              "originalValue": "100",
+              "normalizedValue": "100",
+              "processBitMap": "0",
+              "axisX": 920,
+              "sepValue": "100",
+              "axisY": 682,
+              "width": 125,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "100",
+          "normalizedValue": "100",
+          "keyDesc": "成交数量",
+          "value": "100",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "14.8",
+              "originalValue": "14.8",
+              "normalizedValue": "14.8",
+              "processBitMap": "0",
+              "axisX": 1081,
+              "sepValue": "14.8",
+              "axisY": 682,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "14.8",
+          "normalizedValue": "14.8",
+          "keyDesc": "净重单项",
+          "value": "14.8",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "15",
+              "originalValue": "15",
+              "normalizedValue": "15",
+              "processBitMap": "0",
+              "axisX": 1260,
+              "sepValue": "15",
+              "axisY": 682,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "15",
+          "normalizedValue": "15",
+          "keyDesc": "毛重单项",
+          "value": "15",
+          "key": "ggrossWt"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "SS4200T",
+              "originalValue": "SS4200T",
+              "normalizedValue": "SS4200T",
+              "processBitMap": "0",
+              "axisX": 294,
+              "sepValue": "SS4200T",
+              "axisY": 738,
+              "width": 304,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "SS4200T",
+          "normalizedValue": "SS4200T",
+          "keyDesc": "商品名称",
+          "value": "SS4200T",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "09 99290",
+              "originalValue": "09 99290",
+              "normalizedValue": "09 99290",
+              "processBitMap": "0",
+              "axisX": 652,
+              "sepValue": "09 99290",
+              "axisY": 738,
+              "width": 215,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "09 99290",
+          "normalizedValue": "09 99290",
+          "keyDesc": "规格型号",
+          "value": "09 99290",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "100",
+              "originalValue": "100",
+              "normalizedValue": "100",
+              "processBitMap": "0",
+              "axisX": 920,
+              "sepValue": "100",
+              "axisY": 738,
+              "width": 125,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "100",
+          "normalizedValue": "100",
+          "keyDesc": "成交数量",
+          "value": "100",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "14.8",
+              "originalValue": "14.8",
+              "normalizedValue": "14.8",
+              "processBitMap": "0",
+              "axisX": 1081,
+              "sepValue": "14.8",
+              "axisY": 738,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "14.8",
+          "normalizedValue": "14.8",
+          "keyDesc": "净重单项",
+          "value": "14.8",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "15",
+              "originalValue": "15",
+              "normalizedValue": "15",
+              "processBitMap": "0",
+              "axisX": 1260,
+              "sepValue": "15",
+              "axisY": 738,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "15",
+          "normalizedValue": "15",
+          "keyDesc": "毛重单项",
+          "value": "15",
+          "key": "ggrossWt"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "SS4200T",
+              "originalValue": "SS4200T",
+              "normalizedValue": "SS4200T",
+              "processBitMap": "0",
+              "axisX": 294,
+              "sepValue": "SS4200T",
+              "axisY": 793,
+              "width": 304,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "SS4200T",
+          "normalizedValue": "SS4200T",
+          "keyDesc": "商品名称",
+          "value": "SS4200T",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "09 99290",
+              "originalValue": "09 99290",
+              "normalizedValue": "09 99290",
+              "processBitMap": "0",
+              "axisX": 652,
+              "sepValue": "09 99290",
+              "axisY": 793,
+              "width": 215,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "09 99290",
+          "normalizedValue": "09 99290",
+          "keyDesc": "规格型号",
+          "value": "09 99290",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "74",
+              "originalValue": "74",
+              "normalizedValue": "74",
+              "processBitMap": "0",
+              "axisX": 920,
+              "sepValue": "74",
+              "axisY": 793,
+              "width": 125,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "74",
+          "normalizedValue": "74",
+          "keyDesc": "成交数量",
+          "value": "74",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "10.8",
+              "originalValue": "10.8",
+              "normalizedValue": "10.8",
+              "processBitMap": "0",
+              "axisX": 1081,
+              "sepValue": "10.8",
+              "axisY": 793,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "10.8",
+          "normalizedValue": "10.8",
+          "keyDesc": "净重单项",
+          "value": "10.8",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "11",
+              "originalValue": "11",
+              "normalizedValue": "11",
+              "processBitMap": "0",
+              "axisX": 1260,
+              "sepValue": "11",
+              "axisY": 793,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "11",
+          "normalizedValue": "11",
+          "keyDesc": "毛重单项",
+          "value": "11",
+          "key": "ggrossWt"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "SS4200T",
+              "originalValue": "SS4200T",
+              "normalizedValue": "SS4200T",
+              "processBitMap": "0",
+              "axisX": 294,
+              "sepValue": "SS4200T",
+              "axisY": 849,
+              "width": 304,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "SS4200T",
+          "normalizedValue": "SS4200T",
+          "keyDesc": "商品名称",
+          "value": "SS4200T",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "09 99289",
+              "originalValue": "09 99289",
+              "normalizedValue": "09 99289",
+              "processBitMap": "0",
+              "axisX": 652,
+              "sepValue": "09 99289",
+              "axisY": 849,
+              "width": 215,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "09 99289",
+          "normalizedValue": "09 99289",
+          "keyDesc": "规格型号",
+          "value": "09 99289",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "105",
+              "originalValue": "105",
+              "normalizedValue": "105",
+              "processBitMap": "0",
+              "axisX": 920,
+              "sepValue": "105",
+              "axisY": 849,
+              "width": 125,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "105",
+          "normalizedValue": "105",
+          "keyDesc": "成交数量",
+          "value": "105",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "15.6",
+              "originalValue": "15.6",
+              "normalizedValue": "15.6",
+              "processBitMap": "0",
+              "axisX": 1081,
+              "sepValue": "15.6",
+              "axisY": 849,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "15.6",
+          "normalizedValue": "15.6",
+          "keyDesc": "净重单项",
+          "value": "15.6",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "16",
+              "originalValue": "16",
+              "normalizedValue": "16",
+              "processBitMap": "0",
+              "axisX": 1260,
+              "sepValue": "16",
+              "axisY": 849,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "16",
+          "normalizedValue": "16",
+          "keyDesc": "毛重单项",
+          "value": "16",
+          "key": "ggrossWt"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "SS4200T",
+              "originalValue": "SS4200T",
+              "normalizedValue": "SS4200T",
+              "processBitMap": "0",
+              "axisX": 294,
+              "sepValue": "SS4200T",
+              "axisY": 905,
+              "width": 304,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "SS4200T",
+          "normalizedValue": "SS4200T",
+          "keyDesc": "商品名称",
+          "value": "SS4200T",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "09 99289",
+              "originalValue": "09 99289",
+              "normalizedValue": "09 99289",
+              "processBitMap": "0",
+              "axisX": 652,
+              "sepValue": "09 99289",
+              "axisY": 905,
+              "width": 215,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "09 99289",
+          "normalizedValue": "09 99289",
+          "keyDesc": "规格型号",
+          "value": "09 99289",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "63",
+              "originalValue": "63",
+              "normalizedValue": "63",
+              "processBitMap": "0",
+              "axisX": 920,
+              "sepValue": "63",
+              "axisY": 905,
+              "width": 125,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "63",
+          "normalizedValue": "63",
+          "keyDesc": "成交数量",
+          "value": "63",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "9.1",
+              "originalValue": "9.1",
+              "normalizedValue": "9.1",
+              "processBitMap": "0",
+              "axisX": 1081,
+              "sepValue": "9.1",
+              "axisY": 905,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "9.1",
+          "normalizedValue": "9.1",
+          "keyDesc": "净重单项",
+          "value": "9.1",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "10",
+              "originalValue": "10",
+              "normalizedValue": "10",
+              "processBitMap": "0",
+              "axisX": 1260,
+              "sepValue": "10",
+              "axisY": 905,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "10",
+          "normalizedValue": "10",
+          "keyDesc": "毛重单项",
+          "value": "10",
+          "key": "ggrossWt"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "SS4200T",
+              "originalValue": "SS4200T",
+              "normalizedValue": "SS4200T",
+              "processBitMap": "0",
+              "axisX": 294,
+              "sepValue": "SS4200T",
+              "axisY": 960,
+              "width": 304,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "SS4200T",
+          "normalizedValue": "SS4200T",
+          "keyDesc": "商品名称",
+          "value": "SS4200T",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "09 99287",
+              "originalValue": "09 99287",
+              "normalizedValue": "09 99287",
+              "processBitMap": "0",
+              "axisX": 652,
+              "sepValue": "09 99287",
+              "axisY": 960,
+              "width": 215,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "09 99287",
+          "normalizedValue": "09 99287",
+          "keyDesc": "规格型号",
+          "value": "09 99287",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "100",
+              "originalValue": "100",
+              "normalizedValue": "100",
+              "processBitMap": "0",
+              "axisX": 920,
+              "sepValue": "100",
+              "axisY": 960,
+              "width": 125,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "100",
+          "normalizedValue": "100",
+          "keyDesc": "成交数量",
+          "value": "100",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "14.8",
+              "originalValue": "14.8",
+              "normalizedValue": "14.8",
+              "processBitMap": "0",
+              "axisX": 1081,
+              "sepValue": "14.8",
+              "axisY": 960,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "14.8",
+          "normalizedValue": "14.8",
+          "keyDesc": "净重单项",
+          "value": "14.8",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "15",
+              "originalValue": "15",
+              "normalizedValue": "15",
+              "processBitMap": "0",
+              "axisX": 1260,
+              "sepValue": "15",
+              "axisY": 960,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "15",
+          "normalizedValue": "15",
+          "keyDesc": "毛重单项",
+          "value": "15",
+          "key": "ggrossWt"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "SS4200T",
+              "originalValue": "SS4200T",
+              "normalizedValue": "SS4200T",
+              "processBitMap": "0",
+              "axisX": 294,
+              "sepValue": "SS4200T",
+              "axisY": 1016,
+              "width": 304,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "SS4200T",
+          "normalizedValue": "SS4200T",
+          "keyDesc": "商品名称",
+          "value": "SS4200T",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "09 99287",
+              "originalValue": "09 99287",
+              "normalizedValue": "09 99287",
+              "processBitMap": "0",
+              "axisX": 652,
+              "sepValue": "09 99287",
+              "axisY": 1016,
+              "width": 215,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "09 99287",
+          "normalizedValue": "09 99287",
+          "keyDesc": "规格型号",
+          "value": "09 99287",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "109",
+              "originalValue": "109",
+              "normalizedValue": "109",
+              "processBitMap": "0",
+              "axisX": 920,
+              "sepValue": "109",
+              "axisY": 1016,
+              "width": 125,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "109",
+          "normalizedValue": "109",
+          "keyDesc": "成交数量",
+          "value": "109",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "16.2",
+              "originalValue": "16.2",
+              "normalizedValue": "16.2",
+              "processBitMap": "0",
+              "axisX": 1081,
+              "sepValue": "16.2",
+              "axisY": 1016,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "16.2",
+          "normalizedValue": "16.2",
+          "keyDesc": "净重单项",
+          "value": "16.2",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "17",
+              "originalValue": "17",
+              "normalizedValue": "17",
+              "processBitMap": "0",
+              "axisX": 1260,
+              "sepValue": "17",
+              "axisY": 1016,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "17",
+          "normalizedValue": "17",
+          "keyDesc": "毛重单项",
+          "value": "17",
+          "key": "ggrossWt"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "SS4200T",
+              "originalValue": "SS4200T",
+              "normalizedValue": "SS4200T",
+              "processBitMap": "0",
+              "axisX": 294,
+              "sepValue": "SS4200T",
+              "axisY": 1072,
+              "width": 304,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "SS4200T",
+          "normalizedValue": "SS4200T",
+          "keyDesc": "商品名称",
+          "value": "SS4200T",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "09 99287",
+              "originalValue": "09 99287",
+              "normalizedValue": "09 99287",
+              "processBitMap": "0",
+              "axisX": 652,
+              "sepValue": "09 99287",
+              "axisY": 1072,
+              "width": 215,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "09 99287",
+          "normalizedValue": "09 99287",
+          "keyDesc": "规格型号",
+          "value": "09 99287",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "51",
+              "originalValue": "51",
+              "normalizedValue": "51",
+              "processBitMap": "0",
+              "axisX": 920,
+              "sepValue": "51",
+              "axisY": 1072,
+              "width": 125,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "51",
+          "normalizedValue": "51",
+          "keyDesc": "成交数量",
+          "value": "51",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "7.3",
+              "originalValue": "7.3",
+              "normalizedValue": "7.3",
+              "processBitMap": "0",
+              "axisX": 1081,
+              "sepValue": "7.3",
+              "axisY": 1072,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "7.3",
+          "normalizedValue": "7.3",
+          "keyDesc": "净重单项",
+          "value": "7.3",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "8",
+              "originalValue": "8",
+              "normalizedValue": "8",
+              "processBitMap": "0",
+              "axisX": 1260,
+              "sepValue": "8",
+              "axisY": 1072,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "8",
+          "normalizedValue": "8",
+          "keyDesc": "毛重单项",
+          "value": "8",
+          "key": "ggrossWt"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "SS4200T",
+              "originalValue": "SS4200T",
+              "normalizedValue": "SS4200T",
+              "processBitMap": "0",
+              "axisX": 294,
+              "sepValue": "SS4200T",
+              "axisY": 1127,
+              "width": 304,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "SS4200T",
+          "normalizedValue": "SS4200T",
+          "keyDesc": "商品名称",
+          "value": "SS4200T",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "09 99287",
+              "originalValue": "09 99287",
+              "normalizedValue": "09 99287",
+              "processBitMap": "0",
+              "axisX": 652,
+              "sepValue": "09 99287",
+              "axisY": 1127,
+              "width": 215,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "09 99287",
+          "normalizedValue": "09 99287",
+          "keyDesc": "规格型号",
+          "value": "09 99287",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "97",
+              "originalValue": "97",
+              "normalizedValue": "97",
+              "processBitMap": "0",
+              "axisX": 920,
+              "sepValue": "97",
+              "axisY": 1127,
+              "width": 125,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "97",
+          "normalizedValue": "97",
+          "keyDesc": "成交数量",
+          "value": "97",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "14.4",
+              "originalValue": "14.4",
+              "normalizedValue": "14.4",
+              "processBitMap": "0",
+              "axisX": 1081,
+              "sepValue": "14.4",
+              "axisY": 1127,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "14.4",
+          "normalizedValue": "14.4",
+          "keyDesc": "净重单项",
+          "value": "14.4",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "15",
+              "originalValue": "15",
+              "normalizedValue": "15",
+              "processBitMap": "0",
+              "axisX": 1260,
+              "sepValue": "15",
+              "axisY": 1127,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "15",
+          "normalizedValue": "15",
+          "keyDesc": "毛重单项",
+          "value": "15",
+          "key": "ggrossWt"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "SS4200T",
+              "originalValue": "SS4200T",
+              "normalizedValue": "SS4200T",
+              "processBitMap": "0",
+              "axisX": 294,
+              "sepValue": "SS4200T",
+              "axisY": 1183,
+              "width": 304,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "SS4200T",
+          "normalizedValue": "SS4200T",
+          "keyDesc": "商品名称",
+          "value": "SS4200T",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "09 99287",
+              "originalValue": "09 99287",
+              "normalizedValue": "09 99287",
+              "processBitMap": "0",
+              "axisX": 652,
+              "sepValue": "09 99287",
+              "axisY": 1183,
+              "width": 215,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "09 99287",
+          "normalizedValue": "09 99287",
+          "keyDesc": "规格型号",
+          "value": "09 99287",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "100",
+              "originalValue": "100",
+              "normalizedValue": "100",
+              "processBitMap": "0",
+              "axisX": 920,
+              "sepValue": "100",
+              "axisY": 1183,
+              "width": 125,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "100",
+          "normalizedValue": "100",
+          "keyDesc": "成交数量",
+          "value": "100",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "14.8",
+              "originalValue": "14.8",
+              "normalizedValue": "14.8",
+              "processBitMap": "0",
+              "axisX": 1081,
+              "sepValue": "14.8",
+              "axisY": 1183,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "14.8",
+          "normalizedValue": "14.8",
+          "keyDesc": "净重单项",
+          "value": "14.8",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "15",
+              "originalValue": "15",
+              "normalizedValue": "15",
+              "processBitMap": "0",
+              "axisX": 1260,
+              "sepValue": "15",
+              "axisY": 1183,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "15",
+          "normalizedValue": "15",
+          "keyDesc": "毛重单项",
+          "value": "15",
+          "key": "ggrossWt"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "SS4200T",
+              "originalValue": "SS4200T",
+              "normalizedValue": "SS4200T",
+              "processBitMap": "0",
+              "axisX": 294,
+              "sepValue": "SS4200T",
+              "axisY": 1238,
+              "width": 304,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "SS4200T",
+          "normalizedValue": "SS4200T",
+          "keyDesc": "商品名称",
+          "value": "SS4200T",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "09 99287",
+              "originalValue": "09 99287",
+              "normalizedValue": "09 99287",
+              "processBitMap": "0",
+              "axisX": 652,
+              "sepValue": "09 99287",
+              "axisY": 1238,
+              "width": 215,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "09 99287",
+          "normalizedValue": "09 99287",
+          "keyDesc": "规格型号",
+          "value": "09 99287",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "108",
+              "originalValue": "108",
+              "normalizedValue": "108",
+              "processBitMap": "0",
+              "axisX": 920,
+              "sepValue": "108",
+              "axisY": 1238,
+              "width": 125,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "108",
+          "normalizedValue": "108",
+          "keyDesc": "成交数量",
+          "value": "108",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "16",
+              "originalValue": "16",
+              "normalizedValue": "16",
+              "processBitMap": "0",
+              "axisX": 1081,
+              "sepValue": "16",
+              "axisY": 1238,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "16",
+          "normalizedValue": "16",
+          "keyDesc": "净重单项",
+          "value": "16",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "17",
+              "originalValue": "17",
+              "normalizedValue": "17",
+              "processBitMap": "0",
+              "axisX": 1260,
+              "sepValue": "17",
+              "axisY": 1238,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "17",
+          "normalizedValue": "17",
+          "keyDesc": "毛重单项",
+          "value": "17",
+          "key": "ggrossWt"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "SS4200T",
+              "originalValue": "SS4200T",
+              "normalizedValue": "SS4200T",
+              "processBitMap": "0",
+              "axisX": 294,
+              "sepValue": "SS4200T",
+              "axisY": 1294,
+              "width": 304,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "SS4200T",
+          "normalizedValue": "SS4200T",
+          "keyDesc": "商品名称",
+          "value": "SS4200T",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "09 99289",
+              "originalValue": "09 99289",
+              "normalizedValue": "09 99289",
+              "processBitMap": "0",
+              "axisX": 652,
+              "sepValue": "09 99289",
+              "axisY": 1294,
+              "width": 215,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "09 99289",
+          "normalizedValue": "09 99289",
+          "keyDesc": "规格型号",
+          "value": "09 99289",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "132",
+              "originalValue": "132",
+              "normalizedValue": "132",
+              "processBitMap": "0",
+              "axisX": 920,
+              "sepValue": "132",
+              "axisY": 1294,
+              "width": 125,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "132",
+          "normalizedValue": "132",
+          "keyDesc": "成交数量",
+          "value": "132",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "19.7",
+              "originalValue": "19.7",
+              "normalizedValue": "19.7",
+              "processBitMap": "0",
+              "axisX": 1081,
+              "sepValue": "19.7",
+              "axisY": 1294,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "19.7",
+          "normalizedValue": "19.7",
+          "keyDesc": "净重单项",
+          "value": "19.7",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "20",
+              "originalValue": "20",
+              "normalizedValue": "20",
+              "processBitMap": "0",
+              "axisX": 1260,
+              "sepValue": "20",
+              "axisY": 1294,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "20",
+          "normalizedValue": "20",
+          "keyDesc": "毛重单项",
+          "value": "20",
+          "key": "ggrossWt"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "SS4200T",
+              "originalValue": "SS4200T",
+              "normalizedValue": "SS4200T",
+              "processBitMap": "0",
+              "axisX": 294,
+              "sepValue": "SS4200T",
+              "axisY": 1350,
+              "width": 304,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "SS4200T",
+          "normalizedValue": "SS4200T",
+          "keyDesc": "商品名称",
+          "value": "SS4200T",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "09 99289",
+              "originalValue": "09 99289",
+              "normalizedValue": "09 99289",
+              "processBitMap": "0",
+              "axisX": 652,
+              "sepValue": "09 99289",
+              "axisY": 1350,
+              "width": 215,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "09 99289",
+          "normalizedValue": "09 99289",
+          "keyDesc": "规格型号",
+          "value": "09 99289",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "118",
+              "originalValue": "118",
+              "normalizedValue": "118",
+              "processBitMap": "0",
+              "axisX": 920,
+              "sepValue": "118",
+              "axisY": 1350,
+              "width": 125,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "118",
+          "normalizedValue": "118",
+          "keyDesc": "成交数量",
+          "value": "118",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "17.6",
+              "originalValue": "17.6",
+              "normalizedValue": "17.6",
+              "processBitMap": "0",
+              "axisX": 1081,
+              "sepValue": "17.6",
+              "axisY": 1350,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "17.6",
+          "normalizedValue": "17.6",
+          "keyDesc": "净重单项",
+          "value": "17.6",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "18",
+              "originalValue": "18",
+              "normalizedValue": "18",
+              "processBitMap": "0",
+              "axisX": 1260,
+              "sepValue": "18",
+              "axisY": 1350,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "18",
+          "normalizedValue": "18",
+          "keyDesc": "毛重单项",
+          "value": "18",
+          "key": "ggrossWt"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "SS4200T",
+              "originalValue": "SS4200T",
+              "normalizedValue": "SS4200T",
+              "processBitMap": "0",
+              "axisX": 294,
+              "sepValue": "SS4200T",
+              "axisY": 1405,
+              "width": 304,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "SS4200T",
+          "normalizedValue": "SS4200T",
+          "keyDesc": "商品名称",
+          "value": "SS4200T",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "09 99286",
+              "originalValue": "09 99286",
+              "normalizedValue": "09 99286",
+              "processBitMap": "0",
+              "axisX": 652,
+              "sepValue": "09 99286",
+              "axisY": 1405,
+              "width": 215,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "09 99286",
+          "normalizedValue": "09 99286",
+          "keyDesc": "规格型号",
+          "value": "09 99286",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "85",
+              "originalValue": "85",
+              "normalizedValue": "85",
+              "processBitMap": "0",
+              "axisX": 920,
+              "sepValue": "85",
+              "axisY": 1405,
+              "width": 125,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "85",
+          "normalizedValue": "85",
+          "keyDesc": "成交数量",
+          "value": "85",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "12.5",
+              "originalValue": "12.5",
+              "normalizedValue": "12.5",
+              "processBitMap": "0",
+              "axisX": 1081,
+              "sepValue": "12.5",
+              "axisY": 1405,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "12.5",
+          "normalizedValue": "12.5",
+          "keyDesc": "净重单项",
+          "value": "12.5",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "13",
+              "originalValue": "13",
+              "normalizedValue": "13",
+              "processBitMap": "0",
+              "axisX": 1260,
+              "sepValue": "13",
+              "axisY": 1405,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "13",
+          "normalizedValue": "13",
+          "keyDesc": "毛重单项",
+          "value": "13",
+          "key": "ggrossWt"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "SS4200T",
+              "originalValue": "SS4200T",
+              "normalizedValue": "SS4200T",
+              "processBitMap": "0",
+              "axisX": 294,
+              "sepValue": "SS4200T",
+              "axisY": 1461,
+              "width": 304,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "SS4200T",
+          "normalizedValue": "SS4200T",
+          "keyDesc": "商品名称",
+          "value": "SS4200T",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "09 99286",
+              "originalValue": "09 99286",
+              "normalizedValue": "09 99286",
+              "processBitMap": "0",
+              "axisX": 652,
+              "sepValue": "09 99286",
+              "axisY": 1461,
+              "width": 215,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "09 99286",
+          "normalizedValue": "09 99286",
+          "keyDesc": "规格型号",
+          "value": "09 99286",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "70",
+              "originalValue": "70",
+              "normalizedValue": "70",
+              "processBitMap": "0",
+              "axisX": 920,
+              "sepValue": "70",
+              "axisY": 1461,
+              "width": 125,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "70",
+          "normalizedValue": "70",
+          "keyDesc": "成交数量",
+          "value": "70",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "10.2",
+              "originalValue": "10.2",
+              "normalizedValue": "10.2",
+              "processBitMap": "0",
+              "axisX": 1081,
+              "sepValue": "10.2",
+              "axisY": 1461,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "10.2",
+          "normalizedValue": "10.2",
+          "keyDesc": "净重单项",
+          "value": "10.2",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "11",
+              "originalValue": "11",
+              "normalizedValue": "11",
+              "processBitMap": "0",
+              "axisX": 1260,
+              "sepValue": "11",
+              "axisY": 1461,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "11",
+          "normalizedValue": "11",
+          "keyDesc": "毛重单项",
+          "value": "11",
+          "key": "ggrossWt"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "SS4200T",
+              "originalValue": "SS4200T",
+              "normalizedValue": "SS4200T",
+              "processBitMap": "0",
+              "axisX": 294,
+              "sepValue": "SS4200T",
+              "axisY": 1517,
+              "width": 304,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "SS4200T",
+          "normalizedValue": "SS4200T",
+          "keyDesc": "商品名称",
+          "value": "SS4200T",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "09 99286",
+              "originalValue": "09 99286",
+              "normalizedValue": "09 99286",
+              "processBitMap": "0",
+              "axisX": 652,
+              "sepValue": "09 99286",
+              "axisY": 1517,
+              "width": 215,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "09 99286",
+          "normalizedValue": "09 99286",
+          "keyDesc": "规格型号",
+          "value": "09 99286",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "69",
+              "originalValue": "69",
+              "normalizedValue": "69",
+              "processBitMap": "0",
+              "axisX": 920,
+              "sepValue": "69",
+              "axisY": 1517,
+              "width": 125,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "69",
+          "normalizedValue": "69",
+          "keyDesc": "成交数量",
+          "value": "69",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "10.1",
+              "originalValue": "10.1",
+              "normalizedValue": "10.1",
+              "processBitMap": "0",
+              "axisX": 1081,
+              "sepValue": "10.1",
+              "axisY": 1517,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "10.1",
+          "normalizedValue": "10.1",
+          "keyDesc": "净重单项",
+          "value": "10.1",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "11",
+              "originalValue": "11",
+              "normalizedValue": "11",
+              "processBitMap": "0",
+              "axisX": 1260,
+              "sepValue": "11",
+              "axisY": 1517,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "11",
+          "normalizedValue": "11",
+          "keyDesc": "毛重单项",
+          "value": "11",
+          "key": "ggrossWt"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "SS4200T",
+              "originalValue": "SS4200T",
+              "normalizedValue": "SS4200T",
+              "processBitMap": "0",
+              "axisX": 294,
+              "sepValue": "SS4200T",
+              "axisY": 1572,
+              "width": 304,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "SS4200T",
+          "normalizedValue": "SS4200T",
+          "keyDesc": "商品名称",
+          "value": "SS4200T",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "09 99286",
+              "originalValue": "09 99286",
+              "normalizedValue": "09 99286",
+              "processBitMap": "0",
+              "axisX": 652,
+              "sepValue": "09 99286",
+              "axisY": 1572,
+              "width": 215,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "09 99286",
+          "normalizedValue": "09 99286",
+          "keyDesc": "规格型号",
+          "value": "09 99286",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "118",
+              "originalValue": "118",
+              "normalizedValue": "118",
+              "processBitMap": "0",
+              "axisX": 920,
+              "sepValue": "118",
+              "axisY": 1572,
+              "width": 125,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "118",
+          "normalizedValue": "118",
+          "keyDesc": "成交数量",
+          "value": "118",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "17.6",
+              "originalValue": "17.6",
+              "normalizedValue": "17.6",
+              "processBitMap": "0",
+              "axisX": 1081,
+              "sepValue": "17.6",
+              "axisY": 1572,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "17.6",
+          "normalizedValue": "17.6",
+          "keyDesc": "净重单项",
+          "value": "17.6",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "18",
+              "originalValue": "18",
+              "normalizedValue": "18",
+              "processBitMap": "0",
+              "axisX": 1260,
+              "sepValue": "18",
+              "axisY": 1572,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "18",
+          "normalizedValue": "18",
+          "keyDesc": "毛重单项",
+          "value": "18",
+          "key": "ggrossWt"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "SS4200T",
+              "originalValue": "SS4200T",
+              "normalizedValue": "SS4200T",
+              "processBitMap": "0",
+              "axisX": 294,
+              "sepValue": "SS4200T",
+              "axisY": 1628,
+              "width": 304,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "SS4200T",
+          "normalizedValue": "SS4200T",
+          "keyDesc": "商品名称",
+          "value": "SS4200T",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "09 99286",
+              "originalValue": "09 99286",
+              "normalizedValue": "09 99286",
+              "processBitMap": "0",
+              "axisX": 652,
+              "sepValue": "09 99286",
+              "axisY": 1628,
+              "width": 215,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "09 99286",
+          "normalizedValue": "09 99286",
+          "keyDesc": "规格型号",
+          "value": "09 99286",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "75",
+              "originalValue": "75",
+              "normalizedValue": "75",
+              "processBitMap": "0",
+              "axisX": 920,
+              "sepValue": "75",
+              "axisY": 1628,
+              "width": 125,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "75",
+          "normalizedValue": "75",
+          "keyDesc": "成交数量",
+          "value": "75",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "11",
+              "originalValue": "11",
+              "normalizedValue": "11",
+              "processBitMap": "0",
+              "axisX": 1081,
+              "sepValue": "11",
+              "axisY": 1628,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "11",
+          "normalizedValue": "11",
+          "keyDesc": "净重单项",
+          "value": "11",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "11",
+              "originalValue": "11",
+              "normalizedValue": "11",
+              "processBitMap": "0",
+              "axisX": 1260,
+              "sepValue": "11",
+              "axisY": 1628,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "11",
+          "normalizedValue": "11",
+          "keyDesc": "毛重单项",
+          "value": "11",
+          "key": "ggrossWt"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "SS4200T",
+              "originalValue": "SS4200T",
+              "normalizedValue": "SS4200T",
+              "processBitMap": "0",
+              "axisX": 294,
+              "sepValue": "SS4200T",
+              "axisY": 1684,
+              "width": 304,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "SS4200T",
+          "normalizedValue": "SS4200T",
+          "keyDesc": "商品名称",
+          "value": "SS4200T",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "09 99286",
+              "originalValue": "09 99286",
+              "normalizedValue": "09 99286",
+              "processBitMap": "0",
+              "axisX": 652,
+              "sepValue": "09 99286",
+              "axisY": 1684,
+              "width": 215,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "09 99286",
+          "normalizedValue": "09 99286",
+          "keyDesc": "规格型号",
+          "value": "09 99286",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "85",
+              "originalValue": "85",
+              "normalizedValue": "85",
+              "processBitMap": "0",
+              "axisX": 920,
+              "sepValue": "85",
+              "axisY": 1684,
+              "width": 125,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "85",
+          "normalizedValue": "85",
+          "keyDesc": "成交数量",
+          "value": "85",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "12.5",
+              "originalValue": "12.5",
+              "normalizedValue": "12.5",
+              "processBitMap": "0",
+              "axisX": 1081,
+              "sepValue": "12.5",
+              "axisY": 1684,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "12.5",
+          "normalizedValue": "12.5",
+          "keyDesc": "净重单项",
+          "value": "12.5",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "13",
+              "originalValue": "13",
+              "normalizedValue": "13",
+              "processBitMap": "0",
+              "axisX": 1260,
+              "sepValue": "13",
+              "axisY": 1684,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "13",
+          "normalizedValue": "13",
+          "keyDesc": "毛重单项",
+          "value": "13",
+          "key": "ggrossWt"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "SS4200T",
+              "originalValue": "SS4200T",
+              "normalizedValue": "SS4200T",
+              "processBitMap": "0",
+              "axisX": 294,
+              "sepValue": "SS4200T",
+              "axisY": 1739,
+              "width": 304,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "SS4200T",
+          "normalizedValue": "SS4200T",
+          "keyDesc": "商品名称",
+          "value": "SS4200T",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "09 99286",
+              "originalValue": "09 99286",
+              "normalizedValue": "09 99286",
+              "processBitMap": "0",
+              "axisX": 652,
+              "sepValue": "09 99286",
+              "axisY": 1739,
+              "width": 215,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "09 99286",
+          "normalizedValue": "09 99286",
+          "keyDesc": "规格型号",
+          "value": "09 99286",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "111",
+              "originalValue": "111",
+              "normalizedValue": "111",
+              "processBitMap": "0",
+              "axisX": 920,
+              "sepValue": "111",
+              "axisY": 1739,
+              "width": 125,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "111",
+          "normalizedValue": "111",
+          "keyDesc": "成交数量",
+          "value": "111",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "16.5",
+              "originalValue": "16.5",
+              "normalizedValue": "16.5",
+              "processBitMap": "0",
+              "axisX": 1081,
+              "sepValue": "16.5",
+              "axisY": 1739,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "16.5",
+          "normalizedValue": "16.5",
+          "keyDesc": "净重单项",
+          "value": "16.5",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "17",
+              "originalValue": "17",
+              "normalizedValue": "17",
+              "processBitMap": "0",
+              "axisX": 1260,
+              "sepValue": "17",
+              "axisY": 1739,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "17",
+          "normalizedValue": "17",
+          "keyDesc": "毛重单项",
+          "value": "17",
+          "key": "ggrossWt"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "SS4200T",
+              "originalValue": "SS4200T",
+              "normalizedValue": "SS4200T",
+              "processBitMap": "0",
+              "axisX": 294,
+              "sepValue": "SS4200T",
+              "axisY": 1795,
+              "width": 304,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "SS4200T",
+          "normalizedValue": "SS4200T",
+          "keyDesc": "商品名称",
+          "value": "SS4200T",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "09 99286",
+              "originalValue": "09 99286",
+              "normalizedValue": "09 99286",
+              "processBitMap": "0",
+              "axisX": 652,
+              "sepValue": "09 99286",
+              "axisY": 1795,
+              "width": 215,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "09 99286",
+          "normalizedValue": "09 99286",
+          "keyDesc": "规格型号",
+          "value": "09 99286",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "72",
+              "originalValue": "72",
+              "normalizedValue": "72",
+              "processBitMap": "0",
+              "axisX": 920,
+              "sepValue": "72",
+              "axisY": 1795,
+              "width": 125,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "72",
+          "normalizedValue": "72",
+          "keyDesc": "成交数量",
+          "value": "72",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "10.5",
+              "originalValue": "10.5",
+              "normalizedValue": "10.5",
+              "processBitMap": "0",
+              "axisX": 1081,
+              "sepValue": "10.5",
+              "axisY": 1795,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "10.5",
+          "normalizedValue": "10.5",
+          "keyDesc": "净重单项",
+          "value": "10.5",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "11",
+              "originalValue": "11",
+              "normalizedValue": "11",
+              "processBitMap": "0",
+              "axisX": 1260,
+              "sepValue": "11",
+              "axisY": 1795,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "11",
+          "normalizedValue": "11",
+          "keyDesc": "毛重单项",
+          "value": "11",
+          "key": "ggrossWt"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "SS4200T",
+              "originalValue": "SS4200T",
+              "normalizedValue": "SS4200T",
+              "processBitMap": "0",
+              "axisX": 294,
+              "sepValue": "SS4200T",
+              "axisY": 1850,
+              "width": 304,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "SS4200T",
+          "normalizedValue": "SS4200T",
+          "keyDesc": "商品名称",
+          "value": "SS4200T",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "09 99286",
+              "originalValue": "09 99286",
+              "normalizedValue": "09 99286",
+              "processBitMap": "0",
+              "axisX": 652,
+              "sepValue": "09 99286",
+              "axisY": 1850,
+              "width": 215,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "09 99286",
+          "normalizedValue": "09 99286",
+          "keyDesc": "规格型号",
+          "value": "09 99286",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "101",
+              "originalValue": "101",
+              "normalizedValue": "101",
+              "processBitMap": "0",
+              "axisX": 920,
+              "sepValue": "101",
+              "axisY": 1850,
+              "width": 125,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "101",
+          "normalizedValue": "101",
+          "keyDesc": "成交数量",
+          "value": "101",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "15",
+              "originalValue": "15",
+              "normalizedValue": "15",
+              "processBitMap": "0",
+              "axisX": 1081,
+              "sepValue": "15",
+              "axisY": 1850,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "15",
+          "normalizedValue": "15",
+          "keyDesc": "净重单项",
+          "value": "15",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "15",
+              "originalValue": "15",
+              "normalizedValue": "15",
+              "processBitMap": "0",
+              "axisX": 1260,
+              "sepValue": "15",
+              "axisY": 1850,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "15",
+          "normalizedValue": "15",
+          "keyDesc": "毛重单项",
+          "value": "15",
+          "key": "ggrossWt"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "SS4200T",
+              "originalValue": "SS4200T",
+              "normalizedValue": "SS4200T",
+              "processBitMap": "0",
+              "axisX": 294,
+              "sepValue": "SS4200T",
+              "axisY": 1906,
+              "width": 304,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "SS4200T",
+          "normalizedValue": "SS4200T",
+          "keyDesc": "商品名称",
+          "value": "SS4200T",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "09 99286",
+              "originalValue": "09 99286",
+              "normalizedValue": "09 99286",
+              "processBitMap": "0",
+              "axisX": 652,
+              "sepValue": "09 99286",
+              "axisY": 1906,
+              "width": 215,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "09 99286",
+          "normalizedValue": "09 99286",
+          "keyDesc": "规格型号",
+          "value": "09 99286",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "74",
+              "originalValue": "74",
+              "normalizedValue": "74",
+              "processBitMap": "0",
+              "axisX": 920,
+              "sepValue": "74",
+              "axisY": 1906,
+              "width": 125,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "74",
+          "normalizedValue": "74",
+          "keyDesc": "成交数量",
+          "value": "74",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "10.8",
+              "originalValue": "10.8",
+              "normalizedValue": "10.8",
+              "processBitMap": "0",
+              "axisX": 1081,
+              "sepValue": "10.8",
+              "axisY": 1906,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "10.8",
+          "normalizedValue": "10.8",
+          "keyDesc": "净重单项",
+          "value": "10.8",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "11",
+              "originalValue": "11",
+              "normalizedValue": "11",
+              "processBitMap": "0",
+              "axisX": 1260,
+              "sepValue": "11",
+              "axisY": 1906,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "11",
+          "normalizedValue": "11",
+          "keyDesc": "毛重单项",
+          "value": "11",
+          "key": "ggrossWt"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "SS4200T",
+              "originalValue": "SS4200T",
+              "normalizedValue": "SS4200T",
+              "processBitMap": "0",
+              "axisX": 294,
+              "sepValue": "SS4200T",
+              "axisY": 1962,
+              "width": 304,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "SS4200T",
+          "normalizedValue": "SS4200T",
+          "keyDesc": "商品名称",
+          "value": "SS4200T",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "09 99291",
+              "originalValue": "09 99291",
+              "normalizedValue": "09 99291",
+              "processBitMap": "0",
+              "axisX": 652,
+              "sepValue": "09 99291",
+              "axisY": 1962,
+              "width": 215,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "09 99291",
+          "normalizedValue": "09 99291",
+          "keyDesc": "规格型号",
+          "value": "09 99291",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "100",
+              "originalValue": "100",
+              "normalizedValue": "100",
+              "processBitMap": "0",
+              "axisX": 920,
+              "sepValue": "100",
+              "axisY": 1962,
+              "width": 125,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "100",
+          "normalizedValue": "100",
+          "keyDesc": "成交数量",
+          "value": "100",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "14.8",
+              "originalValue": "14.8",
+              "normalizedValue": "14.8",
+              "processBitMap": "0",
+              "axisX": 1081,
+              "sepValue": "14.8",
+              "axisY": 1962,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "14.8",
+          "normalizedValue": "14.8",
+          "keyDesc": "净重单项",
+          "value": "14.8",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "15",
+              "originalValue": "15",
+              "normalizedValue": "15",
+              "processBitMap": "0",
+              "axisX": 1260,
+              "sepValue": "15",
+              "axisY": 1962,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "15",
+          "normalizedValue": "15",
+          "keyDesc": "毛重单项",
+          "value": "15",
+          "key": "ggrossWt"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "SS4200T",
+              "originalValue": "SS4200T",
+              "normalizedValue": "SS4200T",
+              "processBitMap": "0",
+              "axisX": 294,
+              "sepValue": "SS4200T",
+              "axisY": 2017,
+              "width": 304,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "SS4200T",
+          "normalizedValue": "SS4200T",
+          "keyDesc": "商品名称",
+          "value": "SS4200T",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "09 99291",
+              "originalValue": "09 99291",
+              "normalizedValue": "09 99291",
+              "processBitMap": "0",
+              "axisX": 652,
+              "sepValue": "09 99291",
+              "axisY": 2017,
+              "width": 215,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "09 99291",
+          "normalizedValue": "09 99291",
+          "keyDesc": "规格型号",
+          "value": "09 99291",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "115",
+              "originalValue": "115",
+              "normalizedValue": "115",
+              "processBitMap": "0",
+              "axisX": 920,
+              "sepValue": "115",
+              "axisY": 2017,
+              "width": 125,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "115",
+          "normalizedValue": "115",
+          "keyDesc": "成交数量",
+          "value": "115",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "17.1",
+              "originalValue": "17.1",
+              "normalizedValue": "17.1",
+              "processBitMap": "0",
+              "axisX": 1081,
+              "sepValue": "17.1",
+              "axisY": 2017,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "17.1",
+          "normalizedValue": "17.1",
+          "keyDesc": "净重单项",
+          "value": "17.1",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "18",
+              "originalValue": "18",
+              "normalizedValue": "18",
+              "processBitMap": "0",
+              "axisX": 1260,
+              "sepValue": "18",
+              "axisY": 2017,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "18",
+          "normalizedValue": "18",
+          "keyDesc": "毛重单项",
+          "value": "18",
+          "key": "ggrossWt"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "SS4200T",
+              "originalValue": "SS4200T",
+              "normalizedValue": "SS4200T",
+              "processBitMap": "0",
+              "axisX": 294,
+              "sepValue": "SS4200T",
+              "axisY": 2073,
+              "width": 304,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "SS4200T",
+          "normalizedValue": "SS4200T",
+          "keyDesc": "商品名称",
+          "value": "SS4200T",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "09 99286",
+              "originalValue": "09 99286",
+              "normalizedValue": "09 99286",
+              "processBitMap": "0",
+              "axisX": 652,
+              "sepValue": "09 99286",
+              "axisY": 2073,
+              "width": 215,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "09 99286",
+          "normalizedValue": "09 99286",
+          "keyDesc": "规格型号",
+          "value": "09 99286",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "100",
+              "originalValue": "100",
+              "normalizedValue": "100",
+              "processBitMap": "0",
+              "axisX": 920,
+              "sepValue": "100",
+              "axisY": 2073,
+              "width": 125,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "100",
+          "normalizedValue": "100",
+          "keyDesc": "成交数量",
+          "value": "100",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "14.8",
+              "originalValue": "14.8",
+              "normalizedValue": "14.8",
+              "processBitMap": "0",
+              "axisX": 1081,
+              "sepValue": "14.8",
+              "axisY": 2073,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "14.8",
+          "normalizedValue": "14.8",
+          "keyDesc": "净重单项",
+          "value": "14.8",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "15",
+              "originalValue": "15",
+              "normalizedValue": "15",
+              "processBitMap": "0",
+              "axisX": 1260,
+              "sepValue": "15",
+              "axisY": 2073,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "15",
+          "normalizedValue": "15",
+          "keyDesc": "毛重单项",
+          "value": "15",
+          "key": "ggrossWt"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "SS4200T",
+              "originalValue": "SS4200T",
+              "normalizedValue": "SS4200T",
+              "processBitMap": "0",
+              "axisX": 294,
+              "sepValue": "SS4200T",
+              "axisY": 2129,
+              "width": 304,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "SS4200T",
+          "normalizedValue": "SS4200T",
+          "keyDesc": "商品名称",
+          "value": "SS4200T",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "09 99286",
+              "originalValue": "09 99286",
+              "normalizedValue": "09 99286",
+              "processBitMap": "0",
+              "axisX": 652,
+              "sepValue": "09 99286",
+              "axisY": 2129,
+              "width": 215,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "09 99286",
+          "normalizedValue": "09 99286",
+          "keyDesc": "规格型号",
+          "value": "09 99286",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "100",
+              "originalValue": "100",
+              "normalizedValue": "100",
+              "processBitMap": "0",
+              "axisX": 920,
+              "sepValue": "100",
+              "axisY": 2129,
+              "width": 125,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "100",
+          "normalizedValue": "100",
+          "keyDesc": "成交数量",
+          "value": "100",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "14.8",
+              "originalValue": "14.8",
+              "normalizedValue": "14.8",
+              "processBitMap": "0",
+              "axisX": 1081,
+              "sepValue": "14.8",
+              "axisY": 2129,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "14.8",
+          "normalizedValue": "14.8",
+          "keyDesc": "净重单项",
+          "value": "14.8",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "15",
+              "originalValue": "15",
+              "normalizedValue": "15",
+              "processBitMap": "0",
+              "axisX": 1260,
+              "sepValue": "15",
+              "axisY": 2129,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "15",
+          "normalizedValue": "15",
+          "keyDesc": "毛重单项",
+          "value": "15",
+          "key": "ggrossWt"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "SS4200T",
+              "originalValue": "SS4200T",
+              "normalizedValue": "SS4200T",
+              "processBitMap": "0",
+              "axisX": 294,
+              "sepValue": "SS4200T",
+              "axisY": 2184,
+              "width": 304,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "SS4200T",
+          "normalizedValue": "SS4200T",
+          "keyDesc": "商品名称",
+          "value": "SS4200T",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "09 99291",
+              "originalValue": "09 99291",
+              "normalizedValue": "09 99291",
+              "processBitMap": "0",
+              "axisX": 652,
+              "sepValue": "09 99291",
+              "axisY": 2184,
+              "width": 215,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "09 99291",
+          "normalizedValue": "09 99291",
+          "keyDesc": "规格型号",
+          "value": "09 99291",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "100",
+              "originalValue": "100",
+              "normalizedValue": "100",
+              "processBitMap": "0",
+              "axisX": 920,
+              "sepValue": "100",
+              "axisY": 2184,
+              "width": 125,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "100",
+          "normalizedValue": "100",
+          "keyDesc": "成交数量",
+          "value": "100",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "14.8",
+              "originalValue": "14.8",
+              "normalizedValue": "14.8",
+              "processBitMap": "0",
+              "axisX": 1081,
+              "sepValue": "14.8",
+              "axisY": 2184,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "14.8",
+          "normalizedValue": "14.8",
+          "keyDesc": "净重单项",
+          "value": "14.8",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "15",
+              "originalValue": "15",
+              "normalizedValue": "15",
+              "processBitMap": "0",
+              "axisX": 1260,
+              "sepValue": "15",
+              "axisY": 2184,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "15",
+          "normalizedValue": "15",
+          "keyDesc": "毛重单项",
+          "value": "15",
+          "key": "ggrossWt"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "SS4200T",
+              "originalValue": "SS4200T",
+              "normalizedValue": "SS4200T",
+              "processBitMap": "0",
+              "axisX": 294,
+              "sepValue": "SS4200T",
+              "axisY": 2240,
+              "width": 304,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "SS4200T",
+          "normalizedValue": "SS4200T",
+          "keyDesc": "商品名称",
+          "value": "SS4200T",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "09 99291",
+              "originalValue": "09 99291",
+              "normalizedValue": "09 99291",
+              "processBitMap": "0",
+              "axisX": 652,
+              "sepValue": "09 99291",
+              "axisY": 2240,
+              "width": 215,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "09 99291",
+          "normalizedValue": "09 99291",
+          "keyDesc": "规格型号",
+          "value": "09 99291",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "100",
+              "originalValue": "100",
+              "normalizedValue": "100",
+              "processBitMap": "0",
+              "axisX": 920,
+              "sepValue": "100",
+              "axisY": 2240,
+              "width": 125,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "100",
+          "normalizedValue": "100",
+          "keyDesc": "成交数量",
+          "value": "100",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "14.8",
+              "originalValue": "14.8",
+              "normalizedValue": "14.8",
+              "processBitMap": "0",
+              "axisX": 1081,
+              "sepValue": "14.8",
+              "axisY": 2240,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "14.8",
+          "normalizedValue": "14.8",
+          "keyDesc": "净重单项",
+          "value": "14.8",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "15",
+              "originalValue": "15",
+              "normalizedValue": "15",
+              "processBitMap": "0",
+              "axisX": 1260,
+              "sepValue": "15",
+              "axisY": 2240,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "15",
+          "normalizedValue": "15",
+          "keyDesc": "毛重单项",
+          "value": "15",
+          "key": "ggrossWt"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "SS4200T",
+              "originalValue": "SS4200T",
+              "normalizedValue": "SS4200T",
+              "processBitMap": "0",
+              "axisX": 294,
+              "sepValue": "SS4200T",
+              "axisY": 2295,
+              "width": 304,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "SS4200T",
+          "normalizedValue": "SS4200T",
+          "keyDesc": "商品名称",
+          "value": "SS4200T",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "09 99291",
+              "originalValue": "09 99291",
+              "normalizedValue": "09 99291",
+              "processBitMap": "0",
+              "axisX": 652,
+              "sepValue": "09 99291",
+              "axisY": 2295,
+              "width": 215,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "09 99291",
+          "normalizedValue": "09 99291",
+          "keyDesc": "规格型号",
+          "value": "09 99291",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "101",
+              "originalValue": "101",
+              "normalizedValue": "101",
+              "processBitMap": "0",
+              "axisX": 920,
+              "sepValue": "101",
+              "axisY": 2295,
+              "width": 125,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "101",
+          "normalizedValue": "101",
+          "keyDesc": "成交数量",
+          "value": "101",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "15",
+              "originalValue": "15",
+              "normalizedValue": "15",
+              "processBitMap": "0",
+              "axisX": 1081,
+              "sepValue": "15",
+              "axisY": 2295,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "15",
+          "normalizedValue": "15",
+          "keyDesc": "净重单项",
+          "value": "15",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "15",
+              "originalValue": "15",
+              "normalizedValue": "15",
+              "processBitMap": "0",
+              "axisX": 1260,
+              "sepValue": "15",
+              "axisY": 2295,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "15",
+          "normalizedValue": "15",
+          "keyDesc": "毛重单项",
+          "value": "15",
+          "key": "ggrossWt"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "SS4200T",
+              "originalValue": "SS4200T",
+              "normalizedValue": "SS4200T",
+              "processBitMap": "0",
+              "axisX": 294,
+              "sepValue": "SS4200T",
+              "axisY": 2351,
+              "width": 304,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "SS4200T",
+          "normalizedValue": "SS4200T",
+          "keyDesc": "商品名称",
+          "value": "SS4200T",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "09 99291",
+              "originalValue": "09 99291",
+              "normalizedValue": "09 99291",
+              "processBitMap": "0",
+              "axisX": 652,
+              "sepValue": "09 99291",
+              "axisY": 2351,
+              "width": 215,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "09 99291",
+          "normalizedValue": "09 99291",
+          "keyDesc": "规格型号",
+          "value": "09 99291",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "100",
+              "originalValue": "100",
+              "normalizedValue": "100",
+              "processBitMap": "0",
+              "axisX": 920,
+              "sepValue": "100",
+              "axisY": 2351,
+              "width": 125,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "100",
+          "normalizedValue": "100",
+          "keyDesc": "成交数量",
+          "value": "100",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "14.8",
+              "originalValue": "14.8",
+              "normalizedValue": "14.8",
+              "processBitMap": "0",
+              "axisX": 1081,
+              "sepValue": "14.8",
+              "axisY": 2351,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "14.8",
+          "normalizedValue": "14.8",
+          "keyDesc": "净重单项",
+          "value": "14.8",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "15",
+              "originalValue": "15",
+              "normalizedValue": "15",
+              "processBitMap": "0",
+              "axisX": 1260,
+              "sepValue": "15",
+              "axisY": 2351,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "15",
+          "normalizedValue": "15",
+          "keyDesc": "毛重单项",
+          "value": "15",
+          "key": "ggrossWt"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "SS4200T",
+              "originalValue": "SS4200T",
+              "normalizedValue": "SS4200T",
+              "processBitMap": "0",
+              "axisX": 294,
+              "sepValue": "SS4200T",
+              "axisY": 2407,
+              "width": 304,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "SS4200T",
+          "normalizedValue": "SS4200T",
+          "keyDesc": "商品名称",
+          "value": "SS4200T",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "09 99291",
+              "originalValue": "09 99291",
+              "normalizedValue": "09 99291",
+              "processBitMap": "0",
+              "axisX": 652,
+              "sepValue": "09 99291",
+              "axisY": 2407,
+              "width": 215,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "09 99291",
+          "normalizedValue": "09 99291",
+          "keyDesc": "规格型号",
+          "value": "09 99291",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "100",
+              "originalValue": "100",
+              "normalizedValue": "100",
+              "processBitMap": "0",
+              "axisX": 920,
+              "sepValue": "100",
+              "axisY": 2407,
+              "width": 125,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "100",
+          "normalizedValue": "100",
+          "keyDesc": "成交数量",
+          "value": "100",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "14.8",
+              "originalValue": "14.8",
+              "normalizedValue": "14.8",
+              "processBitMap": "0",
+              "axisX": 1081,
+              "sepValue": "14.8",
+              "axisY": 2407,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "14.8",
+          "normalizedValue": "14.8",
+          "keyDesc": "净重单项",
+          "value": "14.8",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "15",
+              "originalValue": "15",
+              "normalizedValue": "15",
+              "processBitMap": "0",
+              "axisX": 1260,
+              "sepValue": "15",
+              "axisY": 2407,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 45
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "15",
+          "normalizedValue": "15",
+          "keyDesc": "毛重单项",
+          "value": "15",
+          "key": "ggrossWt"
+        }
+      ],
+      [
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "SS4200T",
+              "originalValue": "SS4200T",
+              "normalizedValue": "SS4200T",
+              "processBitMap": "0",
+              "axisX": 294,
+              "sepValue": "SS4200T",
+              "axisY": 2462,
+              "width": 304,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "SS4200T",
+          "normalizedValue": "SS4200T",
+          "keyDesc": "商品名称",
+          "value": "SS4200T",
+          "key": "gName"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "09 99291",
+              "originalValue": "09 99291",
+              "normalizedValue": "09 99291",
+              "processBitMap": "0",
+              "axisX": 652,
+              "sepValue": "09 99291",
+              "axisY": 2462,
+              "width": 215,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "09 99291",
+          "normalizedValue": "09 99291",
+          "keyDesc": "规格型号",
+          "value": "09 99291",
+          "key": "gModel"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "100",
+              "originalValue": "100",
+              "normalizedValue": "100",
+              "processBitMap": "0",
+              "axisX": 920,
+              "sepValue": "100",
+              "axisY": 2462,
+              "width": 125,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "100",
+          "normalizedValue": "100",
+          "keyDesc": "成交数量",
+          "value": "100",
+          "key": "gQty"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "14.8",
+              "originalValue": "14.8",
+              "normalizedValue": "14.8",
+              "processBitMap": "0",
+              "axisX": 1081,
+              "sepValue": "14.8",
+              "axisY": 2462,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "14.8",
+          "normalizedValue": "14.8",
+          "keyDesc": "净重单项",
+          "value": "14.8",
+          "key": "gnetWt"
+        },
+        {
+          "processBitMap": "0",
+          "sourceList": [
+            {
+              "attType": "PackingList",
+              "imageId": 3,
+              "transformValue": "15",
+              "originalValue": "15",
+              "normalizedValue": "15",
+              "processBitMap": "0",
+              "axisX": 1260,
+              "sepValue": "15",
+              "axisY": 2462,
+              "width": 143,
+              "attTypeCode": 3,
+              "height": 46
+            }
+          ],
+          "source_image": 3,
+          "originalValue": "15",
+          "normalizedValue": "15",
+          "keyDesc": "毛重单项",
+          "value": "15",
+          "key": "ggrossWt"
+        }
+      ]
+    ],
+    "operateImage": [
+      {
+        "imageWidth": "2526",
+        "originalFileName": "20250321134705998.pdf.Pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02503/474afd8aeebc44adb8ba6c654322d34f/0_20250321134705998.pdf.Pdf.txt",
+        "imageId": 1,
+        "pdfDocPage": 0,
+        "originalFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02503/474afd8aeebc44adb8ba6c654322d34f/20250321134705998.pdf.Pdf",
+        "imageHeight": "1786",
+        "originalImageWidth": "2526",
+        "imageUrl": "https://smartebao-dub-zd-ocr.oss-cn-shanghai.aliyuncs.com/ocr/operateImage/2026-03-06/fb8744e21caafea7de4be667c9591587.png",
+        "angle": 0,
+        "originalImageHeight": "1786",
+        "attTypeCode": 4,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "1786",
+        "originalFileName": "20250321134705998.pdf.Pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02503/474afd8aeebc44adb8ba6c654322d34f/1_20250321134705998.pdf.Pdf.txt",
+        "imageId": 2,
+        "pdfDocPage": 1,
+        "originalFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02503/474afd8aeebc44adb8ba6c654322d34f/20250321134705998.pdf.Pdf",
+        "imageHeight": "2526",
+        "originalImageWidth": "1786",
+        "imageUrl": "https://smartebao-dub-zd-ocr.oss-cn-shanghai.aliyuncs.com/ocr/operateImage/2026-03-06/645c3f812e714b070ee9e7bacac656a5.png",
+        "angle": 0,
+        "originalImageHeight": "2526",
+        "attTypeCode": 2,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "1786",
+        "originalFileName": "20250321134705998.pdf.Pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02503/474afd8aeebc44adb8ba6c654322d34f/2_20250321134705998.pdf.Pdf.txt",
+        "imageId": 3,
+        "pdfDocPage": 2,
+        "originalFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02503/474afd8aeebc44adb8ba6c654322d34f/20250321134705998.pdf.Pdf",
+        "imageHeight": "2526",
+        "originalImageWidth": "1786",
+        "imageUrl": "https://smartebao-dub-zd-ocr.oss-cn-shanghai.aliyuncs.com/ocr/operateImage/2026-03-06/68cd2ca4e24c25f78084ba36548f0e09.png",
+        "angle": 0,
+        "originalImageHeight": "2526",
+        "attTypeCode": 3,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "1786",
+        "originalFileName": "20250321134705998.pdf.Pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02503/474afd8aeebc44adb8ba6c654322d34f/3_20250321134705998.pdf.Pdf.txt",
+        "imageId": 4,
+        "pdfDocPage": 3,
+        "originalFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02503/474afd8aeebc44adb8ba6c654322d34f/20250321134705998.pdf.Pdf",
+        "imageHeight": "2526",
+        "originalImageWidth": "1786",
+        "imageUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02503/474afd8aeebc44adb8ba6c654322d34f/3_20250321134705998.pdf.Pdf.png",
+        "angle": 0,
+        "originalImageHeight": "2526",
+        "attTypeCode": 13,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "1786",
+        "originalFileName": "20250321134705998.pdf.Pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02503/474afd8aeebc44adb8ba6c654322d34f/4_20250321134705998.pdf.Pdf.txt",
+        "imageId": 5,
+        "pdfDocPage": 4,
+        "originalFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02503/474afd8aeebc44adb8ba6c654322d34f/20250321134705998.pdf.Pdf",
+        "imageHeight": "2526",
+        "originalImageWidth": "1786",
+        "imageUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02503/474afd8aeebc44adb8ba6c654322d34f/4_20250321134705998.pdf.Pdf.png",
+        "angle": 0,
+        "originalImageHeight": "2526",
+        "attTypeCode": 13,
+        "imageSuffix": "png"
+      },
+      {
+        "imageWidth": "1786",
+        "originalFileName": "20250321134705998.pdf.Pdf",
+        "ocrFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02503/474afd8aeebc44adb8ba6c654322d34f/5_20250321134705998.pdf.Pdf.txt",
+        "imageId": 6,
+        "pdfDocPage": 5,
+        "originalFileUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02503/474afd8aeebc44adb8ba6c654322d34f/20250321134705998.pdf.Pdf",
+        "imageHeight": "2526",
+        "originalImageWidth": "1786",
+        "imageUrl": "http://smartebao-production-ocr.oss-cn-shanghai.aliyuncs.com/02503/474afd8aeebc44adb8ba6c654322d34f/5_20250321134705998.pdf.Pdf.png",
+        "angle": 0,
+        "originalImageHeight": "2526",
+        "attTypeCode": 9,
+        "imageSuffix": "png"
+      }
+    ],
+    "preDecContainer": []
+  }
+}
