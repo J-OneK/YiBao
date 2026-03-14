@@ -113,7 +113,9 @@ def aggregate_head_fields(results: List[ExtractionResult]) -> List[Dict]:
 def aggregate_list_fields(results: List[ExtractionResult]) -> List[List[Dict]]:
     """
     聚合表体字段
-    按商品顺序聚合，如果不同图片的商品数量不一样，后面的商品聚合来源会更少
+    对于属于同一 att_type_code 的多个图片，将其 pre_dec_list 按序拼接（拉平），
+    以支持同种单据（如长运单）拆分为多页时的商品延续。
+    拼接完成后，再与其他 att_type_code 的拼接结果按商品顺序进行平行聚合。
     
     Args:
         results: 识别结果列表
@@ -123,9 +125,50 @@ def aggregate_list_fields(results: List[ExtractionResult]) -> List[List[Dict]]:
     """
     if not results:
         return []
+        
+    # 步骤 1: 按 att_type_code 将 pre_dec_list 拼接起来
+    # 为了保持稳定的聚合顺序，记录一下出现的 att_type_code
+    grouped_lists = defaultdict(list)
+    att_types_order = []
     
+    for result in results:
+        # result.pre_dec_list 是 List[List[ExtractedField]]
+        if not result.pre_dec_list:
+             continue
+             
+        # 因为在 parse/convert 的时候，我们把每个 Field 内都存了 att_type_code
+        # 取本图片随便一个商品的随便一个有效字段，获取 att_type_code
+        # 或者为了严谨，直接看每个商品里的第一个字段的 att_type_code
+        first_product = result.pre_dec_list[0]
+        if not first_product:
+             continue
+             
+        att_type_code = first_product[0].att_type_code
+        
+        if att_type_code not in att_types_order:
+            att_types_order.append(att_type_code)
+            
+        # 将该图片的商品列表追加到相应类型的序列末尾
+        grouped_lists[att_type_code].extend(result.pre_dec_list)
+        
+    # 如果全空，返回
+    if not grouped_lists:
+        return []
+
+    # ===== 调试打印拼接结果 =====
+    print(f"\\n{'='*20} 商品拉平拼接结果验证 {'='*20}")
+    for att_type, lst in grouped_lists.items():
+        print(f"-> 附件类型(att_type_code): {att_type}")
+        print(f"   拼接后该类型下总商品数量: {len(lst)}")
+        for i, prod in enumerate(lst):
+            # 打印每个商品前几个字段以供辨认
+            preview = ", ".join([f"{f.key_desc}: {f.value}" for f in prod[:3]])
+            print(f"   商品[{i}] 包含 {len(prod)} 个字段. 预览: {preview}")
+    print(f"{'='*60}\\n")
+
+    # 步骤 2: 依据拼接好的各 att_type_code 业务大列表，进行并行/纵向交叉聚合
     # 找出最大商品数量
-    max_products = max(len(result.pre_dec_list) for result in results)
+    max_products = max(len(lst) for lst in grouped_lists.values())
     
     aggregated_list = []
     
@@ -133,9 +176,10 @@ def aggregate_list_fields(results: List[ExtractionResult]) -> List[List[Dict]]:
         # 对于每个商品位置，按keyDesc分组
         grouped = defaultdict(list)
         
-        for result in results:
-            if product_idx < len(result.pre_dec_list):
-                product_fields = result.pre_dec_list[product_idx]
+        for att_type in att_types_order:
+            merged_list_for_type = grouped_lists[att_type]
+            if product_idx < len(merged_list_for_type):
+                product_fields = merged_list_for_type[product_idx]
                 for field in product_fields:
                     grouped[field.key_desc].append({
                         'value': field.value,

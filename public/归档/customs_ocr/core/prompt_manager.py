@@ -52,29 +52,32 @@ def generate_prompt(att_type_code: int) -> str:
     
     prompt += """
 【输出格式】
-请输出以下JSON格式（不要添加markdown标记）：
+
 ```json
-{
-  "preDecHead": [
-    {
-      "keyDesc": "字段标准名称",
-      "value": "识别到的值",
-      "pixel": [左上x, 左上y, 右下x, 右下y]
-    }
-  ],
-  "preDecList": [
-    [
+[
+  {
+    "image_id": "该图片的 image_id（请严格按照前面提示词中提供的对应关系填写）",
+    "preDecHead": [
       {
         "keyDesc": "字段标准名称",
         "value": "识别到的值",
         "pixel": [左上x, 左上y, 右下x, 右下y]
       }
+    ],
+    "preDecList": [
+      [
+        {
+          "keyDesc": "字段标准名称",
+          "value": "识别到的值",
+          "pixel": [左上x, 左上y, 右下x, 右下y]
+        }
+      ]
     ]
-  ]
-}
+  }
+]
 ```
 
-请开始识别！
+请开始识别所有的图片并严格按上面的数组返回！
 """
     
     return prompt
@@ -143,25 +146,31 @@ def generate_mainfactor_prompt(hsCodes: list, mainfactors: list) -> str:
 7. 按照JSON格式输出，不包含任何解释、说明或额外文字。
 8. pixel必须是归一化坐标，范围[0-999]，格式为[左上x, 左上y, 右下x, 右下y]，表示字段在图片中的位置,pixel字段不允许为空或者为none。
 9. 特殊字段的值必须转码，即“品牌类型”和“出口享惠情况”必须按上述要求转成对应数字，不可用“无”或者“空”等来替代
-### 输出示例
+"""
+    prompt += """
+### 输出格式
+因为传入了多张图片，你必须识别出每张图片上的信息，并以包含多张图片结果的 JSON 数组（List）格式返回（不要添加markdown标记）：
 ```json
-{
-  "gmodel": [
-    {
-      "codeTs": "商品编码1",
-      "mainfactors": "识别到的商品编码对应的规格型号属性值字符串，使用|分隔",
-      "pixel": [左上x, 左上y, 右下x, 右下y]
-    },
-    {
-      "codeTs": "商品编码2",
-      "mainfactors": "识别到的商品编码对应的规格型号属性值字符串，使用|分隔",
-      "pixel": [左上x, 左上y, 右下x, 右下y]
-    }
-    //如果有多组数据，继续添加更多对象
-  ]
-}
+[
+  {
+    "image_id": "该图片的 image_id（请严格按照前面提示词中提供的对应关系填写）",
+    "gmodel": [
+      {
+        "codeTs": "商品编码1",
+        "mainfactors": "识别到的商品编码对应的规格型号属性值字符串，使用|分隔",
+        "pixel": [左上x, 左上y, 右下x, 右下y]
+      },
+      {
+        "codeTs": "商品编码2",
+        "mainfactors": "识别到的商品编码对应的规格型号属性值字符串，使用|分隔",
+        "pixel": [左上x, 左上y, 右下x, 右下y]
+      }
+      //如果有多组数据，继续添加更多对象
+    ]
+  }
+]
 ```
 
-请开始识别！
+请开始识别所有的图片并严格按上面的数组返回！
 """
     return prompt
