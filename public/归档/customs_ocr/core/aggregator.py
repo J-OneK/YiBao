@@ -606,8 +606,11 @@ def aggregate_mainfactors(data, factor_list):
     """
     将申报要素合并到 preDecList 中
     """
-    # 1. 建立映射字典
-    factors_map = {item['codeTs']: item for item in factor_list}
+    from collections import defaultdict
+    # 1. 建立映射字典 (支持同一 codeTs 的多个商品通过队列按顺序消费)
+    factors_map = defaultdict(list)
+    for item in factor_list:
+        factors_map[item['codeTs']].append(item)
     
     pre_dec_list = data.get('preDecList', [])
 
@@ -623,8 +626,9 @@ def aggregate_mainfactors(data, factor_list):
                 break
         
         # 3. 如果匹配到申报要素，构造符合顺序的新字典
-        if current_code_ts and current_code_ts in factors_map:
-            target_factor = factors_map[current_code_ts]
+        if current_code_ts and current_code_ts in factors_map and factors_map[current_code_ts]:
+            # 按出现顺序取出一个该商品编码对应的申报要素
+            target_factor = factors_map[current_code_ts].pop(0)
             
             # --- 步骤 A: 构建内层字典 (按照 value -> pixel -> imageId 顺序) ---
             new_source_item = {

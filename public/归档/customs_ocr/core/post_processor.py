@@ -377,45 +377,46 @@ def normalize_to_real(normalized_coord: float, actual_size: int) -> int:
 def process_mainfactors(results: List[Dict]) -> List[Dict]:
     """
     处理申报要素识别结果，提取有效的mainfactor数据
-    去除掉无效内容后选取内容最丰富（即最长）的结果
+    保留所有结果（不按 codeTs 去重），以便应对同一HS编码的商品在不同图片中多次出现的情况
     Args:
         results: 识别结果列表
         
     Returns:
         有效的mainfactor数据列表
     """
-    best_results = {}
+    valid_results = []
 
     # 预定义无效集合
     ignore_set = {'null', '0', ''}
 
     for entry in results:
+        if not entry:
+            continue
         for model in entry.get('gmodel', []):
             code = model.get('codeTs')
             # 归一化商品编码
             if not code:
                 continue
-            if not normalize_values([code]):
+            normalized_codes = normalize_values([code])
+            if not normalized_codes:
                 continue
-            code = normalize_values([code])[0]
+            code = normalized_codes[0]
+            
             mf = model.get('mainfactors')
             pixel = model.get('pixel')
             imageId = model.get('imageId')
             attTypeCode = model.get('attTypeCode')
+            
             if not code or not mf:
                 continue
 
-            current_score = 0
-            for part in mf.split('|'):
-                p = part.strip()
-                if p and p not in ignore_set:
-                    current_score += len(p)
             # 使用 | 分割字符串
             parts = mf.split('|')
             # 过滤掉 'null' 字段并替换为空字符串
             cleaned_parts = ['' if part == 'null' else part for part in parts]
             # 用 | 连接回字符串
             mf = '|'.join(cleaned_parts)
+            
             clean_item = {
                 'codeTs': code, 
                 'mainfactors': mf,
@@ -423,10 +424,9 @@ def process_mainfactors(results: List[Dict]) -> List[Dict]:
                 'imageId': imageId,
                 'attTypeCode': attTypeCode
             }
-            if code not in best_results or current_score > best_results[code][0]:
-                best_results[code] = (current_score, clean_item)
+            valid_results.append(clean_item)
     
-    return [item[1] for item in best_results.values()]
+    return valid_results
 
 def transform_source_list(source_list):
     """

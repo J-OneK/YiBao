@@ -150,8 +150,8 @@ def main(input_json_path: str, output_json_path: str):
 
 if __name__ == "__main__":
     # 默认路径
-    input_path = "C:/desktop/YiBao/public/JSON/VLM识别报文/11200293930_886003222485.json"
-    output_path = "C:/desktop/YiBao/public/JSON/VLM识别报文/11200293930_886003222485out.json"
+    input_path = "C:/desktop/YiBao/public/归档/NOSNB25CL48865.json"
+    output_path = "C:/desktop/YiBao/public/归档/NOSNB25CL48865out.json"
 
     # 如果提供了命令行参数，使用命令行参数
     if len(sys.argv) > 1:
