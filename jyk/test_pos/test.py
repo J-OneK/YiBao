@@ -128,5 +128,5 @@ def visualize_all_coordinates(json_path):
 
 if __name__ == '__main__':
     # 只需要修改这个 json 路径即可自动打框批量处理
-    json_target = r'C:/desktop/YiBao/public/JSON/VLM识别报文/NOSNB25CL48865.json'
+    json_target = r'D:\code\YiBao\jyk\excel_decl_pipeline\output.json'
     visualize_all_coordinates(json_target)
